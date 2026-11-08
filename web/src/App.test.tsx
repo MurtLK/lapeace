@@ -4,26 +4,25 @@ import { describe, expect, it, vi } from 'vitest';
 import { App } from './App';
 
 describe('website navigation', () => {
-  it('keeps every project link on the homepage without requesting dashboard data', () => {
+  it('opens the teammate workspace and returns home without homepage API requests', () => {
     const fetch = vi.fn();
     vi.stubGlobal('fetch', fetch);
     render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
+    fireEvent.click(screen.getAllByRole('link', { name: 'Open dashboard' })[0]);
+    expect(screen.getByTitle('Mississauga Unheard research dashboard')).toHaveAttribute('src', '/dashboard-app/index.html');
+    fireEvent.click(screen.getByRole('link', { name: 'Back to website' }));
     expect(screen.getByRole('heading', { name: 'How well does AI understand accented English?' })).toBeVisible();
-    expect(screen.getAllByRole('link', { name: 'Explore the project' })[0]).toHaveAttribute('href', '#how-it-works');
-    expect(screen.queryByRole('link', { name: /dashboard/i })).not.toBeInTheDocument();
-    for (const link of screen.getAllByRole('link')) {
-      expect(link.getAttribute('href')).not.toContain('/dashboard');
-    }
     expect(fetch).not.toHaveBeenCalled();
   });
 
-  it('does not expose the removed dashboard on a direct visit', () => {
-    const fetch = vi.fn();
-    vi.stubGlobal('fetch', fetch);
-    render(<MemoryRouter initialEntries={['/dashboard?tab=evidence']}><App /></MemoryRouter>);
-    expect(screen.getByRole('heading', { name: 'This page isn’t here.' })).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Back to website' })).toHaveAttribute('href', '/');
-    expect(fetch).not.toHaveBeenCalled();
+  it('supports a direct community visit with a configured backend', () => {
+    render(<MemoryRouter initialEntries={['/dashboard?tab=community&backend=https%3A%2F%2Fapi.example.com']}><App /></MemoryRouter>);
+    expect(screen.getByTitle('Mississauga Unheard research dashboard')).toHaveAttribute('src', '/dashboard-app/index.html?backend=https%3A%2F%2Fapi.example.com#where');
+  });
+
+  it('does not forward unsafe backend protocols to the workspace', () => {
+    render(<MemoryRouter initialEntries={['/dashboard?backend=javascript%3Aalert(1)']}><App /></MemoryRouter>);
+    expect(screen.getByTitle('Mississauga Unheard research dashboard')).toHaveAttribute('src', '/dashboard-app/index.html');
   });
 
   it('provides a useful return destination for unknown routes', () => {

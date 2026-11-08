@@ -1,5 +1,9 @@
 # LAPEACE design direction
 
+## Current integration
+
+The user reconnected the dashboard after the earlier homepage-only revision. Open dashboard links now open `/dashboard`, which hosts the teammate's actual Mississauga Unheard app from `hisham/wire-site` with isolated CSS and a return link. The Node backend from `hisham/backend` supplies audio and census data. `npm run dev` starts both services. See [integration setup](/docs/dashboard/INTEGRATION.md) for backend configuration, source commits and verification. This supersedes any disconnected-dashboard requirements below.
+
 ## Current website scope
 
 The public website is a single homepage. The user removed the dashboard on November 8, 2026. All active actions lead to homepage sections or real source websites. The dashboard source remains disconnected for the teammate. This overrides earlier dashboard directions below.

@@ -2,7 +2,7 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vitest/config';
 
 const proxy = Object.fromEntries(
-  ['/api', '/audio', '/audio311'].map((path) => [path, { target: 'http://localhost:8787', changeOrigin: false }]),
+  ['/api', '/audio', '/audio311', '/call-check'].map((path) => [path, { target: 'http://localhost:8787', changeOrigin: false }]),
 );
 
 export default defineConfig({

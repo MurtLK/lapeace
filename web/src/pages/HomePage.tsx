@@ -139,9 +139,9 @@ export function HomePage() {
           </nav>
 
           <div className="lp-header__actions">
-            <a href="#how-it-works" className="lp-btn lp-btn--quiet">
-              Explore the project
-            </a>
+            <Link to="/dashboard" className="lp-btn lp-btn--quiet">
+              Open dashboard
+            </Link>
 
             <button
               ref={menuButtonRef}
@@ -189,13 +189,13 @@ export function HomePage() {
             >
               About
             </a>
-            <a
-              href="#how-it-works"
+            <Link
+              to="/dashboard"
               className="lp-mobile-nav__cta"
               onClick={closeMobileMenu}
             >
-              Explore the project
-            </a>
+              Open dashboard
+            </Link>
           </nav>
         </div>
       </header>
@@ -211,10 +211,10 @@ export function HomePage() {
                 We study English speech recognition alongside Mississauga language data and a 311 clarification demo.
               </p>
               <div className="lp-hero__actions">
-                <a href="#how-it-works" className="lp-btn lp-btn--primary">
-                  <span>Explore the project</span>
-                  <ArrowDown className="lp-icon" aria-hidden="true" />
-                </a>
+                <Link to="/dashboard" className="lp-btn lp-btn--primary">
+                  <span>Open dashboard</span>
+                  <ArrowUpRight className="lp-icon" aria-hidden="true" />
+                </Link>
                 <a href="#about-sources" className="lp-text-link">
                   Read the sources
                 </a>
@@ -502,6 +502,7 @@ export function HomePage() {
             <a href="#top" className="lp-footer__link">
               Back to top
             </a>
+            <Link to="/dashboard" className="lp-footer__link">Open dashboard</Link>
           </nav>
         </div>
       </footer>

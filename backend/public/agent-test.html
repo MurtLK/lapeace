@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LAPEACE agent test</title>
+<style>
+  :root { --bg: #fff; --fg: #1a1a1a; --muted: #666; --accent: #6d28d9; --warn: #92400e; --warnbg: #fef3c7; --border: #ddd; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111; --fg: #eee; --muted: #aaa; --accent: #a78bfa; --warn: #fde68a; --warnbg: #3a2e05; --border: #333; } }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px; }
+  .warn { background: var(--warnbg); color: var(--warn); padding: 12px; border-radius: 8px; }
+  button { font: inherit; padding: 10px 16px; border-radius: 8px; border: 1px solid var(--accent); background: var(--accent); color: #fff; cursor: pointer; }
+  button:disabled { opacity: .5; cursor: default; }
+  #status { color: var(--muted); margin: 12px 0; }
+  #log { border: 1px solid var(--border); border-radius: 8px; padding: 12px; min-height: 120px; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<h1>Freeze-card agent test</h1>
+<p class="warn"><strong>Simulated demo.</strong> No real bank, card or account is involved, and nothing is frozen. Don't say real card numbers, PINs, passwords or personal details.</p>
+<p>This page needs your microphone so you can talk to the agent. Try: <em>"Someone stole my card, I need to freeze it."</em></p>
+<button id="start">Start conversation</button>
+<button id="stop" disabled>End</button>
+<div id="status">Idle</div>
+<div id="log"></div>
+<script type="module">
+  import { Conversation } from 'https://cdn.jsdelivr.net/npm/@elevenlabs/client@1.28.0/+esm';
+  const $ = (id) => document.getElementById(id);
+  const log = (who, text) => { $('log').textContent += `${who}: ${text}\n`; };
+  let conversation = null;
+
+  $('start').onclick = async () => {
+    $('start').disabled = true;
+    try {
+      $('status').textContent = 'Requesting microphone...';
+      await navigator.mediaDevices.getUserMedia({ audio: true });
+      $('status').textContent = 'Getting a session from the backend...';
+      const res = await fetch('/api/agent/session', { method: 'POST' });
+      const body = await res.json();
+      if (!res.ok) throw new Error(`${res.status} ${body.error}${body.missing ? ': ' + body.missing.join(', ') : ''}`);
+      const credential = body.connection_type === 'webrtc'
+        ? { conversationToken: body.conversation_token }
+        : { signedUrl: body.signed_url };
+      conversation = await Conversation.startSession({
+        ...credential,
+        onConnect: () => { $('status').textContent = 'Connected, speak now'; $('stop').disabled = false; },
+        onDisconnect: () => { $('status').textContent = 'Ended'; $('start').disabled = false; $('stop').disabled = true; },
+        onMessage: ({ source, message }) => log(source === 'ai' ? 'Agent' : 'You', message),
+        onModeChange: ({ mode }) => { if (conversation) $('status').textContent = mode === 'speaking' ? 'Agent speaking' : 'Listening'; },
+        onError: (e) => log('Error', String(e?.message || e)),
+      });
+    } catch (err) {
+      $('status').textContent = `Failed: ${err.message}`;
+      $('start').disabled = false;
+    }
+  };
+  $('stop').onclick = async () => { await conversation?.endSession(); conversation = null; };
+</script>
+</body>
+</html>

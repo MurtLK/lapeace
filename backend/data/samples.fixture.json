@@ -1,0 +1,24 @@
+{
+  "source": "fixture",
+  "notice": "FIXTURE DATA. Placeholder until Murtada's pipeline export arrives. The audio and reference transcript are real (Speech Accent Archive). The Scribe transcript is SIMULATED, not real ElevenLabs output.",
+  "samples": [
+    {
+      "clip_id": "saa_urdu5",
+      "dataset": "speech_accent_archive",
+      "audio_file": "saa_urdu5.mp3",
+      "duration_sec": 19.1,
+      "reference_transcript": "Please call Stella. Ask her to bring these things with her from the store: Six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bob. We also need a small plastic snake and a big toy frog for the kids. She can scoop these things into three red bags, and we will go meet her Wednesday at the train station.",
+      "scribe_transcript": "Please call Stella. Ask her to bring these things with her from the store: six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bob. We also need a small plastic snack and a big toy frog for the kids. She can scope these things into three red bags, and we will go meet her Wednesday at the train station.",
+      "scribe_transcript_is_simulated": true,
+      "wer": null,
+      "speaker_group": "Urdu",
+      "speaker": {
+        "first_language": "urdu",
+        "gender": "male",
+        "age": 23,
+        "birth_country": "pakistan",
+        "english_onset_age": 12
+      }
+    }
+  ]
+}

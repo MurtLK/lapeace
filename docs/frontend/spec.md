@@ -1,5 +1,9 @@
 # LaPeace frontend specification
 
+## Current integration
+
+The user reconnected the dashboard after the earlier homepage-only revision. Open dashboard links now open `/dashboard`, which hosts the teammate's actual Mississauga Unheard app from `hisham/wire-site` with isolated CSS and a return link. The Node backend from `hisham/backend` supplies audio and census data. `npm run dev` starts both services. See [integration setup](/docs/dashboard/INTEGRATION.md) for backend configuration, source commits and verification. This supersedes any disconnected-dashboard requirements below.
+
 ## Stack and routes
 
 React, strict TypeScript, Vite, React Router, lucide-react and CSS custom properties. The source is in `web/`, with root convenience scripts. Vitest and React Testing Library verify interactions and route boundaries.

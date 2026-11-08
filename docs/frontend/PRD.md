@@ -1,5 +1,9 @@
 # LaPeace website PRD
 
+## Current integration
+
+The user reconnected the dashboard after the earlier homepage-only revision. Open dashboard links now open `/dashboard`, which hosts the teammate's actual Mississauga Unheard app from `hisham/wire-site` with isolated CSS and a return link. The Node backend from `hisham/backend` supplies audio and census data. `npm run dev` starts both services. See [integration setup](/docs/dashboard/INTEGRATION.md) for backend configuration, source commits and verification. This supersedes any disconnected-dashboard requirements below.
+
 Murtada owns the frontend. The website explains the accented English speech study through a single public homepage.
 
 ## Experience

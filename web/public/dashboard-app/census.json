@@ -1,0 +1,240 @@
+{
+  "source": "2021 Census of Population, City of Mississauga ward and neighbourhood language profiles (supplied track pack)",
+  "measure": "Residents who speak this language most often at home",
+  "notes": [
+    "Counts are rounded to 5 by Statistics Canada.",
+    "Wards: corrected ward table (Ward 10 rebuilt from neighbourhoods; about +/-50 rounding noise). Neighbourhoods: 39 populated areas; 17 employment/airport areas with zero population excluded.",
+    "pct_of_geo = residents / population counted for home language in that area x 100. share_of_city_speakers = % of the city's speakers of that language living in that area.",
+    "Speaking a language at home does not mean a person cannot speak English. These counts are not an estimate of how many residents voice AI misunderstands."
+  ],
+  "generated_at": "2026-11-08T06:09:28.627Z",
+  "languages": [
+    {
+      "language": "Mandarin Chinese",
+      "census_column": "home_mandarin",
+      "city_total": 17730,
+      "totals_check": {
+        "language_coverage_city_home_speakers": 17730,
+        "sum_of_neighbourhood_table": 17730,
+        "sum_of_corrected_ward_table": 17730,
+        "sum_of_long_neighbourhood_rows": 17730,
+        "sum_of_long_ward_rows": 17730,
+        "all_agree": true
+      },
+      "wards": [
+        {
+          "geo": "6",
+          "residents": 3140,
+          "pct_of_geo": 4.16,
+          "share_of_city_speakers": 17.71
+        },
+        {
+          "geo": "8",
+          "residents": 2460,
+          "pct_of_geo": 3.54,
+          "share_of_city_speakers": 13.87
+        },
+        {
+          "geo": "4",
+          "residents": 1955,
+          "pct_of_geo": 2.63,
+          "share_of_city_speakers": 11.03
+        },
+        {
+          "geo": "9",
+          "residents": 1810,
+          "pct_of_geo": 3.17,
+          "share_of_city_speakers": 10.21
+        },
+        {
+          "geo": "10",
+          "residents": 1755,
+          "pct_of_geo": 2.38,
+          "share_of_city_speakers": 9.9
+        },
+        {
+          "geo": "7",
+          "residents": 1730,
+          "pct_of_geo": 2.17,
+          "share_of_city_speakers": 9.76
+        },
+        {
+          "geo": "5",
+          "residents": 1460,
+          "pct_of_geo": 1.88,
+          "share_of_city_speakers": 8.23
+        },
+        {
+          "geo": "11",
+          "residents": 1095,
+          "pct_of_geo": 1.84,
+          "share_of_city_speakers": 6.18
+        },
+        {
+          "geo": "2",
+          "residents": 960,
+          "pct_of_geo": 2.07,
+          "share_of_city_speakers": 5.41
+        },
+        {
+          "geo": "3",
+          "residents": 900,
+          "pct_of_geo": 1.6,
+          "share_of_city_speakers": 5.08
+        },
+        {
+          "geo": "1",
+          "residents": 465,
+          "pct_of_geo": 1.09,
+          "share_of_city_speakers": 2.62
+        }
+      ],
+      "top_neighbourhoods": [
+        {
+          "geo": "Central Erin Mills",
+          "residents": 2480,
+          "pct_of_geo": 8.2,
+          "share_of_city_speakers": 13.99
+        },
+        {
+          "geo": "East Credit",
+          "residents": 2090,
+          "pct_of_geo": 3.3,
+          "share_of_city_speakers": 11.79
+        },
+        {
+          "geo": "Hurontario",
+          "residents": 1880,
+          "pct_of_geo": 3.78,
+          "share_of_city_speakers": 10.6
+        },
+        {
+          "geo": "Churchill Meadows",
+          "residents": 1455,
+          "pct_of_geo": 2.98,
+          "share_of_city_speakers": 8.21
+        },
+        {
+          "geo": "DT Core",
+          "residents": 1185,
+          "pct_of_geo": 3.44,
+          "share_of_city_speakers": 6.68
+        }
+      ]
+    },
+    {
+      "language": "Punjabi",
+      "census_column": "home_punjabi",
+      "city_total": 15025,
+      "totals_check": {
+        "language_coverage_city_home_speakers": 15025,
+        "sum_of_neighbourhood_table": 15025,
+        "sum_of_corrected_ward_table": 15025,
+        "sum_of_long_neighbourhood_rows": 15025,
+        "sum_of_long_ward_rows": 15025,
+        "all_agree": true
+      },
+      "wards": [
+        {
+          "geo": "5",
+          "residents": 8095,
+          "pct_of_geo": 10.41,
+          "share_of_city_speakers": 53.88
+        },
+        {
+          "geo": "11",
+          "residents": 1905,
+          "pct_of_geo": 3.19,
+          "share_of_city_speakers": 12.68
+        },
+        {
+          "geo": "6",
+          "residents": 1690,
+          "pct_of_geo": 2.24,
+          "share_of_city_speakers": 11.25
+        },
+        {
+          "geo": "10",
+          "residents": 710,
+          "pct_of_geo": 0.96,
+          "share_of_city_speakers": 4.73
+        },
+        {
+          "geo": "4",
+          "residents": 700,
+          "pct_of_geo": 0.94,
+          "share_of_city_speakers": 4.66
+        },
+        {
+          "geo": "7",
+          "residents": 600,
+          "pct_of_geo": 0.75,
+          "share_of_city_speakers": 3.99
+        },
+        {
+          "geo": "8",
+          "residents": 540,
+          "pct_of_geo": 0.78,
+          "share_of_city_speakers": 3.59
+        },
+        {
+          "geo": "3",
+          "residents": 260,
+          "pct_of_geo": 0.46,
+          "share_of_city_speakers": 1.73
+        },
+        {
+          "geo": "2",
+          "residents": 210,
+          "pct_of_geo": 0.45,
+          "share_of_city_speakers": 1.4
+        },
+        {
+          "geo": "9",
+          "residents": 185,
+          "pct_of_geo": 0.32,
+          "share_of_city_speakers": 1.23
+        },
+        {
+          "geo": "1",
+          "residents": 130,
+          "pct_of_geo": 0.3,
+          "share_of_city_speakers": 0.87
+        }
+      ],
+      "top_neighbourhoods": [
+        {
+          "geo": "Malton",
+          "residents": 7145,
+          "pct_of_geo": 20.27,
+          "share_of_city_speakers": 47.55
+        },
+        {
+          "geo": "East Credit",
+          "residents": 1735,
+          "pct_of_geo": 2.74,
+          "share_of_city_speakers": 11.55
+        },
+        {
+          "geo": "Meadowvale Village",
+          "residents": 1315,
+          "pct_of_geo": 4.21,
+          "share_of_city_speakers": 8.75
+        },
+        {
+          "geo": "Hurontario",
+          "residents": 1065,
+          "pct_of_geo": 2.14,
+          "share_of_city_speakers": 7.09
+        },
+        {
+          "geo": "Lisgar",
+          "residents": 450,
+          "pct_of_geo": 1.43,
+          "share_of_city_speakers": 3
+        }
+      ]
+    }
+  ],
+  "problems": []
+}

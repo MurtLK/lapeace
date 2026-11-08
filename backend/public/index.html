@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mississauga Unheard</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #faf8f3; --surface: #ffffff; --fg: #14213d; --muted: #55607a; --border: #e3dfd5;
+    --teal: #0f766e; --teal-fg: #ffffff; --amber: #b45309; --amber-bg: #fef3c7;
+    --sub-bg: #fde68a; --del-bg: #fecaca; --ins-bg: #bfdbfe;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1420; --surface: #171e2e; --fg: #e8ecf4; --muted: #a3adc2; --border: #2a3347;
+      --teal: #2dd4bf; --teal-fg: #062925; --amber: #fbbf24; --amber-bg: #3a2c08;
+      --sub-bg: #6b4e0a; --del-bg: #6b1d1d; --ins-bg: #1e3a6b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, -apple-system, sans-serif; margin: 0; }
+  main { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 8px 0; }
+  h2 { font-size: 1.3rem; margin: 40px 0 8px; }
+  p { margin: 8px 0; }
+  .muted { color: var(--muted); font-size: 0.92rem; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin: 12px 0; }
+  .label { display: inline-block; font-size: 0.8rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--amber-bg); color: var(--amber); }
+  .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0; }
+  button { font: inherit; border-radius: 8px; padding: 8px 14px; cursor: pointer; border: 1px solid var(--teal); background: transparent; color: var(--teal); }
+  button[aria-pressed="true"], button.primary { background: var(--teal); color: var(--teal-fg); }
+  button:disabled { opacity: 0.45; cursor: default; }
+  button:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+  audio { width: 100%; margin: 8px 0; }
+  .rows { display: grid; gap: 10px; }
+  .row h3 { font-size: 0.95rem; margin: 0 0 4px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+  .raw { margin: 0 0 6px; }
+  .diff { font-size: 0.93rem; line-height: 1.9; }
+  .diff span { padding: 1px 3px; border-radius: 4px; }
+  .sub { background: var(--sub-bg); } .del { background: var(--del-bg); text-decoration: line-through; } .ins { background: var(--ins-bg); }
+  .legend span { margin-right: 12px; font-size: 0.85rem; }
+  .wer { font-variant-numeric: tabular-nums; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.93rem; }
+  th, td { padding: 8px 6px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .scroll { overflow-x: auto; }
+  .error { border-color: var(--amber); }
+  .chat { display: grid; gap: 8px; margin: 12px 0; }
+  .msg { padding: 10px 12px; border-radius: 10px; max-width: 85%; }
+  .caller { background: var(--ins-bg); justify-self: end; }
+  .agent { background: var(--bg); border: 1px solid var(--border); }
+  .sys { font-size: 0.85rem; color: var(--amber); border-left: 3px solid var(--amber); padding-left: 8px; }
+  .outcome { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 600px) { .outcome { grid-template-columns: 1fr; } h1 { font-size: 1.5rem; } }
+  a { color: var(--teal); }
+  nav a { margin-right: 14px; font-size: 0.92rem; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+</style>
+</head>
+<body>
+<main>
+  <nav aria-label="Sections"><a href="#hear">Hear the difference</a><a href="#results">See the results</a><a href="#audit">Benchmark audit</a><a href="#fleurs">Home languages</a><a href="#where">Who and where</a><a href="#test311">311 clarification test</a><a href="#scam">Scam-call check</a><a href="#call">Freeze-card replay</a><a href="#more">All data</a></nav>
+  <h1>What happens when voice AI mishears a caller?</h1>
+  <p>We tested English recordings from speakers with different language backgrounds. This comparison uses 95 of those recordings and runs ElevenLabs Scribe v2 and Whisper on the same audio.</p>
+  <p class="muted">Measured on Speech Accent Archive recordings. The live agent does not use Whisper. Backup judging page served by the LAPEACE backend.</p>
+
+  <p class="card" style="border-left:4px solid var(--teal)"><strong>Live demo:</strong> <a href="/call-check">Call Check →</a> Speak into your mic like a caller, or take a call from an AI voice. LAPEACE transcribes it with ElevenLabs Scribe, flags risky requests, and scores the voice.</p>
+
+  <section id="hear" aria-labelledby="hear-h">
+    <h2 id="hear-h">1. Hear the difference</h2>
+    <div class="tabs" id="tabs" role="group" aria-label="Featured example"></div>
+    <div id="clip" class="card" aria-live="polite"><p class="muted">Loading the featured recording…</p></div>
+  </section>
+
+  <section id="results" aria-labelledby="results-h">
+    <h2 id="results-h">2. See the results</h2>
+    <p class="muted"><strong>Normalized scoring</strong>, applied identically to the reference and both systems: lowercase, no punctuation, fillers (uh/um) removed, stutters collapsed, "we'll" expanded. WER = words changed, missed or added ÷ words in the reference.</p>
+    <div id="table" class="card scroll"><p class="muted">Loading results…</p></div>
+  </section>
+
+
+  <section id="audit" aria-labelledby="audit-h">
+    <h2 id="audit-h">3. Benchmark audit: is it the accent, the speaker, or the recording?</h2>
+    <p class="muted">All 468 Speech Accent Archive recordings, each a different speaker reading the same English paragraph, transcribed by ElevenLabs Scribe v2 (unchanged benchmark). Median WER by speaker background and recorded gender.</p>
+    <div id="audit-table" class="card scroll"><p class="muted">Loading audit…</p></div>
+    <div class="card">
+      <h3 style="margin-top:0">Methods note: what we verified</h3>
+      <ul id="audit-notes"><li class="muted">Loading…</li></ul>
+    </div>
+    <h3>Clips for human listening review</h3>
+    <p class="muted">Categories are <strong>automatic heuristics to prioritise listening</strong>, not verified labels.</p>
+    <div id="audit-listen" class="card scroll"><p class="muted">Loading…</p></div>
+  </section>
+
+  <section id="fleurs" aria-labelledby="fleurs-h">
+    <h2 id="fleurs-h">3b. How well does Scribe transcribe Mississauga's home languages?</h2>
+    <p class="muted">A separate benchmark from the accented-English one above, so don't compare the two. 560 of 560 FLEURS clips were scored: the same 40 read sentences in each of 14 home languages. Each was transcribed by ElevenLabs Scribe v2 with its spoken language set and no hints. <strong>WER</strong> (word error rate) = words changed, missed or added ÷ words in the human reference.</p>
+    <div class="card scroll"><table>
+      <thead><tr><th>Language</th><th class="num">Clips</th><th>Recorded gender</th><th class="num">Median WER</th><th class="num">Mean WER</th><th class="num">Clips &gt; 5% WER</th><th class="num">Median WER, adjusted*</th></tr></thead>
+      <tbody>
+        <tr><td>Tamil</td><td class="num">40</td><td>22 M / 18 F</td><td class="num">13.4%</td><td class="num">17.1%</td><td class="num">33</td><td class="num">11.8%</td></tr>
+        <tr><td>Urdu</td><td class="num">40</td><td>all F <span class="label">one gender</span></td><td class="num">10.6%</td><td class="num">11.1%</td><td class="num">32</td><td class="num">10.0%</td></tr>
+        <tr><td>Gujarati</td><td class="num">40</td><td>27 M / 13 F</td><td class="num">8.2%</td><td class="num">9.6%</td><td class="num">27</td><td class="num">8.1%</td></tr>
+        <tr><td>Punjabi</td><td class="num">40</td><td>all F <span class="label">one gender</span></td><td class="num">8.0%</td><td class="num">12.6%</td><td class="num">25</td><td class="num">7.6%</td></tr>
+        <tr><td>Hindi</td><td class="num">40</td><td>25 M / 15 F</td><td class="num">4.8%</td><td class="num">7.2%</td><td class="num">20</td><td class="num">4.3%</td></tr>
+        <tr><td>Arabic (Egyptian)</td><td class="num">40</td><td>all F <span class="label">one gender</span></td><td class="num">4.6%</td><td class="num">7.6%</td><td class="num">18</td><td class="num">4.0%</td></tr>
+        <tr><td>Tagalog</td><td class="num">40</td><td>all M <span class="label">one gender</span></td><td class="num">3.2%</td><td class="num">4.6%</td><td class="num">15</td><td class="num">3.1%</td></tr>
+        <tr><td>Portuguese (BR)</td><td class="num">40</td><td>all M <span class="label">one gender</span></td><td class="num">0.0%</td><td class="num">2.7%</td><td class="num">10</td><td class="num">0.0%</td></tr>
+        <tr><td>Polish</td><td class="num">40</td><td>33 M / 7 F</td><td class="num">0.0%</td><td class="num">1.8%</td><td class="num">5</td><td class="num">0.0%</td></tr>
+        <tr><td>English (US)</td><td class="num">40</td><td>26 F / 14 M</td><td class="num">0.0%</td><td class="num">1.7%</td><td class="num">4</td><td class="num">0.0%</td></tr>
+        <tr><td>Spanish (LatAm)</td><td class="num">40</td><td>30 M / 10 F</td><td class="num">0.0%</td><td class="num">1.3%</td><td class="num">4</td><td class="num">0.0%</td></tr>
+        <tr><td>Vietnamese</td><td class="num">40</td><td>all M <span class="label">one gender</span></td><td class="num">0.0%</td><td class="num">0.8%</td><td class="num">4</td><td class="num">0.0%</td></tr>
+        <tr><td>Mandarin</td><td class="num">40</td><td>25 M / 15 F</td><td class="num" colspan="4">No spaces between words, so no word score. Character error rate: median 0.0%, mean 2.7% ‡</td></tr>
+        <tr><td>Cantonese</td><td class="num">40</td><td>24 F / 16 M</td><td class="num" colspan="4">No spaces between words, so no word score. Character error rate: median 0.0% once both sides use Simplified script ‡</td></tr>
+      </tbody></table>
+      <p class="muted">* Adjusted: clips where one side writes "80%" and the other "eighty percent" are excluded (1–3 per language). WER is harsher for languages with long words (Tamil, Gujarati, Urdu): one wrong letter makes the whole word wrong. Hindi and Urdu outputs often write English loanwords like "call" in Latin script, which also counts as a wrong word. ‡ Scribe writes Cantonese in Simplified characters, while the reference uses Traditional; compared as written, the median is 19.1%. No speaker IDs are given, so each language may come from only a few speakers. Character error rates for every language are in <code>backend/data/fleurs_summary_by_language.csv</code>.</p>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Example to review with a fluent Punjabi speaker: <code>pa_in_1555</code></h3>
+      <p><strong>Reference:</strong> <span lang="pa">ਚਰਚ ਦੇ ਪਰਿਸਰ ਵਿੱਚ ਕੁਝ ਕਬਰਾਂ ਉੱਤੇ ਕੁਝ ਕਬੂਤਰਾਂ ਦੀਆਂ ਦਿਲਚਸਪ ਸੰਗਮਰਮਰ ਦੀਆਂ ਮੂਰਤੀਆਂ ਹਨ।</span></p>
+      <p><strong>Scribe (language set to Punjabi):</strong> <span lang="bg">Църквите в перисъл изкуч кавра, у те куч кавутери биле девчас ки самарна диня мортиня.</span></p>
+      <p class="muted">Scribe wrote the Punjabi sounds in Cyrillic letters but still reported "Punjabi, probability 1". A system that trusts its own language label wouldn't notice. Much of the other error is spelling rather than mishearing: Hindi and Urdu outputs write English loanwords like "call" in Latin script.</p>
+    </div>
+  </section>
+
+  <section id="where" aria-labelledby="where-h">
+    <h2 id="where-h">4. Who and where in Mississauga?</h2>
+    <p class="muted"><strong>2021 Census: residents who speak this language most often at home.</strong> These are population counts, kept separate from the transcription results. They are <em>not</em> an estimate of how many residents voice AI misunderstands.</p>
+    <div class="tabs" id="lang-tabs" role="group" aria-label="Language"></div>
+    <div id="census" class="card" aria-live="polite"><p class="muted">Loading census…</p></div>
+  </section>
+
+  <section id="test311" aria-labelledby="t311-h">
+    <h2 id="t311-h">5. 311 clarification test <span class="label">Tested with scripted requests</span></h2>
+    <p class="muted" id="t311-desc">Loading…</p>
+    <div id="t311" class="card scroll"><p class="muted">Loading…</p></div>
+  </section>
+
+  <section id="scam" aria-labelledby="scam-h">
+    <h2 id="scam-h">5b. Scam-call check <span class="label">Scripted simulation</span></h2>
+    <p class="muted" id="scam-desc">Loading…</p>
+    <div id="scam-cases" class="card scroll"><p class="muted">Loading…</p></div>
+    <p class="muted"><strong>What this does not do:</strong> it does not tell whether a voice is AI-generated. It checks what the caller asks for. A cloned voice asking for your code is still flagged, because the request is the red flag.</p>
+      <div class="card">
+      <h3 style="margin-top:0">Can we tell an AI voice from a real one? <span class="label">Prototype, tested</span></h3>
+      <p class="muted">We trained a small detector on 404 real recordings (Speech Accent Archive + FLEURS) and 324 clips from 27 built-in computer voices. Noise, phone-line and room effects were added to <em>both</em> groups, so it can’t just learn “clean audio = computer”. It was always tested on voices it had never heard.</p>
+      <table><thead><tr><th>Test</th><th class="num">AUC</th><th class="num">Computer voices caught</th><th class="num">Real people wrongly flagged</th></tr></thead><tbody>
+        <tr><td>Unseen voices from familiar voice families</td><td class="num">0.92</td><td class="num">72%</td><td class="num">8%</td></tr>
+        <tr><td>Newest voices, from a family it never trained on</td><td class="num">0.74</td><td class="num">30%</td><td class="num">11%</td></tr>
+      </tbody></table>
+      <p><strong>What this means:</strong> a voice detector works on voices like the ones it has seen and misses most newer ones. It has never seen a modern AI voice clone. So in Call Check the voice score is only a hint; <strong>the verdict comes from what the caller asks for</strong>, which a better clone can’t hide.</p>
+    </div>
+  </section>
+
+  <section id="call" aria-labelledby="call-h">
+    <h2 id="call-h">6. Freeze-card replay (secondary example) <span class="label">Scripted illustration</span></h2>
+    <p class="muted">Not a real recording. No real bank or card is involved, and nothing is frozen. It shows how a voice line can recover when it mishears a request: by clarifying and confirming before acting.</p>
+    <div class="card">
+      <div class="chat" id="chat" aria-live="polite"></div>
+      <div class="tabs">
+        <button class="primary" id="next">Start replay</button>
+        <button id="reset">Restart</button>
+      </div>
+      <div id="outcome" hidden>
+        <div class="outcome">
+          <div class="card"><strong>First interpretation</strong><p>Book a branch appointment</p><p class="muted">From the misheard words "I need to book it"</p></div>
+          <div class="card"><strong>Final confirmed request</strong><p>Freeze card: reported stolen</p><p class="muted">After 1 clarifying question and 1 confirmation</p></div>
+        </div>
+        <p><span class="label">Simulated outcome</span> In this demo the card would now be frozen. Nothing real changed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="more" aria-labelledby="more-h">
+    <h2 id="more-h">All data</h2>
+    <p class="muted">All 468 Speech Accent Archive recordings (Scribe v2 only): <a href="/api/samples">/api/samples</a> · group summary: <a href="/api/groups">/api/groups</a> · A/B data: <a href="/api/comparison?ops=0">/api/comparison</a> · live agent test: <a href="/dev/agent-test">/dev/agent-test</a></p>
+  </section>
+</main>
+
+<script>
+  const pct = (x) => (x * 100).toFixed(1) + '%';
+  const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  // Same-origin audio: the API's absolute audio_url may point at the tunnel; keep only the path.
+  const localAudio = (url) => { try { return new URL(url).pathname; } catch { return url; } };
+  const GROUP_NAMES = { 'Mandarin Chinese': 'Mandarin-background', Punjabi: 'Punjabi-background', English: 'Canadian English' };
+
+  async function getJson(url) {
+    const res = await fetch(url);
+    const body = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(body.error || `HTTP ${res.status}`);
+    return body;
+  }
+
+  function diffHtml(ops) {
+    return ops.map((o) => {
+      if (o.op === 'equal') return `<span>${esc(o.ref)}</span>`;
+      if (o.op === 'sub') return `<span class="sub" title="changed"><s>${esc(o.ref)}</s> → ${esc(o.hyp)} <span aria-hidden="true">✎</span><span class="sr">(changed)</span></span>`;
+      if (o.op === 'del') return `<span class="del" title="missed">${esc(o.ref)} <span aria-hidden="true">⊘</span><span class="sr">(missed)</span></span>`;
+      return `<span class="ins" title="added">+${esc(o.hyp)}<span class="sr">(added)</span></span>`;
+    }).join(' ');
+  }
+
+  function systemRow(name, sys) {
+    const dropped = sys.dropped_passage ? ` <span class="label">Skipped ${sys.longest_dropped_run} words in a row</span>` : '';
+    return `<div class="row"><h3>${esc(name)} <span class="wer">WER ${pct(sys.normalized.wer)}</span> <span class="muted">(${sys.normalized.errors} word errors)</span>${dropped}</h3>
+      <p class="raw">${esc(sys.transcript)}</p>
+      <div class="diff" aria-label="${esc(name)} word differences">${diffHtml(sys.ops)}</div></div>`;
+  }
+
+  async function showClip(id, notes, systems) {
+    const box = document.getElementById('clip');
+    box.classList.remove('error');
+    box.innerHTML = '<p class="muted">Loading…</p>';
+    try {
+      const d = await getJson(`/api/comparison?clip_id=${encodeURIComponent(id)}`);
+      const c = d.clips[0];
+      if (!c) throw new Error('clip not found');
+      const sim = c.alternative_transcript_is_simulated || d.source === 'fixture' ? ' <span class="label">Sample data</span>' : '';
+      box.innerHTML = `
+        <p><strong>${esc(c.clip_id)}</strong> · ${esc(GROUP_NAMES[c.speaker_group] || c.speaker_group)} speaker reading English · ${c.duration_sec}s${sim}</p>
+        <p class="muted">${esc(notes || '')}</p>
+        <audio controls preload="metadata" src="${esc(localAudio(c.audio_url))}"></audio>
+        <p class="muted" id="audio-err" hidden role="alert">This recording couldn't be played.</p>
+        <p class="legend muted"><span class="sub">✎ changed</span><span class="del">⊘ missed</span><span class="ins">+ added</span> (compared with the reference)</p>
+        <div class="rows">
+          <div class="row"><h3>Reference (what the speaker was asked to read)</h3><p class="raw">${esc(c.reference_transcript)}</p></div>
+          ${systemRow(systems.baseline.label, c.baseline)}
+          ${systemRow(systems.alternative.label, c.alternative)}
+        </div>`;
+      box.querySelector('audio').addEventListener('error', () => { box.querySelector('#audio-err').hidden = false; });
+    } catch (err) {
+      box.classList.add('error');
+      box.innerHTML = `<p role="alert">Couldn't load this recording (${esc(err.message)}).</p>`;
+    }
+  }
+
+  function renderTable(d) {
+    const order = ['Mandarin Chinese', 'Punjabi', 'English'];
+    const rows = order.map((g) => d.groups.find((x) => x.speaker_group === g)).filter(Boolean);
+    document.getElementById('table').innerHTML = `
+      <table>
+        <caption class="muted" style="text-align:left;caption-side:top;padding-bottom:6px">Mean WER per group, normalized scoring. Difference = Whisper minus Scribe in percentage points (negative = Whisper better).</caption>
+        <thead><tr><th>Speakers reading English</th><th class="num">Clips</th><th class="num">${esc(d.systems.baseline.label)}</th><th class="num">Whisper</th><th class="num">Difference</th><th class="num">Whisper better / worse / same</th><th class="num">Clips with a skipped passage (Scribe / Whisper)</th></tr></thead>
+        <tbody>${rows.map((g) => `<tr>
+          <td>${esc(GROUP_NAMES[g.speaker_group] || g.speaker_group)}${g.clips < 20 ? ' <span class="muted">(small sample)</span>' : ''}</td>
+          <td class="num">${g.clips}</td>
+          <td class="num">${pct(g.normalized.baseline.mean_wer)}</td>
+          <td class="num">${pct(g.normalized.alternative.mean_wer)}</td>
+          <td class="num">${g.normalized.mean_diff_pp > 0 ? '+' : ''}${g.normalized.mean_diff_pp.toFixed(2)} pp</td>
+          <td class="num">${g.normalized.improved} / ${g.normalized.worse} / ${g.normalized.same}</td>
+          <td class="num">${g.clips_with_dropped_passage.baseline} / ${g.clips_with_dropped_passage.alternative}</td></tr>`).join('')}</tbody>
+      </table>
+      <p><strong>Scribe v2 made fewer errors on these ${d.overall.clips} recordings.</strong> Whisper silently skipped a phrase or sentence in ${d.overall.clips_with_dropped_passage.alternative} of them; Scribe skipped ${d.overall.clips_with_dropped_passage.baseline}.</p>
+      <p class="muted">Descriptive results from this sample; no significance test. Recording conditions and individual speakers also affect scores.</p>`;
+  }
+
+  async function init() {
+    try {
+      const d = await getJson('/api/comparison?ops=0');
+      renderTable(d);
+      const tabs = document.getElementById('tabs');
+      const items = [['better', 'Whisper better'], ['worse', 'Whisper worse']].filter(([k]) => d.featured[k]);
+      tabs.innerHTML = items.map(([k, label], i) => `<button aria-pressed="${i === 0}" data-k="${k}">${label}: ${esc(d.featured[k])}</button>`).join('');
+      tabs.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+        tabs.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+        showClip(d.featured[b.dataset.k], d.featured_notes?.[b.dataset.k], d.systems);
+      }));
+      if (items.length) showClip(d.featured[items[0][0]], d.featured_notes?.[items[0][0]], d.systems);
+    } catch (err) {
+      const msg = err.message === 'comparison_not_available' ? 'Comparison data is not published on this backend.' : `Can't load data from the backend (${esc(err.message)}).`;
+      for (const id of ['clip', 'table']) {
+        const el = document.getElementById(id);
+        el.classList.add('error');
+        el.innerHTML = `<p role="alert">${msg}</p>`;
+      }
+    }
+  }
+
+  // Scripted freeze-card replay: misunderstanding, clarification, caller correction, confirmation.
+  const SCRIPT = [
+    ['caller', 'Hi, someone took my card at the mall. I need to block it.'],
+    ['sys', 'Speech-to-text heard: "someone took my card at the mall, I need to book it". First interpretation: book a branch appointment.'],
+    ['agent', 'Just to check: do you want to book an appointment, or freeze your card because it was taken?'],
+    ['caller', 'No, freeze it. My card was stolen.'],
+    ['sys', 'Request updated: freeze card, reason: stolen. Not acting yet; asking for confirmation.'],
+    ['agent', 'You want to freeze your card because it was stolen. Is that right?'],
+    ['caller', 'Yes.'],
+    ['agent', 'In this demo your card would now be frozen. This is a simulation and nothing real has changed. In real life, call the number on the back of your card or use your bank\'s official app.'],
+  ];
+  let step = 0;
+  const chat = document.getElementById('chat');
+  const nextBtn = document.getElementById('next');
+  function renderStep() {
+    chat.innerHTML = SCRIPT.slice(0, step).map(([who, text]) =>
+      who === 'sys' ? `<div class="sys">${esc(text)}</div>`
+        : `<div class="msg ${who}"><strong>${who === 'caller' ? 'Caller' : 'Voice line'}:</strong> ${esc(text)}</div>`).join('');
+    nextBtn.textContent = step === 0 ? 'Start replay' : step < SCRIPT.length ? 'Next' : 'Done';
+    nextBtn.disabled = step >= SCRIPT.length;
+    document.getElementById('outcome').hidden = step < SCRIPT.length;
+  }
+  nextBtn.addEventListener('click', () => { step = Math.min(step + 1, SCRIPT.length); renderStep(); });
+  document.getElementById('reset').addEventListener('click', () => { step = 0; renderStep(); });
+  renderStep();
+  init();
+
+  // ---- Benchmark audit ----
+  const GENDER_MIN = 5;
+  async function initAudit() {
+    try {
+      const a = await getJson('/api/audit');
+      const cell = (s) => s.n ? `${pct(s.median_wer)} <span class="muted">(n=${s.n})</span>` : '<span class="muted">n=0</span>';
+      document.getElementById('audit-table').innerHTML = `<table>
+        <thead><tr><th>Speakers reading English</th><th class="num">All: median WER</th><th class="num">Female</th><th class="num">Male</th><th class="num">Median speech-to-noise (dB)</th><th>Caveats</th></tr></thead>
+        <tbody>${a.by_group_and_gender.map((g) => `<tr><td>${esc(GROUP_NAMES[g.speaker_group] || g.speaker_group + '-background')}</td>
+          <td class="num">${cell(g.all)}</td><td class="num">${cell(g.female)}</td><td class="num">${cell(g.male)}</td><td class="num">${g.median_snr_proxy_db}</td>
+          <td>${[g.small_sample && 'small sample', g.gender_unbalanced && 'gender unbalanced', g.gender_split_unreliable && `fewer than ${GENDER_MIN} of one gender: don't compare genders`].filter(Boolean).map((x) => `<span class="label">${x}</span>`).join(' ')}</td></tr>`).join('')}</tbody></table>`;
+      const am = a.audio_measures, cc = a.category_counts;
+      document.getElementById('audit-notes').innerHTML = [
+        `<strong>Microphone:</strong> ${esc(a.microphone_metadata)}`,
+        `<strong>Clipping:</strong> ${esc(am.clipping)}.`,
+        `<strong>Recording quality doesn't explain the WER gap:</strong> speech-to-noise is similar across groups (medians 31–37 dB), and its rank correlation with WER is ${am.spearman_snr_vs_wer_all} (all clips) and ${am.spearman_snr_vs_wer_non_english} (non-English backgrounds), close to zero.`,
+        `<strong>Gender doesn't explain it either:</strong> across all non-English backgrounds, female and male medians are both 1.5%. Some groups are unbalanced (Punjabi: 2 female, 9 male; Mandarin: 31 female, 9 male), so gender splits there are unreliable.`,
+        `<strong>The worst clips are mostly reading departures:</strong> 7 of the 8 highest-WER clips show restarts, repeats or many fillers ("uh", "um"), which Scribe transcribes verbatim and counts as errors. ${cc.likely_script_departure} of 468 clips are flagged as likely departures, ${cc.likely_transcription_error} as likely transcription errors, ${cc.possible_recording_problem} as possible recording problems, and ${cc.no_errors} have no errors.`,
+        `<strong>Earlier check:</strong> after controlling for gender, age and age of first English exposure, speaker background still explains extra WER variation (permutation test p ≈ 0.0005). The age of first English exposure is the strongest single factor.`,
+        `<span class="muted">Descriptive results. WER uses the published rule (fillers count as errors).</span>`,
+      ].map((x) => `<li>${x}</li>`).join('');
+      const CAT = { likely_script_departure: 'Likely reading departure', likely_transcription_error: 'Likely transcription mistake', possible_recording_problem: 'Possible recording problem', no_errors: 'No errors (comparison)' };
+      const rows = [...a.listening_review.high_wer.map((c) => ['High WER', c]), ...a.listening_review.low_wer.map((c) => ['Low WER', c]), ...a.listening_review.possible_recording_problem.slice(0, 3).map((c) => ['Noisiest', c])];
+      document.getElementById('audit-listen').innerHTML = `<table><thead><tr><th>Set</th><th>Clip</th><th>Background</th><th class="num">WER</th><th>Signals</th><th>Candidate category</th><th>Listen</th></tr></thead><tbody>
+        ${rows.map(([set, c]) => `<tr><td>${set}</td><td><code>${esc(c.clip_id)}</code></td><td>${esc(GROUP_NAMES[c.speaker_group] || c.speaker_group)}, ${esc(c.gender)}</td><td class="num">${pct(c.wer)}</td>
+          <td class="muted">changed ${c.substitutions}, missed ${c.deletions}, added ${c.insertions}; fillers ${c.fillers}; noise ${c.snr_proxy_db} dB</td>
+          <td>${esc(CAT[c.candidate_category])}</td><td><audio controls preload="none" src="/audio/${encodeURIComponent(c.clip_id)}.mp3" style="width:180px"></audio></td></tr>`).join('')}</tbody></table>`;
+    } catch (err) {
+      for (const id of ['audit-table', 'audit-listen']) document.getElementById(id).innerHTML = `<p role="alert">Couldn't load the audit (${esc(err.message)}).</p>`;
+    }
+  }
+
+  // ---- Census ----
+  async function initCensus() {
+    const box = document.getElementById('census');
+    try {
+      const c = await getJson('/api/census');
+      const tabs = document.getElementById('lang-tabs');
+      tabs.innerHTML = c.languages.map((l, i) => `<button aria-pressed="${i === 0}" data-i="${i}">${esc(l.language === 'Mandarin Chinese' ? 'Mandarin' : l.language)}</button>`).join('');
+      const show = (i) => {
+        const l = c.languages[i];
+        const max = l.wards[0].residents;
+        box.innerHTML = `<p><strong>${l.city_total.toLocaleString()}</strong> Mississauga residents speak ${esc(l.language === 'Mandarin Chinese' ? 'Mandarin' : l.language)} most often at home.
+            <span class="muted">${l.totals_check.all_agree ? 'Citywide total verified: the same in 5 ways of summing the census files.' : 'Totals disagree across files: see /api/census.'}</span></p>
+          <h3 style="font-size:1rem">By ward (11 wards)</h3>
+          <table><thead><tr><th>Ward</th><th class="num">Residents</th><th style="width:40%"></th><th class="num">% of ward</th><th class="num">% of city's speakers</th></tr></thead><tbody>
+          ${l.wards.map((w) => `<tr><td>Ward ${esc(w.geo)}</td><td class="num">${w.residents.toLocaleString()}</td><td><div style="height:10px;border-radius:3px;background:var(--teal);width:${(w.residents / max) * 100}%"></div></td><td class="num">${w.pct_of_geo.toFixed(1)}%</td><td class="num">${w.share_of_city_speakers.toFixed(1)}%</td></tr>`).join('')}</tbody></table>
+          <h3 style="font-size:1rem">Top ${l.top_neighbourhoods.length} neighbourhoods</h3>
+          <table><thead><tr><th>Neighbourhood</th><th class="num">Residents</th><th class="num">% of neighbourhood</th></tr></thead><tbody>
+          ${l.top_neighbourhoods.map((n) => `<tr><td>${esc(n.geo)}</td><td class="num">${n.residents.toLocaleString()}</td><td class="num">${n.pct_of_geo.toFixed(1)}%</td></tr>`).join('')}</tbody></table>
+          <ul class="muted">${c.notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul>`;
+      };
+      tabs.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+        tabs.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+        show(Number(b.dataset.i));
+      }));
+      show(0);
+    } catch (err) {
+      box.innerHTML = `<p role="alert">Census data is pending or unavailable (${esc(err.message)}).</p>`;
+    }
+  }
+
+  // ---- 311 clarification test ----
+  async function init311() {
+    try {
+      const d = await getJson('/api/clarify311');
+      const s = d.summary;
+      document.getElementById('t311-desc').innerHTML = `${esc(d.description)} <strong>Result: ${s.first_interpretation_correct} of ${s.cases} first interpretations were right; ${s.corrected_after_clarification} were fixed by one clarifying question; ${s.final_confirmed_correct} of ${s.cases} ended with the intended request confirmed.</strong> Scribe transcribed ${s.exact_transcripts} of ${s.cases} requests word-for-word, so both mistakes here came from ambiguous wording, not mishearing. Limits: ${d.limits.map(esc).join(' ')}`;
+      const audio = (f) => f ? `<audio controls preload="none" src="/audio311/${encodeURIComponent(f)}" style="width:170px"></audio>` : '';
+      document.getElementById('t311').innerHTML = `<table><thead><tr><th>Case</th><th>Intended request</th><th>Scribe heard (tested)</th><th>First interpretation</th><th>Caller correction (scripted)</th><th>Final confirmed</th></tr></thead><tbody>
+        ${d.cases.map((c) => `<tr><td>${esc(c.case_id)}<br><span class="muted">${esc(c.voice)}</span></td><td>${esc(c.intended_label)}</td>
+          <td>"${esc(c.scribe_heard)}"<br>${audio(c.request_audio)}</td>
+          <td>${c.first_correct ? '✓' : '<span class="label">✗ wrong</span>'} ${esc(c.first_interpretation_label)}</td>
+          <td>${c.correction_script ? `"${esc(c.correction_heard)}"<br>${audio(c.correction_audio)}` : '<span class="muted">"Yes." (none needed)</span>'}</td>
+          <td>${c.final_correct ? '✓' : '✗'} ${esc(c.final_confirmed_label)}</td></tr>`).join('')}</tbody></table>`;
+      // The 311 audio is generated locally (npm run make:311-audio); if it's absent, say so instead of showing dead players.
+      const probe = d.cases[0]?.request_audio;
+      const ok = probe && (await fetch(`/audio311/${encodeURIComponent(probe)}`, { method: 'HEAD' }).then((r) => r.ok, () => false));
+      if (!ok) document.querySelectorAll('#t311 audio').forEach((a) => a.replaceWith(Object.assign(document.createElement('span'), { className: 'muted', textContent: 'audio not available on this machine' })));
+    } catch (err) {
+      document.getElementById('t311').innerHTML = `<p role="alert">311 test results unavailable (${esc(err.message)}).</p>`;
+    }
+  }
+  // Hide any audio player whose file isn't available locally (e.g. 311 audio not generated).
+  document.addEventListener('error', (e) => {
+    if (e.target.tagName === 'AUDIO' && e.target.closest('#t311, #audit-listen, #scam-cases')) {
+      e.target.replaceWith(Object.assign(document.createElement('span'), { className: 'muted', textContent: 'audio not available on this machine' }));
+    }
+  }, true);
+  async function initScam() {
+    try {
+      const d = await getJson('/api/scamcheck'); const s = d.summary;
+      document.getElementById('scam-desc').innerHTML = `${esc(d.description)} <strong>Result: ${s.scams_flagged} of ${s.scams} scams flagged; ${s.correct} of ${s.cases} calls labelled correctly.</strong> Limits: ${d.limits.map(esc).join(' ')}`;
+      const V = { likely_scam: 'Likely scam', be_careful: 'Be careful', no_red_flags: 'No red flags' };
+      document.getElementById('scam-cases').innerHTML = `<table><thead><tr><th>Call (scripted)</th><th>Listen</th><th>Scribe heard (tested)</th><th>Red flags found</th><th>Verdict</th></tr></thead><tbody>
+        ${d.cases.map((c) => `<tr><td><strong>${esc(c.kind)}</strong><br><span class="muted">${esc(c.voice)}</span></td>
+          <td><audio controls preload="none" src="/audio311/${encodeURIComponent(c.audio)}" style="width:180px"></audio></td>
+          <td>${esc(c.scribe_heard)}</td>
+          <td>${c.flags.length ? `<ul>${c.flags.map((f) => `<li>${esc(f)}</li>`).join('')}</ul>` : '<span class="muted">None</span>'}</td>
+          <td><strong>${esc(V[c.verdict])}</strong><br><span class="muted">${esc(c.verdict_text)}</span></td></tr>`).join('')}</tbody></table>`;
+      const ok = await fetch(`/audio311/${encodeURIComponent(d.cases[0].audio)}`, { method: 'HEAD' }).then((r) => r.ok, () => false);
+      if (!ok) document.querySelectorAll('#scam-cases audio').forEach((a) => a.replaceWith(Object.assign(document.createElement('span'), { className: 'muted', textContent: 'audio not available on this machine' })));
+    } catch (err) {
+      document.getElementById('scam-cases').innerHTML = `<p role="alert">Scam-call results unavailable (${esc(err.message)}).</p>`;
+    }
+  }
+  initAudit(); initCensus(); init311(); initScam();
+</script>
+</body>
+</html>

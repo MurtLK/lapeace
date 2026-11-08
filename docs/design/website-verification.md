@@ -1,5 +1,9 @@
 # Website integration and verification
 
+## Current dashboard wiring
+
+The dashboard has been reconnected at the user's request. The full teammate workspace from `hisham/wire-site` replaces the disconnected prototype as the active dashboard. Backend integration, real browser evidence and the 15 passing tests are recorded in `docs/dashboard/INTEGRATION.md`. Earlier single-page and removed-route assertions below are historical.
+
 ## Current website revision, November 8, 2026
 
 The user removed the dashboard from the public website. App.tsx no longer imports or routes DashboardPage, homepage links use existing section anchors, and metadata/no-JavaScript copy no longer mention a dashboard. The teammate's dashboard and API source remain disconnected for separate use.
