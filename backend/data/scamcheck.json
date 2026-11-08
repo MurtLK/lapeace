@@ -1,0 +1,150 @@
+{
+  "kind": "scripted_simulation",
+  "description": "Five scripted phone calls (three scams, two normal), spoken by macOS synthetic voices, transcribed by ElevenLabs Scribe v2 (real API), and checked against fixed red-flag rules.",
+  "limits": [
+    "Scripted calls and synthetic voices, not real scam recordings.",
+    "Five cases: a demonstration, not a measured accuracy rate.",
+    "Rules look at what is said; they do not detect whether a voice is AI-generated.",
+    "Not run through the live ElevenLabs agent."
+  ],
+  "flags": [
+    {
+      "id": "asks_for_code",
+      "label": "Asks for a code, PIN or password",
+      "weight": 3
+    },
+    {
+      "id": "unusual_payment",
+      "label": "Wants gift cards, crypto or a wire transfer",
+      "weight": 3
+    },
+    {
+      "id": "remote_access",
+      "label": "Asks you to install an app or give remote access",
+      "weight": 3
+    },
+    {
+      "id": "threat",
+      "label": "Threatens arrest, fines or a frozen account",
+      "weight": 2
+    },
+    {
+      "id": "urgency",
+      "label": "Pressures you to act right now",
+      "weight": 1
+    },
+    {
+      "id": "secrecy",
+      "label": "Tells you to keep it secret or stay on the line",
+      "weight": 2
+    },
+    {
+      "id": "authority",
+      "label": "Claims to be a government agency or your bank’s fraud team",
+      "weight": 1
+    }
+  ],
+  "summary": {
+    "cases": 5,
+    "correct": 5,
+    "scams_flagged": 3,
+    "scams": 3,
+    "exact_transcripts": 4
+  },
+  "generated_at": "2026-11-08T16:17:02.905Z",
+  "scribe_calls": {
+    "new": 5,
+    "cached": 0
+  },
+  "cases": [
+    {
+      "case_id": "s1",
+      "kind": "Fake tax agency",
+      "voice": "Daniel (macOS, en-GB)",
+      "intended": "scam",
+      "script": "This is the Canada Revenue Agency. You owe back taxes, and a warrant will be issued for your arrest today unless you pay immediately with gift cards. Do not hang up.",
+      "audio": "scam_s1_1b7f31ec1b.wav",
+      "scribe_heard": "This is the Canada Revenue Agency. You owe back taxes and a warrant will be issued for your arrest today unless you pay immediately with gift cards. Do not hang up",
+      "transcript_exact": true,
+      "flags": [
+        "Wants gift cards, crypto or a wire transfer",
+        "Threatens arrest, fines or a frozen account",
+        "Pressures you to act right now",
+        "Tells you to keep it secret or stay on the line",
+        "Claims to be a government agency or your bank’s fraud team"
+      ],
+      "score": 9,
+      "verdict": "likely_scam",
+      "verdict_text": "Likely scam: hang up, and call back using the number on your card or the official website.",
+      "correct": true
+    },
+    {
+      "case_id": "s2",
+      "kind": "Fake bank fraud team",
+      "voice": "Rishi (macOS, en-IN)",
+      "intended": "scam",
+      "script": "Hi, this is your bank's fraud department. Your card has been frozen. To unlock it, please read me the six digit verification code we just texted you.",
+      "audio": "scam_s2_9e45d83aba.wav",
+      "scribe_heard": "Hi, this is your bank's fraud department. Your card has been frozen. To unlock it, please read me the six-digit verification code we just texted you",
+      "transcript_exact": false,
+      "flags": [
+        "Asks for a code, PIN or password",
+        "Threatens arrest, fines or a frozen account",
+        "Claims to be a government agency or your bank’s fraud team"
+      ],
+      "score": 6,
+      "verdict": "likely_scam",
+      "verdict_text": "Likely scam: hang up, and call back using the number on your card or the official website.",
+      "correct": true
+    },
+    {
+      "case_id": "s3",
+      "kind": "Family emergency",
+      "voice": "Moira (macOS, en-IE)",
+      "intended": "scam",
+      "script": "Grandma, it's me. I'm in trouble and I need you to send money by bitcoin right now. Please don't tell Mom.",
+      "audio": "scam_s3_b8bc5d69f8.wav",
+      "scribe_heard": "Grandma, it's me. I'm in trouble and I need you to send money by Bitcoin right now. Please don't tell Mom",
+      "transcript_exact": true,
+      "flags": [
+        "Wants gift cards, crypto or a wire transfer",
+        "Pressures you to act right now",
+        "Tells you to keep it secret or stay on the line"
+      ],
+      "score": 6,
+      "verdict": "likely_scam",
+      "verdict_text": "Likely scam: hang up, and call back using the number on your card or the official website.",
+      "correct": true
+    },
+    {
+      "case_id": "s4",
+      "kind": "Pharmacy reminder",
+      "voice": "Rishi (macOS, en-IN)",
+      "intended": "legitimate",
+      "script": "Hello, this is your pharmacy calling to let you know your prescription is ready for pickup. We are open until nine tonight.",
+      "audio": "scam_s4_01dc564970.wav",
+      "scribe_heard": "Hello, this is your pharmacy calling to let you know your prescription is ready for pickup. We are open until nine tonight",
+      "transcript_exact": true,
+      "flags": [],
+      "score": 0,
+      "verdict": "no_red_flags",
+      "verdict_text": "No red flags found. Still, never share codes or passwords on a call you didn’t make.",
+      "correct": true
+    },
+    {
+      "case_id": "s5",
+      "kind": "Dental appointment",
+      "voice": "Moira (macOS, en-IE)",
+      "intended": "legitimate",
+      "script": "Hi, this is a reminder from your dental clinic about your appointment on Thursday at three. Please call us if you need to reschedule.",
+      "audio": "scam_s5_d86502d479.wav",
+      "scribe_heard": "Hi, this is a reminder from your dental clinic about your appointment on Thursday at three. Please call us if you need to reschedule",
+      "transcript_exact": true,
+      "flags": [],
+      "score": 0,
+      "verdict": "no_red_flags",
+      "verdict_text": "No red flags found. Still, never share codes or passwords on a call you didn’t make.",
+      "correct": true
+    }
+  ]
+}

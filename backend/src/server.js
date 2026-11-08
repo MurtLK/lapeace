@@ -104,7 +104,7 @@ async function handleAgentSession(req, res) {
 
 // Small precomputed evidence files (built by scripts/build-census.js, build_audit.py, test-311.js).
 const DATA_DIR = new URL('../data/', import.meta.url);
-const EVIDENCE = { '/api/census': 'census.json', '/api/audit': 'audit.json', '/api/clarify311': 'clarify311.json' };
+const EVIDENCE = { '/api/census': 'census.json', '/api/audit': 'audit.json', '/api/clarify311': 'clarify311.json', '/api/scamcheck': 'scamcheck.json' };
 const CLARIFY_AUDIO_DIR = process.env.CLARIFY_AUDIO_DIR ? path.resolve(path.dirname(new URL(import.meta.url).pathname), '..', process.env.CLARIFY_AUDIO_DIR) : null;
 async function handleEvidence(res, file) {
   try {
