@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "seed": 20261108,
+  "algorithm": "char_tfidf_nearest_example_v1",
+  "ngram_min": 2,
+  "ngram_max": 4,
+  "train_fraction": 0.6666666666666666,
+  "min_similarity": 0.1,
+  "min_margin": 0.02,
+  "audio_pilot_intents": ["address", "balance", "freeze", "pay_bill"],
+  "audio_pilot_per_locale_intent": 2
+}

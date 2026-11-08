@@ -19,6 +19,26 @@
   ],
   "tasks": [
     {
+      "id": "T71-routed",
+      "title": "MInDS-14 held-out routing baseline and audio-evaluation preparation",
+      "human_owner": "Murtada",
+      "reviewer": "Murtada",
+      "status": "review",
+      "depends_on": [],
+      "assignment": {"agent_id": "/root", "provider": "Codex", "claim_id": "t71-routed-20261108", "run_id": "t71-routed-20261108", "base_sha": "4a3687013df34853f7acc425b6de72504f278618"},
+      "allowed_writes": ["pipeline/lapeace_data/routing.py", "pipeline/lapeace_data/__main__.py", "pipeline/lapeace_data/artifacts.py", "config/routing.json", "contracts/v1/routing.schema.json", "tests/data_checks/test_routing.py", "docs/pipeline/routing.md", "docs/release-checklist.md", "README.md", ".spec.md", "coordination/handoffs/T71-routed.md"],
+      "runtime_outputs": ["data/derived/routed/**", "**/__pycache__/**"],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false,
+      "review_evidence": "coordination/handoffs/T71-routed.md",
+      "actual_run_id": "routing-b34949971eb811df5a73f317",
+      "actual_text_run_id": "routing-70dfbaf4b49a098efeb3214a",
+      "local_transcriptions": 40,
+      "local_model": "openai-whisper/tiny",
+      "actual_requests": 0,
+      "scope_note": "User explicitly requests the Routed research path and subsequently approves running the 40 new banking-request recordings locally in Buzz. Build the held-out native-transcript baseline, run the approved local multilingual Whisper Tiny pilot, preserve raw outputs and compare paired routing outcomes. No inference API calls. Toronto 311 is context only; keep banking labels, accent/census results and Hisham's app separate."
+    },
+    {
       "id": "T80-checklist",
       "title": "Document remaining hackathon implementation and release checks",
       "human_owner": "Murtada",

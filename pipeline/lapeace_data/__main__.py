@@ -44,6 +44,20 @@ def parser():
     command.add_argument("--reviewer")
     command.add_argument("--attested-by")
     command.add_argument("--note")
+    command = stages.add_parser("routed-prepare", help="Freeze held-out MInDS routing data and plan audio evaluation, offline")
+    command.add_argument("--dataset-root", type=Path, required=True)
+    command.add_argument("--output-dir", type=Path, default=PROJECT_ROOT / "data/derived")
+    command.add_argument("--config", type=Path, default=PROJECT_ROOT / "config/routing.json")
+    command = stages.add_parser("routed-score", help="Evaluate routing from source transcripts or imported STT, without API calls")
+    command.add_argument("--pilot-dir", type=Path, required=True)
+    command.add_argument("--predictions-csv", type=Path)
+    command.add_argument("--output-dir", type=Path, default=PROJECT_ROOT / "data/derived")
+    command = stages.add_parser("routed-import-buzz", help="Import unedited neutral-filename Buzz exports and evaluate held-out routing")
+    command.add_argument("--pilot-dir", type=Path, required=True)
+    command.add_argument("--buzz-dir", type=Path, required=True)
+    command.add_argument("--model-id", required=True)
+    command.add_argument("--settings-json", type=Path, required=True)
+    command.add_argument("--output-dir", type=Path, default=PROJECT_ROOT / "data/derived")
     command = stages.add_parser("import-buzz", help="Score existing Buzz outputs against confirmed human-corrected references, offline")
     command.add_argument("--manifest", type=Path, required=True, help="Original pending pilot manifest")
     command.add_argument("--dataset-root", type=Path, required=True)
@@ -65,6 +79,17 @@ def parser():
 def main(argv=None):
     args = parser().parse_args(argv)
     try:
+        if args.stage == "routed-import-buzz":
+            from .routing import import_routing_buzz
+            report = import_routing_buzz(args.pilot_dir, args.buzz_dir, args.model_id, args.settings_json, args.output_dir)
+            print(json.dumps({k: v for k, v in report.items() if k != "summary"}, indent=2))
+            return 0
+        if args.stage in ("routed-prepare", "routed-score"):
+            from .routing import prepare_routing, score_routing
+            report = (prepare_routing(args.dataset_root, args.output_dir, args.config) if args.stage == "routed-prepare"
+                      else score_routing(args.pilot_dir, args.output_dir, args.predictions_csv))
+            print(json.dumps({k: v for k, v in report.items() if k != "summary"}, indent=2))
+            return 0
         if args.stage == "import-buzz":
             from .imported import import_buzz
             report = import_buzz(args.manifest, args.dataset_root, args.references_csv, args.buzz_dir,

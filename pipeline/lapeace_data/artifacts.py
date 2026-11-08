@@ -51,6 +51,9 @@ def check(value, definition):
     if definition in ("ImportedRun", "EvaluatedWards"):
         extension = json.loads((PROJECT_ROOT / "contracts/v1/imported.schema.json").read_text())
         schema["$defs"].update(extension["$defs"])
+    if definition.startswith("Routing"):
+        extension = json.loads((PROJECT_ROOT / "contracts/v1/routing.schema.json").read_text())
+        schema["$defs"].update(extension["$defs"])
     Draft202012Validator({"$ref": f"#/$defs/{definition}", "$defs": schema["$defs"]}).validate(value)
 
 
@@ -83,6 +86,7 @@ def code_state():
     if extension.exists():
         source_paths.append(extension)
     source_paths += sorted((PROJECT_ROOT / "pipeline/lapeace_data").glob("*.py"))
+    source_paths += [p for p in (PROJECT_ROOT / "contracts/v1/routing.schema.json", PROJECT_ROOT / "config/routing.json") if p.exists()]
     hashes = {p.relative_to(PROJECT_ROOT).as_posix(): file_hash(p) for p in source_paths}
     try:
         sha, dirty = git("rev-parse", "HEAD"), bool(git("status", "--porcelain"))

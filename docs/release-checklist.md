@@ -94,7 +94,9 @@ Done when: a judge can follow the evidence, see one working improvement mechanis
 
 ## Optional after the foundation works
 
-Neighbourhood or map views; FLEURS multilingual benchmarking; intent evaluation on MInDS-14/Speech-MASSIVE; additional service scenarios; a full ElevenLabs Agents integration; further model comparisons. Model training, real municipal submission, and the deferred phishing work are outside the current foundation scope.
+The user has now requested the Routed path. Its [MInDS-14 baseline and paired audio evaluation](pipeline/routing.md) are implemented and verified separately from the app: 348 held-out transcript requests and a separately approved 40-request local Buzz/Whisper Tiny audio run were evaluated. This establishes a bounded banking-request speech/routing result, not municipal service performance, and does not complete Hisham's service interaction.
+
+Neighbourhood or map views; FLEURS multilingual benchmarking; further audio/intent evaluation on MInDS-14/Speech-MASSIVE; additional service scenarios; a full ElevenLabs Agents integration; further model comparisons. Training a speech model, real municipal submission, and the deferred phishing work are outside the current foundation scope.
 
 ## Plugin setup requested alongside this checklist
 

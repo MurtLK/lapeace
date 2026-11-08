@@ -1,0 +1,461 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lapeace.local/contracts/v1/routing.schema.json",
+  "title": "MInDS-14 routing operator artifacts",
+  "$defs": {
+    "RoutingConfig": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "seed": {
+          "type": "integer"
+        },
+        "algorithm": {
+          "const": "char_tfidf_nearest_example_v1"
+        },
+        "ngram_min": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "ngram_max": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "train_fraction": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "exclusiveMaximum": 1
+        },
+        "min_similarity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "min_margin": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "audio_pilot_intents": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "abroad",
+              "address",
+              "app_error",
+              "atm_limit",
+              "balance",
+              "business_loan",
+              "card_issues",
+              "cash_deposit",
+              "direct_debit",
+              "freeze",
+              "high_value_payment",
+              "joint_account",
+              "latest_transactions",
+              "pay_bill"
+            ]
+          },
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 14
+        },
+        "audio_pilot_per_locale_intent": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        }
+      },
+      "required": [
+        "schema_version",
+        "seed",
+        "algorithm",
+        "ngram_min",
+        "ngram_max",
+        "train_fraction",
+        "min_similarity",
+        "min_margin",
+        "audio_pilot_intents",
+        "audio_pilot_per_locale_intent"
+      ],
+      "additionalProperties": false
+    },
+    "RoutingManifest": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "artifact_type": {
+          "const": "routing_manifest"
+        },
+        "origin": {"enum": ["dataset", "fixture"]},
+        "config": {
+          "$ref": "#/$defs/RoutingConfig"
+        },
+        "source_hashes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "minProperties": 1
+        },
+        "records": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sample_id": {
+                "type": "string"
+              },
+              "source_relative_path": {
+                "type": "string"
+              },
+              "audio_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "locale": {
+                "enum": [
+                  "en-US",
+                  "es-ES",
+                  "pl-PL",
+                  "pt-PT",
+                  "zh-CN"
+                ]
+              },
+              "language": {
+                "type": "string"
+              },
+              "intent": {
+                "enum": [
+                  "abroad",
+                  "address",
+                  "app_error",
+                  "atm_limit",
+                  "balance",
+                  "business_loan",
+                  "card_issues",
+                  "cash_deposit",
+                  "direct_debit",
+                  "freeze",
+                  "high_value_payment",
+                  "joint_account",
+                  "latest_transactions",
+                  "pay_bill"
+                ]
+              },
+              "reference_raw": {
+                "type": "string",
+                "minLength": 1
+              },
+              "group_id": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "split": {
+                "enum": [
+                  "train",
+                  "test",
+                  "excluded"
+                ]
+              },
+              "exclusion_reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "sample_id",
+              "source_relative_path",
+              "audio_sha256",
+              "locale",
+              "language",
+              "intent",
+              "reference_raw",
+              "group_id",
+              "split",
+              "exclusion_reason"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "audio_pilot_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "context": {
+          "type": "object"
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "schema_version",
+        "artifact_type",
+        "origin",
+        "config",
+        "source_hashes",
+        "records",
+        "audio_pilot_ids",
+        "context",
+        "limitations"
+      ],
+      "additionalProperties": false
+    },
+    "RoutingSummary": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "artifact_type": {
+          "const": "routing_summary"
+        },
+        "origin": {"enum": ["dataset", "fixture"]},
+        "run_id": {
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "reference_text_baseline",
+            "external_stt_routing"
+          ]
+        },
+        "identity": {
+          "type": "object",
+          "properties": {
+            "manifest_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "mode": {
+              "enum": [
+                "reference_text_baseline",
+                "external_stt_routing"
+              ]
+            },
+            "stt_csv_sha256": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "code_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "manifest_sha256",
+            "mode",
+            "stt_csv_sha256",
+            "code_sha256"
+          ],
+          "additionalProperties": false
+        },
+        "overall": {
+          "type": "object"
+        },
+        "reference_overall_same_examples": {"type": "object"},
+        "paired_outcomes": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+        "locales": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "minItems": 5,
+          "maxItems": 5
+        },
+        "stt_profiles": {
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "network_requests": {
+          "const": 0
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "attribution": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "artifact_type",
+        "origin",
+        "run_id",
+        "mode",
+        "identity",
+        "overall",
+        "reference_overall_same_examples",
+        "paired_outcomes",
+        "locales",
+        "stt_profiles",
+        "network_requests",
+        "limitations",
+        "attribution"
+      ],
+      "additionalProperties": false
+    },
+    "RoutingResult": {
+      "type": "object",
+      "properties": {
+        "sample_id": {
+          "type": "string"
+        },
+        "locale": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "expected_intent": {
+          "enum": [
+            "abroad",
+            "address",
+            "app_error",
+            "atm_limit",
+            "balance",
+            "business_loan",
+            "card_issues",
+            "cash_deposit",
+            "direct_debit",
+            "freeze",
+            "high_value_payment",
+            "joint_account",
+            "latest_transactions",
+            "pay_bill"
+          ]
+        },
+        "reference_raw": {
+          "type": "string"
+        },
+        "router_input_raw": {
+          "type": "string"
+        },
+        "predicted_intent": {
+          "enum": [
+            "abroad",
+            "address",
+            "app_error",
+            "atm_limit",
+            "balance",
+            "business_loan",
+            "card_issues",
+            "cash_deposit",
+            "direct_debit",
+            "freeze",
+            "high_value_payment",
+            "joint_account",
+            "latest_transactions",
+            "pay_bill",
+            null
+          ]
+        },
+        "decision": {
+          "enum": [
+            "route",
+            "clarify",
+            "provider_failure"
+          ]
+        },
+        "similarity": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "margin": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "matched_example_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "correct": {
+          "type": "boolean"
+        },
+        "reference_predicted_intent": {
+          "enum": [
+            "abroad",
+            "address",
+            "app_error",
+            "atm_limit",
+            "balance",
+            "business_loan",
+            "card_issues",
+            "cash_deposit",
+            "direct_debit",
+            "freeze",
+            "high_value_payment",
+            "joint_account",
+            "latest_transactions",
+            "pay_bill",
+            null
+          ]
+        },
+        "reference_correct": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "sample_id",
+        "locale",
+        "language",
+        "expected_intent",
+        "reference_raw",
+        "router_input_raw",
+        "predicted_intent",
+        "decision",
+        "similarity",
+        "margin",
+        "matched_example_id",
+        "correct",
+        "reference_predicted_intent",
+        "reference_correct"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
