@@ -26,6 +26,7 @@ Charts and aggregate tables were generated directly from the saved summaries/war
 - Decoded the Spanish FLAC and its WAV conversion to signed 16-bit PCM and verified equal PCM hashes; the original source file remains unchanged. The brief/package retain source licences and identify the original and converted versions.
 - Ran `git diff --check`. No software runtime behavior changed; the preceding 100-test pass is historical validation, not a rerun claim for this documentation task.
 - Plotting used Matplotlib in a temporary `uv --no-project --with matplotlib` environment. Repository dependencies and lockfile were not changed. No API calls, credentials, private recordings or source-dataset edits were involved.
+- Normalized generated CSV line endings to LF after the repository whitespace check flagged the initial CRLF export; numeric values were verified unchanged and the shareable ZIP was refreshed. A concurrent frontend-planning update reformatted the shared task registry and added T31; that entry was preserved rather than overwritten.
 
 ## Limits and next handoff
 
