@@ -12,6 +12,7 @@ LAPEACE is a Sheridan Datathon 2026 project for the ElevenLabs Mississauga Unhea
 - [Product requirements](PRD.md): user journeys and release acceptance criteria.
 - [Technical specification](.spec.md): architecture, dataset handling, metrics, data contracts, and API behavior.
 - [Agent playbook](.agent.md): assignments and coordination across coding tools.
+- [Completion checklist](docs/release-checklist.md): completed pipeline evidence and remaining app, voice demo, integration and submission work.
 - [Agent entry point](AGENTS.md): instructions to read before implementation.
 - [Task registry](coordination/tasks.json): dependency queue and actual implementation status.
 - [Source project plan](docs/references/LAPEACE%20ElevenLabs%20Project%20Plan.md): retained team plan.

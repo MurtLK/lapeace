@@ -19,6 +19,21 @@
   ],
   "tasks": [
     {
+      "id": "T80-checklist",
+      "title": "Document remaining hackathon implementation and release checks",
+      "human_owner": "Murtada",
+      "reviewer": "Murtada",
+      "status": "review",
+      "depends_on": [],
+      "assignment": {"agent_id": "/root", "provider": "Codex", "claim_id": "t80-checklist-20261108", "run_id": "t80-checklist-20261108", "base_sha": "ca9e6f4ca5defc99a1c6949148e94388b666c6f2"},
+      "allowed_writes": ["docs/release-checklist.md", "README.md", "coordination/handoffs/T80-checklist.md"],
+      "runtime_outputs": [],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false,
+      "review_evidence": "coordination/handoffs/T80-checklist.md",
+      "scope_note": "User requests a practical completion checklist and explicitly asks to add nykooi1/vibe-wise as a Codex marketplace. Documentation only in this repo; do not begin Hisham's application implementation. Marketplace registration is authorized user-local setup outside the repository."
+    },
+    {
       "id": "T00",
       "title": "Scaffold and freeze contracts",
       "human_owner": "Murtada",
