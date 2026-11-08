@@ -35,3 +35,13 @@ No project dependency or application source was changed by this research role. N
 ## Suggested application
 
 Use the real supplied logo as the palette anchor, generous near-white surfaces, dark blue body text, and teal/blue primary actions. Adapt the bento structure for useful travel/service content and actual destinations rather than carrying over software-demo content. Keep one dominant hero and one visual bento rhythm. Apply the reveal pattern sparingly, with reduced motion and visible keyboard focus. The homepage builder owns final copy, responsive layout, source integration and build/browser validation.
+
+## Homepage component implementation
+
+The homepage now uses `BlurFade.tsx` and `ShimmerButton.tsx` in addition to the existing `BentoGrid` adaptation. Public 21st catalog pages: https://21st.dev/@dillionverma/components/blur-fade and https://21st.dev/@dillionverma/components/shimmer-button. The Shimmer Button source was downloaded from https://magicui.design/r/shimmer-button.json and retained alongside its registry JSON in `vendor/`.
+
+BlurFade adapts the upstream duration, delay, blur and offset behavior to the browser Web Animations API, with an always-visible base state and cancellation when reduced motion is enabled. ShimmerButton adapts the upstream spark, backdrop and highlight layers to plain CSS and a semantic React Router Link. The shimmer only runs on hover or keyboard focus and is disabled for reduced motion. Both component files include the full MIT license. No Motion, Tailwind or Radix dependency was added. No authenticated 21st MCP retrieval occurred.
+
+The public homepage keeps its supplied logo and bento structure. Mobile hero logo sizing is more compact. A separate sub-agent renamed the dashboard's visible branding and exports to LAPEACE, included the actual logo and preserved legacy review storage keys.
+
+Typecheck, production build and all 15 tests passed. Browser checks covered desktop/390px/360px layouts, motion preferences, 200% text, keyboard dashboard navigation and the existing 468-recording/audio/census integration. No provider session was started.

@@ -1,6 +1,8 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowDown, ArrowUpRight, AudioLines, MapPin, Menu, MessageSquareCheck, X } from 'lucide-react';
+import { BlurFade } from '../components/home/BlurFade';
+import { ShimmerButton } from '../components/home/ShimmerButton';
 import { BentoCard, BentoGrid } from '../components/home/BentoGrid';
 import './home.css';
 
@@ -203,7 +205,7 @@ export function HomePage() {
       <main id="main-content">
         <section className="lp-hero" aria-labelledby="hero-heading">
           <div className="lp-container lp-hero__grid">
-            <div className="lp-hero__copy">
+            <BlurFade className="lp-hero__copy">
               <h1 id="hero-heading" className="lp-hero__title">
                 How well does AI understand accented English?
               </h1>
@@ -211,15 +213,15 @@ export function HomePage() {
                 We study English speech recognition alongside Mississauga language data and a 311 clarification demo.
               </p>
               <div className="lp-hero__actions">
-                <Link to="/dashboard" className="lp-btn lp-btn--primary">
+                <ShimmerButton to="/dashboard">
                   <span>Open dashboard</span>
                   <ArrowUpRight className="lp-icon" aria-hidden="true" />
-                </Link>
+                </ShimmerButton>
                 <a href="#about-sources" className="lp-text-link">
                   Read the sources
                 </a>
               </div>
-            </div>
+            </BlurFade>
 
             <div className="lp-hero__brand-card">
               <div className="lp-hero__logo-frame">

@@ -4,7 +4,7 @@ The homepage's Open dashboard links open `/dashboard`. React hosts the existing 
 
 ## Sources
 
-- `web/public/dashboard-app/`: copied from `origin/hisham/wire-site` at `35e35af`. `app.js`, `style.css`, index and both CSVs are unchanged. `connect.js` uses a same-origin backend by default instead of an expired Cloudflare tunnel and validates configured HTTP(S) addresses.
+- `web/public/dashboard-app/`: copied from `origin/hisham/wire-site` at `35e35af`. The CSVs and scoring logic are unchanged. Visible branding, document title, logo and export filenames now use LAPEACE. Legacy storage keys remain so existing notes and flags survive the rename. `connect.js` uses a same-origin backend by default instead of an expired Cloudflare tunnel and validates configured HTTP(S) addresses.
 - `backend/`: copied from `origin/hisham/backend` at `8ab2a15`. The server and committed evidence are unchanged.
 - `ResearchDashboard.tsx` and `research-dashboard.css`: React route and isolated workspace wrapper. Optional `?tab=community` opens the census tab. `?tab=languages` and `?tab=callcheck` open the teammate's corresponding tabs.
 

@@ -1057,6 +1057,9 @@
 }
 
 @media (max-width: 40rem) {
+  .lp-hero__brand-card { padding: var(--space-md); }
+  .lp-hero__logo-img { max-width: 220px; }
+
   .lp-container {
     padding-inline: var(--space-md);
   }

@@ -1,5 +1,9 @@
 # Website integration and verification
 
+## Current component and branding update
+
+The public homepage imports the adapted 21st.dev/Magic UI Blur Fade and Shimmer Button, with full MIT notices and no new dependencies. The dashboard displays LAPEACE and the supplied logo on desktop and mobile. Export filenames use lapeace; existing saved review keys remain compatible. All 15 tests, typecheck and build passed. Actual browser checks confirmed no page errors or overflow at 1280px, 390px and 360px; reduced motion, hover/focus shimmer, 200% text and keyboard dashboard navigation passed. The 468-recording, audio range, census, direct-refresh and return paths still work.
+
 ## Current dashboard wiring
 
 The dashboard has been reconnected at the user's request. The full teammate workspace from `hisham/wire-site` replaces the disconnected prototype as the active dashboard. Backend integration, real browser evidence and the 15 passing tests are recorded in `docs/dashboard/INTEGRATION.md`. Earlier single-page and removed-route assertions below are historical.

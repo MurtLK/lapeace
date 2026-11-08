@@ -9,7 +9,7 @@ describe('website navigation', () => {
     vi.stubGlobal('fetch', fetch);
     render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
     fireEvent.click(screen.getAllByRole('link', { name: 'Open dashboard' })[0]);
-    expect(screen.getByTitle('Mississauga Unheard research dashboard')).toHaveAttribute('src', '/dashboard-app/index.html');
+    expect(screen.getByTitle('LAPEACE research dashboard')).toHaveAttribute('src', '/dashboard-app/index.html');
     fireEvent.click(screen.getByRole('link', { name: 'Back to website' }));
     expect(screen.getByRole('heading', { name: 'How well does AI understand accented English?' })).toBeVisible();
     expect(fetch).not.toHaveBeenCalled();
@@ -17,12 +17,12 @@ describe('website navigation', () => {
 
   it('supports a direct community visit with a configured backend', () => {
     render(<MemoryRouter initialEntries={['/dashboard?tab=community&backend=https%3A%2F%2Fapi.example.com']}><App /></MemoryRouter>);
-    expect(screen.getByTitle('Mississauga Unheard research dashboard')).toHaveAttribute('src', '/dashboard-app/index.html?backend=https%3A%2F%2Fapi.example.com#where');
+    expect(screen.getByTitle('LAPEACE research dashboard')).toHaveAttribute('src', '/dashboard-app/index.html?backend=https%3A%2F%2Fapi.example.com#where');
   });
 
   it('does not forward unsafe backend protocols to the workspace', () => {
     render(<MemoryRouter initialEntries={['/dashboard?backend=javascript%3Aalert(1)']}><App /></MemoryRouter>);
-    expect(screen.getByTitle('Mississauga Unheard research dashboard')).toHaveAttribute('src', '/dashboard-app/index.html');
+    expect(screen.getByTitle('LAPEACE research dashboard')).toHaveAttribute('src', '/dashboard-app/index.html');
   });
 
   it('provides a useful return destination for unknown routes', () => {

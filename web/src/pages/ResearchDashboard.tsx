@@ -26,7 +26,7 @@ export function ResearchDashboard() {
         <Link to="/"><ArrowLeft aria-hidden="true" size={18} />Back to website</Link>
         <a href={src} target="_blank" rel="noopener noreferrer">Open workspace in a new tab<ExternalLink aria-hidden="true" size={16} /></a>
       </nav>
-      <iframe className="research-dashboard__frame" src={src} title="Mississauga Unheard research dashboard" allow="microphone" />
+      <iframe className="research-dashboard__frame" src={src} title="LAPEACE research dashboard" allow="microphone" />
     </main>
   );
 }
