@@ -2,7 +2,7 @@
 // tabs, and attaches the Speech Accent Archive audio from the backend to every clip.
 // Backend address: ?backend=https://… in the URL, else the default below, else same origin when served by the backend.
 (() => {
-  const DEFAULT_BACKEND = 'https://wall-requiring-statements-condition.trycloudflare.com'; // changes when the tunnel restarts
+  const DEFAULT_BACKEND = 'https://moved-creation-pizza-customized.trycloudflare.com'; // changes when the tunnel restarts
   const q = new URLSearchParams(location.search).get('backend');
   const servedByBackend = location.pathname.startsWith('/lab');
   const BACKEND = (q || (servedByBackend ? location.origin : DEFAULT_BACKEND)).replace(/\/$/, '');
