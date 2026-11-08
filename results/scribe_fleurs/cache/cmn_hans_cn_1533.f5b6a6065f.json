@@ -1,0 +1,243 @@
+{
+  "clip_id": "cmn_hans_cn_1533",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "zho",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:56.394Z",
+  "response": {
+    "language_code": "zho",
+    "language_probability": 1,
+    "text": "许多常见格式，例如 APS 格式系列，都与这个长宽比相同或相当接近。",
+    "words": [
+      {
+        "text": "许",
+        "start": 4.1,
+        "end": 4.26,
+        "type": "word",
+        "logprob": -0.00014530557382386178
+      },
+      {
+        "text": "多",
+        "start": 4.26,
+        "end": 4.42,
+        "type": "word",
+        "logprob": -0.00014530557382386178
+      },
+      {
+        "text": "常",
+        "start": 4.42,
+        "end": 4.48,
+        "type": "word",
+        "logprob": -0.00016223068814724684
+      },
+      {
+        "text": "见",
+        "start": 4.48,
+        "end": 4.72,
+        "type": "word",
+        "logprob": -0.00016223068814724684
+      },
+      {
+        "text": "格",
+        "start": 4.72,
+        "end": 4.92,
+        "type": "word",
+        "logprob": -0.000030040289857424796
+      },
+      {
+        "text": "式",
+        "start": 4.92,
+        "end": 4.98,
+        "type": "word",
+        "logprob": -0.000030040289857424796
+      },
+      {
+        "text": "，",
+        "start": 5.16,
+        "end": 5.2,
+        "type": "word",
+        "logprob": -0.001035749795846641
+      },
+      {
+        "text": "例",
+        "start": 5.2,
+        "end": 5.34,
+        "type": "word",
+        "logprob": -0.0010882653295993805
+      },
+      {
+        "text": "如",
+        "start": 5.52,
+        "end": 5.72,
+        "type": "word",
+        "logprob": -0.0010882653295993805
+      },
+      {
+        "text": " ",
+        "start": 5.72,
+        "end": 5.78,
+        "type": "spacing",
+        "logprob": -0.013395430520176888
+      },
+      {
+        "text": "APS",
+        "start": 5.78,
+        "end": 6.38,
+        "type": "word",
+        "logprob": -0.013395430520176888
+      },
+      {
+        "text": " ",
+        "start": 6.38,
+        "end": 6.48,
+        "type": "spacing",
+        "logprob": -0.00011812942830147222
+      },
+      {
+        "text": "格",
+        "start": 6.48,
+        "end": 6.64,
+        "type": "word",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": "式",
+        "start": 6.64,
+        "end": 6.84,
+        "type": "word",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": "系",
+        "start": 6.84,
+        "end": 7.04,
+        "type": "word",
+        "logprob": -0.00004565611743601039
+      },
+      {
+        "text": "列",
+        "start": 7.04,
+        "end": 7.12,
+        "type": "word",
+        "logprob": -0.00004565611743601039
+      },
+      {
+        "text": "，",
+        "start": 7.12,
+        "end": 7.76,
+        "type": "word",
+        "logprob": -0.07889007776975632
+      },
+      {
+        "text": "都",
+        "start": 7.86,
+        "end": 8,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": "与",
+        "start": 8,
+        "end": 8.16,
+        "type": "word",
+        "logprob": -0.0001931004080688581
+      },
+      {
+        "text": "这",
+        "start": 8.16,
+        "end": 8.28,
+        "type": "word",
+        "logprob": -0.0000040531076592742465
+      },
+      {
+        "text": "个",
+        "start": 8.28,
+        "end": 8.54,
+        "type": "word",
+        "logprob": -0.0000040531076592742465
+      },
+      {
+        "text": "长",
+        "start": 8.54,
+        "end": 8.74,
+        "type": "word",
+        "logprob": -0.00004303362584323622
+      },
+      {
+        "text": "宽",
+        "start": 8.74,
+        "end": 8.86,
+        "type": "word",
+        "logprob": -0.00882097240537405
+      },
+      {
+        "text": "比",
+        "start": 8.92,
+        "end": 9.2,
+        "type": "word",
+        "logprob": -0.0000036954811548639555
+      },
+      {
+        "text": "相",
+        "start": 9.2,
+        "end": 9.44,
+        "type": "word",
+        "logprob": -0.000010132738680113107
+      },
+      {
+        "text": "同",
+        "start": 9.44,
+        "end": 9.78,
+        "type": "word",
+        "logprob": -0.000010132738680113107
+      },
+      {
+        "text": "或",
+        "start": 9.96,
+        "end": 10.04,
+        "type": "word",
+        "logprob": -0.000008106198947643861
+      },
+      {
+        "text": "相",
+        "start": 10.74,
+        "end": 10.86,
+        "type": "word",
+        "logprob": -0.000059126061387360096
+      },
+      {
+        "text": "当",
+        "start": 11,
+        "end": 11.28,
+        "type": "word",
+        "logprob": -0.000059126061387360096
+      },
+      {
+        "text": "接",
+        "start": 11.28,
+        "end": 11.48,
+        "type": "word",
+        "logprob": -0.000008106198947643861
+      },
+      {
+        "text": "近",
+        "start": 11.48,
+        "end": 11.54,
+        "type": "word",
+        "logprob": -0.000008106198947643861
+      },
+      {
+        "text": "。",
+        "start": 11.54,
+        "end": 11.54,
+        "type": "word",
+        "logprob": -0.000006198863957251888
+      }
+    ],
+    "transcription_id": "zddLIHZ0vuW6JQdEQVkO",
+    "audio_duration_secs": 14.92
+  }
+}

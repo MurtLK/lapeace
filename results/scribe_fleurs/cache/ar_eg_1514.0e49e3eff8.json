@@ -1,0 +1,292 @@
+{
+  "clip_id": "ar_eg_1514",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "ara",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:21.333Z",
+  "response": {
+    "language_code": "ara",
+    "language_probability": 1,
+    "text": "عندما توقف القتال بعد نقل الجرحى إلى المستشفى، بقى حوالي أربعون من السجناء الباقين في الفناء ورفضوا العودة إلى زنازينهم.",
+    "words": [
+      {
+        "text": "عندما",
+        "start": 0.52,
+        "end": 0.94,
+        "type": "word",
+        "logprob": -0.00007311875197046902
+      },
+      {
+        "text": " ",
+        "start": 0.94,
+        "end": 1,
+        "type": "spacing",
+        "logprob": -0.00007724463648628443
+      },
+      {
+        "text": "توقف",
+        "start": 1,
+        "end": 1.46,
+        "type": "word",
+        "logprob": -0.0016861192634678446
+      },
+      {
+        "text": " ",
+        "start": 1.46,
+        "end": 1.52,
+        "type": "spacing",
+        "logprob": -0.00031454383861273527
+      },
+      {
+        "text": "القتال",
+        "start": 1.52,
+        "end": 2.06,
+        "type": "word",
+        "logprob": -0.0003485662309685722
+      },
+      {
+        "text": " ",
+        "start": 2.06,
+        "end": 2.1,
+        "type": "spacing",
+        "logprob": -0.00044705410255119205
+      },
+      {
+        "text": "بعد",
+        "start": 2.1,
+        "end": 2.34,
+        "type": "word",
+        "logprob": -0.00044705410255119205
+      },
+      {
+        "text": " ",
+        "start": 2.34,
+        "end": 2.38,
+        "type": "spacing",
+        "logprob": -0.0000431528314948082
+      },
+      {
+        "text": "نقل",
+        "start": 2.38,
+        "end": 2.7,
+        "type": "word",
+        "logprob": -0.0000431528314948082
+      },
+      {
+        "text": " ",
+        "start": 2.7,
+        "end": 2.72,
+        "type": "spacing",
+        "logprob": -0.000047205765440594405
+      },
+      {
+        "text": "الجرحى",
+        "start": 2.72,
+        "end": 3.32,
+        "type": "word",
+        "logprob": -0.00011353531347898145
+      },
+      {
+        "text": " ",
+        "start": 3.32,
+        "end": 3.34,
+        "type": "spacing",
+        "logprob": -0.00033706706017255783
+      },
+      {
+        "text": "إلى",
+        "start": 3.34,
+        "end": 3.48,
+        "type": "word",
+        "logprob": -0.00033706706017255783
+      },
+      {
+        "text": " ",
+        "start": 3.48,
+        "end": 3.5,
+        "type": "spacing",
+        "logprob": -0.0006841464783065021
+      },
+      {
+        "text": "المستشفى،",
+        "start": 3.5,
+        "end": 4.1,
+        "type": "word",
+        "logprob": -0.0005423603126675718
+      },
+      {
+        "text": " ",
+        "start": 4.1,
+        "end": 4.1,
+        "type": "spacing",
+        "logprob": -0.026406338438391685
+      },
+      {
+        "text": "بقى",
+        "start": 4.66,
+        "end": 4.98,
+        "type": "word",
+        "logprob": -0.026406338438391685
+      },
+      {
+        "text": " ",
+        "start": 4.98,
+        "end": 5.06,
+        "type": "spacing",
+        "logprob": -0.00021026308240834624
+      },
+      {
+        "text": "حوالي",
+        "start": 5.06,
+        "end": 5.5,
+        "type": "word",
+        "logprob": -0.00021026308240834624
+      },
+      {
+        "text": " ",
+        "start": 5.5,
+        "end": 5.58,
+        "type": "spacing",
+        "logprob": -0.09027449786663055
+      },
+      {
+        "text": "أربعون",
+        "start": 5.58,
+        "end": 6.14,
+        "type": "word",
+        "logprob": -0.02623583353124559
+      },
+      {
+        "text": " ",
+        "start": 6.14,
+        "end": 6.18,
+        "type": "spacing",
+        "logprob": -0.00001847726889536716
+      },
+      {
+        "text": "من",
+        "start": 6.18,
+        "end": 6.3,
+        "type": "word",
+        "logprob": -0.00001847726889536716
+      },
+      {
+        "text": " ",
+        "start": 6.3,
+        "end": 6.36,
+        "type": "spacing",
+        "logprob": -0.00997876562178135
+      },
+      {
+        "text": "السجناء",
+        "start": 6.36,
+        "end": 7.22,
+        "type": "word",
+        "logprob": -0.006357650405594281
+      },
+      {
+        "text": " ",
+        "start": 7.22,
+        "end": 7.28,
+        "type": "spacing",
+        "logprob": -0.00011157367407577112
+      },
+      {
+        "text": "الباقين",
+        "start": 7.28,
+        "end": 7.94,
+        "type": "word",
+        "logprob": -0.0004937910655696344
+      },
+      {
+        "text": " ",
+        "start": 7.94,
+        "end": 8.119,
+        "type": "spacing",
+        "logprob": -0.000003814689989667386
+      },
+      {
+        "text": "في",
+        "start": 8.119,
+        "end": 8.18,
+        "type": "word",
+        "logprob": -0.000003814689989667386
+      },
+      {
+        "text": " ",
+        "start": 8.18,
+        "end": 8.2,
+        "type": "spacing",
+        "logprob": -0.0002932118659373373
+      },
+      {
+        "text": "الفناء",
+        "start": 8.2,
+        "end": 8.68,
+        "type": "word",
+        "logprob": -0.0002163385070161894
+      },
+      {
+        "text": " ",
+        "start": 8.68,
+        "end": 8.78,
+        "type": "spacing",
+        "logprob": -0.00029774048016406596
+      },
+      {
+        "text": "ورفضوا",
+        "start": 8.78,
+        "end": 9.24,
+        "type": "word",
+        "logprob": -0.0005802125718522196
+      },
+      {
+        "text": " ",
+        "start": 9.24,
+        "end": 9.26,
+        "type": "spacing",
+        "logprob": -0.00000965590606938349
+      },
+      {
+        "text": "العودة",
+        "start": 9.26,
+        "end": 9.62,
+        "type": "word",
+        "logprob": -0.00008928060424295836
+      },
+      {
+        "text": " ",
+        "start": 9.62,
+        "end": 9.68,
+        "type": "spacing",
+        "logprob": -0.000051973900554003194
+      },
+      {
+        "text": "إلى",
+        "start": 9.68,
+        "end": 9.82,
+        "type": "word",
+        "logprob": -0.000051973900554003194
+      },
+      {
+        "text": " ",
+        "start": 9.82,
+        "end": 9.9,
+        "type": "spacing",
+        "logprob": -0.021869104355573654
+      },
+      {
+        "text": "زنازينهم.",
+        "start": 9.9,
+        "end": 10.82,
+        "type": "word",
+        "logprob": -0.004240757403648685
+      }
+    ],
+    "transcription_id": "arPEZelEBnFbsG2i4Hwa",
+    "audio_duration_secs": 11.58
+  }
+}

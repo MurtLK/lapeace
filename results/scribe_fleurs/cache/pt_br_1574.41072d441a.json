@@ -1,0 +1,446 @@
+{
+  "clip_id": "pt_br_1574",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "por",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:06.393Z",
+  "response": {
+    "language_code": "por",
+    "language_probability": 1,
+    "text": "O inverno pode ser decepcionantemente frio. As temperaturas raramente ficam abaixo do congelante, mas o vento e a umidade combinadas tornam a sensação mais fria que o que o termômetro mostra.",
+    "words": [
+      {
+        "text": "O",
+        "start": 0.84,
+        "end": 0.92,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 0.92,
+        "end": 0.98,
+        "type": "spacing",
+        "logprob": -0.00003528532761265524
+      },
+      {
+        "text": "inverno",
+        "start": 0.98,
+        "end": 1.44,
+        "type": "word",
+        "logprob": -0.00003528532761265524
+      },
+      {
+        "text": " ",
+        "start": 1.44,
+        "end": 1.46,
+        "type": "spacing",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": "pode",
+        "start": 1.46,
+        "end": 1.68,
+        "type": "word",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": " ",
+        "start": 1.68,
+        "end": 1.74,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "ser",
+        "start": 1.74,
+        "end": 1.9,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 1.9,
+        "end": 1.96,
+        "type": "spacing",
+        "logprob": -0.006178682669997215
+      },
+      {
+        "text": "decepcionantemente",
+        "start": 1.96,
+        "end": 3.1,
+        "type": "word",
+        "logprob": -0.00410554059393083
+      },
+      {
+        "text": " ",
+        "start": 3.1,
+        "end": 3.16,
+        "type": "spacing",
+        "logprob": -0.000003933898824470816
+      },
+      {
+        "text": "frio.",
+        "start": 3.16,
+        "end": 3.44,
+        "type": "word",
+        "logprob": -0.000028227181974216365
+      },
+      {
+        "text": " ",
+        "start": 3.44,
+        "end": 3.92,
+        "type": "spacing",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": "As",
+        "start": 3.92,
+        "end": 4,
+        "type": "word",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": " ",
+        "start": 4,
+        "end": 4.04,
+        "type": "spacing",
+        "logprob": -0.000037431014789035544
+      },
+      {
+        "text": "temperaturas",
+        "start": 4.04,
+        "end": 4.68,
+        "type": "word",
+        "logprob": -0.000037431014789035544
+      },
+      {
+        "text": " ",
+        "start": 4.68,
+        "end": 4.72,
+        "type": "spacing",
+        "logprob": -0.000025152843591058627
+      },
+      {
+        "text": "raramente",
+        "start": 4.72,
+        "end": 5.26,
+        "type": "word",
+        "logprob": -0.00001219896754870812
+      },
+      {
+        "text": " ",
+        "start": 5.26,
+        "end": 5.32,
+        "type": "spacing",
+        "logprob": -0.0005312938592396677
+      },
+      {
+        "text": "ficam",
+        "start": 5.32,
+        "end": 5.58,
+        "type": "word",
+        "logprob": -0.0005312938592396677
+      },
+      {
+        "text": " ",
+        "start": 5.58,
+        "end": 5.64,
+        "type": "spacing",
+        "logprob": -0.000002622600959512056
+      },
+      {
+        "text": "abaixo",
+        "start": 5.64,
+        "end": 6.02,
+        "type": "word",
+        "logprob": -0.000002622600959512056
+      },
+      {
+        "text": " ",
+        "start": 6.02,
+        "end": 6.04,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "do",
+        "start": 6.04,
+        "end": 6.14,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": " ",
+        "start": 6.14,
+        "end": 6.18,
+        "type": "spacing",
+        "logprob": -0.00010573305189609528
+      },
+      {
+        "text": "congelante,",
+        "start": 6.18,
+        "end": 6.8,
+        "type": "word",
+        "logprob": -0.00005863708065331511
+      },
+      {
+        "text": " ",
+        "start": 6.8,
+        "end": 6.82,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "mas",
+        "start": 7.34,
+        "end": 7.48,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 7.48,
+        "end": 7.52,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "o",
+        "start": 7.52,
+        "end": 7.6,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 7.6,
+        "end": 7.64,
+        "type": "spacing",
+        "logprob": -0.000015139465176616795
+      },
+      {
+        "text": "vento",
+        "start": 7.64,
+        "end": 7.9,
+        "type": "word",
+        "logprob": -0.000015139465176616795
+      },
+      {
+        "text": " ",
+        "start": 7.9,
+        "end": 7.92,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "e",
+        "start": 7.92,
+        "end": 7.96,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 7.96,
+        "end": 7.98,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "a",
+        "start": 7.98,
+        "end": 8,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 8,
+        "end": 8.039,
+        "type": "spacing",
+        "logprob": -0.000016093124941107817
+      },
+      {
+        "text": "umidade",
+        "start": 8.039,
+        "end": 8.54,
+        "type": "word",
+        "logprob": -0.0000047683346622307
+      },
+      {
+        "text": " ",
+        "start": 8.54,
+        "end": 8.58,
+        "type": "spacing",
+        "logprob": -0.00010680581908673048
+      },
+      {
+        "text": "combinadas",
+        "start": 8.58,
+        "end": 9.18,
+        "type": "word",
+        "logprob": -0.00007481218344764783
+      },
+      {
+        "text": " ",
+        "start": 9.18,
+        "end": 9.26,
+        "type": "spacing",
+        "logprob": -0.000021934269170742482
+      },
+      {
+        "text": "tornam",
+        "start": 9.26,
+        "end": 9.56,
+        "type": "word",
+        "logprob": -0.000014622846113828322
+      },
+      {
+        "text": " ",
+        "start": 9.56,
+        "end": 9.6,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "a",
+        "start": 9.6,
+        "end": 9.7,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 9.7,
+        "end": 9.74,
+        "type": "spacing",
+        "logprob": -0.00022289653134066612
+      },
+      {
+        "text": "sensação",
+        "start": 9.74,
+        "end": 10.26,
+        "type": "word",
+        "logprob": -0.00022289653134066612
+      },
+      {
+        "text": " ",
+        "start": 10.26,
+        "end": 10.3,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "mais",
+        "start": 10.3,
+        "end": 10.58,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 10.58,
+        "end": 10.62,
+        "type": "spacing",
+        "logprob": -0.00002276871418871451
+      },
+      {
+        "text": "fria",
+        "start": 10.62,
+        "end": 10.9,
+        "type": "word",
+        "logprob": -0.000017136140279205847
+      },
+      {
+        "text": " ",
+        "start": 10.9,
+        "end": 11.36,
+        "type": "spacing",
+        "logprob": -0.00005173549288883805
+      },
+      {
+        "text": "que",
+        "start": 11.36,
+        "end": 11.46,
+        "type": "word",
+        "logprob": -0.00005173549288883805
+      },
+      {
+        "text": " ",
+        "start": 11.46,
+        "end": 11.5,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "o",
+        "start": 11.5,
+        "end": 11.56,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": " ",
+        "start": 11.56,
+        "end": 11.6,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "que",
+        "start": 11.6,
+        "end": 11.7,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": " ",
+        "start": 11.7,
+        "end": 11.74,
+        "type": "spacing",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": "o",
+        "start": 11.74,
+        "end": 11.76,
+        "type": "word",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": " ",
+        "start": 11.76,
+        "end": 11.86,
+        "type": "spacing",
+        "logprob": -0.000029205850296420977
+      },
+      {
+        "text": "termômetro",
+        "start": 11.86,
+        "end": 12.46,
+        "type": "word",
+        "logprob": -0.0006867393225547857
+      },
+      {
+        "text": " ",
+        "start": 12.46,
+        "end": 12.54,
+        "type": "spacing",
+        "logprob": -0.000009179073458653875
+      },
+      {
+        "text": "mostra.",
+        "start": 12.54,
+        "end": 12.98,
+        "type": "word",
+        "logprob": -0.00001730202919653883
+      }
+    ],
+    "transcription_id": "etjAyAmxPaN7WOBa2teo",
+    "audio_duration_secs": 14.1
+  }
+}

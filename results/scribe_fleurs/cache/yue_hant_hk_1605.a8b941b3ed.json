@@ -1,0 +1,327 @@
+{
+  "clip_id": "yue_hant_hk_1605",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "yue",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:29.916Z",
+  "response": {
+    "language_code": "yue",
+    "language_probability": 1,
+    "text": "由于与大陆距离遥远，哺乳类动物没法划渡过海，使得巨型陆龟成为加拉巴哥群岛的主要食草动物。",
+    "words": [
+      {
+        "text": "由",
+        "start": 1.7,
+        "end": 1.8,
+        "type": "word",
+        "logprob": -0.000717025191988796
+      },
+      {
+        "text": "于",
+        "start": 1.8,
+        "end": 2.16,
+        "type": "word",
+        "logprob": -0.000717025191988796
+      },
+      {
+        "text": "与",
+        "start": 2.16,
+        "end": 2.4,
+        "type": "word",
+        "logprob": -0.00011205045302631333
+      },
+      {
+        "text": "大",
+        "start": 2.4,
+        "end": 2.66,
+        "type": "word",
+        "logprob": -0.0010493254521861672
+      },
+      {
+        "text": "陆",
+        "start": 2.66,
+        "end": 2.86,
+        "type": "word",
+        "logprob": -0.0010493254521861672
+      },
+      {
+        "text": "距",
+        "start": 2.86,
+        "end": 3.1,
+        "type": "word",
+        "logprob": -0.000014424220353248529
+      },
+      {
+        "text": "离",
+        "start": 3.1,
+        "end": 3.36,
+        "type": "word",
+        "logprob": -0.000014424220353248529
+      },
+      {
+        "text": "遥",
+        "start": 3.36,
+        "end": 3.6,
+        "type": "word",
+        "logprob": -0.0001662831346038729
+      },
+      {
+        "text": "远",
+        "start": 3.6,
+        "end": 3.6,
+        "type": "word",
+        "logprob": -0.000008702239938429557
+      },
+      {
+        "text": "，",
+        "start": 3.88,
+        "end": 4.38,
+        "type": "word",
+        "logprob": -0.00001811964830267243
+      },
+      {
+        "text": "哺",
+        "start": 4.38,
+        "end": 4.56,
+        "type": "word",
+        "logprob": -0.09280747175216675
+      },
+      {
+        "text": "乳",
+        "start": 4.56,
+        "end": 4.76,
+        "type": "word",
+        "logprob": -0.09280747175216675
+      },
+      {
+        "text": "类",
+        "start": 4.76,
+        "end": 5,
+        "type": "word",
+        "logprob": -0.0008328068652190268
+      },
+      {
+        "text": "动",
+        "start": 5,
+        "end": 5.16,
+        "type": "word",
+        "logprob": -0.0015750633319839835
+      },
+      {
+        "text": "物",
+        "start": 5.16,
+        "end": 5.18,
+        "type": "word",
+        "logprob": -0.0015750633319839835
+      },
+      {
+        "text": "没",
+        "start": 5.56,
+        "end": 5.56,
+        "type": "word",
+        "logprob": -0.4794124662876129
+      },
+      {
+        "text": "法",
+        "start": 5.74,
+        "end": 5.96,
+        "type": "word",
+        "logprob": -0.00005245071224635467
+      },
+      {
+        "text": "划",
+        "start": 5.96,
+        "end": 6.24,
+        "type": "word",
+        "logprob": -0.5501835942268372
+      },
+      {
+        "text": "渡",
+        "start": 6.24,
+        "end": 6.52,
+        "type": "word",
+        "logprob": -0.027016503736376762
+      },
+      {
+        "text": "过",
+        "start": 6.52,
+        "end": 6.76,
+        "type": "word",
+        "logprob": -0.0001652104256208986
+      },
+      {
+        "text": "海",
+        "start": 6.76,
+        "end": 6.96,
+        "type": "word",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": "，",
+        "start": 7.16,
+        "end": 7.46,
+        "type": "word",
+        "logprob": -0.000017404405298293568
+      },
+      {
+        "text": "使",
+        "start": 7.48,
+        "end": 7.62,
+        "type": "word",
+        "logprob": -0.004126605577766895
+      },
+      {
+        "text": "得",
+        "start": 7.62,
+        "end": 7.78,
+        "type": "word",
+        "logprob": -0.004126605577766895
+      },
+      {
+        "text": "巨",
+        "start": 7.78,
+        "end": 7.78,
+        "type": "word",
+        "logprob": -0.00002682172998902388
+      },
+      {
+        "text": "型",
+        "start": 8.02,
+        "end": 8.02,
+        "type": "word",
+        "logprob": -0.00032050241134129465
+      },
+      {
+        "text": "陆",
+        "start": 8.02,
+        "end": 8.02,
+        "type": "word",
+        "logprob": -0.001524953986518085
+      },
+      {
+        "text": "龟",
+        "start": 8.28,
+        "end": 8.28,
+        "type": "word",
+        "logprob": -0.021114801988005638
+      },
+      {
+        "text": "成",
+        "start": 8.54,
+        "end": 8.56,
+        "type": "word",
+        "logprob": -0.28306612372398376
+      },
+      {
+        "text": "为",
+        "start": 8.84,
+        "end": 8.86,
+        "type": "word",
+        "logprob": -0.28306612372398376
+      },
+      {
+        "text": "加",
+        "start": 9.28,
+        "end": 9.54,
+        "type": "word",
+        "logprob": -0.000890097115188837
+      },
+      {
+        "text": "拉",
+        "start": 9.54,
+        "end": 9.9,
+        "type": "word",
+        "logprob": -0.00009703165414975956
+      },
+      {
+        "text": "巴",
+        "start": 9.9,
+        "end": 10.18,
+        "type": "word",
+        "logprob": -0.05495215207338333
+      },
+      {
+        "text": "哥",
+        "start": 10.18,
+        "end": 10.48,
+        "type": "word",
+        "logprob": -0.20215776562690735
+      },
+      {
+        "text": "群",
+        "start": 10.48,
+        "end": 10.74,
+        "type": "word",
+        "logprob": -0.000039934315282152966
+      },
+      {
+        "text": "岛",
+        "start": 10.74,
+        "end": 10.94,
+        "type": "word",
+        "logprob": -0.00026306029758416116
+      },
+      {
+        "text": "的",
+        "start": 10.94,
+        "end": 11.1,
+        "type": "word",
+        "logprob": -0.000068662193370983
+      },
+      {
+        "text": "主",
+        "start": 11.1,
+        "end": 11.34,
+        "type": "word",
+        "logprob": -0.000068662193370983
+      },
+      {
+        "text": "要",
+        "start": 11.34,
+        "end": 11.58,
+        "type": "word",
+        "logprob": -0.000068662193370983
+      },
+      {
+        "text": "食",
+        "start": 11.58,
+        "end": 11.78,
+        "type": "word",
+        "logprob": -0.0038206216413527727
+      },
+      {
+        "text": "草",
+        "start": 11.78,
+        "end": 12.02,
+        "type": "word",
+        "logprob": -0.000006198863957251888
+      },
+      {
+        "text": "动",
+        "start": 12.02,
+        "end": 12.24,
+        "type": "word",
+        "logprob": -0.001644212519749999
+      },
+      {
+        "text": "物",
+        "start": 12.24,
+        "end": 12.36,
+        "type": "word",
+        "logprob": -0.001644212519749999
+      },
+      {
+        "text": "。",
+        "start": 12.36,
+        "end": 12.36,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      }
+    ],
+    "transcription_id": "E57893hIyBnBN80wnCNj",
+    "audio_duration_secs": 13.68
+  }
+}

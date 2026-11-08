@@ -1,0 +1,236 @@
+{
+  "clip_id": "en_us_1511",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "eng",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:32.837Z",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1,
+    "text": "Soon, officers equipped with riot gear entered the yard and cornered the inmates with tear gas.",
+    "words": [
+      {
+        "text": "Soon,",
+        "start": 1.9,
+        "end": 2.24,
+        "type": "word",
+        "logprob": -0.0006103492574766278
+      },
+      {
+        "text": " ",
+        "start": 2.24,
+        "end": 2.44,
+        "type": "spacing",
+        "logprob": -0.000004291525328881107
+      },
+      {
+        "text": "officers",
+        "start": 2.44,
+        "end": 2.84,
+        "type": "word",
+        "logprob": -0.000004291525328881107
+      },
+      {
+        "text": " ",
+        "start": 2.84,
+        "end": 2.88,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "equipped",
+        "start": 2.88,
+        "end": 3.26,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 3.26,
+        "end": 3.3,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "with",
+        "start": 3.3,
+        "end": 3.44,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 3.44,
+        "end": 3.5,
+        "type": "spacing",
+        "logprob": -0.0000034570634852570947
+      },
+      {
+        "text": "riot",
+        "start": 3.5,
+        "end": 3.8,
+        "type": "word",
+        "logprob": -0.0000034570634852570947
+      },
+      {
+        "text": " ",
+        "start": 3.8,
+        "end": 3.9,
+        "type": "spacing",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "gear",
+        "start": 3.9,
+        "end": 4.1,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": " ",
+        "start": 4.1,
+        "end": 4.28,
+        "type": "spacing",
+        "logprob": -0.0000023841830625315197
+      },
+      {
+        "text": "entered",
+        "start": 4.28,
+        "end": 4.56,
+        "type": "word",
+        "logprob": -0.0000023841830625315197
+      },
+      {
+        "text": " ",
+        "start": 4.56,
+        "end": 4.6,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "the",
+        "start": 4.6,
+        "end": 4.68,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 4.68,
+        "end": 4.72,
+        "type": "spacing",
+        "logprob": -0.0000040531076592742465
+      },
+      {
+        "text": "yard",
+        "start": 4.72,
+        "end": 5.04,
+        "type": "word",
+        "logprob": -0.0000040531076592742465
+      },
+      {
+        "text": " ",
+        "start": 5.04,
+        "end": 5.06,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "and",
+        "start": 5.06,
+        "end": 5.16,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 5.16,
+        "end": 5.28,
+        "type": "spacing",
+        "logprob": -0.00003611976353568025
+      },
+      {
+        "text": "cornered",
+        "start": 5.3,
+        "end": 5.66,
+        "type": "word",
+        "logprob": -0.000027089822651760187
+      },
+      {
+        "text": " ",
+        "start": 5.66,
+        "end": 5.7,
+        "type": "spacing",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "the",
+        "start": 5.7,
+        "end": 5.84,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": " ",
+        "start": 5.84,
+        "end": 5.88,
+        "type": "spacing",
+        "logprob": -0.00000250339189733495
+      },
+      {
+        "text": "inmates",
+        "start": 5.88,
+        "end": 6.32,
+        "type": "word",
+        "logprob": -0.00000250339189733495
+      },
+      {
+        "text": " ",
+        "start": 6.32,
+        "end": 6.36,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "with",
+        "start": 6.36,
+        "end": 6.52,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 6.52,
+        "end": 6.58,
+        "type": "spacing",
+        "logprob": -0.0000023841830625315197
+      },
+      {
+        "text": "tear",
+        "start": 6.58,
+        "end": 6.72,
+        "type": "word",
+        "logprob": -0.0000023841830625315197
+      },
+      {
+        "text": " ",
+        "start": 6.72,
+        "end": 6.82,
+        "type": "spacing",
+        "logprob": -0.00020358874462544918
+      },
+      {
+        "text": "gas.",
+        "start": 6.82,
+        "end": 7.24,
+        "type": "word",
+        "logprob": -0.09687044407473877
+      }
+    ],
+    "transcription_id": "Mw7GrxoMMo7Va4WlFWWj",
+    "audio_duration_secs": 9.48
+  }
+}

@@ -1,0 +1,502 @@
+{
+  "clip_id": "vi_vn_1608",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "vie",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:42:02.044Z",
+  "response": {
+    "language_code": "vie",
+    "language_probability": 1,
+    "text": "\"Tôi bị lạc em gái và bạn của cô ấy và khi đang trên đường, có hai người khuyết tật ngồi xe lăn, mọi người cứ chồm lên và xô đẩy họ,\" Armand Versace nói.",
+    "words": [
+      {
+        "text": "\"Tôi",
+        "start": 1.08,
+        "end": 1.24,
+        "type": "word",
+        "logprob": -0.1592412136378698
+      },
+      {
+        "text": " ",
+        "start": 1.24,
+        "end": 1.3,
+        "type": "spacing",
+        "logprob": -0.0003361137059982866
+      },
+      {
+        "text": "bị",
+        "start": 1.3,
+        "end": 1.42,
+        "type": "word",
+        "logprob": -0.0003361137059982866
+      },
+      {
+        "text": " ",
+        "start": 1.42,
+        "end": 1.5,
+        "type": "spacing",
+        "logprob": -0.00011717586312443018
+      },
+      {
+        "text": "lạc",
+        "start": 1.5,
+        "end": 1.72,
+        "type": "word",
+        "logprob": -0.00011717586312443018
+      },
+      {
+        "text": " ",
+        "start": 1.72,
+        "end": 1.78,
+        "type": "spacing",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": "em",
+        "start": 1.78,
+        "end": 1.92,
+        "type": "word",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": " ",
+        "start": 1.92,
+        "end": 1.98,
+        "type": "spacing",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": "gái",
+        "start": 1.98,
+        "end": 2.32,
+        "type": "word",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": " ",
+        "start": 2.32,
+        "end": 2.32,
+        "type": "spacing",
+        "logprob": -0.0000015497195136049413
+      },
+      {
+        "text": "và",
+        "start": 2.92,
+        "end": 3.1,
+        "type": "word",
+        "logprob": -0.0000015497195136049413
+      },
+      {
+        "text": " ",
+        "start": 3.1,
+        "end": 3.2,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "bạn",
+        "start": 3.2,
+        "end": 3.46,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 3.46,
+        "end": 3.54,
+        "type": "spacing",
+        "logprob": -0.000003933898824470816
+      },
+      {
+        "text": "của",
+        "start": 3.54,
+        "end": 3.66,
+        "type": "word",
+        "logprob": -0.000003933898824470816
+      },
+      {
+        "text": " ",
+        "start": 3.66,
+        "end": 3.72,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "cô",
+        "start": 3.72,
+        "end": 3.88,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 3.88,
+        "end": 3.92,
+        "type": "spacing",
+        "logprob": -0.000023364747903542593
+      },
+      {
+        "text": "ấy",
+        "start": 3.92,
+        "end": 4.18,
+        "type": "word",
+        "logprob": -0.000023364747903542593
+      },
+      {
+        "text": " ",
+        "start": 4.18,
+        "end": 4.18,
+        "type": "spacing",
+        "logprob": -0.3868851959705353
+      },
+      {
+        "text": "và",
+        "start": 4.92,
+        "end": 5.04,
+        "type": "word",
+        "logprob": -0.3868851959705353
+      },
+      {
+        "text": " ",
+        "start": 5.04,
+        "end": 5.1,
+        "type": "spacing",
+        "logprob": -0.000006556489552167477
+      },
+      {
+        "text": "khi",
+        "start": 5.1,
+        "end": 5.46,
+        "type": "word",
+        "logprob": -0.000006556489552167477
+      },
+      {
+        "text": " ",
+        "start": 5.46,
+        "end": 5.46,
+        "type": "spacing",
+        "logprob": -0.00009929640509653836
+      },
+      {
+        "text": "đang",
+        "start": 6.18,
+        "end": 6.5,
+        "type": "word",
+        "logprob": -0.00009929640509653836
+      },
+      {
+        "text": " ",
+        "start": 6.5,
+        "end": 6.5,
+        "type": "spacing",
+        "logprob": -0.000019430925021879375
+      },
+      {
+        "text": "trên",
+        "start": 7.04,
+        "end": 7.22,
+        "type": "word",
+        "logprob": -0.000019430925021879375
+      },
+      {
+        "text": " ",
+        "start": 7.22,
+        "end": 7.3,
+        "type": "spacing",
+        "logprob": -0.000011444026313256472
+      },
+      {
+        "text": "đường,",
+        "start": 7.3,
+        "end": 7.58,
+        "type": "word",
+        "logprob": -0.0006909131613307787
+      },
+      {
+        "text": " ",
+        "start": 7.58,
+        "end": 7.58,
+        "type": "spacing",
+        "logprob": -0.000004768360213347478
+      },
+      {
+        "text": "có",
+        "start": 9.04,
+        "end": 9.16,
+        "type": "word",
+        "logprob": -0.000004768360213347478
+      },
+      {
+        "text": " ",
+        "start": 9.16,
+        "end": 9.22,
+        "type": "spacing",
+        "logprob": -0.00017510310863144696
+      },
+      {
+        "text": "hai",
+        "start": 9.22,
+        "end": 9.36,
+        "type": "word",
+        "logprob": -0.00017510310863144696
+      },
+      {
+        "text": " ",
+        "start": 9.36,
+        "end": 9.4,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "người",
+        "start": 9.4,
+        "end": 9.56,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": " ",
+        "start": 9.56,
+        "end": 9.6,
+        "type": "spacing",
+        "logprob": -0.0008517451351508498
+      },
+      {
+        "text": "khuyết",
+        "start": 9.6,
+        "end": 9.78,
+        "type": "word",
+        "logprob": -0.0014147284673526883
+      },
+      {
+        "text": " ",
+        "start": 9.78,
+        "end": 9.84,
+        "type": "spacing",
+        "logprob": -0.00040713604539632797
+      },
+      {
+        "text": "tật",
+        "start": 9.84,
+        "end": 9.98,
+        "type": "word",
+        "logprob": -0.00040713604539632797
+      },
+      {
+        "text": " ",
+        "start": 9.98,
+        "end": 10.04,
+        "type": "spacing",
+        "logprob": -0.000002861018856492592
+      },
+      {
+        "text": "ngồi",
+        "start": 10.04,
+        "end": 10.4,
+        "type": "word",
+        "logprob": -0.000002861018856492592
+      },
+      {
+        "text": " ",
+        "start": 10.4,
+        "end": 10.74,
+        "type": "spacing",
+        "logprob": -0.00011252723925281316
+      },
+      {
+        "text": "xe",
+        "start": 10.74,
+        "end": 10.9,
+        "type": "word",
+        "logprob": -0.00011252723925281316
+      },
+      {
+        "text": " ",
+        "start": 10.9,
+        "end": 10.98,
+        "type": "spacing",
+        "logprob": -0.0007681279676035047
+      },
+      {
+        "text": "lăn,",
+        "start": 10.98,
+        "end": 11.2,
+        "type": "word",
+        "logprob": -0.012723212450509891
+      },
+      {
+        "text": " ",
+        "start": 11.2,
+        "end": 11.2,
+        "type": "spacing",
+        "logprob": -0.000003099436753473128
+      },
+      {
+        "text": "mọi",
+        "start": 12.02,
+        "end": 12.16,
+        "type": "word",
+        "logprob": -0.000003099436753473128
+      },
+      {
+        "text": " ",
+        "start": 12.16,
+        "end": 12.22,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "người",
+        "start": 12.22,
+        "end": 12.4,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 12.4,
+        "end": 12.5,
+        "type": "spacing",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": "cứ",
+        "start": 12.5,
+        "end": 12.66,
+        "type": "word",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": " ",
+        "start": 12.66,
+        "end": 12.74,
+        "type": "spacing",
+        "logprob": -0.7645065188407898
+      },
+      {
+        "text": "chồm",
+        "start": 12.74,
+        "end": 12.96,
+        "type": "word",
+        "logprob": -0.6087477952241898
+      },
+      {
+        "text": " ",
+        "start": 12.96,
+        "end": 13.04,
+        "type": "spacing",
+        "logprob": -0.0000010728830375228426
+      },
+      {
+        "text": "lên",
+        "start": 13.04,
+        "end": 13.3,
+        "type": "word",
+        "logprob": -0.0000010728830375228426
+      },
+      {
+        "text": " ",
+        "start": 13.3,
+        "end": 13.4,
+        "type": "spacing",
+        "logprob": -0.000010967194612021558
+      },
+      {
+        "text": "và",
+        "start": 13.4,
+        "end": 13.5,
+        "type": "word",
+        "logprob": -0.000010967194612021558
+      },
+      {
+        "text": " ",
+        "start": 13.5,
+        "end": 13.58,
+        "type": "spacing",
+        "logprob": -0.0005609607324004173
+      },
+      {
+        "text": "xô",
+        "start": 13.6,
+        "end": 13.74,
+        "type": "word",
+        "logprob": -0.0003027124039363116
+      },
+      {
+        "text": " ",
+        "start": 13.74,
+        "end": 13.78,
+        "type": "spacing",
+        "logprob": -0.000012278481335670222
+      },
+      {
+        "text": "đẩy",
+        "start": 13.78,
+        "end": 13.98,
+        "type": "word",
+        "logprob": -0.000012278481335670222
+      },
+      {
+        "text": " ",
+        "start": 13.98,
+        "end": 14.02,
+        "type": "spacing",
+        "logprob": -0.000002145764938177308
+      },
+      {
+        "text": "họ,\"",
+        "start": 14.02,
+        "end": 14.32,
+        "type": "word",
+        "logprob": -0.1055492535222129
+      },
+      {
+        "text": " ",
+        "start": 14.32,
+        "end": 14.32,
+        "type": "spacing",
+        "logprob": -0.6162487268447876
+      },
+      {
+        "text": "Armand",
+        "start": 14.96,
+        "end": 15.5,
+        "type": "word",
+        "logprob": -0.6162487268447876
+      },
+      {
+        "text": " ",
+        "start": 15.5,
+        "end": 15.58,
+        "type": "spacing",
+        "logprob": -0.0022565871477127075
+      },
+      {
+        "text": "Versace",
+        "start": 15.58,
+        "end": 15.98,
+        "type": "word",
+        "logprob": -0.0022565871477127075
+      },
+      {
+        "text": " ",
+        "start": 15.98,
+        "end": 16.04,
+        "type": "spacing",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": "nói.",
+        "start": 16.04,
+        "end": 16.3,
+        "type": "word",
+        "logprob": -0.00007714658516988493
+      }
+    ],
+    "transcription_id": "Ut2qxsjedD9bGiTYa6Cv",
+    "audio_duration_secs": 17.52
+  }
+}

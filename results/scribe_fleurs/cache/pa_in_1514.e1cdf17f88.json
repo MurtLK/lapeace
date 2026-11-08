@@ -1,0 +1,418 @@
+{
+  "clip_id": "pa_in_1514",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "pan",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:10.978Z",
+  "response": {
+    "language_code": "pan",
+    "language_probability": 1,
+    "text": "ਜਦੋਂ ਜ਼ਖ਼ਮੀਆਂ ਨੂੰ ਹਸਪਤਾਲ ਲੈ ਜਾਣ ਤੋਂ ਬਾਅਦ ਲੜਾਈ ਖਤਮ ਹੋਈ ਤਾਂ ਲਗਭਗ 40 ਕੈਦੀ ਯਾਰਡ ਵਿੱਚ ਰੁਕੇ ਅਤੇ ਉਹਨਾਂ ਨੇ ਆਪਣੀਆਂ ਜੇਲਾਂ ਵਿੱਚ ਜਾਣ ਤੋਂ ਇਨਕਾਰ ਕਰ ਦਿੱਤਾ।",
+    "words": [
+      {
+        "text": "ਜਦੋਂ",
+        "start": 0.82,
+        "end": 1.16,
+        "type": "word",
+        "logprob": -0.00022357764828484505
+      },
+      {
+        "text": " ",
+        "start": 1.16,
+        "end": 1.18,
+        "type": "spacing",
+        "logprob": -0.2298644483089447
+      },
+      {
+        "text": "ਜ਼ਖ਼ਮੀਆਂ",
+        "start": 1.18,
+        "end": 1.64,
+        "type": "word",
+        "logprob": -0.1397126267911517
+      },
+      {
+        "text": " ",
+        "start": 1.64,
+        "end": 1.7,
+        "type": "spacing",
+        "logprob": -0.00006854299135738984
+      },
+      {
+        "text": "ਨੂੰ",
+        "start": 1.7,
+        "end": 1.84,
+        "type": "word",
+        "logprob": -0.00006854299135738984
+      },
+      {
+        "text": " ",
+        "start": 1.84,
+        "end": 1.94,
+        "type": "spacing",
+        "logprob": -0.0001746263587847352
+      },
+      {
+        "text": "ਹਸਪਤਾਲ",
+        "start": 1.94,
+        "end": 2.56,
+        "type": "word",
+        "logprob": -0.0002786963383793288
+      },
+      {
+        "text": " ",
+        "start": 2.56,
+        "end": 2.62,
+        "type": "spacing",
+        "logprob": -0.0037127865944057703
+      },
+      {
+        "text": "ਲੈ",
+        "start": 2.62,
+        "end": 2.78,
+        "type": "word",
+        "logprob": -0.0037127865944057703
+      },
+      {
+        "text": " ",
+        "start": 2.78,
+        "end": 2.82,
+        "type": "spacing",
+        "logprob": -0.0036649219691753387
+      },
+      {
+        "text": "ਜਾਣ",
+        "start": 2.82,
+        "end": 3.08,
+        "type": "word",
+        "logprob": -0.0036649219691753387
+      },
+      {
+        "text": " ",
+        "start": 3.08,
+        "end": 3.14,
+        "type": "spacing",
+        "logprob": -0.00036030475166626275
+      },
+      {
+        "text": "ਤੋਂ",
+        "start": 3.16,
+        "end": 3.26,
+        "type": "word",
+        "logprob": -0.00036030475166626275
+      },
+      {
+        "text": " ",
+        "start": 3.26,
+        "end": 3.38,
+        "type": "spacing",
+        "logprob": -0.0000916677454370074
+      },
+      {
+        "text": "ਬਾਅਦ",
+        "start": 3.38,
+        "end": 3.72,
+        "type": "word",
+        "logprob": -0.0000590658780765807
+      },
+      {
+        "text": " ",
+        "start": 3.72,
+        "end": 4.14,
+        "type": "spacing",
+        "logprob": -0.0002932118659373373
+      },
+      {
+        "text": "ਲੜਾਈ",
+        "start": 4.14,
+        "end": 4.48,
+        "type": "word",
+        "logprob": -0.0006771113075956237
+      },
+      {
+        "text": " ",
+        "start": 4.48,
+        "end": 4.54,
+        "type": "spacing",
+        "logprob": -0.00877417903393507
+      },
+      {
+        "text": "ਖਤਮ",
+        "start": 4.54,
+        "end": 4.82,
+        "type": "word",
+        "logprob": -0.17735644767102107
+      },
+      {
+        "text": " ",
+        "start": 4.82,
+        "end": 4.92,
+        "type": "spacing",
+        "logprob": -0.000015139465176616795
+      },
+      {
+        "text": "ਹੋਈ",
+        "start": 4.92,
+        "end": 5.2,
+        "type": "word",
+        "logprob": -0.00002161634256481193
+      },
+      {
+        "text": " ",
+        "start": 5.2,
+        "end": 5.2,
+        "type": "spacing",
+        "logprob": -0.00004815939246327616
+      },
+      {
+        "text": "ਤਾਂ",
+        "start": 5.6,
+        "end": 5.78,
+        "type": "word",
+        "logprob": -0.00004815939246327616
+      },
+      {
+        "text": " ",
+        "start": 5.78,
+        "end": 5.82,
+        "type": "spacing",
+        "logprob": -0.00006437094270950183
+      },
+      {
+        "text": "ਲਗਭਗ",
+        "start": 5.84,
+        "end": 6.28,
+        "type": "word",
+        "logprob": -0.00074990199163949
+      },
+      {
+        "text": " ",
+        "start": 6.28,
+        "end": 6.6,
+        "type": "spacing",
+        "logprob": -0.0036190745886415243
+      },
+      {
+        "text": "40",
+        "start": 6.62,
+        "end": 6.96,
+        "type": "word",
+        "logprob": -0.000007152506892538213
+      },
+      {
+        "text": " ",
+        "start": 6.96,
+        "end": 7.1,
+        "type": "spacing",
+        "logprob": -0.00012981049076188356
+      },
+      {
+        "text": "ਕੈਦੀ",
+        "start": 7.1,
+        "end": 7.44,
+        "type": "word",
+        "logprob": -0.0002579584215709474
+      },
+      {
+        "text": " ",
+        "start": 7.44,
+        "end": 7.54,
+        "type": "spacing",
+        "logprob": -0.02913879230618477
+      },
+      {
+        "text": "ਯਾਰਡ",
+        "start": 7.54,
+        "end": 7.86,
+        "type": "word",
+        "logprob": -0.009695292450487614
+      },
+      {
+        "text": " ",
+        "start": 7.86,
+        "end": 7.9,
+        "type": "spacing",
+        "logprob": -0.000631848000921309
+      },
+      {
+        "text": "ਵਿੱਚ",
+        "start": 7.9,
+        "end": 8.08,
+        "type": "word",
+        "logprob": -0.000631848000921309
+      },
+      {
+        "text": " ",
+        "start": 8.08,
+        "end": 8.18,
+        "type": "spacing",
+        "logprob": -0.003233444644138217
+      },
+      {
+        "text": "ਰੁਕੇ",
+        "start": 8.18,
+        "end": 8.48,
+        "type": "word",
+        "logprob": -0.006517940608318895
+      },
+      {
+        "text": " ",
+        "start": 8.48,
+        "end": 8.94,
+        "type": "spacing",
+        "logprob": -0.00002169585604860913
+      },
+      {
+        "text": "ਅਤੇ",
+        "start": 8.94,
+        "end": 9.14,
+        "type": "word",
+        "logprob": -0.00002169585604860913
+      },
+      {
+        "text": " ",
+        "start": 9.14,
+        "end": 9.26,
+        "type": "spacing",
+        "logprob": -0.076253741979599
+      },
+      {
+        "text": "ਉਹਨਾਂ",
+        "start": 9.26,
+        "end": 9.6,
+        "type": "word",
+        "logprob": -0.030541382892988623
+      },
+      {
+        "text": " ",
+        "start": 9.6,
+        "end": 9.68,
+        "type": "spacing",
+        "logprob": -0.000059126061387360096
+      },
+      {
+        "text": "ਨੇ",
+        "start": 9.68,
+        "end": 9.88,
+        "type": "word",
+        "logprob": -0.000059126061387360096
+      },
+      {
+        "text": " ",
+        "start": 9.88,
+        "end": 9.96,
+        "type": "spacing",
+        "logprob": -0.00022551853908225894
+      },
+      {
+        "text": "ਆਪਣੀਆਂ",
+        "start": 9.96,
+        "end": 10.38,
+        "type": "word",
+        "logprob": -0.0001787372602848336
+      },
+      {
+        "text": " ",
+        "start": 10.38,
+        "end": 10.48,
+        "type": "spacing",
+        "logprob": -0.0017794027226045728
+      },
+      {
+        "text": "ਜੇਲਾਂ",
+        "start": 10.5,
+        "end": 10.84,
+        "type": "word",
+        "logprob": -0.06090399137174245
+      },
+      {
+        "text": " ",
+        "start": 10.84,
+        "end": 10.92,
+        "type": "spacing",
+        "logprob": -0.00014125302550382912
+      },
+      {
+        "text": "ਵਿੱਚ",
+        "start": 10.92,
+        "end": 11.16,
+        "type": "word",
+        "logprob": -0.00014125302550382912
+      },
+      {
+        "text": " ",
+        "start": 11.16,
+        "end": 11.44,
+        "type": "spacing",
+        "logprob": -0.00048101297579705715
+      },
+      {
+        "text": "ਜਾਣ",
+        "start": 11.44,
+        "end": 11.72,
+        "type": "word",
+        "logprob": -0.00048101297579705715
+      },
+      {
+        "text": " ",
+        "start": 11.72,
+        "end": 11.82,
+        "type": "spacing",
+        "logprob": -0.00006305972783593461
+      },
+      {
+        "text": "ਤੋਂ",
+        "start": 11.82,
+        "end": 11.96,
+        "type": "word",
+        "logprob": -0.00006305972783593461
+      },
+      {
+        "text": " ",
+        "start": 11.96,
+        "end": 12.1,
+        "type": "spacing",
+        "logprob": -0.0014004433760419488
+      },
+      {
+        "text": "ਇਨਕਾਰ",
+        "start": 12.1,
+        "end": 12.52,
+        "type": "word",
+        "logprob": -0.0009631997323594988
+      },
+      {
+        "text": " ",
+        "start": 12.52,
+        "end": 12.62,
+        "type": "spacing",
+        "logprob": -0.000031709168979432434
+      },
+      {
+        "text": "ਕਰ",
+        "start": 12.62,
+        "end": 12.76,
+        "type": "word",
+        "logprob": -0.000031709168979432434
+      },
+      {
+        "text": " ",
+        "start": 12.76,
+        "end": 12.82,
+        "type": "spacing",
+        "logprob": -0.000017523612768854946
+      },
+      {
+        "text": "ਦਿੱਤਾ।",
+        "start": 12.82,
+        "end": 13.3,
+        "type": "word",
+        "logprob": -0.00039039880084601464
+      }
+    ],
+    "transcription_id": "uFOFLDxXXrdzBRYOX58i",
+    "audio_duration_secs": 14.4
+  }
+}

@@ -1,0 +1,586 @@
+{
+  "clip_id": "vi_vn_1574",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "vie",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:42:00.407Z",
+  "response": {
+    "language_code": "vie",
+    "language_probability": 1,
+    "text": "Mùa đông có thể lạnh theo cái cách dễ gây hiểu lầm: nhiệt độ hiếm khi thấp mức cóng, nhưng gió và độ ẩm kết hợp với nhau tạo cảm giác lạnh hơn mức nhiệt độ hiển thị trên nhiệt kế.",
+    "words": [
+      {
+        "text": "Mùa",
+        "start": 0.96,
+        "end": 1.12,
+        "type": "word",
+        "logprob": -0.00023771206906531006
+      },
+      {
+        "text": " ",
+        "start": 1.12,
+        "end": 1.18,
+        "type": "spacing",
+        "logprob": -0.0009504806366749108
+      },
+      {
+        "text": "đông",
+        "start": 1.18,
+        "end": 1.36,
+        "type": "word",
+        "logprob": -0.0009504806366749108
+      },
+      {
+        "text": " ",
+        "start": 1.36,
+        "end": 1.5,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "có",
+        "start": 1.5,
+        "end": 1.66,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 1.66,
+        "end": 1.68,
+        "type": "spacing",
+        "logprob": -0.000006437280717364047
+      },
+      {
+        "text": "thể",
+        "start": 1.68,
+        "end": 1.92,
+        "type": "word",
+        "logprob": -0.000006437280717364047
+      },
+      {
+        "text": " ",
+        "start": 1.92,
+        "end": 1.96,
+        "type": "spacing",
+        "logprob": -0.000012040065485052764
+      },
+      {
+        "text": "lạnh",
+        "start": 1.96,
+        "end": 2.22,
+        "type": "word",
+        "logprob": -0.000012040065485052764
+      },
+      {
+        "text": " ",
+        "start": 2.22,
+        "end": 2.22,
+        "type": "spacing",
+        "logprob": -0.000013112935448589269
+      },
+      {
+        "text": "theo",
+        "start": 3.02,
+        "end": 3.24,
+        "type": "word",
+        "logprob": -0.000013112935448589269
+      },
+      {
+        "text": " ",
+        "start": 3.24,
+        "end": 3.32,
+        "type": "spacing",
+        "logprob": -0.0015242397785186768
+      },
+      {
+        "text": "cái",
+        "start": 3.32,
+        "end": 3.42,
+        "type": "word",
+        "logprob": -0.0015242397785186768
+      },
+      {
+        "text": " ",
+        "start": 3.42,
+        "end": 3.52,
+        "type": "spacing",
+        "logprob": -0.000004410734163684538
+      },
+      {
+        "text": "cách",
+        "start": 3.52,
+        "end": 3.74,
+        "type": "word",
+        "logprob": -0.000004410734163684538
+      },
+      {
+        "text": " ",
+        "start": 3.74,
+        "end": 3.74,
+        "type": "spacing",
+        "logprob": -0.00006472854875028133
+      },
+      {
+        "text": "dễ",
+        "start": 5.94,
+        "end": 6.24,
+        "type": "word",
+        "logprob": -0.00006472854875028133
+      },
+      {
+        "text": " ",
+        "start": 6.24,
+        "end": 6.24,
+        "type": "spacing",
+        "logprob": -0.000057338023907504976
+      },
+      {
+        "text": "gây",
+        "start": 6.5,
+        "end": 6.66,
+        "type": "word",
+        "logprob": -0.000057338023907504976
+      },
+      {
+        "text": " ",
+        "start": 6.66,
+        "end": 6.7,
+        "type": "spacing",
+        "logprob": -0.0000084638240878121
+      },
+      {
+        "text": "hiểu",
+        "start": 6.7,
+        "end": 6.86,
+        "type": "word",
+        "logprob": -0.0000084638240878121
+      },
+      {
+        "text": " ",
+        "start": 6.86,
+        "end": 6.9,
+        "type": "spacing",
+        "logprob": -0.000366263062460348
+      },
+      {
+        "text": "lầm:",
+        "start": 6.9,
+        "end": 7.12,
+        "type": "word",
+        "logprob": -0.00010476802867742663
+      },
+      {
+        "text": " ",
+        "start": 7.12,
+        "end": 7.12,
+        "type": "spacing",
+        "logprob": -0.05503135919570923
+      },
+      {
+        "text": "nhiệt",
+        "start": 8.119,
+        "end": 8.28,
+        "type": "word",
+        "logprob": -0.05503135919570923
+      },
+      {
+        "text": " ",
+        "start": 8.28,
+        "end": 8.34,
+        "type": "spacing",
+        "logprob": -0.000029205850296420977
+      },
+      {
+        "text": "độ",
+        "start": 8.34,
+        "end": 8.58,
+        "type": "word",
+        "logprob": -0.000029205850296420977
+      },
+      {
+        "text": " ",
+        "start": 8.58,
+        "end": 8.7,
+        "type": "spacing",
+        "logprob": -0.000007986990567587782
+      },
+      {
+        "text": "hiếm",
+        "start": 8.7,
+        "end": 8.9,
+        "type": "word",
+        "logprob": -0.000012695697932940675
+      },
+      {
+        "text": " ",
+        "start": 8.9,
+        "end": 8.98,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "khi",
+        "start": 8.98,
+        "end": 9.14,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 9.14,
+        "end": 9.22,
+        "type": "spacing",
+        "logprob": -0.023916788399219513
+      },
+      {
+        "text": "thấp",
+        "start": 9.22,
+        "end": 9.42,
+        "type": "word",
+        "logprob": -0.023916788399219513
+      },
+      {
+        "text": " ",
+        "start": 9.42,
+        "end": 9.44,
+        "type": "spacing",
+        "logprob": -0.0043873959220945835
+      },
+      {
+        "text": "mức",
+        "start": 9.74,
+        "end": 9.9,
+        "type": "word",
+        "logprob": -0.0043873959220945835
+      },
+      {
+        "text": " ",
+        "start": 9.9,
+        "end": 9.98,
+        "type": "spacing",
+        "logprob": -0.09476461261510849
+      },
+      {
+        "text": "cóng,",
+        "start": 9.98,
+        "end": 10.18,
+        "type": "word",
+        "logprob": -0.03792866108615271
+      },
+      {
+        "text": " ",
+        "start": 10.18,
+        "end": 10.18,
+        "type": "spacing",
+        "logprob": -0.000002861018856492592
+      },
+      {
+        "text": "nhưng",
+        "start": 11.02,
+        "end": 11.2,
+        "type": "word",
+        "logprob": -0.000002861018856492592
+      },
+      {
+        "text": " ",
+        "start": 11.2,
+        "end": 11.24,
+        "type": "spacing",
+        "logprob": -0.0000016689286894688848
+      },
+      {
+        "text": "gió",
+        "start": 11.24,
+        "end": 11.48,
+        "type": "word",
+        "logprob": -0.0000016689286894688848
+      },
+      {
+        "text": " ",
+        "start": 11.48,
+        "end": 11.6,
+        "type": "spacing",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": "và",
+        "start": 11.6,
+        "end": 11.7,
+        "type": "word",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": " ",
+        "start": 11.7,
+        "end": 11.78,
+        "type": "spacing",
+        "logprob": -0.0002057340752799064
+      },
+      {
+        "text": "độ",
+        "start": 11.78,
+        "end": 11.9,
+        "type": "word",
+        "logprob": -0.0002057340752799064
+      },
+      {
+        "text": " ",
+        "start": 11.9,
+        "end": 11.94,
+        "type": "spacing",
+        "logprob": -0.00021324267436284572
+      },
+      {
+        "text": "ẩm",
+        "start": 11.94,
+        "end": 12.08,
+        "type": "word",
+        "logprob": -0.00021324267436284572
+      },
+      {
+        "text": " ",
+        "start": 12.08,
+        "end": 12.16,
+        "type": "spacing",
+        "logprob": -0.000028371408916427754
+      },
+      {
+        "text": "kết",
+        "start": 12.16,
+        "end": 12.3,
+        "type": "word",
+        "logprob": -0.000028371408916427754
+      },
+      {
+        "text": " ",
+        "start": 12.3,
+        "end": 12.34,
+        "type": "spacing",
+        "logprob": -0.00006460934673668817
+      },
+      {
+        "text": "hợp",
+        "start": 12.34,
+        "end": 12.46,
+        "type": "word",
+        "logprob": -0.00006460934673668817
+      },
+      {
+        "text": " ",
+        "start": 12.46,
+        "end": 12.5,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "với",
+        "start": 12.5,
+        "end": 12.6,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 12.6,
+        "end": 12.64,
+        "type": "spacing",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "nhau",
+        "start": 12.64,
+        "end": 12.94,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": " ",
+        "start": 12.94,
+        "end": 13.06,
+        "type": "spacing",
+        "logprob": -0.000002145764938177308
+      },
+      {
+        "text": "tạo",
+        "start": 13.06,
+        "end": 13.24,
+        "type": "word",
+        "logprob": -0.000002145764938177308
+      },
+      {
+        "text": " ",
+        "start": 13.24,
+        "end": 13.3,
+        "type": "spacing",
+        "logprob": -0.000006437280717364047
+      },
+      {
+        "text": "cảm",
+        "start": 13.3,
+        "end": 13.42,
+        "type": "word",
+        "logprob": -0.000006437280717364047
+      },
+      {
+        "text": " ",
+        "start": 13.42,
+        "end": 13.46,
+        "type": "spacing",
+        "logprob": -0.000009298280929215252
+      },
+      {
+        "text": "giác",
+        "start": 13.46,
+        "end": 13.62,
+        "type": "word",
+        "logprob": -0.000009298280929215252
+      },
+      {
+        "text": " ",
+        "start": 13.62,
+        "end": 13.7,
+        "type": "spacing",
+        "logprob": -0.000007152531907195225
+      },
+      {
+        "text": "lạnh",
+        "start": 13.7,
+        "end": 13.86,
+        "type": "word",
+        "logprob": -0.000007152531907195225
+      },
+      {
+        "text": " ",
+        "start": 13.86,
+        "end": 13.92,
+        "type": "spacing",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": "hơn",
+        "start": 13.92,
+        "end": 14.18,
+        "type": "word",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": " ",
+        "start": 14.18,
+        "end": 14.3,
+        "type": "spacing",
+        "logprob": -0.000027179348762729205
+      },
+      {
+        "text": "mức",
+        "start": 14.3,
+        "end": 14.44,
+        "type": "word",
+        "logprob": -0.000027179348762729205
+      },
+      {
+        "text": " ",
+        "start": 14.44,
+        "end": 14.78,
+        "type": "spacing",
+        "logprob": -0.0000034570634852570947
+      },
+      {
+        "text": "nhiệt",
+        "start": 14.78,
+        "end": 14.96,
+        "type": "word",
+        "logprob": -0.0000034570634852570947
+      },
+      {
+        "text": " ",
+        "start": 14.96,
+        "end": 15.02,
+        "type": "spacing",
+        "logprob": -0.000030278701160568744
+      },
+      {
+        "text": "độ",
+        "start": 15.02,
+        "end": 15.28,
+        "type": "word",
+        "logprob": -0.000030278701160568744
+      },
+      {
+        "text": " ",
+        "start": 15.28,
+        "end": 15.32,
+        "type": "spacing",
+        "logprob": -0.0000983428253675811
+      },
+      {
+        "text": "hiển",
+        "start": 15.32,
+        "end": 15.46,
+        "type": "word",
+        "logprob": -0.0000983428253675811
+      },
+      {
+        "text": " ",
+        "start": 15.46,
+        "end": 15.52,
+        "type": "spacing",
+        "logprob": -0.000012874520507466514
+      },
+      {
+        "text": "thị",
+        "start": 15.52,
+        "end": 15.7,
+        "type": "word",
+        "logprob": -0.000012874520507466514
+      },
+      {
+        "text": " ",
+        "start": 15.7,
+        "end": 15.76,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "trên",
+        "start": 15.76,
+        "end": 15.9,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 15.9,
+        "end": 15.92,
+        "type": "spacing",
+        "logprob": -0.00009226373367710039
+      },
+      {
+        "text": "nhiệt",
+        "start": 15.92,
+        "end": 16.059,
+        "type": "word",
+        "logprob": -0.00009226373367710039
+      },
+      {
+        "text": " ",
+        "start": 16.059,
+        "end": 16.1,
+        "type": "spacing",
+        "logprob": -0.00001680836794548668
+      },
+      {
+        "text": "kế.",
+        "start": 16.1,
+        "end": 16.32,
+        "type": "word",
+        "logprob": -0.00001128505148055107
+      }
+    ],
+    "transcription_id": "No0hrFvqgMvnFUvsixmv",
+    "audio_duration_secs": 17.16
+  }
+}

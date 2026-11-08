@@ -1,0 +1,264 @@
+{
+  "clip_id": "pt_br_1651",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "por",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:39:34.666Z",
+  "response": {
+    "language_code": "por",
+    "language_probability": 1,
+    "text": "Uma opção cada vez mais popular para aqueles que pretendem ter um ano sabático é viajar e aprender.",
+    "words": [
+      {
+        "text": "Uma",
+        "start": 0.94,
+        "end": 1.08,
+        "type": "word",
+        "logprob": -0.0002631794777698815
+      },
+      {
+        "text": " ",
+        "start": 1.08,
+        "end": 1.12,
+        "type": "spacing",
+        "logprob": -0.000035523738915799186
+      },
+      {
+        "text": "opção",
+        "start": 1.12,
+        "end": 1.56,
+        "type": "word",
+        "logprob": -0.000035523738915799186
+      },
+      {
+        "text": " ",
+        "start": 1.56,
+        "end": 1.6,
+        "type": "spacing",
+        "logprob": -0.0000032186455882765586
+      },
+      {
+        "text": "cada",
+        "start": 1.6,
+        "end": 1.8,
+        "type": "word",
+        "logprob": -0.0000032186455882765586
+      },
+      {
+        "text": " ",
+        "start": 1.8,
+        "end": 1.84,
+        "type": "spacing",
+        "logprob": -0.000017404405298293568
+      },
+      {
+        "text": "vez",
+        "start": 1.84,
+        "end": 2.06,
+        "type": "word",
+        "logprob": -0.000017404405298293568
+      },
+      {
+        "text": " ",
+        "start": 2.06,
+        "end": 2.1,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "mais",
+        "start": 2.1,
+        "end": 2.36,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 2.36,
+        "end": 2.38,
+        "type": "spacing",
+        "logprob": -0.00001537788011773955
+      },
+      {
+        "text": "popular",
+        "start": 2.38,
+        "end": 2.78,
+        "type": "word",
+        "logprob": -0.00001537788011773955
+      },
+      {
+        "text": " ",
+        "start": 2.78,
+        "end": 2.88,
+        "type": "spacing",
+        "logprob": -0.000016927575416048057
+      },
+      {
+        "text": "para",
+        "start": 2.88,
+        "end": 3,
+        "type": "word",
+        "logprob": -0.000016927575416048057
+      },
+      {
+        "text": " ",
+        "start": 3,
+        "end": 3.04,
+        "type": "spacing",
+        "logprob": -0.000004410734163684538
+      },
+      {
+        "text": "aqueles",
+        "start": 3.04,
+        "end": 3.44,
+        "type": "word",
+        "logprob": -0.000004410734163684538
+      },
+      {
+        "text": " ",
+        "start": 3.44,
+        "end": 3.46,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "que",
+        "start": 3.46,
+        "end": 3.56,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 3.56,
+        "end": 3.6,
+        "type": "spacing",
+        "logprob": -0.0004557524516712874
+      },
+      {
+        "text": "pretendem",
+        "start": 3.6,
+        "end": 4.08,
+        "type": "word",
+        "logprob": -0.000354474129077668
+      },
+      {
+        "text": " ",
+        "start": 4.08,
+        "end": 4.24,
+        "type": "spacing",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": "ter",
+        "start": 4.24,
+        "end": 4.44,
+        "type": "word",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": " ",
+        "start": 4.44,
+        "end": 4.48,
+        "type": "spacing",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": "um",
+        "start": 4.48,
+        "end": 4.58,
+        "type": "word",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": " ",
+        "start": 4.58,
+        "end": 4.68,
+        "type": "spacing",
+        "logprob": -0.000014185804502631072
+      },
+      {
+        "text": "ano",
+        "start": 4.68,
+        "end": 4.84,
+        "type": "word",
+        "logprob": -0.000014185804502631072
+      },
+      {
+        "text": " ",
+        "start": 4.84,
+        "end": 4.88,
+        "type": "spacing",
+        "logprob": -0.00006997340824455023
+      },
+      {
+        "text": "sabático",
+        "start": 4.88,
+        "end": 5.4,
+        "type": "word",
+        "logprob": -0.000047250312945834594
+      },
+      {
+        "text": " ",
+        "start": 5.4,
+        "end": 5.44,
+        "type": "spacing",
+        "logprob": -0.00043108707177452743
+      },
+      {
+        "text": "é",
+        "start": 5.44,
+        "end": 5.5,
+        "type": "word",
+        "logprob": -0.00043108707177452743
+      },
+      {
+        "text": " ",
+        "start": 5.5,
+        "end": 5.54,
+        "type": "spacing",
+        "logprob": -0.00008523101132595912
+      },
+      {
+        "text": "viajar",
+        "start": 5.54,
+        "end": 6,
+        "type": "word",
+        "logprob": -0.00008523101132595912
+      },
+      {
+        "text": " ",
+        "start": 6,
+        "end": 6.02,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "e",
+        "start": 6.02,
+        "end": 6.08,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 6.08,
+        "end": 6.12,
+        "type": "spacing",
+        "logprob": -0.000045298504119273275
+      },
+      {
+        "text": "aprender.",
+        "start": 6.12,
+        "end": 6.66,
+        "type": "word",
+        "logprob": -0.004817970012987239
+      }
+    ],
+    "transcription_id": "MuQsdUScRe6f1kP4clxe",
+    "audio_duration_secs": 7.56
+  }
+}

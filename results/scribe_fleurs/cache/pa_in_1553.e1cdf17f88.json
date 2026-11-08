@@ -1,0 +1,334 @@
+{
+  "clip_id": "pa_in_1553",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "pan",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:15.334Z",
+  "response": {
+    "language_code": "pan",
+    "language_probability": 1,
+    "text": "ਕ੍ਰਿਸਮਸ ਇਸਾਈ ਮੱਤ ਦੀਆਂ ਸਭ ਤੋਂ ਮਹੱਤਵਪੂਰਨ ਛੁੱਟੀਆਂ ਵਿੱਚੋਂ ਇੱਕ ਹੈ ਅਤੇ ਇਸਨੂੰ ਈਸਾ ਮਸੀਹ ਦੇ ਜਨਮਦਿਨ ਦੇ ਰੂਪ ਵਿੱਚ ਮਨਾਇਆ ਜਾਂਦਾ ਹੈ।",
+    "words": [
+      {
+        "text": "ਕ੍ਰਿਸਮਸ",
+        "start": 0.72,
+        "end": 1.18,
+        "type": "word",
+        "logprob": -0.011415127190827792
+      },
+      {
+        "text": " ",
+        "start": 1.18,
+        "end": 1.2,
+        "type": "spacing",
+        "logprob": -0.051155269145965576
+      },
+      {
+        "text": "ਇਸਾਈ",
+        "start": 1.2,
+        "end": 1.6,
+        "type": "word",
+        "logprob": -0.0265419416828081
+      },
+      {
+        "text": " ",
+        "start": 1.6,
+        "end": 1.7,
+        "type": "spacing",
+        "logprob": -0.0015132891712710261
+      },
+      {
+        "text": "ਮੱਤ",
+        "start": 1.7,
+        "end": 1.94,
+        "type": "word",
+        "logprob": -0.060601383806594335
+      },
+      {
+        "text": " ",
+        "start": 1.94,
+        "end": 2.04,
+        "type": "spacing",
+        "logprob": -0.0006833125371485949
+      },
+      {
+        "text": "ਦੀਆਂ",
+        "start": 2.04,
+        "end": 2.32,
+        "type": "word",
+        "logprob": -0.0003756893638637848
+      },
+      {
+        "text": " ",
+        "start": 2.32,
+        "end": 2.44,
+        "type": "spacing",
+        "logprob": -0.000043748852476710454
+      },
+      {
+        "text": "ਸਭ",
+        "start": 2.44,
+        "end": 2.68,
+        "type": "word",
+        "logprob": -0.00003355680019012652
+      },
+      {
+        "text": " ",
+        "start": 2.68,
+        "end": 2.76,
+        "type": "spacing",
+        "logprob": -0.0018918488640338182
+      },
+      {
+        "text": "ਤੋਂ",
+        "start": 2.78,
+        "end": 2.96,
+        "type": "word",
+        "logprob": -0.0018918488640338182
+      },
+      {
+        "text": " ",
+        "start": 2.96,
+        "end": 3.06,
+        "type": "spacing",
+        "logprob": -0.00004351044481154531
+      },
+      {
+        "text": "ਮਹੱਤਵਪੂਰਨ",
+        "start": 3.06,
+        "end": 3.8,
+        "type": "word",
+        "logprob": -0.06416447722707137
+      },
+      {
+        "text": " ",
+        "start": 3.8,
+        "end": 3.88,
+        "type": "spacing",
+        "logprob": -0.00004684815212385729
+      },
+      {
+        "text": "ਛੁੱਟੀਆਂ",
+        "start": 3.9,
+        "end": 4.28,
+        "type": "word",
+        "logprob": -0.031409948806477975
+      },
+      {
+        "text": " ",
+        "start": 4.28,
+        "end": 4.3,
+        "type": "spacing",
+        "logprob": -0.012530173175036907
+      },
+      {
+        "text": "ਵਿੱਚੋਂ",
+        "start": 4.32,
+        "end": 4.66,
+        "type": "word",
+        "logprob": -0.008366919161441425
+      },
+      {
+        "text": " ",
+        "start": 4.66,
+        "end": 4.78,
+        "type": "spacing",
+        "logprob": -0.012597039341926575
+      },
+      {
+        "text": "ਇੱਕ",
+        "start": 4.78,
+        "end": 4.96,
+        "type": "word",
+        "logprob": -0.012597039341926575
+      },
+      {
+        "text": " ",
+        "start": 4.96,
+        "end": 5.06,
+        "type": "spacing",
+        "logprob": -0.000010967194612021558
+      },
+      {
+        "text": "ਹੈ",
+        "start": 5.06,
+        "end": 5.24,
+        "type": "word",
+        "logprob": -0.000010967194612021558
+      },
+      {
+        "text": " ",
+        "start": 5.24,
+        "end": 5.7,
+        "type": "spacing",
+        "logprob": -0.001505909371189773
+      },
+      {
+        "text": "ਅਤੇ",
+        "start": 5.7,
+        "end": 5.9,
+        "type": "word",
+        "logprob": -0.001505909371189773
+      },
+      {
+        "text": " ",
+        "start": 5.9,
+        "end": 6.04,
+        "type": "spacing",
+        "logprob": -0.00002074220174108632
+      },
+      {
+        "text": "ਇਸਨੂੰ",
+        "start": 6.04,
+        "end": 6.46,
+        "type": "word",
+        "logprob": -0.016819481931452173
+      },
+      {
+        "text": " ",
+        "start": 6.46,
+        "end": 6.52,
+        "type": "spacing",
+        "logprob": -0.07045364379882812
+      },
+      {
+        "text": "ਈਸਾ",
+        "start": 6.52,
+        "end": 6.8,
+        "type": "word",
+        "logprob": -0.000380597038504978
+      },
+      {
+        "text": " ",
+        "start": 6.8,
+        "end": 6.86,
+        "type": "spacing",
+        "logprob": -0.0022683623246848583
+      },
+      {
+        "text": "ਮਸੀਹ",
+        "start": 6.86,
+        "end": 7.14,
+        "type": "word",
+        "logprob": -0.005315361195243895
+      },
+      {
+        "text": " ",
+        "start": 7.14,
+        "end": 7.24,
+        "type": "spacing",
+        "logprob": -0.000053165931603871286
+      },
+      {
+        "text": "ਦੇ",
+        "start": 7.24,
+        "end": 7.38,
+        "type": "word",
+        "logprob": -0.000053165931603871286
+      },
+      {
+        "text": " ",
+        "start": 7.38,
+        "end": 7.54,
+        "type": "spacing",
+        "logprob": -0.0005772831500507891
+      },
+      {
+        "text": "ਜਨਮਦਿਨ",
+        "start": 7.54,
+        "end": 8.039,
+        "type": "word",
+        "logprob": -0.10625596527097514
+      },
+      {
+        "text": " ",
+        "start": 8.039,
+        "end": 8.119,
+        "type": "spacing",
+        "logprob": -0.0000032186455882765586
+      },
+      {
+        "text": "ਦੇ",
+        "start": 8.119,
+        "end": 8.24,
+        "type": "word",
+        "logprob": -0.0000032186455882765586
+      },
+      {
+        "text": " ",
+        "start": 8.24,
+        "end": 8.28,
+        "type": "spacing",
+        "logprob": -0.00012933371181134135
+      },
+      {
+        "text": "ਰੂਪ",
+        "start": 8.28,
+        "end": 8.5,
+        "type": "word",
+        "logprob": -0.0004747816128656268
+      },
+      {
+        "text": " ",
+        "start": 8.5,
+        "end": 8.6,
+        "type": "spacing",
+        "logprob": -0.0000669933797325939
+      },
+      {
+        "text": "ਵਿੱਚ",
+        "start": 8.6,
+        "end": 8.84,
+        "type": "word",
+        "logprob": -0.0000669933797325939
+      },
+      {
+        "text": " ",
+        "start": 8.84,
+        "end": 9.22,
+        "type": "spacing",
+        "logprob": -0.00021360022947192192
+      },
+      {
+        "text": "ਮਨਾਇਆ",
+        "start": 9.22,
+        "end": 9.6,
+        "type": "word",
+        "logprob": -0.0005984377523418516
+      },
+      {
+        "text": " ",
+        "start": 9.6,
+        "end": 9.68,
+        "type": "spacing",
+        "logprob": -0.00046433156239800155
+      },
+      {
+        "text": "ਜਾਂਦਾ",
+        "start": 9.68,
+        "end": 10.06,
+        "type": "word",
+        "logprob": -0.0002791234579490265
+      },
+      {
+        "text": " ",
+        "start": 10.06,
+        "end": 10.06,
+        "type": "spacing",
+        "logprob": -0.000028609820219571702
+      },
+      {
+        "text": "ਹੈ।",
+        "start": 10.1,
+        "end": 10.38,
+        "type": "word",
+        "logprob": -0.0026618894565520654
+      }
+    ],
+    "transcription_id": "6wPxgBoe3sgU2L7QdNmO",
+    "audio_duration_secs": 11.4
+  }
+}

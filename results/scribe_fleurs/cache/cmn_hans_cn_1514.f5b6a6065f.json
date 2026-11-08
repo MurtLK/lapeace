@@ -1,0 +1,285 @@
+{
+  "clip_id": "cmn_hans_cn_1514",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "zho",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:55.768Z",
+  "response": {
+    "language_code": "zho",
+    "language_probability": 1,
+    "text": "伤员被送至到医院后，打斗平息下来。剩下的约四十名囚犯留在院子里，拒绝回牢房。",
+    "words": [
+      {
+        "text": "伤",
+        "start": 0.8,
+        "end": 0.86,
+        "type": "word",
+        "logprob": -0.011093487031757832
+      },
+      {
+        "text": "员",
+        "start": 0.86,
+        "end": 1.06,
+        "type": "word",
+        "logprob": -0.0003446938644628972
+      },
+      {
+        "text": "被",
+        "start": 1.06,
+        "end": 1.22,
+        "type": "word",
+        "logprob": -0.0000015497195136049413
+      },
+      {
+        "text": "送",
+        "start": 1.22,
+        "end": 1.38,
+        "type": "word",
+        "logprob": -0.04383111000061035
+      },
+      {
+        "text": "至",
+        "start": 1.38,
+        "end": 1.48,
+        "type": "word",
+        "logprob": -0.8025785684585571
+      },
+      {
+        "text": "到",
+        "start": 1.6,
+        "end": 1.8,
+        "type": "word",
+        "logprob": -0.0015357855008915067
+      },
+      {
+        "text": "医",
+        "start": 1.8,
+        "end": 1.94,
+        "type": "word",
+        "logprob": -0.00007295342220459133
+      },
+      {
+        "text": "院",
+        "start": 1.94,
+        "end": 2.16,
+        "type": "word",
+        "logprob": -0.00007295342220459133
+      },
+      {
+        "text": "后",
+        "start": 2.16,
+        "end": 2.16,
+        "type": "word",
+        "logprob": -0.000005364403477869928
+      },
+      {
+        "text": "，",
+        "start": 2.42,
+        "end": 2.44,
+        "type": "word",
+        "logprob": -0.0000027418097943154862
+      },
+      {
+        "text": "打",
+        "start": 2.44,
+        "end": 2.58,
+        "type": "word",
+        "logprob": -0.000009775113539944869
+      },
+      {
+        "text": "斗",
+        "start": 2.58,
+        "end": 2.74,
+        "type": "word",
+        "logprob": -0.00003671578815556131
+      },
+      {
+        "text": "平",
+        "start": 2.74,
+        "end": 2.92,
+        "type": "word",
+        "logprob": -0.00041571559268049896
+      },
+      {
+        "text": "息",
+        "start": 2.92,
+        "end": 3.06,
+        "type": "word",
+        "logprob": -0.000012278481335670222
+      },
+      {
+        "text": "下",
+        "start": 3.06,
+        "end": 3.22,
+        "type": "word",
+        "logprob": -0.00018726025882642716
+      },
+      {
+        "text": "来",
+        "start": 3.22,
+        "end": 3.22,
+        "type": "word",
+        "logprob": -0.00018726025882642716
+      },
+      {
+        "text": "。",
+        "start": 3.22,
+        "end": 3.22,
+        "type": "word",
+        "logprob": -0.026319606229662895
+      },
+      {
+        "text": "剩",
+        "start": 3.4,
+        "end": 3.56,
+        "type": "word",
+        "logprob": -0.00009727005090098828
+      },
+      {
+        "text": "下",
+        "start": 3.56,
+        "end": 3.72,
+        "type": "word",
+        "logprob": -0.00009727005090098828
+      },
+      {
+        "text": "的",
+        "start": 3.72,
+        "end": 3.84,
+        "type": "word",
+        "logprob": -0.00009727005090098828
+      },
+      {
+        "text": "约",
+        "start": 3.84,
+        "end": 4.059,
+        "type": "word",
+        "logprob": -0.00001966933996300213
+      },
+      {
+        "text": "四",
+        "start": 4.059,
+        "end": 4.22,
+        "type": "word",
+        "logprob": -0.001908863428980112
+      },
+      {
+        "text": "十",
+        "start": 4.22,
+        "end": 4.34,
+        "type": "word",
+        "logprob": -0.001908863428980112
+      },
+      {
+        "text": "名",
+        "start": 4.34,
+        "end": 4.52,
+        "type": "word",
+        "logprob": -0.000006794906312279636
+      },
+      {
+        "text": "囚",
+        "start": 4.52,
+        "end": 4.7,
+        "type": "word",
+        "logprob": -0.00017987063620239496
+      },
+      {
+        "text": "犯",
+        "start": 4.7,
+        "end": 4.88,
+        "type": "word",
+        "logprob": -0.000012516897186287679
+      },
+      {
+        "text": "留",
+        "start": 4.88,
+        "end": 5.04,
+        "type": "word",
+        "logprob": -0.000015616295058862306
+      },
+      {
+        "text": "在",
+        "start": 5.04,
+        "end": 5.18,
+        "type": "word",
+        "logprob": -0.000015616295058862306
+      },
+      {
+        "text": "院",
+        "start": 5.18,
+        "end": 5.4,
+        "type": "word",
+        "logprob": -0.00001549708758830093
+      },
+      {
+        "text": "子",
+        "start": 5.4,
+        "end": 5.52,
+        "type": "word",
+        "logprob": -0.00004076874756719917
+      },
+      {
+        "text": "里",
+        "start": 5.52,
+        "end": 5.62,
+        "type": "word",
+        "logprob": -0.00004076874756719917
+      },
+      {
+        "text": "，",
+        "start": 5.62,
+        "end": 5.74,
+        "type": "word",
+        "logprob": -0.011052104644477367
+      },
+      {
+        "text": "拒",
+        "start": 5.74,
+        "end": 5.88,
+        "type": "word",
+        "logprob": -0.000005006777428206988
+      },
+      {
+        "text": "绝",
+        "start": 5.88,
+        "end": 6.06,
+        "type": "word",
+        "logprob": -0.000005006777428206988
+      },
+      {
+        "text": "回",
+        "start": 6.06,
+        "end": 6.18,
+        "type": "word",
+        "logprob": -0.000008821448318485636
+      },
+      {
+        "text": "牢",
+        "start": 6.18,
+        "end": 6.38,
+        "type": "word",
+        "logprob": -0.000018715683836489916
+      },
+      {
+        "text": "房",
+        "start": 6.38,
+        "end": 6.54,
+        "type": "word",
+        "logprob": -0.0000877341881277971
+      },
+      {
+        "text": "。",
+        "start": 6.54,
+        "end": 6.54,
+        "type": "word",
+        "logprob": -0.000002861018856492592
+      }
+    ],
+    "transcription_id": "szZ4u6vuOqwuhnNvjKJO",
+    "audio_duration_secs": 7.26
+  }
+}

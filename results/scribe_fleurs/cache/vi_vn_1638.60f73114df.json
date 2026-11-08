@@ -1,0 +1,348 @@
+{
+  "clip_id": "vi_vn_1638",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "vie",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:42:03.147Z",
+  "response": {
+    "language_code": "vie",
+    "language_probability": 1,
+    "text": "Safari có lẽ là địa điểm thu hút du khách nhất ở Châu Phi và là điểm nổi bật đối với nhiều du khách",
+    "words": [
+      {
+        "text": "Safari",
+        "start": 0.54,
+        "end": 1.22,
+        "type": "word",
+        "logprob": -0.0030755146872252226
+      },
+      {
+        "text": " ",
+        "start": 1.22,
+        "end": 1.64,
+        "type": "spacing",
+        "logprob": -0.00001597391747054644
+      },
+      {
+        "text": "có",
+        "start": 1.64,
+        "end": 1.8,
+        "type": "word",
+        "logprob": -0.00001597391747054644
+      },
+      {
+        "text": " ",
+        "start": 1.8,
+        "end": 1.84,
+        "type": "spacing",
+        "logprob": -0.00019298121333122253
+      },
+      {
+        "text": "lẽ",
+        "start": 1.84,
+        "end": 2.04,
+        "type": "word",
+        "logprob": -0.00019298121333122253
+      },
+      {
+        "text": " ",
+        "start": 2.04,
+        "end": 2.08,
+        "type": "spacing",
+        "logprob": -0.000003576272320060525
+      },
+      {
+        "text": "là",
+        "start": 2.08,
+        "end": 2.34,
+        "type": "word",
+        "logprob": -0.000003576272320060525
+      },
+      {
+        "text": " ",
+        "start": 2.34,
+        "end": 2.54,
+        "type": "spacing",
+        "logprob": -0.00004207999518257566
+      },
+      {
+        "text": "địa",
+        "start": 2.54,
+        "end": 2.7,
+        "type": "word",
+        "logprob": -0.00004207999518257566
+      },
+      {
+        "text": " ",
+        "start": 2.7,
+        "end": 2.76,
+        "type": "spacing",
+        "logprob": -0.000025987286790041253
+      },
+      {
+        "text": "điểm",
+        "start": 2.76,
+        "end": 2.96,
+        "type": "word",
+        "logprob": -0.000025987286790041253
+      },
+      {
+        "text": " ",
+        "start": 2.96,
+        "end": 3.08,
+        "type": "spacing",
+        "logprob": -0.0000040531076592742465
+      },
+      {
+        "text": "thu",
+        "start": 3.08,
+        "end": 3.2,
+        "type": "word",
+        "logprob": -0.0000040531076592742465
+      },
+      {
+        "text": " ",
+        "start": 3.2,
+        "end": 3.32,
+        "type": "spacing",
+        "logprob": -0.000030636318115284666
+      },
+      {
+        "text": "hút",
+        "start": 3.32,
+        "end": 3.5,
+        "type": "word",
+        "logprob": -0.000030636318115284666
+      },
+      {
+        "text": " ",
+        "start": 3.5,
+        "end": 3.5,
+        "type": "spacing",
+        "logprob": -0.00005400034933700226
+      },
+      {
+        "text": "du",
+        "start": 4.68,
+        "end": 4.84,
+        "type": "word",
+        "logprob": -0.00005400034933700226
+      },
+      {
+        "text": " ",
+        "start": 4.84,
+        "end": 4.86,
+        "type": "spacing",
+        "logprob": -0.00003194758028257638
+      },
+      {
+        "text": "khách",
+        "start": 4.86,
+        "end": 5.04,
+        "type": "word",
+        "logprob": -0.00003194758028257638
+      },
+      {
+        "text": " ",
+        "start": 5.04,
+        "end": 5.08,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "nhất",
+        "start": 5.08,
+        "end": 5.28,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 5.28,
+        "end": 5.5,
+        "type": "spacing",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "ở",
+        "start": 5.5,
+        "end": 5.58,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": " ",
+        "start": 5.58,
+        "end": 5.6,
+        "type": "spacing",
+        "logprob": -0.02986971102654934
+      },
+      {
+        "text": "Châu",
+        "start": 5.6,
+        "end": 5.72,
+        "type": "word",
+        "logprob": -0.02986971102654934
+      },
+      {
+        "text": " ",
+        "start": 5.72,
+        "end": 5.78,
+        "type": "spacing",
+        "logprob": -0.0002862997353076935
+      },
+      {
+        "text": "Phi",
+        "start": 5.78,
+        "end": 6.02,
+        "type": "word",
+        "logprob": -0.0002862997353076935
+      },
+      {
+        "text": " ",
+        "start": 6.02,
+        "end": 6.02,
+        "type": "spacing",
+        "logprob": -0.0019372997339814901
+      },
+      {
+        "text": "và",
+        "start": 7.02,
+        "end": 7.12,
+        "type": "word",
+        "logprob": -0.0019372997339814901
+      },
+      {
+        "text": " ",
+        "start": 7.12,
+        "end": 7.16,
+        "type": "spacing",
+        "logprob": -0.0000058412379075889476
+      },
+      {
+        "text": "là",
+        "start": 7.16,
+        "end": 7.32,
+        "type": "word",
+        "logprob": -0.0000058412379075889476
+      },
+      {
+        "text": " ",
+        "start": 7.32,
+        "end": 7.36,
+        "type": "spacing",
+        "logprob": -0.000005602820692729438
+      },
+      {
+        "text": "điểm",
+        "start": 7.36,
+        "end": 7.52,
+        "type": "word",
+        "logprob": -0.000005602820692729438
+      },
+      {
+        "text": " ",
+        "start": 7.52,
+        "end": 7.56,
+        "type": "spacing",
+        "logprob": -0.0031261404510587454
+      },
+      {
+        "text": "nổi",
+        "start": 7.56,
+        "end": 7.72,
+        "type": "word",
+        "logprob": -0.0031261404510587454
+      },
+      {
+        "text": " ",
+        "start": 7.72,
+        "end": 7.78,
+        "type": "spacing",
+        "logprob": -0.0019277813844382763
+      },
+      {
+        "text": "bật",
+        "start": 7.78,
+        "end": 7.98,
+        "type": "word",
+        "logprob": -0.0019277813844382763
+      },
+      {
+        "text": " ",
+        "start": 7.98,
+        "end": 8.26,
+        "type": "spacing",
+        "logprob": -0.00000822540732769994
+      },
+      {
+        "text": "đối",
+        "start": 8.26,
+        "end": 8.38,
+        "type": "word",
+        "logprob": -0.00000822540732769994
+      },
+      {
+        "text": " ",
+        "start": 8.38,
+        "end": 8.42,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "với",
+        "start": 8.42,
+        "end": 8.54,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 8.54,
+        "end": 8.58,
+        "type": "spacing",
+        "logprob": -0.000008702239938429557
+      },
+      {
+        "text": "nhiều",
+        "start": 8.58,
+        "end": 8.7,
+        "type": "word",
+        "logprob": -0.000008702239938429557
+      },
+      {
+        "text": " ",
+        "start": 8.7,
+        "end": 8.74,
+        "type": "spacing",
+        "logprob": -0.000010013530300057027
+      },
+      {
+        "text": "du",
+        "start": 8.74,
+        "end": 8.88,
+        "type": "word",
+        "logprob": -0.000010013530300057027
+      },
+      {
+        "text": " ",
+        "start": 8.88,
+        "end": 8.9,
+        "type": "spacing",
+        "logprob": -0.000019788545614574105
+      },
+      {
+        "text": "khách",
+        "start": 8.9,
+        "end": 9.12,
+        "type": "word",
+        "logprob": -0.000019788545614574105
+      }
+    ],
+    "transcription_id": "MleaAVQBzmHvBIVG8FoD",
+    "audio_duration_secs": 10.02
+  }
+}

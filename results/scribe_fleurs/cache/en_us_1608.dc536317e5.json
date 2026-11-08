@@ -1,0 +1,404 @@
+{
+  "clip_id": "en_us_1608",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "eng",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:35.523Z",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1,
+    "text": "\"I lost my sister and her friend, and on my way there were two disabled people in wheelchairs, people just jumping over and pushing them,\" Armand Versace said.",
+    "words": [
+      {
+        "text": "\"I",
+        "start": 0.12,
+        "end": 0.2,
+        "type": "word",
+        "logprob": -0.0026539934333378312
+      },
+      {
+        "text": " ",
+        "start": 0.2,
+        "end": 0.24,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "lost",
+        "start": 0.24,
+        "end": 0.4,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 0.4,
+        "end": 0.46,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "my",
+        "start": 0.46,
+        "end": 0.56,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 0.56,
+        "end": 0.62,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "sister",
+        "start": 0.62,
+        "end": 0.94,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 0.94,
+        "end": 1.02,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "and",
+        "start": 1.02,
+        "end": 1.14,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 1.14,
+        "end": 1.18,
+        "type": "spacing",
+        "logprob": -0.000006794906312279636
+      },
+      {
+        "text": "her",
+        "start": 1.18,
+        "end": 1.26,
+        "type": "word",
+        "logprob": -0.000006794906312279636
+      },
+      {
+        "text": " ",
+        "start": 1.26,
+        "end": 1.38,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "friend,",
+        "start": 1.38,
+        "end": 1.58,
+        "type": "word",
+        "logprob": -0.0001153312456705992
+      },
+      {
+        "text": " ",
+        "start": 1.58,
+        "end": 1.64,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "and",
+        "start": 1.64,
+        "end": 1.72,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 1.72,
+        "end": 1.82,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "on",
+        "start": 1.82,
+        "end": 1.9,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 1.9,
+        "end": 1.94,
+        "type": "spacing",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "my",
+        "start": 1.94,
+        "end": 2.08,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": " ",
+        "start": 2.08,
+        "end": 2.12,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "way",
+        "start": 2.12,
+        "end": 2.24,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 2.24,
+        "end": 2.3,
+        "type": "spacing",
+        "logprob": -0.0021851013880223036
+      },
+      {
+        "text": "there",
+        "start": 2.3,
+        "end": 2.42,
+        "type": "word",
+        "logprob": -0.0021851013880223036
+      },
+      {
+        "text": " ",
+        "start": 2.42,
+        "end": 2.94,
+        "type": "spacing",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": "were",
+        "start": 2.94,
+        "end": 3.14,
+        "type": "word",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": " ",
+        "start": 3.14,
+        "end": 3.18,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "two",
+        "start": 3.18,
+        "end": 3.3,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 3.3,
+        "end": 3.4,
+        "type": "spacing",
+        "logprob": -0.000006079655122448457
+      },
+      {
+        "text": "disabled",
+        "start": 3.4,
+        "end": 3.8,
+        "type": "word",
+        "logprob": -0.000006079655122448457
+      },
+      {
+        "text": " ",
+        "start": 3.8,
+        "end": 3.82,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "people",
+        "start": 3.82,
+        "end": 4.08,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 4.08,
+        "end": 4.1,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "in",
+        "start": 4.1,
+        "end": 4.2,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 4.2,
+        "end": 4.22,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "wheelchairs,",
+        "start": 4.22,
+        "end": 4.7,
+        "type": "word",
+        "logprob": -0.0000015199082596950575
+      },
+      {
+        "text": " ",
+        "start": 4.7,
+        "end": 5.06,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "people",
+        "start": 5.06,
+        "end": 5.32,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 5.32,
+        "end": 5.36,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "just",
+        "start": 5.36,
+        "end": 5.52,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 5.52,
+        "end": 5.56,
+        "type": "spacing",
+        "logprob": -0.0000036954811548639555
+      },
+      {
+        "text": "jumping",
+        "start": 5.56,
+        "end": 5.88,
+        "type": "word",
+        "logprob": -0.0000036954811548639555
+      },
+      {
+        "text": " ",
+        "start": 5.88,
+        "end": 5.96,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "over",
+        "start": 5.96,
+        "end": 6.14,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 6.14,
+        "end": 6.16,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "and",
+        "start": 6.16,
+        "end": 6.22,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 6.22,
+        "end": 6.28,
+        "type": "spacing",
+        "logprob": -0.000309657771140337
+      },
+      {
+        "text": "pushing",
+        "start": 6.28,
+        "end": 6.56,
+        "type": "word",
+        "logprob": -0.000309657771140337
+      },
+      {
+        "text": " ",
+        "start": 6.56,
+        "end": 6.62,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "them,\"",
+        "start": 6.62,
+        "end": 6.74,
+        "type": "word",
+        "logprob": -0.000042753657908178866
+      },
+      {
+        "text": " ",
+        "start": 6.74,
+        "end": 7.34,
+        "type": "spacing",
+        "logprob": -0.08345429599285126
+      },
+      {
+        "text": "Armand",
+        "start": 7.34,
+        "end": 7.68,
+        "type": "word",
+        "logprob": -0.08345429599285126
+      },
+      {
+        "text": " ",
+        "start": 7.68,
+        "end": 7.76,
+        "type": "spacing",
+        "logprob": -0.00005006664650863968
+      },
+      {
+        "text": "Versace",
+        "start": 7.76,
+        "end": 8.24,
+        "type": "word",
+        "logprob": -0.00005006664650863968
+      },
+      {
+        "text": " ",
+        "start": 8.24,
+        "end": 8.36,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "said.",
+        "start": 8.36,
+        "end": 8.58,
+        "type": "word",
+        "logprob": -0.002832689881324768
+      }
+    ],
+    "transcription_id": "7XUAFTjXQ2wJndBIyddA",
+    "audio_duration_secs": 9.24
+  }
+}

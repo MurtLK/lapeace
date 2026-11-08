@@ -1,0 +1,208 @@
+{
+  "clip_id": "hi_in_1587",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "hin",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:52.810Z",
+  "response": {
+    "language_code": "hin",
+    "language_probability": 1,
+    "text": "इस season में बीमारी के शुरुआती मामले जुलाई के आखिर में सामने आए थे।",
+    "words": [
+      {
+        "text": "इस",
+        "start": 1.12,
+        "end": 1.26,
+        "type": "word",
+        "logprob": -0.000023483953555114567
+      },
+      {
+        "text": " ",
+        "start": 1.26,
+        "end": 1.3,
+        "type": "spacing",
+        "logprob": -0.10211046040058136
+      },
+      {
+        "text": "season",
+        "start": 1.48,
+        "end": 1.84,
+        "type": "word",
+        "logprob": -0.10211046040058136
+      },
+      {
+        "text": " ",
+        "start": 1.84,
+        "end": 1.88,
+        "type": "spacing",
+        "logprob": -0.00005149708886165172
+      },
+      {
+        "text": "में",
+        "start": 1.88,
+        "end": 2.04,
+        "type": "word",
+        "logprob": -0.00005149708886165172
+      },
+      {
+        "text": " ",
+        "start": 2.04,
+        "end": 2.1,
+        "type": "spacing",
+        "logprob": -0.0007652691565454006
+      },
+      {
+        "text": "बीमारी",
+        "start": 2.1,
+        "end": 2.46,
+        "type": "word",
+        "logprob": -0.0007652691565454006
+      },
+      {
+        "text": " ",
+        "start": 2.46,
+        "end": 2.56,
+        "type": "spacing",
+        "logprob": -0.000033378044463461265
+      },
+      {
+        "text": "के",
+        "start": 2.56,
+        "end": 2.78,
+        "type": "word",
+        "logprob": -0.000033378044463461265
+      },
+      {
+        "text": " ",
+        "start": 2.78,
+        "end": 2.82,
+        "type": "spacing",
+        "logprob": -0.004561613779515028
+      },
+      {
+        "text": "शुरुआती",
+        "start": 2.82,
+        "end": 3.34,
+        "type": "word",
+        "logprob": -0.004561613779515028
+      },
+      {
+        "text": " ",
+        "start": 3.34,
+        "end": 3.44,
+        "type": "spacing",
+        "logprob": -0.0012681784573942423
+      },
+      {
+        "text": "मामले",
+        "start": 3.44,
+        "end": 3.82,
+        "type": "word",
+        "logprob": -0.0012681784573942423
+      },
+      {
+        "text": " ",
+        "start": 3.82,
+        "end": 4.2,
+        "type": "spacing",
+        "logprob": -0.011423889547586441
+      },
+      {
+        "text": "जुलाई",
+        "start": 4.2,
+        "end": 4.56,
+        "type": "word",
+        "logprob": -0.011423889547586441
+      },
+      {
+        "text": " ",
+        "start": 4.56,
+        "end": 4.6,
+        "type": "spacing",
+        "logprob": -0.000012397689715726301
+      },
+      {
+        "text": "के",
+        "start": 4.6,
+        "end": 4.74,
+        "type": "word",
+        "logprob": -0.000012397689715726301
+      },
+      {
+        "text": " ",
+        "start": 4.74,
+        "end": 4.8,
+        "type": "spacing",
+        "logprob": -0.013895908370614052
+      },
+      {
+        "text": "आखिर",
+        "start": 4.8,
+        "end": 5.12,
+        "type": "word",
+        "logprob": -0.013895908370614052
+      },
+      {
+        "text": " ",
+        "start": 5.12,
+        "end": 5.16,
+        "type": "spacing",
+        "logprob": -0.000007629365427419543
+      },
+      {
+        "text": "में",
+        "start": 5.16,
+        "end": 5.36,
+        "type": "word",
+        "logprob": -0.000007629365427419543
+      },
+      {
+        "text": " ",
+        "start": 5.36,
+        "end": 5.42,
+        "type": "spacing",
+        "logprob": -0.00005745722592109814
+      },
+      {
+        "text": "सामने",
+        "start": 5.42,
+        "end": 5.88,
+        "type": "word",
+        "logprob": -0.00005745722592109814
+      },
+      {
+        "text": " ",
+        "start": 5.88,
+        "end": 5.96,
+        "type": "spacing",
+        "logprob": -0.0000849926145747304
+      },
+      {
+        "text": "आए",
+        "start": 5.96,
+        "end": 6.16,
+        "type": "word",
+        "logprob": -0.0000849926145747304
+      },
+      {
+        "text": " ",
+        "start": 6.16,
+        "end": 6.2,
+        "type": "spacing",
+        "logprob": -0.000003576272320060525
+      },
+      {
+        "text": "थे।",
+        "start": 6.2,
+        "end": 6.52,
+        "type": "word",
+        "logprob": -0.06721256672911598
+      }
+    ],
+    "transcription_id": "qa4iDgBdforBeurmFsLn",
+    "audio_duration_secs": 7.56
+  }
+}

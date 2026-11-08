@@ -1,0 +1,264 @@
+{
+  "clip_id": "pt_br_1548",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "por",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:05.822Z",
+  "response": {
+    "language_code": "por",
+    "language_probability": 1,
+    "text": "Quando você liga para alguém que está a milhares de quilômetros de distância, você está usando um satélite",
+    "words": [
+      {
+        "text": "Quando",
+        "start": 1.12,
+        "end": 1.36,
+        "type": "word",
+        "logprob": -0.000878544058650732
+      },
+      {
+        "text": " ",
+        "start": 1.36,
+        "end": 1.38,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "você",
+        "start": 1.4,
+        "end": 1.68,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 1.68,
+        "end": 1.7,
+        "type": "spacing",
+        "logprob": -0.000017404405298293568
+      },
+      {
+        "text": "liga",
+        "start": 1.7,
+        "end": 1.88,
+        "type": "word",
+        "logprob": -0.000017404405298293568
+      },
+      {
+        "text": " ",
+        "start": 1.88,
+        "end": 1.96,
+        "type": "spacing",
+        "logprob": -0.000380324519937858
+      },
+      {
+        "text": "para",
+        "start": 1.96,
+        "end": 2.1,
+        "type": "word",
+        "logprob": -0.000380324519937858
+      },
+      {
+        "text": " ",
+        "start": 2.1,
+        "end": 2.12,
+        "type": "spacing",
+        "logprob": -0.000006437280717364047
+      },
+      {
+        "text": "alguém",
+        "start": 2.12,
+        "end": 2.4,
+        "type": "word",
+        "logprob": -0.000006437280717364047
+      },
+      {
+        "text": " ",
+        "start": 2.4,
+        "end": 2.46,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "que",
+        "start": 2.46,
+        "end": 2.5,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 2.5,
+        "end": 2.52,
+        "type": "spacing",
+        "logprob": -0.000003933898824470816
+      },
+      {
+        "text": "está",
+        "start": 2.52,
+        "end": 2.72,
+        "type": "word",
+        "logprob": -0.000003933898824470816
+      },
+      {
+        "text": " ",
+        "start": 2.72,
+        "end": 2.74,
+        "type": "spacing",
+        "logprob": -0.26144662499427795
+      },
+      {
+        "text": "a",
+        "start": 2.74,
+        "end": 2.74,
+        "type": "word",
+        "logprob": -0.26144662499427795
+      },
+      {
+        "text": " ",
+        "start": 2.74,
+        "end": 2.8,
+        "type": "spacing",
+        "logprob": -0.0000040531076592742465
+      },
+      {
+        "text": "milhares",
+        "start": 2.8,
+        "end": 3.22,
+        "type": "word",
+        "logprob": -0.0000040531076592742465
+      },
+      {
+        "text": " ",
+        "start": 3.22,
+        "end": 3.26,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "de",
+        "start": 3.26,
+        "end": 3.34,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 3.34,
+        "end": 3.36,
+        "type": "spacing",
+        "logprob": -0.000021457441107486375
+      },
+      {
+        "text": "quilômetros",
+        "start": 3.36,
+        "end": 3.88,
+        "type": "word",
+        "logprob": -0.000021012651731408287
+      },
+      {
+        "text": " ",
+        "start": 3.88,
+        "end": 3.9,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "de",
+        "start": 3.9,
+        "end": 3.98,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 3.98,
+        "end": 4,
+        "type": "spacing",
+        "logprob": -0.000005483612312673358
+      },
+      {
+        "text": "distância,",
+        "start": 4,
+        "end": 4.64,
+        "type": "word",
+        "logprob": -0.000005173669387659175
+      },
+      {
+        "text": " ",
+        "start": 4.64,
+        "end": 4.64,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "você",
+        "start": 5.04,
+        "end": 5.28,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 5.28,
+        "end": 5.32,
+        "type": "spacing",
+        "logprob": -0.0000066756979322235566
+      },
+      {
+        "text": "está",
+        "start": 5.32,
+        "end": 5.54,
+        "type": "word",
+        "logprob": -0.0000066756979322235566
+      },
+      {
+        "text": " ",
+        "start": 5.54,
+        "end": 5.58,
+        "type": "spacing",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": "usando",
+        "start": 5.58,
+        "end": 5.86,
+        "type": "word",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": " ",
+        "start": 5.86,
+        "end": 5.88,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "um",
+        "start": 5.88,
+        "end": 5.98,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 5.98,
+        "end": 6.04,
+        "type": "spacing",
+        "logprob": -0.00009202533692587167
+      },
+      {
+        "text": "satélite",
+        "start": 6.04,
+        "end": 6.76,
+        "type": "word",
+        "logprob": -0.00010804240719153313
+      }
+    ],
+    "transcription_id": "xAKb3bB9TCUnqjRRvVai",
+    "audio_duration_secs": 8.28
+  }
+}

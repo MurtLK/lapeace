@@ -1,0 +1,488 @@
+{
+  "clip_id": "ur_pk_1608",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "urd",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:55.587Z",
+  "response": {
+    "language_code": "urd",
+    "language_probability": 1,
+    "text": "ارمند ورسی نے کہا، \"میں نے اپنی بہن اور اس کے دوست کو کھو دیا۔ میرے راستے میں ویل چیئرز پر دو معذور افراد تھے۔ لوگ بس اچھلتے ہوئے انہیں دھکا دے رہے تھے۔",
+    "words": [
+      {
+        "text": "ارمند",
+        "start": 1.24,
+        "end": 1.62,
+        "type": "word",
+        "logprob": -0.1675981542095542
+      },
+      {
+        "text": " ",
+        "start": 1.62,
+        "end": 1.64,
+        "type": "spacing",
+        "logprob": -0.22721610963344574
+      },
+      {
+        "text": "ورسی",
+        "start": 1.64,
+        "end": 1.94,
+        "type": "word",
+        "logprob": -0.29368334263563156
+      },
+      {
+        "text": " ",
+        "start": 1.94,
+        "end": 1.98,
+        "type": "spacing",
+        "logprob": -0.00013660451804753393
+      },
+      {
+        "text": "نے",
+        "start": 1.98,
+        "end": 2.12,
+        "type": "word",
+        "logprob": -0.00013660451804753393
+      },
+      {
+        "text": " ",
+        "start": 2.12,
+        "end": 2.16,
+        "type": "spacing",
+        "logprob": -0.00021407696476671845
+      },
+      {
+        "text": "کہا،",
+        "start": 2.16,
+        "end": 2.36,
+        "type": "word",
+        "logprob": -0.14998297164493124
+      },
+      {
+        "text": " ",
+        "start": 2.36,
+        "end": 2.44,
+        "type": "spacing",
+        "logprob": -0.06559626013040543
+      },
+      {
+        "text": "\"میں",
+        "start": 2.44,
+        "end": 2.6,
+        "type": "word",
+        "logprob": -0.018632787046954036
+      },
+      {
+        "text": " ",
+        "start": 2.6,
+        "end": 2.66,
+        "type": "spacing",
+        "logprob": -0.00023266946664080024
+      },
+      {
+        "text": "نے",
+        "start": 2.66,
+        "end": 2.74,
+        "type": "word",
+        "logprob": -0.00023266946664080024
+      },
+      {
+        "text": " ",
+        "start": 2.74,
+        "end": 2.76,
+        "type": "spacing",
+        "logprob": -0.00007259582343976945
+      },
+      {
+        "text": "اپنی",
+        "start": 2.78,
+        "end": 3.02,
+        "type": "word",
+        "logprob": -0.00007259582343976945
+      },
+      {
+        "text": " ",
+        "start": 3.02,
+        "end": 3.06,
+        "type": "spacing",
+        "logprob": -0.00555459875613451
+      },
+      {
+        "text": "بہن",
+        "start": 3.06,
+        "end": 3.3,
+        "type": "word",
+        "logprob": -0.0037284961823994913
+      },
+      {
+        "text": " ",
+        "start": 3.3,
+        "end": 3.34,
+        "type": "spacing",
+        "logprob": -0.00002276871418871451
+      },
+      {
+        "text": "اور",
+        "start": 3.34,
+        "end": 3.42,
+        "type": "word",
+        "logprob": -0.00002276871418871451
+      },
+      {
+        "text": " ",
+        "start": 3.42,
+        "end": 3.44,
+        "type": "spacing",
+        "logprob": -0.0006635371246375144
+      },
+      {
+        "text": "اس",
+        "start": 3.44,
+        "end": 3.52,
+        "type": "word",
+        "logprob": -0.0006635371246375144
+      },
+      {
+        "text": " ",
+        "start": 3.52,
+        "end": 3.58,
+        "type": "spacing",
+        "logprob": -0.00018809456378221512
+      },
+      {
+        "text": "کے",
+        "start": 3.58,
+        "end": 3.66,
+        "type": "word",
+        "logprob": -0.00018809456378221512
+      },
+      {
+        "text": " ",
+        "start": 3.66,
+        "end": 3.7,
+        "type": "spacing",
+        "logprob": -0.000018596476365928538
+      },
+      {
+        "text": "دوست",
+        "start": 3.7,
+        "end": 3.94,
+        "type": "word",
+        "logprob": -0.000018596476365928538
+      },
+      {
+        "text": " ",
+        "start": 3.94,
+        "end": 3.98,
+        "type": "spacing",
+        "logprob": -0.00005781483559985645
+      },
+      {
+        "text": "کو",
+        "start": 3.98,
+        "end": 4.1,
+        "type": "word",
+        "logprob": -0.00005781483559985645
+      },
+      {
+        "text": " ",
+        "start": 4.1,
+        "end": 4.12,
+        "type": "spacing",
+        "logprob": -0.0020534161012619734
+      },
+      {
+        "text": "کھو",
+        "start": 4.12,
+        "end": 4.28,
+        "type": "word",
+        "logprob": -0.0015273752893942099
+      },
+      {
+        "text": " ",
+        "start": 4.28,
+        "end": 4.36,
+        "type": "spacing",
+        "logprob": -0.4618374705314636
+      },
+      {
+        "text": "دیا۔",
+        "start": 4.36,
+        "end": 4.54,
+        "type": "word",
+        "logprob": -0.4618374705314636
+      },
+      {
+        "text": " ",
+        "start": 4.54,
+        "end": 4.98,
+        "type": "spacing",
+        "logprob": -0.001831522211432457
+      },
+      {
+        "text": "میرے",
+        "start": 4.98,
+        "end": 5.18,
+        "type": "word",
+        "logprob": -0.001831522211432457
+      },
+      {
+        "text": " ",
+        "start": 5.18,
+        "end": 5.22,
+        "type": "spacing",
+        "logprob": -0.010927713476121426
+      },
+      {
+        "text": "راستے",
+        "start": 5.22,
+        "end": 5.54,
+        "type": "word",
+        "logprob": -0.008756236982299015
+      },
+      {
+        "text": " ",
+        "start": 5.54,
+        "end": 5.6,
+        "type": "spacing",
+        "logprob": -0.000034689302992774174
+      },
+      {
+        "text": "میں",
+        "start": 5.6,
+        "end": 5.72,
+        "type": "word",
+        "logprob": -0.000034689302992774174
+      },
+      {
+        "text": " ",
+        "start": 5.72,
+        "end": 5.76,
+        "type": "spacing",
+        "logprob": -0.5505691766738892
+      },
+      {
+        "text": "ویل",
+        "start": 5.76,
+        "end": 5.96,
+        "type": "word",
+        "logprob": -0.3671379757482403
+      },
+      {
+        "text": " ",
+        "start": 5.96,
+        "end": 6,
+        "type": "spacing",
+        "logprob": -0.10811986029148102
+      },
+      {
+        "text": "چیئرز",
+        "start": 6,
+        "end": 6.36,
+        "type": "word",
+        "logprob": -0.29089378863573073
+      },
+      {
+        "text": " ",
+        "start": 6.36,
+        "end": 6.4,
+        "type": "spacing",
+        "logprob": -0.0001102625101339072
+      },
+      {
+        "text": "پر",
+        "start": 6.4,
+        "end": 6.5,
+        "type": "word",
+        "logprob": -0.0001102625101339072
+      },
+      {
+        "text": " ",
+        "start": 6.5,
+        "end": 6.62,
+        "type": "spacing",
+        "logprob": -0.00027426297310739756
+      },
+      {
+        "text": "دو",
+        "start": 6.62,
+        "end": 6.78,
+        "type": "word",
+        "logprob": -0.00027426297310739756
+      },
+      {
+        "text": " ",
+        "start": 6.78,
+        "end": 6.84,
+        "type": "spacing",
+        "logprob": -0.0013410394312813878
+      },
+      {
+        "text": "معذور",
+        "start": 6.84,
+        "end": 7.16,
+        "type": "word",
+        "logprob": -0.0023137660697102546
+      },
+      {
+        "text": " ",
+        "start": 7.16,
+        "end": 7.22,
+        "type": "spacing",
+        "logprob": -0.0006252956227399409
+      },
+      {
+        "text": "افراد",
+        "start": 7.22,
+        "end": 7.58,
+        "type": "word",
+        "logprob": -0.0006252956227399409
+      },
+      {
+        "text": " ",
+        "start": 7.58,
+        "end": 7.62,
+        "type": "spacing",
+        "logprob": -0.1918189525604248
+      },
+      {
+        "text": "تھے۔",
+        "start": 7.62,
+        "end": 8.06,
+        "type": "word",
+        "logprob": -0.1918189525604248
+      },
+      {
+        "text": " ",
+        "start": 8.06,
+        "end": 8.18,
+        "type": "spacing",
+        "logprob": -0.0004068977141287178
+      },
+      {
+        "text": "لوگ",
+        "start": 8.2,
+        "end": 8.44,
+        "type": "word",
+        "logprob": -0.0004068977141287178
+      },
+      {
+        "text": " ",
+        "start": 8.44,
+        "end": 8.48,
+        "type": "spacing",
+        "logprob": -0.0005646541831083596
+      },
+      {
+        "text": "بس",
+        "start": 8.48,
+        "end": 8.66,
+        "type": "word",
+        "logprob": -0.0005646541831083596
+      },
+      {
+        "text": " ",
+        "start": 8.66,
+        "end": 8.68,
+        "type": "spacing",
+        "logprob": -0.19987331330776215
+      },
+      {
+        "text": "اچھلتے",
+        "start": 8.68,
+        "end": 9.14,
+        "type": "word",
+        "logprob": -0.03931973835278768
+      },
+      {
+        "text": " ",
+        "start": 9.14,
+        "end": 9.2,
+        "type": "spacing",
+        "logprob": -0.004310602322220802
+      },
+      {
+        "text": "ہوئے",
+        "start": 9.2,
+        "end": 9.42,
+        "type": "word",
+        "logprob": -0.004310602322220802
+      },
+      {
+        "text": " ",
+        "start": 9.42,
+        "end": 9.44,
+        "type": "spacing",
+        "logprob": -0.04461202770471573
+      },
+      {
+        "text": "انہیں",
+        "start": 9.44,
+        "end": 9.56,
+        "type": "word",
+        "logprob": -0.04461202770471573
+      },
+      {
+        "text": " ",
+        "start": 9.56,
+        "end": 9.6,
+        "type": "spacing",
+        "logprob": -0.006333043798804283
+      },
+      {
+        "text": "دھکا",
+        "start": 9.6,
+        "end": 9.86,
+        "type": "word",
+        "logprob": -0.13375195395201445
+      },
+      {
+        "text": " ",
+        "start": 9.86,
+        "end": 9.9,
+        "type": "spacing",
+        "logprob": -0.0013374679256230593
+      },
+      {
+        "text": "دے",
+        "start": 9.9,
+        "end": 10.02,
+        "type": "word",
+        "logprob": -0.0013374679256230593
+      },
+      {
+        "text": " ",
+        "start": 10.02,
+        "end": 10.06,
+        "type": "spacing",
+        "logprob": -0.0009168949909508228
+      },
+      {
+        "text": "رہے",
+        "start": 10.06,
+        "end": 10.26,
+        "type": "word",
+        "logprob": -0.0009168949909508228
+      },
+      {
+        "text": " ",
+        "start": 10.26,
+        "end": 10.34,
+        "type": "spacing",
+        "logprob": -0.06479457765817642
+      },
+      {
+        "text": "تھے۔",
+        "start": 10.34,
+        "end": 10.5,
+        "type": "word",
+        "logprob": -0.06479457765817642
+      }
+    ],
+    "transcription_id": "vu57MyP57AHRl8C3APCY",
+    "audio_duration_secs": 11.28
+  }
+}

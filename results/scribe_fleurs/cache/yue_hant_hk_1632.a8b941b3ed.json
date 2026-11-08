@@ -1,0 +1,369 @@
+{
+  "clip_id": "yue_hant_hk_1632",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "yue",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:31.776Z",
+  "response": {
+    "language_code": "yue",
+    "language_probability": 1,
+    "text": "女性朋友也应该明白，文化差异可能会导致某些她们视为骚扰的情况。被人跟踪、手臂被人抓住等状况并不少见。",
+    "words": [
+      {
+        "text": "女",
+        "start": 1,
+        "end": 1.12,
+        "type": "word",
+        "logprob": -0.00008654219709569588
+      },
+      {
+        "text": "性",
+        "start": 1.12,
+        "end": 1.38,
+        "type": "word",
+        "logprob": -0.00008654219709569588
+      },
+      {
+        "text": "朋",
+        "start": 1.38,
+        "end": 1.62,
+        "type": "word",
+        "logprob": -0.0000561460001335945
+      },
+      {
+        "text": "友",
+        "start": 1.62,
+        "end": 1.88,
+        "type": "word",
+        "logprob": -0.0000561460001335945
+      },
+      {
+        "text": "也",
+        "start": 1.88,
+        "end": 2.1,
+        "type": "word",
+        "logprob": -0.00005400034933700226
+      },
+      {
+        "text": "应",
+        "start": 2.1,
+        "end": 2.36,
+        "type": "word",
+        "logprob": -0.0000523315102327615
+      },
+      {
+        "text": "该",
+        "start": 2.36,
+        "end": 2.6,
+        "type": "word",
+        "logprob": -0.0000523315102327615
+      },
+      {
+        "text": "明",
+        "start": 2.6,
+        "end": 2.88,
+        "type": "word",
+        "logprob": -0.0000046491513785440475
+      },
+      {
+        "text": "白",
+        "start": 2.88,
+        "end": 2.88,
+        "type": "word",
+        "logprob": -0.0000046491513785440475
+      },
+      {
+        "text": "，",
+        "start": 3.12,
+        "end": 3.52,
+        "type": "word",
+        "logprob": -0.12694264948368073
+      },
+      {
+        "text": "文",
+        "start": 3.52,
+        "end": 3.76,
+        "type": "word",
+        "logprob": -0.000009536697689327411
+      },
+      {
+        "text": "化",
+        "start": 3.76,
+        "end": 4.04,
+        "type": "word",
+        "logprob": -0.000009536697689327411
+      },
+      {
+        "text": "差",
+        "start": 4.04,
+        "end": 4.34,
+        "type": "word",
+        "logprob": -0.0008274468709714711
+      },
+      {
+        "text": "异",
+        "start": 4.34,
+        "end": 4.6,
+        "type": "word",
+        "logprob": -0.0008274468709714711
+      },
+      {
+        "text": "可",
+        "start": 4.6,
+        "end": 4.84,
+        "type": "word",
+        "logprob": -0.00003909988299710676
+      },
+      {
+        "text": "能",
+        "start": 4.84,
+        "end": 5.08,
+        "type": "word",
+        "logprob": -0.00003909988299710676
+      },
+      {
+        "text": "会",
+        "start": 5.08,
+        "end": 5.32,
+        "type": "word",
+        "logprob": -0.00003909988299710676
+      },
+      {
+        "text": "导",
+        "start": 5.32,
+        "end": 5.56,
+        "type": "word",
+        "logprob": -0.000060794889577664435
+      },
+      {
+        "text": "致",
+        "start": 5.56,
+        "end": 5.84,
+        "type": "word",
+        "logprob": -0.000060794889577664435
+      },
+      {
+        "text": "某",
+        "start": 5.84,
+        "end": 6.12,
+        "type": "word",
+        "logprob": -0.000022291887944447808
+      },
+      {
+        "text": "些",
+        "start": 6.12,
+        "end": 6.4,
+        "type": "word",
+        "logprob": -0.000022291887944447808
+      },
+      {
+        "text": "她",
+        "start": 6.4,
+        "end": 6.68,
+        "type": "word",
+        "logprob": -0.023825766518712044
+      },
+      {
+        "text": "们",
+        "start": 6.68,
+        "end": 6.94,
+        "type": "word",
+        "logprob": -0.023825766518712044
+      },
+      {
+        "text": "视",
+        "start": 6.94,
+        "end": 7.18,
+        "type": "word",
+        "logprob": -0.0028287656605243683
+      },
+      {
+        "text": "为",
+        "start": 7.18,
+        "end": 7.46,
+        "type": "word",
+        "logprob": -0.0028287656605243683
+      },
+      {
+        "text": "骚",
+        "start": 7.46,
+        "end": 7.74,
+        "type": "word",
+        "logprob": -0.008363461121916771
+      },
+      {
+        "text": "扰",
+        "start": 7.74,
+        "end": 8,
+        "type": "word",
+        "logprob": -0.00004136476854910143
+      },
+      {
+        "text": "的",
+        "start": 8,
+        "end": 8.2,
+        "type": "word",
+        "logprob": -0.0013781820889562368
+      },
+      {
+        "text": "情",
+        "start": 8.2,
+        "end": 8.5,
+        "type": "word",
+        "logprob": -0.0013781820889562368
+      },
+      {
+        "text": "况",
+        "start": 8.5,
+        "end": 8.5,
+        "type": "word",
+        "logprob": -0.0013781820889562368
+      },
+      {
+        "text": "。",
+        "start": 8.5,
+        "end": 8.5,
+        "type": "word",
+        "logprob": -0.20696891844272614
+      },
+      {
+        "text": "被",
+        "start": 9.3,
+        "end": 9.48,
+        "type": "word",
+        "logprob": -0.00011300401820335537
+      },
+      {
+        "text": "人",
+        "start": 9.48,
+        "end": 9.8,
+        "type": "word",
+        "logprob": -0.00011300401820335537
+      },
+      {
+        "text": "跟",
+        "start": 9.8,
+        "end": 10.08,
+        "type": "word",
+        "logprob": -0.0013512775767594576
+      },
+      {
+        "text": "踪",
+        "start": 10.08,
+        "end": 10.1,
+        "type": "word",
+        "logprob": -0.0013512775767594576
+      },
+      {
+        "text": "、",
+        "start": 10.1,
+        "end": 10.1,
+        "type": "word",
+        "logprob": -0.05491965636610985
+      },
+      {
+        "text": "手",
+        "start": 10.74,
+        "end": 11.02,
+        "type": "word",
+        "logprob": -0.004310721065849066
+      },
+      {
+        "text": "臂",
+        "start": 11.02,
+        "end": 11.28,
+        "type": "word",
+        "logprob": -0.004310721065849066
+      },
+      {
+        "text": "被",
+        "start": 11.28,
+        "end": 11.48,
+        "type": "word",
+        "logprob": -0.00004660974445869215
+      },
+      {
+        "text": "人",
+        "start": 11.48,
+        "end": 11.84,
+        "type": "word",
+        "logprob": -0.00004660974445869215
+      },
+      {
+        "text": "抓",
+        "start": 11.84,
+        "end": 12.16,
+        "type": "word",
+        "logprob": -0.25618940591812134
+      },
+      {
+        "text": "住",
+        "start": 12.16,
+        "end": 12.68,
+        "type": "word",
+        "logprob": -0.25618940591812134
+      },
+      {
+        "text": "等",
+        "start": 12.68,
+        "end": 12.92,
+        "type": "word",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": "状",
+        "start": 12.92,
+        "end": 13.24,
+        "type": "word",
+        "logprob": -0.0013059191405773163
+      },
+      {
+        "text": "况",
+        "start": 13.24,
+        "end": 13.52,
+        "type": "word",
+        "logprob": -0.0013059191405773163
+      },
+      {
+        "text": "并",
+        "start": 13.52,
+        "end": 13.74,
+        "type": "word",
+        "logprob": -0.0021190824918448925
+      },
+      {
+        "text": "不",
+        "start": 13.74,
+        "end": 13.96,
+        "type": "word",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": "少",
+        "start": 13.96,
+        "end": 14.28,
+        "type": "word",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": "见",
+        "start": 14.28,
+        "end": 14.52,
+        "type": "word",
+        "logprob": -0.000006318072337307967
+      },
+      {
+        "text": "。",
+        "start": 14.52,
+        "end": 14.52,
+        "type": "word",
+        "logprob": -0.0003829461056739092
+      }
+    ],
+    "transcription_id": "eOQgEGoVMUR1lA3vjQyo",
+    "audio_duration_secs": 15.78
+  }
+}

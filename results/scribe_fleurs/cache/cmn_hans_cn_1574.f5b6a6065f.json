@@ -1,0 +1,383 @@
+{
+  "clip_id": "cmn_hans_cn_1574",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "zho",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:57.216Z",
+  "response": {
+    "language_code": "zho",
+    "language_probability": 1,
+    "text": "冬天可能会比看上去显得更冷，温度很少低于零度。但当风和湿度结合在一起，会让人感觉比温度计显示的温度要冷。",
+    "words": [
+      {
+        "text": "冬",
+        "start": 1.9,
+        "end": 2.08,
+        "type": "word",
+        "logprob": -0.000038265450712060556
+      },
+      {
+        "text": "天",
+        "start": 2.08,
+        "end": 2.36,
+        "type": "word",
+        "logprob": -0.000038265450712060556
+      },
+      {
+        "text": "可",
+        "start": 2.36,
+        "end": 2.5,
+        "type": "word",
+        "logprob": -0.00003349725011503324
+      },
+      {
+        "text": "能",
+        "start": 2.52,
+        "end": 2.7,
+        "type": "word",
+        "logprob": -0.00003349725011503324
+      },
+      {
+        "text": "会",
+        "start": 2.7,
+        "end": 2.94,
+        "type": "word",
+        "logprob": -0.00003349725011503324
+      },
+      {
+        "text": "比",
+        "start": 2.96,
+        "end": 3.2,
+        "type": "word",
+        "logprob": -0.00027056847466155887
+      },
+      {
+        "text": "看",
+        "start": 3.2,
+        "end": 3.38,
+        "type": "word",
+        "logprob": -0.00001847726889536716
+      },
+      {
+        "text": "上",
+        "start": 3.38,
+        "end": 3.56,
+        "type": "word",
+        "logprob": -0.00001847726889536716
+      },
+      {
+        "text": "去",
+        "start": 3.56,
+        "end": 4.019,
+        "type": "word",
+        "logprob": -0.00001847726889536716
+      },
+      {
+        "text": "显",
+        "start": 4.019,
+        "end": 4.4,
+        "type": "word",
+        "logprob": -0.000014543427823809907
+      },
+      {
+        "text": "得",
+        "start": 4.4,
+        "end": 4.7,
+        "type": "word",
+        "logprob": -0.000014543427823809907
+      },
+      {
+        "text": "更",
+        "start": 4.7,
+        "end": 4.9,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "冷",
+        "start": 4.92,
+        "end": 4.92,
+        "type": "word",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": "，",
+        "start": 5.08,
+        "end": 5.72,
+        "type": "word",
+        "logprob": -0.14270341396331787
+      },
+      {
+        "text": "温",
+        "start": 5.72,
+        "end": 5.94,
+        "type": "word",
+        "logprob": -0.00008880697714630514
+      },
+      {
+        "text": "度",
+        "start": 5.94,
+        "end": 6.12,
+        "type": "word",
+        "logprob": -0.00008880697714630514
+      },
+      {
+        "text": "很",
+        "start": 6.12,
+        "end": 6.32,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "少",
+        "start": 6.32,
+        "end": 6.66,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "低",
+        "start": 6.66,
+        "end": 6.86,
+        "type": "word",
+        "logprob": -0.00016020445036701858
+      },
+      {
+        "text": "于",
+        "start": 6.86,
+        "end": 7.02,
+        "type": "word",
+        "logprob": -0.00016020445036701858
+      },
+      {
+        "text": "零",
+        "start": 7.02,
+        "end": 7.3,
+        "type": "word",
+        "logprob": -0.007709983736276627
+      },
+      {
+        "text": "度",
+        "start": 7.3,
+        "end": 7.46,
+        "type": "word",
+        "logprob": -0.00000250339189733495
+      },
+      {
+        "text": "。",
+        "start": 7.46,
+        "end": 7.46,
+        "type": "word",
+        "logprob": -0.01105151604861021
+      },
+      {
+        "text": "但",
+        "start": 8.52,
+        "end": 8.7,
+        "type": "word",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": "当",
+        "start": 8.7,
+        "end": 9,
+        "type": "word",
+        "logprob": -0.0000029802276912960224
+      },
+      {
+        "text": "风",
+        "start": 9,
+        "end": 9.26,
+        "type": "word",
+        "logprob": -0.00002074220174108632
+      },
+      {
+        "text": "和",
+        "start": 9.26,
+        "end": 9.52,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "湿",
+        "start": 9.52,
+        "end": 9.74,
+        "type": "word",
+        "logprob": -0.000644237850792706
+      },
+      {
+        "text": "度",
+        "start": 9.74,
+        "end": 10.06,
+        "type": "word",
+        "logprob": -0.000644237850792706
+      },
+      {
+        "text": "结",
+        "start": 10.06,
+        "end": 10.3,
+        "type": "word",
+        "logprob": -0.000024676019165781327
+      },
+      {
+        "text": "合",
+        "start": 10.32,
+        "end": 10.48,
+        "type": "word",
+        "logprob": -0.000024676019165781327
+      },
+      {
+        "text": "在",
+        "start": 10.5,
+        "end": 10.64,
+        "type": "word",
+        "logprob": -0.000001311301275563892
+      },
+      {
+        "text": "一",
+        "start": 10.64,
+        "end": 10.8,
+        "type": "word",
+        "logprob": -0.000001311301275563892
+      },
+      {
+        "text": "起",
+        "start": 10.8,
+        "end": 11.04,
+        "type": "word",
+        "logprob": -0.000001311301275563892
+      },
+      {
+        "text": "，",
+        "start": 11.04,
+        "end": 11.36,
+        "type": "word",
+        "logprob": -0.000005364403477869928
+      },
+      {
+        "text": "会",
+        "start": 11.38,
+        "end": 11.58,
+        "type": "word",
+        "logprob": -0.00027211778797209263
+      },
+      {
+        "text": "让",
+        "start": 11.58,
+        "end": 11.76,
+        "type": "word",
+        "logprob": -0.000006198863957251888
+      },
+      {
+        "text": "人",
+        "start": 11.76,
+        "end": 11.94,
+        "type": "word",
+        "logprob": -0.000006198863957251888
+      },
+      {
+        "text": "感",
+        "start": 11.94,
+        "end": 12.14,
+        "type": "word",
+        "logprob": -0.000012636104656849056
+      },
+      {
+        "text": "觉",
+        "start": 12.14,
+        "end": 12.36,
+        "type": "word",
+        "logprob": -0.000012636104656849056
+      },
+      {
+        "text": "比",
+        "start": 12.36,
+        "end": 12.56,
+        "type": "word",
+        "logprob": -0.000004291525328881107
+      },
+      {
+        "text": "温",
+        "start": 12.56,
+        "end": 12.74,
+        "type": "word",
+        "logprob": -0.000020146166207268834
+      },
+      {
+        "text": "度",
+        "start": 12.74,
+        "end": 12.9,
+        "type": "word",
+        "logprob": -0.000020146166207268834
+      },
+      {
+        "text": "计",
+        "start": 12.9,
+        "end": 13.2,
+        "type": "word",
+        "logprob": -0.00035744477645494044
+      },
+      {
+        "text": "显",
+        "start": 13.2,
+        "end": 13.48,
+        "type": "word",
+        "logprob": -0.005161057226359844
+      },
+      {
+        "text": "示",
+        "start": 13.48,
+        "end": 13.62,
+        "type": "word",
+        "logprob": -0.005161057226359844
+      },
+      {
+        "text": "的",
+        "start": 13.62,
+        "end": 13.74,
+        "type": "word",
+        "logprob": -0.005161057226359844
+      },
+      {
+        "text": "温",
+        "start": 13.74,
+        "end": 13.94,
+        "type": "word",
+        "logprob": -0.00000834461570775602
+      },
+      {
+        "text": "度",
+        "start": 13.94,
+        "end": 14.48,
+        "type": "word",
+        "logprob": -0.00000834461570775602
+      },
+      {
+        "text": "要",
+        "start": 14.48,
+        "end": 14.68,
+        "type": "word",
+        "logprob": -0.000007152531907195225
+      },
+      {
+        "text": "冷",
+        "start": 14.68,
+        "end": 14.82,
+        "type": "word",
+        "logprob": -0.000003814689989667386
+      },
+      {
+        "text": "。",
+        "start": 14.82,
+        "end": 14.82,
+        "type": "word",
+        "logprob": -0.00001645074735279195
+      }
+    ],
+    "transcription_id": "YNgoF4PSm7PJjodlEhTb",
+    "audio_duration_secs": 16.76
+  }
+}

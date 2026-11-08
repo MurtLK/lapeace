@@ -1,0 +1,138 @@
+{
+  "clip_id": "ta_in_1622",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "tam",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:48.990Z",
+  "response": {
+    "language_code": "tam",
+    "language_probability": 1,
+    "text": "U. S. ஜனாதிபதி George W. Bush இந்த அறிவிப்பை வரவேற்றுள்ளார்.",
+    "words": [
+      {
+        "text": "U.",
+        "start": 0.58,
+        "end": 0.68,
+        "type": "word",
+        "logprob": -0.13212857209146023
+      },
+      {
+        "text": " ",
+        "start": 0.68,
+        "end": 0.84,
+        "type": "spacing",
+        "logprob": -0.11367210000753403
+      },
+      {
+        "text": "S.",
+        "start": 0.84,
+        "end": 0.92,
+        "type": "word",
+        "logprob": -0.06332658790051937
+      },
+      {
+        "text": " ",
+        "start": 0.92,
+        "end": 1.04,
+        "type": "spacing",
+        "logprob": -0.0033261235803365707
+      },
+      {
+        "text": "ஜனாதிபதி",
+        "start": 1.06,
+        "end": 1.6,
+        "type": "word",
+        "logprob": -0.0008703860094101401
+      },
+      {
+        "text": " ",
+        "start": 1.6,
+        "end": 1.9,
+        "type": "spacing",
+        "logprob": -0.6640974879264832
+      },
+      {
+        "text": "George",
+        "start": 1.9,
+        "end": 2.26,
+        "type": "word",
+        "logprob": -0.6640974879264832
+      },
+      {
+        "text": " ",
+        "start": 2.26,
+        "end": 2.52,
+        "type": "spacing",
+        "logprob": -0.0019259967375546694
+      },
+      {
+        "text": "W.",
+        "start": 2.52,
+        "end": 2.92,
+        "type": "word",
+        "logprob": -0.002061496488749981
+      },
+      {
+        "text": " ",
+        "start": 2.92,
+        "end": 3.16,
+        "type": "spacing",
+        "logprob": -0.0006463822210207582
+      },
+      {
+        "text": "Bush",
+        "start": 3.16,
+        "end": 3.36,
+        "type": "word",
+        "logprob": -0.0006463822210207582
+      },
+      {
+        "text": " ",
+        "start": 3.36,
+        "end": 3.56,
+        "type": "spacing",
+        "logprob": -0.00019262365822214633
+      },
+      {
+        "text": "இந்த",
+        "start": 3.56,
+        "end": 3.78,
+        "type": "word",
+        "logprob": -0.00019262365822214633
+      },
+      {
+        "text": " ",
+        "start": 3.78,
+        "end": 3.86,
+        "type": "spacing",
+        "logprob": -0.0002759314374998212
+      },
+      {
+        "text": "அறிவிப்பை",
+        "start": 3.86,
+        "end": 4.38,
+        "type": "word",
+        "logprob": -0.0005479940704794393
+      },
+      {
+        "text": " ",
+        "start": 4.38,
+        "end": 4.58,
+        "type": "spacing",
+        "logprob": -0.004193560685962439
+      },
+      {
+        "text": "வரவேற்றுள்ளார்.",
+        "start": 4.58,
+        "end": 5.42,
+        "type": "word",
+        "logprob": -0.027190423958624404
+      }
+    ],
+    "transcription_id": "bAN5zdDPXCwwNY9sdxWl",
+    "audio_duration_secs": 6.66
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "clip_id": "cmn_hans_cn_1589",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "zho",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:57.735Z",
+  "response": {
+    "language_code": "zho",
+    "language_probability": 1,
+    "text": "让亚文化变得与众不同的特质可能是语言、美学、宗教、政治、性别、地理或多种因素的组合。",
+    "words": [
+      {
+        "text": "让",
+        "start": 0.96,
+        "end": 1.02,
+        "type": "word",
+        "logprob": -0.00405644066631794
+      },
+      {
+        "text": "亚",
+        "start": 1.02,
+        "end": 1.2,
+        "type": "word",
+        "logprob": -0.004525657277554274
+      },
+      {
+        "text": "文",
+        "start": 1.2,
+        "end": 1.36,
+        "type": "word",
+        "logprob": -0.00007748303323751315
+      },
+      {
+        "text": "化",
+        "start": 1.36,
+        "end": 1.56,
+        "type": "word",
+        "logprob": -0.00007748303323751315
+      },
+      {
+        "text": "变",
+        "start": 1.56,
+        "end": 1.72,
+        "type": "word",
+        "logprob": -0.00017975145601667464
+      },
+      {
+        "text": "得",
+        "start": 1.72,
+        "end": 1.86,
+        "type": "word",
+        "logprob": -0.00017975145601667464
+      },
+      {
+        "text": "与",
+        "start": 1.86,
+        "end": 2.02,
+        "type": "word",
+        "logprob": -0.00014697425649501383
+      },
+      {
+        "text": "众",
+        "start": 2.02,
+        "end": 2.2,
+        "type": "word",
+        "logprob": -0.0001528146385680884
+      },
+      {
+        "text": "不",
+        "start": 2.2,
+        "end": 2.3,
+        "type": "word",
+        "logprob": -0.0000069141146923357155
+      },
+      {
+        "text": "同",
+        "start": 2.3,
+        "end": 2.46,
+        "type": "word",
+        "logprob": -0.0000069141146923357155
+      },
+      {
+        "text": "的",
+        "start": 2.46,
+        "end": 2.6,
+        "type": "word",
+        "logprob": -0.0000069141146923357155
+      },
+      {
+        "text": "特",
+        "start": 2.6,
+        "end": 2.82,
+        "type": "word",
+        "logprob": -0.015504186972975731
+      },
+      {
+        "text": "质",
+        "start": 2.82,
+        "end": 3.12,
+        "type": "word",
+        "logprob": -0.0006347072194330394
+      },
+      {
+        "text": "可",
+        "start": 3.12,
+        "end": 3.26,
+        "type": "word",
+        "logprob": -0.25193774700164795
+      },
+      {
+        "text": "能",
+        "start": 3.26,
+        "end": 3.44,
+        "type": "word",
+        "logprob": -0.25193774700164795
+      },
+      {
+        "text": "是",
+        "start": 3.44,
+        "end": 3.58,
+        "type": "word",
+        "logprob": -0.25193774700164795
+      },
+      {
+        "text": "语",
+        "start": 3.58,
+        "end": 3.76,
+        "type": "word",
+        "logprob": -0.00014137222024146467
+      },
+      {
+        "text": "言",
+        "start": 3.76,
+        "end": 3.76,
+        "type": "word",
+        "logprob": -0.00014137222024146467
+      },
+      {
+        "text": "、",
+        "start": 3.76,
+        "end": 3.76,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "美",
+        "start": 4.08,
+        "end": 4.26,
+        "type": "word",
+        "logprob": -0.00004339123915997334
+      },
+      {
+        "text": "学",
+        "start": 4.26,
+        "end": 4.48,
+        "type": "word",
+        "logprob": -0.000010251946150674485
+      },
+      {
+        "text": "、",
+        "start": 4.48,
+        "end": 4.48,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "宗",
+        "start": 4.52,
+        "end": 4.7,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "教",
+        "start": 4.7,
+        "end": 5.02,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "、",
+        "start": 5.02,
+        "end": 5.02,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "政",
+        "start": 5.06,
+        "end": 5.28,
+        "type": "word",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": "治",
+        "start": 5.28,
+        "end": 5.6,
+        "type": "word",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": "、",
+        "start": 5.6,
+        "end": 5.6,
+        "type": "word",
+        "logprob": -0.000012516897186287679
+      },
+      {
+        "text": "性",
+        "start": 6.08,
+        "end": 6.32,
+        "type": "word",
+        "logprob": -0.023841597139835358
+      },
+      {
+        "text": "别",
+        "start": 6.32,
+        "end": 6.56,
+        "type": "word",
+        "logprob": -0.023841597139835358
+      },
+      {
+        "text": "、",
+        "start": 6.56,
+        "end": 6.56,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "地",
+        "start": 6.6,
+        "end": 6.72,
+        "type": "word",
+        "logprob": -0.0000023841830625315197
+      },
+      {
+        "text": "理",
+        "start": 6.72,
+        "end": 6.96,
+        "type": "word",
+        "logprob": -0.0000023841830625315197
+      },
+      {
+        "text": "或",
+        "start": 6.98,
+        "end": 7.18,
+        "type": "word",
+        "logprob": -0.000027894584491150454
+      },
+      {
+        "text": "多",
+        "start": 7.32,
+        "end": 7.48,
+        "type": "word",
+        "logprob": -0.0008812834857963026
+      },
+      {
+        "text": "种",
+        "start": 7.48,
+        "end": 7.62,
+        "type": "word",
+        "logprob": -0.0008812834857963026
+      },
+      {
+        "text": "因",
+        "start": 7.8,
+        "end": 7.96,
+        "type": "word",
+        "logprob": -0.00028606137493625283
+      },
+      {
+        "text": "素",
+        "start": 7.96,
+        "end": 8.1,
+        "type": "word",
+        "logprob": -0.00028606137493625283
+      },
+      {
+        "text": "的",
+        "start": 8.1,
+        "end": 8.36,
+        "type": "word",
+        "logprob": -0.000007986990567587782
+      },
+      {
+        "text": "组",
+        "start": 8.36,
+        "end": 8.52,
+        "type": "word",
+        "logprob": -0.0006509092636406422
+      },
+      {
+        "text": "合",
+        "start": 8.52,
+        "end": 8.68,
+        "type": "word",
+        "logprob": -0.0006509092636406422
+      },
+      {
+        "text": "。",
+        "start": 8.68,
+        "end": 8.68,
+        "type": "word",
+        "logprob": -0.00008749579137656838
+      }
+    ],
+    "transcription_id": "kkzCK148IWQ3VqPMVvGV",
+    "audio_duration_secs": 9.42
+  }
+}

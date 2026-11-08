@@ -1,0 +1,369 @@
+{
+  "clip_id": "cmn_hans_cn_1608",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "zho",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:58.971Z",
+  "response": {
+    "language_code": "zho",
+    "language_probability": 1,
+    "text": "我姐姐和她的朋友不见了，路上有两个残疾人坐着轮椅，有人跳过去帮他们推轮椅。阿尔芒·范斯-范思哲说道。",
+    "words": [
+      {
+        "text": "我",
+        "start": 1.64,
+        "end": 1.78,
+        "type": "word",
+        "logprob": -0.669608473777771
+      },
+      {
+        "text": "姐",
+        "start": 1.78,
+        "end": 1.92,
+        "type": "word",
+        "logprob": -0.000007390948667307384
+      },
+      {
+        "text": "姐",
+        "start": 1.92,
+        "end": 2.06,
+        "type": "word",
+        "logprob": -0.000007390948667307384
+      },
+      {
+        "text": "和",
+        "start": 2.06,
+        "end": 2.2,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "她",
+        "start": 2.2,
+        "end": 2.32,
+        "type": "word",
+        "logprob": -0.004621538799256086
+      },
+      {
+        "text": "的",
+        "start": 2.32,
+        "end": 2.44,
+        "type": "word",
+        "logprob": -0.004621538799256086
+      },
+      {
+        "text": "朋",
+        "start": 2.44,
+        "end": 2.58,
+        "type": "word",
+        "logprob": -0.000006318072337307967
+      },
+      {
+        "text": "友",
+        "start": 2.58,
+        "end": 2.74,
+        "type": "word",
+        "logprob": -0.000006318072337307967
+      },
+      {
+        "text": "不",
+        "start": 2.74,
+        "end": 2.86,
+        "type": "word",
+        "logprob": -0.00005328513361746445
+      },
+      {
+        "text": "见",
+        "start": 3,
+        "end": 3.06,
+        "type": "word",
+        "logprob": -0.00005328513361746445
+      },
+      {
+        "text": "了",
+        "start": 3.14,
+        "end": 3.16,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "，",
+        "start": 3.58,
+        "end": 3.62,
+        "type": "word",
+        "logprob": -0.22544173896312714
+      },
+      {
+        "text": "路",
+        "start": 3.62,
+        "end": 3.74,
+        "type": "word",
+        "logprob": -0.0004142856632824987
+      },
+      {
+        "text": "上",
+        "start": 3.74,
+        "end": 3.88,
+        "type": "word",
+        "logprob": -0.0004142856632824987
+      },
+      {
+        "text": "有",
+        "start": 3.88,
+        "end": 4,
+        "type": "word",
+        "logprob": -0.004632455296814442
+      },
+      {
+        "text": "两",
+        "start": 4,
+        "end": 4.16,
+        "type": "word",
+        "logprob": -0.004632455296814442
+      },
+      {
+        "text": "个",
+        "start": 4.22,
+        "end": 4.32,
+        "type": "word",
+        "logprob": -0.004632455296814442
+      },
+      {
+        "text": "残",
+        "start": 4.32,
+        "end": 4.52,
+        "type": "word",
+        "logprob": -0.00012814177898690104
+      },
+      {
+        "text": "疾",
+        "start": 4.52,
+        "end": 4.74,
+        "type": "word",
+        "logprob": -0.00027891082572750747
+      },
+      {
+        "text": "人",
+        "start": 4.74,
+        "end": 4.82,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "坐",
+        "start": 4.82,
+        "end": 4.98,
+        "type": "word",
+        "logprob": -0.0002108589978888631
+      },
+      {
+        "text": "着",
+        "start": 4.98,
+        "end": 5.08,
+        "type": "word",
+        "logprob": -0.000013351351299206726
+      },
+      {
+        "text": "轮",
+        "start": 5.2,
+        "end": 5.36,
+        "type": "word",
+        "logprob": -0.00006711257447022945
+      },
+      {
+        "text": "椅",
+        "start": 5.36,
+        "end": 5.38,
+        "type": "word",
+        "logprob": -0.000005125986263010418
+      },
+      {
+        "text": "，",
+        "start": 5.38,
+        "end": 6,
+        "type": "word",
+        "logprob": -0.000380324519937858
+      },
+      {
+        "text": "有",
+        "start": 6,
+        "end": 6.08,
+        "type": "word",
+        "logprob": -0.0000027418097943154862
+      },
+      {
+        "text": "人",
+        "start": 6.08,
+        "end": 6.26,
+        "type": "word",
+        "logprob": -0.0000027418097943154862
+      },
+      {
+        "text": "跳",
+        "start": 6.26,
+        "end": 6.44,
+        "type": "word",
+        "logprob": -0.0000058412379075889476
+      },
+      {
+        "text": "过",
+        "start": 6.44,
+        "end": 6.56,
+        "type": "word",
+        "logprob": -0.0000895221673999913
+      },
+      {
+        "text": "去",
+        "start": 6.56,
+        "end": 6.72,
+        "type": "word",
+        "logprob": -0.0000895221673999913
+      },
+      {
+        "text": "帮",
+        "start": 6.72,
+        "end": 6.86,
+        "type": "word",
+        "logprob": -0.000007867782187531702
+      },
+      {
+        "text": "他",
+        "start": 6.86,
+        "end": 6.96,
+        "type": "word",
+        "logprob": -0.0015087660867720842
+      },
+      {
+        "text": "们",
+        "start": 6.96,
+        "end": 7.12,
+        "type": "word",
+        "logprob": -0.0015087660867720842
+      },
+      {
+        "text": "推",
+        "start": 7.12,
+        "end": 7.3,
+        "type": "word",
+        "logprob": -0.000006318072337307967
+      },
+      {
+        "text": "轮",
+        "start": 7.4,
+        "end": 7.52,
+        "type": "word",
+        "logprob": -0.000019192511899746023
+      },
+      {
+        "text": "椅",
+        "start": 7.52,
+        "end": 7.6,
+        "type": "word",
+        "logprob": -0.000003933898824470816
+      },
+      {
+        "text": "。",
+        "start": 7.6,
+        "end": 7.6,
+        "type": "word",
+        "logprob": -0.0032165716402232647
+      },
+      {
+        "text": "阿",
+        "start": 8.2,
+        "end": 8.36,
+        "type": "word",
+        "logprob": -0.038451824337244034
+      },
+      {
+        "text": "尔",
+        "start": 8.36,
+        "end": 8.5,
+        "type": "word",
+        "logprob": -0.038451824337244034
+      },
+      {
+        "text": "芒",
+        "start": 8.5,
+        "end": 8.5,
+        "type": "word",
+        "logprob": -0.004575141705572605
+      },
+      {
+        "text": "·",
+        "start": 8.82,
+        "end": 8.86,
+        "type": "word",
+        "logprob": -0.005795105826109648
+      },
+      {
+        "text": "范",
+        "start": 8.86,
+        "end": 9.18,
+        "type": "word",
+        "logprob": -0.0029659350402653217
+      },
+      {
+        "text": "斯",
+        "start": 9.18,
+        "end": 9.46,
+        "type": "word",
+        "logprob": -0.026118943467736244
+      },
+      {
+        "text": "-",
+        "start": 9.46,
+        "end": 9.46,
+        "type": "word",
+        "logprob": -0.11848236620426178
+      },
+      {
+        "text": "范",
+        "start": 9.48,
+        "end": 9.74,
+        "type": "word",
+        "logprob": -0.001033129869028926
+      },
+      {
+        "text": "思",
+        "start": 9.8,
+        "end": 9.92,
+        "type": "word",
+        "logprob": -0.16135403513908386
+      },
+      {
+        "text": "哲",
+        "start": 9.92,
+        "end": 10.14,
+        "type": "word",
+        "logprob": -0.000867467257194221
+      },
+      {
+        "text": "说",
+        "start": 10.14,
+        "end": 10.34,
+        "type": "word",
+        "logprob": -0.002815570682287216
+      },
+      {
+        "text": "道",
+        "start": 10.34,
+        "end": 10.48,
+        "type": "word",
+        "logprob": -0.002815570682287216
+      },
+      {
+        "text": "。",
+        "start": 10.48,
+        "end": 10.48,
+        "type": "word",
+        "logprob": -0.000006198863957251888
+      }
+    ],
+    "transcription_id": "wHfUzCFGUD3g0Ttq8LMG",
+    "audio_duration_secs": 12.72
+  }
+}

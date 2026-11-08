@@ -1,0 +1,166 @@
+{
+  "clip_id": "ar_eg_1656",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "ara",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:26.230Z",
+  "response": {
+    "language_code": "ara",
+    "language_probability": 1,
+    "text": "وقالت الشرطة إن الجثة بدت وكأنها كانت هناك منذ يوم تقريباً.",
+    "words": [
+      {
+        "text": "وقالت",
+        "start": 0.36,
+        "end": 0.78,
+        "type": "word",
+        "logprob": -0.0019119760487228631
+      },
+      {
+        "text": " ",
+        "start": 0.78,
+        "end": 0.82,
+        "type": "spacing",
+        "logprob": -0.0029223139863461256
+      },
+      {
+        "text": "الشرطة",
+        "start": 0.82,
+        "end": 1.28,
+        "type": "word",
+        "logprob": -0.001963149887160398
+      },
+      {
+        "text": " ",
+        "start": 1.28,
+        "end": 1.3,
+        "type": "spacing",
+        "logprob": -0.00013219437096267939
+      },
+      {
+        "text": "إن",
+        "start": 1.3,
+        "end": 1.5,
+        "type": "word",
+        "logprob": -0.00013219437096267939
+      },
+      {
+        "text": " ",
+        "start": 1.5,
+        "end": 1.52,
+        "type": "spacing",
+        "logprob": -0.0002932118659373373
+      },
+      {
+        "text": "الجثة",
+        "start": 1.52,
+        "end": 1.96,
+        "type": "word",
+        "logprob": -0.0011865454784128816
+      },
+      {
+        "text": " ",
+        "start": 1.96,
+        "end": 2.2,
+        "type": "spacing",
+        "logprob": -0.024302437901496887
+      },
+      {
+        "text": "بدت",
+        "start": 2.2,
+        "end": 2.48,
+        "type": "word",
+        "logprob": -0.01621569166672998
+      },
+      {
+        "text": " ",
+        "start": 2.48,
+        "end": 2.52,
+        "type": "spacing",
+        "logprob": -0.004883386194705963
+      },
+      {
+        "text": "وكأنها",
+        "start": 2.52,
+        "end": 3.14,
+        "type": "word",
+        "logprob": -0.0017467848470763177
+      },
+      {
+        "text": " ",
+        "start": 3.14,
+        "end": 3.18,
+        "type": "spacing",
+        "logprob": -0.000048993817472364753
+      },
+      {
+        "text": "كانت",
+        "start": 3.18,
+        "end": 3.48,
+        "type": "word",
+        "logprob": -0.000048993817472364753
+      },
+      {
+        "text": " ",
+        "start": 3.48,
+        "end": 3.52,
+        "type": "spacing",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": "هناك",
+        "start": 3.52,
+        "end": 3.9,
+        "type": "word",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": " ",
+        "start": 3.9,
+        "end": 3.94,
+        "type": "spacing",
+        "logprob": -0.00003302042750874534
+      },
+      {
+        "text": "منذ",
+        "start": 3.94,
+        "end": 4.22,
+        "type": "word",
+        "logprob": -0.00003302042750874534
+      },
+      {
+        "text": " ",
+        "start": 4.22,
+        "end": 4.26,
+        "type": "spacing",
+        "logprob": -0.0000015497195136049413
+      },
+      {
+        "text": "يوم",
+        "start": 4.26,
+        "end": 4.46,
+        "type": "word",
+        "logprob": -0.0000015497195136049413
+      },
+      {
+        "text": " ",
+        "start": 4.46,
+        "end": 4.7,
+        "type": "spacing",
+        "logprob": -0.580917477607727
+      },
+      {
+        "text": "تقريباً.",
+        "start": 4.7,
+        "end": 5.28,
+        "type": "word",
+        "logprob": -0.15007553999816992
+      }
+    ],
+    "transcription_id": "VwkYvWbvFPSvndp6SgZx",
+    "audio_duration_secs": 5.86
+  }
+}

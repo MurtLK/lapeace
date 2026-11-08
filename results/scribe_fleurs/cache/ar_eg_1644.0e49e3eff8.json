@@ -1,0 +1,320 @@
+{
+  "clip_id": "ar_eg_1644",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "ara",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:25.836Z",
+  "response": {
+    "language_code": "ara",
+    "language_probability": 1,
+    "text": "قال ميلر عندما طلب منه إبداء رأيه: \"يتحدث مايك كثيرًا أثناء جلسة الاستماع... كنت أستعد ولذا لم أسمع حقًا ما كان يقوله\".",
+    "words": [
+      {
+        "text": "قال",
+        "start": 0.68,
+        "end": 0.88,
+        "type": "word",
+        "logprob": -0.000445385929197073
+      },
+      {
+        "text": " ",
+        "start": 0.88,
+        "end": 1,
+        "type": "spacing",
+        "logprob": -0.012814203277230263
+      },
+      {
+        "text": "ميلر",
+        "start": 1,
+        "end": 1.3,
+        "type": "word",
+        "logprob": -0.009626566392398672
+      },
+      {
+        "text": " ",
+        "start": 1.3,
+        "end": 1.58,
+        "type": "spacing",
+        "logprob": -0.0009576263837516308
+      },
+      {
+        "text": "عندما",
+        "start": 1.58,
+        "end": 1.92,
+        "type": "word",
+        "logprob": -0.0009576263837516308
+      },
+      {
+        "text": " ",
+        "start": 1.92,
+        "end": 2.04,
+        "type": "spacing",
+        "logprob": -0.39427101612091064
+      },
+      {
+        "text": "طلب",
+        "start": 2.04,
+        "end": 2.3,
+        "type": "word",
+        "logprob": -0.39427101612091064
+      },
+      {
+        "text": " ",
+        "start": 2.3,
+        "end": 2.42,
+        "type": "spacing",
+        "logprob": -0.000014543427823809907
+      },
+      {
+        "text": "منه",
+        "start": 2.42,
+        "end": 2.68,
+        "type": "word",
+        "logprob": -0.000014543427823809907
+      },
+      {
+        "text": " ",
+        "start": 2.68,
+        "end": 2.72,
+        "type": "spacing",
+        "logprob": -0.011194399558007717
+      },
+      {
+        "text": "إبداء",
+        "start": 2.72,
+        "end": 3.12,
+        "type": "word",
+        "logprob": -0.002727583551313728
+      },
+      {
+        "text": " ",
+        "start": 3.12,
+        "end": 3.16,
+        "type": "spacing",
+        "logprob": -0.0003355178632773459
+      },
+      {
+        "text": "رأيه:",
+        "start": 3.16,
+        "end": 3.44,
+        "type": "word",
+        "logprob": -0.0027812874177470803
+      },
+      {
+        "text": " ",
+        "start": 3.44,
+        "end": 3.74,
+        "type": "spacing",
+        "logprob": -0.04910580441355705
+      },
+      {
+        "text": "\"يتحدث",
+        "start": 3.74,
+        "end": 4.44,
+        "type": "word",
+        "logprob": -0.008502401236910373
+      },
+      {
+        "text": " ",
+        "start": 4.44,
+        "end": 4.5,
+        "type": "spacing",
+        "logprob": -0.0015754204941913486
+      },
+      {
+        "text": "مايك",
+        "start": 4.5,
+        "end": 4.94,
+        "type": "word",
+        "logprob": -0.0012241237564012408
+      },
+      {
+        "text": " ",
+        "start": 4.94,
+        "end": 4.98,
+        "type": "spacing",
+        "logprob": -0.42992767691612244
+      },
+      {
+        "text": "كثيرًا",
+        "start": 4.98,
+        "end": 5.46,
+        "type": "word",
+        "logprob": -0.28662465010287025
+      },
+      {
+        "text": " ",
+        "start": 5.46,
+        "end": 5.72,
+        "type": "spacing",
+        "logprob": -0.007848023436963558
+      },
+      {
+        "text": "أثناء",
+        "start": 5.78,
+        "end": 6.2,
+        "type": "word",
+        "logprob": -0.007848023436963558
+      },
+      {
+        "text": " ",
+        "start": 6.2,
+        "end": 6.24,
+        "type": "spacing",
+        "logprob": -0.005160938482731581
+      },
+      {
+        "text": "جلسة",
+        "start": 6.24,
+        "end": 6.52,
+        "type": "word",
+        "logprob": -0.003871091291927087
+      },
+      {
+        "text": " ",
+        "start": 6.52,
+        "end": 6.58,
+        "type": "spacing",
+        "logprob": -0.003714330494403839
+      },
+      {
+        "text": "الاستماع...",
+        "start": 6.58,
+        "end": 7.06,
+        "type": "word",
+        "logprob": -0.032151169080117885
+      },
+      {
+        "text": " ",
+        "start": 7.06,
+        "end": 7.06,
+        "type": "spacing",
+        "logprob": -0.010231191292405128
+      },
+      {
+        "text": "كنت",
+        "start": 7.42,
+        "end": 7.66,
+        "type": "word",
+        "logprob": -0.010231191292405128
+      },
+      {
+        "text": " ",
+        "start": 7.66,
+        "end": 7.68,
+        "type": "spacing",
+        "logprob": -0.0002805792901199311
+      },
+      {
+        "text": "أستعد",
+        "start": 7.68,
+        "end": 8.2,
+        "type": "word",
+        "logprob": -0.0006666549073997885
+      },
+      {
+        "text": " ",
+        "start": 8.2,
+        "end": 8.24,
+        "type": "spacing",
+        "logprob": -0.07207571715116501
+      },
+      {
+        "text": "ولذا",
+        "start": 8.24,
+        "end": 8.58,
+        "type": "word",
+        "logprob": -0.03610776993446052
+      },
+      {
+        "text": " ",
+        "start": 8.58,
+        "end": 8.62,
+        "type": "spacing",
+        "logprob": -0.000010967194612021558
+      },
+      {
+        "text": "لم",
+        "start": 8.62,
+        "end": 8.8,
+        "type": "word",
+        "logprob": -0.000010967194612021558
+      },
+      {
+        "text": " ",
+        "start": 8.8,
+        "end": 8.82,
+        "type": "spacing",
+        "logprob": -0.0008076743106357753
+      },
+      {
+        "text": "أسمع",
+        "start": 8.88,
+        "end": 9.16,
+        "type": "word",
+        "logprob": -0.0002650369169714395
+      },
+      {
+        "text": " ",
+        "start": 9.16,
+        "end": 9.22,
+        "type": "spacing",
+        "logprob": -0.000020265373677830212
+      },
+      {
+        "text": "حقًا",
+        "start": 9.22,
+        "end": 9.58,
+        "type": "word",
+        "logprob": -0.001154720913291385
+      },
+      {
+        "text": " ",
+        "start": 9.58,
+        "end": 9.62,
+        "type": "spacing",
+        "logprob": -0.000011801649634435307
+      },
+      {
+        "text": "ما",
+        "start": 9.62,
+        "end": 9.78,
+        "type": "word",
+        "logprob": -0.000011801649634435307
+      },
+      {
+        "text": " ",
+        "start": 9.78,
+        "end": 9.82,
+        "type": "spacing",
+        "logprob": -0.00001168244216387393
+      },
+      {
+        "text": "كان",
+        "start": 9.82,
+        "end": 10.04,
+        "type": "word",
+        "logprob": -0.00001168244216387393
+      },
+      {
+        "text": " ",
+        "start": 10.04,
+        "end": 10.08,
+        "type": "spacing",
+        "logprob": -0.0006820021662861109
+      },
+      {
+        "text": "يقوله\".",
+        "start": 10.08,
+        "end": 10.48,
+        "type": "word",
+        "logprob": -0.012981481960845745
+      }
+    ],
+    "transcription_id": "epB0ZhKSlV5svUxNo9mj",
+    "audio_duration_secs": 11.28
+  }
+}

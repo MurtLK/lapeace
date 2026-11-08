@@ -1,0 +1,530 @@
+{
+  "clip_id": "hi_in_1644",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "hin",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:55.135Z",
+  "response": {
+    "language_code": "hin",
+    "language_probability": 1,
+    "text": "जब टिप्पणी के लिए कहा गया तो मिलर ने कहा माइक सुनते समय बहुत सारी बातें करता है। मैं तैयार हो रहा था इसलिए वह जो कह रहा था मैं वास्तव में उसे सुन नहीं रहा था।",
+    "words": [
+      {
+        "text": "जब",
+        "start": 0.86,
+        "end": 1.02,
+        "type": "word",
+        "logprob": -0.00014935807848814875
+      },
+      {
+        "text": " ",
+        "start": 1.02,
+        "end": 1.1,
+        "type": "spacing",
+        "logprob": -0.0010219357209280133
+      },
+      {
+        "text": "टिप्पणी",
+        "start": 1.1,
+        "end": 1.5,
+        "type": "word",
+        "logprob": -0.0010219357209280133
+      },
+      {
+        "text": " ",
+        "start": 1.5,
+        "end": 1.58,
+        "type": "spacing",
+        "logprob": -0.000012516897186287679
+      },
+      {
+        "text": "के",
+        "start": 1.58,
+        "end": 1.68,
+        "type": "word",
+        "logprob": -0.000012516897186287679
+      },
+      {
+        "text": " ",
+        "start": 1.68,
+        "end": 1.72,
+        "type": "spacing",
+        "logprob": -0.000004172316494077677
+      },
+      {
+        "text": "लिए",
+        "start": 1.72,
+        "end": 1.92,
+        "type": "word",
+        "logprob": -0.000004172316494077677
+      },
+      {
+        "text": " ",
+        "start": 1.92,
+        "end": 1.96,
+        "type": "spacing",
+        "logprob": -0.000013470558769768104
+      },
+      {
+        "text": "कहा",
+        "start": 1.96,
+        "end": 2.16,
+        "type": "word",
+        "logprob": -0.000013470558769768104
+      },
+      {
+        "text": " ",
+        "start": 2.16,
+        "end": 2.28,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "गया",
+        "start": 2.28,
+        "end": 2.44,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 2.44,
+        "end": 2.64,
+        "type": "spacing",
+        "logprob": -0.0009999042376875877
+      },
+      {
+        "text": "तो",
+        "start": 2.64,
+        "end": 2.78,
+        "type": "word",
+        "logprob": -0.0009999042376875877
+      },
+      {
+        "text": " ",
+        "start": 2.78,
+        "end": 2.94,
+        "type": "spacing",
+        "logprob": -0.8047285676002502
+      },
+      {
+        "text": "मिलर",
+        "start": 2.94,
+        "end": 3.32,
+        "type": "word",
+        "logprob": -0.6036070064801606
+      },
+      {
+        "text": " ",
+        "start": 3.32,
+        "end": 3.4,
+        "type": "spacing",
+        "logprob": -0.000029801878554280847
+      },
+      {
+        "text": "ने",
+        "start": 3.4,
+        "end": 3.54,
+        "type": "word",
+        "logprob": -0.000029801878554280847
+      },
+      {
+        "text": " ",
+        "start": 3.54,
+        "end": 3.6,
+        "type": "spacing",
+        "logprob": -0.000012874520507466514
+      },
+      {
+        "text": "कहा",
+        "start": 3.6,
+        "end": 3.9,
+        "type": "word",
+        "logprob": -0.000012874520507466514
+      },
+      {
+        "text": " ",
+        "start": 3.9,
+        "end": 4.1,
+        "type": "spacing",
+        "logprob": -0.3080577254295349
+      },
+      {
+        "text": "माइक",
+        "start": 4.1,
+        "end": 4.52,
+        "type": "word",
+        "logprob": -0.3080577254295349
+      },
+      {
+        "text": " ",
+        "start": 4.52,
+        "end": 4.76,
+        "type": "spacing",
+        "logprob": -0.005404267460107803
+      },
+      {
+        "text": "सुनते",
+        "start": 4.76,
+        "end": 5.16,
+        "type": "word",
+        "logprob": -0.005404267460107803
+      },
+      {
+        "text": " ",
+        "start": 5.16,
+        "end": 5.28,
+        "type": "spacing",
+        "logprob": -0.00007688703772146255
+      },
+      {
+        "text": "समय",
+        "start": 5.28,
+        "end": 5.62,
+        "type": "word",
+        "logprob": -0.00007688703772146255
+      },
+      {
+        "text": " ",
+        "start": 5.62,
+        "end": 5.76,
+        "type": "spacing",
+        "logprob": -0.00006329813186312094
+      },
+      {
+        "text": "बहुत",
+        "start": 5.76,
+        "end": 6.1,
+        "type": "word",
+        "logprob": -0.00006329813186312094
+      },
+      {
+        "text": " ",
+        "start": 6.1,
+        "end": 6.16,
+        "type": "spacing",
+        "logprob": -0.0002445875434204936
+      },
+      {
+        "text": "सारी",
+        "start": 6.16,
+        "end": 6.44,
+        "type": "word",
+        "logprob": -0.0002445875434204936
+      },
+      {
+        "text": " ",
+        "start": 6.44,
+        "end": 6.54,
+        "type": "spacing",
+        "logprob": -0.0008717550663277507
+      },
+      {
+        "text": "बातें",
+        "start": 6.54,
+        "end": 6.96,
+        "type": "word",
+        "logprob": -0.0008717550663277507
+      },
+      {
+        "text": " ",
+        "start": 6.96,
+        "end": 7,
+        "type": "spacing",
+        "logprob": -0.000018596476365928538
+      },
+      {
+        "text": "करता",
+        "start": 7,
+        "end": 7.36,
+        "type": "word",
+        "logprob": -0.000018596476365928538
+      },
+      {
+        "text": " ",
+        "start": 7.36,
+        "end": 7.44,
+        "type": "spacing",
+        "logprob": -0.00008284702198579907
+      },
+      {
+        "text": "है।",
+        "start": 7.44,
+        "end": 8,
+        "type": "word",
+        "logprob": -0.0009553167425716916
+      },
+      {
+        "text": " ",
+        "start": 8,
+        "end": 8.039,
+        "type": "spacing",
+        "logprob": -0.0001586549769854173
+      },
+      {
+        "text": "मैं",
+        "start": 8.039,
+        "end": 8.18,
+        "type": "word",
+        "logprob": -0.0001586549769854173
+      },
+      {
+        "text": " ",
+        "start": 8.18,
+        "end": 8.26,
+        "type": "spacing",
+        "logprob": -0.000019311717551317997
+      },
+      {
+        "text": "तैयार",
+        "start": 8.26,
+        "end": 8.72,
+        "type": "word",
+        "logprob": -0.000019311717551317997
+      },
+      {
+        "text": " ",
+        "start": 8.72,
+        "end": 8.8,
+        "type": "spacing",
+        "logprob": -0.000013470558769768104
+      },
+      {
+        "text": "हो",
+        "start": 8.8,
+        "end": 8.92,
+        "type": "word",
+        "logprob": -0.000013470558769768104
+      },
+      {
+        "text": " ",
+        "start": 8.92,
+        "end": 9,
+        "type": "spacing",
+        "logprob": -0.000005245195097813848
+      },
+      {
+        "text": "रहा",
+        "start": 9,
+        "end": 9.26,
+        "type": "word",
+        "logprob": -0.000005245195097813848
+      },
+      {
+        "text": " ",
+        "start": 9.26,
+        "end": 9.38,
+        "type": "spacing",
+        "logprob": -0.000005960446742392378
+      },
+      {
+        "text": "था",
+        "start": 9.38,
+        "end": 9.6,
+        "type": "word",
+        "logprob": -0.000005960446742392378
+      },
+      {
+        "text": " ",
+        "start": 9.6,
+        "end": 9.7,
+        "type": "spacing",
+        "logprob": -0.013175804167985916
+      },
+      {
+        "text": "इसलिए",
+        "start": 9.7,
+        "end": 10.18,
+        "type": "word",
+        "logprob": -0.013175804167985916
+      },
+      {
+        "text": " ",
+        "start": 10.18,
+        "end": 11.1,
+        "type": "spacing",
+        "logprob": -0.000032543604902457446
+      },
+      {
+        "text": "वह",
+        "start": 11.1,
+        "end": 11.32,
+        "type": "word",
+        "logprob": -0.000032543604902457446
+      },
+      {
+        "text": " ",
+        "start": 11.32,
+        "end": 11.38,
+        "type": "spacing",
+        "logprob": -0.0000016689286894688848
+      },
+      {
+        "text": "जो",
+        "start": 11.38,
+        "end": 11.54,
+        "type": "word",
+        "logprob": -0.0000016689286894688848
+      },
+      {
+        "text": " ",
+        "start": 11.54,
+        "end": 11.6,
+        "type": "spacing",
+        "logprob": -0.00010334911348763853
+      },
+      {
+        "text": "कह",
+        "start": 11.6,
+        "end": 11.82,
+        "type": "word",
+        "logprob": -0.00010334911348763853
+      },
+      {
+        "text": " ",
+        "start": 11.82,
+        "end": 11.88,
+        "type": "spacing",
+        "logprob": -0.0000029802276912960224
+      },
+      {
+        "text": "रहा",
+        "start": 11.88,
+        "end": 12.06,
+        "type": "word",
+        "logprob": -0.0000029802276912960224
+      },
+      {
+        "text": " ",
+        "start": 12.06,
+        "end": 12.18,
+        "type": "spacing",
+        "logprob": -0.000020146166207268834
+      },
+      {
+        "text": "था",
+        "start": 12.18,
+        "end": 12.32,
+        "type": "word",
+        "logprob": -0.000020146166207268834
+      },
+      {
+        "text": " ",
+        "start": 12.32,
+        "end": 12.46,
+        "type": "spacing",
+        "logprob": -0.10505399107933044
+      },
+      {
+        "text": "मैं",
+        "start": 12.46,
+        "end": 12.72,
+        "type": "word",
+        "logprob": -0.10505399107933044
+      },
+      {
+        "text": " ",
+        "start": 12.72,
+        "end": 13.24,
+        "type": "spacing",
+        "logprob": -0.00021109737281221896
+      },
+      {
+        "text": "वास्तव",
+        "start": 13.24,
+        "end": 13.76,
+        "type": "word",
+        "logprob": -0.00021109737281221896
+      },
+      {
+        "text": " ",
+        "start": 13.76,
+        "end": 13.82,
+        "type": "spacing",
+        "logprob": -0.000020503786799963564
+      },
+      {
+        "text": "में",
+        "start": 13.82,
+        "end": 14.08,
+        "type": "word",
+        "logprob": -0.000020503786799963564
+      },
+      {
+        "text": " ",
+        "start": 14.08,
+        "end": 14.16,
+        "type": "spacing",
+        "logprob": -0.00008475421054754406
+      },
+      {
+        "text": "उसे",
+        "start": 14.16,
+        "end": 14.38,
+        "type": "word",
+        "logprob": -0.00008475421054754406
+      },
+      {
+        "text": " ",
+        "start": 14.38,
+        "end": 14.52,
+        "type": "spacing",
+        "logprob": -0.0006846229662187397
+      },
+      {
+        "text": "सुन",
+        "start": 14.52,
+        "end": 14.72,
+        "type": "word",
+        "logprob": -0.0006846229662187397
+      },
+      {
+        "text": " ",
+        "start": 14.72,
+        "end": 14.76,
+        "type": "spacing",
+        "logprob": -0.000019430925021879375
+      },
+      {
+        "text": "नहीं",
+        "start": 14.76,
+        "end": 15,
+        "type": "word",
+        "logprob": -0.000019430925021879375
+      },
+      {
+        "text": " ",
+        "start": 15,
+        "end": 15.06,
+        "type": "spacing",
+        "logprob": -0.00004458328112377785
+      },
+      {
+        "text": "रहा",
+        "start": 15.06,
+        "end": 15.24,
+        "type": "word",
+        "logprob": -0.00004458328112377785
+      },
+      {
+        "text": " ",
+        "start": 15.24,
+        "end": 15.42,
+        "type": "spacing",
+        "logprob": -0.0000107287787614041
+      },
+      {
+        "text": "था।",
+        "start": 15.42,
+        "end": 15.74,
+        "type": "word",
+        "logprob": -0.12900679306342985
+      }
+    ],
+    "transcription_id": "apsnB3dvCYteeCmf3K33",
+    "audio_duration_secs": 16.32
+  }
+}

@@ -1,0 +1,572 @@
+{
+  "clip_id": "pa_in_1635",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "pan",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:27.752Z",
+  "response": {
+    "language_code": "pan",
+    "language_probability": 1,
+    "text": "ਅਸੀਂ ਵਾਤਾਵਰਣ ਨਾਲ ਵਧੇਰੇ ਇੱਕ ਮਿੱਕ ਹੋ ਕੇ ਜਿਉਣਾ ਸ਼ੁਰੂ ਕਰ ਸਕਦੇ ਹਾਂ, ਅਸੀਂ ਵਾਤਾਵਰਣ ਬਚਾਉਣ ਸੰਬੰਧੀ ਕਿਸੇ ਲਹਿਰ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋ ਸਕਦੇ ਹਾਂ, ਅਤੇ ਭਵਿੱਖ ਦੀਆਂ ਮੁਸ਼ਕਲਾਂ ਨੂੰ ਘਟਾਉਣ ਲਈ ਕੁੱਝ ਹੱਦ ਤੱਕ ਸਰਗਰਮ ਕਾਰਜਕਰਤਾ ਵੀ ਬਣ ਸਕਦੇ ਹਾਂ।",
+    "words": [
+      {
+        "text": "ਅਸੀਂ",
+        "start": 0.92,
+        "end": 1.14,
+        "type": "word",
+        "logprob": -0.010975803015753627
+      },
+      {
+        "text": " ",
+        "start": 1.14,
+        "end": 1.18,
+        "type": "spacing",
+        "logprob": -0.0006428082706406713
+      },
+      {
+        "text": "ਵਾਤਾਵਰਣ",
+        "start": 1.18,
+        "end": 1.64,
+        "type": "word",
+        "logprob": -0.061702216245716306
+      },
+      {
+        "text": " ",
+        "start": 1.64,
+        "end": 1.68,
+        "type": "spacing",
+        "logprob": -0.00002992108420585282
+      },
+      {
+        "text": "ਨਾਲ",
+        "start": 1.68,
+        "end": 1.84,
+        "type": "word",
+        "logprob": -0.00002992108420585282
+      },
+      {
+        "text": " ",
+        "start": 1.84,
+        "end": 1.88,
+        "type": "spacing",
+        "logprob": -0.0004128557338844985
+      },
+      {
+        "text": "ਵਧੇਰੇ",
+        "start": 1.88,
+        "end": 2.24,
+        "type": "word",
+        "logprob": -0.00023585139715578407
+      },
+      {
+        "text": " ",
+        "start": 2.24,
+        "end": 2.26,
+        "type": "spacing",
+        "logprob": -0.08968746662139893
+      },
+      {
+        "text": "ਇੱਕ",
+        "start": 2.26,
+        "end": 2.42,
+        "type": "word",
+        "logprob": -0.08968746662139893
+      },
+      {
+        "text": " ",
+        "start": 2.42,
+        "end": 2.46,
+        "type": "spacing",
+        "logprob": -0.16026654839515686
+      },
+      {
+        "text": "ਮਿੱਕ",
+        "start": 2.46,
+        "end": 2.64,
+        "type": "word",
+        "logprob": -0.18219932168722153
+      },
+      {
+        "text": " ",
+        "start": 2.64,
+        "end": 2.66,
+        "type": "spacing",
+        "logprob": -0.00015829740732442588
+      },
+      {
+        "text": "ਹੋ",
+        "start": 2.68,
+        "end": 2.78,
+        "type": "word",
+        "logprob": -0.00015829740732442588
+      },
+      {
+        "text": " ",
+        "start": 2.78,
+        "end": 2.84,
+        "type": "spacing",
+        "logprob": -0.03824543580412865
+      },
+      {
+        "text": "ਕੇ",
+        "start": 2.84,
+        "end": 2.96,
+        "type": "word",
+        "logprob": -0.03824543580412865
+      },
+      {
+        "text": " ",
+        "start": 2.96,
+        "end": 2.98,
+        "type": "spacing",
+        "logprob": -0.005110534373670816
+      },
+      {
+        "text": "ਜਿਉਣਾ",
+        "start": 2.98,
+        "end": 3.26,
+        "type": "word",
+        "logprob": -0.13665172205073758
+      },
+      {
+        "text": " ",
+        "start": 3.26,
+        "end": 3.3,
+        "type": "spacing",
+        "logprob": -0.387714147567749
+      },
+      {
+        "text": "ਸ਼ੁਰੂ",
+        "start": 3.3,
+        "end": 3.56,
+        "type": "word",
+        "logprob": -0.0005083274190837983
+      },
+      {
+        "text": " ",
+        "start": 3.56,
+        "end": 3.6,
+        "type": "spacing",
+        "logprob": -0.00016819016309455037
+      },
+      {
+        "text": "ਕਰ",
+        "start": 3.6,
+        "end": 3.7,
+        "type": "word",
+        "logprob": -0.00016819016309455037
+      },
+      {
+        "text": " ",
+        "start": 3.7,
+        "end": 3.8,
+        "type": "spacing",
+        "logprob": -0.00009595887240720913
+      },
+      {
+        "text": "ਸਕਦੇ",
+        "start": 3.8,
+        "end": 4.1,
+        "type": "word",
+        "logprob": -0.00005048282491770806
+      },
+      {
+        "text": " ",
+        "start": 4.1,
+        "end": 4.14,
+        "type": "spacing",
+        "logprob": -0.00006317892984952778
+      },
+      {
+        "text": "ਹਾਂ,",
+        "start": 4.16,
+        "end": 4.26,
+        "type": "word",
+        "logprob": -0.056557911939307814
+      },
+      {
+        "text": " ",
+        "start": 4.26,
+        "end": 4.72,
+        "type": "spacing",
+        "logprob": -0.00001823885577323381
+      },
+      {
+        "text": "ਅਸੀਂ",
+        "start": 4.72,
+        "end": 4.92,
+        "type": "word",
+        "logprob": -0.001132027757648757
+      },
+      {
+        "text": " ",
+        "start": 4.92,
+        "end": 4.96,
+        "type": "spacing",
+        "logprob": -0.000009894321920000948
+      },
+      {
+        "text": "ਵਾਤਾਵਰਣ",
+        "start": 4.96,
+        "end": 5.46,
+        "type": "word",
+        "logprob": -0.00895461837496571
+      },
+      {
+        "text": " ",
+        "start": 5.46,
+        "end": 5.5,
+        "type": "spacing",
+        "logprob": -0.00013016807497479022
+      },
+      {
+        "text": "ਬਚਾਉਣ",
+        "start": 5.5,
+        "end": 5.8,
+        "type": "word",
+        "logprob": -0.00030474105733446777
+      },
+      {
+        "text": " ",
+        "start": 5.8,
+        "end": 5.88,
+        "type": "spacing",
+        "logprob": -0.07907436788082123
+      },
+      {
+        "text": "ਸੰਬੰਧੀ",
+        "start": 5.88,
+        "end": 6.2,
+        "type": "word",
+        "logprob": -0.026909896824690804
+      },
+      {
+        "text": " ",
+        "start": 6.2,
+        "end": 6.26,
+        "type": "spacing",
+        "logprob": -0.00013147920253686607
+      },
+      {
+        "text": "ਕਿਸੇ",
+        "start": 6.26,
+        "end": 6.5,
+        "type": "word",
+        "logprob": -0.00009929485435122842
+      },
+      {
+        "text": " ",
+        "start": 6.5,
+        "end": 6.54,
+        "type": "spacing",
+        "logprob": -0.0003831844369415194
+      },
+      {
+        "text": "ਲਹਿਰ",
+        "start": 6.54,
+        "end": 6.76,
+        "type": "word",
+        "logprob": -0.0003125336079392582
+      },
+      {
+        "text": " ",
+        "start": 6.76,
+        "end": 6.78,
+        "type": "spacing",
+        "logprob": -0.08115077763795853
+      },
+      {
+        "text": "ਵਿੱਚ",
+        "start": 6.78,
+        "end": 6.94,
+        "type": "word",
+        "logprob": -0.08115077763795853
+      },
+      {
+        "text": " ",
+        "start": 6.94,
+        "end": 6.96,
+        "type": "spacing",
+        "logprob": -0.0017044316045939922
+      },
+      {
+        "text": "ਸ਼ਾਮਲ",
+        "start": 6.96,
+        "end": 7.26,
+        "type": "word",
+        "logprob": -0.06319245109989424
+      },
+      {
+        "text": " ",
+        "start": 7.26,
+        "end": 7.32,
+        "type": "spacing",
+        "logprob": -0.000005125986263010418
+      },
+      {
+        "text": "ਹੋ",
+        "start": 7.32,
+        "end": 7.42,
+        "type": "word",
+        "logprob": -0.000005125986263010418
+      },
+      {
+        "text": " ",
+        "start": 7.42,
+        "end": 7.5,
+        "type": "spacing",
+        "logprob": -0.000023603161025675945
+      },
+      {
+        "text": "ਸਕਦੇ",
+        "start": 7.5,
+        "end": 7.78,
+        "type": "word",
+        "logprob": -0.000012874462981926627
+      },
+      {
+        "text": " ",
+        "start": 7.78,
+        "end": 7.84,
+        "type": "spacing",
+        "logprob": -0.00015507926582358778
+      },
+      {
+        "text": "ਹਾਂ,",
+        "start": 7.84,
+        "end": 7.94,
+        "type": "word",
+        "logprob": -0.00012739590238197707
+      },
+      {
+        "text": " ",
+        "start": 7.94,
+        "end": 8.42,
+        "type": "spacing",
+        "logprob": -0.000034927710657939315
+      },
+      {
+        "text": "ਅਤੇ",
+        "start": 8.42,
+        "end": 8.6,
+        "type": "word",
+        "logprob": -0.000034927710657939315
+      },
+      {
+        "text": " ",
+        "start": 8.6,
+        "end": 8.66,
+        "type": "spacing",
+        "logprob": -0.000015258672647178173
+      },
+      {
+        "text": "ਭਵਿੱਖ",
+        "start": 8.66,
+        "end": 8.96,
+        "type": "word",
+        "logprob": -0.0003852460853522643
+      },
+      {
+        "text": " ",
+        "start": 8.96,
+        "end": 9.02,
+        "type": "spacing",
+        "logprob": -0.00020859450160060078
+      },
+      {
+        "text": "ਦੀਆਂ",
+        "start": 9.02,
+        "end": 9.2,
+        "type": "word",
+        "logprob": -0.00011079411478931434
+      },
+      {
+        "text": " ",
+        "start": 9.2,
+        "end": 9.24,
+        "type": "spacing",
+        "logprob": -0.000010371154530730564
+      },
+      {
+        "text": "ਮੁਸ਼ਕਲਾਂ",
+        "start": 9.24,
+        "end": 9.68,
+        "type": "word",
+        "logprob": -0.03980737136407697
+      },
+      {
+        "text": " ",
+        "start": 9.68,
+        "end": 9.72,
+        "type": "spacing",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": "ਨੂੰ",
+        "start": 9.72,
+        "end": 9.82,
+        "type": "word",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": " ",
+        "start": 9.82,
+        "end": 9.84,
+        "type": "spacing",
+        "logprob": -0.00009786603914108127
+      },
+      {
+        "text": "ਘਟਾਉਣ",
+        "start": 9.94,
+        "end": 10.16,
+        "type": "word",
+        "logprob": -0.00033366243878845124
+      },
+      {
+        "text": " ",
+        "start": 10.16,
+        "end": 10.22,
+        "type": "spacing",
+        "logprob": -0.000005483612312673358
+      },
+      {
+        "text": "ਲਈ",
+        "start": 10.22,
+        "end": 10.34,
+        "type": "word",
+        "logprob": -0.000005483612312673358
+      },
+      {
+        "text": " ",
+        "start": 10.34,
+        "end": 10.38,
+        "type": "spacing",
+        "logprob": -0.2733490467071533
+      },
+      {
+        "text": "ਕੁੱਝ",
+        "start": 10.38,
+        "end": 10.56,
+        "type": "word",
+        "logprob": -0.07050020534006762
+      },
+      {
+        "text": " ",
+        "start": 10.56,
+        "end": 10.58,
+        "type": "spacing",
+        "logprob": -0.0003477922291494906
+      },
+      {
+        "text": "ਹੱਦ",
+        "start": 10.62,
+        "end": 10.76,
+        "type": "word",
+        "logprob": -0.0015768837086701144
+      },
+      {
+        "text": " ",
+        "start": 10.76,
+        "end": 10.82,
+        "type": "spacing",
+        "logprob": -0.00023588736075907946
+      },
+      {
+        "text": "ਤੱਕ",
+        "start": 10.82,
+        "end": 10.98,
+        "type": "word",
+        "logprob": -0.00011343732330715284
+      },
+      {
+        "text": " ",
+        "start": 10.98,
+        "end": 11.14,
+        "type": "spacing",
+        "logprob": -0.00013493580627255142
+      },
+      {
+        "text": "ਸਰਗਰਮ",
+        "start": 11.14,
+        "end": 11.64,
+        "type": "word",
+        "logprob": -0.00009984401040128433
+      },
+      {
+        "text": " ",
+        "start": 11.64,
+        "end": 11.82,
+        "type": "spacing",
+        "logprob": -0.0037822630256414413
+      },
+      {
+        "text": "ਕਾਰਜਕਰਤਾ",
+        "start": 11.82,
+        "end": 12.48,
+        "type": "word",
+        "logprob": -0.17095672838513565
+      },
+      {
+        "text": " ",
+        "start": 12.48,
+        "end": 12.52,
+        "type": "spacing",
+        "logprob": -0.0005301024066284299
+      },
+      {
+        "text": "ਵੀ",
+        "start": 12.52,
+        "end": 12.62,
+        "type": "word",
+        "logprob": -0.0005301024066284299
+      },
+      {
+        "text": " ",
+        "start": 12.62,
+        "end": 12.66,
+        "type": "spacing",
+        "logprob": -0.00039009589818306267
+      },
+      {
+        "text": "ਬਣ",
+        "start": 12.66,
+        "end": 12.82,
+        "type": "word",
+        "logprob": -0.00020845881408604328
+      },
+      {
+        "text": " ",
+        "start": 12.82,
+        "end": 12.92,
+        "type": "spacing",
+        "logprob": -0.00012861855793744326
+      },
+      {
+        "text": "ਸਕਦੇ",
+        "start": 12.92,
+        "end": 13.2,
+        "type": "word",
+        "logprob": -0.00006597820629394846
+      },
+      {
+        "text": " ",
+        "start": 13.2,
+        "end": 13.24,
+        "type": "spacing",
+        "logprob": -0.000016569954823353328
+      },
+      {
+        "text": "ਹਾਂ।",
+        "start": 13.24,
+        "end": 13.46,
+        "type": "word",
+        "logprob": -0.013960594018953998
+      }
+    ],
+    "transcription_id": "JoOErYZgnlMfT212MaYl",
+    "audio_duration_secs": 13.8
+  }
+}

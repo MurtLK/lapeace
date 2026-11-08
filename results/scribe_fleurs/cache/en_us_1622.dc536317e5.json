@@ -1,0 +1,124 @@
+{
+  "clip_id": "en_us_1622",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "eng",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:35.829Z",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1,
+    "text": "US President George W. Bush welcomed the announcement",
+    "words": [
+      {
+        "text": "US",
+        "start": 0.62,
+        "end": 0.82,
+        "type": "word",
+        "logprob": -0.03806459531188011
+      },
+      {
+        "text": " ",
+        "start": 0.82,
+        "end": 0.9,
+        "type": "spacing",
+        "logprob": -0.00020704510097857565
+      },
+      {
+        "text": "President",
+        "start": 0.9,
+        "end": 1.24,
+        "type": "word",
+        "logprob": -0.00020704510097857565
+      },
+      {
+        "text": " ",
+        "start": 1.24,
+        "end": 1.56,
+        "type": "spacing",
+        "logprob": -0.000010847986231965479
+      },
+      {
+        "text": "George",
+        "start": 1.56,
+        "end": 1.84,
+        "type": "word",
+        "logprob": -0.000010847986231965479
+      },
+      {
+        "text": " ",
+        "start": 1.84,
+        "end": 1.92,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "W.",
+        "start": 2.04,
+        "end": 2.14,
+        "type": "word",
+        "logprob": -0.0000067948871276257705
+      },
+      {
+        "text": " ",
+        "start": 2.14,
+        "end": 2.22,
+        "type": "spacing",
+        "logprob": -0.000001311301275563892
+      },
+      {
+        "text": "Bush",
+        "start": 2.22,
+        "end": 2.4,
+        "type": "word",
+        "logprob": -0.000001311301275563892
+      },
+      {
+        "text": " ",
+        "start": 2.4,
+        "end": 2.52,
+        "type": "spacing",
+        "logprob": -0.000012874520507466514
+      },
+      {
+        "text": "welcomed",
+        "start": 2.52,
+        "end": 2.82,
+        "type": "word",
+        "logprob": -0.000012874520507466514
+      },
+      {
+        "text": " ",
+        "start": 2.82,
+        "end": 2.86,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "the",
+        "start": 2.86,
+        "end": 2.92,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 2.92,
+        "end": 2.96,
+        "type": "spacing",
+        "logprob": -0.0000010728830375228426
+      },
+      {
+        "text": "announcement",
+        "start": 2.96,
+        "end": 3.48,
+        "type": "word",
+        "logprob": -0.0000010728830375228426
+      }
+    ],
+    "transcription_id": "C3tDbTMngKKTLg6Q8Hfu",
+    "audio_duration_secs": 4.68
+  }
+}

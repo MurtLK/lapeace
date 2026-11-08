@@ -1,0 +1,446 @@
+{
+  "clip_id": "yue_hant_hk_1608",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "yue",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:30.130Z",
+  "response": {
+    "language_code": "yue",
+    "language_probability": 1,
+    "text": "我失去了我的姐妹和她的朋友，而我在逃跑途中，有两名坐轮椅的身障人士，大家直接跳过他们和推挤他们，阿曼·维萨切 Aman Vesat 说。",
+    "words": [
+      {
+        "text": "我",
+        "start": 0.62,
+        "end": 0.78,
+        "type": "word",
+        "logprob": -0.7263308763504028
+      },
+      {
+        "text": "失",
+        "start": 0.78,
+        "end": 0.94,
+        "type": "word",
+        "logprob": -0.00018142008048016578
+      },
+      {
+        "text": "去",
+        "start": 0.94,
+        "end": 1.16,
+        "type": "word",
+        "logprob": -0.00018142008048016578
+      },
+      {
+        "text": "了",
+        "start": 1.16,
+        "end": 1.38,
+        "type": "word",
+        "logprob": -0.00018142008048016578
+      },
+      {
+        "text": "我",
+        "start": 1.38,
+        "end": 1.58,
+        "type": "word",
+        "logprob": -0.000007867782187531702
+      },
+      {
+        "text": "的",
+        "start": 1.58,
+        "end": 1.82,
+        "type": "word",
+        "logprob": -0.000007867782187531702
+      },
+      {
+        "text": "姐",
+        "start": 1.82,
+        "end": 2.06,
+        "type": "word",
+        "logprob": -0.3874087333679199
+      },
+      {
+        "text": "妹",
+        "start": 2.06,
+        "end": 2.3,
+        "type": "word",
+        "logprob": -0.3874087333679199
+      },
+      {
+        "text": "和",
+        "start": 2.3,
+        "end": 2.5,
+        "type": "word",
+        "logprob": -0.000014781842764932662
+      },
+      {
+        "text": "她",
+        "start": 2.5,
+        "end": 2.7,
+        "type": "word",
+        "logprob": -0.007628476247191429
+      },
+      {
+        "text": "的",
+        "start": 2.7,
+        "end": 2.88,
+        "type": "word",
+        "logprob": -0.007628476247191429
+      },
+      {
+        "text": "朋",
+        "start": 2.88,
+        "end": 3.14,
+        "type": "word",
+        "logprob": -0.00004053033626405522
+      },
+      {
+        "text": "友",
+        "start": 3.34,
+        "end": 3.38,
+        "type": "word",
+        "logprob": -0.00004053033626405522
+      },
+      {
+        "text": "，",
+        "start": 3.66,
+        "end": 3.68,
+        "type": "word",
+        "logprob": -0.000007390948667307384
+      },
+      {
+        "text": "而",
+        "start": 3.68,
+        "end": 3.8,
+        "type": "word",
+        "logprob": -0.34955933690071106
+      },
+      {
+        "text": "我",
+        "start": 3.98,
+        "end": 3.98,
+        "type": "word",
+        "logprob": -0.000012159273865108844
+      },
+      {
+        "text": "在",
+        "start": 3.98,
+        "end": 4.2,
+        "type": "word",
+        "logprob": -0.000012159273865108844
+      },
+      {
+        "text": "逃",
+        "start": 4.2,
+        "end": 4.46,
+        "type": "word",
+        "logprob": -0.00004470248313737102
+      },
+      {
+        "text": "跑",
+        "start": 4.46,
+        "end": 4.74,
+        "type": "word",
+        "logprob": -0.00004303362584323622
+      },
+      {
+        "text": "途",
+        "start": 4.74,
+        "end": 4.98,
+        "type": "word",
+        "logprob": -0.01190097164362669
+      },
+      {
+        "text": "中",
+        "start": 4.98,
+        "end": 4.98,
+        "type": "word",
+        "logprob": -0.01190097164362669
+      },
+      {
+        "text": "，",
+        "start": 5.18,
+        "end": 5.86,
+        "type": "word",
+        "logprob": -0.00021455370006151497
+      },
+      {
+        "text": "有",
+        "start": 5.86,
+        "end": 6.04,
+        "type": "word",
+        "logprob": -0.00005781483559985645
+      },
+      {
+        "text": "两",
+        "start": 6.04,
+        "end": 6.28,
+        "type": "word",
+        "logprob": -0.006855183281004429
+      },
+      {
+        "text": "名",
+        "start": 6.28,
+        "end": 6.52,
+        "type": "word",
+        "logprob": -0.000019073304429184645
+      },
+      {
+        "text": "坐",
+        "start": 6.52,
+        "end": 6.74,
+        "type": "word",
+        "logprob": -0.0001072826053132303
+      },
+      {
+        "text": "轮",
+        "start": 6.74,
+        "end": 6.96,
+        "type": "word",
+        "logprob": -0.00020454221521504223
+      },
+      {
+        "text": "椅",
+        "start": 6.96,
+        "end": 7.12,
+        "type": "word",
+        "logprob": -0.000026940935640595853
+      },
+      {
+        "text": "的",
+        "start": 7.12,
+        "end": 7.28,
+        "type": "word",
+        "logprob": -0.0033791130408644676
+      },
+      {
+        "text": "身",
+        "start": 7.28,
+        "end": 7.56,
+        "type": "word",
+        "logprob": -0.0033791130408644676
+      },
+      {
+        "text": "障",
+        "start": 7.56,
+        "end": 7.76,
+        "type": "word",
+        "logprob": -0.00276932748965919
+      },
+      {
+        "text": "人",
+        "start": 7.76,
+        "end": 8.06,
+        "type": "word",
+        "logprob": -0.000009298280929215252
+      },
+      {
+        "text": "士",
+        "start": 8.06,
+        "end": 8.28,
+        "type": "word",
+        "logprob": -0.000009298280929215252
+      },
+      {
+        "text": "，",
+        "start": 8.6,
+        "end": 8.64,
+        "type": "word",
+        "logprob": -0.00001537788011773955
+      },
+      {
+        "text": "大",
+        "start": 8.64,
+        "end": 8.8,
+        "type": "word",
+        "logprob": -0.000042914423829643056
+      },
+      {
+        "text": "家",
+        "start": 8.8,
+        "end": 8.98,
+        "type": "word",
+        "logprob": -0.000042914423829643056
+      },
+      {
+        "text": "直",
+        "start": 8.98,
+        "end": 9.14,
+        "type": "word",
+        "logprob": -0.00009643566590966657
+      },
+      {
+        "text": "接",
+        "start": 9.14,
+        "end": 9.36,
+        "type": "word",
+        "logprob": -0.00009643566590966657
+      },
+      {
+        "text": "跳",
+        "start": 9.36,
+        "end": 9.56,
+        "type": "word",
+        "logprob": -0.000058410845667822286
+      },
+      {
+        "text": "过",
+        "start": 9.56,
+        "end": 9.78,
+        "type": "word",
+        "logprob": -0.000012278481335670222
+      },
+      {
+        "text": "他",
+        "start": 9.78,
+        "end": 10.04,
+        "type": "word",
+        "logprob": -0.000259723310591653
+      },
+      {
+        "text": "们",
+        "start": 10.04,
+        "end": 10.2,
+        "type": "word",
+        "logprob": -0.000259723310591653
+      },
+      {
+        "text": "和",
+        "start": 10.2,
+        "end": 10.42,
+        "type": "word",
+        "logprob": -0.000001311301275563892
+      },
+      {
+        "text": "推",
+        "start": 10.42,
+        "end": 10.68,
+        "type": "word",
+        "logprob": -0.0008530553313903511
+      },
+      {
+        "text": "挤",
+        "start": 10.68,
+        "end": 10.92,
+        "type": "word",
+        "logprob": -0.06392225623130798
+      },
+      {
+        "text": "他",
+        "start": 10.92,
+        "end": 11.16,
+        "type": "word",
+        "logprob": -0.00003516612196108326
+      },
+      {
+        "text": "们",
+        "start": 11.16,
+        "end": 11.18,
+        "type": "word",
+        "logprob": -0.00003516612196108326
+      },
+      {
+        "text": "，",
+        "start": 11.48,
+        "end": 11.52,
+        "type": "word",
+        "logprob": -0.12993647158145905
+      },
+      {
+        "text": "阿",
+        "start": 11.52,
+        "end": 11.82,
+        "type": "word",
+        "logprob": -0.0022406489588320255
+      },
+      {
+        "text": "曼",
+        "start": 11.82,
+        "end": 11.82,
+        "type": "word",
+        "logprob": -0.000285227142740041
+      },
+      {
+        "text": "·",
+        "start": 12.1,
+        "end": 12.12,
+        "type": "word",
+        "logprob": -0.055828046053647995
+      },
+      {
+        "text": "维",
+        "start": 12.12,
+        "end": 12.5,
+        "type": "word",
+        "logprob": -0.3205283284187317
+      },
+      {
+        "text": "萨",
+        "start": 12.5,
+        "end": 12.52,
+        "type": "word",
+        "logprob": -0.11832393705844879
+      },
+      {
+        "text": "切",
+        "start": 13.22,
+        "end": 13.22,
+        "type": "word",
+        "logprob": -0.03521030768752098
+      },
+      {
+        "text": " ",
+        "start": 13.22,
+        "end": 13.74,
+        "type": "spacing",
+        "logprob": -0.18782788515090942
+      },
+      {
+        "text": "Aman",
+        "start": 13.74,
+        "end": 14.14,
+        "type": "word",
+        "logprob": -0.18782788515090942
+      },
+      {
+        "text": " ",
+        "start": 14.14,
+        "end": 14.32,
+        "type": "spacing",
+        "logprob": -1.5928269624710083
+      },
+      {
+        "text": "Vesat",
+        "start": 14.32,
+        "end": 14.8,
+        "type": "word",
+        "logprob": -1.3715476751327516
+      },
+      {
+        "text": " ",
+        "start": 14.8,
+        "end": 15.08,
+        "type": "spacing",
+        "logprob": -0.002678974997252226
+      },
+      {
+        "text": "说",
+        "start": 15.54,
+        "end": 15.84,
+        "type": "word",
+        "logprob": -0.002678974997252226
+      },
+      {
+        "text": "。",
+        "start": 15.84,
+        "end": 15.84,
+        "type": "word",
+        "logprob": -0.00018082413589581847
+      }
+    ],
+    "transcription_id": "gZnIyM5LNVl2yXarYray",
+    "audio_duration_secs": 17.7
+  }
+}

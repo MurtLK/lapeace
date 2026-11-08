@@ -1,0 +1,278 @@
+{
+  "clip_id": "hi_in_1598",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "hin",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:53.278Z",
+  "response": {
+    "language_code": "hin",
+    "language_probability": 1,
+    "text": "हालांकि तीन लोग घर के अंदर थे फिर भी जब कार टकराई तब किसी को भी चोट नहीं आई",
+    "words": [
+      {
+        "text": "हालांकि",
+        "start": 0.54,
+        "end": 0.96,
+        "type": "word",
+        "logprob": -0.1583632081747055
+      },
+      {
+        "text": " ",
+        "start": 0.96,
+        "end": 1,
+        "type": "spacing",
+        "logprob": -0.0002540027489885688
+      },
+      {
+        "text": "तीन",
+        "start": 1,
+        "end": 1.18,
+        "type": "word",
+        "logprob": -0.0002540027489885688
+      },
+      {
+        "text": " ",
+        "start": 1.18,
+        "end": 1.24,
+        "type": "spacing",
+        "logprob": -0.00001680836794548668
+      },
+      {
+        "text": "लोग",
+        "start": 1.24,
+        "end": 1.4,
+        "type": "word",
+        "logprob": -0.00001680836794548668
+      },
+      {
+        "text": " ",
+        "start": 1.4,
+        "end": 1.44,
+        "type": "spacing",
+        "logprob": -0.00000250339189733495
+      },
+      {
+        "text": "घर",
+        "start": 1.44,
+        "end": 1.54,
+        "type": "word",
+        "logprob": -0.00000250339189733495
+      },
+      {
+        "text": " ",
+        "start": 1.54,
+        "end": 1.6,
+        "type": "spacing",
+        "logprob": -0.00001823885577323381
+      },
+      {
+        "text": "के",
+        "start": 1.6,
+        "end": 1.68,
+        "type": "word",
+        "logprob": -0.00001823885577323381
+      },
+      {
+        "text": " ",
+        "start": 1.68,
+        "end": 1.7,
+        "type": "spacing",
+        "logprob": -0.0003716255014296621
+      },
+      {
+        "text": "अंदर",
+        "start": 1.7,
+        "end": 1.94,
+        "type": "word",
+        "logprob": -0.0003716255014296621
+      },
+      {
+        "text": " ",
+        "start": 1.94,
+        "end": 2.02,
+        "type": "spacing",
+        "logprob": -0.000009417489309271332
+      },
+      {
+        "text": "थे",
+        "start": 2.02,
+        "end": 2.16,
+        "type": "word",
+        "logprob": -0.000009417489309271332
+      },
+      {
+        "text": " ",
+        "start": 2.16,
+        "end": 2.22,
+        "type": "spacing",
+        "logprob": -0.011392539367079735
+      },
+      {
+        "text": "फिर",
+        "start": 2.22,
+        "end": 2.4,
+        "type": "word",
+        "logprob": -0.011392539367079735
+      },
+      {
+        "text": " ",
+        "start": 2.4,
+        "end": 2.44,
+        "type": "spacing",
+        "logprob": -0.00009560128091834486
+      },
+      {
+        "text": "भी",
+        "start": 2.44,
+        "end": 2.62,
+        "type": "word",
+        "logprob": -0.00009560128091834486
+      },
+      {
+        "text": " ",
+        "start": 2.62,
+        "end": 2.68,
+        "type": "spacing",
+        "logprob": -0.000004291525328881107
+      },
+      {
+        "text": "जब",
+        "start": 2.68,
+        "end": 2.9,
+        "type": "word",
+        "logprob": -0.000004291525328881107
+      },
+      {
+        "text": " ",
+        "start": 2.9,
+        "end": 3.1,
+        "type": "spacing",
+        "logprob": -0.42999303340911865
+      },
+      {
+        "text": "कार",
+        "start": 3.1,
+        "end": 3.4,
+        "type": "word",
+        "logprob": -0.42999303340911865
+      },
+      {
+        "text": " ",
+        "start": 3.4,
+        "end": 3.64,
+        "type": "spacing",
+        "logprob": -0.016473472118377686
+      },
+      {
+        "text": "टकराई",
+        "start": 3.64,
+        "end": 4.16,
+        "type": "word",
+        "logprob": -0.013190102256339742
+      },
+      {
+        "text": " ",
+        "start": 4.16,
+        "end": 4.22,
+        "type": "spacing",
+        "logprob": -0.0013786583440378308
+      },
+      {
+        "text": "तब",
+        "start": 4.22,
+        "end": 4.42,
+        "type": "word",
+        "logprob": -0.0013786583440378308
+      },
+      {
+        "text": " ",
+        "start": 4.42,
+        "end": 4.46,
+        "type": "spacing",
+        "logprob": -0.000012636104656849056
+      },
+      {
+        "text": "किसी",
+        "start": 4.46,
+        "end": 4.68,
+        "type": "word",
+        "logprob": -0.000012636104656849056
+      },
+      {
+        "text": " ",
+        "start": 4.68,
+        "end": 4.82,
+        "type": "spacing",
+        "logprob": -0.000002861018856492592
+      },
+      {
+        "text": "को",
+        "start": 4.82,
+        "end": 4.98,
+        "type": "word",
+        "logprob": -0.000002861018856492592
+      },
+      {
+        "text": " ",
+        "start": 4.98,
+        "end": 5.02,
+        "type": "spacing",
+        "logprob": -0.00008570780482841656
+      },
+      {
+        "text": "भी",
+        "start": 5.02,
+        "end": 5.18,
+        "type": "word",
+        "logprob": -0.00008570780482841656
+      },
+      {
+        "text": " ",
+        "start": 5.18,
+        "end": 5.82,
+        "type": "spacing",
+        "logprob": -0.00013553177996072918
+      },
+      {
+        "text": "चोट",
+        "start": 5.82,
+        "end": 6.06,
+        "type": "word",
+        "logprob": -0.00013553177996072918
+      },
+      {
+        "text": " ",
+        "start": 6.06,
+        "end": 6.1,
+        "type": "spacing",
+        "logprob": -0.00001156323378381785
+      },
+      {
+        "text": "नहीं",
+        "start": 6.1,
+        "end": 6.3,
+        "type": "word",
+        "logprob": -0.00001156323378381785
+      },
+      {
+        "text": " ",
+        "start": 6.3,
+        "end": 6.38,
+        "type": "spacing",
+        "logprob": -0.0007120219524949789
+      },
+      {
+        "text": "आई",
+        "start": 6.38,
+        "end": 6.58,
+        "type": "word",
+        "logprob": -0.0007120219524949789
+      }
+    ],
+    "transcription_id": "QRUkJebzHkTiVRQ2PGgE",
+    "audio_duration_secs": 7.26
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "clip_id": "en_us_1543",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "eng",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:33.424Z",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1,
+    "text": "The patient had been to Nigeria where some cases of the Ebola virus have occurred.",
+    "words": [
+      {
+        "text": "The",
+        "start": 0.94,
+        "end": 1.04,
+        "type": "word",
+        "logprob": -0.000013112935448589269
+      },
+      {
+        "text": " ",
+        "start": 1.04,
+        "end": 1.08,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "patient",
+        "start": 1.08,
+        "end": 1.48,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 1.48,
+        "end": 1.52,
+        "type": "spacing",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": "had",
+        "start": 1.52,
+        "end": 1.7,
+        "type": "word",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": " ",
+        "start": 1.7,
+        "end": 1.74,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "been",
+        "start": 1.74,
+        "end": 1.92,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 1.92,
+        "end": 1.96,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "to",
+        "start": 1.98,
+        "end": 2.04,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": " ",
+        "start": 2.04,
+        "end": 2.14,
+        "type": "spacing",
+        "logprob": -0.0000019073468138230965
+      },
+      {
+        "text": "Nigeria",
+        "start": 2.14,
+        "end": 2.78,
+        "type": "word",
+        "logprob": -0.0000019073468138230965
+      },
+      {
+        "text": " ",
+        "start": 2.78,
+        "end": 2.78,
+        "type": "spacing",
+        "logprob": -0.31326428055763245
+      },
+      {
+        "text": "where",
+        "start": 3.24,
+        "end": 3.44,
+        "type": "word",
+        "logprob": -0.31326428055763245
+      },
+      {
+        "text": " ",
+        "start": 3.44,
+        "end": 3.5,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "some",
+        "start": 3.5,
+        "end": 3.72,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 3.72,
+        "end": 3.78,
+        "type": "spacing",
+        "logprob": -0.000001311301275563892
+      },
+      {
+        "text": "cases",
+        "start": 3.78,
+        "end": 4.14,
+        "type": "word",
+        "logprob": -0.000001311301275563892
+      },
+      {
+        "text": " ",
+        "start": 4.14,
+        "end": 4.22,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "of",
+        "start": 4.22,
+        "end": 4.32,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 4.32,
+        "end": 4.36,
+        "type": "spacing",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": "the",
+        "start": 4.36,
+        "end": 4.46,
+        "type": "word",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": " ",
+        "start": 4.46,
+        "end": 4.5,
+        "type": "spacing",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": "Ebola",
+        "start": 4.5,
+        "end": 4.96,
+        "type": "word",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": " ",
+        "start": 4.96,
+        "end": 5.08,
+        "type": "spacing",
+        "logprob": -0.00019298121333122253
+      },
+      {
+        "text": "virus",
+        "start": 5.08,
+        "end": 5.5,
+        "type": "word",
+        "logprob": -0.00019298121333122253
+      },
+      {
+        "text": " ",
+        "start": 5.5,
+        "end": 5.84,
+        "type": "spacing",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": "have",
+        "start": 5.84,
+        "end": 6,
+        "type": "word",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": " ",
+        "start": 6,
+        "end": 6.04,
+        "type": "spacing",
+        "logprob": -0.000005602820692729438
+      },
+      {
+        "text": "occurred.",
+        "start": 6.04,
+        "end": 6.6,
+        "type": "word",
+        "logprob": -0.03481190733024656
+      }
+    ],
+    "transcription_id": "DiynK6U4zIIzA4MSHfUh",
+    "audio_duration_secs": 7.7
+  }
+}

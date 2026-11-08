@@ -1,0 +1,432 @@
+{
+  "clip_id": "pa_in_1605",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "pan",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:23.363Z",
+  "response": {
+    "language_code": "pan",
+    "language_probability": 1,
+    "text": "ਮਹਾਂਦੀਪ ਤੋਂ ਲੰਬੀ ਦੂਰੀ ਹੋਣ ਦੇ ਕਾਰਨ, ਹੰਧਾਰੀ ਜੀਵ ਯਾਤਰਾ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ ਸਨ। ਇਸ ਯਾਤਰਾ ਨੇ ਗੈਲਾਪੈਗਸ ਵਿੱਚ ਮੁੱਖ ਤੌਰ 'ਤੇ ਚਰਣ ਵਾਲੇ ਜਾਨਵਰਾਂ ਨੂੰ ਬਹੁਤ ਸੁਸਤ ਬਣਾ ਦਿੱਤਾ।",
+    "words": [
+      {
+        "text": "ਮਹਾਂਦੀਪ",
+        "start": 0.88,
+        "end": 1.26,
+        "type": "word",
+        "logprob": -0.1042548827286477
+      },
+      {
+        "text": " ",
+        "start": 1.26,
+        "end": 1.26,
+        "type": "spacing",
+        "logprob": -0.0015047191409394145
+      },
+      {
+        "text": "ਤੋਂ",
+        "start": 1.26,
+        "end": 1.38,
+        "type": "word",
+        "logprob": -0.0015047191409394145
+      },
+      {
+        "text": " ",
+        "start": 1.38,
+        "end": 1.42,
+        "type": "spacing",
+        "logprob": -0.0002936885575763881
+      },
+      {
+        "text": "ਲੰਬੀ",
+        "start": 1.42,
+        "end": 1.64,
+        "type": "word",
+        "logprob": -0.08189141955881496
+      },
+      {
+        "text": " ",
+        "start": 1.64,
+        "end": 1.7,
+        "type": "spacing",
+        "logprob": -0.0002060916303889826
+      },
+      {
+        "text": "ਦੂਰੀ",
+        "start": 1.7,
+        "end": 1.88,
+        "type": "word",
+        "logprob": -0.003434423229919048
+      },
+      {
+        "text": " ",
+        "start": 1.88,
+        "end": 1.94,
+        "type": "spacing",
+        "logprob": -0.00009107174992095679
+      },
+      {
+        "text": "ਹੋਣ",
+        "start": 1.96,
+        "end": 2.12,
+        "type": "word",
+        "logprob": -0.00018343773748104772
+      },
+      {
+        "text": " ",
+        "start": 2.12,
+        "end": 2.18,
+        "type": "spacing",
+        "logprob": -0.0004403813509270549
+      },
+      {
+        "text": "ਦੇ",
+        "start": 2.18,
+        "end": 2.3,
+        "type": "word",
+        "logprob": -0.0004403813509270549
+      },
+      {
+        "text": " ",
+        "start": 2.3,
+        "end": 2.34,
+        "type": "spacing",
+        "logprob": -0.00044050050200894475
+      },
+      {
+        "text": "ਕਾਰਨ,",
+        "start": 2.34,
+        "end": 2.56,
+        "type": "word",
+        "logprob": -0.07850175782473343
+      },
+      {
+        "text": " ",
+        "start": 2.56,
+        "end": 2.66,
+        "type": "spacing",
+        "logprob": -0.7186484336853027
+      },
+      {
+        "text": "ਹੰਧਾਰੀ",
+        "start": 2.66,
+        "end": 3.18,
+        "type": "word",
+        "logprob": -0.8571355902846941
+      },
+      {
+        "text": " ",
+        "start": 3.18,
+        "end": 3.22,
+        "type": "spacing",
+        "logprob": -0.007484253961592913
+      },
+      {
+        "text": "ਜੀਵ",
+        "start": 3.22,
+        "end": 3.38,
+        "type": "word",
+        "logprob": -0.018836864682574134
+      },
+      {
+        "text": " ",
+        "start": 3.38,
+        "end": 3.46,
+        "type": "spacing",
+        "logprob": -0.006131528411060572
+      },
+      {
+        "text": "ਯਾਤਰਾ",
+        "start": 3.46,
+        "end": 3.78,
+        "type": "word",
+        "logprob": -0.003120064781978726
+      },
+      {
+        "text": " ",
+        "start": 3.78,
+        "end": 3.82,
+        "type": "spacing",
+        "logprob": -0.0002671123365871608
+      },
+      {
+        "text": "ਕਰਨ",
+        "start": 3.82,
+        "end": 3.96,
+        "type": "word",
+        "logprob": -0.0002671123365871608
+      },
+      {
+        "text": " ",
+        "start": 3.96,
+        "end": 4,
+        "type": "spacing",
+        "logprob": -0.15802767872810364
+      },
+      {
+        "text": "ਵਿੱਚ",
+        "start": 4,
+        "end": 4.18,
+        "type": "word",
+        "logprob": -0.15802767872810364
+      },
+      {
+        "text": " ",
+        "start": 4.18,
+        "end": 4.18,
+        "type": "spacing",
+        "logprob": -0.002314985264092684
+      },
+      {
+        "text": "ਅਸਮਰੱਥ",
+        "start": 4.22,
+        "end": 4.68,
+        "type": "word",
+        "logprob": -0.09846677705839586
+      },
+      {
+        "text": " ",
+        "start": 4.68,
+        "end": 4.76,
+        "type": "spacing",
+        "logprob": -0.00021109737281221896
+      },
+      {
+        "text": "ਸਨ।",
+        "start": 4.76,
+        "end": 5.36,
+        "type": "word",
+        "logprob": -0.001661060251838838
+      },
+      {
+        "text": " ",
+        "start": 5.36,
+        "end": 5.38,
+        "type": "spacing",
+        "logprob": -0.000021934269170742482
+      },
+      {
+        "text": "ਇਸ",
+        "start": 5.38,
+        "end": 5.54,
+        "type": "word",
+        "logprob": -0.000021934269170742482
+      },
+      {
+        "text": " ",
+        "start": 5.54,
+        "end": 5.64,
+        "type": "spacing",
+        "logprob": -0.0004555141495075077
+      },
+      {
+        "text": "ਯਾਤਰਾ",
+        "start": 5.64,
+        "end": 5.96,
+        "type": "word",
+        "logprob": -0.0007269338064361363
+      },
+      {
+        "text": " ",
+        "start": 5.96,
+        "end": 6,
+        "type": "spacing",
+        "logprob": -0.00460872333496809
+      },
+      {
+        "text": "ਨੇ",
+        "start": 6,
+        "end": 6.1,
+        "type": "word",
+        "logprob": -0.00460872333496809
+      },
+      {
+        "text": " ",
+        "start": 6.1,
+        "end": 6.14,
+        "type": "spacing",
+        "logprob": -0.7062410116195679
+      },
+      {
+        "text": "ਗੈਲਾਪੈਗਸ",
+        "start": 6.14,
+        "end": 6.74,
+        "type": "word",
+        "logprob": -0.4245972386052017
+      },
+      {
+        "text": " ",
+        "start": 6.74,
+        "end": 6.78,
+        "type": "spacing",
+        "logprob": -0.00013147920253686607
+      },
+      {
+        "text": "ਵਿੱਚ",
+        "start": 6.78,
+        "end": 6.94,
+        "type": "word",
+        "logprob": -0.00013147920253686607
+      },
+      {
+        "text": " ",
+        "start": 6.94,
+        "end": 7.04,
+        "type": "spacing",
+        "logprob": -0.001440678839571774
+      },
+      {
+        "text": "ਮੁੱਖ",
+        "start": 7.04,
+        "end": 7.14,
+        "type": "word",
+        "logprob": -0.004181139694992453
+      },
+      {
+        "text": " ",
+        "start": 7.14,
+        "end": 7.2,
+        "type": "spacing",
+        "logprob": -0.00006353653589030728
+      },
+      {
+        "text": "ਤੌਰ",
+        "start": 7.22,
+        "end": 7.36,
+        "type": "word",
+        "logprob": -0.002454800014675129
+      },
+      {
+        "text": " ",
+        "start": 7.36,
+        "end": 7.38,
+        "type": "spacing",
+        "logprob": -0.20248553156852722
+      },
+      {
+        "text": "'ਤੇ",
+        "start": 7.38,
+        "end": 7.5,
+        "type": "word",
+        "logprob": -0.06750185287637578
+      },
+      {
+        "text": " ",
+        "start": 7.5,
+        "end": 7.6,
+        "type": "spacing",
+        "logprob": -0.002706200582906604
+      },
+      {
+        "text": "ਚਰਣ",
+        "start": 7.6,
+        "end": 7.8,
+        "type": "word",
+        "logprob": -0.1838160854919503
+      },
+      {
+        "text": " ",
+        "start": 7.8,
+        "end": 7.84,
+        "type": "spacing",
+        "logprob": -0.000053165931603871286
+      },
+      {
+        "text": "ਵਾਲੇ",
+        "start": 7.84,
+        "end": 8.06,
+        "type": "word",
+        "logprob": -0.000043867928070540074
+      },
+      {
+        "text": " ",
+        "start": 8.06,
+        "end": 8.1,
+        "type": "spacing",
+        "logprob": -0.022553257644176483
+      },
+      {
+        "text": "ਜਾਨਵਰਾਂ",
+        "start": 8.1,
+        "end": 8.44,
+        "type": "word",
+        "logprob": -0.008741573563643865
+      },
+      {
+        "text": " ",
+        "start": 8.44,
+        "end": 8.5,
+        "type": "spacing",
+        "logprob": -0.000007629365427419543
+      },
+      {
+        "text": "ਨੂੰ",
+        "start": 8.5,
+        "end": 8.6,
+        "type": "word",
+        "logprob": -0.000007629365427419543
+      },
+      {
+        "text": " ",
+        "start": 8.6,
+        "end": 8.62,
+        "type": "spacing",
+        "logprob": -0.0015344761777669191
+      },
+      {
+        "text": "ਬਹੁਤ",
+        "start": 8.62,
+        "end": 8.78,
+        "type": "word",
+        "logprob": -0.0006819358095526695
+      },
+      {
+        "text": " ",
+        "start": 8.78,
+        "end": 8.84,
+        "type": "spacing",
+        "logprob": -0.0046300822868943214
+      },
+      {
+        "text": "ਸੁਸਤ",
+        "start": 8.84,
+        "end": 9.1,
+        "type": "word",
+        "logprob": -0.003199299877451267
+      },
+      {
+        "text": " ",
+        "start": 9.1,
+        "end": 9.14,
+        "type": "spacing",
+        "logprob": -0.00003349725011503324
+      },
+      {
+        "text": "ਬਣਾ",
+        "start": 9.14,
+        "end": 9.38,
+        "type": "word",
+        "logprob": -0.003108012613665778
+      },
+      {
+        "text": " ",
+        "start": 9.38,
+        "end": 9.42,
+        "type": "spacing",
+        "logprob": -0.000006079655122448457
+      },
+      {
+        "text": "ਦਿੱਤਾ।",
+        "start": 9.42,
+        "end": 9.84,
+        "type": "word",
+        "logprob": -0.08174251515091176
+      }
+    ],
+    "transcription_id": "JuXBcyQWnSVf50PDl1Ae",
+    "audio_duration_secs": 9.9
+  }
+}

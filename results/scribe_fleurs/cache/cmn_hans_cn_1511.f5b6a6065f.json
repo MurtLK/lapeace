@@ -1,0 +1,264 @@
+{
+  "clip_id": "cmn_hans_cn_1511",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "zho",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:55.509Z",
+  "response": {
+    "language_code": "zho",
+    "language_probability": 1,
+    "text": "很快，配备了防爆装备的警察进入了院子，并用催泪瓦斯将囚犯逼得走投无路。",
+    "words": [
+      {
+        "text": "很",
+        "start": 1,
+        "end": 1.1,
+        "type": "word",
+        "logprob": -0.00008928377064876258
+      },
+      {
+        "text": "快",
+        "start": 1.1,
+        "end": 1.34,
+        "type": "word",
+        "logprob": -0.00008928377064876258
+      },
+      {
+        "text": "，",
+        "start": 1.34,
+        "end": 1.36,
+        "type": "word",
+        "logprob": -0.03141717612743378
+      },
+      {
+        "text": "配",
+        "start": 1.36,
+        "end": 1.52,
+        "type": "word",
+        "logprob": -0.00029905137489549816
+      },
+      {
+        "text": "备",
+        "start": 1.52,
+        "end": 1.66,
+        "type": "word",
+        "logprob": -0.00029905137489549816
+      },
+      {
+        "text": "了",
+        "start": 1.66,
+        "end": 1.84,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "防",
+        "start": 1.84,
+        "end": 2.04,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "爆",
+        "start": 2.04,
+        "end": 2.22,
+        "type": "word",
+        "logprob": -0.14272035658359528
+      },
+      {
+        "text": "装",
+        "start": 2.22,
+        "end": 2.42,
+        "type": "word",
+        "logprob": -0.00017963226127903908
+      },
+      {
+        "text": "备",
+        "start": 2.42,
+        "end": 2.54,
+        "type": "word",
+        "logprob": -0.00017963226127903908
+      },
+      {
+        "text": "的",
+        "start": 2.54,
+        "end": 2.66,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "警",
+        "start": 2.68,
+        "end": 2.86,
+        "type": "word",
+        "logprob": -0.000013708974620385561
+      },
+      {
+        "text": "察",
+        "start": 2.86,
+        "end": 3.1,
+        "type": "word",
+        "logprob": -0.000013708974620385561
+      },
+      {
+        "text": "进",
+        "start": 3.1,
+        "end": 3.26,
+        "type": "word",
+        "logprob": -0.00023731753753963858
+      },
+      {
+        "text": "入",
+        "start": 3.26,
+        "end": 3.36,
+        "type": "word",
+        "logprob": -0.00023731753753963858
+      },
+      {
+        "text": "了",
+        "start": 3.36,
+        "end": 3.48,
+        "type": "word",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": "院",
+        "start": 3.48,
+        "end": 3.72,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "子",
+        "start": 3.72,
+        "end": 3.96,
+        "type": "word",
+        "logprob": -0.000018954096958623268
+      },
+      {
+        "text": "，",
+        "start": 3.96,
+        "end": 4,
+        "type": "word",
+        "logprob": -0.0000015497195136049413
+      },
+      {
+        "text": "并",
+        "start": 4,
+        "end": 4.14,
+        "type": "word",
+        "logprob": -0.0005237876321189106
+      },
+      {
+        "text": "用",
+        "start": 4.14,
+        "end": 4.38,
+        "type": "word",
+        "logprob": -0.000009298280929215252
+      },
+      {
+        "text": "催",
+        "start": 4.38,
+        "end": 4.58,
+        "type": "word",
+        "logprob": -0.00008427741704508662
+      },
+      {
+        "text": "泪",
+        "start": 4.58,
+        "end": 4.78,
+        "type": "word",
+        "logprob": -0.000030517112463712692
+      },
+      {
+        "text": "瓦",
+        "start": 4.78,
+        "end": 5.02,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "斯",
+        "start": 5.02,
+        "end": 5.28,
+        "type": "word",
+        "logprob": -0.000014305012882687151
+      },
+      {
+        "text": "将",
+        "start": 5.28,
+        "end": 5.92,
+        "type": "word",
+        "logprob": -0.000019430925021879375
+      },
+      {
+        "text": "囚",
+        "start": 5.92,
+        "end": 6.1,
+        "type": "word",
+        "logprob": -0.0013625870924443007
+      },
+      {
+        "text": "犯",
+        "start": 6.1,
+        "end": 6.36,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "逼",
+        "start": 6.36,
+        "end": 6.5,
+        "type": "word",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": "得",
+        "start": 6.5,
+        "end": 6.66,
+        "type": "word",
+        "logprob": -0.000002861018856492592
+      },
+      {
+        "text": "走",
+        "start": 6.66,
+        "end": 6.84,
+        "type": "word",
+        "logprob": -0.00000250339189733495
+      },
+      {
+        "text": "投",
+        "start": 6.84,
+        "end": 7.04,
+        "type": "word",
+        "logprob": -0.000015020257706055418
+      },
+      {
+        "text": "无",
+        "start": 7.04,
+        "end": 7.18,
+        "type": "word",
+        "logprob": -0.0001006075763143599
+      },
+      {
+        "text": "路",
+        "start": 7.18,
+        "end": 7.28,
+        "type": "word",
+        "logprob": -0.0000046491513785440475
+      },
+      {
+        "text": "。",
+        "start": 7.28,
+        "end": 7.28,
+        "type": "word",
+        "logprob": -0.000006318072337307967
+      }
+    ],
+    "transcription_id": "vKTZjUZggyhhOrsCGMjv",
+    "audio_duration_secs": 8.1
+  }
+}

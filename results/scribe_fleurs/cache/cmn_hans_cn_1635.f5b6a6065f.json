@@ -1,0 +1,334 @@
+{
+  "clip_id": "cmn_hans_cn_1635",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "zho",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:59.368Z",
+  "response": {
+    "language_code": "zho",
+    "language_probability": 1,
+    "text": "我们可以开始更环保的生活，加入环保运动，甚至成为环保积极分子，在一定程度上减少将来的灾难。",
+    "words": [
+      {
+        "text": "我",
+        "start": 1.12,
+        "end": 1.22,
+        "type": "word",
+        "logprob": -0.00004279521817807108
+      },
+      {
+        "text": "们",
+        "start": 1.22,
+        "end": 1.44,
+        "type": "word",
+        "logprob": -0.00004279521817807108
+      },
+      {
+        "text": "可",
+        "start": 1.44,
+        "end": 1.6,
+        "type": "word",
+        "logprob": -0.00004279521817807108
+      },
+      {
+        "text": "以",
+        "start": 1.6,
+        "end": 1.82,
+        "type": "word",
+        "logprob": -0.00004279521817807108
+      },
+      {
+        "text": "开",
+        "start": 1.82,
+        "end": 2.08,
+        "type": "word",
+        "logprob": -0.000018000440832111053
+      },
+      {
+        "text": "始",
+        "start": 2.08,
+        "end": 2.34,
+        "type": "word",
+        "logprob": -0.000018000440832111053
+      },
+      {
+        "text": "更",
+        "start": 2.34,
+        "end": 2.52,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "环",
+        "start": 2.54,
+        "end": 2.74,
+        "type": "word",
+        "logprob": -0.00012730741582345217
+      },
+      {
+        "text": "保",
+        "start": 2.74,
+        "end": 2.9,
+        "type": "word",
+        "logprob": -0.00012730741582345217
+      },
+      {
+        "text": "的",
+        "start": 2.9,
+        "end": 3.04,
+        "type": "word",
+        "logprob": -0.2812630534172058
+      },
+      {
+        "text": "生",
+        "start": 3.04,
+        "end": 3.28,
+        "type": "word",
+        "logprob": -0.2812630534172058
+      },
+      {
+        "text": "活",
+        "start": 3.28,
+        "end": 3.54,
+        "type": "word",
+        "logprob": -0.2812630534172058
+      },
+      {
+        "text": "，",
+        "start": 3.54,
+        "end": 3.56,
+        "type": "word",
+        "logprob": -0.00020525732543319464
+      },
+      {
+        "text": "加",
+        "start": 3.56,
+        "end": 3.72,
+        "type": "word",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": "入",
+        "start": 3.72,
+        "end": 3.88,
+        "type": "word",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": "环",
+        "start": 3.88,
+        "end": 4.08,
+        "type": "word",
+        "logprob": -0.000007390948667307384
+      },
+      {
+        "text": "保",
+        "start": 4.08,
+        "end": 4.24,
+        "type": "word",
+        "logprob": -0.000007390948667307384
+      },
+      {
+        "text": "运",
+        "start": 4.24,
+        "end": 4.42,
+        "type": "word",
+        "logprob": -0.000030278701160568744
+      },
+      {
+        "text": "动",
+        "start": 4.42,
+        "end": 4.42,
+        "type": "word",
+        "logprob": -0.000030278701160568744
+      },
+      {
+        "text": "，",
+        "start": 4.7,
+        "end": 4.74,
+        "type": "word",
+        "logprob": -0.000009059865078597795
+      },
+      {
+        "text": "甚",
+        "start": 4.74,
+        "end": 4.92,
+        "type": "word",
+        "logprob": -0.000006079655122448457
+      },
+      {
+        "text": "至",
+        "start": 4.92,
+        "end": 5.1,
+        "type": "word",
+        "logprob": -0.000006079655122448457
+      },
+      {
+        "text": "成",
+        "start": 5.1,
+        "end": 5.26,
+        "type": "word",
+        "logprob": -0.000004768360213347478
+      },
+      {
+        "text": "为",
+        "start": 5.26,
+        "end": 5.44,
+        "type": "word",
+        "logprob": -0.000004768360213347478
+      },
+      {
+        "text": "环",
+        "start": 5.44,
+        "end": 5.62,
+        "type": "word",
+        "logprob": -0.00006282132380874828
+      },
+      {
+        "text": "保",
+        "start": 5.62,
+        "end": 5.82,
+        "type": "word",
+        "logprob": -0.00006282132380874828
+      },
+      {
+        "text": "积",
+        "start": 5.82,
+        "end": 5.96,
+        "type": "word",
+        "logprob": -0.0004301338049117476
+      },
+      {
+        "text": "极",
+        "start": 5.96,
+        "end": 6.12,
+        "type": "word",
+        "logprob": -0.0004301338049117476
+      },
+      {
+        "text": "分",
+        "start": 6.14,
+        "end": 6.34,
+        "type": "word",
+        "logprob": -0.0024787436705082655
+      },
+      {
+        "text": "子",
+        "start": 6.34,
+        "end": 6.54,
+        "type": "word",
+        "logprob": -0.0024787436705082655
+      },
+      {
+        "text": "，",
+        "start": 6.54,
+        "end": 6.56,
+        "type": "word",
+        "logprob": -0.000003576272320060525
+      },
+      {
+        "text": "在",
+        "start": 6.56,
+        "end": 6.72,
+        "type": "word",
+        "logprob": -0.000002145764938177308
+      },
+      {
+        "text": "一",
+        "start": 6.72,
+        "end": 6.84,
+        "type": "word",
+        "logprob": -0.000003814689989667386
+      },
+      {
+        "text": "定",
+        "start": 6.84,
+        "end": 7.02,
+        "type": "word",
+        "logprob": -0.000003814689989667386
+      },
+      {
+        "text": "程",
+        "start": 7.02,
+        "end": 7.18,
+        "type": "word",
+        "logprob": -0.00003707340147229843
+      },
+      {
+        "text": "度",
+        "start": 7.18,
+        "end": 7.34,
+        "type": "word",
+        "logprob": -0.00003707340147229843
+      },
+      {
+        "text": "上",
+        "start": 7.34,
+        "end": 7.56,
+        "type": "word",
+        "logprob": -0.00003707340147229843
+      },
+      {
+        "text": "减",
+        "start": 7.56,
+        "end": 7.76,
+        "type": "word",
+        "logprob": -0.00011455356434453279
+      },
+      {
+        "text": "少",
+        "start": 7.76,
+        "end": 8.1,
+        "type": "word",
+        "logprob": -0.00011455356434453279
+      },
+      {
+        "text": "将",
+        "start": 8.1,
+        "end": 8.24,
+        "type": "word",
+        "logprob": -0.00004351044481154531
+      },
+      {
+        "text": "来",
+        "start": 8.24,
+        "end": 8.36,
+        "type": "word",
+        "logprob": -0.000021219027985353023
+      },
+      {
+        "text": "的",
+        "start": 8.36,
+        "end": 8.5,
+        "type": "word",
+        "logprob": -0.000021219027985353023
+      },
+      {
+        "text": "灾",
+        "start": 8.5,
+        "end": 8.7,
+        "type": "word",
+        "logprob": -0.00001597391747054644
+      },
+      {
+        "text": "难",
+        "start": 8.7,
+        "end": 8.86,
+        "type": "word",
+        "logprob": -0.000036954195820726454
+      },
+      {
+        "text": "。",
+        "start": 8.86,
+        "end": 8.86,
+        "type": "word",
+        "logprob": -0.002476246329024434
+      }
+    ],
+    "transcription_id": "4QHK4GMle1BTyjtZYdGP",
+    "audio_duration_secs": 9.66
+  }
+}

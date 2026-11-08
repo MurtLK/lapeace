@@ -1,0 +1,369 @@
+{
+  "clip_id": "yue_hant_hk_1644",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "yue",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:32.355Z",
+  "response": {
+    "language_code": "yue",
+    "language_probability": 1,
+    "text": "当米勒被要求发表评论时，他表示：“默克在听证会上说了很多，我那时正在做准备，所以其实没听到他说了什么。",
+    "words": [
+      {
+        "text": "当",
+        "start": 0.9,
+        "end": 1.04,
+        "type": "word",
+        "logprob": -0.005524842534214258
+      },
+      {
+        "text": "米",
+        "start": 1.04,
+        "end": 1.26,
+        "type": "word",
+        "logprob": -0.0100021343678236
+      },
+      {
+        "text": "勒",
+        "start": 1.26,
+        "end": 1.48,
+        "type": "word",
+        "logprob": -0.013364024460315704
+      },
+      {
+        "text": "被",
+        "start": 1.48,
+        "end": 1.66,
+        "type": "word",
+        "logprob": -0.00014244495832826942
+      },
+      {
+        "text": "要",
+        "start": 1.66,
+        "end": 1.86,
+        "type": "word",
+        "logprob": -0.0000032186455882765586
+      },
+      {
+        "text": "求",
+        "start": 1.86,
+        "end": 2.06,
+        "type": "word",
+        "logprob": -0.0000032186455882765586
+      },
+      {
+        "text": "发",
+        "start": 2.06,
+        "end": 2.24,
+        "type": "word",
+        "logprob": -0.00006913899414939806
+      },
+      {
+        "text": "表",
+        "start": 2.24,
+        "end": 2.4,
+        "type": "word",
+        "logprob": -0.00006913899414939806
+      },
+      {
+        "text": "评",
+        "start": 2.4,
+        "end": 2.6,
+        "type": "word",
+        "logprob": -0.00004207999518257566
+      },
+      {
+        "text": "论",
+        "start": 2.6,
+        "end": 2.88,
+        "type": "word",
+        "logprob": -0.00004207999518257566
+      },
+      {
+        "text": "时",
+        "start": 2.88,
+        "end": 3.16,
+        "type": "word",
+        "logprob": -0.000028013790142722428
+      },
+      {
+        "text": "，",
+        "start": 3.16,
+        "end": 3.2,
+        "type": "word",
+        "logprob": -0.000011920858014491387
+      },
+      {
+        "text": "他",
+        "start": 3.2,
+        "end": 3.38,
+        "type": "word",
+        "logprob": -0.005929972976446152
+      },
+      {
+        "text": "表",
+        "start": 3.38,
+        "end": 3.64,
+        "type": "word",
+        "logprob": -0.00000250339189733495
+      },
+      {
+        "text": "示",
+        "start": 3.64,
+        "end": 3.64,
+        "type": "word",
+        "logprob": -0.00000250339189733495
+      },
+      {
+        "text": "：“",
+        "start": 3.84,
+        "end": 4.2,
+        "type": "word",
+        "logprob": -0.22528892755508423
+      },
+      {
+        "text": "默",
+        "start": 4.2,
+        "end": 4.38,
+        "type": "word",
+        "logprob": -0.2785261571407318
+      },
+      {
+        "text": "克",
+        "start": 5.24,
+        "end": 5.5,
+        "type": "word",
+        "logprob": -0.00009047575440490618
+      },
+      {
+        "text": "在",
+        "start": 5.5,
+        "end": 5.5,
+        "type": "word",
+        "logprob": -0.0019455092260614038
+      },
+      {
+        "text": "听",
+        "start": 5.88,
+        "end": 6.44,
+        "type": "word",
+        "logprob": -0.00043358939001336694
+      },
+      {
+        "text": "证",
+        "start": 6.44,
+        "end": 6.64,
+        "type": "word",
+        "logprob": -0.0001559135998832062
+      },
+      {
+        "text": "会",
+        "start": 6.64,
+        "end": 6.82,
+        "type": "word",
+        "logprob": -0.0010377742582932115
+      },
+      {
+        "text": "上",
+        "start": 6.82,
+        "end": 7.04,
+        "type": "word",
+        "logprob": -0.0010377742582932115
+      },
+      {
+        "text": "说",
+        "start": 7.04,
+        "end": 7.18,
+        "type": "word",
+        "logprob": -0.06376054137945175
+      },
+      {
+        "text": "了",
+        "start": 7.18,
+        "end": 7.34,
+        "type": "word",
+        "logprob": -0.000014543427823809907
+      },
+      {
+        "text": "很",
+        "start": 7.34,
+        "end": 7.6,
+        "type": "word",
+        "logprob": -0.000014543427823809907
+      },
+      {
+        "text": "多",
+        "start": 7.6,
+        "end": 7.74,
+        "type": "word",
+        "logprob": -0.000014543427823809907
+      },
+      {
+        "text": "，",
+        "start": 7.8,
+        "end": 8.18,
+        "type": "word",
+        "logprob": -0.0015113847330212593
+      },
+      {
+        "text": "我",
+        "start": 8.18,
+        "end": 8.3,
+        "type": "word",
+        "logprob": -0.000018358061424805783
+      },
+      {
+        "text": "那",
+        "start": 8.3,
+        "end": 8.5,
+        "type": "word",
+        "logprob": -0.00011073929636040702
+      },
+      {
+        "text": "时",
+        "start": 8.5,
+        "end": 8.66,
+        "type": "word",
+        "logprob": -0.00011073929636040702
+      },
+      {
+        "text": "正",
+        "start": 8.66,
+        "end": 8.8,
+        "type": "word",
+        "logprob": -0.00004136476854910143
+      },
+      {
+        "text": "在",
+        "start": 8.8,
+        "end": 8.98,
+        "type": "word",
+        "logprob": -0.00004136476854910143
+      },
+      {
+        "text": "做",
+        "start": 8.98,
+        "end": 9.24,
+        "type": "word",
+        "logprob": -0.0007739647408016026
+      },
+      {
+        "text": "准",
+        "start": 9.24,
+        "end": 9.66,
+        "type": "word",
+        "logprob": -0.0015851801726967096
+      },
+      {
+        "text": "备",
+        "start": 9.66,
+        "end": 9.66,
+        "type": "word",
+        "logprob": -0.0015851801726967096
+      },
+      {
+        "text": "，",
+        "start": 9.86,
+        "end": 10.2,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "所",
+        "start": 10.2,
+        "end": 10.34,
+        "type": "word",
+        "logprob": -0.000021934269170742482
+      },
+      {
+        "text": "以",
+        "start": 10.34,
+        "end": 10.58,
+        "type": "word",
+        "logprob": -0.000021934269170742482
+      },
+      {
+        "text": "其",
+        "start": 10.58,
+        "end": 10.74,
+        "type": "word",
+        "logprob": -0.0006959400488995016
+      },
+      {
+        "text": "实",
+        "start": 10.74,
+        "end": 10.92,
+        "type": "word",
+        "logprob": -0.0006959400488995016
+      },
+      {
+        "text": "没",
+        "start": 10.92,
+        "end": 11.12,
+        "type": "word",
+        "logprob": -0.04350508376955986
+      },
+      {
+        "text": "听",
+        "start": 11.12,
+        "end": 11.3,
+        "type": "word",
+        "logprob": -0.007001626770943403
+      },
+      {
+        "text": "到",
+        "start": 11.3,
+        "end": 11.46,
+        "type": "word",
+        "logprob": -0.007001626770943403
+      },
+      {
+        "text": "他",
+        "start": 11.46,
+        "end": 11.68,
+        "type": "word",
+        "logprob": -0.001258772797882557
+      },
+      {
+        "text": "说",
+        "start": 11.68,
+        "end": 11.8,
+        "type": "word",
+        "logprob": -0.0000393382906622719
+      },
+      {
+        "text": "了",
+        "start": 11.8,
+        "end": 12,
+        "type": "word",
+        "logprob": -0.0000393382906622719
+      },
+      {
+        "text": "什",
+        "start": 12,
+        "end": 12.18,
+        "type": "word",
+        "logprob": -0.00005638440416078083
+      },
+      {
+        "text": "么",
+        "start": 12.18,
+        "end": 12.4,
+        "type": "word",
+        "logprob": -0.00005638440416078083
+      },
+      {
+        "text": "。",
+        "start": 12.4,
+        "end": 12.4,
+        "type": "word",
+        "logprob": -0.18959644436836243
+      }
+    ],
+    "transcription_id": "RJfsrubPLvn0teORAK7v",
+    "audio_duration_secs": 13.26
+  }
+}

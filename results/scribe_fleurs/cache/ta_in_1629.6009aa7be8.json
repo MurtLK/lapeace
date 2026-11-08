@@ -1,0 +1,320 @@
+{
+  "clip_id": "ta_in_1629",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "tam",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:49.455Z",
+  "response": {
+    "language_code": "tam",
+    "language_probability": 1,
+    "text": "சில அதிகாரப்பூர்வ அறிக்கைகள் உயிரிழந்தவர்களின் எண்ணிக்கையை எட்டு என அறிவித்தன மற்றும் அதிகாரப்பூர்வ அறிக்கைகள் சுமார் முப்பது நபர்கள் காயமடைந்துள்ளனர் என்பதை உறுதிப்படுத்தப்படுகின்றன. ஆனால் முடிவான எண்ணிக்கை இன்னும் தெரியவில்லை.",
+    "words": [
+      {
+        "text": "சில",
+        "start": 0.72,
+        "end": 0.9,
+        "type": "word",
+        "logprob": -0.0012554391287267208
+      },
+      {
+        "text": " ",
+        "start": 0.9,
+        "end": 1.12,
+        "type": "spacing",
+        "logprob": -0.00465867854654789
+      },
+      {
+        "text": "அதிகாரப்பூர்வ",
+        "start": 1.12,
+        "end": 1.92,
+        "type": "word",
+        "logprob": -0.0226055201201234
+      },
+      {
+        "text": " ",
+        "start": 1.92,
+        "end": 1.94,
+        "type": "spacing",
+        "logprob": -0.0009934734553098679
+      },
+      {
+        "text": "அறிக்கைகள்",
+        "start": 1.94,
+        "end": 2.48,
+        "type": "word",
+        "logprob": -0.10495519824326038
+      },
+      {
+        "text": " ",
+        "start": 2.48,
+        "end": 2.72,
+        "type": "spacing",
+        "logprob": -0.46669483184814453
+      },
+      {
+        "text": "உயிரிழந்தவர்களின்",
+        "start": 3.18,
+        "end": 4.04,
+        "type": "word",
+        "logprob": -0.05571972073384506
+      },
+      {
+        "text": " ",
+        "start": 4.04,
+        "end": 4.1,
+        "type": "spacing",
+        "logprob": -0.010618850588798523
+      },
+      {
+        "text": "எண்ணிக்கையை",
+        "start": 4.1,
+        "end": 4.62,
+        "type": "word",
+        "logprob": -0.007816222834993492
+      },
+      {
+        "text": " ",
+        "start": 4.62,
+        "end": 4.68,
+        "type": "spacing",
+        "logprob": -0.000048040190449682996
+      },
+      {
+        "text": "எட்டு",
+        "start": 4.68,
+        "end": 5.04,
+        "type": "word",
+        "logprob": -0.000048040190449682996
+      },
+      {
+        "text": " ",
+        "start": 5.04,
+        "end": 5.1,
+        "type": "spacing",
+        "logprob": -0.0018841149285435677
+      },
+      {
+        "text": "என",
+        "start": 5.1,
+        "end": 5.34,
+        "type": "word",
+        "logprob": -0.0018841149285435677
+      },
+      {
+        "text": " ",
+        "start": 5.34,
+        "end": 5.36,
+        "type": "spacing",
+        "logprob": -0.0005942009738646448
+      },
+      {
+        "text": "அறிவித்தன",
+        "start": 5.36,
+        "end": 5.92,
+        "type": "word",
+        "logprob": -0.007757073080736316
+      },
+      {
+        "text": " ",
+        "start": 5.92,
+        "end": 5.98,
+        "type": "spacing",
+        "logprob": -0.0010551605373620987
+      },
+      {
+        "text": "மற்றும்",
+        "start": 5.98,
+        "end": 6.38,
+        "type": "word",
+        "logprob": -0.0010551605373620987
+      },
+      {
+        "text": " ",
+        "start": 6.38,
+        "end": 6.5,
+        "type": "spacing",
+        "logprob": -0.0038410471752285957
+      },
+      {
+        "text": "அதிகாரப்பூர்வ",
+        "start": 6.5,
+        "end": 7.2,
+        "type": "word",
+        "logprob": -0.0019046188922052702
+      },
+      {
+        "text": " ",
+        "start": 7.2,
+        "end": 7.28,
+        "type": "spacing",
+        "logprob": -0.00027724236133508384
+      },
+      {
+        "text": "அறிக்கைகள்",
+        "start": 7.28,
+        "end": 7.7,
+        "type": "word",
+        "logprob": -0.0016165408596862108
+      },
+      {
+        "text": " ",
+        "start": 7.7,
+        "end": 7.84,
+        "type": "spacing",
+        "logprob": -0.00019143179815728217
+      },
+      {
+        "text": "சுமார்",
+        "start": 7.84,
+        "end": 8.1,
+        "type": "word",
+        "logprob": -0.00019143179815728217
+      },
+      {
+        "text": " ",
+        "start": 8.1,
+        "end": 8.16,
+        "type": "spacing",
+        "logprob": -0.016406511887907982
+      },
+      {
+        "text": "முப்பது",
+        "start": 8.16,
+        "end": 8.54,
+        "type": "word",
+        "logprob": -0.0049253577765609536
+      },
+      {
+        "text": " ",
+        "start": 8.54,
+        "end": 8.6,
+        "type": "spacing",
+        "logprob": -0.0011467316653579473
+      },
+      {
+        "text": "நபர்கள்",
+        "start": 8.6,
+        "end": 8.88,
+        "type": "word",
+        "logprob": -0.00042231757626203556
+      },
+      {
+        "text": " ",
+        "start": 8.88,
+        "end": 8.98,
+        "type": "spacing",
+        "logprob": -0.0033812513574957848
+      },
+      {
+        "text": "காயமடைந்துள்ளனர்",
+        "start": 8.98,
+        "end": 10,
+        "type": "word",
+        "logprob": -0.002894026845751796
+      },
+      {
+        "text": " ",
+        "start": 10,
+        "end": 10.06,
+        "type": "spacing",
+        "logprob": -0.0026255918201059103
+      },
+      {
+        "text": "என்பதை",
+        "start": 10.06,
+        "end": 10.46,
+        "type": "word",
+        "logprob": -0.0026255918201059103
+      },
+      {
+        "text": " ",
+        "start": 10.46,
+        "end": 10.5,
+        "type": "spacing",
+        "logprob": -0.0005894353962503374
+      },
+      {
+        "text": "உறுதிப்படுத்தப்படுகின்றன.",
+        "start": 10.5,
+        "end": 11.7,
+        "type": "word",
+        "logprob": -0.14210851053474471
+      },
+      {
+        "text": " ",
+        "start": 11.7,
+        "end": 12.14,
+        "type": "spacing",
+        "logprob": -0.0017072877380996943
+      },
+      {
+        "text": "ஆனால்",
+        "start": 12.14,
+        "end": 12.42,
+        "type": "word",
+        "logprob": -0.0017072877380996943
+      },
+      {
+        "text": " ",
+        "start": 12.42,
+        "end": 12.5,
+        "type": "spacing",
+        "logprob": -0.1497119516134262
+      },
+      {
+        "text": "முடிவான",
+        "start": 12.5,
+        "end": 12.9,
+        "type": "word",
+        "logprob": -0.08601312605398041
+      },
+      {
+        "text": " ",
+        "start": 12.9,
+        "end": 12.96,
+        "type": "spacing",
+        "logprob": -0.001465795561671257
+      },
+      {
+        "text": "எண்ணிக்கை",
+        "start": 12.96,
+        "end": 13.28,
+        "type": "word",
+        "logprob": -0.001465795561671257
+      },
+      {
+        "text": " ",
+        "start": 13.28,
+        "end": 13.34,
+        "type": "spacing",
+        "logprob": -0.0013306819600984454
+      },
+      {
+        "text": "இன்னும்",
+        "start": 13.34,
+        "end": 13.52,
+        "type": "word",
+        "logprob": -0.0013306819600984454
+      },
+      {
+        "text": " ",
+        "start": 13.52,
+        "end": 13.64,
+        "type": "spacing",
+        "logprob": -0.000358159770257771
+      },
+      {
+        "text": "தெரியவில்லை.",
+        "start": 13.64,
+        "end": 14.34,
+        "type": "word",
+        "logprob": -0.03612490499896618
+      }
+    ],
+    "transcription_id": "8gCymmgIZkzQE9lBdRXX",
+    "audio_duration_secs": 14.88
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "clip_id": "ar_eg_1574",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "ara",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:22.968Z",
+  "response": {
+    "language_code": "ara",
+    "language_probability": 1,
+    "text": "ربما يكون الشتاء بارداً بشكل مخادع: نادراً ما تنخفض درجات الحرارة إلى ما دون درجة التجمد، لكن الرياح والرطوبة تجتمعان لتجعل الجو أكثر برودة مما يشير مقياس الحرارة.",
+    "words": [
+      {
+        "text": "ربما",
+        "start": 1.58,
+        "end": 2,
+        "type": "word",
+        "logprob": -0.0002286545332026435
+      },
+      {
+        "text": " ",
+        "start": 2,
+        "end": 2.06,
+        "type": "spacing",
+        "logprob": -0.0000015497195136049413
+      },
+      {
+        "text": "يكون",
+        "start": 2.06,
+        "end": 2.38,
+        "type": "word",
+        "logprob": -0.0000015497195136049413
+      },
+      {
+        "text": " ",
+        "start": 2.38,
+        "end": 2.44,
+        "type": "spacing",
+        "logprob": -0.000009179073458653875
+      },
+      {
+        "text": "الشتاء",
+        "start": 2.44,
+        "end": 2.94,
+        "type": "word",
+        "logprob": -0.000032781738809717353
+      },
+      {
+        "text": " ",
+        "start": 2.94,
+        "end": 2.98,
+        "type": "spacing",
+        "logprob": -0.00032062159152701497
+      },
+      {
+        "text": "بارداً",
+        "start": 2.98,
+        "end": 3.44,
+        "type": "word",
+        "logprob": -0.040807523211697116
+      },
+      {
+        "text": " ",
+        "start": 3.44,
+        "end": 3.48,
+        "type": "spacing",
+        "logprob": -0.00001966933996300213
+      },
+      {
+        "text": "بشكل",
+        "start": 3.48,
+        "end": 3.88,
+        "type": "word",
+        "logprob": -0.00001966933996300213
+      },
+      {
+        "text": " ",
+        "start": 3.88,
+        "end": 3.92,
+        "type": "spacing",
+        "logprob": -0.005273479502648115
+      },
+      {
+        "text": "مخادع:",
+        "start": 3.92,
+        "end": 4.42,
+        "type": "word",
+        "logprob": -0.005992319759267654
+      },
+      {
+        "text": " ",
+        "start": 4.42,
+        "end": 4.42,
+        "type": "spacing",
+        "logprob": -0.005924403201788664
+      },
+      {
+        "text": "نادراً",
+        "start": 4.9,
+        "end": 5.34,
+        "type": "word",
+        "logprob": -0.002466313667052115
+      },
+      {
+        "text": " ",
+        "start": 5.34,
+        "end": 5.38,
+        "type": "spacing",
+        "logprob": -0.000003933898824470816
+      },
+      {
+        "text": "ما",
+        "start": 5.38,
+        "end": 5.46,
+        "type": "word",
+        "logprob": -0.000003933898824470816
+      },
+      {
+        "text": " ",
+        "start": 5.46,
+        "end": 5.52,
+        "type": "spacing",
+        "logprob": -0.000032782016205601394
+      },
+      {
+        "text": "تنخفض",
+        "start": 5.52,
+        "end": 6.06,
+        "type": "word",
+        "logprob": -0.00015686199185438454
+      },
+      {
+        "text": " ",
+        "start": 6.06,
+        "end": 6.1,
+        "type": "spacing",
+        "logprob": -0.0014524635626003146
+      },
+      {
+        "text": "درجات",
+        "start": 6.1,
+        "end": 6.58,
+        "type": "word",
+        "logprob": -0.0006839018984464929
+      },
+      {
+        "text": " ",
+        "start": 6.58,
+        "end": 6.6,
+        "type": "spacing",
+        "logprob": -0.0001879753835964948
+      },
+      {
+        "text": "الحرارة",
+        "start": 6.6,
+        "end": 7.2,
+        "type": "word",
+        "logprob": -0.00010889610354882149
+      },
+      {
+        "text": " ",
+        "start": 7.2,
+        "end": 7.6,
+        "type": "spacing",
+        "logprob": -0.00024530262453481555
+      },
+      {
+        "text": "إلى",
+        "start": 7.6,
+        "end": 7.8,
+        "type": "word",
+        "logprob": -0.00024530262453481555
+      },
+      {
+        "text": " ",
+        "start": 7.8,
+        "end": 7.86,
+        "type": "spacing",
+        "logprob": -0.00003313963316031732
+      },
+      {
+        "text": "ما",
+        "start": 7.86,
+        "end": 7.98,
+        "type": "word",
+        "logprob": -0.00003313963316031732
+      },
+      {
+        "text": " ",
+        "start": 7.98,
+        "end": 8.039,
+        "type": "spacing",
+        "logprob": -0.00012265883560758084
+      },
+      {
+        "text": "دون",
+        "start": 8.039,
+        "end": 8.2,
+        "type": "word",
+        "logprob": -0.00012265883560758084
+      },
+      {
+        "text": " ",
+        "start": 8.2,
+        "end": 8.3,
+        "type": "spacing",
+        "logprob": -0.00005018585216021165
+      },
+      {
+        "text": "درجة",
+        "start": 8.3,
+        "end": 8.62,
+        "type": "word",
+        "logprob": -0.00005018585216021165
+      },
+      {
+        "text": " ",
+        "start": 8.62,
+        "end": 8.66,
+        "type": "spacing",
+        "logprob": -0.03456781432032585
+      },
+      {
+        "text": "التجمد،",
+        "start": 8.66,
+        "end": 9.26,
+        "type": "word",
+        "logprob": -0.01979080724985189
+      },
+      {
+        "text": " ",
+        "start": 9.26,
+        "end": 9.26,
+        "type": "spacing",
+        "logprob": -0.00006317892984952778
+      },
+      {
+        "text": "لكن",
+        "start": 9.62,
+        "end": 10.02,
+        "type": "word",
+        "logprob": -0.00006317892984952778
+      },
+      {
+        "text": " ",
+        "start": 10.02,
+        "end": 10.08,
+        "type": "spacing",
+        "logprob": -0.003949224483221769
+      },
+      {
+        "text": "الرياح",
+        "start": 10.08,
+        "end": 10.48,
+        "type": "word",
+        "logprob": -0.002712160528365833
+      },
+      {
+        "text": " ",
+        "start": 10.48,
+        "end": 10.52,
+        "type": "spacing",
+        "logprob": -0.038880184292793274
+      },
+      {
+        "text": "والرطوبة",
+        "start": 10.52,
+        "end": 11.14,
+        "type": "word",
+        "logprob": -0.01949592050686988
+      },
+      {
+        "text": " ",
+        "start": 11.14,
+        "end": 11.14,
+        "type": "spacing",
+        "logprob": -0.20612892508506775
+      },
+      {
+        "text": "تجتمعان",
+        "start": 11.14,
+        "end": 11.88,
+        "type": "word",
+        "logprob": -0.07116558175974726
+      },
+      {
+        "text": " ",
+        "start": 11.88,
+        "end": 12.22,
+        "type": "spacing",
+        "logprob": -0.0010308672208338976
+      },
+      {
+        "text": "لتجعل",
+        "start": 12.22,
+        "end": 12.72,
+        "type": "word",
+        "logprob": -0.0008491995744407177
+      },
+      {
+        "text": " ",
+        "start": 12.72,
+        "end": 12.76,
+        "type": "spacing",
+        "logprob": -0.0000058412379075889476
+      },
+      {
+        "text": "الجو",
+        "start": 12.78,
+        "end": 13.2,
+        "type": "word",
+        "logprob": -0.0000067651028530235635
+      },
+      {
+        "text": " ",
+        "start": 13.2,
+        "end": 13.22,
+        "type": "spacing",
+        "logprob": -0.00012396997772157192
+      },
+      {
+        "text": "أكثر",
+        "start": 13.28,
+        "end": 13.62,
+        "type": "word",
+        "logprob": -0.00012396997772157192
+      },
+      {
+        "text": " ",
+        "start": 13.62,
+        "end": 13.78,
+        "type": "spacing",
+        "logprob": -0.0004648081958293915
+      },
+      {
+        "text": "برودة",
+        "start": 13.78,
+        "end": 14.28,
+        "type": "word",
+        "logprob": -0.0002324846194824204
+      },
+      {
+        "text": " ",
+        "start": 14.28,
+        "end": 14.34,
+        "type": "spacing",
+        "logprob": -0.0005629861843772233
+      },
+      {
+        "text": "مما",
+        "start": 14.34,
+        "end": 14.68,
+        "type": "word",
+        "logprob": -0.0005629861843772233
+      },
+      {
+        "text": " ",
+        "start": 14.68,
+        "end": 14.74,
+        "type": "spacing",
+        "logprob": -0.0027041793800890446
+      },
+      {
+        "text": "يشير",
+        "start": 14.74,
+        "end": 15.18,
+        "type": "word",
+        "logprob": -0.001400605517119402
+      },
+      {
+        "text": " ",
+        "start": 15.18,
+        "end": 15.24,
+        "type": "spacing",
+        "logprob": -0.00013553177996072918
+      },
+      {
+        "text": "مقياس",
+        "start": 15.24,
+        "end": 15.7,
+        "type": "word",
+        "logprob": -0.0001249155307050387
+      },
+      {
+        "text": " ",
+        "start": 15.7,
+        "end": 15.72,
+        "type": "spacing",
+        "logprob": -0.00018892886873800308
+      },
+      {
+        "text": "الحرارة.",
+        "start": 15.72,
+        "end": 16.239,
+        "type": "word",
+        "logprob": -0.00009960525001417864
+      }
+    ],
+    "transcription_id": "rZOW784ycvK6kROPHjVC",
+    "audio_duration_secs": 17.46
+  }
+}

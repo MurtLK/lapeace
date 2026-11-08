@@ -1,0 +1,278 @@
+{
+  "clip_id": "ta_in_1514",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "tam",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:45.512Z",
+  "response": {
+    "language_code": "tam",
+    "language_probability": 1,
+    "text": "காயமுற்றவர்கள் மருத்துவமனைக்கு கொண்டு செல்லப்பட்ட பின்னர், சண்டை நின்றபோது எஞ்சியிருந்த மற்ற கைதிகளில் சுமார் நாற்பது பேர் முற்றத்தில் தங்கித் தங்கள் சிறைக்குத் திரும்ப மறுத்துவிட்டனர்.",
+    "words": [
+      {
+        "text": "காயமுற்றவர்கள்",
+        "start": 0.64,
+        "end": 1.54,
+        "type": "word",
+        "logprob": -0.003851632241483977
+      },
+      {
+        "text": " ",
+        "start": 1.54,
+        "end": 1.74,
+        "type": "spacing",
+        "logprob": -0.0012653210433200002
+      },
+      {
+        "text": "மருத்துவமனைக்கு",
+        "start": 1.74,
+        "end": 2.6,
+        "type": "word",
+        "logprob": -0.0008649675194950154
+      },
+      {
+        "text": " ",
+        "start": 2.6,
+        "end": 2.8,
+        "type": "spacing",
+        "logprob": -0.38803842663764954
+      },
+      {
+        "text": "கொண்டு",
+        "start": 2.8,
+        "end": 3.02,
+        "type": "word",
+        "logprob": -0.38803842663764954
+      },
+      {
+        "text": " ",
+        "start": 3.02,
+        "end": 3.08,
+        "type": "spacing",
+        "logprob": -0.0036690791603177786
+      },
+      {
+        "text": "செல்லப்பட்ட",
+        "start": 3.08,
+        "end": 3.54,
+        "type": "word",
+        "logprob": -0.002165873915973035
+      },
+      {
+        "text": " ",
+        "start": 3.54,
+        "end": 3.6,
+        "type": "spacing",
+        "logprob": -0.004646931774914265
+      },
+      {
+        "text": "பின்னர்,",
+        "start": 3.6,
+        "end": 3.9,
+        "type": "word",
+        "logprob": -0.03719554131384939
+      },
+      {
+        "text": " ",
+        "start": 3.9,
+        "end": 3.9,
+        "type": "spacing",
+        "logprob": -0.0003669780562631786
+      },
+      {
+        "text": "சண்டை",
+        "start": 4.48,
+        "end": 4.84,
+        "type": "word",
+        "logprob": -0.00016322668525390328
+      },
+      {
+        "text": " ",
+        "start": 4.84,
+        "end": 4.9,
+        "type": "spacing",
+        "logprob": -0.0022128161508589983
+      },
+      {
+        "text": "நின்றபோது",
+        "start": 4.9,
+        "end": 5.46,
+        "type": "word",
+        "logprob": -0.040827147067627974
+      },
+      {
+        "text": " ",
+        "start": 5.46,
+        "end": 5.8,
+        "type": "spacing",
+        "logprob": -0.10643137246370316
+      },
+      {
+        "text": "எஞ்சியிருந்த",
+        "start": 5.8,
+        "end": 6.46,
+        "type": "word",
+        "logprob": -0.011609383955753097
+      },
+      {
+        "text": " ",
+        "start": 6.46,
+        "end": 6.62,
+        "type": "spacing",
+        "logprob": -0.00026174934464506805
+      },
+      {
+        "text": "மற்ற",
+        "start": 6.62,
+        "end": 6.88,
+        "type": "word",
+        "logprob": -0.00026174934464506805
+      },
+      {
+        "text": " ",
+        "start": 6.88,
+        "end": 6.92,
+        "type": "spacing",
+        "logprob": -0.008219818584620953
+      },
+      {
+        "text": "கைதிகளில்",
+        "start": 6.92,
+        "end": 7.38,
+        "type": "word",
+        "logprob": -0.002866729259646187
+      },
+      {
+        "text": " ",
+        "start": 7.38,
+        "end": 7.64,
+        "type": "spacing",
+        "logprob": -0.008185175247490406
+      },
+      {
+        "text": "சுமார்",
+        "start": 7.64,
+        "end": 7.94,
+        "type": "word",
+        "logprob": -0.008185175247490406
+      },
+      {
+        "text": " ",
+        "start": 7.94,
+        "end": 8.119,
+        "type": "spacing",
+        "logprob": -0.009942413307726383
+      },
+      {
+        "text": "நாற்பது",
+        "start": 8.119,
+        "end": 8.5,
+        "type": "word",
+        "logprob": -0.0480926154331038
+      },
+      {
+        "text": " ",
+        "start": 8.5,
+        "end": 8.54,
+        "type": "spacing",
+        "logprob": -0.00010299152199877426
+      },
+      {
+        "text": "பேர்",
+        "start": 8.54,
+        "end": 8.72,
+        "type": "word",
+        "logprob": -0.00010299152199877426
+      },
+      {
+        "text": " ",
+        "start": 8.72,
+        "end": 9.04,
+        "type": "spacing",
+        "logprob": -0.015334447845816612
+      },
+      {
+        "text": "முற்றத்தில்",
+        "start": 9.04,
+        "end": 9.54,
+        "type": "word",
+        "logprob": -0.009973148899999533
+      },
+      {
+        "text": " ",
+        "start": 9.54,
+        "end": 9.64,
+        "type": "spacing",
+        "logprob": -0.0002196785935666412
+      },
+      {
+        "text": "தங்கித்",
+        "start": 9.64,
+        "end": 9.96,
+        "type": "word",
+        "logprob": -0.17772158743797004
+      },
+      {
+        "text": " ",
+        "start": 9.96,
+        "end": 9.96,
+        "type": "spacing",
+        "logprob": -0.004094788804650307
+      },
+      {
+        "text": "தங்கள்",
+        "start": 10.6,
+        "end": 10.86,
+        "type": "word",
+        "logprob": -0.004094788804650307
+      },
+      {
+        "text": " ",
+        "start": 10.86,
+        "end": 11.06,
+        "type": "spacing",
+        "logprob": -0.0015872034709900618
+      },
+      {
+        "text": "சிறைக்குத்",
+        "start": 11.06,
+        "end": 11.76,
+        "type": "word",
+        "logprob": -0.017261970654362812
+      },
+      {
+        "text": " ",
+        "start": 11.76,
+        "end": 11.76,
+        "type": "spacing",
+        "logprob": -0.0006484074983745813
+      },
+      {
+        "text": "திரும்ப",
+        "start": 11.76,
+        "end": 12.06,
+        "type": "word",
+        "logprob": -0.0006484074983745813
+      },
+      {
+        "text": " ",
+        "start": 12.06,
+        "end": 12.26,
+        "type": "spacing",
+        "logprob": -0.0015004340093582869
+      },
+      {
+        "text": "மறுத்துவிட்டனர்.",
+        "start": 12.26,
+        "end": 13,
+        "type": "word",
+        "logprob": -0.11587931891313019
+      }
+    ],
+    "transcription_id": "fY2XxGsQCoMXEsDWcfFa",
+    "audio_duration_secs": 14.88
+  }
+}

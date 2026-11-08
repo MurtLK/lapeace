@@ -1,0 +1,334 @@
+{
+  "clip_id": "ar_eg_1600",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "ara",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:24.071Z",
+  "response": {
+    "language_code": "ara",
+    "language_probability": 1,
+    "text": "تتضمن الأمثلة على الأنشطة التي يمكن القيام بها في الموقع الصيد، وصيد الأسماك، والتصوير، ومشاهدة الطيور، وزيارة الحدائق، ودراسة المعلومات عن النظام البيئي",
+    "words": [
+      {
+        "text": "تتضمن",
+        "start": 0.94,
+        "end": 1.46,
+        "type": "word",
+        "logprob": -0.005688855960033834
+      },
+      {
+        "text": " ",
+        "start": 1.46,
+        "end": 1.48,
+        "type": "spacing",
+        "logprob": -0.0009320206008851528
+      },
+      {
+        "text": "الأمثلة",
+        "start": 1.48,
+        "end": 1.98,
+        "type": "word",
+        "logprob": -0.0016205082646527963
+      },
+      {
+        "text": " ",
+        "start": 1.98,
+        "end": 2.02,
+        "type": "spacing",
+        "logprob": -0.000005125986263010418
+      },
+      {
+        "text": "على",
+        "start": 2.02,
+        "end": 2.16,
+        "type": "word",
+        "logprob": -0.000005125986263010418
+      },
+      {
+        "text": " ",
+        "start": 2.16,
+        "end": 2.2,
+        "type": "spacing",
+        "logprob": -0.000058410845667822286
+      },
+      {
+        "text": "الأنشطة",
+        "start": 2.2,
+        "end": 2.64,
+        "type": "word",
+        "logprob": -0.00005967018868042422
+      },
+      {
+        "text": " ",
+        "start": 2.64,
+        "end": 2.66,
+        "type": "spacing",
+        "logprob": -0.00000834461570775602
+      },
+      {
+        "text": "التي",
+        "start": 2.66,
+        "end": 2.98,
+        "type": "word",
+        "logprob": -0.00000834461570775602
+      },
+      {
+        "text": " ",
+        "start": 2.98,
+        "end": 3.02,
+        "type": "spacing",
+        "logprob": -0.00021252757869660854
+      },
+      {
+        "text": "يمكن",
+        "start": 3.02,
+        "end": 3.34,
+        "type": "word",
+        "logprob": -0.00021252757869660854
+      },
+      {
+        "text": " ",
+        "start": 3.34,
+        "end": 3.38,
+        "type": "spacing",
+        "logprob": -0.003968460485339165
+      },
+      {
+        "text": "القيام",
+        "start": 3.38,
+        "end": 3.88,
+        "type": "word",
+        "logprob": -0.003968460485339165
+      },
+      {
+        "text": " ",
+        "start": 3.88,
+        "end": 3.94,
+        "type": "spacing",
+        "logprob": -0.000009894321920000948
+      },
+      {
+        "text": "بها",
+        "start": 3.94,
+        "end": 4.16,
+        "type": "word",
+        "logprob": -0.000009894321920000948
+      },
+      {
+        "text": " ",
+        "start": 4.16,
+        "end": 4.2,
+        "type": "spacing",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": "في",
+        "start": 4.2,
+        "end": 4.26,
+        "type": "word",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": " ",
+        "start": 4.26,
+        "end": 4.28,
+        "type": "spacing",
+        "logprob": -0.000006198863957251888
+      },
+      {
+        "text": "الموقع",
+        "start": 4.28,
+        "end": 4.78,
+        "type": "word",
+        "logprob": -0.000006198863957251888
+      },
+      {
+        "text": " ",
+        "start": 4.78,
+        "end": 5.16,
+        "type": "spacing",
+        "logprob": -0.07349525392055511
+      },
+      {
+        "text": "الصيد،",
+        "start": 5.16,
+        "end": 5.62,
+        "type": "word",
+        "logprob": -0.04856002151791472
+      },
+      {
+        "text": " ",
+        "start": 5.62,
+        "end": 5.92,
+        "type": "spacing",
+        "logprob": -0.0008033862104639411
+      },
+      {
+        "text": "وصيد",
+        "start": 5.92,
+        "end": 6.28,
+        "type": "word",
+        "logprob": -0.00045896988740423694
+      },
+      {
+        "text": " ",
+        "start": 6.28,
+        "end": 6.34,
+        "type": "spacing",
+        "logprob": -0.003910633735358715
+      },
+      {
+        "text": "الأسماك،",
+        "start": 6.34,
+        "end": 6.92,
+        "type": "word",
+        "logprob": -0.0028422037144082424
+      },
+      {
+        "text": " ",
+        "start": 6.92,
+        "end": 7,
+        "type": "spacing",
+        "logprob": -0.0005579821881838143
+      },
+      {
+        "text": "والتصوير،",
+        "start": 7,
+        "end": 7.66,
+        "type": "word",
+        "logprob": -0.00041118927765637636
+      },
+      {
+        "text": " ",
+        "start": 7.66,
+        "end": 7.72,
+        "type": "spacing",
+        "logprob": -0.005433197133243084
+      },
+      {
+        "text": "ومشاهدة",
+        "start": 7.72,
+        "end": 8.42,
+        "type": "word",
+        "logprob": -0.0024471269528833417
+      },
+      {
+        "text": " ",
+        "start": 8.42,
+        "end": 8.44,
+        "type": "spacing",
+        "logprob": -0.00018714107864070684
+      },
+      {
+        "text": "الطيور،",
+        "start": 8.44,
+        "end": 8.94,
+        "type": "word",
+        "logprob": -0.0002427895392429491
+      },
+      {
+        "text": " ",
+        "start": 8.94,
+        "end": 8.94,
+        "type": "spacing",
+        "logprob": -0.0008716359734535217
+      },
+      {
+        "text": "وزيارة",
+        "start": 9.32,
+        "end": 9.94,
+        "type": "word",
+        "logprob": -0.0013169765582764132
+      },
+      {
+        "text": " ",
+        "start": 9.94,
+        "end": 9.96,
+        "type": "spacing",
+        "logprob": -0.0009230881696566939
+      },
+      {
+        "text": "الحدائق،",
+        "start": 9.96,
+        "end": 10.5,
+        "type": "word",
+        "logprob": -0.0005754443163823453
+      },
+      {
+        "text": " ",
+        "start": 10.5,
+        "end": 10.58,
+        "type": "spacing",
+        "logprob": -0.0005508335889317095
+      },
+      {
+        "text": "ودراسة",
+        "start": 10.58,
+        "end": 11.2,
+        "type": "word",
+        "logprob": -0.00025580647464569967
+      },
+      {
+        "text": " ",
+        "start": 11.2,
+        "end": 11.22,
+        "type": "spacing",
+        "logprob": -0.00021681819634977728
+      },
+      {
+        "text": "المعلومات",
+        "start": 11.22,
+        "end": 11.9,
+        "type": "word",
+        "logprob": -0.00021681819634977728
+      },
+      {
+        "text": " ",
+        "start": 11.9,
+        "end": 11.94,
+        "type": "spacing",
+        "logprob": -0.0000032186455882765586
+      },
+      {
+        "text": "عن",
+        "start": 11.94,
+        "end": 12.04,
+        "type": "word",
+        "logprob": -0.0000032186455882765586
+      },
+      {
+        "text": " ",
+        "start": 12.04,
+        "end": 12.08,
+        "type": "spacing",
+        "logprob": -0.0003200257197022438
+      },
+      {
+        "text": "النظام",
+        "start": 12.08,
+        "end": 12.52,
+        "type": "word",
+        "logprob": -0.0003200257197022438
+      },
+      {
+        "text": " ",
+        "start": 12.52,
+        "end": 12.6,
+        "type": "spacing",
+        "logprob": -0.00013004888023715466
+      },
+      {
+        "text": "البيئي",
+        "start": 12.6,
+        "end": 13.08,
+        "type": "word",
+        "logprob": -0.00014570262768150619
+      }
+    ],
+    "transcription_id": "4Vfj8rJdWXEMHTcYPDRA",
+    "audio_duration_secs": 13.92
+  }
+}

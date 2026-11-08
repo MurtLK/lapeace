@@ -1,0 +1,558 @@
+{
+  "clip_id": "es_419_1574",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "spa",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:31.584Z",
+  "response": {
+    "language_code": "spa",
+    "language_probability": 1,
+    "text": "El frío invernal puede ser engañoso. Si bien es muy raro que las temperaturas sean inferiores al punto de congelación, el viento y la humedad interactúan para s-- hacer que se perciba más frío del que señala el termómetro.",
+    "words": [
+      {
+        "text": "El",
+        "start": 2.8,
+        "end": 2.9,
+        "type": "word",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": " ",
+        "start": 2.9,
+        "end": 2.98,
+        "type": "spacing",
+        "logprob": -0.0000983428253675811
+      },
+      {
+        "text": "frío",
+        "start": 2.98,
+        "end": 3.16,
+        "type": "word",
+        "logprob": -0.0000983428253675811
+      },
+      {
+        "text": " ",
+        "start": 3.16,
+        "end": 3.18,
+        "type": "spacing",
+        "logprob": -0.00018892886873800308
+      },
+      {
+        "text": "invernal",
+        "start": 3.18,
+        "end": 3.6,
+        "type": "word",
+        "logprob": -0.00012161210145222867
+      },
+      {
+        "text": " ",
+        "start": 3.6,
+        "end": 3.72,
+        "type": "spacing",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "puede",
+        "start": 3.72,
+        "end": 3.9,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": " ",
+        "start": 3.9,
+        "end": 3.94,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "ser",
+        "start": 3.94,
+        "end": 4.04,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": " ",
+        "start": 4.04,
+        "end": 4.059,
+        "type": "spacing",
+        "logprob": -0.000011444026313256472
+      },
+      {
+        "text": "engañoso.",
+        "start": 4.059,
+        "end": 4.56,
+        "type": "word",
+        "logprob": -0.000037642422183934184
+      },
+      {
+        "text": " ",
+        "start": 4.56,
+        "end": 4.56,
+        "type": "spacing",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": "Si",
+        "start": 5.02,
+        "end": 5.12,
+        "type": "word",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": " ",
+        "start": 5.12,
+        "end": 5.14,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "bien",
+        "start": 5.14,
+        "end": 5.38,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 5.38,
+        "end": 5.44,
+        "type": "spacing",
+        "logprob": -0.000004291525328881107
+      },
+      {
+        "text": "es",
+        "start": 5.44,
+        "end": 5.54,
+        "type": "word",
+        "logprob": -0.000004291525328881107
+      },
+      {
+        "text": " ",
+        "start": 5.54,
+        "end": 5.56,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "muy",
+        "start": 5.56,
+        "end": 5.68,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 5.68,
+        "end": 5.72,
+        "type": "spacing",
+        "logprob": -0.000005960446742392378
+      },
+      {
+        "text": "raro",
+        "start": 5.72,
+        "end": 5.92,
+        "type": "word",
+        "logprob": -0.000005960446742392378
+      },
+      {
+        "text": " ",
+        "start": 5.92,
+        "end": 5.98,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "que",
+        "start": 5.98,
+        "end": 6.04,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 6.04,
+        "end": 6.08,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "las",
+        "start": 6.08,
+        "end": 6.18,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 6.18,
+        "end": 6.22,
+        "type": "spacing",
+        "logprob": -0.000013351351299206726
+      },
+      {
+        "text": "temperaturas",
+        "start": 6.22,
+        "end": 6.78,
+        "type": "word",
+        "logprob": -0.000013351351299206726
+      },
+      {
+        "text": " ",
+        "start": 6.78,
+        "end": 6.82,
+        "type": "spacing",
+        "logprob": -0.00008844937838148326
+      },
+      {
+        "text": "sean",
+        "start": 6.82,
+        "end": 6.94,
+        "type": "word",
+        "logprob": -0.00008844937838148326
+      },
+      {
+        "text": " ",
+        "start": 6.94,
+        "end": 7,
+        "type": "spacing",
+        "logprob": -0.00009643566590966657
+      },
+      {
+        "text": "inferiores",
+        "start": 7,
+        "end": 7.48,
+        "type": "word",
+        "logprob": -0.00009643566590966657
+      },
+      {
+        "text": " ",
+        "start": 7.48,
+        "end": 7.56,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "al",
+        "start": 7.56,
+        "end": 7.62,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 7.62,
+        "end": 7.72,
+        "type": "spacing",
+        "logprob": -0.0000036954811548639555
+      },
+      {
+        "text": "punto",
+        "start": 7.74,
+        "end": 7.94,
+        "type": "word",
+        "logprob": -0.0000036954811548639555
+      },
+      {
+        "text": " ",
+        "start": 7.94,
+        "end": 7.96,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "de",
+        "start": 7.96,
+        "end": 8.039,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 8.039,
+        "end": 8.06,
+        "type": "spacing",
+        "logprob": -0.00008844937838148326
+      },
+      {
+        "text": "congelación,",
+        "start": 8.06,
+        "end": 8.66,
+        "type": "word",
+        "logprob": -0.000045138623567216506
+      },
+      {
+        "text": " ",
+        "start": 8.66,
+        "end": 8.66,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "el",
+        "start": 9.18,
+        "end": 9.26,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 9.26,
+        "end": 9.3,
+        "type": "spacing",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": "viento",
+        "start": 9.3,
+        "end": 9.54,
+        "type": "word",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": " ",
+        "start": 9.54,
+        "end": 9.56,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "y",
+        "start": 9.56,
+        "end": 9.6,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 9.6,
+        "end": 9.62,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "la",
+        "start": 9.62,
+        "end": 9.66,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 9.66,
+        "end": 9.68,
+        "type": "spacing",
+        "logprob": -0.00005471556869451888
+      },
+      {
+        "text": "humedad",
+        "start": 9.68,
+        "end": 10.08,
+        "type": "word",
+        "logprob": -0.00005471556869451888
+      },
+      {
+        "text": " ",
+        "start": 10.08,
+        "end": 10.14,
+        "type": "spacing",
+        "logprob": -0.00004017272294731811
+      },
+      {
+        "text": "interactúan",
+        "start": 10.14,
+        "end": 10.74,
+        "type": "word",
+        "logprob": -0.00012995144458148968
+      },
+      {
+        "text": " ",
+        "start": 10.74,
+        "end": 10.8,
+        "type": "spacing",
+        "logprob": -0.0000019073468138230965
+      },
+      {
+        "text": "para",
+        "start": 10.8,
+        "end": 10.96,
+        "type": "word",
+        "logprob": -0.0000019073468138230965
+      },
+      {
+        "text": " ",
+        "start": 10.96,
+        "end": 11,
+        "type": "spacing",
+        "logprob": -0.694137692451477
+      },
+      {
+        "text": "s--",
+        "start": 11,
+        "end": 11.08,
+        "type": "word",
+        "logprob": -0.2317797331682717
+      },
+      {
+        "text": " ",
+        "start": 11.08,
+        "end": 11.64,
+        "type": "spacing",
+        "logprob": -0.00002002696055569686
+      },
+      {
+        "text": "hacer",
+        "start": 11.68,
+        "end": 11.96,
+        "type": "word",
+        "logprob": -0.00002002696055569686
+      },
+      {
+        "text": " ",
+        "start": 11.96,
+        "end": 12.04,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "que",
+        "start": 12.04,
+        "end": 12.14,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 12.14,
+        "end": 12.18,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "se",
+        "start": 12.18,
+        "end": 12.24,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 12.24,
+        "end": 12.32,
+        "type": "spacing",
+        "logprob": -0.0007216709782369435
+      },
+      {
+        "text": "perciba",
+        "start": 12.32,
+        "end": 12.7,
+        "type": "word",
+        "logprob": -0.00041774780064380527
+      },
+      {
+        "text": " ",
+        "start": 12.7,
+        "end": 12.76,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "más",
+        "start": 12.76,
+        "end": 12.92,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 12.92,
+        "end": 13,
+        "type": "spacing",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": "frío",
+        "start": 13,
+        "end": 13.24,
+        "type": "word",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": " ",
+        "start": 13.24,
+        "end": 13.28,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "del",
+        "start": 13.28,
+        "end": 13.38,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 13.38,
+        "end": 13.44,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "que",
+        "start": 13.44,
+        "end": 13.52,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 13.52,
+        "end": 13.56,
+        "type": "spacing",
+        "logprob": -0.00012981049076188356
+      },
+      {
+        "text": "señala",
+        "start": 13.56,
+        "end": 13.82,
+        "type": "word",
+        "logprob": -0.00012981049076188356
+      },
+      {
+        "text": " ",
+        "start": 13.82,
+        "end": 13.86,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "el",
+        "start": 13.86,
+        "end": 13.92,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 13.92,
+        "end": 13.98,
+        "type": "spacing",
+        "logprob": -0.0000371926071238704
+      },
+      {
+        "text": "termómetro.",
+        "start": 13.98,
+        "end": 14.42,
+        "type": "word",
+        "logprob": -0.0006933862433387814
+      }
+    ],
+    "transcription_id": "y57EiMBxbfL4VgdnjHtA",
+    "audio_duration_secs": 15
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "clip_id": "fil_ph_1511",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "fil",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:35.237Z",
+  "response": {
+    "language_code": "fil",
+    "language_probability": 1,
+    "text": "'Di nagtagal, ang mga pulis na nasasangkapan ng mga kagamitang panlaban sa riot ay pumasok sa bakuran at sinukol ang mga bilanggo gamit ang tear gas.",
+    "words": [
+      {
+        "text": "'Di",
+        "start": 0.62,
+        "end": 0.74,
+        "type": "word",
+        "logprob": -0.01520737043271462
+      },
+      {
+        "text": " ",
+        "start": 0.74,
+        "end": 0.78,
+        "type": "spacing",
+        "logprob": -0.0010344398906454444
+      },
+      {
+        "text": "nagtagal,",
+        "start": 0.78,
+        "end": 1.28,
+        "type": "word",
+        "logprob": -0.0004686538546947203
+      },
+      {
+        "text": " ",
+        "start": 1.28,
+        "end": 1.36,
+        "type": "spacing",
+        "logprob": -0.0004465774691198021
+      },
+      {
+        "text": "ang",
+        "start": 1.36,
+        "end": 1.46,
+        "type": "word",
+        "logprob": -0.0004465774691198021
+      },
+      {
+        "text": " ",
+        "start": 1.46,
+        "end": 1.48,
+        "type": "spacing",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "mga",
+        "start": 1.48,
+        "end": 1.64,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": " ",
+        "start": 1.64,
+        "end": 1.74,
+        "type": "spacing",
+        "logprob": -0.0005115154199302197
+      },
+      {
+        "text": "pulis",
+        "start": 1.74,
+        "end": 2.12,
+        "type": "word",
+        "logprob": -0.00030700461937840375
+      },
+      {
+        "text": " ",
+        "start": 2.12,
+        "end": 2.22,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "na",
+        "start": 2.28,
+        "end": 2.4,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 2.4,
+        "end": 2.44,
+        "type": "spacing",
+        "logprob": -0.02008761838078499
+      },
+      {
+        "text": "nasasangkapan",
+        "start": 2.44,
+        "end": 3.34,
+        "type": "word",
+        "logprob": -0.015930647025995243
+      },
+      {
+        "text": " ",
+        "start": 3.34,
+        "end": 3.38,
+        "type": "spacing",
+        "logprob": -0.00010227633902104571
+      },
+      {
+        "text": "ng",
+        "start": 3.38,
+        "end": 3.52,
+        "type": "word",
+        "logprob": -0.00010227633902104571
+      },
+      {
+        "text": " ",
+        "start": 3.52,
+        "end": 3.52,
+        "type": "spacing",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": "mga",
+        "start": 3.52,
+        "end": 3.72,
+        "type": "word",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": " ",
+        "start": 3.72,
+        "end": 3.74,
+        "type": "spacing",
+        "logprob": -0.0012313887709751725
+      },
+      {
+        "text": "kagamitang",
+        "start": 3.74,
+        "end": 4.24,
+        "type": "word",
+        "logprob": -0.00420762364433358
+      },
+      {
+        "text": " ",
+        "start": 4.24,
+        "end": 4.26,
+        "type": "spacing",
+        "logprob": -0.00016258825780823827
+      },
+      {
+        "text": "panlaban",
+        "start": 4.26,
+        "end": 4.74,
+        "type": "word",
+        "logprob": -0.00016413207048060485
+      },
+      {
+        "text": " ",
+        "start": 4.74,
+        "end": 4.76,
+        "type": "spacing",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": "sa",
+        "start": 4.76,
+        "end": 4.86,
+        "type": "word",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": " ",
+        "start": 4.86,
+        "end": 4.9,
+        "type": "spacing",
+        "logprob": -0.6322145462036133
+      },
+      {
+        "text": "riot",
+        "start": 4.9,
+        "end": 5.24,
+        "type": "word",
+        "logprob": -0.6322145462036133
+      },
+      {
+        "text": " ",
+        "start": 5.24,
+        "end": 5.3,
+        "type": "spacing",
+        "logprob": -0.0000605564855504781
+      },
+      {
+        "text": "ay",
+        "start": 5.3,
+        "end": 5.42,
+        "type": "word",
+        "logprob": -0.0000605564855504781
+      },
+      {
+        "text": " ",
+        "start": 5.42,
+        "end": 5.44,
+        "type": "spacing",
+        "logprob": -0.000047205765440594405
+      },
+      {
+        "text": "pumasok",
+        "start": 5.44,
+        "end": 5.98,
+        "type": "word",
+        "logprob": -0.00003368434616593926
+      },
+      {
+        "text": " ",
+        "start": 5.98,
+        "end": 6.02,
+        "type": "spacing",
+        "logprob": -0.0000019073468138230965
+      },
+      {
+        "text": "sa",
+        "start": 6.02,
+        "end": 6.1,
+        "type": "word",
+        "logprob": -0.0000019073468138230965
+      },
+      {
+        "text": " ",
+        "start": 6.1,
+        "end": 6.14,
+        "type": "spacing",
+        "logprob": -0.0016251702327281237
+      },
+      {
+        "text": "bakuran",
+        "start": 6.14,
+        "end": 6.96,
+        "type": "word",
+        "logprob": -0.0011999559522207295
+      },
+      {
+        "text": " ",
+        "start": 6.96,
+        "end": 7,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "at",
+        "start": 7,
+        "end": 7.1,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 7.1,
+        "end": 7.12,
+        "type": "spacing",
+        "logprob": -0.005296010058373213
+      },
+      {
+        "text": "sinukol",
+        "start": 7.12,
+        "end": 7.6,
+        "type": "word",
+        "logprob": -0.13301551055961422
+      },
+      {
+        "text": " ",
+        "start": 7.6,
+        "end": 7.64,
+        "type": "spacing",
+        "logprob": -0.000011086402082582936
+      },
+      {
+        "text": "ang",
+        "start": 7.64,
+        "end": 7.7,
+        "type": "word",
+        "logprob": -0.000011086402082582936
+      },
+      {
+        "text": " ",
+        "start": 7.7,
+        "end": 7.72,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "mga",
+        "start": 7.76,
+        "end": 7.88,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 7.88,
+        "end": 7.9,
+        "type": "spacing",
+        "logprob": -0.002588138682767749
+      },
+      {
+        "text": "bilanggo",
+        "start": 7.9,
+        "end": 8.26,
+        "type": "word",
+        "logprob": -0.0019415808487792674
+      },
+      {
+        "text": " ",
+        "start": 8.26,
+        "end": 8.36,
+        "type": "spacing",
+        "logprob": -0.0011630444787442684
+      },
+      {
+        "text": "gamit",
+        "start": 8.36,
+        "end": 8.72,
+        "type": "word",
+        "logprob": -0.0006983512077567867
+      },
+      {
+        "text": " ",
+        "start": 8.72,
+        "end": 8.76,
+        "type": "spacing",
+        "logprob": -0.00010024998482549563
+      },
+      {
+        "text": "ang",
+        "start": 8.76,
+        "end": 8.84,
+        "type": "word",
+        "logprob": -0.00010024998482549563
+      },
+      {
+        "text": " ",
+        "start": 8.84,
+        "end": 8.9,
+        "type": "spacing",
+        "logprob": -0.0009901388548314571
+      },
+      {
+        "text": "tear",
+        "start": 8.9,
+        "end": 9.04,
+        "type": "word",
+        "logprob": -0.0009901388548314571
+      },
+      {
+        "text": " ",
+        "start": 9.04,
+        "end": 9.12,
+        "type": "spacing",
+        "logprob": -0.0046363710425794125
+      },
+      {
+        "text": "gas.",
+        "start": 9.12,
+        "end": 9.4,
+        "type": "word",
+        "logprob": -0.004096310120075941
+      }
+    ],
+    "transcription_id": "PPujbWhppsCre511oVdg",
+    "audio_duration_secs": 10.56
+  }
+}

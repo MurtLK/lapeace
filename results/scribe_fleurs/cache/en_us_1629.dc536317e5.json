@@ -1,0 +1,376 @@
+{
+  "clip_id": "en_us_1629",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "eng",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:35.801Z",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1,
+    "text": "Some reports put the official death toll at eight, and official reports confirm that up to thirty were injured, but final numbers are not yet known.",
+    "words": [
+      {
+        "text": "Some",
+        "start": 0.82,
+        "end": 0.96,
+        "type": "word",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": " ",
+        "start": 0.96,
+        "end": 1,
+        "type": "spacing",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": "reports",
+        "start": 1,
+        "end": 1.4,
+        "type": "word",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": " ",
+        "start": 1.4,
+        "end": 1.46,
+        "type": "spacing",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "put",
+        "start": 1.46,
+        "end": 1.6,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": " ",
+        "start": 1.6,
+        "end": 1.62,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "the",
+        "start": 1.62,
+        "end": 1.68,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 1.68,
+        "end": 1.72,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "official",
+        "start": 1.72,
+        "end": 2.06,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": " ",
+        "start": 2.06,
+        "end": 2.16,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "death",
+        "start": 2.16,
+        "end": 2.4,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 2.4,
+        "end": 2.44,
+        "type": "spacing",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": "toll",
+        "start": 2.44,
+        "end": 2.62,
+        "type": "word",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": " ",
+        "start": 2.62,
+        "end": 2.66,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "at",
+        "start": 2.66,
+        "end": 2.82,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 2.82,
+        "end": 2.9,
+        "type": "spacing",
+        "logprob": -0.00004053033626405522
+      },
+      {
+        "text": "eight,",
+        "start": 2.9,
+        "end": 3.06,
+        "type": "word",
+        "logprob": -0.0072229975812661
+      },
+      {
+        "text": " ",
+        "start": 3.06,
+        "end": 3.14,
+        "type": "spacing",
+        "logprob": -0.000004172316494077677
+      },
+      {
+        "text": "and",
+        "start": 3.14,
+        "end": 3.22,
+        "type": "word",
+        "logprob": -0.000004172316494077677
+      },
+      {
+        "text": " ",
+        "start": 3.22,
+        "end": 3.28,
+        "type": "spacing",
+        "logprob": -0.000006318072337307967
+      },
+      {
+        "text": "official",
+        "start": 3.28,
+        "end": 3.6,
+        "type": "word",
+        "logprob": -0.000006318072337307967
+      },
+      {
+        "text": " ",
+        "start": 3.6,
+        "end": 3.66,
+        "type": "spacing",
+        "logprob": -0.00004565611743601039
+      },
+      {
+        "text": "reports",
+        "start": 3.66,
+        "end": 4.059,
+        "type": "word",
+        "logprob": -0.00004565611743601039
+      },
+      {
+        "text": " ",
+        "start": 4.059,
+        "end": 4.1,
+        "type": "spacing",
+        "logprob": -0.02324765920639038
+      },
+      {
+        "text": "confirm",
+        "start": 4.1,
+        "end": 4.48,
+        "type": "word",
+        "logprob": -0.02324765920639038
+      },
+      {
+        "text": " ",
+        "start": 4.48,
+        "end": 4.52,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "that",
+        "start": 4.52,
+        "end": 4.62,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 4.62,
+        "end": 4.66,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "up",
+        "start": 4.66,
+        "end": 4.74,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 4.74,
+        "end": 4.78,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "to",
+        "start": 4.78,
+        "end": 4.88,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 4.88,
+        "end": 4.92,
+        "type": "spacing",
+        "logprob": -0.38688260316848755
+      },
+      {
+        "text": "thirty",
+        "start": 4.92,
+        "end": 5.12,
+        "type": "word",
+        "logprob": -0.38688260316848755
+      },
+      {
+        "text": " ",
+        "start": 5.12,
+        "end": 5.2,
+        "type": "spacing",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "were",
+        "start": 5.2,
+        "end": 5.32,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": " ",
+        "start": 5.32,
+        "end": 5.38,
+        "type": "spacing",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": "injured,",
+        "start": 5.38,
+        "end": 5.68,
+        "type": "word",
+        "logprob": -0.000006750132882871185
+      },
+      {
+        "text": " ",
+        "start": 5.68,
+        "end": 5.76,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "but",
+        "start": 5.76,
+        "end": 5.9,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 5.9,
+        "end": 5.94,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "final",
+        "start": 5.94,
+        "end": 6.18,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 6.18,
+        "end": 6.26,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "numbers",
+        "start": 6.26,
+        "end": 6.6,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 6.6,
+        "end": 6.64,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "are",
+        "start": 6.64,
+        "end": 6.78,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 6.78,
+        "end": 6.84,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "not",
+        "start": 6.84,
+        "end": 7.06,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 7.06,
+        "end": 7.1,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "yet",
+        "start": 7.12,
+        "end": 7.28,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 7.28,
+        "end": 7.34,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "known.",
+        "start": 7.34,
+        "end": 7.6,
+        "type": "word",
+        "logprob": -0.0016259847519298394
+      }
+    ],
+    "transcription_id": "6qz7T7rkcyEDbkqtk3LC",
+    "audio_duration_secs": 8.16
+  }
+}

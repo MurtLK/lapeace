@@ -1,0 +1,278 @@
+{
+  "clip_id": "pa_in_1533",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "pan",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:13.226Z",
+  "response": {
+    "language_code": "pan",
+    "language_probability": 1,
+    "text": "ਬਹੁਤ ਸਾਰੇ ਆਮ ਫਾਰਮੈਟਸ, ਉਦਾਹਰਣ ਵਜੋਂ ਫਾਰਮੈਟਸ ਦਾ APS ਪਰਿਵਾਰ ਬਰਾਬਰ ਜਾਂ ਇਸ ਪੱਖ ਅਨੁਪਾਤ ਦੇ ਲਗਭਗ ਨੇੜੇ-ਤੇੜੇ ਹੈ।",
+    "words": [
+      {
+        "text": "ਬਹੁਤ",
+        "start": 1.08,
+        "end": 1.36,
+        "type": "word",
+        "logprob": -0.0002564176575106103
+      },
+      {
+        "text": " ",
+        "start": 1.36,
+        "end": 1.42,
+        "type": "spacing",
+        "logprob": -0.00007366862701019272
+      },
+      {
+        "text": "ਸਾਰੇ",
+        "start": 1.42,
+        "end": 1.72,
+        "type": "word",
+        "logprob": -0.00003495726286928402
+      },
+      {
+        "text": " ",
+        "start": 1.72,
+        "end": 1.88,
+        "type": "spacing",
+        "logprob": -0.00006437094270950183
+      },
+      {
+        "text": "ਆਮ",
+        "start": 1.88,
+        "end": 2.12,
+        "type": "word",
+        "logprob": -0.00007903252844698727
+      },
+      {
+        "text": " ",
+        "start": 2.12,
+        "end": 2.16,
+        "type": "spacing",
+        "logprob": -0.2091997265815735
+      },
+      {
+        "text": "ਫਾਰਮੈਟਸ,",
+        "start": 2.16,
+        "end": 2.74,
+        "type": "word",
+        "logprob": -0.14552971916600654
+      },
+      {
+        "text": " ",
+        "start": 2.74,
+        "end": 3,
+        "type": "spacing",
+        "logprob": -0.000032782016205601394
+      },
+      {
+        "text": "ਉਦਾਹਰਣ",
+        "start": 3,
+        "end": 3.4,
+        "type": "word",
+        "logprob": -0.09652282982278848
+      },
+      {
+        "text": " ",
+        "start": 3.4,
+        "end": 3.48,
+        "type": "spacing",
+        "logprob": -0.038293395191431046
+      },
+      {
+        "text": "ਵਜੋਂ",
+        "start": 3.48,
+        "end": 3.84,
+        "type": "word",
+        "logprob": -0.010244240664178506
+      },
+      {
+        "text": " ",
+        "start": 3.84,
+        "end": 3.98,
+        "type": "spacing",
+        "logprob": -0.07626699656248093
+      },
+      {
+        "text": "ਫਾਰਮੈਟਸ",
+        "start": 3.98,
+        "end": 4.5,
+        "type": "word",
+        "logprob": -0.01160140936605915
+      },
+      {
+        "text": " ",
+        "start": 4.5,
+        "end": 4.56,
+        "type": "spacing",
+        "logprob": -0.0002109781780745834
+      },
+      {
+        "text": "ਦਾ",
+        "start": 4.6,
+        "end": 4.8,
+        "type": "word",
+        "logprob": -0.0002109781780745834
+      },
+      {
+        "text": " ",
+        "start": 4.8,
+        "end": 5.06,
+        "type": "spacing",
+        "logprob": -0.45384031534194946
+      },
+      {
+        "text": "APS",
+        "start": 5.06,
+        "end": 5.56,
+        "type": "word",
+        "logprob": -0.45384031534194946
+      },
+      {
+        "text": " ",
+        "start": 5.56,
+        "end": 5.64,
+        "type": "spacing",
+        "logprob": -0.0001161031104857102
+      },
+      {
+        "text": "ਪਰਿਵਾਰ",
+        "start": 5.64,
+        "end": 6.14,
+        "type": "word",
+        "logprob": -0.0009028860628556382
+      },
+      {
+        "text": " ",
+        "start": 6.14,
+        "end": 6.62,
+        "type": "spacing",
+        "logprob": -0.25204190611839294
+      },
+      {
+        "text": "ਬਰਾਬਰ",
+        "start": 6.62,
+        "end": 7.1,
+        "type": "word",
+        "logprob": -0.05062411415274255
+      },
+      {
+        "text": " ",
+        "start": 7.1,
+        "end": 7.32,
+        "type": "spacing",
+        "logprob": -0.000129691296024248
+      },
+      {
+        "text": "ਜਾਂ",
+        "start": 7.32,
+        "end": 7.5,
+        "type": "word",
+        "logprob": -0.000129691296024248
+      },
+      {
+        "text": " ",
+        "start": 7.5,
+        "end": 7.64,
+        "type": "spacing",
+        "logprob": -0.00004875540980719961
+      },
+      {
+        "text": "ਇਸ",
+        "start": 7.64,
+        "end": 7.8,
+        "type": "word",
+        "logprob": -0.00004875540980719961
+      },
+      {
+        "text": " ",
+        "start": 7.8,
+        "end": 7.9,
+        "type": "spacing",
+        "logprob": -0.004613707307726145
+      },
+      {
+        "text": "ਪੱਖ",
+        "start": 7.9,
+        "end": 8.119,
+        "type": "word",
+        "logprob": -0.0018804219240943592
+      },
+      {
+        "text": " ",
+        "start": 8.119,
+        "end": 8.24,
+        "type": "spacing",
+        "logprob": -0.0006862907321192324
+      },
+      {
+        "text": "ਅਨੁਪਾਤ",
+        "start": 8.24,
+        "end": 8.68,
+        "type": "word",
+        "logprob": -0.0010519133399308582
+      },
+      {
+        "text": " ",
+        "start": 8.68,
+        "end": 8.74,
+        "type": "spacing",
+        "logprob": -0.000012516897186287679
+      },
+      {
+        "text": "ਦੇ",
+        "start": 8.74,
+        "end": 8.86,
+        "type": "word",
+        "logprob": -0.000012516897186287679
+      },
+      {
+        "text": " ",
+        "start": 8.86,
+        "end": 8.96,
+        "type": "spacing",
+        "logprob": -0.000030040289857424796
+      },
+      {
+        "text": "ਲਗਭਗ",
+        "start": 8.98,
+        "end": 9.42,
+        "type": "word",
+        "logprob": -0.0013817181788908783
+      },
+      {
+        "text": " ",
+        "start": 9.42,
+        "end": 9.52,
+        "type": "spacing",
+        "logprob": -0.000047801782784517854
+      },
+      {
+        "text": "ਨੇੜੇ-ਤੇੜੇ",
+        "start": 9.52,
+        "end": 10.24,
+        "type": "word",
+        "logprob": -0.001095326867976433
+      },
+      {
+        "text": " ",
+        "start": 10.24,
+        "end": 10.32,
+        "type": "spacing",
+        "logprob": -0.00017796363681554794
+      },
+      {
+        "text": "ਹੈ।",
+        "start": 10.32,
+        "end": 10.6,
+        "type": "word",
+        "logprob": -0.0062885998437802
+      }
+    ],
+    "transcription_id": "1U0rvFBgPgY6CEcV3KR2",
+    "audio_duration_secs": 11.88
+  }
+}

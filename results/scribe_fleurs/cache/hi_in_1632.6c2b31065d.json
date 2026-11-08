@@ -1,0 +1,530 @@
+{
+  "clip_id": "hi_in_1632",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "hin",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:54.662Z",
+  "response": {
+    "language_code": "hin",
+    "language_probability": 1,
+    "text": "महिलाओं को यह समझ लेनी चाहिए कि सांस्कृतिक मतभेद के कारण उन्हें उत्पीड़न का सामना करना पड़ सकता है और ऐसा हो सकता है कि उनका पीछा हो या फिर उसके कोई उनकी बाह जबरदस्ती पकड़े इत्यादि।",
+    "words": [
+      {
+        "text": "महिलाओं",
+        "start": 0.6,
+        "end": 1.06,
+        "type": "word",
+        "logprob": -0.03092157654464245
+      },
+      {
+        "text": " ",
+        "start": 1.06,
+        "end": 1.1,
+        "type": "spacing",
+        "logprob": -0.000005006777428206988
+      },
+      {
+        "text": "को",
+        "start": 1.1,
+        "end": 1.18,
+        "type": "word",
+        "logprob": -0.000005006777428206988
+      },
+      {
+        "text": " ",
+        "start": 1.18,
+        "end": 1.24,
+        "type": "spacing",
+        "logprob": -0.00003302042750874534
+      },
+      {
+        "text": "यह",
+        "start": 1.24,
+        "end": 1.42,
+        "type": "word",
+        "logprob": -0.00003302042750874534
+      },
+      {
+        "text": " ",
+        "start": 1.42,
+        "end": 1.46,
+        "type": "spacing",
+        "logprob": -0.0000295634672511369
+      },
+      {
+        "text": "समझ",
+        "start": 1.46,
+        "end": 1.74,
+        "type": "word",
+        "logprob": -0.0000295634672511369
+      },
+      {
+        "text": " ",
+        "start": 1.74,
+        "end": 1.78,
+        "type": "spacing",
+        "logprob": -0.001791778369806707
+      },
+      {
+        "text": "लेनी",
+        "start": 1.78,
+        "end": 2,
+        "type": "word",
+        "logprob": -0.001791778369806707
+      },
+      {
+        "text": " ",
+        "start": 2,
+        "end": 2.06,
+        "type": "spacing",
+        "logprob": -0.00002038458114839159
+      },
+      {
+        "text": "चाहिए",
+        "start": 2.06,
+        "end": 2.36,
+        "type": "word",
+        "logprob": -0.00002038458114839159
+      },
+      {
+        "text": " ",
+        "start": 2.36,
+        "end": 2.4,
+        "type": "spacing",
+        "logprob": -0.00038223114097490907
+      },
+      {
+        "text": "कि",
+        "start": 2.4,
+        "end": 2.5,
+        "type": "word",
+        "logprob": -0.00038223114097490907
+      },
+      {
+        "text": " ",
+        "start": 2.5,
+        "end": 2.54,
+        "type": "spacing",
+        "logprob": -0.005394663196057081
+      },
+      {
+        "text": "सांस्कृतिक",
+        "start": 2.54,
+        "end": 3.04,
+        "type": "word",
+        "logprob": -0.005394663196057081
+      },
+      {
+        "text": " ",
+        "start": 3.04,
+        "end": 3.08,
+        "type": "spacing",
+        "logprob": -0.0009299959056079388
+      },
+      {
+        "text": "मतभेद",
+        "start": 3.08,
+        "end": 3.52,
+        "type": "word",
+        "logprob": -0.00299005089327693
+      },
+      {
+        "text": " ",
+        "start": 3.52,
+        "end": 3.7,
+        "type": "spacing",
+        "logprob": -0.0000036954811548639555
+      },
+      {
+        "text": "के",
+        "start": 3.7,
+        "end": 3.9,
+        "type": "word",
+        "logprob": -0.0000036954811548639555
+      },
+      {
+        "text": " ",
+        "start": 3.9,
+        "end": 3.96,
+        "type": "spacing",
+        "logprob": -0.0002097863471135497
+      },
+      {
+        "text": "कारण",
+        "start": 3.96,
+        "end": 4.32,
+        "type": "word",
+        "logprob": -0.0002097863471135497
+      },
+      {
+        "text": " ",
+        "start": 4.32,
+        "end": 4.58,
+        "type": "spacing",
+        "logprob": -0.00008737658936297521
+      },
+      {
+        "text": "उन्हें",
+        "start": 4.58,
+        "end": 4.88,
+        "type": "word",
+        "logprob": -0.00008737658936297521
+      },
+      {
+        "text": " ",
+        "start": 4.88,
+        "end": 4.96,
+        "type": "spacing",
+        "logprob": -0.06286335736513138
+      },
+      {
+        "text": "उत्पीड़न",
+        "start": 4.96,
+        "end": 5.56,
+        "type": "word",
+        "logprob": -0.06286335736513138
+      },
+      {
+        "text": " ",
+        "start": 5.56,
+        "end": 5.56,
+        "type": "spacing",
+        "logprob": -0.00008630380034446716
+      },
+      {
+        "text": "का",
+        "start": 6.3,
+        "end": 6.5,
+        "type": "word",
+        "logprob": -0.00008630380034446716
+      },
+      {
+        "text": " ",
+        "start": 6.5,
+        "end": 6.58,
+        "type": "spacing",
+        "logprob": -0.00004577531944960356
+      },
+      {
+        "text": "सामना",
+        "start": 6.58,
+        "end": 6.96,
+        "type": "word",
+        "logprob": -0.00004577531944960356
+      },
+      {
+        "text": " ",
+        "start": 6.96,
+        "end": 7,
+        "type": "spacing",
+        "logprob": -0.000011444026313256472
+      },
+      {
+        "text": "करना",
+        "start": 7,
+        "end": 7.26,
+        "type": "word",
+        "logprob": -0.000011444026313256472
+      },
+      {
+        "text": " ",
+        "start": 7.26,
+        "end": 7.34,
+        "type": "spacing",
+        "logprob": -0.0004990047891624272
+      },
+      {
+        "text": "पड़",
+        "start": 7.34,
+        "end": 7.5,
+        "type": "word",
+        "logprob": -0.0004990047891624272
+      },
+      {
+        "text": " ",
+        "start": 7.5,
+        "end": 7.54,
+        "type": "spacing",
+        "logprob": -0.00001549708758830093
+      },
+      {
+        "text": "सकता",
+        "start": 7.54,
+        "end": 7.8,
+        "type": "word",
+        "logprob": -0.00001549708758830093
+      },
+      {
+        "text": " ",
+        "start": 7.8,
+        "end": 7.88,
+        "type": "spacing",
+        "logprob": -0.000004887569048150908
+      },
+      {
+        "text": "है",
+        "start": 7.88,
+        "end": 8,
+        "type": "word",
+        "logprob": -0.000004887569048150908
+      },
+      {
+        "text": " ",
+        "start": 8,
+        "end": 8.06,
+        "type": "spacing",
+        "logprob": -0.004103217739611864
+      },
+      {
+        "text": "और",
+        "start": 8.1,
+        "end": 8.24,
+        "type": "word",
+        "logprob": -0.004103217739611864
+      },
+      {
+        "text": " ",
+        "start": 8.24,
+        "end": 8.3,
+        "type": "spacing",
+        "logprob": -0.000042914423829643056
+      },
+      {
+        "text": "ऐसा",
+        "start": 8.3,
+        "end": 8.6,
+        "type": "word",
+        "logprob": -0.000042914423829643056
+      },
+      {
+        "text": " ",
+        "start": 8.6,
+        "end": 8.7,
+        "type": "spacing",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": "हो",
+        "start": 8.7,
+        "end": 8.88,
+        "type": "word",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": " ",
+        "start": 8.88,
+        "end": 9.56,
+        "type": "spacing",
+        "logprob": -0.00016962042718660086
+      },
+      {
+        "text": "सकता",
+        "start": 9.56,
+        "end": 9.86,
+        "type": "word",
+        "logprob": -0.00016962042718660086
+      },
+      {
+        "text": " ",
+        "start": 9.86,
+        "end": 9.94,
+        "type": "spacing",
+        "logprob": -0.000005006777428206988
+      },
+      {
+        "text": "है",
+        "start": 9.94,
+        "end": 10.1,
+        "type": "word",
+        "logprob": -0.000005006777428206988
+      },
+      {
+        "text": " ",
+        "start": 10.1,
+        "end": 10.14,
+        "type": "spacing",
+        "logprob": -0.00005936446541454643
+      },
+      {
+        "text": "कि",
+        "start": 10.14,
+        "end": 10.26,
+        "type": "word",
+        "logprob": -0.00005936446541454643
+      },
+      {
+        "text": " ",
+        "start": 10.26,
+        "end": 10.32,
+        "type": "spacing",
+        "logprob": -0.0014553203945979476
+      },
+      {
+        "text": "उनका",
+        "start": 10.32,
+        "end": 10.6,
+        "type": "word",
+        "logprob": -0.0014553203945979476
+      },
+      {
+        "text": " ",
+        "start": 10.6,
+        "end": 10.66,
+        "type": "spacing",
+        "logprob": -0.0030885871965438128
+      },
+      {
+        "text": "पीछा",
+        "start": 10.66,
+        "end": 11.06,
+        "type": "word",
+        "logprob": -0.0030885871965438128
+      },
+      {
+        "text": " ",
+        "start": 11.06,
+        "end": 11.06,
+        "type": "spacing",
+        "logprob": -0.00001883488948806189
+      },
+      {
+        "text": "हो",
+        "start": 12.68,
+        "end": 12.9,
+        "type": "word",
+        "logprob": -0.00001883488948806189
+      },
+      {
+        "text": " ",
+        "start": 12.9,
+        "end": 13.26,
+        "type": "spacing",
+        "logprob": -0.00016127715934999287
+      },
+      {
+        "text": "या",
+        "start": 13.26,
+        "end": 13.44,
+        "type": "word",
+        "logprob": -0.00016127715934999287
+      },
+      {
+        "text": " ",
+        "start": 13.44,
+        "end": 13.52,
+        "type": "spacing",
+        "logprob": -0.000017165990357170813
+      },
+      {
+        "text": "फिर",
+        "start": 13.52,
+        "end": 13.84,
+        "type": "word",
+        "logprob": -0.000017165990357170813
+      },
+      {
+        "text": " ",
+        "start": 13.84,
+        "end": 13.94,
+        "type": "spacing",
+        "logprob": -0.04729115962982178
+      },
+      {
+        "text": "उसके",
+        "start": 13.94,
+        "end": 14.32,
+        "type": "word",
+        "logprob": -0.04729115962982178
+      },
+      {
+        "text": " ",
+        "start": 14.32,
+        "end": 14.98,
+        "type": "spacing",
+        "logprob": -0.0003412379592191428
+      },
+      {
+        "text": "कोई",
+        "start": 14.98,
+        "end": 15.26,
+        "type": "word",
+        "logprob": -0.0003412379592191428
+      },
+      {
+        "text": " ",
+        "start": 15.26,
+        "end": 15.34,
+        "type": "spacing",
+        "logprob": -0.0011841197265312076
+      },
+      {
+        "text": "उनकी",
+        "start": 15.34,
+        "end": 15.64,
+        "type": "word",
+        "logprob": -0.0011841197265312076
+      },
+      {
+        "text": " ",
+        "start": 15.64,
+        "end": 15.72,
+        "type": "spacing",
+        "logprob": -0.28281232714653015
+      },
+      {
+        "text": "बाह",
+        "start": 15.72,
+        "end": 15.94,
+        "type": "word",
+        "logprob": -0.27133573095003766
+      },
+      {
+        "text": " ",
+        "start": 15.94,
+        "end": 15.98,
+        "type": "spacing",
+        "logprob": -0.057162296026945114
+      },
+      {
+        "text": "जबरदस्ती",
+        "start": 15.98,
+        "end": 16.46,
+        "type": "word",
+        "logprob": -0.021878961633774452
+      },
+      {
+        "text": " ",
+        "start": 16.46,
+        "end": 16.52,
+        "type": "spacing",
+        "logprob": -0.06026642397046089
+      },
+      {
+        "text": "पकड़े",
+        "start": 16.52,
+        "end": 16.88,
+        "type": "word",
+        "logprob": -0.026513221301138402
+      },
+      {
+        "text": " ",
+        "start": 16.88,
+        "end": 16.96,
+        "type": "spacing",
+        "logprob": -0.0022356535773724318
+      },
+      {
+        "text": "इत्यादि।",
+        "start": 16.96,
+        "end": 17.6,
+        "type": "word",
+        "logprob": -0.0029208764026407152
+      }
+    ],
+    "transcription_id": "cjuNlh33OaolKQ93oo24",
+    "audio_duration_secs": 17.88
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "clip_id": "ar_eg_1608",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "ara",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:24.574Z",
+  "response": {
+    "language_code": "ara",
+    "language_probability": 1,
+    "text": "قال أرماند فرساتشي: \"لقد فقدت أختي وصديقتها، وفي طريقي كان هناك شخصان قاعدان على كرسي متحرك، كان الناس يقفزون ويدفعونهم\".",
+    "words": [
+      {
+        "text": "قال",
+        "start": 0.7,
+        "end": 0.98,
+        "type": "word",
+        "logprob": -0.0004397855664137751
+      },
+      {
+        "text": " ",
+        "start": 0.98,
+        "end": 1,
+        "type": "spacing",
+        "logprob": -0.04640911892056465
+      },
+      {
+        "text": "أرماند",
+        "start": 1,
+        "end": 1.62,
+        "type": "word",
+        "logprob": -0.2033905346567432
+      },
+      {
+        "text": " ",
+        "start": 1.62,
+        "end": 1.86,
+        "type": "spacing",
+        "logprob": -0.6411023736000061
+      },
+      {
+        "text": "فرساتشي:",
+        "start": 1.86,
+        "end": 2.8,
+        "type": "word",
+        "logprob": -0.26311094139236957
+      },
+      {
+        "text": " ",
+        "start": 2.8,
+        "end": 3.1,
+        "type": "spacing",
+        "logprob": -0.004080779384821653
+      },
+      {
+        "text": "\"لقد",
+        "start": 3.1,
+        "end": 3.38,
+        "type": "word",
+        "logprob": -0.001623179646742301
+      },
+      {
+        "text": " ",
+        "start": 3.38,
+        "end": 3.42,
+        "type": "spacing",
+        "logprob": -0.003007890423759818
+      },
+      {
+        "text": "فقدت",
+        "start": 3.42,
+        "end": 3.88,
+        "type": "word",
+        "logprob": -0.002261699401515216
+      },
+      {
+        "text": " ",
+        "start": 3.88,
+        "end": 3.9,
+        "type": "spacing",
+        "logprob": -0.0024077491834759712
+      },
+      {
+        "text": "أختي",
+        "start": 3.9,
+        "end": 4.28,
+        "type": "word",
+        "logprob": -0.000900260221442295
+      },
+      {
+        "text": " ",
+        "start": 4.28,
+        "end": 4.32,
+        "type": "spacing",
+        "logprob": -0.0011995985405519605
+      },
+      {
+        "text": "وصديقتها،",
+        "start": 4.32,
+        "end": 5.16,
+        "type": "word",
+        "logprob": -0.0019039113152151306
+      },
+      {
+        "text": " ",
+        "start": 5.16,
+        "end": 5.46,
+        "type": "spacing",
+        "logprob": -0.00014029949670657516
+      },
+      {
+        "text": "وفي",
+        "start": 5.46,
+        "end": 5.74,
+        "type": "word",
+        "logprob": -0.00014029949670657516
+      },
+      {
+        "text": " ",
+        "start": 5.74,
+        "end": 5.8,
+        "type": "spacing",
+        "logprob": -0.001354134758003056
+      },
+      {
+        "text": "طريقي",
+        "start": 5.8,
+        "end": 6.32,
+        "type": "word",
+        "logprob": -0.00039684501243755224
+      },
+      {
+        "text": " ",
+        "start": 6.32,
+        "end": 6.36,
+        "type": "spacing",
+        "logprob": -0.000019788545614574105
+      },
+      {
+        "text": "كان",
+        "start": 6.36,
+        "end": 6.58,
+        "type": "word",
+        "logprob": -0.000019788545614574105
+      },
+      {
+        "text": " ",
+        "start": 6.58,
+        "end": 6.62,
+        "type": "spacing",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": "هناك",
+        "start": 6.62,
+        "end": 7.02,
+        "type": "word",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": " ",
+        "start": 7.02,
+        "end": 7.08,
+        "type": "spacing",
+        "logprob": -0.0012767505832016468
+      },
+      {
+        "text": "شخصان",
+        "start": 7.08,
+        "end": 7.58,
+        "type": "word",
+        "logprob": -0.0007725829658738803
+      },
+      {
+        "text": " ",
+        "start": 7.58,
+        "end": 7.74,
+        "type": "spacing",
+        "logprob": -0.3223711848258972
+      },
+      {
+        "text": "قاعدان",
+        "start": 7.74,
+        "end": 8.3,
+        "type": "word",
+        "logprob": -0.2149202028358559
+      },
+      {
+        "text": " ",
+        "start": 8.3,
+        "end": 8.44,
+        "type": "spacing",
+        "logprob": -0.00001549708758830093
+      },
+      {
+        "text": "على",
+        "start": 8.44,
+        "end": 8.6,
+        "type": "word",
+        "logprob": -0.00001549708758830093
+      },
+      {
+        "text": " ",
+        "start": 8.6,
+        "end": 8.72,
+        "type": "spacing",
+        "logprob": -0.0002493547508493066
+      },
+      {
+        "text": "كرسي",
+        "start": 8.72,
+        "end": 9.08,
+        "type": "word",
+        "logprob": -0.00018594719585962594
+      },
+      {
+        "text": " ",
+        "start": 9.08,
+        "end": 9.12,
+        "type": "spacing",
+        "logprob": -0.006824636831879616
+      },
+      {
+        "text": "متحرك،",
+        "start": 9.12,
+        "end": 9.66,
+        "type": "word",
+        "logprob": -0.005302456076606177
+      },
+      {
+        "text": " ",
+        "start": 9.66,
+        "end": 10.04,
+        "type": "spacing",
+        "logprob": -0.000010251946150674485
+      },
+      {
+        "text": "كان",
+        "start": 10.04,
+        "end": 10.2,
+        "type": "word",
+        "logprob": -0.000010251946150674485
+      },
+      {
+        "text": " ",
+        "start": 10.2,
+        "end": 10.26,
+        "type": "spacing",
+        "logprob": -0.000006198863957251888
+      },
+      {
+        "text": "الناس",
+        "start": 10.26,
+        "end": 10.62,
+        "type": "word",
+        "logprob": -0.000006198863957251888
+      },
+      {
+        "text": " ",
+        "start": 10.62,
+        "end": 10.72,
+        "type": "spacing",
+        "logprob": -0.0010155049385502934
+      },
+      {
+        "text": "يقفزون",
+        "start": 10.72,
+        "end": 11.3,
+        "type": "word",
+        "logprob": -0.001512099484235326
+      },
+      {
+        "text": " ",
+        "start": 11.3,
+        "end": 11.4,
+        "type": "spacing",
+        "logprob": -0.0015062665333971381
+      },
+      {
+        "text": "ويدفعونهم\".",
+        "start": 11.4,
+        "end": 12.34,
+        "type": "word",
+        "logprob": -0.002617803848228174
+      }
+    ],
+    "transcription_id": "MrLwhDhkQ5Td0wIU6AAe",
+    "audio_duration_secs": 12.96
+  }
+}

@@ -1,0 +1,572 @@
+{
+  "clip_id": "pa_in_1574",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "pan",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:17.570Z",
+  "response": {
+    "language_code": "pan",
+    "language_probability": 1,
+    "text": "ਸਰਦੀਆਂ ਵਿੱਚ ਜਾਂਦੇਗਾ ਠੰਡ ਹੋ ਸਕਦੀ ਹੈ, ਬਹੁਤ ਘੱਟ ਹੀ ਅਜਿਹਾ ਹੁੰਦਾ ਹੈ ਜਦੋਂ ਤਾਪਮਾਨ ਜਮਾਵ ਬਿੰਦੂ ਤੋਂ ਹੇਠਾਂ ਜਾਂਦਾ ਹੈ, ਪਰ ਹਵਾ ਅਤੇ ਨਮੀ ਦੇ ਇਕੱਠੇ ਹੋਣ ਕਾਰਨ ਇਹ ਥਰਮੋਮੀਟਰ ਦੇ ਮਾਪ ਤੋਂ ਵੀ ਵੱਧ ਠੰਡਾ ਮਹਿਸੂਸ ਹੁੰਦਾ ਹੈ।",
+    "words": [
+      {
+        "text": "ਸਰਦੀਆਂ",
+        "start": 1.12,
+        "end": 1.48,
+        "type": "word",
+        "logprob": -0.001421295814604188
+      },
+      {
+        "text": " ",
+        "start": 1.48,
+        "end": 1.5,
+        "type": "spacing",
+        "logprob": -0.0005608416395261884
+      },
+      {
+        "text": "ਵਿੱਚ",
+        "start": 1.5,
+        "end": 1.62,
+        "type": "word",
+        "logprob": -0.0005608416395261884
+      },
+      {
+        "text": " ",
+        "start": 1.62,
+        "end": 1.64,
+        "type": "spacing",
+        "logprob": -0.6015034317970276
+      },
+      {
+        "text": "ਜਾਂਦੇਗਾ",
+        "start": 1.64,
+        "end": 2.08,
+        "type": "word",
+        "logprob": -0.3917865242276873
+      },
+      {
+        "text": " ",
+        "start": 2.08,
+        "end": 2.16,
+        "type": "spacing",
+        "logprob": -0.06874513626098633
+      },
+      {
+        "text": "ਠੰਡ",
+        "start": 2.16,
+        "end": 2.3,
+        "type": "word",
+        "logprob": -0.13054844617484682
+      },
+      {
+        "text": " ",
+        "start": 2.3,
+        "end": 2.42,
+        "type": "spacing",
+        "logprob": -0.000010132738680113107
+      },
+      {
+        "text": "ਹੋ",
+        "start": 2.42,
+        "end": 2.52,
+        "type": "word",
+        "logprob": -0.000010132738680113107
+      },
+      {
+        "text": " ",
+        "start": 2.52,
+        "end": 2.56,
+        "type": "spacing",
+        "logprob": -0.00044848397374153137
+      },
+      {
+        "text": "ਸਕਦੀ",
+        "start": 2.56,
+        "end": 2.86,
+        "type": "word",
+        "logprob": -0.00023210973813547753
+      },
+      {
+        "text": " ",
+        "start": 2.86,
+        "end": 2.88,
+        "type": "spacing",
+        "logprob": -0.0005075835506431758
+      },
+      {
+        "text": "ਹੈ,",
+        "start": 2.88,
+        "end": 2.92,
+        "type": "word",
+        "logprob": -0.22308517848917594
+      },
+      {
+        "text": " ",
+        "start": 2.92,
+        "end": 3.02,
+        "type": "spacing",
+        "logprob": -0.00424804724752903
+      },
+      {
+        "text": "ਬਹੁਤ",
+        "start": 3.02,
+        "end": 3.22,
+        "type": "word",
+        "logprob": -0.0012178319084341638
+      },
+      {
+        "text": " ",
+        "start": 3.22,
+        "end": 3.26,
+        "type": "spacing",
+        "logprob": -0.0022033003624528646
+      },
+      {
+        "text": "ਘੱਟ",
+        "start": 3.26,
+        "end": 3.44,
+        "type": "word",
+        "logprob": -0.0391920959421744
+      },
+      {
+        "text": " ",
+        "start": 3.44,
+        "end": 3.46,
+        "type": "spacing",
+        "logprob": -0.16336794197559357
+      },
+      {
+        "text": "ਹੀ",
+        "start": 3.46,
+        "end": 3.52,
+        "type": "word",
+        "logprob": -0.16336794197559357
+      },
+      {
+        "text": " ",
+        "start": 3.52,
+        "end": 3.62,
+        "type": "spacing",
+        "logprob": -0.0014896021457388997
+      },
+      {
+        "text": "ਅਜਿਹਾ",
+        "start": 3.62,
+        "end": 3.84,
+        "type": "word",
+        "logprob": -0.0008503063749230932
+      },
+      {
+        "text": " ",
+        "start": 3.84,
+        "end": 3.86,
+        "type": "spacing",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": "ਹੁੰਦਾ",
+        "start": 3.94,
+        "end": 4.12,
+        "type": "word",
+        "logprob": -0.0000021696067506127293
+      },
+      {
+        "text": " ",
+        "start": 4.12,
+        "end": 4.12,
+        "type": "spacing",
+        "logprob": -0.00010895135346800089
+      },
+      {
+        "text": "ਹੈ",
+        "start": 4.12,
+        "end": 4.18,
+        "type": "word",
+        "logprob": -0.00010895135346800089
+      },
+      {
+        "text": " ",
+        "start": 4.18,
+        "end": 4.22,
+        "type": "spacing",
+        "logprob": -0.003960860893130302
+      },
+      {
+        "text": "ਜਦੋਂ",
+        "start": 4.22,
+        "end": 4.44,
+        "type": "word",
+        "logprob": -0.0010240101537419832
+      },
+      {
+        "text": " ",
+        "start": 4.44,
+        "end": 4.48,
+        "type": "spacing",
+        "logprob": -0.00020394629973452538
+      },
+      {
+        "text": "ਤਾਪਮਾਨ",
+        "start": 4.48,
+        "end": 4.84,
+        "type": "word",
+        "logprob": -0.0006640920400968753
+      },
+      {
+        "text": " ",
+        "start": 4.84,
+        "end": 4.88,
+        "type": "spacing",
+        "logprob": -0.005421696230769157
+      },
+      {
+        "text": "ਜਮਾਵ",
+        "start": 4.88,
+        "end": 5.18,
+        "type": "word",
+        "logprob": -0.02067106674076058
+      },
+      {
+        "text": " ",
+        "start": 5.18,
+        "end": 5.22,
+        "type": "spacing",
+        "logprob": -0.02099153958261013
+      },
+      {
+        "text": "ਬਿੰਦੂ",
+        "start": 5.22,
+        "end": 5.46,
+        "type": "word",
+        "logprob": -0.005436025559902191
+      },
+      {
+        "text": " ",
+        "start": 5.46,
+        "end": 5.52,
+        "type": "spacing",
+        "logprob": -0.00034505134681239724
+      },
+      {
+        "text": "ਤੋਂ",
+        "start": 5.52,
+        "end": 5.6,
+        "type": "word",
+        "logprob": -0.00034505134681239724
+      },
+      {
+        "text": " ",
+        "start": 5.6,
+        "end": 5.64,
+        "type": "spacing",
+        "logprob": -0.001423537265509367
+      },
+      {
+        "text": "ਹੇਠਾਂ",
+        "start": 5.64,
+        "end": 5.96,
+        "type": "word",
+        "logprob": -0.0008541171432170814
+      },
+      {
+        "text": " ",
+        "start": 5.96,
+        "end": 6,
+        "type": "spacing",
+        "logprob": -0.00022933237778488547
+      },
+      {
+        "text": "ਜਾਂਦਾ",
+        "start": 6,
+        "end": 6.3,
+        "type": "word",
+        "logprob": -0.0001377901614887378
+      },
+      {
+        "text": " ",
+        "start": 6.3,
+        "end": 6.34,
+        "type": "spacing",
+        "logprob": -0.00001764281842042692
+      },
+      {
+        "text": "ਹੈ,",
+        "start": 6.34,
+        "end": 6.44,
+        "type": "word",
+        "logprob": -0.014493786936024359
+      },
+      {
+        "text": " ",
+        "start": 6.44,
+        "end": 6.44,
+        "type": "spacing",
+        "logprob": -0.00004458328112377785
+      },
+      {
+        "text": "ਪਰ",
+        "start": 7.04,
+        "end": 7.2,
+        "type": "word",
+        "logprob": -0.00004458328112377785
+      },
+      {
+        "text": " ",
+        "start": 7.2,
+        "end": 7.24,
+        "type": "spacing",
+        "logprob": -0.00003504691630951129
+      },
+      {
+        "text": "ਹਵਾ",
+        "start": 7.26,
+        "end": 7.48,
+        "type": "word",
+        "logprob": -0.0010701353785407264
+      },
+      {
+        "text": " ",
+        "start": 7.48,
+        "end": 7.5,
+        "type": "spacing",
+        "logprob": -0.0000019073468138230965
+      },
+      {
+        "text": "ਅਤੇ",
+        "start": 7.5,
+        "end": 7.72,
+        "type": "word",
+        "logprob": -0.0000019073468138230965
+      },
+      {
+        "text": " ",
+        "start": 7.72,
+        "end": 7.76,
+        "type": "spacing",
+        "logprob": -0.0101201506331563
+      },
+      {
+        "text": "ਨਮੀ",
+        "start": 7.76,
+        "end": 7.94,
+        "type": "word",
+        "logprob": -0.0063623230283459025
+      },
+      {
+        "text": " ",
+        "start": 7.94,
+        "end": 8,
+        "type": "spacing",
+        "logprob": -0.0012124576605856419
+      },
+      {
+        "text": "ਦੇ",
+        "start": 8,
+        "end": 8.039,
+        "type": "word",
+        "logprob": -0.0012124576605856419
+      },
+      {
+        "text": " ",
+        "start": 8.039,
+        "end": 8.119,
+        "type": "spacing",
+        "logprob": -0.06286078691482544
+      },
+      {
+        "text": "ਇਕੱਠੇ",
+        "start": 8.119,
+        "end": 8.42,
+        "type": "word",
+        "logprob": -0.0376641093100261
+      },
+      {
+        "text": " ",
+        "start": 8.42,
+        "end": 8.46,
+        "type": "spacing",
+        "logprob": -0.00003313963316031732
+      },
+      {
+        "text": "ਹੋਣ",
+        "start": 8.46,
+        "end": 8.6,
+        "type": "word",
+        "logprob": -0.000022927552739323193
+      },
+      {
+        "text": " ",
+        "start": 8.6,
+        "end": 8.7,
+        "type": "spacing",
+        "logprob": -0.014830107800662518
+      },
+      {
+        "text": "ਕਾਰਨ",
+        "start": 8.7,
+        "end": 8.9,
+        "type": "word",
+        "logprob": -0.0037539251186444744
+      },
+      {
+        "text": " ",
+        "start": 8.9,
+        "end": 8.9,
+        "type": "spacing",
+        "logprob": -0.004647880792617798
+      },
+      {
+        "text": "ਇਹ",
+        "start": 8.9,
+        "end": 9.04,
+        "type": "word",
+        "logprob": -0.004647880792617798
+      },
+      {
+        "text": " ",
+        "start": 9.04,
+        "end": 9.08,
+        "type": "spacing",
+        "logprob": -0.0028032076079398394
+      },
+      {
+        "text": "ਥਰਮੋਮੀਟਰ",
+        "start": 9.08,
+        "end": 9.66,
+        "type": "word",
+        "logprob": -0.03357189411872241
+      },
+      {
+        "text": " ",
+        "start": 9.66,
+        "end": 9.72,
+        "type": "spacing",
+        "logprob": -0.00002038458114839159
+      },
+      {
+        "text": "ਦੇ",
+        "start": 9.72,
+        "end": 9.86,
+        "type": "word",
+        "logprob": -0.00002038458114839159
+      },
+      {
+        "text": " ",
+        "start": 9.86,
+        "end": 9.94,
+        "type": "spacing",
+        "logprob": -0.0006861716392450035
+      },
+      {
+        "text": "ਮਾਪ",
+        "start": 9.94,
+        "end": 10.18,
+        "type": "word",
+        "logprob": -0.003714842275561144
+      },
+      {
+        "text": " ",
+        "start": 10.18,
+        "end": 10.22,
+        "type": "spacing",
+        "logprob": -0.00006329813186312094
+      },
+      {
+        "text": "ਤੋਂ",
+        "start": 10.22,
+        "end": 10.32,
+        "type": "word",
+        "logprob": -0.00006329813186312094
+      },
+      {
+        "text": " ",
+        "start": 10.32,
+        "end": 10.38,
+        "type": "spacing",
+        "logprob": -0.001734420657157898
+      },
+      {
+        "text": "ਵੀ",
+        "start": 10.38,
+        "end": 10.5,
+        "type": "word",
+        "logprob": -0.001734420657157898
+      },
+      {
+        "text": " ",
+        "start": 10.5,
+        "end": 10.56,
+        "type": "spacing",
+        "logprob": -0.0007179781678132713
+      },
+      {
+        "text": "ਵੱਧ",
+        "start": 10.56,
+        "end": 10.74,
+        "type": "word",
+        "logprob": -0.0004886655418279892
+      },
+      {
+        "text": " ",
+        "start": 10.74,
+        "end": 10.86,
+        "type": "spacing",
+        "logprob": -0.000034689302992774174
+      },
+      {
+        "text": "ਠੰਡਾ",
+        "start": 10.86,
+        "end": 11.14,
+        "type": "word",
+        "logprob": -0.05697873201575021
+      },
+      {
+        "text": " ",
+        "start": 11.14,
+        "end": 11.18,
+        "type": "spacing",
+        "logprob": -0.00026723151677288115
+      },
+      {
+        "text": "ਮਹਿਸੂਸ",
+        "start": 11.18,
+        "end": 11.54,
+        "type": "word",
+        "logprob": -0.0001290683173162203
+      },
+      {
+        "text": " ",
+        "start": 11.54,
+        "end": 11.6,
+        "type": "spacing",
+        "logprob": -0.00006568216485902667
+      },
+      {
+        "text": "ਹੁੰਦਾ",
+        "start": 11.6,
+        "end": 11.92,
+        "type": "word",
+        "logprob": -0.000017618679635234002
+      },
+      {
+        "text": " ",
+        "start": 11.92,
+        "end": 11.92,
+        "type": "spacing",
+        "logprob": -0.00011002412065863609
+      },
+      {
+        "text": "ਹੈ।",
+        "start": 11.92,
+        "end": 12.1,
+        "type": "word",
+        "logprob": -0.0006985717142621676
+      }
+    ],
+    "transcription_id": "e0Jmf1ccHEhdpVcRugXl",
+    "audio_duration_secs": 12.18
+  }
+}

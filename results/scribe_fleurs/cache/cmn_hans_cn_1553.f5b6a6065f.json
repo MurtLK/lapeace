@@ -1,0 +1,243 @@
+{
+  "clip_id": "cmn_hans_cn_1553",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "zho",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:57.179Z",
+  "response": {
+    "language_code": "zho",
+    "language_probability": 1,
+    "text": "圣诞节是基督教最重要的节日之一，是为了庆祝基督诞辰而设-设立的。",
+    "words": [
+      {
+        "text": "圣",
+        "start": 1.58,
+        "end": 1.68,
+        "type": "word",
+        "logprob": -0.0007381098694168031
+      },
+      {
+        "text": "诞",
+        "start": 1.68,
+        "end": 1.86,
+        "type": "word",
+        "logprob": -0.0007381098694168031
+      },
+      {
+        "text": "节",
+        "start": 1.86,
+        "end": 2.02,
+        "type": "word",
+        "logprob": -0.00002634490556374658
+      },
+      {
+        "text": "是",
+        "start": 2.02,
+        "end": 2.16,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "基",
+        "start": 2.16,
+        "end": 2.3,
+        "type": "word",
+        "logprob": -0.000005006777428206988
+      },
+      {
+        "text": "督",
+        "start": 2.3,
+        "end": 2.44,
+        "type": "word",
+        "logprob": -0.000005006777428206988
+      },
+      {
+        "text": "教",
+        "start": 2.44,
+        "end": 2.7,
+        "type": "word",
+        "logprob": -0.000005006777428206988
+      },
+      {
+        "text": "最",
+        "start": 2.7,
+        "end": 2.9,
+        "type": "word",
+        "logprob": -0.00001549708758830093
+      },
+      {
+        "text": "重",
+        "start": 2.9,
+        "end": 3.02,
+        "type": "word",
+        "logprob": -0.00001549708758830093
+      },
+      {
+        "text": "要",
+        "start": 3.02,
+        "end": 3.12,
+        "type": "word",
+        "logprob": -0.00001549708758830093
+      },
+      {
+        "text": "的",
+        "start": 3.12,
+        "end": 3.26,
+        "type": "word",
+        "logprob": -0.00001549708758830093
+      },
+      {
+        "text": "节",
+        "start": 3.26,
+        "end": 3.4,
+        "type": "word",
+        "logprob": -0.0002087136817863211
+      },
+      {
+        "text": "日",
+        "start": 3.4,
+        "end": 3.56,
+        "type": "word",
+        "logprob": -0.0002087136817863211
+      },
+      {
+        "text": "之",
+        "start": 3.56,
+        "end": 3.78,
+        "type": "word",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": "一",
+        "start": 3.78,
+        "end": 3.82,
+        "type": "word",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": "，",
+        "start": 3.82,
+        "end": 4.24,
+        "type": "word",
+        "logprob": -0.00016950124700088054
+      },
+      {
+        "text": "是",
+        "start": 4.24,
+        "end": 4.36,
+        "type": "word",
+        "logprob": -0.00015233787416946143
+      },
+      {
+        "text": "为",
+        "start": 4.38,
+        "end": 4.46,
+        "type": "word",
+        "logprob": -0.00015233787416946143
+      },
+      {
+        "text": "了",
+        "start": 4.46,
+        "end": 4.76,
+        "type": "word",
+        "logprob": -0.00015233787416946143
+      },
+      {
+        "text": "庆",
+        "start": 4.76,
+        "end": 4.94,
+        "type": "word",
+        "logprob": -0.000005125986263010418
+      },
+      {
+        "text": "祝",
+        "start": 4.94,
+        "end": 5.08,
+        "type": "word",
+        "logprob": -0.000005125986263010418
+      },
+      {
+        "text": "基",
+        "start": 5.08,
+        "end": 5.26,
+        "type": "word",
+        "logprob": -0.000011801649634435307
+      },
+      {
+        "text": "督",
+        "start": 5.26,
+        "end": 5.44,
+        "type": "word",
+        "logprob": -0.000011801649634435307
+      },
+      {
+        "text": "诞",
+        "start": 5.6,
+        "end": 5.76,
+        "type": "word",
+        "logprob": -0.012295049615204334
+      },
+      {
+        "text": "辰",
+        "start": 5.78,
+        "end": 5.84,
+        "type": "word",
+        "logprob": -0.000029205850296420977
+      },
+      {
+        "text": "而",
+        "start": 5.9,
+        "end": 6.16,
+        "type": "word",
+        "logprob": -0.0000020265558760002023
+      },
+      {
+        "text": "设",
+        "start": 6.16,
+        "end": 6.36,
+        "type": "word",
+        "logprob": -0.010969925671815872
+      },
+      {
+        "text": "-",
+        "start": 6.36,
+        "end": 6.36,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "设",
+        "start": 6.4,
+        "end": 6.6,
+        "type": "word",
+        "logprob": -0.0017564359586685896
+      },
+      {
+        "text": "立",
+        "start": 6.6,
+        "end": 6.8,
+        "type": "word",
+        "logprob": -0.0017564359586685896
+      },
+      {
+        "text": "的",
+        "start": 6.8,
+        "end": 6.82,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "。",
+        "start": 6.82,
+        "end": 6.82,
+        "type": "word",
+        "logprob": -0.00017975145601667464
+      }
+    ],
+    "transcription_id": "LWwgDgiWytsYmHoAw6wM",
+    "audio_duration_secs": 9.06
+  }
+}

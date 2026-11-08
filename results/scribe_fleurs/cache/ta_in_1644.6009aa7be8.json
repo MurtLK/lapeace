@@ -1,0 +1,278 @@
+{
+  "clip_id": "ta_in_1644",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "tam",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:50.028Z",
+  "response": {
+    "language_code": "tam",
+    "language_probability": 1,
+    "text": "கருத்து கேட்டபோது விசாரணையின் போது மைக் அதிக அளவு பேசுகிறார். நான் விசாரணைக்காக தயாராகி கொண்டிருந்ததால் அவர் கூறியதை நான் கேட்கவில்லை என்று மில்லர் கூறினார்",
+    "words": [
+      {
+        "text": "கருத்து",
+        "start": 0.7,
+        "end": 1.1,
+        "type": "word",
+        "logprob": -0.42305108958057
+      },
+      {
+        "text": " ",
+        "start": 1.1,
+        "end": 1.18,
+        "type": "spacing",
+        "logprob": -0.003759104758501053
+      },
+      {
+        "text": "கேட்டபோது",
+        "start": 1.18,
+        "end": 1.86,
+        "type": "word",
+        "logprob": -0.02381683596306377
+      },
+      {
+        "text": " ",
+        "start": 1.86,
+        "end": 1.96,
+        "type": "spacing",
+        "logprob": -0.5857220888137817
+      },
+      {
+        "text": "விசாரணையின்",
+        "start": 1.96,
+        "end": 2.66,
+        "type": "word",
+        "logprob": -0.26727565969816747
+      },
+      {
+        "text": " ",
+        "start": 2.66,
+        "end": 2.74,
+        "type": "spacing",
+        "logprob": -0.28161337971687317
+      },
+      {
+        "text": "போது",
+        "start": 2.74,
+        "end": 3.06,
+        "type": "word",
+        "logprob": -0.28161337971687317
+      },
+      {
+        "text": " ",
+        "start": 3.06,
+        "end": 3.24,
+        "type": "spacing",
+        "logprob": -0.013713667169213295
+      },
+      {
+        "text": "மைக்",
+        "start": 3.24,
+        "end": 3.52,
+        "type": "word",
+        "logprob": -0.004490355815505609
+      },
+      {
+        "text": " ",
+        "start": 3.52,
+        "end": 3.56,
+        "type": "spacing",
+        "logprob": -0.0006136203301139176
+      },
+      {
+        "text": "அதிக",
+        "start": 3.56,
+        "end": 3.84,
+        "type": "word",
+        "logprob": -0.0006136203301139176
+      },
+      {
+        "text": " ",
+        "start": 3.84,
+        "end": 3.92,
+        "type": "spacing",
+        "logprob": -0.14524118602275848
+      },
+      {
+        "text": "அளவு",
+        "start": 3.92,
+        "end": 4.24,
+        "type": "word",
+        "logprob": -0.14524118602275848
+      },
+      {
+        "text": " ",
+        "start": 4.24,
+        "end": 4.34,
+        "type": "spacing",
+        "logprob": -0.0015043619787320495
+      },
+      {
+        "text": "பேசுகிறார்.",
+        "start": 4.34,
+        "end": 5.06,
+        "type": "word",
+        "logprob": -0.0013153543801639569
+      },
+      {
+        "text": " ",
+        "start": 5.06,
+        "end": 5.44,
+        "type": "spacing",
+        "logprob": -0.0004273931554052979
+      },
+      {
+        "text": "நான்",
+        "start": 5.44,
+        "end": 5.66,
+        "type": "word",
+        "logprob": -0.0004273931554052979
+      },
+      {
+        "text": " ",
+        "start": 5.66,
+        "end": 5.7,
+        "type": "spacing",
+        "logprob": -0.00256423931568861
+      },
+      {
+        "text": "விசாரணைக்காக",
+        "start": 5.7,
+        "end": 6.48,
+        "type": "word",
+        "logprob": -0.002379500811609129
+      },
+      {
+        "text": " ",
+        "start": 6.48,
+        "end": 6.56,
+        "type": "spacing",
+        "logprob": -0.007114197593182325
+      },
+      {
+        "text": "தயாராகி",
+        "start": 6.56,
+        "end": 7.14,
+        "type": "word",
+        "logprob": -0.2525578457862139
+      },
+      {
+        "text": " ",
+        "start": 7.14,
+        "end": 7.16,
+        "type": "spacing",
+        "logprob": -0.010429875925183296
+      },
+      {
+        "text": "கொண்டிருந்ததால்",
+        "start": 7.16,
+        "end": 7.84,
+        "type": "word",
+        "logprob": -0.007746627158485353
+      },
+      {
+        "text": " ",
+        "start": 7.84,
+        "end": 7.9,
+        "type": "spacing",
+        "logprob": -0.0008562712464481592
+      },
+      {
+        "text": "அவர்",
+        "start": 7.9,
+        "end": 8.06,
+        "type": "word",
+        "logprob": -0.0008562712464481592
+      },
+      {
+        "text": " ",
+        "start": 8.06,
+        "end": 8.16,
+        "type": "spacing",
+        "logprob": -0.12988674640655518
+      },
+      {
+        "text": "கூறியதை",
+        "start": 8.16,
+        "end": 8.62,
+        "type": "word",
+        "logprob": -0.09292654782932784
+      },
+      {
+        "text": " ",
+        "start": 8.62,
+        "end": 8.66,
+        "type": "spacing",
+        "logprob": -0.00013672371278516948
+      },
+      {
+        "text": "நான்",
+        "start": 8.66,
+        "end": 8.82,
+        "type": "word",
+        "logprob": -0.00013672371278516948
+      },
+      {
+        "text": " ",
+        "start": 8.82,
+        "end": 8.9,
+        "type": "spacing",
+        "logprob": -0.0007697956170886755
+      },
+      {
+        "text": "கேட்கவில்லை",
+        "start": 8.9,
+        "end": 9.44,
+        "type": "word",
+        "logprob": -0.0019027256533842194
+      },
+      {
+        "text": " ",
+        "start": 9.44,
+        "end": 9.48,
+        "type": "spacing",
+        "logprob": -0.002905197674408555
+      },
+      {
+        "text": "என்று",
+        "start": 9.48,
+        "end": 9.76,
+        "type": "word",
+        "logprob": -0.002905197674408555
+      },
+      {
+        "text": " ",
+        "start": 9.76,
+        "end": 9.82,
+        "type": "spacing",
+        "logprob": -0.05105695128440857
+      },
+      {
+        "text": "மில்லர்",
+        "start": 9.82,
+        "end": 10.1,
+        "type": "word",
+        "logprob": -0.020422454058591808
+      },
+      {
+        "text": " ",
+        "start": 10.1,
+        "end": 10.18,
+        "type": "spacing",
+        "logprob": -0.0008896207436919212
+      },
+      {
+        "text": "கூறினார்",
+        "start": 10.2,
+        "end": 10.72,
+        "type": "word",
+        "logprob": -0.0008896207436919212
+      }
+    ],
+    "transcription_id": "HQDwiUTldGe3rtctpFBX",
+    "audio_duration_secs": 11.1
+  }
+}

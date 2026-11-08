@@ -1,0 +1,299 @@
+{
+  "clip_id": "cmn_hans_cn_1647",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "zho",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:00.148Z",
+  "response": {
+    "language_code": "zho",
+    "language_probability": 1,
+    "text": "与其他地方提供的更详细的信息相比，这里所提供的建议往往较为粗略、笼统且过于简单。",
+    "words": [
+      {
+        "text": "与",
+        "start": 0.92,
+        "end": 1.04,
+        "type": "word",
+        "logprob": -0.00007259582343976945
+      },
+      {
+        "text": "其",
+        "start": 1.04,
+        "end": 1.2,
+        "type": "word",
+        "logprob": -0.00007259582343976945
+      },
+      {
+        "text": "他",
+        "start": 1.2,
+        "end": 1.38,
+        "type": "word",
+        "logprob": -0.00007259582343976945
+      },
+      {
+        "text": "地",
+        "start": 1.38,
+        "end": 1.52,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "方",
+        "start": 1.52,
+        "end": 1.72,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "提",
+        "start": 1.72,
+        "end": 1.88,
+        "type": "word",
+        "logprob": -0.0023296140134334564
+      },
+      {
+        "text": "供",
+        "start": 1.88,
+        "end": 2.06,
+        "type": "word",
+        "logprob": -0.0023296140134334564
+      },
+      {
+        "text": "的",
+        "start": 2.06,
+        "end": 2.24,
+        "type": "word",
+        "logprob": -0.0023296140134334564
+      },
+      {
+        "text": "更",
+        "start": 2.24,
+        "end": 2.46,
+        "type": "word",
+        "logprob": -0.000011801649634435307
+      },
+      {
+        "text": "详",
+        "start": 2.46,
+        "end": 2.72,
+        "type": "word",
+        "logprob": -0.00013302871957421303
+      },
+      {
+        "text": "细",
+        "start": 2.72,
+        "end": 2.86,
+        "type": "word",
+        "logprob": -0.00013302871957421303
+      },
+      {
+        "text": "的",
+        "start": 2.86,
+        "end": 2.98,
+        "type": "word",
+        "logprob": -0.00011121608258690685
+      },
+      {
+        "text": "信",
+        "start": 2.98,
+        "end": 3.16,
+        "type": "word",
+        "logprob": -0.00011121608258690685
+      },
+      {
+        "text": "息",
+        "start": 3.16,
+        "end": 3.34,
+        "type": "word",
+        "logprob": -0.00011121608258690685
+      },
+      {
+        "text": "相",
+        "start": 3.34,
+        "end": 3.58,
+        "type": "word",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": "比",
+        "start": 3.58,
+        "end": 3.66,
+        "type": "word",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": "，",
+        "start": 3.84,
+        "end": 3.88,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "这",
+        "start": 3.88,
+        "end": 4.019,
+        "type": "word",
+        "logprob": -0.0000058412379075889476
+      },
+      {
+        "text": "里",
+        "start": 4.019,
+        "end": 4.18,
+        "type": "word",
+        "logprob": -0.0000058412379075889476
+      },
+      {
+        "text": "所",
+        "start": 4.18,
+        "end": 4.38,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "提",
+        "start": 4.4,
+        "end": 4.56,
+        "type": "word",
+        "logprob": -0.00013529339048545808
+      },
+      {
+        "text": "供",
+        "start": 4.56,
+        "end": 4.7,
+        "type": "word",
+        "logprob": -0.00013529339048545808
+      },
+      {
+        "text": "的",
+        "start": 4.7,
+        "end": 4.86,
+        "type": "word",
+        "logprob": -0.00013529339048545808
+      },
+      {
+        "text": "建",
+        "start": 4.86,
+        "end": 5.04,
+        "type": "word",
+        "logprob": -0.00018225439998786896
+      },
+      {
+        "text": "议",
+        "start": 5.04,
+        "end": 5.18,
+        "type": "word",
+        "logprob": -0.00018225439998786896
+      },
+      {
+        "text": "往",
+        "start": 5.18,
+        "end": 5.32,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "往",
+        "start": 5.32,
+        "end": 5.7,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "较",
+        "start": 5.7,
+        "end": 5.82,
+        "type": "word",
+        "logprob": -0.008746763691306114
+      },
+      {
+        "text": "为",
+        "start": 5.82,
+        "end": 6.02,
+        "type": "word",
+        "logprob": -0.008746763691306114
+      },
+      {
+        "text": "粗",
+        "start": 6.02,
+        "end": 6.2,
+        "type": "word",
+        "logprob": -0.0008348317351192236
+      },
+      {
+        "text": "略",
+        "start": 6.2,
+        "end": 6.2,
+        "type": "word",
+        "logprob": -0.0019044610671699047
+      },
+      {
+        "text": "、",
+        "start": 6.2,
+        "end": 6.2,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "笼",
+        "start": 6.46,
+        "end": 6.66,
+        "type": "word",
+        "logprob": -0.0007923085941001773
+      },
+      {
+        "text": "统",
+        "start": 6.66,
+        "end": 7.08,
+        "type": "word",
+        "logprob": -0.0003620922507252544
+      },
+      {
+        "text": "且",
+        "start": 7.08,
+        "end": 7.3,
+        "type": "word",
+        "logprob": -0.07890836894512177
+      },
+      {
+        "text": "过",
+        "start": 7.3,
+        "end": 7.42,
+        "type": "word",
+        "logprob": -0.000036954195820726454
+      },
+      {
+        "text": "于",
+        "start": 7.42,
+        "end": 7.54,
+        "type": "word",
+        "logprob": -0.000036954195820726454
+      },
+      {
+        "text": "简",
+        "start": 7.54,
+        "end": 7.76,
+        "type": "word",
+        "logprob": -0.00005924526340095326
+      },
+      {
+        "text": "单",
+        "start": 7.76,
+        "end": 7.92,
+        "type": "word",
+        "logprob": -0.00005924526340095326
+      },
+      {
+        "text": "。",
+        "start": 7.92,
+        "end": 7.92,
+        "type": "word",
+        "logprob": -0.00005185469490243122
+      }
+    ],
+    "transcription_id": "SLR7TrzsHnpbpww6QibY",
+    "audio_duration_secs": 8.82
+  }
+}

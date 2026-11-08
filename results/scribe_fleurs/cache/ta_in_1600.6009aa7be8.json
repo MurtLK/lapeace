@@ -1,0 +1,264 @@
+{
+  "clip_id": "ta_in_1600",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "tam",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:48.570Z",
+  "response": {
+    "language_code": "tam",
+    "language_probability": 1,
+    "text": "வேட்டையாடுதல், மீன்பிடித்தல், புகைப்படம் எடுத்தல், பறவைகளைப் பார்த்தல் மற்றும் பூங்காக்களைப் பார்வையிடுதல் மற்றும் சுற்றுச்சூழல் பற்றிய தகவல்களைப் படித்தல் ஆகியவை On-site நடவடிக்கைகளுக்கு எடுத்துக்காட்டுகளாகும்",
+    "words": [
+      {
+        "text": "வேட்டையாடுதல்,",
+        "start": 1.56,
+        "end": 2.34,
+        "type": "word",
+        "logprob": -0.006724721017430316
+      },
+      {
+        "text": " ",
+        "start": 2.34,
+        "end": 2.46,
+        "type": "spacing",
+        "logprob": -0.0004366874636616558
+      },
+      {
+        "text": "மீன்பிடித்தல்,",
+        "start": 2.46,
+        "end": 3.14,
+        "type": "word",
+        "logprob": -0.021572265205447496
+      },
+      {
+        "text": " ",
+        "start": 3.14,
+        "end": 3.26,
+        "type": "spacing",
+        "logprob": -0.03106650337576866
+      },
+      {
+        "text": "புகைப்படம்",
+        "start": 3.26,
+        "end": 3.88,
+        "type": "word",
+        "logprob": -0.014868729189038277
+      },
+      {
+        "text": " ",
+        "start": 3.88,
+        "end": 3.92,
+        "type": "spacing",
+        "logprob": -0.020804982632398605
+      },
+      {
+        "text": "எடுத்தல்,",
+        "start": 3.92,
+        "end": 4.32,
+        "type": "word",
+        "logprob": -0.013918488815559411
+      },
+      {
+        "text": " ",
+        "start": 4.32,
+        "end": 4.42,
+        "type": "spacing",
+        "logprob": -0.04010346531867981
+      },
+      {
+        "text": "பறவைகளைப்",
+        "start": 4.42,
+        "end": 5.12,
+        "type": "word",
+        "logprob": -0.3057644242750636
+      },
+      {
+        "text": " ",
+        "start": 5.12,
+        "end": 5.14,
+        "type": "spacing",
+        "logprob": -0.053185172379016876
+      },
+      {
+        "text": "பார்த்தல்",
+        "start": 5.14,
+        "end": 5.58,
+        "type": "word",
+        "logprob": -0.04136693394740279
+      },
+      {
+        "text": " ",
+        "start": 5.58,
+        "end": 6.2,
+        "type": "spacing",
+        "logprob": -0.005337867885828018
+      },
+      {
+        "text": "மற்றும்",
+        "start": 6.2,
+        "end": 6.52,
+        "type": "word",
+        "logprob": -0.005337867885828018
+      },
+      {
+        "text": " ",
+        "start": 6.52,
+        "end": 6.6,
+        "type": "spacing",
+        "logprob": -0.00012408917245920748
+      },
+      {
+        "text": "பூங்காக்களைப்",
+        "start": 6.6,
+        "end": 7.32,
+        "type": "word",
+        "logprob": -0.025947395387517575
+      },
+      {
+        "text": " ",
+        "start": 7.32,
+        "end": 7.34,
+        "type": "spacing",
+        "logprob": -0.002352448645979166
+      },
+      {
+        "text": "பார்வையிடுதல்",
+        "start": 7.34,
+        "end": 8.06,
+        "type": "word",
+        "logprob": -0.012800948228687048
+      },
+      {
+        "text": " ",
+        "start": 8.06,
+        "end": 8.18,
+        "type": "spacing",
+        "logprob": -0.0023005942348390818
+      },
+      {
+        "text": "மற்றும்",
+        "start": 8.18,
+        "end": 8.48,
+        "type": "word",
+        "logprob": -0.0023005942348390818
+      },
+      {
+        "text": " ",
+        "start": 8.48,
+        "end": 8.58,
+        "type": "spacing",
+        "logprob": -0.05573808029294014
+      },
+      {
+        "text": "சுற்றுச்சூழல்",
+        "start": 8.58,
+        "end": 9.16,
+        "type": "word",
+        "logprob": -0.05573808029294014
+      },
+      {
+        "text": " ",
+        "start": 9.16,
+        "end": 9.24,
+        "type": "spacing",
+        "logprob": -0.009324808605015278
+      },
+      {
+        "text": "பற்றிய",
+        "start": 9.24,
+        "end": 9.52,
+        "type": "word",
+        "logprob": -0.009324808605015278
+      },
+      {
+        "text": " ",
+        "start": 9.52,
+        "end": 9.56,
+        "type": "spacing",
+        "logprob": -0.0008339979685842991
+      },
+      {
+        "text": "தகவல்களைப்",
+        "start": 9.56,
+        "end": 10.22,
+        "type": "word",
+        "logprob": -0.008992724074050783
+      },
+      {
+        "text": " ",
+        "start": 10.22,
+        "end": 10.26,
+        "type": "spacing",
+        "logprob": -0.20054036378860474
+      },
+      {
+        "text": "படித்தல்",
+        "start": 10.26,
+        "end": 10.8,
+        "type": "word",
+        "logprob": -0.15040685235953788
+      },
+      {
+        "text": " ",
+        "start": 10.8,
+        "end": 10.9,
+        "type": "spacing",
+        "logprob": -0.0013756821863353252
+      },
+      {
+        "text": "ஆகியவை",
+        "start": 10.9,
+        "end": 11.48,
+        "type": "word",
+        "logprob": -0.0013756821863353252
+      },
+      {
+        "text": " ",
+        "start": 11.48,
+        "end": 12.02,
+        "type": "spacing",
+        "logprob": -0.5295613408088684
+      },
+      {
+        "text": "On-site",
+        "start": 12.02,
+        "end": 12.74,
+        "type": "word",
+        "logprob": -0.1548527897601681
+      },
+      {
+        "text": " ",
+        "start": 12.74,
+        "end": 12.88,
+        "type": "spacing",
+        "logprob": -0.0010113369207829237
+      },
+      {
+        "text": "நடவடிக்கைகளுக்கு",
+        "start": 12.88,
+        "end": 14.04,
+        "type": "word",
+        "logprob": -0.0021860767155885696
+      },
+      {
+        "text": " ",
+        "start": 14.04,
+        "end": 14.1,
+        "type": "spacing",
+        "logprob": -0.05451493337750435
+      },
+      {
+        "text": "எடுத்துக்காட்டுகளாகும்",
+        "start": 14.1,
+        "end": 15.34,
+        "type": "word",
+        "logprob": -0.12807502194151643
+      }
+    ],
+    "transcription_id": "HFl24wttHxpOdeIFCyl3",
+    "audio_duration_secs": 16.08
+  }
+}

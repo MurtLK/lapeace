@@ -1,0 +1,348 @@
+{
+  "clip_id": "ar_eg_1629",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "ara",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:25.083Z",
+  "response": {
+    "language_code": "ara",
+    "language_probability": 1,
+    "text": "ذكرت بعض التقارير أن عدد الوفيات الرسمي بلغ ثمانية، وتؤكد التقارير الرسمية أن عدد الإصابات بلغ ثلاثين، ولكن الأعداد النهائية غير معروفة حتى الآن.",
+    "words": [
+      {
+        "text": "ذكرت",
+        "start": 0.98,
+        "end": 1.34,
+        "type": "word",
+        "logprob": -0.004001084598712623
+      },
+      {
+        "text": " ",
+        "start": 1.34,
+        "end": 1.36,
+        "type": "spacing",
+        "logprob": -0.00008427741704508662
+      },
+      {
+        "text": "بعض",
+        "start": 1.36,
+        "end": 1.52,
+        "type": "word",
+        "logprob": -0.00008427741704508662
+      },
+      {
+        "text": " ",
+        "start": 1.52,
+        "end": 1.56,
+        "type": "spacing",
+        "logprob": -0.0005401106318458915
+      },
+      {
+        "text": "التقارير",
+        "start": 1.56,
+        "end": 2.1,
+        "type": "word",
+        "logprob": -0.000302210235304301
+      },
+      {
+        "text": " ",
+        "start": 2.1,
+        "end": 2.18,
+        "type": "spacing",
+        "logprob": -0.05097663775086403
+      },
+      {
+        "text": "أن",
+        "start": 2.18,
+        "end": 2.32,
+        "type": "word",
+        "logprob": -0.05097663775086403
+      },
+      {
+        "text": " ",
+        "start": 2.32,
+        "end": 2.36,
+        "type": "spacing",
+        "logprob": -0.00003516612196108326
+      },
+      {
+        "text": "عدد",
+        "start": 2.36,
+        "end": 2.56,
+        "type": "word",
+        "logprob": -0.00003516612196108326
+      },
+      {
+        "text": " ",
+        "start": 2.56,
+        "end": 2.58,
+        "type": "spacing",
+        "logprob": -0.00020108585886191577
+      },
+      {
+        "text": "الوفيات",
+        "start": 2.6,
+        "end": 2.98,
+        "type": "word",
+        "logprob": -0.0012115827869690423
+      },
+      {
+        "text": " ",
+        "start": 2.98,
+        "end": 3.02,
+        "type": "spacing",
+        "logprob": -0.004207686986774206
+      },
+      {
+        "text": "الرسمي",
+        "start": 3.02,
+        "end": 3.42,
+        "type": "word",
+        "logprob": -0.004207686986774206
+      },
+      {
+        "text": " ",
+        "start": 3.42,
+        "end": 3.46,
+        "type": "spacing",
+        "logprob": -0.004754428751766682
+      },
+      {
+        "text": "بلغ",
+        "start": 3.46,
+        "end": 3.74,
+        "type": "word",
+        "logprob": -0.004754428751766682
+      },
+      {
+        "text": " ",
+        "start": 3.74,
+        "end": 3.76,
+        "type": "spacing",
+        "logprob": -0.003803164465352893
+      },
+      {
+        "text": "ثمانية،",
+        "start": 3.76,
+        "end": 4.26,
+        "type": "word",
+        "logprob": -0.009894209272325887
+      },
+      {
+        "text": " ",
+        "start": 4.26,
+        "end": 4.26,
+        "type": "spacing",
+        "logprob": -0.001846990897320211
+      },
+      {
+        "text": "وتؤكد",
+        "start": 4.6,
+        "end": 4.98,
+        "type": "word",
+        "logprob": -0.03709957615938038
+      },
+      {
+        "text": " ",
+        "start": 4.98,
+        "end": 5.02,
+        "type": "spacing",
+        "logprob": -0.00008070142939686775
+      },
+      {
+        "text": "التقارير",
+        "start": 5.02,
+        "end": 5.48,
+        "type": "word",
+        "logprob": -0.000055877301520013134
+      },
+      {
+        "text": " ",
+        "start": 5.48,
+        "end": 5.5,
+        "type": "spacing",
+        "logprob": -0.005117294378578663
+      },
+      {
+        "text": "الرسمية",
+        "start": 5.5,
+        "end": 5.94,
+        "type": "word",
+        "logprob": -0.0036552102704133305
+      },
+      {
+        "text": " ",
+        "start": 5.94,
+        "end": 5.96,
+        "type": "spacing",
+        "logprob": -0.0005609607324004173
+      },
+      {
+        "text": "أن",
+        "start": 5.96,
+        "end": 6.06,
+        "type": "word",
+        "logprob": -0.0005609607324004173
+      },
+      {
+        "text": " ",
+        "start": 6.06,
+        "end": 6.12,
+        "type": "spacing",
+        "logprob": -0.000051973900554003194
+      },
+      {
+        "text": "عدد",
+        "start": 6.12,
+        "end": 6.28,
+        "type": "word",
+        "logprob": -0.000051973900554003194
+      },
+      {
+        "text": " ",
+        "start": 6.28,
+        "end": 6.32,
+        "type": "spacing",
+        "logprob": -0.002156672067940235
+      },
+      {
+        "text": "الإصابات",
+        "start": 6.32,
+        "end": 6.74,
+        "type": "word",
+        "logprob": -0.001098303191611194
+      },
+      {
+        "text": " ",
+        "start": 6.74,
+        "end": 6.78,
+        "type": "spacing",
+        "logprob": -0.0014873405452817678
+      },
+      {
+        "text": "بلغ",
+        "start": 6.78,
+        "end": 7.06,
+        "type": "word",
+        "logprob": -0.0014873405452817678
+      },
+      {
+        "text": " ",
+        "start": 7.06,
+        "end": 7.1,
+        "type": "spacing",
+        "logprob": -0.007267467677593231
+      },
+      {
+        "text": "ثلاثين،",
+        "start": 7.1,
+        "end": 7.62,
+        "type": "word",
+        "logprob": -0.009685768601879577
+      },
+      {
+        "text": " ",
+        "start": 7.62,
+        "end": 7.62,
+        "type": "spacing",
+        "logprob": -0.000011801649634435307
+      },
+      {
+        "text": "ولكن",
+        "start": 8,
+        "end": 8.26,
+        "type": "word",
+        "logprob": -0.000011801649634435307
+      },
+      {
+        "text": " ",
+        "start": 8.26,
+        "end": 8.3,
+        "type": "spacing",
+        "logprob": -0.046304527670145035
+      },
+      {
+        "text": "الأعداد",
+        "start": 8.32,
+        "end": 8.58,
+        "type": "word",
+        "logprob": -0.019945605682940886
+      },
+      {
+        "text": " ",
+        "start": 8.58,
+        "end": 8.62,
+        "type": "spacing",
+        "logprob": -0.0033690142445266247
+      },
+      {
+        "text": "النهائية",
+        "start": 8.62,
+        "end": 9.22,
+        "type": "word",
+        "logprob": -0.0033690142445266247
+      },
+      {
+        "text": " ",
+        "start": 9.22,
+        "end": 9.26,
+        "type": "spacing",
+        "logprob": -0.00016127715934999287
+      },
+      {
+        "text": "غير",
+        "start": 9.26,
+        "end": 9.46,
+        "type": "word",
+        "logprob": -0.00016127715934999287
+      },
+      {
+        "text": " ",
+        "start": 9.46,
+        "end": 9.5,
+        "type": "spacing",
+        "logprob": -0.0006636562757194042
+      },
+      {
+        "text": "معروفة",
+        "start": 9.5,
+        "end": 9.84,
+        "type": "word",
+        "logprob": -0.0005554509331583782
+      },
+      {
+        "text": " ",
+        "start": 9.84,
+        "end": 9.88,
+        "type": "spacing",
+        "logprob": -0.00004446407547220588
+      },
+      {
+        "text": "حتى",
+        "start": 9.88,
+        "end": 10.1,
+        "type": "word",
+        "logprob": -0.00004446407547220588
+      },
+      {
+        "text": " ",
+        "start": 10.1,
+        "end": 10.12,
+        "type": "spacing",
+        "logprob": -0.000038742269680369645
+      },
+      {
+        "text": "الآن.",
+        "start": 10.12,
+        "end": 10.44,
+        "type": "word",
+        "logprob": -0.0004738187475595623
+      }
+    ],
+    "transcription_id": "6JKGBOAEl8fJcKwL9Dvy",
+    "audio_duration_secs": 11.04
+  }
+}

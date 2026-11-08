@@ -1,0 +1,229 @@
+{
+  "clip_id": "yue_hant_hk_1627",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "yue",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:31.220Z",
+  "response": {
+    "language_code": "yue",
+    "language_probability": 1,
+    "text": "古羅馬的餐飲並不包含日後幾個世紀從美洲或亞洲傳入歐洲的食物。",
+    "words": [
+      {
+        "text": "古",
+        "start": 1.1,
+        "end": 1.26,
+        "type": "word",
+        "logprob": -0.000008702239938429557
+      },
+      {
+        "text": "羅",
+        "start": 1.28,
+        "end": 1.54,
+        "type": "word",
+        "logprob": -0.018160028383135796
+      },
+      {
+        "text": "馬",
+        "start": 1.54,
+        "end": 1.84,
+        "type": "word",
+        "logprob": -0.000028967437174287625
+      },
+      {
+        "text": "的",
+        "start": 1.84,
+        "end": 2.02,
+        "type": "word",
+        "logprob": -0.000009536697689327411
+      },
+      {
+        "text": "餐",
+        "start": 2.02,
+        "end": 2.3,
+        "type": "word",
+        "logprob": -0.003923220559954643
+      },
+      {
+        "text": "飲",
+        "start": 2.3,
+        "end": 2.56,
+        "type": "word",
+        "logprob": -0.00034683887497521937
+      },
+      {
+        "text": "並",
+        "start": 2.56,
+        "end": 2.8,
+        "type": "word",
+        "logprob": -0.00045718232286162674
+      },
+      {
+        "text": "不",
+        "start": 2.8,
+        "end": 3.04,
+        "type": "word",
+        "logprob": -0.00045718232286162674
+      },
+      {
+        "text": "包",
+        "start": 3.04,
+        "end": 3.38,
+        "type": "word",
+        "logprob": -0.00013410145766101778
+      },
+      {
+        "text": "含",
+        "start": 3.38,
+        "end": 3.74,
+        "type": "word",
+        "logprob": -0.00013410145766101778
+      },
+      {
+        "text": "日",
+        "start": 3.74,
+        "end": 3.98,
+        "type": "word",
+        "logprob": -0.00042250767000950873
+      },
+      {
+        "text": "後",
+        "start": 3.98,
+        "end": 4.3,
+        "type": "word",
+        "logprob": -0.000020503786799963564
+      },
+      {
+        "text": "幾",
+        "start": 4.3,
+        "end": 4.5,
+        "type": "word",
+        "logprob": -0.00024387246230617166
+      },
+      {
+        "text": "個",
+        "start": 4.5,
+        "end": 4.72,
+        "type": "word",
+        "logprob": -0.00024387246230617166
+      },
+      {
+        "text": "世",
+        "start": 4.72,
+        "end": 5,
+        "type": "word",
+        "logprob": -0.00022194306075107306
+      },
+      {
+        "text": "紀",
+        "start": 5,
+        "end": 5.28,
+        "type": "word",
+        "logprob": -0.00022194306075107306
+      },
+      {
+        "text": "從",
+        "start": 5.28,
+        "end": 5.56,
+        "type": "word",
+        "logprob": -0.000011086402082582936
+      },
+      {
+        "text": "美",
+        "start": 5.56,
+        "end": 5.84,
+        "type": "word",
+        "logprob": -0.00002312633478140924
+      },
+      {
+        "text": "洲",
+        "start": 5.84,
+        "end": 6.18,
+        "type": "word",
+        "logprob": -0.0007126175914891064
+      },
+      {
+        "text": "或",
+        "start": 6.18,
+        "end": 6.4,
+        "type": "word",
+        "logprob": -0.000006079655122448457
+      },
+      {
+        "text": "亞",
+        "start": 6.4,
+        "end": 6.7,
+        "type": "word",
+        "logprob": -0.000035523738915799186
+      },
+      {
+        "text": "洲",
+        "start": 6.7,
+        "end": 6.96,
+        "type": "word",
+        "logprob": -0.000035523738915799186
+      },
+      {
+        "text": "傳",
+        "start": 6.96,
+        "end": 7.24,
+        "type": "word",
+        "logprob": -0.0028221087995916605
+      },
+      {
+        "text": "入",
+        "start": 7.24,
+        "end": 7.46,
+        "type": "word",
+        "logprob": -0.000019311717551317997
+      },
+      {
+        "text": "歐",
+        "start": 7.46,
+        "end": 7.74,
+        "type": "word",
+        "logprob": -0.00009953480184776708
+      },
+      {
+        "text": "洲",
+        "start": 7.74,
+        "end": 8,
+        "type": "word",
+        "logprob": -0.00009953480184776708
+      },
+      {
+        "text": "的",
+        "start": 8,
+        "end": 8.2,
+        "type": "word",
+        "logprob": -0.0000032186455882765586
+      },
+      {
+        "text": "食",
+        "start": 8.2,
+        "end": 8.42,
+        "type": "word",
+        "logprob": -0.0001397035230183974
+      },
+      {
+        "text": "物",
+        "start": 8.42,
+        "end": 8.6,
+        "type": "word",
+        "logprob": -0.0001397035230183974
+      },
+      {
+        "text": "。",
+        "start": 8.6,
+        "end": 8.6,
+        "type": "word",
+        "logprob": -0.00005864924969500862
+      }
+    ],
+    "transcription_id": "tc6vt5co6xkcv1P6gYfF",
+    "audio_duration_secs": 9.54
+  }
+}

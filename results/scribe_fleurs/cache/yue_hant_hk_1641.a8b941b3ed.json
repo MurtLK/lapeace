@@ -1,0 +1,299 @@
+{
+  "clip_id": "yue_hant_hk_1641",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "yue",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:31.952Z",
+  "response": {
+    "language_code": "yue",
+    "language_probability": 1,
+    "text": "这片森林不是只有红树林沼泽，也包含一部分曾遍及恒河平原、如今所剩无几的巨大丛林。",
+    "words": [
+      {
+        "text": "这",
+        "start": 1.14,
+        "end": 1.38,
+        "type": "word",
+        "logprob": -0.001529715140350163
+      },
+      {
+        "text": "片",
+        "start": 1.38,
+        "end": 1.64,
+        "type": "word",
+        "logprob": -0.00007080780778778717
+      },
+      {
+        "text": "森",
+        "start": 1.64,
+        "end": 1.9,
+        "type": "word",
+        "logprob": -0.00007009260298218578
+      },
+      {
+        "text": "林",
+        "start": 1.9,
+        "end": 2.2,
+        "type": "word",
+        "logprob": -0.00007009260298218578
+      },
+      {
+        "text": "不",
+        "start": 2.2,
+        "end": 2.44,
+        "type": "word",
+        "logprob": -0.3360808789730072
+      },
+      {
+        "text": "是",
+        "start": 3,
+        "end": 3.28,
+        "type": "word",
+        "logprob": -0.3360808789730072
+      },
+      {
+        "text": "只",
+        "start": 3.3,
+        "end": 3.52,
+        "type": "word",
+        "logprob": -0.00017927470616996288
+      },
+      {
+        "text": "有",
+        "start": 3.52,
+        "end": 3.8,
+        "type": "word",
+        "logprob": -0.00017927470616996288
+      },
+      {
+        "text": "红",
+        "start": 3.8,
+        "end": 4.08,
+        "type": "word",
+        "logprob": -0.003532243659719825
+      },
+      {
+        "text": "树",
+        "start": 4.08,
+        "end": 4.32,
+        "type": "word",
+        "logprob": -0.007987461984157562
+      },
+      {
+        "text": "林",
+        "start": 4.32,
+        "end": 4.6,
+        "type": "word",
+        "logprob": -0.00009226373367710039
+      },
+      {
+        "text": "沼",
+        "start": 4.6,
+        "end": 4.86,
+        "type": "word",
+        "logprob": -0.0007223857101053
+      },
+      {
+        "text": "泽",
+        "start": 4.86,
+        "end": 4.86,
+        "type": "word",
+        "logprob": -0.001206861576065421
+      },
+      {
+        "text": "，",
+        "start": 5.06,
+        "end": 5.6,
+        "type": "word",
+        "logprob": -0.000009775113539944869
+      },
+      {
+        "text": "也",
+        "start": 5.6,
+        "end": 5.88,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "包",
+        "start": 5.88,
+        "end": 6.14,
+        "type": "word",
+        "logprob": -0.0007376333815045655
+      },
+      {
+        "text": "含",
+        "start": 6.14,
+        "end": 6.4,
+        "type": "word",
+        "logprob": -0.0007376333815045655
+      },
+      {
+        "text": "一",
+        "start": 6.4,
+        "end": 6.68,
+        "type": "word",
+        "logprob": -0.0020882722456008196
+      },
+      {
+        "text": "部",
+        "start": 6.68,
+        "end": 6.96,
+        "type": "word",
+        "logprob": -0.0020882722456008196
+      },
+      {
+        "text": "分",
+        "start": 6.96,
+        "end": 7.24,
+        "type": "word",
+        "logprob": -0.0020882722456008196
+      },
+      {
+        "text": "曾",
+        "start": 7.24,
+        "end": 7.62,
+        "type": "word",
+        "logprob": -0.008679049089550972
+      },
+      {
+        "text": "遍",
+        "start": 7.62,
+        "end": 7.92,
+        "type": "word",
+        "logprob": -0.0007407305529341102
+      },
+      {
+        "text": "及",
+        "start": 7.92,
+        "end": 8.1,
+        "type": "word",
+        "logprob": -0.00008487341256113723
+      },
+      {
+        "text": "恒",
+        "start": 8.1,
+        "end": 8.46,
+        "type": "word",
+        "logprob": -0.017244871705770493
+      },
+      {
+        "text": "河",
+        "start": 8.46,
+        "end": 8.74,
+        "type": "word",
+        "logprob": -0.0019739444833248854
+      },
+      {
+        "text": "平",
+        "start": 8.74,
+        "end": 9.04,
+        "type": "word",
+        "logprob": -0.000033378044463461265
+      },
+      {
+        "text": "原",
+        "start": 9.04,
+        "end": 9.24,
+        "type": "word",
+        "logprob": -0.00029940891545265913
+      },
+      {
+        "text": "、",
+        "start": 9.24,
+        "end": 9.24,
+        "type": "word",
+        "logprob": -0.251939982175827
+      },
+      {
+        "text": "如",
+        "start": 9.76,
+        "end": 9.96,
+        "type": "word",
+        "logprob": -0.000011444026313256472
+      },
+      {
+        "text": "今",
+        "start": 9.96,
+        "end": 10.24,
+        "type": "word",
+        "logprob": -0.000011444026313256472
+      },
+      {
+        "text": "所",
+        "start": 10.24,
+        "end": 10.48,
+        "type": "word",
+        "logprob": -0.00009297892393078655
+      },
+      {
+        "text": "剩",
+        "start": 10.48,
+        "end": 10.74,
+        "type": "word",
+        "logprob": -0.0006366133457049727
+      },
+      {
+        "text": "无",
+        "start": 10.74,
+        "end": 11,
+        "type": "word",
+        "logprob": -0.0002506657037883997
+      },
+      {
+        "text": "几",
+        "start": 11,
+        "end": 11.26,
+        "type": "word",
+        "logprob": -0.0012891324004158378
+      },
+      {
+        "text": "的",
+        "start": 11.26,
+        "end": 11.56,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "巨",
+        "start": 11.56,
+        "end": 11.82,
+        "type": "word",
+        "logprob": -0.00003349725011503324
+      },
+      {
+        "text": "大",
+        "start": 11.82,
+        "end": 12.08,
+        "type": "word",
+        "logprob": -0.00003349725011503324
+      },
+      {
+        "text": "丛",
+        "start": 12.08,
+        "end": 12.36,
+        "type": "word",
+        "logprob": -0.004726903047412634
+      },
+      {
+        "text": "林",
+        "start": 12.36,
+        "end": 12.56,
+        "type": "word",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": "。",
+        "start": 12.56,
+        "end": 12.56,
+        "type": "word",
+        "logprob": -0.0000016689286894688848
+      }
+    ],
+    "transcription_id": "GmWsJxIuzTDGzeiTuQ7F",
+    "audio_duration_secs": 13.92
+  }
+}

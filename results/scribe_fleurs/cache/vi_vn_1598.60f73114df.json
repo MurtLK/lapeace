@@ -1,0 +1,264 @@
+{
+  "clip_id": "vi_vn_1598",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "vie",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:42:01.189Z",
+  "response": {
+    "language_code": "vie",
+    "language_probability": 1,
+    "text": "Mặc dù có ba người ở trong nhà khi chiếc xe đâm vào nhưng không ai bị thương.",
+    "words": [
+      {
+        "text": "Mặc",
+        "start": 1.24,
+        "end": 1.38,
+        "type": "word",
+        "logprob": -0.00004430513460344324
+      },
+      {
+        "text": " ",
+        "start": 1.38,
+        "end": 1.44,
+        "type": "spacing",
+        "logprob": -0.0000019073468138230965
+      },
+      {
+        "text": "dù",
+        "start": 1.46,
+        "end": 1.62,
+        "type": "word",
+        "logprob": -0.0000019073468138230965
+      },
+      {
+        "text": " ",
+        "start": 1.62,
+        "end": 1.7,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "có",
+        "start": 1.7,
+        "end": 1.82,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 1.82,
+        "end": 1.86,
+        "type": "spacing",
+        "logprob": -0.000016927575416048057
+      },
+      {
+        "text": "ba",
+        "start": 1.86,
+        "end": 1.98,
+        "type": "word",
+        "logprob": -0.000016927575416048057
+      },
+      {
+        "text": " ",
+        "start": 1.98,
+        "end": 2.04,
+        "type": "spacing",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": "người",
+        "start": 2.04,
+        "end": 2.26,
+        "type": "word",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": " ",
+        "start": 2.26,
+        "end": 2.3,
+        "type": "spacing",
+        "logprob": -0.0000027418097943154862
+      },
+      {
+        "text": "ở",
+        "start": 2.3,
+        "end": 2.4,
+        "type": "word",
+        "logprob": -0.0000027418097943154862
+      },
+      {
+        "text": " ",
+        "start": 2.4,
+        "end": 2.42,
+        "type": "spacing",
+        "logprob": -0.000011920858014491387
+      },
+      {
+        "text": "trong",
+        "start": 2.42,
+        "end": 2.6,
+        "type": "word",
+        "logprob": -0.000011920858014491387
+      },
+      {
+        "text": " ",
+        "start": 2.6,
+        "end": 2.64,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "nhà",
+        "start": 2.64,
+        "end": 2.88,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 2.88,
+        "end": 2.94,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "khi",
+        "start": 2.94,
+        "end": 3.06,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 3.06,
+        "end": 3.1,
+        "type": "spacing",
+        "logprob": -0.000004529942543740617
+      },
+      {
+        "text": "chiếc",
+        "start": 3.1,
+        "end": 3.24,
+        "type": "word",
+        "logprob": -0.000004529942543740617
+      },
+      {
+        "text": " ",
+        "start": 3.24,
+        "end": 3.32,
+        "type": "spacing",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": "xe",
+        "start": 3.32,
+        "end": 3.52,
+        "type": "word",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": " ",
+        "start": 3.52,
+        "end": 3.56,
+        "type": "spacing",
+        "logprob": -0.000054238757002167404
+      },
+      {
+        "text": "đâm",
+        "start": 3.56,
+        "end": 3.72,
+        "type": "word",
+        "logprob": -0.000024516856380311463
+      },
+      {
+        "text": " ",
+        "start": 3.72,
+        "end": 3.78,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "vào",
+        "start": 3.78,
+        "end": 4.04,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 4.04,
+        "end": 4.08,
+        "type": "spacing",
+        "logprob": -0.00011324241495458409
+      },
+      {
+        "text": "nhưng",
+        "start": 4.08,
+        "end": 4.22,
+        "type": "word",
+        "logprob": -0.00011324241495458409
+      },
+      {
+        "text": " ",
+        "start": 4.22,
+        "end": 4.24,
+        "type": "spacing",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": "không",
+        "start": 4.24,
+        "end": 4.42,
+        "type": "word",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": " ",
+        "start": 4.42,
+        "end": 4.44,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "ai",
+        "start": 4.46,
+        "end": 4.58,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 4.58,
+        "end": 4.6,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "bị",
+        "start": 4.6,
+        "end": 4.72,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 4.72,
+        "end": 4.76,
+        "type": "spacing",
+        "logprob": -0.00000822540732769994
+      },
+      {
+        "text": "thương.",
+        "start": 4.76,
+        "end": 5.04,
+        "type": "word",
+        "logprob": -0.00004936338128962754
+      }
+    ],
+    "transcription_id": "nsXI9ngf8oszXI2rQ0Pp",
+    "audio_duration_secs": 5.94
+  }
+}

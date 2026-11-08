@@ -1,0 +1,250 @@
+{
+  "clip_id": "yue_hant_hk_1533",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "yue",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:27.006Z",
+  "response": {
+    "language_code": "yue",
+    "language_probability": 1,
+    "text": "許多常見格式（比方 APS 先進攝影系統格式）都等同或接近這個長寬比。",
+    "words": [
+      {
+        "text": "許",
+        "start": 0.7,
+        "end": 0.8,
+        "type": "word",
+        "logprob": -0.4746341109275818
+      },
+      {
+        "text": "多",
+        "start": 0.8,
+        "end": 0.94,
+        "type": "word",
+        "logprob": -0.4746341109275818
+      },
+      {
+        "text": "常",
+        "start": 0.94,
+        "end": 1.18,
+        "type": "word",
+        "logprob": -0.0003057250869460404
+      },
+      {
+        "text": "見",
+        "start": 1.2,
+        "end": 1.34,
+        "type": "word",
+        "logprob": -0.0003057250869460404
+      },
+      {
+        "text": "格",
+        "start": 1.34,
+        "end": 1.54,
+        "type": "word",
+        "logprob": -0.0007088055717758834
+      },
+      {
+        "text": "式",
+        "start": 1.54,
+        "end": 1.54,
+        "type": "word",
+        "logprob": -0.0007088055717758834
+      },
+      {
+        "text": "（",
+        "start": 1.54,
+        "end": 1.54,
+        "type": "word",
+        "logprob": -0.040695492178201675
+      },
+      {
+        "text": "比",
+        "start": 1.94,
+        "end": 2.14,
+        "type": "word",
+        "logprob": -0.04187928885221481
+      },
+      {
+        "text": "方",
+        "start": 2.14,
+        "end": 2.32,
+        "type": "word",
+        "logprob": -0.000010490362910786644
+      },
+      {
+        "text": " ",
+        "start": 2.32,
+        "end": 2.42,
+        "type": "spacing",
+        "logprob": -0.021788857877254486
+      },
+      {
+        "text": "APS",
+        "start": 2.42,
+        "end": 3,
+        "type": "word",
+        "logprob": -0.021788857877254486
+      },
+      {
+        "text": " ",
+        "start": 3,
+        "end": 3.02,
+        "type": "spacing",
+        "logprob": -0.059109825640916824
+      },
+      {
+        "text": "先",
+        "start": 3.22,
+        "end": 3.32,
+        "type": "word",
+        "logprob": -0.059109825640916824
+      },
+      {
+        "text": "進",
+        "start": 3.32,
+        "end": 3.58,
+        "type": "word",
+        "logprob": -0.000303818320389837
+      },
+      {
+        "text": "攝",
+        "start": 3.58,
+        "end": 3.84,
+        "type": "word",
+        "logprob": -0.003920133225619793
+      },
+      {
+        "text": "影",
+        "start": 3.84,
+        "end": 4.3,
+        "type": "word",
+        "logprob": -0.003920133225619793
+      },
+      {
+        "text": "系",
+        "start": 4.3,
+        "end": 4.56,
+        "type": "word",
+        "logprob": -0.00005578839045483619
+      },
+      {
+        "text": "統",
+        "start": 4.56,
+        "end": 4.76,
+        "type": "word",
+        "logprob": -0.00005578839045483619
+      },
+      {
+        "text": "格",
+        "start": 4.76,
+        "end": 4.96,
+        "type": "word",
+        "logprob": -0.00003611976353568025
+      },
+      {
+        "text": "式",
+        "start": 4.96,
+        "end": 5.06,
+        "type": "word",
+        "logprob": -0.00003611976353568025
+      },
+      {
+        "text": "）",
+        "start": 5.06,
+        "end": 5.06,
+        "type": "word",
+        "logprob": -0.0000345700973412022
+      },
+      {
+        "text": "都",
+        "start": 5.46,
+        "end": 5.66,
+        "type": "word",
+        "logprob": -0.000011086402082582936
+      },
+      {
+        "text": "等",
+        "start": 5.66,
+        "end": 5.9,
+        "type": "word",
+        "logprob": -0.0002485204895492643
+      },
+      {
+        "text": "同",
+        "start": 5.9,
+        "end": 6.12,
+        "type": "word",
+        "logprob": -0.0000029802276912960224
+      },
+      {
+        "text": "或",
+        "start": 6.12,
+        "end": 6.3,
+        "type": "word",
+        "logprob": -0.000007390948667307384
+      },
+      {
+        "text": "接",
+        "start": 6.3,
+        "end": 6.44,
+        "type": "word",
+        "logprob": -0.00003814624506048858
+      },
+      {
+        "text": "近",
+        "start": 6.44,
+        "end": 6.66,
+        "type": "word",
+        "logprob": -0.00003814624506048858
+      },
+      {
+        "text": "這",
+        "start": 6.66,
+        "end": 6.8,
+        "type": "word",
+        "logprob": -0.00013362467871047556
+      },
+      {
+        "text": "個",
+        "start": 6.8,
+        "end": 6.98,
+        "type": "word",
+        "logprob": -0.00013362467871047556
+      },
+      {
+        "text": "長",
+        "start": 6.98,
+        "end": 7.3,
+        "type": "word",
+        "logprob": -0.0009423820883966982
+      },
+      {
+        "text": "寬",
+        "start": 7.3,
+        "end": 7.56,
+        "type": "word",
+        "logprob": -0.04264871031045914
+      },
+      {
+        "text": "比",
+        "start": 7.56,
+        "end": 7.74,
+        "type": "word",
+        "logprob": -0.0000023841830625315197
+      },
+      {
+        "text": "。",
+        "start": 7.74,
+        "end": 7.74,
+        "type": "word",
+        "logprob": -0.0005666795768775046
+      }
+    ],
+    "transcription_id": "Cls0gP1pOBIZD5oN6Icd",
+    "audio_duration_secs": 8.22
+  }
+}

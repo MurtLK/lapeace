@@ -1,0 +1,250 @@
+{
+  "clip_id": "pa_in_1548",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "pan",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:14.315Z",
+  "response": {
+    "language_code": "pan",
+    "language_probability": 1,
+    "text": "ਜਦੋਂ ਤੁਸੀਂ ਕਿਸੇ ਅਜਿਹੇ ਨੂੰ ਕਾਲ ਕਰਦੇ ਹੋ ਜੋ ਹਜ਼ਾਰਾਂ ਮੀਲ ਦੂਰ ਹੈ, ਤੁਸੀਂ ਸੈਟੇਲਾਈਟ ਵਰਤਦੇ ਹੋ।",
+    "words": [
+      {
+        "text": "ਜਦੋਂ",
+        "start": 0.96,
+        "end": 1.24,
+        "type": "word",
+        "logprob": -0.000778244944740436
+      },
+      {
+        "text": " ",
+        "start": 1.24,
+        "end": 1.26,
+        "type": "spacing",
+        "logprob": -0.0005361788207665086
+      },
+      {
+        "text": "ਤੁਸੀਂ",
+        "start": 1.28,
+        "end": 1.52,
+        "type": "word",
+        "logprob": -0.0005361788207665086
+      },
+      {
+        "text": " ",
+        "start": 1.52,
+        "end": 1.58,
+        "type": "spacing",
+        "logprob": -0.0005590544897131622
+      },
+      {
+        "text": "ਕਿਸੇ",
+        "start": 1.58,
+        "end": 1.84,
+        "type": "word",
+        "logprob": -0.00042066177036304
+      },
+      {
+        "text": " ",
+        "start": 1.84,
+        "end": 1.92,
+        "type": "spacing",
+        "logprob": -0.00006341733387671411
+      },
+      {
+        "text": "ਅਜਿਹੇ",
+        "start": 1.92,
+        "end": 2.34,
+        "type": "word",
+        "logprob": -0.0012015040667392896
+      },
+      {
+        "text": " ",
+        "start": 2.34,
+        "end": 2.4,
+        "type": "spacing",
+        "logprob": -0.000006556489552167477
+      },
+      {
+        "text": "ਨੂੰ",
+        "start": 2.4,
+        "end": 2.52,
+        "type": "word",
+        "logprob": -0.000006556489552167477
+      },
+      {
+        "text": " ",
+        "start": 2.52,
+        "end": 2.64,
+        "type": "spacing",
+        "logprob": -0.1272255778312683
+      },
+      {
+        "text": "ਕਾਲ",
+        "start": 2.64,
+        "end": 2.9,
+        "type": "word",
+        "logprob": -0.04252875753445551
+      },
+      {
+        "text": " ",
+        "start": 2.9,
+        "end": 3,
+        "type": "spacing",
+        "logprob": -0.00041166413575410843
+      },
+      {
+        "text": "ਕਰਦੇ",
+        "start": 3,
+        "end": 3.32,
+        "type": "word",
+        "logprob": -0.00020690495034614287
+      },
+      {
+        "text": " ",
+        "start": 3.32,
+        "end": 3.4,
+        "type": "spacing",
+        "logprob": -0.0003438596613705158
+      },
+      {
+        "text": "ਹੋ",
+        "start": 3.4,
+        "end": 3.62,
+        "type": "word",
+        "logprob": -0.0003438596613705158
+      },
+      {
+        "text": " ",
+        "start": 3.62,
+        "end": 3.62,
+        "type": "spacing",
+        "logprob": -0.0032116996590048075
+      },
+      {
+        "text": "ਜੋ",
+        "start": 4.1,
+        "end": 4.2,
+        "type": "word",
+        "logprob": -0.0032116996590048075
+      },
+      {
+        "text": " ",
+        "start": 4.2,
+        "end": 4.28,
+        "type": "spacing",
+        "logprob": -0.000032066785934148356
+      },
+      {
+        "text": "ਹਜ਼ਾਰਾਂ",
+        "start": 4.3,
+        "end": 4.84,
+        "type": "word",
+        "logprob": -0.11772909310769007
+      },
+      {
+        "text": " ",
+        "start": 4.84,
+        "end": 4.9,
+        "type": "spacing",
+        "logprob": -0.00016485285595990717
+      },
+      {
+        "text": "ਮੀਲ",
+        "start": 4.9,
+        "end": 5.12,
+        "type": "word",
+        "logprob": -0.00016397877091852328
+      },
+      {
+        "text": " ",
+        "start": 5.12,
+        "end": 5.22,
+        "type": "spacing",
+        "logprob": -0.00028236693469807506
+      },
+      {
+        "text": "ਦੂਰ",
+        "start": 5.24,
+        "end": 5.48,
+        "type": "word",
+        "logprob": -0.00013477081180705378
+      },
+      {
+        "text": " ",
+        "start": 5.48,
+        "end": 5.56,
+        "type": "spacing",
+        "logprob": -0.00001156323378381785
+      },
+      {
+        "text": "ਹੈ,",
+        "start": 5.58,
+        "end": 5.8,
+        "type": "word",
+        "logprob": -0.002919081864092732
+      },
+      {
+        "text": " ",
+        "start": 5.8,
+        "end": 6.16,
+        "type": "spacing",
+        "logprob": -0.0005131834768690169
+      },
+      {
+        "text": "ਤੁਸੀਂ",
+        "start": 6.16,
+        "end": 6.44,
+        "type": "word",
+        "logprob": -0.0005131834768690169
+      },
+      {
+        "text": " ",
+        "start": 6.44,
+        "end": 6.52,
+        "type": "spacing",
+        "logprob": -0.014969399198889732
+      },
+      {
+        "text": "ਸੈਟੇਲਾਈਟ",
+        "start": 6.52,
+        "end": 7.2,
+        "type": "word",
+        "logprob": -0.011276724618255685
+      },
+      {
+        "text": " ",
+        "start": 7.2,
+        "end": 7.54,
+        "type": "spacing",
+        "logprob": -0.00009285972191719338
+      },
+      {
+        "text": "ਵਰਤਦੇ",
+        "start": 7.54,
+        "end": 8.02,
+        "type": "word",
+        "logprob": -0.00005528685269382549
+      },
+      {
+        "text": " ",
+        "start": 8.02,
+        "end": 8.039,
+        "type": "spacing",
+        "logprob": -0.0000760526381782256
+      },
+      {
+        "text": "ਹੋ।",
+        "start": 8.039,
+        "end": 8.28,
+        "type": "word",
+        "logprob": -0.0020548907098903633
+      }
+    ],
+    "transcription_id": "LtqHd0JGMRln3ytOS9oc",
+    "audio_duration_secs": 9.18
+  }
+}

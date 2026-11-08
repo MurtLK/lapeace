@@ -1,0 +1,285 @@
+{
+  "clip_id": "cmn_hans_cn_1605",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "zho",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:58.226Z",
+  "response": {
+    "language_code": "zho",
+    "language_probability": 1,
+    "text": "因为远离大陆，哺乳动物无法长途跋涉而来，使得巨龟成为科隆群岛主要的食草动物。",
+    "words": [
+      {
+        "text": "因",
+        "start": 0.74,
+        "end": 0.84,
+        "type": "word",
+        "logprob": -0.000017165990357170813
+      },
+      {
+        "text": "为",
+        "start": 0.84,
+        "end": 0.98,
+        "type": "word",
+        "logprob": -0.000017165990357170813
+      },
+      {
+        "text": "远",
+        "start": 0.98,
+        "end": 1.16,
+        "type": "word",
+        "logprob": -0.000011801649634435307
+      },
+      {
+        "text": "离",
+        "start": 1.16,
+        "end": 1.3,
+        "type": "word",
+        "logprob": -0.000011801649634435307
+      },
+      {
+        "text": "大",
+        "start": 1.3,
+        "end": 1.46,
+        "type": "word",
+        "logprob": -0.0002989322238136083
+      },
+      {
+        "text": "陆",
+        "start": 1.46,
+        "end": 1.66,
+        "type": "word",
+        "logprob": -0.0002989322238136083
+      },
+      {
+        "text": "，",
+        "start": 1.66,
+        "end": 1.7,
+        "type": "word",
+        "logprob": -0.000010967194612021558
+      },
+      {
+        "text": "哺",
+        "start": 1.7,
+        "end": 1.84,
+        "type": "word",
+        "logprob": -0.006054394878447056
+      },
+      {
+        "text": "乳",
+        "start": 1.84,
+        "end": 1.98,
+        "type": "word",
+        "logprob": -0.006054394878447056
+      },
+      {
+        "text": "动",
+        "start": 1.98,
+        "end": 2.12,
+        "type": "word",
+        "logprob": -0.000029205850296420977
+      },
+      {
+        "text": "物",
+        "start": 2.12,
+        "end": 2.26,
+        "type": "word",
+        "logprob": -0.000029205850296420977
+      },
+      {
+        "text": "无",
+        "start": 2.26,
+        "end": 2.38,
+        "type": "word",
+        "logprob": -0.000048040190449682996
+      },
+      {
+        "text": "法",
+        "start": 2.38,
+        "end": 2.56,
+        "type": "word",
+        "logprob": -0.000048040190449682996
+      },
+      {
+        "text": "长",
+        "start": 2.56,
+        "end": 2.72,
+        "type": "word",
+        "logprob": -0.00021217002358753234
+      },
+      {
+        "text": "途",
+        "start": 2.72,
+        "end": 2.86,
+        "type": "word",
+        "logprob": -0.00020323118951637298
+      },
+      {
+        "text": "跋",
+        "start": 2.86,
+        "end": 3,
+        "type": "word",
+        "logprob": -0.023651495575904846
+      },
+      {
+        "text": "涉",
+        "start": 3,
+        "end": 3.16,
+        "type": "word",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": "而",
+        "start": 3.16,
+        "end": 3.3,
+        "type": "word",
+        "logprob": -0.0004010588163509965
+      },
+      {
+        "text": "来",
+        "start": 3.3,
+        "end": 3.42,
+        "type": "word",
+        "logprob": -0.0004010588163509965
+      },
+      {
+        "text": "，",
+        "start": 3.48,
+        "end": 3.5,
+        "type": "word",
+        "logprob": -0.000012159273865108844
+      },
+      {
+        "text": "使",
+        "start": 3.5,
+        "end": 3.64,
+        "type": "word",
+        "logprob": -0.000007390948667307384
+      },
+      {
+        "text": "得",
+        "start": 3.64,
+        "end": 3.8,
+        "type": "word",
+        "logprob": -0.000007390948667307384
+      },
+      {
+        "text": "巨",
+        "start": 3.8,
+        "end": 3.96,
+        "type": "word",
+        "logprob": -0.0009470268851146102
+      },
+      {
+        "text": "龟",
+        "start": 3.96,
+        "end": 4.12,
+        "type": "word",
+        "logprob": -0.05828133597970009
+      },
+      {
+        "text": "成",
+        "start": 4.12,
+        "end": 4.28,
+        "type": "word",
+        "logprob": -0.000025510462364763953
+      },
+      {
+        "text": "为",
+        "start": 4.28,
+        "end": 4.42,
+        "type": "word",
+        "logprob": -0.000025510462364763953
+      },
+      {
+        "text": "科",
+        "start": 4.42,
+        "end": 4.56,
+        "type": "word",
+        "logprob": -0.24896486103534698
+      },
+      {
+        "text": "隆",
+        "start": 4.56,
+        "end": 4.74,
+        "type": "word",
+        "logprob": -0.0004941195948049426
+      },
+      {
+        "text": "群",
+        "start": 4.74,
+        "end": 4.92,
+        "type": "word",
+        "logprob": -0.0008137490367516875
+      },
+      {
+        "text": "岛",
+        "start": 4.92,
+        "end": 4.92,
+        "type": "word",
+        "logprob": -0.0009120118920691311
+      },
+      {
+        "text": "主",
+        "start": 4.92,
+        "end": 4.92,
+        "type": "word",
+        "logprob": -0.041798803955316544
+      },
+      {
+        "text": "要",
+        "start": 5.74,
+        "end": 5.9,
+        "type": "word",
+        "logprob": -0.041798803955316544
+      },
+      {
+        "text": "的",
+        "start": 5.9,
+        "end": 6.06,
+        "type": "word",
+        "logprob": -0.041798803955316544
+      },
+      {
+        "text": "食",
+        "start": 6.06,
+        "end": 6.2,
+        "type": "word",
+        "logprob": -0.0013503251830115914
+      },
+      {
+        "text": "草",
+        "start": 6.2,
+        "end": 6.38,
+        "type": "word",
+        "logprob": -0.0000247952248173533
+      },
+      {
+        "text": "动",
+        "start": 6.38,
+        "end": 6.54,
+        "type": "word",
+        "logprob": -0.0013574680779129267
+      },
+      {
+        "text": "物",
+        "start": 6.54,
+        "end": 6.7,
+        "type": "word",
+        "logprob": -0.0013574680779129267
+      },
+      {
+        "text": "。",
+        "start": 6.7,
+        "end": 6.7,
+        "type": "word",
+        "logprob": -0.000004887569048150908
+      }
+    ],
+    "transcription_id": "t7ySTkZjGwa8aBfgHjod",
+    "audio_duration_secs": 7.44
+  }
+}

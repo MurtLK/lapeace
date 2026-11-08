@@ -1,0 +1,222 @@
+{
+  "clip_id": "en_us_1521",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "eng",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:32.870Z",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1,
+    "text": "The satellite in space gets the call and then reflects it back down almost instantly.",
+    "words": [
+      {
+        "text": "The",
+        "start": 0.86,
+        "end": 0.96,
+        "type": "word",
+        "logprob": -0.000004529942543740617
+      },
+      {
+        "text": " ",
+        "start": 0.96,
+        "end": 1,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "satellite",
+        "start": 1,
+        "end": 1.4,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": " ",
+        "start": 1.4,
+        "end": 1.44,
+        "type": "spacing",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "in",
+        "start": 1.44,
+        "end": 1.54,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": " ",
+        "start": 1.54,
+        "end": 1.6,
+        "type": "spacing",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "space",
+        "start": 1.6,
+        "end": 1.9,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": " ",
+        "start": 1.9,
+        "end": 2,
+        "type": "spacing",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": "gets",
+        "start": 2,
+        "end": 2.16,
+        "type": "word",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": " ",
+        "start": 2.16,
+        "end": 2.2,
+        "type": "spacing",
+        "logprob": -0.0000029802276912960224
+      },
+      {
+        "text": "the",
+        "start": 2.2,
+        "end": 2.28,
+        "type": "word",
+        "logprob": -0.0000029802276912960224
+      },
+      {
+        "text": " ",
+        "start": 2.28,
+        "end": 2.32,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "call",
+        "start": 2.32,
+        "end": 2.54,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 2.54,
+        "end": 2.58,
+        "type": "spacing",
+        "logprob": -0.000015735502529423684
+      },
+      {
+        "text": "and",
+        "start": 2.58,
+        "end": 2.66,
+        "type": "word",
+        "logprob": -0.000015735502529423684
+      },
+      {
+        "text": " ",
+        "start": 2.66,
+        "end": 2.7,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "then",
+        "start": 2.7,
+        "end": 2.8,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 2.8,
+        "end": 2.84,
+        "type": "spacing",
+        "logprob": -0.00010477947944309562
+      },
+      {
+        "text": "reflects",
+        "start": 2.84,
+        "end": 3.14,
+        "type": "word",
+        "logprob": -0.00010477947944309562
+      },
+      {
+        "text": " ",
+        "start": 3.14,
+        "end": 3.18,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "it",
+        "start": 3.18,
+        "end": 3.26,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 3.26,
+        "end": 3.3,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "back",
+        "start": 3.3,
+        "end": 3.5,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 3.5,
+        "end": 3.54,
+        "type": "spacing",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": "down",
+        "start": 3.54,
+        "end": 3.8,
+        "type": "word",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": " ",
+        "start": 3.8,
+        "end": 3.86,
+        "type": "spacing",
+        "logprob": -0.000027656173188006505
+      },
+      {
+        "text": "almost",
+        "start": 3.86,
+        "end": 4.16,
+        "type": "word",
+        "logprob": -0.000027656173188006505
+      },
+      {
+        "text": " ",
+        "start": 4.16,
+        "end": 4.22,
+        "type": "spacing",
+        "logprob": -0.000005245195097813848
+      },
+      {
+        "text": "instantly.",
+        "start": 4.24,
+        "end": 4.74,
+        "type": "word",
+        "logprob": -0.0020589340355400055
+      }
+    ],
+    "transcription_id": "O3AkYuSwcWsguTkBLPVZ",
+    "audio_duration_secs": 5.52
+  }
+}

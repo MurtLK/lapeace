@@ -1,0 +1,166 @@
+{
+  "clip_id": "ar_eg_1543",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "ara",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:22.203Z",
+  "response": {
+    "language_code": "ara",
+    "language_probability": 1,
+    "text": "لقد زار المريض نيجيريا حيث سُجلت بعض حالات الإصابة بفيروس إيبولا.",
+    "words": [
+      {
+        "text": "لقد",
+        "start": 0.38,
+        "end": 0.66,
+        "type": "word",
+        "logprob": -0.0001419235672983632
+      },
+      {
+        "text": " ",
+        "start": 0.66,
+        "end": 0.7,
+        "type": "spacing",
+        "logprob": -0.2905159592628479
+      },
+      {
+        "text": "زار",
+        "start": 0.7,
+        "end": 0.84,
+        "type": "word",
+        "logprob": -0.09685955412229912
+      },
+      {
+        "text": " ",
+        "start": 0.84,
+        "end": 0.92,
+        "type": "spacing",
+        "logprob": -0.00007390703103737906
+      },
+      {
+        "text": "المريض",
+        "start": 0.92,
+        "end": 1.36,
+        "type": "word",
+        "logprob": -0.00005709947981813457
+      },
+      {
+        "text": " ",
+        "start": 1.36,
+        "end": 1.4,
+        "type": "spacing",
+        "logprob": -0.003329093800857663
+      },
+      {
+        "text": "نيجيريا",
+        "start": 1.4,
+        "end": 1.94,
+        "type": "word",
+        "logprob": -0.001203641328694565
+      },
+      {
+        "text": " ",
+        "start": 1.94,
+        "end": 2.22,
+        "type": "spacing",
+        "logprob": -0.005243833642452955
+      },
+      {
+        "text": "حيث",
+        "start": 2.22,
+        "end": 2.38,
+        "type": "word",
+        "logprob": -0.005243833642452955
+      },
+      {
+        "text": " ",
+        "start": 2.38,
+        "end": 2.48,
+        "type": "spacing",
+        "logprob": -0.25859102606773376
+      },
+      {
+        "text": "سُجلت",
+        "start": 2.48,
+        "end": 2.88,
+        "type": "word",
+        "logprob": -0.1168580774217844
+      },
+      {
+        "text": " ",
+        "start": 2.88,
+        "end": 2.92,
+        "type": "spacing",
+        "logprob": -0.0002775999018922448
+      },
+      {
+        "text": "بعض",
+        "start": 2.92,
+        "end": 3.12,
+        "type": "word",
+        "logprob": -0.0002775999018922448
+      },
+      {
+        "text": " ",
+        "start": 3.12,
+        "end": 3.18,
+        "type": "spacing",
+        "logprob": -0.0010946955299004912
+      },
+      {
+        "text": "حالات",
+        "start": 3.18,
+        "end": 3.52,
+        "type": "word",
+        "logprob": -0.0010946955299004912
+      },
+      {
+        "text": " ",
+        "start": 3.52,
+        "end": 3.54,
+        "type": "spacing",
+        "logprob": -0.0035778575111180544
+      },
+      {
+        "text": "الإصابة",
+        "start": 3.54,
+        "end": 3.96,
+        "type": "word",
+        "logprob": -0.002045511799094259
+      },
+      {
+        "text": " ",
+        "start": 3.96,
+        "end": 4.019,
+        "type": "spacing",
+        "logprob": -0.010888565331697464
+      },
+      {
+        "text": "بفيروس",
+        "start": 4.019,
+        "end": 4.48,
+        "type": "word",
+        "logprob": -0.003666555101517588
+      },
+      {
+        "text": " ",
+        "start": 4.48,
+        "end": 4.5,
+        "type": "spacing",
+        "logprob": -0.0010808822698891163
+      },
+      {
+        "text": "إيبولا.",
+        "start": 4.5,
+        "end": 4.96,
+        "type": "word",
+        "logprob": -0.008861363374827695
+      }
+    ],
+    "transcription_id": "nwiYLBc3eZtbusIe5CLi",
+    "audio_duration_secs": 5.76
+  }
+}

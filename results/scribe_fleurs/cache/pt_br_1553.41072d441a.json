@@ -1,0 +1,264 @@
+{
+  "clip_id": "pt_br_1553",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "por",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:06.077Z",
+  "response": {
+    "language_code": "por",
+    "language_probability": 1,
+    "text": "O Natal é um dos feriados mais importantes do cristianismo e é celebrado como o aniversário de Jesus.",
+    "words": [
+      {
+        "text": "O",
+        "start": 1.28,
+        "end": 1.34,
+        "type": "word",
+        "logprob": -0.000029682672902708873
+      },
+      {
+        "text": " ",
+        "start": 1.34,
+        "end": 1.38,
+        "type": "spacing",
+        "logprob": -0.0017070496687665582
+      },
+      {
+        "text": "Natal",
+        "start": 1.38,
+        "end": 1.88,
+        "type": "word",
+        "logprob": -0.0017070496687665582
+      },
+      {
+        "text": " ",
+        "start": 1.88,
+        "end": 1.88,
+        "type": "spacing",
+        "logprob": -0.0002964295563288033
+      },
+      {
+        "text": "é",
+        "start": 2.46,
+        "end": 2.52,
+        "type": "word",
+        "logprob": -0.0002964295563288033
+      },
+      {
+        "text": " ",
+        "start": 2.52,
+        "end": 2.56,
+        "type": "spacing",
+        "logprob": -0.00003182837463100441
+      },
+      {
+        "text": "um",
+        "start": 2.56,
+        "end": 2.6,
+        "type": "word",
+        "logprob": -0.00003182837463100441
+      },
+      {
+        "text": " ",
+        "start": 2.6,
+        "end": 2.62,
+        "type": "spacing",
+        "logprob": -0.000008821448318485636
+      },
+      {
+        "text": "dos",
+        "start": 2.62,
+        "end": 2.74,
+        "type": "word",
+        "logprob": -0.000008821448318485636
+      },
+      {
+        "text": " ",
+        "start": 2.74,
+        "end": 2.78,
+        "type": "spacing",
+        "logprob": -0.000004529942543740617
+      },
+      {
+        "text": "feriados",
+        "start": 2.78,
+        "end": 3.16,
+        "type": "word",
+        "logprob": -0.0000037848876104362716
+      },
+      {
+        "text": " ",
+        "start": 3.16,
+        "end": 3.26,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "mais",
+        "start": 3.26,
+        "end": 3.44,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 3.44,
+        "end": 3.5,
+        "type": "spacing",
+        "logprob": -0.000028967437174287625
+      },
+      {
+        "text": "importantes",
+        "start": 3.5,
+        "end": 4.12,
+        "type": "word",
+        "logprob": -0.000028967437174287625
+      },
+      {
+        "text": " ",
+        "start": 4.12,
+        "end": 4.16,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "do",
+        "start": 4.16,
+        "end": 4.22,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": " ",
+        "start": 4.22,
+        "end": 4.28,
+        "type": "spacing",
+        "logprob": -0.17977403104305267
+      },
+      {
+        "text": "cristianismo",
+        "start": 4.28,
+        "end": 5.06,
+        "type": "word",
+        "logprob": -0.11985316870413953
+      },
+      {
+        "text": " ",
+        "start": 5.06,
+        "end": 5.06,
+        "type": "spacing",
+        "logprob": -0.000005483612312673358
+      },
+      {
+        "text": "e",
+        "start": 5.64,
+        "end": 5.7,
+        "type": "word",
+        "logprob": -0.000005483612312673358
+      },
+      {
+        "text": " ",
+        "start": 5.7,
+        "end": 5.74,
+        "type": "spacing",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": "é",
+        "start": 5.74,
+        "end": 5.82,
+        "type": "word",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": " ",
+        "start": 5.82,
+        "end": 5.88,
+        "type": "spacing",
+        "logprob": -0.0008276851149275899
+      },
+      {
+        "text": "celebrado",
+        "start": 5.88,
+        "end": 6.48,
+        "type": "word",
+        "logprob": -0.0008276851149275899
+      },
+      {
+        "text": " ",
+        "start": 6.48,
+        "end": 6.52,
+        "type": "spacing",
+        "logprob": -0.000005125986263010418
+      },
+      {
+        "text": "como",
+        "start": 6.52,
+        "end": 6.68,
+        "type": "word",
+        "logprob": -0.000005125986263010418
+      },
+      {
+        "text": " ",
+        "start": 6.68,
+        "end": 6.7,
+        "type": "spacing",
+        "logprob": -0.011199232190847397
+      },
+      {
+        "text": "o",
+        "start": 6.7,
+        "end": 6.72,
+        "type": "word",
+        "logprob": -0.011199232190847397
+      },
+      {
+        "text": " ",
+        "start": 6.72,
+        "end": 6.78,
+        "type": "spacing",
+        "logprob": -0.0001399419124936685
+      },
+      {
+        "text": "aniversário",
+        "start": 6.78,
+        "end": 7.5,
+        "type": "word",
+        "logprob": -0.0001399419124936685
+      },
+      {
+        "text": " ",
+        "start": 7.5,
+        "end": 7.56,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "de",
+        "start": 7.56,
+        "end": 7.66,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 7.66,
+        "end": 7.7,
+        "type": "spacing",
+        "logprob": -0.000004172316494077677
+      },
+      {
+        "text": "Jesus.",
+        "start": 7.7,
+        "end": 8.26,
+        "type": "word",
+        "logprob": -0.00005947601804715911
+      }
+    ],
+    "transcription_id": "gHgUhbK5S62lepqPaz37",
+    "audio_duration_secs": 9.48
+  }
+}

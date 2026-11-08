@@ -1,0 +1,474 @@
+{
+  "clip_id": "hi_in_1574",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "hin",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:52.687Z",
+  "response": {
+    "language_code": "hin",
+    "language_probability": 1,
+    "text": "सर्दी का मौसम भ्रामक तौर से ठंडा हो सकता है। तापमान शायद ही कभी बर्फीला हो, लेकिन हवा और नमी के गठबंधन से थर्मामीटर के तापमान से अधिक ठंड महसूस हो सकती है।",
+    "words": [
+      {
+        "text": "सर्दी",
+        "start": 0.4,
+        "end": 0.7,
+        "type": "word",
+        "logprob": -0.00832999348640442
+      },
+      {
+        "text": " ",
+        "start": 0.7,
+        "end": 0.78,
+        "type": "spacing",
+        "logprob": -0.00003135155202471651
+      },
+      {
+        "text": "का",
+        "start": 0.78,
+        "end": 0.92,
+        "type": "word",
+        "logprob": -0.00003135155202471651
+      },
+      {
+        "text": " ",
+        "start": 0.92,
+        "end": 0.96,
+        "type": "spacing",
+        "logprob": -0.00009095255518332124
+      },
+      {
+        "text": "मौसम",
+        "start": 0.96,
+        "end": 1.4,
+        "type": "word",
+        "logprob": -0.00009095255518332124
+      },
+      {
+        "text": " ",
+        "start": 1.4,
+        "end": 1.48,
+        "type": "spacing",
+        "logprob": -0.04826398193836212
+      },
+      {
+        "text": "भ्रामक",
+        "start": 1.48,
+        "end": 1.92,
+        "type": "word",
+        "logprob": -0.017101285663860228
+      },
+      {
+        "text": " ",
+        "start": 1.92,
+        "end": 2.02,
+        "type": "spacing",
+        "logprob": -0.008078637532889843
+      },
+      {
+        "text": "तौर",
+        "start": 2.02,
+        "end": 2.28,
+        "type": "word",
+        "logprob": -0.008078637532889843
+      },
+      {
+        "text": " ",
+        "start": 2.28,
+        "end": 2.4,
+        "type": "spacing",
+        "logprob": -0.0009160612826235592
+      },
+      {
+        "text": "से",
+        "start": 2.4,
+        "end": 2.56,
+        "type": "word",
+        "logprob": -0.0009160612826235592
+      },
+      {
+        "text": " ",
+        "start": 2.56,
+        "end": 2.7,
+        "type": "spacing",
+        "logprob": -0.0002790300059132278
+      },
+      {
+        "text": "ठंडा",
+        "start": 2.7,
+        "end": 3,
+        "type": "word",
+        "logprob": -0.0002790300059132278
+      },
+      {
+        "text": " ",
+        "start": 3,
+        "end": 3.06,
+        "type": "spacing",
+        "logprob": -0.000004529942543740617
+      },
+      {
+        "text": "हो",
+        "start": 3.06,
+        "end": 3.16,
+        "type": "word",
+        "logprob": -0.000004529942543740617
+      },
+      {
+        "text": " ",
+        "start": 3.16,
+        "end": 3.26,
+        "type": "spacing",
+        "logprob": -0.00001597391747054644
+      },
+      {
+        "text": "सकता",
+        "start": 3.26,
+        "end": 3.52,
+        "type": "word",
+        "logprob": -0.00001597391747054644
+      },
+      {
+        "text": " ",
+        "start": 3.52,
+        "end": 3.62,
+        "type": "spacing",
+        "logprob": -0.00002539125671319198
+      },
+      {
+        "text": "है।",
+        "start": 3.62,
+        "end": 3.96,
+        "type": "word",
+        "logprob": -0.0007985795564309228
+      },
+      {
+        "text": " ",
+        "start": 3.96,
+        "end": 4,
+        "type": "spacing",
+        "logprob": -0.00025876989820972085
+      },
+      {
+        "text": "तापमान",
+        "start": 4,
+        "end": 4.44,
+        "type": "word",
+        "logprob": -0.00025876989820972085
+      },
+      {
+        "text": " ",
+        "start": 4.44,
+        "end": 4.56,
+        "type": "spacing",
+        "logprob": -0.0001299296854995191
+      },
+      {
+        "text": "शायद",
+        "start": 4.56,
+        "end": 4.9,
+        "type": "word",
+        "logprob": -0.0001299296854995191
+      },
+      {
+        "text": " ",
+        "start": 4.9,
+        "end": 4.96,
+        "type": "spacing",
+        "logprob": -0.0000016689286894688848
+      },
+      {
+        "text": "ही",
+        "start": 4.96,
+        "end": 5.12,
+        "type": "word",
+        "logprob": -0.0000016689286894688848
+      },
+      {
+        "text": " ",
+        "start": 5.12,
+        "end": 5.64,
+        "type": "spacing",
+        "logprob": -0.000015139465176616795
+      },
+      {
+        "text": "कभी",
+        "start": 5.64,
+        "end": 5.96,
+        "type": "word",
+        "logprob": -0.000015139465176616795
+      },
+      {
+        "text": " ",
+        "start": 5.96,
+        "end": 6.32,
+        "type": "spacing",
+        "logprob": -0.21215909719467163
+      },
+      {
+        "text": "बर्फीला",
+        "start": 6.32,
+        "end": 6.86,
+        "type": "word",
+        "logprob": -0.0991365373483859
+      },
+      {
+        "text": " ",
+        "start": 6.86,
+        "end": 6.92,
+        "type": "spacing",
+        "logprob": -0.000036000557884108275
+      },
+      {
+        "text": "हो,",
+        "start": 6.92,
+        "end": 7.1,
+        "type": "word",
+        "logprob": -0.003899251920908379
+      },
+      {
+        "text": " ",
+        "start": 7.1,
+        "end": 7.24,
+        "type": "spacing",
+        "logprob": -0.00004136476854910143
+      },
+      {
+        "text": "लेकिन",
+        "start": 7.24,
+        "end": 7.66,
+        "type": "word",
+        "logprob": -0.00004136476854910143
+      },
+      {
+        "text": " ",
+        "start": 7.66,
+        "end": 7.88,
+        "type": "spacing",
+        "logprob": -0.00003909988299710676
+      },
+      {
+        "text": "हवा",
+        "start": 7.88,
+        "end": 8.2,
+        "type": "word",
+        "logprob": -0.00003909988299710676
+      },
+      {
+        "text": " ",
+        "start": 8.2,
+        "end": 8.5,
+        "type": "spacing",
+        "logprob": -0.000007629365427419543
+      },
+      {
+        "text": "और",
+        "start": 8.5,
+        "end": 8.66,
+        "type": "word",
+        "logprob": -0.000007629365427419543
+      },
+      {
+        "text": " ",
+        "start": 8.66,
+        "end": 8.82,
+        "type": "spacing",
+        "logprob": -0.004879115615040064
+      },
+      {
+        "text": "नमी",
+        "start": 8.82,
+        "end": 9.08,
+        "type": "word",
+        "logprob": -0.004879115615040064
+      },
+      {
+        "text": " ",
+        "start": 9.08,
+        "end": 9.12,
+        "type": "spacing",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": "के",
+        "start": 9.48,
+        "end": 9.62,
+        "type": "word",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": " ",
+        "start": 9.62,
+        "end": 9.76,
+        "type": "spacing",
+        "logprob": -0.030796511098742485
+      },
+      {
+        "text": "गठबंधन",
+        "start": 9.76,
+        "end": 10.44,
+        "type": "word",
+        "logprob": -0.030796511098742485
+      },
+      {
+        "text": " ",
+        "start": 10.44,
+        "end": 10.62,
+        "type": "spacing",
+        "logprob": -0.000018358061424805783
+      },
+      {
+        "text": "से",
+        "start": 10.62,
+        "end": 10.74,
+        "type": "word",
+        "logprob": -0.000018358061424805783
+      },
+      {
+        "text": " ",
+        "start": 10.74,
+        "end": 10.86,
+        "type": "spacing",
+        "logprob": -0.8614006638526917
+      },
+      {
+        "text": "थर्मामीटर",
+        "start": 10.86,
+        "end": 11.82,
+        "type": "word",
+        "logprob": -0.13724384498265055
+      },
+      {
+        "text": " ",
+        "start": 11.82,
+        "end": 12.26,
+        "type": "spacing",
+        "logprob": -0.000004887569048150908
+      },
+      {
+        "text": "के",
+        "start": 12.26,
+        "end": 12.36,
+        "type": "word",
+        "logprob": -0.000004887569048150908
+      },
+      {
+        "text": " ",
+        "start": 12.36,
+        "end": 12.58,
+        "type": "spacing",
+        "logprob": -0.00005674201020156033
+      },
+      {
+        "text": "तापमान",
+        "start": 12.58,
+        "end": 13.18,
+        "type": "word",
+        "logprob": -0.00005674201020156033
+      },
+      {
+        "text": " ",
+        "start": 13.18,
+        "end": 13.38,
+        "type": "spacing",
+        "logprob": -0.000007271740287251305
+      },
+      {
+        "text": "से",
+        "start": 13.38,
+        "end": 13.54,
+        "type": "word",
+        "logprob": -0.000007271740287251305
+      },
+      {
+        "text": " ",
+        "start": 13.54,
+        "end": 13.96,
+        "type": "spacing",
+        "logprob": -0.000041126360883936286
+      },
+      {
+        "text": "अधिक",
+        "start": 14.02,
+        "end": 14.36,
+        "type": "word",
+        "logprob": -0.000041126360883936286
+      },
+      {
+        "text": " ",
+        "start": 14.36,
+        "end": 14.5,
+        "type": "spacing",
+        "logprob": -0.4324713945388794
+      },
+      {
+        "text": "ठंड",
+        "start": 14.5,
+        "end": 14.8,
+        "type": "word",
+        "logprob": -0.4324713945388794
+      },
+      {
+        "text": " ",
+        "start": 14.8,
+        "end": 15.06,
+        "type": "spacing",
+        "logprob": -0.009820126928389072
+      },
+      {
+        "text": "महसूस",
+        "start": 15.06,
+        "end": 15.62,
+        "type": "word",
+        "logprob": -0.009820126928389072
+      },
+      {
+        "text": " ",
+        "start": 15.62,
+        "end": 16.16,
+        "type": "spacing",
+        "logprob": -0.00004577531944960356
+      },
+      {
+        "text": "हो",
+        "start": 16.16,
+        "end": 16.32,
+        "type": "word",
+        "logprob": -0.00004577531944960356
+      },
+      {
+        "text": " ",
+        "start": 16.32,
+        "end": 16.48,
+        "type": "spacing",
+        "logprob": -0.0000107287787614041
+      },
+      {
+        "text": "सकती",
+        "start": 16.48,
+        "end": 16.84,
+        "type": "word",
+        "logprob": -0.0000107287787614041
+      },
+      {
+        "text": " ",
+        "start": 16.84,
+        "end": 16.94,
+        "type": "spacing",
+        "logprob": -0.00006532455881824717
+      },
+      {
+        "text": "है।",
+        "start": 16.94,
+        "end": 17.24,
+        "type": "word",
+        "logprob": -0.010084802726244865
+      }
+    ],
+    "transcription_id": "bq33AjAiLa7r5jvmXTPl",
+    "audio_duration_secs": 18.06
+  }
+}

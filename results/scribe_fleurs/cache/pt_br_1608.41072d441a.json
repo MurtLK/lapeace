@@ -1,0 +1,390 @@
+{
+  "clip_id": "pt_br_1608",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "por",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:07.401Z",
+  "response": {
+    "language_code": "por",
+    "language_probability": 1,
+    "text": "\"Perdi minha irmã e a amiga dela, e no meu caminho havia duas pessoas deficientes em cadeiras de rodas, pessoas pulando e empurrando elas\", disse Armand Versace.",
+    "words": [
+      {
+        "text": "\"Perdi",
+        "start": 0.94,
+        "end": 1.32,
+        "type": "word",
+        "logprob": -0.007402960675790382
+      },
+      {
+        "text": " ",
+        "start": 1.32,
+        "end": 1.4,
+        "type": "spacing",
+        "logprob": -0.00016091958968900144
+      },
+      {
+        "text": "minha",
+        "start": 1.4,
+        "end": 1.66,
+        "type": "word",
+        "logprob": -0.00016091958968900144
+      },
+      {
+        "text": " ",
+        "start": 1.66,
+        "end": 1.68,
+        "type": "spacing",
+        "logprob": -0.00002074220174108632
+      },
+      {
+        "text": "irmã",
+        "start": 1.68,
+        "end": 2.06,
+        "type": "word",
+        "logprob": -0.00002074220174108632
+      },
+      {
+        "text": " ",
+        "start": 2.06,
+        "end": 2.32,
+        "type": "spacing",
+        "logprob": -0.0000016689286894688848
+      },
+      {
+        "text": "e",
+        "start": 2.32,
+        "end": 2.42,
+        "type": "word",
+        "logprob": -0.0000016689286894688848
+      },
+      {
+        "text": " ",
+        "start": 2.42,
+        "end": 2.44,
+        "type": "spacing",
+        "logprob": -0.00009655486064730212
+      },
+      {
+        "text": "a",
+        "start": 2.5,
+        "end": 2.52,
+        "type": "word",
+        "logprob": -0.00009655486064730212
+      },
+      {
+        "text": " ",
+        "start": 2.52,
+        "end": 2.52,
+        "type": "spacing",
+        "logprob": -0.000011086402082582936
+      },
+      {
+        "text": "amiga",
+        "start": 2.56,
+        "end": 2.9,
+        "type": "word",
+        "logprob": -0.000011086402082582936
+      },
+      {
+        "text": " ",
+        "start": 2.9,
+        "end": 2.98,
+        "type": "spacing",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": "dela,",
+        "start": 2.98,
+        "end": 3.28,
+        "type": "word",
+        "logprob": -0.000003910038230969803
+      },
+      {
+        "text": " ",
+        "start": 3.28,
+        "end": 3.66,
+        "type": "spacing",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": "e",
+        "start": 3.66,
+        "end": 3.7,
+        "type": "word",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": " ",
+        "start": 3.7,
+        "end": 3.74,
+        "type": "spacing",
+        "logprob": -0.00002396077979938127
+      },
+      {
+        "text": "no",
+        "start": 3.74,
+        "end": 3.82,
+        "type": "word",
+        "logprob": -0.00002396077979938127
+      },
+      {
+        "text": " ",
+        "start": 3.82,
+        "end": 3.86,
+        "type": "spacing",
+        "logprob": -0.00000250339189733495
+      },
+      {
+        "text": "meu",
+        "start": 3.86,
+        "end": 4,
+        "type": "word",
+        "logprob": -0.00000250339189733495
+      },
+      {
+        "text": " ",
+        "start": 4,
+        "end": 4.04,
+        "type": "spacing",
+        "logprob": -0.00001680836794548668
+      },
+      {
+        "text": "caminho",
+        "start": 4.04,
+        "end": 4.46,
+        "type": "word",
+        "logprob": -0.00001680836794548668
+      },
+      {
+        "text": " ",
+        "start": 4.46,
+        "end": 4.48,
+        "type": "spacing",
+        "logprob": -0.000008702239938429557
+      },
+      {
+        "text": "havia",
+        "start": 4.48,
+        "end": 4.76,
+        "type": "word",
+        "logprob": -0.000008702239938429557
+      },
+      {
+        "text": " ",
+        "start": 4.76,
+        "end": 4.84,
+        "type": "spacing",
+        "logprob": -0.0000016689286894688848
+      },
+      {
+        "text": "duas",
+        "start": 4.84,
+        "end": 5.1,
+        "type": "word",
+        "logprob": -0.0000016689286894688848
+      },
+      {
+        "text": " ",
+        "start": 5.1,
+        "end": 5.14,
+        "type": "spacing",
+        "logprob": -0.00000822540732769994
+      },
+      {
+        "text": "pessoas",
+        "start": 5.14,
+        "end": 5.62,
+        "type": "word",
+        "logprob": -0.00000822540732769994
+      },
+      {
+        "text": " ",
+        "start": 5.62,
+        "end": 5.64,
+        "type": "spacing",
+        "logprob": -0.001743821892887354
+      },
+      {
+        "text": "deficientes",
+        "start": 5.64,
+        "end": 6.38,
+        "type": "word",
+        "logprob": -0.001426763366907835
+      },
+      {
+        "text": " ",
+        "start": 6.38,
+        "end": 6.42,
+        "type": "spacing",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": "em",
+        "start": 6.42,
+        "end": 6.54,
+        "type": "word",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": " ",
+        "start": 6.54,
+        "end": 6.58,
+        "type": "spacing",
+        "logprob": -0.0025647147558629513
+      },
+      {
+        "text": "cadeiras",
+        "start": 6.58,
+        "end": 7.06,
+        "type": "word",
+        "logprob": -0.001291178787141689
+      },
+      {
+        "text": " ",
+        "start": 7.06,
+        "end": 7.1,
+        "type": "spacing",
+        "logprob": -0.000005364403477869928
+      },
+      {
+        "text": "de",
+        "start": 7.1,
+        "end": 7.2,
+        "type": "word",
+        "logprob": -0.000005364403477869928
+      },
+      {
+        "text": " ",
+        "start": 7.2,
+        "end": 7.24,
+        "type": "spacing",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": "rodas,",
+        "start": 7.24,
+        "end": 7.66,
+        "type": "word",
+        "logprob": -0.0000012914330890604713
+      },
+      {
+        "text": " ",
+        "start": 7.66,
+        "end": 8.06,
+        "type": "spacing",
+        "logprob": -0.00000834461570775602
+      },
+      {
+        "text": "pessoas",
+        "start": 8.06,
+        "end": 8.52,
+        "type": "word",
+        "logprob": -0.00000834461570775602
+      },
+      {
+        "text": " ",
+        "start": 8.52,
+        "end": 8.56,
+        "type": "spacing",
+        "logprob": -0.000007510157047363464
+      },
+      {
+        "text": "pulando",
+        "start": 8.56,
+        "end": 9.02,
+        "type": "word",
+        "logprob": -0.000003491117045736506
+      },
+      {
+        "text": " ",
+        "start": 9.02,
+        "end": 9.12,
+        "type": "spacing",
+        "logprob": -0.000024437606043647975
+      },
+      {
+        "text": "e",
+        "start": 9.12,
+        "end": 9.2,
+        "type": "word",
+        "logprob": -0.000024437606043647975
+      },
+      {
+        "text": " ",
+        "start": 9.2,
+        "end": 9.26,
+        "type": "spacing",
+        "logprob": -0.0000107287787614041
+      },
+      {
+        "text": "empurrando",
+        "start": 9.26,
+        "end": 9.82,
+        "type": "word",
+        "logprob": -0.00010341148035877267
+      },
+      {
+        "text": " ",
+        "start": 9.82,
+        "end": 9.88,
+        "type": "spacing",
+        "logprob": -0.000011086402082582936
+      },
+      {
+        "text": "elas\",",
+        "start": 9.88,
+        "end": 10.2,
+        "type": "word",
+        "logprob": -0.00013571490368728215
+      },
+      {
+        "text": " ",
+        "start": 10.2,
+        "end": 10.34,
+        "type": "spacing",
+        "logprob": -0.0000029802276912960224
+      },
+      {
+        "text": "disse",
+        "start": 10.34,
+        "end": 10.7,
+        "type": "word",
+        "logprob": -0.0000029802276912960224
+      },
+      {
+        "text": " ",
+        "start": 10.7,
+        "end": 10.78,
+        "type": "spacing",
+        "logprob": -0.04646556079387665
+      },
+      {
+        "text": "Armand",
+        "start": 10.78,
+        "end": 11.1,
+        "type": "word",
+        "logprob": -0.04646556079387665
+      },
+      {
+        "text": " ",
+        "start": 11.1,
+        "end": 11.2,
+        "type": "spacing",
+        "logprob": -0.00003802703940891661
+      },
+      {
+        "text": "Versace.",
+        "start": 11.2,
+        "end": 11.9,
+        "type": "word",
+        "logprob": -0.0001220083718180831
+      }
+    ],
+    "transcription_id": "imTBkO3puy8zju31tdOS",
+    "audio_duration_secs": 13.8
+  }
+}

@@ -1,0 +1,432 @@
+{
+  "clip_id": "pt_br_1514",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "por",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:05.068Z",
+  "response": {
+    "language_code": "por",
+    "language_probability": 1,
+    "text": "Quando os combates cessaram, após os feridos serem transportados para o hospital, cerca de 40 dos outros internos restantes permanecem no pátio e se recusam a voltar para suas celas.",
+    "words": [
+      {
+        "text": "Quando",
+        "start": 1,
+        "end": 1.22,
+        "type": "word",
+        "logprob": -0.000442407006630674
+      },
+      {
+        "text": " ",
+        "start": 1.22,
+        "end": 1.28,
+        "type": "spacing",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": "os",
+        "start": 1.28,
+        "end": 1.46,
+        "type": "word",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": " ",
+        "start": 1.46,
+        "end": 1.5,
+        "type": "spacing",
+        "logprob": -0.0007370378007180989
+      },
+      {
+        "text": "combates",
+        "start": 1.5,
+        "end": 1.88,
+        "type": "word",
+        "logprob": -0.00038789003519923426
+      },
+      {
+        "text": " ",
+        "start": 1.88,
+        "end": 1.92,
+        "type": "spacing",
+        "logprob": -0.001544950413517654
+      },
+      {
+        "text": "cessaram,",
+        "start": 1.92,
+        "end": 2.48,
+        "type": "word",
+        "logprob": -0.009477468912437972
+      },
+      {
+        "text": " ",
+        "start": 2.48,
+        "end": 2.56,
+        "type": "spacing",
+        "logprob": -0.0000023841830625315197
+      },
+      {
+        "text": "após",
+        "start": 2.56,
+        "end": 2.86,
+        "type": "word",
+        "logprob": -0.0000023841830625315197
+      },
+      {
+        "text": " ",
+        "start": 2.86,
+        "end": 2.88,
+        "type": "spacing",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "os",
+        "start": 2.88,
+        "end": 3.04,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": " ",
+        "start": 3.04,
+        "end": 3.08,
+        "type": "spacing",
+        "logprob": -0.0000033378546504536644
+      },
+      {
+        "text": "feridos",
+        "start": 3.08,
+        "end": 3.46,
+        "type": "word",
+        "logprob": -0.000002929138255629888
+      },
+      {
+        "text": " ",
+        "start": 3.46,
+        "end": 3.52,
+        "type": "spacing",
+        "logprob": -0.00008141662692651153
+      },
+      {
+        "text": "serem",
+        "start": 3.52,
+        "end": 3.76,
+        "type": "word",
+        "logprob": -0.00008141662692651153
+      },
+      {
+        "text": " ",
+        "start": 3.76,
+        "end": 3.8,
+        "type": "spacing",
+        "logprob": -0.00013851160474587232
+      },
+      {
+        "text": "transportados",
+        "start": 3.8,
+        "end": 4.52,
+        "type": "word",
+        "logprob": -0.00009695636128106763
+      },
+      {
+        "text": " ",
+        "start": 4.52,
+        "end": 4.56,
+        "type": "spacing",
+        "logprob": -0.0000010728830375228426
+      },
+      {
+        "text": "para",
+        "start": 4.56,
+        "end": 4.68,
+        "type": "word",
+        "logprob": -0.0000010728830375228426
+      },
+      {
+        "text": " ",
+        "start": 4.68,
+        "end": 4.7,
+        "type": "spacing",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": "o",
+        "start": 4.7,
+        "end": 4.72,
+        "type": "word",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": " ",
+        "start": 4.72,
+        "end": 4.74,
+        "type": "spacing",
+        "logprob": -0.000013351351299206726
+      },
+      {
+        "text": "hospital,",
+        "start": 4.74,
+        "end": 5.24,
+        "type": "word",
+        "logprob": -0.000013417577772795792
+      },
+      {
+        "text": " ",
+        "start": 5.24,
+        "end": 5.64,
+        "type": "spacing",
+        "logprob": -0.000007629365427419543
+      },
+      {
+        "text": "cerca",
+        "start": 5.64,
+        "end": 5.94,
+        "type": "word",
+        "logprob": -0.000007629365427419543
+      },
+      {
+        "text": " ",
+        "start": 5.94,
+        "end": 5.98,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "de",
+        "start": 5.98,
+        "end": 6.1,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": " ",
+        "start": 6.1,
+        "end": 6.14,
+        "type": "spacing",
+        "logprob": -0.07908438891172409
+      },
+      {
+        "text": "40",
+        "start": 6.36,
+        "end": 6.54,
+        "type": "word",
+        "logprob": -2.980231634808206e-7
+      },
+      {
+        "text": " ",
+        "start": 6.54,
+        "end": 6.58,
+        "type": "spacing",
+        "logprob": -0.00003683499380713329
+      },
+      {
+        "text": "dos",
+        "start": 6.58,
+        "end": 6.76,
+        "type": "word",
+        "logprob": -0.00003683499380713329
+      },
+      {
+        "text": " ",
+        "start": 6.76,
+        "end": 6.84,
+        "type": "spacing",
+        "logprob": -0.0005066303419880569
+      },
+      {
+        "text": "outros",
+        "start": 6.84,
+        "end": 7.22,
+        "type": "word",
+        "logprob": -0.0005066303419880569
+      },
+      {
+        "text": " ",
+        "start": 7.22,
+        "end": 7.3,
+        "type": "spacing",
+        "logprob": -0.0024227334652096033
+      },
+      {
+        "text": "internos",
+        "start": 7.3,
+        "end": 8.64,
+        "type": "word",
+        "logprob": -0.0024227334652096033
+      },
+      {
+        "text": " ",
+        "start": 8.64,
+        "end": 8.66,
+        "type": "spacing",
+        "logprob": -0.0008447177824564278
+      },
+      {
+        "text": "restantes",
+        "start": 8.66,
+        "end": 9.2,
+        "type": "word",
+        "logprob": -0.0008447177824564278
+      },
+      {
+        "text": " ",
+        "start": 9.2,
+        "end": 9.24,
+        "type": "spacing",
+        "logprob": -0.004082322586327791
+      },
+      {
+        "text": "permanecem",
+        "start": 9.24,
+        "end": 9.8,
+        "type": "word",
+        "logprob": -0.0032828804309247062
+      },
+      {
+        "text": " ",
+        "start": 9.8,
+        "end": 9.84,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "no",
+        "start": 9.84,
+        "end": 9.96,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": " ",
+        "start": 9.96,
+        "end": 10,
+        "type": "spacing",
+        "logprob": -0.000005006777428206988
+      },
+      {
+        "text": "pátio",
+        "start": 10,
+        "end": 10.32,
+        "type": "word",
+        "logprob": -0.000019645261954792658
+      },
+      {
+        "text": " ",
+        "start": 10.32,
+        "end": 10.34,
+        "type": "spacing",
+        "logprob": -0.0000023841830625315197
+      },
+      {
+        "text": "e",
+        "start": 10.38,
+        "end": 10.4,
+        "type": "word",
+        "logprob": -0.0000023841830625315197
+      },
+      {
+        "text": " ",
+        "start": 10.4,
+        "end": 10.48,
+        "type": "spacing",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": "se",
+        "start": 10.48,
+        "end": 10.54,
+        "type": "word",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": " ",
+        "start": 10.54,
+        "end": 10.58,
+        "type": "spacing",
+        "logprob": -0.023474285379052162
+      },
+      {
+        "text": "recusam",
+        "start": 10.58,
+        "end": 11.02,
+        "type": "word",
+        "logprob": -0.010093036373811108
+      },
+      {
+        "text": " ",
+        "start": 11.02,
+        "end": 11.06,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "a",
+        "start": 11.06,
+        "end": 11.12,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 11.12,
+        "end": 11.14,
+        "type": "spacing",
+        "logprob": -0.0001560327800689265
+      },
+      {
+        "text": "voltar",
+        "start": 11.16,
+        "end": 11.56,
+        "type": "word",
+        "logprob": -0.0001560327800689265
+      },
+      {
+        "text": " ",
+        "start": 11.56,
+        "end": 11.6,
+        "type": "spacing",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": "para",
+        "start": 11.6,
+        "end": 11.8,
+        "type": "word",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": " ",
+        "start": 11.8,
+        "end": 11.86,
+        "type": "spacing",
+        "logprob": -0.03804175928235054
+      },
+      {
+        "text": "suas",
+        "start": 11.86,
+        "end": 12.1,
+        "type": "word",
+        "logprob": -0.03804175928235054
+      },
+      {
+        "text": " ",
+        "start": 12.1,
+        "end": 12.16,
+        "type": "spacing",
+        "logprob": -0.0002553137019276619
+      },
+      {
+        "text": "celas.",
+        "start": 12.16,
+        "end": 12.66,
+        "type": "word",
+        "logprob": -0.0002459698007442057
+      }
+    ],
+    "transcription_id": "Ymcbif829PduDCcUfobw",
+    "audio_duration_secs": 14.22
+  }
+}

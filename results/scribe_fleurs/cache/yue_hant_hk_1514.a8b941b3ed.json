@@ -1,0 +1,320 @@
+{
+  "clip_id": "yue_hant_hk_1514",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "yue",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:26.534Z",
+  "response": {
+    "language_code": "yue",
+    "language_probability": 1,
+    "text": "伤员送往医院后，打斗停止。这时剩下的囚犯中约有 40 人留在庭院中，拒绝回去自己的牢房。",
+    "words": [
+      {
+        "text": "伤",
+        "start": 1.36,
+        "end": 1.48,
+        "type": "word",
+        "logprob": -0.033801138401031494
+      },
+      {
+        "text": "员",
+        "start": 1.48,
+        "end": 1.78,
+        "type": "word",
+        "logprob": -0.00068926892708987
+      },
+      {
+        "text": "送",
+        "start": 1.78,
+        "end": 2.06,
+        "type": "word",
+        "logprob": -0.0003034608089365065
+      },
+      {
+        "text": "往",
+        "start": 2.06,
+        "end": 2.36,
+        "type": "word",
+        "logprob": -0.000018000440832111053
+      },
+      {
+        "text": "医",
+        "start": 2.36,
+        "end": 2.6,
+        "type": "word",
+        "logprob": -0.00005352353764465079
+      },
+      {
+        "text": "院",
+        "start": 2.6,
+        "end": 2.88,
+        "type": "word",
+        "logprob": -0.00005352353764465079
+      },
+      {
+        "text": "后",
+        "start": 2.88,
+        "end": 3.18,
+        "type": "word",
+        "logprob": -0.00002777537883957848
+      },
+      {
+        "text": "，",
+        "start": 3.18,
+        "end": 3.64,
+        "type": "word",
+        "logprob": -0.01604103483259678
+      },
+      {
+        "text": "打",
+        "start": 3.64,
+        "end": 3.92,
+        "type": "word",
+        "logprob": -0.00004637133679352701
+      },
+      {
+        "text": "斗",
+        "start": 3.92,
+        "end": 4.18,
+        "type": "word",
+        "logprob": -0.00014435203047469258
+      },
+      {
+        "text": "停",
+        "start": 4.18,
+        "end": 4.52,
+        "type": "word",
+        "logprob": -0.000048636207793606445
+      },
+      {
+        "text": "止",
+        "start": 4.52,
+        "end": 4.76,
+        "type": "word",
+        "logprob": -0.000048636207793606445
+      },
+      {
+        "text": "。",
+        "start": 4.76,
+        "end": 4.76,
+        "type": "word",
+        "logprob": -0.006723282393068075
+      },
+      {
+        "text": "这",
+        "start": 5.4,
+        "end": 5.68,
+        "type": "word",
+        "logprob": -0.00037543877260759473
+      },
+      {
+        "text": "时",
+        "start": 5.68,
+        "end": 6,
+        "type": "word",
+        "logprob": -0.00037543877260759473
+      },
+      {
+        "text": "剩",
+        "start": 6,
+        "end": 6.3,
+        "type": "word",
+        "logprob": -0.43200382590293884
+      },
+      {
+        "text": "下",
+        "start": 6.3,
+        "end": 6.6,
+        "type": "word",
+        "logprob": -0.43200382590293884
+      },
+      {
+        "text": "的",
+        "start": 6.6,
+        "end": 6.84,
+        "type": "word",
+        "logprob": -0.43200382590293884
+      },
+      {
+        "text": "囚",
+        "start": 6.84,
+        "end": 7.18,
+        "type": "word",
+        "logprob": -0.00007795983401592821
+      },
+      {
+        "text": "犯",
+        "start": 7.18,
+        "end": 7.46,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "中",
+        "start": 7.46,
+        "end": 7.46,
+        "type": "word",
+        "logprob": -0.000263894529780373
+      },
+      {
+        "text": "约",
+        "start": 8.14,
+        "end": 8.38,
+        "type": "word",
+        "logprob": -0.1020531952381134
+      },
+      {
+        "text": "有",
+        "start": 8.38,
+        "end": 8.38,
+        "type": "word",
+        "logprob": -0.000003099436753473128
+      },
+      {
+        "text": " ",
+        "start": 8.38,
+        "end": 8.7,
+        "type": "spacing",
+        "logprob": -0.04900399222970009
+      },
+      {
+        "text": "40",
+        "start": 8.7,
+        "end": 9.2,
+        "type": "word",
+        "logprob": -5.364416608699685e-7
+      },
+      {
+        "text": " ",
+        "start": 9.2,
+        "end": 9.38,
+        "type": "spacing",
+        "logprob": -0.000027894584491150454
+      },
+      {
+        "text": "人",
+        "start": 9.38,
+        "end": 9.64,
+        "type": "word",
+        "logprob": -0.000027894584491150454
+      },
+      {
+        "text": "留",
+        "start": 9.64,
+        "end": 9.9,
+        "type": "word",
+        "logprob": -0.00009905801562126726
+      },
+      {
+        "text": "在",
+        "start": 9.9,
+        "end": 10.16,
+        "type": "word",
+        "logprob": -0.00009905801562126726
+      },
+      {
+        "text": "庭",
+        "start": 10.16,
+        "end": 10.4,
+        "type": "word",
+        "logprob": -0.000034450891689630225
+      },
+      {
+        "text": "院",
+        "start": 10.4,
+        "end": 10.68,
+        "type": "word",
+        "logprob": -0.0032261963933706284
+      },
+      {
+        "text": "中",
+        "start": 10.68,
+        "end": 10.92,
+        "type": "word",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": "，",
+        "start": 10.92,
+        "end": 11.42,
+        "type": "word",
+        "logprob": -0.0003816353273577988
+      },
+      {
+        "text": "拒",
+        "start": 11.42,
+        "end": 11.72,
+        "type": "word",
+        "logprob": -0.0000907141511561349
+      },
+      {
+        "text": "绝",
+        "start": 11.72,
+        "end": 12.02,
+        "type": "word",
+        "logprob": -0.0000907141511561349
+      },
+      {
+        "text": "回",
+        "start": 12.02,
+        "end": 12.26,
+        "type": "word",
+        "logprob": -0.010675700381398201
+      },
+      {
+        "text": "去",
+        "start": 12.26,
+        "end": 12.56,
+        "type": "word",
+        "logprob": -0.010675700381398201
+      },
+      {
+        "text": "自",
+        "start": 12.58,
+        "end": 12.76,
+        "type": "word",
+        "logprob": -0.0000027418097943154862
+      },
+      {
+        "text": "己",
+        "start": 12.76,
+        "end": 13,
+        "type": "word",
+        "logprob": -0.0000027418097943154862
+      },
+      {
+        "text": "的",
+        "start": 13,
+        "end": 13.24,
+        "type": "word",
+        "logprob": -0.0000027418097943154862
+      },
+      {
+        "text": "牢",
+        "start": 13.24,
+        "end": 13.48,
+        "type": "word",
+        "logprob": -0.0003120412293355912
+      },
+      {
+        "text": "房",
+        "start": 13.48,
+        "end": 13.74,
+        "type": "word",
+        "logprob": -0.000019907753085135482
+      },
+      {
+        "text": "。",
+        "start": 13.74,
+        "end": 13.74,
+        "type": "word",
+        "logprob": -0.0000015497195136049413
+      }
+    ],
+    "transcription_id": "Bny6aaWtOnS75dS4LGw5",
+    "audio_duration_secs": 15.48
+  }
+}

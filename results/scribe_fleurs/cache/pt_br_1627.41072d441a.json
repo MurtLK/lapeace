@@ -1,0 +1,334 @@
+{
+  "clip_id": "pt_br_1627",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "por",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:07.919Z",
+  "response": {
+    "language_code": "por",
+    "language_probability": 1,
+    "text": "A alimentação na Roma Antiga não incluía mantimentos originados da América e da Ásia para a Europa, assim como aconteceu nos séculos posteriores.",
+    "words": [
+      {
+        "text": "A",
+        "start": 0.7,
+        "end": 0.76,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 0.76,
+        "end": 0.78,
+        "type": "spacing",
+        "logprob": -0.00005221230458118953
+      },
+      {
+        "text": "alimentação",
+        "start": 0.8,
+        "end": 1.42,
+        "type": "word",
+        "logprob": -0.00005221230458118953
+      },
+      {
+        "text": " ",
+        "start": 1.42,
+        "end": 1.46,
+        "type": "spacing",
+        "logprob": -0.00008487341256113723
+      },
+      {
+        "text": "na",
+        "start": 1.46,
+        "end": 1.58,
+        "type": "word",
+        "logprob": -0.00008487341256113723
+      },
+      {
+        "text": " ",
+        "start": 1.58,
+        "end": 1.62,
+        "type": "spacing",
+        "logprob": -0.00010072677832795307
+      },
+      {
+        "text": "Roma",
+        "start": 1.62,
+        "end": 1.9,
+        "type": "word",
+        "logprob": -0.00010072677832795307
+      },
+      {
+        "text": " ",
+        "start": 1.9,
+        "end": 1.92,
+        "type": "spacing",
+        "logprob": -0.18038426339626312
+      },
+      {
+        "text": "Antiga",
+        "start": 1.92,
+        "end": 2.38,
+        "type": "word",
+        "logprob": -0.0901936814165083
+      },
+      {
+        "text": " ",
+        "start": 2.38,
+        "end": 2.42,
+        "type": "spacing",
+        "logprob": -0.00000250339189733495
+      },
+      {
+        "text": "não",
+        "start": 2.42,
+        "end": 2.54,
+        "type": "word",
+        "logprob": -0.00000250339189733495
+      },
+      {
+        "text": " ",
+        "start": 2.54,
+        "end": 2.58,
+        "type": "spacing",
+        "logprob": -0.00030155404238030314
+      },
+      {
+        "text": "incluía",
+        "start": 2.58,
+        "end": 3.02,
+        "type": "word",
+        "logprob": -0.00022598814497801607
+      },
+      {
+        "text": " ",
+        "start": 3.02,
+        "end": 3.06,
+        "type": "spacing",
+        "logprob": -0.00007664863369427621
+      },
+      {
+        "text": "mantimentos",
+        "start": 3.06,
+        "end": 3.7,
+        "type": "word",
+        "logprob": -0.000041906259866664186
+      },
+      {
+        "text": " ",
+        "start": 3.7,
+        "end": 3.76,
+        "type": "spacing",
+        "logprob": -0.00030214988510124385
+      },
+      {
+        "text": "originados",
+        "start": 3.76,
+        "end": 4.42,
+        "type": "word",
+        "logprob": -0.00019244776485720648
+      },
+      {
+        "text": " ",
+        "start": 4.42,
+        "end": 4.44,
+        "type": "spacing",
+        "logprob": -0.0000036954811548639555
+      },
+      {
+        "text": "da",
+        "start": 4.44,
+        "end": 4.52,
+        "type": "word",
+        "logprob": -0.0000036954811548639555
+      },
+      {
+        "text": " ",
+        "start": 4.52,
+        "end": 4.56,
+        "type": "spacing",
+        "logprob": -0.000014185804502631072
+      },
+      {
+        "text": "América",
+        "start": 4.56,
+        "end": 5.26,
+        "type": "word",
+        "logprob": -0.000014185804502631072
+      },
+      {
+        "text": " ",
+        "start": 5.26,
+        "end": 5.3,
+        "type": "spacing",
+        "logprob": -0.0000023841830625315197
+      },
+      {
+        "text": "e",
+        "start": 5.3,
+        "end": 5.34,
+        "type": "word",
+        "logprob": -0.0000023841830625315197
+      },
+      {
+        "text": " ",
+        "start": 5.34,
+        "end": 5.42,
+        "type": "spacing",
+        "logprob": -0.000005722029527532868
+      },
+      {
+        "text": "da",
+        "start": 5.42,
+        "end": 5.56,
+        "type": "word",
+        "logprob": -0.000005722029527532868
+      },
+      {
+        "text": " ",
+        "start": 5.56,
+        "end": 5.68,
+        "type": "spacing",
+        "logprob": -0.00034683887497521937
+      },
+      {
+        "text": "Ásia",
+        "start": 5.68,
+        "end": 5.94,
+        "type": "word",
+        "logprob": -0.00012399149636621587
+      },
+      {
+        "text": " ",
+        "start": 5.94,
+        "end": 5.98,
+        "type": "spacing",
+        "logprob": -0.000024914430468925275
+      },
+      {
+        "text": "para",
+        "start": 5.98,
+        "end": 6.1,
+        "type": "word",
+        "logprob": -0.000024914430468925275
+      },
+      {
+        "text": " ",
+        "start": 6.1,
+        "end": 6.12,
+        "type": "spacing",
+        "logprob": -0.002476127352565527
+      },
+      {
+        "text": "a",
+        "start": 6.12,
+        "end": 6.16,
+        "type": "word",
+        "logprob": -0.002476127352565527
+      },
+      {
+        "text": " ",
+        "start": 6.16,
+        "end": 6.18,
+        "type": "spacing",
+        "logprob": -0.00002372236667724792
+      },
+      {
+        "text": "Europa,",
+        "start": 6.18,
+        "end": 6.62,
+        "type": "word",
+        "logprob": -0.00004614845082479795
+      },
+      {
+        "text": " ",
+        "start": 6.62,
+        "end": 6.62,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "assim",
+        "start": 7.2,
+        "end": 7.42,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 7.42,
+        "end": 7.46,
+        "type": "spacing",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": "como",
+        "start": 7.46,
+        "end": 7.58,
+        "type": "word",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": " ",
+        "start": 7.58,
+        "end": 7.62,
+        "type": "spacing",
+        "logprob": -0.00005018585216021165
+      },
+      {
+        "text": "aconteceu",
+        "start": 7.62,
+        "end": 8.18,
+        "type": "word",
+        "logprob": -0.00005018585216021165
+      },
+      {
+        "text": " ",
+        "start": 8.18,
+        "end": 8.22,
+        "type": "spacing",
+        "logprob": -0.00005900685573578812
+      },
+      {
+        "text": "nos",
+        "start": 8.22,
+        "end": 8.36,
+        "type": "word",
+        "logprob": -0.00005900685573578812
+      },
+      {
+        "text": " ",
+        "start": 8.36,
+        "end": 8.4,
+        "type": "spacing",
+        "logprob": -0.000016093124941107817
+      },
+      {
+        "text": "séculos",
+        "start": 8.4,
+        "end": 8.78,
+        "type": "word",
+        "logprob": -0.000007663410932374453
+      },
+      {
+        "text": " ",
+        "start": 8.78,
+        "end": 8.9,
+        "type": "spacing",
+        "logprob": -0.00051771110156551
+      },
+      {
+        "text": "posteriores.",
+        "start": 8.9,
+        "end": 9.76,
+        "type": "word",
+        "logprob": -0.0005997633804023886
+      }
+    ],
+    "transcription_id": "0LYWjyKX1GHFJFQSgTrh",
+    "audio_duration_secs": 11.28
+  }
+}

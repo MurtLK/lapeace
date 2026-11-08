@@ -1,0 +1,222 @@
+{
+  "clip_id": "pl_pl_1521",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "pol",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:00.382Z",
+  "response": {
+    "language_code": "pol",
+    "language_probability": 1,
+    "text": "Połączenie trafia do satelity w przestrzeni kosmicznej, po czym niemal natychmiast odbija go z powrotem.",
+    "words": [
+      {
+        "text": "Połączenie",
+        "start": 0.8,
+        "end": 1.26,
+        "type": "word",
+        "logprob": -0.00015837176815693965
+      },
+      {
+        "text": " ",
+        "start": 1.26,
+        "end": 1.3,
+        "type": "spacing",
+        "logprob": -0.000028371408916427754
+      },
+      {
+        "text": "trafia",
+        "start": 1.3,
+        "end": 1.52,
+        "type": "word",
+        "logprob": -0.000018993745461178452
+      },
+      {
+        "text": " ",
+        "start": 1.52,
+        "end": 1.56,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "do",
+        "start": 1.56,
+        "end": 1.64,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 1.64,
+        "end": 1.68,
+        "type": "spacing",
+        "logprob": -0.00013565097469836473
+      },
+      {
+        "text": "satelity",
+        "start": 1.68,
+        "end": 2.14,
+        "type": "word",
+        "logprob": -0.00013568770555139054
+      },
+      {
+        "text": " ",
+        "start": 2.14,
+        "end": 2.16,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "w",
+        "start": 2.16,
+        "end": 2.2,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 2.2,
+        "end": 2.22,
+        "type": "spacing",
+        "logprob": -0.000001311301275563892
+      },
+      {
+        "text": "przestrzeni",
+        "start": 2.22,
+        "end": 2.62,
+        "type": "word",
+        "logprob": -0.000001701440107188484
+      },
+      {
+        "text": " ",
+        "start": 2.62,
+        "end": 2.66,
+        "type": "spacing",
+        "logprob": -0.00006770858453819528
+      },
+      {
+        "text": "kosmicznej,",
+        "start": 2.66,
+        "end": 3.18,
+        "type": "word",
+        "logprob": -0.00004833214577295373
+      },
+      {
+        "text": " ",
+        "start": 3.18,
+        "end": 3.52,
+        "type": "spacing",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "po",
+        "start": 3.52,
+        "end": 3.56,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": " ",
+        "start": 3.56,
+        "end": 3.62,
+        "type": "spacing",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": "czym",
+        "start": 3.62,
+        "end": 3.74,
+        "type": "word",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": " ",
+        "start": 3.74,
+        "end": 3.76,
+        "type": "spacing",
+        "logprob": -0.00000822540732769994
+      },
+      {
+        "text": "niemal",
+        "start": 3.76,
+        "end": 3.98,
+        "type": "word",
+        "logprob": -0.000005523341312615078
+      },
+      {
+        "text": " ",
+        "start": 3.98,
+        "end": 4,
+        "type": "spacing",
+        "logprob": -0.000002861018856492592
+      },
+      {
+        "text": "natychmiast",
+        "start": 4,
+        "end": 4.44,
+        "type": "word",
+        "logprob": -0.00000247087894225925
+      },
+      {
+        "text": " ",
+        "start": 4.44,
+        "end": 4.48,
+        "type": "spacing",
+        "logprob": -0.0011066034203395247
+      },
+      {
+        "text": "odbija",
+        "start": 4.48,
+        "end": 4.76,
+        "type": "word",
+        "logprob": -0.0006846530886832625
+      },
+      {
+        "text": " ",
+        "start": 4.76,
+        "end": 4.8,
+        "type": "spacing",
+        "logprob": -0.0000058412379075889476
+      },
+      {
+        "text": "go",
+        "start": 4.8,
+        "end": 4.86,
+        "type": "word",
+        "logprob": -0.0000058412379075889476
+      },
+      {
+        "text": " ",
+        "start": 4.86,
+        "end": 4.9,
+        "type": "spacing",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": "z",
+        "start": 4.9,
+        "end": 4.94,
+        "type": "word",
+        "logprob": -8.344646857949556e-7
+      },
+      {
+        "text": " ",
+        "start": 4.94,
+        "end": 4.96,
+        "type": "spacing",
+        "logprob": -0.000010847986231965479
+      },
+      {
+        "text": "powrotem.",
+        "start": 4.96,
+        "end": 5.44,
+        "type": "word",
+        "logprob": -0.03481551006780137
+      }
+    ],
+    "transcription_id": "JdYmq6ERnSPsr4aq2B4C",
+    "audio_duration_secs": 6.36
+  }
+}

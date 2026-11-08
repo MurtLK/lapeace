@@ -1,0 +1,334 @@
+{
+  "clip_id": "cmn_hans_cn_1629",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "zho",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:59.035Z",
+  "response": {
+    "language_code": "zho",
+    "language_probability": 1,
+    "text": "一些报道称官方宣布的死亡人数为8人，而据官方报道证实有多达30人受伤，但最终的数字尚未确定。",
+    "words": [
+      {
+        "text": "一",
+        "start": 0.84,
+        "end": 0.92,
+        "type": "word",
+        "logprob": -0.00001549708758830093
+      },
+      {
+        "text": "些",
+        "start": 0.92,
+        "end": 1.08,
+        "type": "word",
+        "logprob": -0.00001549708758830093
+      },
+      {
+        "text": "报",
+        "start": 1.08,
+        "end": 1.22,
+        "type": "word",
+        "logprob": -0.12823086977005005
+      },
+      {
+        "text": "道",
+        "start": 1.22,
+        "end": 1.38,
+        "type": "word",
+        "logprob": -0.12823086977005005
+      },
+      {
+        "text": "称",
+        "start": 1.38,
+        "end": 1.54,
+        "type": "word",
+        "logprob": -0.00003242440288886428
+      },
+      {
+        "text": "官",
+        "start": 1.54,
+        "end": 1.74,
+        "type": "word",
+        "logprob": -0.01815113238990307
+      },
+      {
+        "text": "方",
+        "start": 1.74,
+        "end": 1.92,
+        "type": "word",
+        "logprob": -0.01815113238990307
+      },
+      {
+        "text": "宣",
+        "start": 1.92,
+        "end": 2.14,
+        "type": "word",
+        "logprob": -0.0003256267518736422
+      },
+      {
+        "text": "布",
+        "start": 2.14,
+        "end": 2.24,
+        "type": "word",
+        "logprob": -0.0003256267518736422
+      },
+      {
+        "text": "的",
+        "start": 2.24,
+        "end": 2.4,
+        "type": "word",
+        "logprob": -0.000002264974000354414
+      },
+      {
+        "text": "死",
+        "start": 2.4,
+        "end": 2.5,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "亡",
+        "start": 2.5,
+        "end": 2.64,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "人",
+        "start": 2.64,
+        "end": 2.78,
+        "type": "word",
+        "logprob": -0.00017510310863144696
+      },
+      {
+        "text": "数",
+        "start": 2.78,
+        "end": 2.92,
+        "type": "word",
+        "logprob": -0.00017510310863144696
+      },
+      {
+        "text": "为",
+        "start": 2.92,
+        "end": 3.06,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "8",
+        "start": 3.06,
+        "end": 3.2,
+        "type": "word",
+        "logprob": -0.03813597187399864
+      },
+      {
+        "text": "人",
+        "start": 3.2,
+        "end": 3.32,
+        "type": "word",
+        "logprob": -0.0059529622085392475
+      },
+      {
+        "text": "，",
+        "start": 3.32,
+        "end": 3.42,
+        "type": "word",
+        "logprob": -0.000015258672647178173
+      },
+      {
+        "text": "而",
+        "start": 3.44,
+        "end": 3.58,
+        "type": "word",
+        "logprob": -0.000013232143828645349
+      },
+      {
+        "text": "据",
+        "start": 3.58,
+        "end": 3.78,
+        "type": "word",
+        "logprob": -0.00013016807497479022
+      },
+      {
+        "text": "官",
+        "start": 3.78,
+        "end": 3.98,
+        "type": "word",
+        "logprob": -0.000003576272320060525
+      },
+      {
+        "text": "方",
+        "start": 3.98,
+        "end": 4.14,
+        "type": "word",
+        "logprob": -0.000003576272320060525
+      },
+      {
+        "text": "报",
+        "start": 4.14,
+        "end": 4.28,
+        "type": "word",
+        "logprob": -0.0011232740944251418
+      },
+      {
+        "text": "道",
+        "start": 4.28,
+        "end": 4.42,
+        "type": "word",
+        "logprob": -0.0011232740944251418
+      },
+      {
+        "text": "证",
+        "start": 4.42,
+        "end": 4.6,
+        "type": "word",
+        "logprob": -0.0001864259538706392
+      },
+      {
+        "text": "实",
+        "start": 4.6,
+        "end": 4.98,
+        "type": "word",
+        "logprob": -0.0001864259538706392
+      },
+      {
+        "text": "有",
+        "start": 4.98,
+        "end": 5.12,
+        "type": "word",
+        "logprob": -0.16042770445346832
+      },
+      {
+        "text": "多",
+        "start": 5.12,
+        "end": 5.26,
+        "type": "word",
+        "logprob": -0.16042770445346832
+      },
+      {
+        "text": "达",
+        "start": 5.26,
+        "end": 5.42,
+        "type": "word",
+        "logprob": -0.00039307496626861393
+      },
+      {
+        "text": "30",
+        "start": 5.42,
+        "end": 5.84,
+        "type": "word",
+        "logprob": -7.152554246658838e-7
+      },
+      {
+        "text": "人",
+        "start": 5.84,
+        "end": 6.04,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "受",
+        "start": 6.04,
+        "end": 6.22,
+        "type": "word",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": "伤",
+        "start": 6.22,
+        "end": 6.22,
+        "type": "word",
+        "logprob": -0.0000011920922133867862
+      },
+      {
+        "text": "，",
+        "start": 6.54,
+        "end": 6.56,
+        "type": "word",
+        "logprob": -0.000009179073458653875
+      },
+      {
+        "text": "但",
+        "start": 6.56,
+        "end": 6.76,
+        "type": "word",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": "最",
+        "start": 6.76,
+        "end": 6.88,
+        "type": "word",
+        "logprob": -0.0006168370018713176
+      },
+      {
+        "text": "终",
+        "start": 6.9,
+        "end": 7.02,
+        "type": "word",
+        "logprob": -0.0006168370018713176
+      },
+      {
+        "text": "的",
+        "start": 7.02,
+        "end": 7.18,
+        "type": "word",
+        "logprob": -0.000007629365427419543
+      },
+      {
+        "text": "数",
+        "start": 7.18,
+        "end": 7.38,
+        "type": "word",
+        "logprob": -0.000041126360883936286
+      },
+      {
+        "text": "字",
+        "start": 7.38,
+        "end": 7.62,
+        "type": "word",
+        "logprob": -0.000041126360883936286
+      },
+      {
+        "text": "尚",
+        "start": 7.62,
+        "end": 7.78,
+        "type": "word",
+        "logprob": -0.0000495898348162882
+      },
+      {
+        "text": "未",
+        "start": 7.8,
+        "end": 7.92,
+        "type": "word",
+        "logprob": -0.0000495898348162882
+      },
+      {
+        "text": "确",
+        "start": 7.92,
+        "end": 8.08,
+        "type": "word",
+        "logprob": -0.00004851700214203447
+      },
+      {
+        "text": "定",
+        "start": 8.08,
+        "end": 8.22,
+        "type": "word",
+        "logprob": -0.00004851700214203447
+      },
+      {
+        "text": "。",
+        "start": 8.22,
+        "end": 8.22,
+        "type": "word",
+        "logprob": -0.00003576214658096433
+      }
+    ],
+    "transcription_id": "1qqPcu03nZhC6S8mjDPL",
+    "audio_duration_secs": 8.94
+  }
+}

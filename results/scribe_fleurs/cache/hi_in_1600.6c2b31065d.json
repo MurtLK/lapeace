@@ -1,0 +1,418 @@
+{
+  "clip_id": "hi_in_1600",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "hin",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:53.525Z",
+  "response": {
+    "language_code": "hin",
+    "language_probability": 1,
+    "text": "On-site गतिविधियों के उदाहरणों में शामिल है शिकार, मछली पकड़ना, फ़ोटोग्राफ़ी, bird watching और पार्कों का दौरा करना और पारिस्थितिकी तंत्र को के बारे में जानकारी का अध्ययन करना",
+    "words": [
+      {
+        "text": "On-site",
+        "start": 1.02,
+        "end": 1.5,
+        "type": "word",
+        "logprob": -0.15716918132134847
+      },
+      {
+        "text": " ",
+        "start": 1.5,
+        "end": 1.56,
+        "type": "spacing",
+        "logprob": -0.0028775022365152836
+      },
+      {
+        "text": "गतिविधियों",
+        "start": 1.58,
+        "end": 2.04,
+        "type": "word",
+        "logprob": -0.0028775022365152836
+      },
+      {
+        "text": " ",
+        "start": 2.04,
+        "end": 2.08,
+        "type": "spacing",
+        "logprob": -0.00003397406908334233
+      },
+      {
+        "text": "के",
+        "start": 2.08,
+        "end": 2.16,
+        "type": "word",
+        "logprob": -0.00003397406908334233
+      },
+      {
+        "text": " ",
+        "start": 2.16,
+        "end": 2.2,
+        "type": "spacing",
+        "logprob": -0.0031811606604605913
+      },
+      {
+        "text": "उदाहरणों",
+        "start": 2.2,
+        "end": 2.64,
+        "type": "word",
+        "logprob": -0.0024185913025576156
+      },
+      {
+        "text": " ",
+        "start": 2.64,
+        "end": 2.68,
+        "type": "spacing",
+        "logprob": -0.000005364403477869928
+      },
+      {
+        "text": "में",
+        "start": 2.68,
+        "end": 2.78,
+        "type": "word",
+        "logprob": -0.000005364403477869928
+      },
+      {
+        "text": " ",
+        "start": 2.78,
+        "end": 2.82,
+        "type": "spacing",
+        "logprob": -0.000011205610462639015
+      },
+      {
+        "text": "शामिल",
+        "start": 2.82,
+        "end": 3.14,
+        "type": "word",
+        "logprob": -0.000011205610462639015
+      },
+      {
+        "text": " ",
+        "start": 3.14,
+        "end": 3.18,
+        "type": "spacing",
+        "logprob": -0.5231274366378784
+      },
+      {
+        "text": "है",
+        "start": 3.18,
+        "end": 3.3,
+        "type": "word",
+        "logprob": -0.5231274366378784
+      },
+      {
+        "text": " ",
+        "start": 3.3,
+        "end": 3.72,
+        "type": "spacing",
+        "logprob": -0.0038599285762757063
+      },
+      {
+        "text": "शिकार,",
+        "start": 3.72,
+        "end": 4.1,
+        "type": "word",
+        "logprob": -0.0032517304498469457
+      },
+      {
+        "text": " ",
+        "start": 4.1,
+        "end": 4.1,
+        "type": "spacing",
+        "logprob": -0.0005788319394923747
+      },
+      {
+        "text": "मछली",
+        "start": 4.6,
+        "end": 4.84,
+        "type": "word",
+        "logprob": -0.0005788319394923747
+      },
+      {
+        "text": " ",
+        "start": 4.84,
+        "end": 4.92,
+        "type": "spacing",
+        "logprob": -0.010810972191393375
+      },
+      {
+        "text": "पकड़ना,",
+        "start": 4.92,
+        "end": 5.3,
+        "type": "word",
+        "logprob": -0.006180848914222484
+      },
+      {
+        "text": " ",
+        "start": 5.3,
+        "end": 5.72,
+        "type": "spacing",
+        "logprob": -0.8326413035392761
+      },
+      {
+        "text": "फ़ोटोग्राफ़ी,",
+        "start": 5.72,
+        "end": 6.36,
+        "type": "word",
+        "logprob": -0.24159437875697712
+      },
+      {
+        "text": " ",
+        "start": 6.36,
+        "end": 6.36,
+        "type": "spacing",
+        "logprob": -0.19749528169631958
+      },
+      {
+        "text": "bird",
+        "start": 6.9,
+        "end": 7.08,
+        "type": "word",
+        "logprob": -0.19749528169631958
+      },
+      {
+        "text": " ",
+        "start": 7.08,
+        "end": 7.14,
+        "type": "spacing",
+        "logprob": -0.038173723965883255
+      },
+      {
+        "text": "watching",
+        "start": 7.14,
+        "end": 7.5,
+        "type": "word",
+        "logprob": -0.038173723965883255
+      },
+      {
+        "text": " ",
+        "start": 7.5,
+        "end": 7.86,
+        "type": "spacing",
+        "logprob": -0.0010657589882612228
+      },
+      {
+        "text": "और",
+        "start": 7.86,
+        "end": 8,
+        "type": "word",
+        "logprob": -0.0010657589882612228
+      },
+      {
+        "text": " ",
+        "start": 8,
+        "end": 8.039,
+        "type": "spacing",
+        "logprob": -0.03821124508976936
+      },
+      {
+        "text": "पार्कों",
+        "start": 8.039,
+        "end": 8.38,
+        "type": "word",
+        "logprob": -0.024731678755155632
+      },
+      {
+        "text": " ",
+        "start": 8.38,
+        "end": 8.42,
+        "type": "spacing",
+        "logprob": -0.0004655231023207307
+      },
+      {
+        "text": "का",
+        "start": 8.42,
+        "end": 8.5,
+        "type": "word",
+        "logprob": -0.0004655231023207307
+      },
+      {
+        "text": " ",
+        "start": 8.5,
+        "end": 8.54,
+        "type": "spacing",
+        "logprob": -0.00010930894495686516
+      },
+      {
+        "text": "दौरा",
+        "start": 8.54,
+        "end": 8.78,
+        "type": "word",
+        "logprob": -0.00010930894495686516
+      },
+      {
+        "text": " ",
+        "start": 8.78,
+        "end": 8.82,
+        "type": "spacing",
+        "logprob": -0.00001764281842042692
+      },
+      {
+        "text": "करना",
+        "start": 8.82,
+        "end": 9.08,
+        "type": "word",
+        "logprob": -0.00001764281842042692
+      },
+      {
+        "text": " ",
+        "start": 9.08,
+        "end": 9.56,
+        "type": "spacing",
+        "logprob": -0.00005411955135059543
+      },
+      {
+        "text": "और",
+        "start": 9.56,
+        "end": 9.84,
+        "type": "word",
+        "logprob": -0.00005411955135059543
+      },
+      {
+        "text": " ",
+        "start": 9.84,
+        "end": 9.88,
+        "type": "spacing",
+        "logprob": -1.3577097654342651
+      },
+      {
+        "text": "पारिस्थितिकी",
+        "start": 9.88,
+        "end": 10.58,
+        "type": "word",
+        "logprob": -1.018357235887379
+      },
+      {
+        "text": " ",
+        "start": 10.58,
+        "end": 10.8,
+        "type": "spacing",
+        "logprob": -0.0011266082292422652
+      },
+      {
+        "text": "तंत्र",
+        "start": 10.8,
+        "end": 11.04,
+        "type": "word",
+        "logprob": -0.0011266082292422652
+      },
+      {
+        "text": " ",
+        "start": 11.04,
+        "end": 11.14,
+        "type": "spacing",
+        "logprob": -0.2835497558116913
+      },
+      {
+        "text": "को",
+        "start": 11.14,
+        "end": 11.28,
+        "type": "word",
+        "logprob": -0.2835497558116913
+      },
+      {
+        "text": " ",
+        "start": 11.28,
+        "end": 11.72,
+        "type": "spacing",
+        "logprob": -0.0006790239713154733
+      },
+      {
+        "text": "के",
+        "start": 11.72,
+        "end": 11.84,
+        "type": "word",
+        "logprob": -0.0006790239713154733
+      },
+      {
+        "text": " ",
+        "start": 11.84,
+        "end": 11.88,
+        "type": "spacing",
+        "logprob": -0.00010609064338495955
+      },
+      {
+        "text": "बारे",
+        "start": 11.88,
+        "end": 12.06,
+        "type": "word",
+        "logprob": -0.00010609064338495955
+      },
+      {
+        "text": " ",
+        "start": 12.06,
+        "end": 12.16,
+        "type": "spacing",
+        "logprob": -0.00011050090688513592
+      },
+      {
+        "text": "में",
+        "start": 12.16,
+        "end": 12.36,
+        "type": "word",
+        "logprob": -0.00011050090688513592
+      },
+      {
+        "text": " ",
+        "start": 12.36,
+        "end": 12.42,
+        "type": "spacing",
+        "logprob": -0.00018320789968129247
+      },
+      {
+        "text": "जानकारी",
+        "start": 12.42,
+        "end": 12.86,
+        "type": "word",
+        "logprob": -0.00018320789968129247
+      },
+      {
+        "text": " ",
+        "start": 12.86,
+        "end": 12.9,
+        "type": "spacing",
+        "logprob": -0.0000032186455882765586
+      },
+      {
+        "text": "का",
+        "start": 12.9,
+        "end": 13.04,
+        "type": "word",
+        "logprob": -0.0000032186455882765586
+      },
+      {
+        "text": " ",
+        "start": 13.04,
+        "end": 13.08,
+        "type": "spacing",
+        "logprob": -0.000270091783022508
+      },
+      {
+        "text": "अध्ययन",
+        "start": 13.08,
+        "end": 13.3,
+        "type": "word",
+        "logprob": -0.000270091783022508
+      },
+      {
+        "text": " ",
+        "start": 13.3,
+        "end": 13.36,
+        "type": "spacing",
+        "logprob": -0.0000066756979322235566
+      },
+      {
+        "text": "करना",
+        "start": 13.36,
+        "end": 13.64,
+        "type": "word",
+        "logprob": -0.0000066756979322235566
+      }
+    ],
+    "transcription_id": "JJd2cl6pAfiCk0oMVuTZ",
+    "audio_duration_secs": 14.28
+  }
+}

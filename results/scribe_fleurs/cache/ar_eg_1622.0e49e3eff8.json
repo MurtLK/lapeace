@@ -1,0 +1,110 @@
+{
+  "clip_id": "ar_eg_1622",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "ara",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:24.555Z",
+  "response": {
+    "language_code": "ara",
+    "language_probability": 1,
+    "text": "رحب الرئيس الأمريكي جورج دبليو بوش بالإعلان.",
+    "words": [
+      {
+        "text": "رحب",
+        "start": 0.44,
+        "end": 0.78,
+        "type": "word",
+        "logprob": -0.29117539525032043
+      },
+      {
+        "text": " ",
+        "start": 0.78,
+        "end": 0.82,
+        "type": "spacing",
+        "logprob": -0.00004589452510117553
+      },
+      {
+        "text": "الرئيس",
+        "start": 0.82,
+        "end": 1.16,
+        "type": "word",
+        "logprob": -0.00004589452510117553
+      },
+      {
+        "text": " ",
+        "start": 1.16,
+        "end": 1.24,
+        "type": "spacing",
+        "logprob": -0.05741850659251213
+      },
+      {
+        "text": "الأمريكي",
+        "start": 1.24,
+        "end": 1.98,
+        "type": "word",
+        "logprob": -0.05741850659251213
+      },
+      {
+        "text": " ",
+        "start": 1.98,
+        "end": 2.08,
+        "type": "spacing",
+        "logprob": -0.003853753674775362
+      },
+      {
+        "text": "جورج",
+        "start": 2.08,
+        "end": 2.4,
+        "type": "word",
+        "logprob": -0.00290244450661703
+      },
+      {
+        "text": " ",
+        "start": 2.4,
+        "end": 2.44,
+        "type": "spacing",
+        "logprob": -0.01216445304453373
+      },
+      {
+        "text": "دبليو",
+        "start": 2.44,
+        "end": 2.92,
+        "type": "word",
+        "logprob": -0.008164255134761333
+      },
+      {
+        "text": " ",
+        "start": 2.92,
+        "end": 2.96,
+        "type": "spacing",
+        "logprob": -0.010011104866862297
+      },
+      {
+        "text": "بوش",
+        "start": 2.96,
+        "end": 3.28,
+        "type": "word",
+        "logprob": -0.003410543295710037
+      },
+      {
+        "text": " ",
+        "start": 3.28,
+        "end": 3.34,
+        "type": "spacing",
+        "logprob": -0.008329886943101883
+      },
+      {
+        "text": "بالإعلان.",
+        "start": 3.34,
+        "end": 4.059,
+        "type": "word",
+        "logprob": -0.028880784689034853
+      }
+    ],
+    "transcription_id": "dq6wNGfGFRDtJAwr5T16",
+    "audio_duration_secs": 6.4
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "clip_id": "cmn_hans_cn_1654",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "zho",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:59.909Z",
+  "response": {
+    "language_code": "zho",
+    "language_probability": 1,
+    "text": "我不知道你有没有意识到，从中美洲进口到这个国家的大部分货物都是免关税的。",
+    "words": [
+      {
+        "text": "我",
+        "start": 1.66,
+        "end": 1.82,
+        "type": "word",
+        "logprob": -0.000002145764938177308
+      },
+      {
+        "text": "不",
+        "start": 1.82,
+        "end": 1.94,
+        "type": "word",
+        "logprob": -0.0000033378546504536644
+      },
+      {
+        "text": "知",
+        "start": 1.94,
+        "end": 2.06,
+        "type": "word",
+        "logprob": -0.0000033378546504536644
+      },
+      {
+        "text": "道",
+        "start": 2.06,
+        "end": 2.26,
+        "type": "word",
+        "logprob": -0.0000033378546504536644
+      },
+      {
+        "text": "你",
+        "start": 2.26,
+        "end": 2.44,
+        "type": "word",
+        "logprob": -0.0011854295153170824
+      },
+      {
+        "text": "有",
+        "start": 2.44,
+        "end": 2.6,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "没",
+        "start": 2.6,
+        "end": 2.72,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "有",
+        "start": 2.72,
+        "end": 2.86,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "意",
+        "start": 2.86,
+        "end": 3.04,
+        "type": "word",
+        "logprob": -0.0002051381452474743
+      },
+      {
+        "text": "识",
+        "start": 3.04,
+        "end": 3.18,
+        "type": "word",
+        "logprob": -0.0002051381452474743
+      },
+      {
+        "text": "到",
+        "start": 3.34,
+        "end": 3.36,
+        "type": "word",
+        "logprob": -0.0002051381452474743
+      },
+      {
+        "text": "，",
+        "start": 3.6,
+        "end": 3.62,
+        "type": "word",
+        "logprob": -0.00023946279543451965
+      },
+      {
+        "text": "从",
+        "start": 3.82,
+        "end": 3.92,
+        "type": "word",
+        "logprob": -0.1273476481437683
+      },
+      {
+        "text": "中",
+        "start": 3.92,
+        "end": 4.16,
+        "type": "word",
+        "logprob": -0.1273476481437683
+      },
+      {
+        "text": "美",
+        "start": 4.28,
+        "end": 4.38,
+        "type": "word",
+        "logprob": -0.000036954195820726454
+      },
+      {
+        "text": "洲",
+        "start": 4.54,
+        "end": 4.62,
+        "type": "word",
+        "logprob": -0.00218593399040401
+      },
+      {
+        "text": "进",
+        "start": 4.78,
+        "end": 4.88,
+        "type": "word",
+        "logprob": -0.00022957073815632612
+      },
+      {
+        "text": "口",
+        "start": 4.88,
+        "end": 5.06,
+        "type": "word",
+        "logprob": -0.00022957073815632612
+      },
+      {
+        "text": "到",
+        "start": 5.06,
+        "end": 5.24,
+        "type": "word",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": "这",
+        "start": 5.24,
+        "end": 5.36,
+        "type": "word",
+        "logprob": -0.0000034570634852570947
+      },
+      {
+        "text": "个",
+        "start": 5.36,
+        "end": 5.52,
+        "type": "word",
+        "logprob": -0.0000034570634852570947
+      },
+      {
+        "text": "国",
+        "start": 5.52,
+        "end": 5.74,
+        "type": "word",
+        "logprob": -0.001026103738695383
+      },
+      {
+        "text": "家",
+        "start": 5.74,
+        "end": 5.8,
+        "type": "word",
+        "logprob": -0.001026103738695383
+      },
+      {
+        "text": "的",
+        "start": 5.8,
+        "end": 5.94,
+        "type": "word",
+        "logprob": -0.00008987976616481319
+      },
+      {
+        "text": "大",
+        "start": 5.94,
+        "end": 6.2,
+        "type": "word",
+        "logprob": -0.00008987976616481319
+      },
+      {
+        "text": "部",
+        "start": 6.2,
+        "end": 6.4,
+        "type": "word",
+        "logprob": -0.00006592056161025539
+      },
+      {
+        "text": "分",
+        "start": 6.4,
+        "end": 6.5,
+        "type": "word",
+        "logprob": -0.00006592056161025539
+      },
+      {
+        "text": "货",
+        "start": 6.5,
+        "end": 6.78,
+        "type": "word",
+        "logprob": -0.00030870441696606576
+      },
+      {
+        "text": "物",
+        "start": 6.78,
+        "end": 7.12,
+        "type": "word",
+        "logprob": -0.00030870441696606576
+      },
+      {
+        "text": "都",
+        "start": 7.12,
+        "end": 7.3,
+        "type": "word",
+        "logprob": -0.00010907054820563644
+      },
+      {
+        "text": "是",
+        "start": 7.42,
+        "end": 7.44,
+        "type": "word",
+        "logprob": -0.00010907054820563644
+      },
+      {
+        "text": "免",
+        "start": 7.62,
+        "end": 7.7,
+        "type": "word",
+        "logprob": -0.0000029802276912960224
+      },
+      {
+        "text": "关",
+        "start": 7.7,
+        "end": 7.94,
+        "type": "word",
+        "logprob": -0.0001394651480950415
+      },
+      {
+        "text": "税",
+        "start": 8.039,
+        "end": 8.22,
+        "type": "word",
+        "logprob": -0.0006507901125587523
+      },
+      {
+        "text": "的",
+        "start": 8.22,
+        "end": 8.32,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": "。",
+        "start": 8.32,
+        "end": 8.32,
+        "type": "word",
+        "logprob": -0.00012361239350866526
+      }
+    ],
+    "transcription_id": "xZSIIijKmBHthkceTo7U",
+    "audio_duration_secs": 11.08
+  }
+}

@@ -1,0 +1,460 @@
+{
+  "clip_id": "es_419_1629",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "spa",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:33.124Z",
+  "response": {
+    "language_code": "spa",
+    "language_probability": 1,
+    "text": "Si bien existen informes que señalan que el número oficial de muertos es ocho y las autoridades han confirmado que cerca de treinta personas resultaron heridas, aún se desconocen las cifras oficiales",
+    "words": [
+      {
+        "text": "Si",
+        "start": 2.4,
+        "end": 2.5,
+        "type": "word",
+        "logprob": -0.000004172316494077677
+      },
+      {
+        "text": " ",
+        "start": 2.5,
+        "end": 2.54,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "bien",
+        "start": 2.54,
+        "end": 2.7,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 2.7,
+        "end": 2.76,
+        "type": "spacing",
+        "logprob": -0.000014543427823809907
+      },
+      {
+        "text": "existen",
+        "start": 2.76,
+        "end": 3.18,
+        "type": "word",
+        "logprob": -0.000014543427823809907
+      },
+      {
+        "text": " ",
+        "start": 3.18,
+        "end": 3.22,
+        "type": "spacing",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": "informes",
+        "start": 3.22,
+        "end": 3.84,
+        "type": "word",
+        "logprob": -0.0000017881377516459906
+      },
+      {
+        "text": " ",
+        "start": 3.84,
+        "end": 3.92,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "que",
+        "start": 3.92,
+        "end": 4.04,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 4.04,
+        "end": 4.059,
+        "type": "spacing",
+        "logprob": -0.00023123928986024112
+      },
+      {
+        "text": "señalan",
+        "start": 4.059,
+        "end": 4.58,
+        "type": "word",
+        "logprob": -0.00011674525532206255
+      },
+      {
+        "text": " ",
+        "start": 4.58,
+        "end": 4.7,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "que",
+        "start": 4.7,
+        "end": 4.74,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 4.74,
+        "end": 4.78,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "el",
+        "start": 4.78,
+        "end": 4.86,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 4.86,
+        "end": 4.9,
+        "type": "spacing",
+        "logprob": -0.00004088794958079234
+      },
+      {
+        "text": "número",
+        "start": 4.9,
+        "end": 5.16,
+        "type": "word",
+        "logprob": -0.00004088794958079234
+      },
+      {
+        "text": " ",
+        "start": 5.16,
+        "end": 5.2,
+        "type": "spacing",
+        "logprob": -0.00008713819261174649
+      },
+      {
+        "text": "oficial",
+        "start": 5.2,
+        "end": 5.58,
+        "type": "word",
+        "logprob": -0.00008713819261174649
+      },
+      {
+        "text": " ",
+        "start": 5.58,
+        "end": 5.6,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "de",
+        "start": 5.6,
+        "end": 5.68,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 5.68,
+        "end": 5.76,
+        "type": "spacing",
+        "logprob": -0.00002109982233378105
+      },
+      {
+        "text": "muertos",
+        "start": 5.76,
+        "end": 6.18,
+        "type": "word",
+        "logprob": -0.00002109982233378105
+      },
+      {
+        "text": " ",
+        "start": 6.18,
+        "end": 6.24,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "es",
+        "start": 6.24,
+        "end": 6.42,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 6.42,
+        "end": 6.52,
+        "type": "spacing",
+        "logprob": -0.00008844937838148326
+      },
+      {
+        "text": "ocho",
+        "start": 6.52,
+        "end": 6.78,
+        "type": "word",
+        "logprob": -0.00008844937838148326
+      },
+      {
+        "text": " ",
+        "start": 6.78,
+        "end": 6.78,
+        "type": "spacing",
+        "logprob": -0.00007486063259420916
+      },
+      {
+        "text": "y",
+        "start": 7.5,
+        "end": 7.54,
+        "type": "word",
+        "logprob": -0.00007486063259420916
+      },
+      {
+        "text": " ",
+        "start": 7.54,
+        "end": 7.58,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "las",
+        "start": 7.6,
+        "end": 7.72,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 7.72,
+        "end": 7.76,
+        "type": "spacing",
+        "logprob": -0.00009262132516596466
+      },
+      {
+        "text": "autoridades",
+        "start": 7.76,
+        "end": 8.36,
+        "type": "word",
+        "logprob": -0.00009262132516596466
+      },
+      {
+        "text": " ",
+        "start": 8.36,
+        "end": 8.4,
+        "type": "spacing",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": "han",
+        "start": 8.4,
+        "end": 8.52,
+        "type": "word",
+        "logprob": -4.768370445162873e-7
+      },
+      {
+        "text": " ",
+        "start": 8.52,
+        "end": 8.56,
+        "type": "spacing",
+        "logprob": -0.00046754872892051935
+      },
+      {
+        "text": "confirmado",
+        "start": 8.56,
+        "end": 9.1,
+        "type": "word",
+        "logprob": -0.00046754872892051935
+      },
+      {
+        "text": " ",
+        "start": 9.1,
+        "end": 9.18,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "que",
+        "start": 9.18,
+        "end": 9.28,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 9.28,
+        "end": 9.34,
+        "type": "spacing",
+        "logprob": -0.000022053474822314456
+      },
+      {
+        "text": "cerca",
+        "start": 9.34,
+        "end": 9.6,
+        "type": "word",
+        "logprob": -0.000022053474822314456
+      },
+      {
+        "text": " ",
+        "start": 9.6,
+        "end": 9.64,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "de",
+        "start": 9.64,
+        "end": 9.7,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 9.7,
+        "end": 9.8,
+        "type": "spacing",
+        "logprob": -0.01672437973320484
+      },
+      {
+        "text": "treinta",
+        "start": 9.8,
+        "end": 10.1,
+        "type": "word",
+        "logprob": -0.01672437973320484
+      },
+      {
+        "text": " ",
+        "start": 10.1,
+        "end": 10.2,
+        "type": "spacing",
+        "logprob": -0.0000451792984677013
+      },
+      {
+        "text": "personas",
+        "start": 10.2,
+        "end": 10.6,
+        "type": "word",
+        "logprob": -0.0000451792984677013
+      },
+      {
+        "text": " ",
+        "start": 10.6,
+        "end": 10.64,
+        "type": "spacing",
+        "logprob": -0.00005030505417380482
+      },
+      {
+        "text": "resultaron",
+        "start": 10.64,
+        "end": 11.18,
+        "type": "word",
+        "logprob": -0.00003032608362900646
+      },
+      {
+        "text": " ",
+        "start": 11.18,
+        "end": 11.22,
+        "type": "spacing",
+        "logprob": -0.0017234723782166839
+      },
+      {
+        "text": "heridas,",
+        "start": 11.22,
+        "end": 11.58,
+        "type": "word",
+        "logprob": -0.001516591304607573
+      },
+      {
+        "text": " ",
+        "start": 11.58,
+        "end": 11.58,
+        "type": "spacing",
+        "logprob": -0.0001399419124936685
+      },
+      {
+        "text": "aún",
+        "start": 12.54,
+        "end": 12.74,
+        "type": "word",
+        "logprob": -0.0001399419124936685
+      },
+      {
+        "text": " ",
+        "start": 12.74,
+        "end": 12.8,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "se",
+        "start": 12.8,
+        "end": 12.88,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 12.88,
+        "end": 12.9,
+        "type": "spacing",
+        "logprob": -0.0013558013597503304
+      },
+      {
+        "text": "desconocen",
+        "start": 12.9,
+        "end": 13.42,
+        "type": "word",
+        "logprob": -0.0010846410878002644
+      },
+      {
+        "text": " ",
+        "start": 13.42,
+        "end": 13.46,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "las",
+        "start": 13.46,
+        "end": 13.56,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 13.56,
+        "end": 13.6,
+        "type": "spacing",
+        "logprob": -0.000021576648578047752
+      },
+      {
+        "text": "cifras",
+        "start": 13.6,
+        "end": 13.94,
+        "type": "word",
+        "logprob": -0.000021576648578047752
+      },
+      {
+        "text": " ",
+        "start": 13.94,
+        "end": 14.04,
+        "type": "spacing",
+        "logprob": -0.00003325883881188929
+      },
+      {
+        "text": "oficiales",
+        "start": 14.04,
+        "end": 14.62,
+        "type": "word",
+        "logprob": -0.00003325883881188929
+      }
+    ],
+    "transcription_id": "Xf8usHSHiHAMlxpZxa1q",
+    "audio_duration_secs": 17.34
+  }
+}

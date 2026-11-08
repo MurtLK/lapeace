@@ -1,0 +1,516 @@
+{
+  "clip_id": "hi_in_1616",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "hin",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:53.752Z",
+  "response": {
+    "language_code": "hin",
+    "language_probability": 1,
+    "text": "विज्ञान अब यह संकेत देता है कि इस विशाल कार्बन अर्थव्यवस्था ने जीवमंडल को उसकी स्थिर स्थितियों में से एक से हटा दिया है, जिसने पिछले 20 लाख सालों में मानव विकास में सहायता की है।",
+    "words": [
+      {
+        "text": "विज्ञान",
+        "start": 0.32,
+        "end": 0.76,
+        "type": "word",
+        "logprob": -0.006411103531718254
+      },
+      {
+        "text": " ",
+        "start": 0.76,
+        "end": 0.8,
+        "type": "spacing",
+        "logprob": -0.0002908283786382526
+      },
+      {
+        "text": "अब",
+        "start": 0.82,
+        "end": 0.94,
+        "type": "word",
+        "logprob": -0.0002908283786382526
+      },
+      {
+        "text": " ",
+        "start": 0.94,
+        "end": 0.98,
+        "type": "spacing",
+        "logprob": -0.007735889870673418
+      },
+      {
+        "text": "यह",
+        "start": 0.98,
+        "end": 1.08,
+        "type": "word",
+        "logprob": -0.007735889870673418
+      },
+      {
+        "text": " ",
+        "start": 1.08,
+        "end": 1.18,
+        "type": "spacing",
+        "logprob": -0.0009436921682208776
+      },
+      {
+        "text": "संकेत",
+        "start": 1.18,
+        "end": 1.58,
+        "type": "word",
+        "logprob": -0.0009436921682208776
+      },
+      {
+        "text": " ",
+        "start": 1.58,
+        "end": 1.64,
+        "type": "spacing",
+        "logprob": -0.00007807903602952138
+      },
+      {
+        "text": "देता",
+        "start": 1.64,
+        "end": 1.94,
+        "type": "word",
+        "logprob": -0.00007807903602952138
+      },
+      {
+        "text": " ",
+        "start": 1.94,
+        "end": 2.02,
+        "type": "spacing",
+        "logprob": -0.000008821448318485636
+      },
+      {
+        "text": "है",
+        "start": 2.02,
+        "end": 2.18,
+        "type": "word",
+        "logprob": -0.000008821448318485636
+      },
+      {
+        "text": " ",
+        "start": 2.18,
+        "end": 2.22,
+        "type": "spacing",
+        "logprob": -0.00009643566590966657
+      },
+      {
+        "text": "कि",
+        "start": 2.22,
+        "end": 2.38,
+        "type": "word",
+        "logprob": -0.00009643566590966657
+      },
+      {
+        "text": " ",
+        "start": 2.38,
+        "end": 2.46,
+        "type": "spacing",
+        "logprob": -0.00012134769349358976
+      },
+      {
+        "text": "इस",
+        "start": 2.46,
+        "end": 2.64,
+        "type": "word",
+        "logprob": -0.00012134769349358976
+      },
+      {
+        "text": " ",
+        "start": 2.64,
+        "end": 2.68,
+        "type": "spacing",
+        "logprob": -0.00018559163436293602
+      },
+      {
+        "text": "विशाल",
+        "start": 2.68,
+        "end": 3.16,
+        "type": "word",
+        "logprob": -0.00018559163436293602
+      },
+      {
+        "text": " ",
+        "start": 3.16,
+        "end": 3.28,
+        "type": "spacing",
+        "logprob": -0.05842505022883415
+      },
+      {
+        "text": "कार्बन",
+        "start": 3.28,
+        "end": 3.72,
+        "type": "word",
+        "logprob": -0.05842505022883415
+      },
+      {
+        "text": " ",
+        "start": 3.72,
+        "end": 3.78,
+        "type": "spacing",
+        "logprob": -0.00004541770613286644
+      },
+      {
+        "text": "अर्थव्यवस्था",
+        "start": 3.78,
+        "end": 4.5,
+        "type": "word",
+        "logprob": -0.00004541770613286644
+      },
+      {
+        "text": " ",
+        "start": 4.5,
+        "end": 4.54,
+        "type": "spacing",
+        "logprob": -0.00003969590397900902
+      },
+      {
+        "text": "ने",
+        "start": 4.54,
+        "end": 4.68,
+        "type": "word",
+        "logprob": -0.00003969590397900902
+      },
+      {
+        "text": " ",
+        "start": 4.68,
+        "end": 4.72,
+        "type": "spacing",
+        "logprob": -0.0008781867218203843
+      },
+      {
+        "text": "जीवमंडल",
+        "start": 4.72,
+        "end": 5.3,
+        "type": "word",
+        "logprob": -0.12997832966669062
+      },
+      {
+        "text": " ",
+        "start": 5.3,
+        "end": 5.38,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "को",
+        "start": 5.38,
+        "end": 5.52,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 5.52,
+        "end": 5.6,
+        "type": "spacing",
+        "logprob": -0.00010299152199877426
+      },
+      {
+        "text": "उसकी",
+        "start": 5.6,
+        "end": 5.9,
+        "type": "word",
+        "logprob": -0.00010299152199877426
+      },
+      {
+        "text": " ",
+        "start": 5.9,
+        "end": 6.4,
+        "type": "spacing",
+        "logprob": -0.00019786784832831472
+      },
+      {
+        "text": "स्थिर",
+        "start": 6.4,
+        "end": 6.68,
+        "type": "word",
+        "logprob": -0.00019786784832831472
+      },
+      {
+        "text": " ",
+        "start": 6.68,
+        "end": 6.72,
+        "type": "spacing",
+        "logprob": -0.005824142601341009
+      },
+      {
+        "text": "स्थितियों",
+        "start": 6.72,
+        "end": 7.22,
+        "type": "word",
+        "logprob": -0.005824142601341009
+      },
+      {
+        "text": " ",
+        "start": 7.22,
+        "end": 7.28,
+        "type": "spacing",
+        "logprob": -0.000007629365427419543
+      },
+      {
+        "text": "में",
+        "start": 7.28,
+        "end": 7.42,
+        "type": "word",
+        "logprob": -0.000007629365427419543
+      },
+      {
+        "text": " ",
+        "start": 7.42,
+        "end": 7.46,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "से",
+        "start": 7.46,
+        "end": 7.7,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 7.7,
+        "end": 7.8,
+        "type": "spacing",
+        "logprob": -0.000028729025871143676
+      },
+      {
+        "text": "एक",
+        "start": 7.82,
+        "end": 7.96,
+        "type": "word",
+        "logprob": -0.000028729025871143676
+      },
+      {
+        "text": " ",
+        "start": 7.96,
+        "end": 8.02,
+        "type": "spacing",
+        "logprob": -0.000034927710657939315
+      },
+      {
+        "text": "से",
+        "start": 8.02,
+        "end": 8.119,
+        "type": "word",
+        "logprob": -0.000034927710657939315
+      },
+      {
+        "text": " ",
+        "start": 8.119,
+        "end": 8.16,
+        "type": "spacing",
+        "logprob": -0.00002706014311115723
+      },
+      {
+        "text": "हटा",
+        "start": 8.16,
+        "end": 8.46,
+        "type": "word",
+        "logprob": -0.00002706014311115723
+      },
+      {
+        "text": " ",
+        "start": 8.46,
+        "end": 8.56,
+        "type": "spacing",
+        "logprob": -0.000021815061700181104
+      },
+      {
+        "text": "दिया",
+        "start": 8.56,
+        "end": 8.8,
+        "type": "word",
+        "logprob": -0.000021815061700181104
+      },
+      {
+        "text": " ",
+        "start": 8.8,
+        "end": 8.84,
+        "type": "spacing",
+        "logprob": -0.000006198863957251888
+      },
+      {
+        "text": "है,",
+        "start": 8.84,
+        "end": 8.98,
+        "type": "word",
+        "logprob": -0.03402900446174802
+      },
+      {
+        "text": " ",
+        "start": 8.98,
+        "end": 9.04,
+        "type": "spacing",
+        "logprob": -0.0018974411068484187
+      },
+      {
+        "text": "जिसने",
+        "start": 9.04,
+        "end": 9.38,
+        "type": "word",
+        "logprob": -0.0018974411068484187
+      },
+      {
+        "text": " ",
+        "start": 9.38,
+        "end": 9.42,
+        "type": "spacing",
+        "logprob": -0.0005729940603487194
+      },
+      {
+        "text": "पिछले",
+        "start": 9.42,
+        "end": 9.8,
+        "type": "word",
+        "logprob": -0.0005729940603487194
+      },
+      {
+        "text": " ",
+        "start": 9.8,
+        "end": 9.84,
+        "type": "spacing",
+        "logprob": -0.2259172797203064
+      },
+      {
+        "text": "20",
+        "start": 9.96,
+        "end": 10.12,
+        "type": "word",
+        "logprob": -0.000019311581013425894
+      },
+      {
+        "text": " ",
+        "start": 10.12,
+        "end": 10.18,
+        "type": "spacing",
+        "logprob": -0.0004323977918829769
+      },
+      {
+        "text": "लाख",
+        "start": 10.18,
+        "end": 10.36,
+        "type": "word",
+        "logprob": -0.0004323977918829769
+      },
+      {
+        "text": " ",
+        "start": 10.36,
+        "end": 10.44,
+        "type": "spacing",
+        "logprob": -0.00012230125139467418
+      },
+      {
+        "text": "सालों",
+        "start": 10.44,
+        "end": 10.82,
+        "type": "word",
+        "logprob": -0.00012230125139467418
+      },
+      {
+        "text": " ",
+        "start": 10.82,
+        "end": 10.86,
+        "type": "spacing",
+        "logprob": -0.000010013530300057027
+      },
+      {
+        "text": "में",
+        "start": 10.86,
+        "end": 10.96,
+        "type": "word",
+        "logprob": -0.000010013530300057027
+      },
+      {
+        "text": " ",
+        "start": 10.96,
+        "end": 11.42,
+        "type": "spacing",
+        "logprob": -0.00011717586312443018
+      },
+      {
+        "text": "मानव",
+        "start": 11.42,
+        "end": 11.66,
+        "type": "word",
+        "logprob": -0.00011717586312443018
+      },
+      {
+        "text": " ",
+        "start": 11.66,
+        "end": 11.72,
+        "type": "spacing",
+        "logprob": -0.0000036954811548639555
+      },
+      {
+        "text": "विकास",
+        "start": 11.72,
+        "end": 12.1,
+        "type": "word",
+        "logprob": -0.0000036954811548639555
+      },
+      {
+        "text": " ",
+        "start": 12.1,
+        "end": 12.12,
+        "type": "spacing",
+        "logprob": -0.00007545663538621739
+      },
+      {
+        "text": "में",
+        "start": 12.12,
+        "end": 12.24,
+        "type": "word",
+        "logprob": -0.00007545663538621739
+      },
+      {
+        "text": " ",
+        "start": 12.24,
+        "end": 12.28,
+        "type": "spacing",
+        "logprob": -0.0015606615925207734
+      },
+      {
+        "text": "सहायता",
+        "start": 12.28,
+        "end": 12.7,
+        "type": "word",
+        "logprob": -0.0015606615925207734
+      },
+      {
+        "text": " ",
+        "start": 12.7,
+        "end": 12.82,
+        "type": "spacing",
+        "logprob": -0.00000822540732769994
+      },
+      {
+        "text": "की",
+        "start": 12.82,
+        "end": 12.94,
+        "type": "word",
+        "logprob": -0.00000822540732769994
+      },
+      {
+        "text": " ",
+        "start": 12.94,
+        "end": 12.98,
+        "type": "spacing",
+        "logprob": -0.00001728519782773219
+      },
+      {
+        "text": "है।",
+        "start": 12.98,
+        "end": 13.18,
+        "type": "word",
+        "logprob": -0.001265508488965376
+      }
+    ],
+    "transcription_id": "4fC6VBgsCTc060XtYOWZ",
+    "audio_duration_secs": 13.44
+  }
+}

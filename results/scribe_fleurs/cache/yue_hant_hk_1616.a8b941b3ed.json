@@ -1,0 +1,334 @@
+{
+  "clip_id": "yue_hant_hk_1616",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "yue",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:40:31.223Z",
+  "response": {
+    "language_code": "yue",
+    "language_probability": 1,
+    "text": "如今科學指出，這樣大規模的碳經濟活動已讓生物圈脫離過去兩百萬年來支持著人類演進的穩定狀態。",
+    "words": [
+      {
+        "text": "如",
+        "start": 0.68,
+        "end": 0.82,
+        "type": "word",
+        "logprob": -0.0001839230244513601
+      },
+      {
+        "text": "今",
+        "start": 0.82,
+        "end": 1.04,
+        "type": "word",
+        "logprob": -0.0001839230244513601
+      },
+      {
+        "text": "科",
+        "start": 1.04,
+        "end": 1.24,
+        "type": "word",
+        "logprob": -0.010380208492279053
+      },
+      {
+        "text": "學",
+        "start": 1.24,
+        "end": 1.44,
+        "type": "word",
+        "logprob": -0.010380208492279053
+      },
+      {
+        "text": "指",
+        "start": 1.44,
+        "end": 1.62,
+        "type": "word",
+        "logprob": -0.0000997731985989958
+      },
+      {
+        "text": "出",
+        "start": 1.62,
+        "end": 1.78,
+        "type": "word",
+        "logprob": -0.0000997731985989958
+      },
+      {
+        "text": "，",
+        "start": 1.78,
+        "end": 1.8,
+        "type": "word",
+        "logprob": -0.014819184318184853
+      },
+      {
+        "text": "這",
+        "start": 1.8,
+        "end": 1.94,
+        "type": "word",
+        "logprob": -0.03462999686598778
+      },
+      {
+        "text": "樣",
+        "start": 1.94,
+        "end": 2.08,
+        "type": "word",
+        "logprob": -0.03462999686598778
+      },
+      {
+        "text": "大",
+        "start": 2.08,
+        "end": 2.3,
+        "type": "word",
+        "logprob": -0.00006425174069590867
+      },
+      {
+        "text": "規",
+        "start": 2.3,
+        "end": 2.5,
+        "type": "word",
+        "logprob": -0.00006425174069590867
+      },
+      {
+        "text": "模",
+        "start": 2.5,
+        "end": 2.72,
+        "type": "word",
+        "logprob": -0.00006425174069590867
+      },
+      {
+        "text": "的",
+        "start": 2.72,
+        "end": 2.92,
+        "type": "word",
+        "logprob": -0.000007986990567587782
+      },
+      {
+        "text": "碳",
+        "start": 2.92,
+        "end": 3.18,
+        "type": "word",
+        "logprob": -0.004845068324357271
+      },
+      {
+        "text": "經",
+        "start": 3.18,
+        "end": 3.4,
+        "type": "word",
+        "logprob": -0.0034203382674604654
+      },
+      {
+        "text": "濟",
+        "start": 3.4,
+        "end": 3.54,
+        "type": "word",
+        "logprob": -0.0034203382674604654
+      },
+      {
+        "text": "活",
+        "start": 3.54,
+        "end": 3.72,
+        "type": "word",
+        "logprob": -0.000005006777428206988
+      },
+      {
+        "text": "動",
+        "start": 3.72,
+        "end": 3.9,
+        "type": "word",
+        "logprob": -0.000005006777428206988
+      },
+      {
+        "text": "已",
+        "start": 3.9,
+        "end": 4.019,
+        "type": "word",
+        "logprob": -0.06313255429267883
+      },
+      {
+        "text": "讓",
+        "start": 4.019,
+        "end": 4.18,
+        "type": "word",
+        "logprob": -0.004052760079503059
+      },
+      {
+        "text": "生",
+        "start": 4.18,
+        "end": 4.36,
+        "type": "word",
+        "logprob": -0.0014179424615576863
+      },
+      {
+        "text": "物",
+        "start": 4.38,
+        "end": 4.56,
+        "type": "word",
+        "logprob": -0.0014179424615576863
+      },
+      {
+        "text": "圈",
+        "start": 4.56,
+        "end": 4.76,
+        "type": "word",
+        "logprob": -0.00003504691630951129
+      },
+      {
+        "text": "脫",
+        "start": 4.76,
+        "end": 4.88,
+        "type": "word",
+        "logprob": -0.0011157722910866141
+      },
+      {
+        "text": "離",
+        "start": 4.88,
+        "end": 5.04,
+        "type": "word",
+        "logprob": -0.0000612716976320371
+      },
+      {
+        "text": "過",
+        "start": 5.04,
+        "end": 5.2,
+        "type": "word",
+        "logprob": -0.003609928535297513
+      },
+      {
+        "text": "去",
+        "start": 5.2,
+        "end": 5.38,
+        "type": "word",
+        "logprob": -0.003609928535297513
+      },
+      {
+        "text": "兩",
+        "start": 5.38,
+        "end": 5.68,
+        "type": "word",
+        "logprob": -0.004514383617788553
+      },
+      {
+        "text": "百",
+        "start": 5.68,
+        "end": 5.7,
+        "type": "word",
+        "logprob": -0.0007241725688800216
+      },
+      {
+        "text": "萬",
+        "start": 5.96,
+        "end": 5.96,
+        "type": "word",
+        "logprob": -0.00008868777513271198
+      },
+      {
+        "text": "年",
+        "start": 6.32,
+        "end": 6.32,
+        "type": "word",
+        "logprob": -0.0010031197452917695
+      },
+      {
+        "text": "來",
+        "start": 6.56,
+        "end": 6.84,
+        "type": "word",
+        "logprob": -0.000013947389561508317
+      },
+      {
+        "text": "支",
+        "start": 6.84,
+        "end": 7,
+        "type": "word",
+        "logprob": -0.0003782987187150866
+      },
+      {
+        "text": "持",
+        "start": 7,
+        "end": 7.12,
+        "type": "word",
+        "logprob": -0.0003782987187150866
+      },
+      {
+        "text": "著",
+        "start": 7.12,
+        "end": 7.28,
+        "type": "word",
+        "logprob": -0.00025459862081333995
+      },
+      {
+        "text": "人",
+        "start": 7.28,
+        "end": 7.48,
+        "type": "word",
+        "logprob": -0.00003671578815556131
+      },
+      {
+        "text": "類",
+        "start": 7.48,
+        "end": 7.62,
+        "type": "word",
+        "logprob": -0.00003671578815556131
+      },
+      {
+        "text": "演",
+        "start": 7.62,
+        "end": 7.86,
+        "type": "word",
+        "logprob": -0.10024497658014297
+      },
+      {
+        "text": "進",
+        "start": 7.86,
+        "end": 7.98,
+        "type": "word",
+        "logprob": -0.13724011182785034
+      },
+      {
+        "text": "的",
+        "start": 7.98,
+        "end": 8.08,
+        "type": "word",
+        "logprob": -0.000005364403477869928
+      },
+      {
+        "text": "穩",
+        "start": 8.08,
+        "end": 8.3,
+        "type": "word",
+        "logprob": -0.0002961912250611931
+      },
+      {
+        "text": "定",
+        "start": 8.3,
+        "end": 8.48,
+        "type": "word",
+        "logprob": -0.0002961912250611931
+      },
+      {
+        "text": "狀",
+        "start": 8.48,
+        "end": 8.74,
+        "type": "word",
+        "logprob": -0.00004625213477993384
+      },
+      {
+        "text": "態",
+        "start": 8.74,
+        "end": 9,
+        "type": "word",
+        "logprob": -0.00004625213477993384
+      },
+      {
+        "text": "。",
+        "start": 9,
+        "end": 9,
+        "type": "word",
+        "logprob": -0.00014208737411536276
+      }
+    ],
+    "transcription_id": "UF38OF9Nrq5757jRZHYU",
+    "audio_duration_secs": 9.72
+  }
+}

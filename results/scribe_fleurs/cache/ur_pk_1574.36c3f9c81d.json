@@ -1,0 +1,572 @@
+{
+  "clip_id": "ur_pk_1574",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "urd",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "received_at": "2026-11-08T15:41:53.875Z",
+  "response": {
+    "language_code": "urd",
+    "language_probability": 1,
+    "text": "موسم سرما حیرت انگیز طور پر ٹھنڈا ہو سکتا ہے، درجہ حرارت کبھی کبھار منجمد پوائنٹ سے نیچے جاتی ہے، لیکن ہوا اور نمی تھرما میٹر پر نظر آنے والی ٹھنڈ سے موسم کو کہیں زیادہ سرد بنا دیتی ہے۔",
+    "words": [
+      {
+        "text": "موسم",
+        "start": 0.64,
+        "end": 0.92,
+        "type": "word",
+        "logprob": -0.09692022668969003
+      },
+      {
+        "text": " ",
+        "start": 0.92,
+        "end": 1.04,
+        "type": "spacing",
+        "logprob": -0.005310476757586002
+      },
+      {
+        "text": "سرما",
+        "start": 1.04,
+        "end": 1.32,
+        "type": "word",
+        "logprob": -0.002906647161580622
+      },
+      {
+        "text": " ",
+        "start": 1.32,
+        "end": 1.36,
+        "type": "spacing",
+        "logprob": -0.0011232740944251418
+      },
+      {
+        "text": "حیرت",
+        "start": 1.36,
+        "end": 1.6,
+        "type": "word",
+        "logprob": -0.0008983882726170123
+      },
+      {
+        "text": " ",
+        "start": 1.6,
+        "end": 1.64,
+        "type": "spacing",
+        "logprob": -0.0013519919011741877
+      },
+      {
+        "text": "انگیز",
+        "start": 1.64,
+        "end": 2,
+        "type": "word",
+        "logprob": -0.0013519919011741877
+      },
+      {
+        "text": " ",
+        "start": 2,
+        "end": 2.04,
+        "type": "spacing",
+        "logprob": -0.00005173549288883805
+      },
+      {
+        "text": "طور",
+        "start": 2.04,
+        "end": 2.22,
+        "type": "word",
+        "logprob": -0.00005173549288883805
+      },
+      {
+        "text": " ",
+        "start": 2.22,
+        "end": 2.26,
+        "type": "spacing",
+        "logprob": -0.00013493580627255142
+      },
+      {
+        "text": "پر",
+        "start": 2.26,
+        "end": 2.4,
+        "type": "word",
+        "logprob": -0.00013493580627255142
+      },
+      {
+        "text": " ",
+        "start": 2.4,
+        "end": 2.48,
+        "type": "spacing",
+        "logprob": -0.006836713291704655
+      },
+      {
+        "text": "ٹھنڈا",
+        "start": 2.48,
+        "end": 2.72,
+        "type": "word",
+        "logprob": -0.03942466168664396
+      },
+      {
+        "text": " ",
+        "start": 2.72,
+        "end": 2.72,
+        "type": "spacing",
+        "logprob": -0.15933504700660706
+      },
+      {
+        "text": "ہو",
+        "start": 2.72,
+        "end": 2.82,
+        "type": "word",
+        "logprob": -0.15933504700660706
+      },
+      {
+        "text": " ",
+        "start": 2.82,
+        "end": 2.88,
+        "type": "spacing",
+        "logprob": -0.01198295596987009
+      },
+      {
+        "text": "سکتا",
+        "start": 3.5,
+        "end": 3.8,
+        "type": "word",
+        "logprob": -0.01198295596987009
+      },
+      {
+        "text": " ",
+        "start": 3.8,
+        "end": 3.84,
+        "type": "spacing",
+        "logprob": -0.6353257894515991
+      },
+      {
+        "text": "ہے،",
+        "start": 3.84,
+        "end": 3.92,
+        "type": "word",
+        "logprob": -0.5707963109016418
+      },
+      {
+        "text": " ",
+        "start": 3.92,
+        "end": 4,
+        "type": "spacing",
+        "logprob": -0.0077423956245183945
+      },
+      {
+        "text": "درجہ",
+        "start": 4,
+        "end": 4.26,
+        "type": "word",
+        "logprob": -0.0077423956245183945
+      },
+      {
+        "text": " ",
+        "start": 4.26,
+        "end": 4.3,
+        "type": "spacing",
+        "logprob": -0.0055038584396243095
+      },
+      {
+        "text": "حرارت",
+        "start": 4.3,
+        "end": 4.58,
+        "type": "word",
+        "logprob": -0.0028868674766272307
+      },
+      {
+        "text": " ",
+        "start": 4.58,
+        "end": 4.7,
+        "type": "spacing",
+        "logprob": -0.0013878247700631618
+      },
+      {
+        "text": "کبھی",
+        "start": 4.7,
+        "end": 4.9,
+        "type": "word",
+        "logprob": -0.0013878247700631618
+      },
+      {
+        "text": " ",
+        "start": 4.9,
+        "end": 4.94,
+        "type": "spacing",
+        "logprob": -0.0017074067145586014
+      },
+      {
+        "text": "کبھار",
+        "start": 4.94,
+        "end": 5.2,
+        "type": "word",
+        "logprob": -0.008874122798442841
+      },
+      {
+        "text": " ",
+        "start": 5.2,
+        "end": 5.26,
+        "type": "spacing",
+        "logprob": -0.03252926841378212
+      },
+      {
+        "text": "منجمد",
+        "start": 5.26,
+        "end": 5.68,
+        "type": "word",
+        "logprob": -0.013813264225609601
+      },
+      {
+        "text": " ",
+        "start": 5.68,
+        "end": 5.7,
+        "type": "spacing",
+        "logprob": -0.03892054408788681
+      },
+      {
+        "text": "پوائنٹ",
+        "start": 5.7,
+        "end": 5.94,
+        "type": "word",
+        "logprob": -0.03252309030115915
+      },
+      {
+        "text": " ",
+        "start": 5.94,
+        "end": 5.98,
+        "type": "spacing",
+        "logprob": -0.00006115249561844394
+      },
+      {
+        "text": "سے",
+        "start": 5.98,
+        "end": 6.06,
+        "type": "word",
+        "logprob": -0.00006115249561844394
+      },
+      {
+        "text": " ",
+        "start": 6.06,
+        "end": 6.1,
+        "type": "spacing",
+        "logprob": -0.0029604677110910416
+      },
+      {
+        "text": "نیچے",
+        "start": 6.1,
+        "end": 6.36,
+        "type": "word",
+        "logprob": -0.0029604677110910416
+      },
+      {
+        "text": " ",
+        "start": 6.36,
+        "end": 6.4,
+        "type": "spacing",
+        "logprob": -0.006376516539603472
+      },
+      {
+        "text": "جاتی",
+        "start": 6.4,
+        "end": 6.66,
+        "type": "word",
+        "logprob": -0.006376516539603472
+      },
+      {
+        "text": " ",
+        "start": 6.66,
+        "end": 6.7,
+        "type": "spacing",
+        "logprob": -0.009323391132056713
+      },
+      {
+        "text": "ہے،",
+        "start": 6.7,
+        "end": 6.78,
+        "type": "word",
+        "logprob": -0.007811555949350198
+      },
+      {
+        "text": " ",
+        "start": 6.78,
+        "end": 6.84,
+        "type": "spacing",
+        "logprob": -0.0006160030607134104
+      },
+      {
+        "text": "لیکن",
+        "start": 6.84,
+        "end": 7.08,
+        "type": "word",
+        "logprob": -0.0006160030607134104
+      },
+      {
+        "text": " ",
+        "start": 7.08,
+        "end": 7.12,
+        "type": "spacing",
+        "logprob": -0.0007708676857873797
+      },
+      {
+        "text": "ہوا",
+        "start": 7.12,
+        "end": 7.36,
+        "type": "word",
+        "logprob": -0.0007708676857873797
+      },
+      {
+        "text": " ",
+        "start": 7.36,
+        "end": 7.38,
+        "type": "spacing",
+        "logprob": -0.00004660974445869215
+      },
+      {
+        "text": "اور",
+        "start": 7.38,
+        "end": 7.52,
+        "type": "word",
+        "logprob": -0.00004660974445869215
+      },
+      {
+        "text": " ",
+        "start": 7.52,
+        "end": 7.56,
+        "type": "spacing",
+        "logprob": -0.1293412744998932
+      },
+      {
+        "text": "نمی",
+        "start": 7.56,
+        "end": 7.78,
+        "type": "word",
+        "logprob": -0.1293412744998932
+      },
+      {
+        "text": " ",
+        "start": 7.78,
+        "end": 7.9,
+        "type": "spacing",
+        "logprob": -0.031121624633669853
+      },
+      {
+        "text": "تھرما",
+        "start": 7.9,
+        "end": 8.66,
+        "type": "word",
+        "logprob": -0.08299432620406151
+      },
+      {
+        "text": " ",
+        "start": 8.66,
+        "end": 8.72,
+        "type": "spacing",
+        "logprob": -0.03620610386133194
+      },
+      {
+        "text": "میٹر",
+        "start": 8.72,
+        "end": 9,
+        "type": "word",
+        "logprob": -0.03620610386133194
+      },
+      {
+        "text": " ",
+        "start": 9,
+        "end": 9.02,
+        "type": "spacing",
+        "logprob": -0.00015889335190877318
+      },
+      {
+        "text": "پر",
+        "start": 9.02,
+        "end": 9.12,
+        "type": "word",
+        "logprob": -0.00015889335190877318
+      },
+      {
+        "text": " ",
+        "start": 9.12,
+        "end": 9.16,
+        "type": "spacing",
+        "logprob": -0.00018416139937471598
+      },
+      {
+        "text": "نظر",
+        "start": 9.16,
+        "end": 9.38,
+        "type": "word",
+        "logprob": -0.00018416139937471598
+      },
+      {
+        "text": " ",
+        "start": 9.38,
+        "end": 9.44,
+        "type": "spacing",
+        "logprob": -0.001206861576065421
+      },
+      {
+        "text": "آنے",
+        "start": 9.44,
+        "end": 9.6,
+        "type": "word",
+        "logprob": -0.001206861576065421
+      },
+      {
+        "text": " ",
+        "start": 9.6,
+        "end": 9.64,
+        "type": "spacing",
+        "logprob": -0.0004285847535356879
+      },
+      {
+        "text": "والی",
+        "start": 9.64,
+        "end": 9.88,
+        "type": "word",
+        "logprob": -0.0004285847535356879
+      },
+      {
+        "text": " ",
+        "start": 9.88,
+        "end": 9.88,
+        "type": "spacing",
+        "logprob": -0.00233056559227407
+      },
+      {
+        "text": "ٹھنڈ",
+        "start": 9.88,
+        "end": 10.1,
+        "type": "word",
+        "logprob": -0.0014841851370874792
+      },
+      {
+        "text": " ",
+        "start": 10.1,
+        "end": 10.14,
+        "type": "spacing",
+        "logprob": -0.00047100416850298643
+      },
+      {
+        "text": "سے",
+        "start": 10.14,
+        "end": 10.24,
+        "type": "word",
+        "logprob": -0.00047100416850298643
+      },
+      {
+        "text": " ",
+        "start": 10.24,
+        "end": 10.28,
+        "type": "spacing",
+        "logprob": -0.00019333878299221396
+      },
+      {
+        "text": "موسم",
+        "start": 10.3,
+        "end": 10.56,
+        "type": "word",
+        "logprob": -0.00019333878299221396
+      },
+      {
+        "text": " ",
+        "start": 10.56,
+        "end": 10.62,
+        "type": "spacing",
+        "logprob": -0.0007229813490994275
+      },
+      {
+        "text": "کو",
+        "start": 10.62,
+        "end": 10.72,
+        "type": "word",
+        "logprob": -0.0007229813490994275
+      },
+      {
+        "text": " ",
+        "start": 10.72,
+        "end": 10.74,
+        "type": "spacing",
+        "logprob": -0.0012630588607862592
+      },
+      {
+        "text": "کہیں",
+        "start": 10.76,
+        "end": 10.96,
+        "type": "word",
+        "logprob": -0.0012630588607862592
+      },
+      {
+        "text": " ",
+        "start": 10.96,
+        "end": 11,
+        "type": "spacing",
+        "logprob": -0.00011312322021694854
+      },
+      {
+        "text": "زیادہ",
+        "start": 11,
+        "end": 11.22,
+        "type": "word",
+        "logprob": -0.00011312322021694854
+      },
+      {
+        "text": " ",
+        "start": 11.22,
+        "end": 11.28,
+        "type": "spacing",
+        "logprob": -0.0012811556225642562
+      },
+      {
+        "text": "سرد",
+        "start": 11.28,
+        "end": 11.46,
+        "type": "word",
+        "logprob": -0.0012811556225642562
+      },
+      {
+        "text": " ",
+        "start": 11.46,
+        "end": 11.5,
+        "type": "spacing",
+        "logprob": -0.0007758706342428923
+      },
+      {
+        "text": "بنا",
+        "start": 11.5,
+        "end": 11.68,
+        "type": "word",
+        "logprob": -0.0007758706342428923
+      },
+      {
+        "text": " ",
+        "start": 11.68,
+        "end": 11.74,
+        "type": "spacing",
+        "logprob": -0.0022073446307331324
+      },
+      {
+        "text": "دیتی",
+        "start": 11.74,
+        "end": 12,
+        "type": "word",
+        "logprob": -0.0022073446307331324
+      },
+      {
+        "text": " ",
+        "start": 12,
+        "end": 12.08,
+        "type": "spacing",
+        "logprob": -0.11463477462530136
+      },
+      {
+        "text": "ہے۔",
+        "start": 12.08,
+        "end": 12.14,
+        "type": "word",
+        "logprob": -0.11463477462530136
+      }
+    ],
+    "transcription_id": "SaqsKsB0eUjfybyH6Z27",
+    "audio_duration_secs": 12.54
+  }
+}
