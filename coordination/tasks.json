@@ -4,7 +4,7 @@
   "phase": "foundation",
   "coordinator": "Murtada",
   "application_reviewer": "Hisham",
-  "updated_at": "2026-11-08T01:15:39.702732+00:00",
+  "updated_at": "2026-11-08T15:59:44.372468+00:00",
   "registry_writer": "coordinator_only",
   "implementation_started": true,
   "status_values": [
@@ -19,15 +19,64 @@
   ],
   "tasks": [
     {
+      "id": "T81-presentation-data",
+      "title": "Prepare a source-backed presentation data brief and shareable chart assets",
+      "human_owner": "Murtada",
+      "reviewer": "Murtada",
+      "status": "review",
+      "depends_on": [],
+      "assignment": {
+        "agent_id": "/root",
+        "provider": "Codex",
+        "claim_id": "t81-presentation-data-20261108",
+        "run_id": "t81-presentation-data-20261108",
+        "base_sha": "49407e50f292ef66adc39ffbae05d93c33bcdc42"
+      },
+      "allowed_writes": [
+        "docs/presentation-data-brief.md",
+        "docs/presentation-assets/**",
+        "README.md",
+        "coordination/handoffs/T81-presentation-data.md"
+      ],
+      "runtime_outputs": [
+        "data/derived/presentation-brief/**"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false,
+      "review_evidence": "coordination/handoffs/T81-presentation-data.md",
+      "scope_note": "User requests a data summary for her teammate to make the presentation while the user plans frontend work. Produce a concise accurate brief, chart-ready aggregates and presentation images from existing verified runs. No frontend or deck implementation, no new inference, and no external message to an unspecified recipient."
+    },
+    {
       "id": "T71-routed",
       "title": "MInDS-14 held-out routing baseline and audio-evaluation preparation",
       "human_owner": "Murtada",
       "reviewer": "Murtada",
       "status": "review",
       "depends_on": [],
-      "assignment": {"agent_id": "/root", "provider": "Codex", "claim_id": "t71-routed-20261108", "run_id": "t71-routed-20261108", "base_sha": "4a3687013df34853f7acc425b6de72504f278618"},
-      "allowed_writes": ["pipeline/lapeace_data/routing.py", "pipeline/lapeace_data/__main__.py", "pipeline/lapeace_data/artifacts.py", "config/routing.json", "contracts/v1/routing.schema.json", "tests/data_checks/test_routing.py", "docs/pipeline/routing.md", "docs/release-checklist.md", "README.md", ".spec.md", "coordination/handoffs/T71-routed.md"],
-      "runtime_outputs": ["data/derived/routed/**", "**/__pycache__/**"],
+      "assignment": {
+        "agent_id": "/root",
+        "provider": "Codex",
+        "claim_id": "t71-routed-20261108",
+        "run_id": "t71-routed-20261108",
+        "base_sha": "4a3687013df34853f7acc425b6de72504f278618"
+      },
+      "allowed_writes": [
+        "pipeline/lapeace_data/routing.py",
+        "pipeline/lapeace_data/__main__.py",
+        "pipeline/lapeace_data/artifacts.py",
+        "config/routing.json",
+        "contracts/v1/routing.schema.json",
+        "tests/data_checks/test_routing.py",
+        "docs/pipeline/routing.md",
+        "docs/release-checklist.md",
+        "README.md",
+        ".spec.md",
+        "coordination/handoffs/T71-routed.md"
+      ],
+      "runtime_outputs": [
+        "data/derived/routed/**",
+        "**/__pycache__/**"
+      ],
       "paid_provider_calls": "forbidden",
       "allows_subagents": false,
       "review_evidence": "coordination/handoffs/T71-routed.md",
@@ -45,8 +94,18 @@
       "reviewer": "Murtada",
       "status": "review",
       "depends_on": [],
-      "assignment": {"agent_id": "/root", "provider": "Codex", "claim_id": "t80-checklist-20261108", "run_id": "t80-checklist-20261108", "base_sha": "ca9e6f4ca5defc99a1c6949148e94388b666c6f2"},
-      "allowed_writes": ["docs/release-checklist.md", "README.md", "coordination/handoffs/T80-checklist.md"],
+      "assignment": {
+        "agent_id": "/root",
+        "provider": "Codex",
+        "claim_id": "t80-checklist-20261108",
+        "run_id": "t80-checklist-20261108",
+        "base_sha": "ca9e6f4ca5defc99a1c6949148e94388b666c6f2"
+      },
+      "allowed_writes": [
+        "docs/release-checklist.md",
+        "README.md",
+        "coordination/handoffs/T80-checklist.md"
+      ],
       "runtime_outputs": [],
       "paid_provider_calls": "forbidden",
       "allows_subagents": false,
@@ -675,74 +734,154 @@
       "review_evidence": "coordination/handoffs/T10-offline-fixes.md"
     },
     {
-    "id": "T40-offline-audit",
-    "title": "Audit all 40 pilot clips and source references",
-    "human_owner": "Murtada",
-    "reviewer": "Murtada",
-    "status": "review",
-    "depends_on": ["T10-offline"],
-    "assignment": {
-      "agent_id": "/root",
-      "provider": "Codex",
-      "claim_id": "t40-offline-audit-20261108T013013Z",
-      "run_id": "t40-offline-audit-20261108T013013Z",
-      "base_sha": "8a9977adc76f849c2ffcc46677c6c65a897cddb8"
-    },
-    "allowed_writes": [
-      "reviews/samples/offline-audit.md",
-      "coordination/handoffs/T40-offline-audit.md"
-    ],
-    "runtime_outputs": [],
-    "paid_provider_calls": "forbidden",
-    "allows_subagents": false,
-    "scope_note": "User requested clip/reference review, followed by adapter configuration and explicit approval before the full run. Automated checks cannot establish listening approval. Original T40 remains incomplete until listening review and approval are recorded.",
-    "review_evidence": "coordination/handoffs/T40-offline-audit.md"
-    },
-    {
-    "id": "T70-commands",
-    "human_owner": "Murtada",
-    "reviewer": "Murtada",
-    "status": "review",
-    "depends_on": ["T10-offline"],
-    "assignment": {"agent_id": "/root", "provider": "Codex", "run_id": "t70-commands-20261108T040128Z", "claim_id": "t70-commands-20261108T040128Z", "base_sha": "f95d146f39b0bff06c39a8b2e8803796dcc68c65"},
-    "allowed_writes": ["pipeline/lapeace_data/**", "contracts/v1/benchmark.schema.json", "tests/data_checks/test_benchmark.py", "docs/pipeline/**", "README.md", ".env.example", ".spec.md", "coordination/handoffs/T70-commands.md"],
-    "runtime_outputs": ["data/derived/**", "data/cache/**", "**/__pycache__/**"],
-    "paid_provider_calls": "forbidden_until_separate_user_approval",
-    "allows_subagents": false,
-    "review_evidence": "coordination/handoffs/T70-commands.md",
-    "scope_note": "User confirms friend's listening review is complete and asks for review import, ElevenLabs adapter and scoring before secure credential configuration and separate two-clip smoke approval. Record review as coordinator attestation, not agent listening or automatic Buzz ground truth. Original release tasks remain incomplete."
+      "id": "T40-offline-audit",
+      "title": "Audit all 40 pilot clips and source references",
+      "human_owner": "Murtada",
+      "reviewer": "Murtada",
+      "status": "review",
+      "depends_on": [
+        "T10-offline"
+      ],
+      "assignment": {
+        "agent_id": "/root",
+        "provider": "Codex",
+        "claim_id": "t40-offline-audit-20261108T013013Z",
+        "run_id": "t40-offline-audit-20261108T013013Z",
+        "base_sha": "8a9977adc76f849c2ffcc46677c6c65a897cddb8"
+      },
+      "allowed_writes": [
+        "reviews/samples/offline-audit.md",
+        "coordination/handoffs/T40-offline-audit.md"
+      ],
+      "runtime_outputs": [],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false,
+      "scope_note": "User requested clip/reference review, followed by adapter configuration and explicit approval before the full run. Automated checks cannot establish listening approval. Original T40 remains incomplete until listening review and approval are recorded.",
+      "review_evidence": "coordination/handoffs/T40-offline-audit.md"
     },
     {
-    "id": "T70-buzz",
-    "title": "Import existing Buzz outputs and human-corrected references; score and export ward context",
-    "human_owner": "Murtada",
-    "reviewer": "Murtada",
-    "status": "review",
-    "depends_on": ["T10-offline"],
-    "assignment": {"agent_id": "/root", "provider": "Codex", "claim_id": "t70-buzz-existing-20261108", "run_id": "t70-buzz-existing-20261108", "base_sha": "f95d146f39b0bff06c39a8b2e8803796dcc68c65"},
-    "allowed_writes": ["pipeline/lapeace_data/imported.py", "pipeline/lapeace_data/wards.py", "pipeline/lapeace_data/artifacts.py", "pipeline/lapeace_data/__main__.py", "contracts/v1/imported.schema.json", "tests/data_checks/test_imported.py", "docs/pipeline/buzz.md", "docs/pipeline/benchmark.md", "README.md", ".spec.md", "coordination/handoffs/T70-buzz.md"],
-    "runtime_outputs": ["data/derived/**", "**/__pycache__/**"],
-    "paid_provider_calls": "forbidden",
-    "allows_subagents": false,
-    "review_evidence": "coordination/handoffs/T70-buzz.md",
-    "actual_requests": 0,
-    "actual_run_id": "buzz-23b598a3485a2ac4d864fd27",
-    "scope_note": "User confirms attached 468-row CSV transcript column is friend's corrected reference, original 40 Buzz outputs already exist, engine is Whisper with exact model/settings unspecified, and one unchanged model/settings profile was used throughout. Recompute scores from original outputs; never import CSV WER/SER as recognition scores. No further transcription requested."
+      "id": "T70-commands",
+      "human_owner": "Murtada",
+      "reviewer": "Murtada",
+      "status": "review",
+      "depends_on": [
+        "T10-offline"
+      ],
+      "assignment": {
+        "agent_id": "/root",
+        "provider": "Codex",
+        "run_id": "t70-commands-20261108T040128Z",
+        "claim_id": "t70-commands-20261108T040128Z",
+        "base_sha": "f95d146f39b0bff06c39a8b2e8803796dcc68c65"
+      },
+      "allowed_writes": [
+        "pipeline/lapeace_data/**",
+        "contracts/v1/benchmark.schema.json",
+        "tests/data_checks/test_benchmark.py",
+        "docs/pipeline/**",
+        "README.md",
+        ".env.example",
+        ".spec.md",
+        "coordination/handoffs/T70-commands.md"
+      ],
+      "runtime_outputs": [
+        "data/derived/**",
+        "data/cache/**",
+        "**/__pycache__/**"
+      ],
+      "paid_provider_calls": "forbidden_until_separate_user_approval",
+      "allows_subagents": false,
+      "review_evidence": "coordination/handoffs/T70-commands.md",
+      "scope_note": "User confirms friend's listening review is complete and asks for review import, ElevenLabs adapter and scoring before secure credential configuration and separate two-clip smoke approval. Record review as coordinator attestation, not agent listening or automatic Buzz ground truth. Original release tasks remain incomplete."
     },
     {
-    "id": "T70-smoke",
-    "human_owner": "Murtada",
-    "reviewer": "Murtada",
-    "status": "review",
-    "assignment": {"agent_id": "/root", "provider": "Codex", "run_id": "t70-smoke-20261108T050756Z", "claim_id": "t70-smoke-20261108T050756Z", "base_sha": "f95d146f39b0bff06c39a8b2e8803796dcc68c65"},
-    "allowed_writes": ["coordination/handoffs/T70-smoke.md"],
-    "runtime_outputs": ["data/derived/benchmark/**"],
-    "paid_provider_calls": "user_approved_at_most_2_attempts_47.866508_seconds_no_retries",
-    "allows_subagents": false,
-    "scope_note": "Explicit user approval of english247 and urdu7 only. Private credential entry completed. Two provider requests succeeded and were scored offline; full-pilot authorization and human smoke inspection remain separate.",
-    "actual_requests": 2,
-    "actual_submitted_audio_seconds": 47.866508,
-    "review_evidence": "coordination/handoffs/T70-smoke.md"
+      "id": "T70-buzz",
+      "title": "Import existing Buzz outputs and human-corrected references; score and export ward context",
+      "human_owner": "Murtada",
+      "reviewer": "Murtada",
+      "status": "review",
+      "depends_on": [
+        "T10-offline"
+      ],
+      "assignment": {
+        "agent_id": "/root",
+        "provider": "Codex",
+        "claim_id": "t70-buzz-existing-20261108",
+        "run_id": "t70-buzz-existing-20261108",
+        "base_sha": "f95d146f39b0bff06c39a8b2e8803796dcc68c65"
+      },
+      "allowed_writes": [
+        "pipeline/lapeace_data/imported.py",
+        "pipeline/lapeace_data/wards.py",
+        "pipeline/lapeace_data/artifacts.py",
+        "pipeline/lapeace_data/__main__.py",
+        "contracts/v1/imported.schema.json",
+        "tests/data_checks/test_imported.py",
+        "docs/pipeline/buzz.md",
+        "docs/pipeline/benchmark.md",
+        "README.md",
+        ".spec.md",
+        "coordination/handoffs/T70-buzz.md"
+      ],
+      "runtime_outputs": [
+        "data/derived/**",
+        "**/__pycache__/**"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false,
+      "review_evidence": "coordination/handoffs/T70-buzz.md",
+      "actual_requests": 0,
+      "actual_run_id": "buzz-23b598a3485a2ac4d864fd27",
+      "scope_note": "User confirms attached 468-row CSV transcript column is friend's corrected reference, original 40 Buzz outputs already exist, engine is Whisper with exact model/settings unspecified, and one unchanged model/settings profile was used throughout. Recompute scores from original outputs; never import CSV WER/SER as recognition scores. No further transcription requested."
+    },
+    {
+      "id": "T70-smoke",
+      "human_owner": "Murtada",
+      "reviewer": "Murtada",
+      "status": "review",
+      "assignment": {
+        "agent_id": "/root",
+        "provider": "Codex",
+        "run_id": "t70-smoke-20261108T050756Z",
+        "claim_id": "t70-smoke-20261108T050756Z",
+        "base_sha": "f95d146f39b0bff06c39a8b2e8803796dcc68c65"
+      },
+      "allowed_writes": [
+        "coordination/handoffs/T70-smoke.md"
+      ],
+      "runtime_outputs": [
+        "data/derived/benchmark/**"
+      ],
+      "paid_provider_calls": "user_approved_at_most_2_attempts_47.866508_seconds_no_retries",
+      "allows_subagents": false,
+      "scope_note": "Explicit user approval of english247 and urdu7 only. Private credential entry completed. Two provider requests succeeded and were scored offline; full-pilot authorization and human smoke inspection remain separate.",
+      "actual_requests": 2,
+      "actual_submitted_audio_seconds": 47.866508,
+      "review_evidence": "coordination/handoffs/T70-smoke.md"
+    },
+    {
+      "id": "T31-frontend-plan",
+      "title": "Plan Murtada frontend against Hisham current backend",
+      "human_owner": "Murtada",
+      "reviewer": "Murtada",
+      "status": "in_progress",
+      "depends_on": [],
+      "assignment": {
+        "agent_id": "/root",
+        "provider": "Codex",
+        "run_id": "d2651149-082f-41ee-ad9b-59ea78343af7",
+        "claim_id": "d2651149-082f-41ee-ad9b-59ea78343af7",
+        "base_sha": "49407e50f292ef66adc39ffbae05d93c33bcdc42"
+      },
+      "allowed_writes": [
+        "docs/frontend/PRD.md",
+        "docs/frontend/spec.md",
+        "README.md",
+        "coordination/handoffs/T31-frontend-plan.md"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false,
+      "scope_note": "Documentation only. Current user moves Murtada to frontend; inspect origin/hisham/backend without switching branches or merging. Preserve ongoing pipeline/presentation work."
     }
   ],
   "shared_ignored_runtime_paths": [
