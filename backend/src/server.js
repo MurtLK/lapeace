@@ -156,7 +156,7 @@ async function handleAudio(req, res, rawName, dir = AUDIO_DIR) {
 const server = http.createServer(async (req, res) => {
   const { pathname, searchParams: query } = new URL(req.url, 'http://localhost');
   res.setHeader('Access-Control-Allow-Headers', 'Range, Content-Type');
-  if (pathname !== '/api/agent/session') {
+  if (pathname !== '/api/agent/session' && pathname !== '/api/callcheck') {
     // Read-only public data: any origin may read it.
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
@@ -183,11 +183,18 @@ const server = http.createServer(async (req, res) => {
       if (req.method !== 'POST') return sendJson(res, 405, { error: 'use POST' });
       return await handleAgentSession(req, res);
     }
+    if (pathname === '/api/callcheck/status' && req.method === 'GET') {
+      return sendJson(res, 200, {
+        ready: Boolean(process.env.ELEVENLABS_API_KEY?.trim()),
+        voice_check_configured: ['VOICE_DETECTOR_PYTHON', 'VOICE_DETECTOR_SCRIPT', 'VOICE_DETECTOR_MODEL'].every(k => Boolean(process.env[k]?.trim())),
+      });
+    }
     if (pathname === '/api/callcheck') {
       // Same-site only: the live check spends API credits.
       const origin = req.headers.origin;
       if (!origin || !AGENT_ORIGINS.has(origin)) return sendJson(res, 403, { error: 'origin_not_allowed' });
       res.setHeader('Access-Control-Allow-Origin', origin); res.setHeader('Vary', 'Origin');
+      if (req.method === 'OPTIONS') { res.writeHead(204); return res.end(); }
       if (req.method !== 'POST') return sendJson(res, 405, { error: 'use POST' });
       const ip = (process.env.TRUST_CF_CONNECTING_IP === '1' && req.headers['cf-connecting-ip']) || req.socket.remoteAddress || 'unknown';
       if (callcheckLimited(ip)) return sendJson(res, 429, { error: 'too_many_checks', retry_after_sec: 60 });

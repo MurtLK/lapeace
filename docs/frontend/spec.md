@@ -27,3 +27,7 @@ Run `npm run typecheck`, `npm test` and `npm run build`. Check the homepage at 1
 ## Call Check asset and guide links
 
 `npm --prefix web run dev` and `npm --prefix web run build` copy `backend/public/call-check.html` to the static dashboard assets via `scripts/prepare-dashboard.mjs`. Keep this canonical HTML available in Vercel uploads. The generated public copy is ignored by Git. Forward only validated public HTTP(S) backend addresses, never credentials. All seven supported tab names have direct-link behavior; `/#dashboard-guide` returns to the corresponding homepage explanation.
+
+## Current full-page workspace
+
+The dashboard opens as a native standalone page rather than an outer iframe. Transcript previews include all 468 compressed source recordings with attribution and a manifest. Clip lists have 25-item pages. Call Check matches the dashboard palette and resizes to content. Its private key stays in the backend environment; GET `/api/callcheck/status` returns configuration booleans only. No paid transcription is required during verification.

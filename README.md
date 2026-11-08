@@ -13,9 +13,9 @@ npm --prefix web ci
 npm run dev
 ```
 
-Open [the homepage](http://127.0.0.1:5173/). Open dashboard leads to `/dashboard`, which hosts the teammate's Mississauga Unheard research workspace. `npm run dev` starts both Vite on port 5173 and the Node backend on port 8787.
+Open [the homepage](http://127.0.0.1:5173/). Open dashboard opens the LAPEACE research workspace as a full page. `npm run dev` starts both Vite on port 5173 and the Node backend on port 8787.
 
-The integrated dashboard comes from `origin/hisham/wire-site`; the backend comes from `origin/hisham/backend`. See [dashboard setup](docs/dashboard/INTEGRATION.md). Transcript analysis works from bundled CSV files. Real audio and census requests use the backend. No provider credentials or dataset audio are bundled into the frontend. Live Call Check requires separate server-side configuration.
+The integrated dashboard comes from `origin/hisham/wire-site`; the backend comes from `origin/hisham/backend`. See [dashboard setup](docs/dashboard/INTEGRATION.md). Transcript analysis works from bundled CSV files. All 468 recordings have bundled, compressed web previews with source attribution. Census has a bundled snapshot. Provider credentials stay on the backend. Live Call Check requires separate server-side configuration.
 
 ## Verification
 

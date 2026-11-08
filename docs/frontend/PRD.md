@@ -28,3 +28,7 @@ Existing dashboard, API and backend source remain available for the teammate's s
 ## Dashboard explanation update
 
 The homepage explains every dashboard tab and provides direct links. Call Check has a plain-language method explanation and source links. Its canonical browser interface is bundled into the website, while live transcription and the optional voice model still need the configured backend. Explain request flags and voice scores separately; never describe either as caller verification.
+
+## Current full-page workspace
+
+The dashboard opens as a native standalone page rather than an outer iframe. Transcript previews include all 468 compressed source recordings with attribution and a manifest. Clip lists have 25-item pages. Call Check matches the dashboard palette and resizes to content. Its private key stays in the backend environment; GET `/api/callcheck/status` returns configuration booleans only. No paid transcription is required during verification.

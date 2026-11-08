@@ -17,7 +17,7 @@
   const css = document.createElement('style');
   css.textContent = `
     .lp-tab { display:none; } .lp-tab.on { display:block; }
-    .lp-frame { width:100%; height:1000px; border:1px solid var(--line,#dfe4da); border-radius:18px; background:#0E1729; }
+    .lp-frame { width:100%; height:560px; display:block; border:0; border-radius:12px; background:var(--bg,#f5f5f0); margin-top:16px; }
     .lp-row { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
     .lp-btn { display:inline-block; padding:10px 16px; border-radius:999px; background:var(--ink,#203d37); color:#fff; text-decoration:none; font-weight:600; }
     .lp-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; } @media (max-width:900px) { .lp-grid { grid-template-columns:1fr; } }
@@ -45,20 +45,21 @@
 
   const callCheckPage = `call-check.html?backend=${encodeURIComponent(BACKEND)}`;
   panel('callcheck', `<div class="lp-row"><div><h2>Call Check</h2>
-      <p>A separate demo for checking a caller's request. It does not use the accent benchmark to decide whether a call is a scam.</p></div>
-      <a class="lp-btn" href="${esc(callCheckPage)}" target="_blank" rel="noopener">Open Call Check in a new tab</a></div>
-    <p>Record up to 20 seconds. Scribe turns the sample into text; fixed English keyword rules flag requests for codes, unusual payments or remote access. An optional voice model supplies a separate prototype score.</p>
-    <p><b>No red flags does not mean a caller is legitimate.</b> The voice score is not a scam probability or proof of caller identity.</p>
-    <details><summary>How Call Check works and where its source lives</summary>
-      <p>The interface is part of this website. Live transcription needs the configured backend and an ElevenLabs key. The explanation is available even without that connection.</p>
-      <ul>
-        <li><a href="https://github.com/MurtLK/lapeace/blob/main/backend/public/call-check.html" target="_blank" rel="noopener">Browser recording and results interface</a></li>
-        <li><a href="https://github.com/MurtLK/lapeace/blob/main/backend/src/callcheck.js" target="_blank" rel="noopener">Scribe transcription and request handler</a></li>
-        <li><a href="https://github.com/MurtLK/lapeace/blob/main/backend/src/scamrules.js" target="_blank" rel="noopener">Keyword rules and verdict thresholds</a></li>
-        <li><a href="https://github.com/MurtLK/lapeace/blob/main/backend/scripts/voice_detector.py" target="_blank" rel="noopener">Optional synthetic-voice prototype</a></li>
-      </ul>
-    </details>
+      <p>Record a sample and inspect the request flags. A voice score, if available, is a separate prototype.</p></div>
+      <a class="lp-btn" href="${esc(callCheckPage)}" target="_blank" rel="noopener">Open in a new tab</a></div>
     <iframe class="lp-frame" title="LAPEACE Call Check" allow="microphone" data-src="${esc(callCheckPage)}"></iframe>`);
+  // Both pages are served by this frontend, so resize to actual content instead of nesting scrollbars.
+  const callFrame = $('#lp-callcheck iframe');
+  let callObserver;
+  callFrame.addEventListener('load', () => {
+    callObserver?.disconnect();
+    const body = callFrame.contentDocument?.body;
+    if (!body) return;
+    const fit = () => { callFrame.style.height = `${Math.max(420, Math.ceil(body.getBoundingClientRect().height))}px`; };
+    callObserver = new ResizeObserver(fit);
+    callObserver.observe(body);
+    fit();
+  });
 
   panel('where', `<h2>Who and where in Mississauga?</h2>
     <p>2021 Census: residents who speak each language most often at home. These are population counts, kept separate from transcription error rates; they are <b>not</b> an estimate of how many residents voice AI misunderstands.</p>
@@ -146,12 +147,5 @@
     }
   }
 
-  // --- Audio: attach every Speech Accent Archive clip from the backend --------------------
-  fetch(`${BACKEND}/api/samples`).then((r) => r.json()).then((d) => {
-    if (typeof audio !== 'object' || !audio) return;
-    for (const s of d.samples) {
-      const file = s.audio_url ? decodeURIComponent(s.audio_url.split('/').pop()) : `${s.clip_id}.mp3`;
-      if (!audio[file]) audio[file] = `${BACKEND}/audio/${encodeURIComponent(file)}`;
-    }
-  }).catch(() => {});
+  // Audio previews are imported static assets, indexed when cleaned.csv loads in app.js.
 })();

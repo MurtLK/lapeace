@@ -1,5 +1,6 @@
+import { useEffect } from 'react';
+import { openDashboard } from '../lib/navigation';
 import { Link, useLocation } from 'react-router-dom';
-import { ArrowLeft, ExternalLink } from 'lucide-react';
 import './research-dashboard.css';
 
 export function ResearchDashboard() {
@@ -20,14 +21,14 @@ export function ResearchDashboard() {
   if (tab && ['overview', 'clips', 'review', 'settings', 'languages', 'callcheck'].includes(tab)) url.hash = tab;
   const src = `${url.pathname}${url.search}${url.hash}`;
 
+  useEffect(() => { openDashboard(src); }, [src]);
   return (
-    <main className="research-dashboard">
-      <nav className="research-dashboard__nav" aria-label="Dashboard navigation">
-        <Link to="/"><ArrowLeft aria-hidden="true" size={18} />Back to website</Link>
-        <Link to="/#dashboard-guide">Dashboard guide</Link>
-        <a href={src} target="_blank" rel="noopener noreferrer">Open workspace in a new tab<ExternalLink aria-hidden="true" size={16} /></a>
-      </nav>
-      <iframe className="research-dashboard__frame" src={src} title="LAPEACE research dashboard" allow="microphone" />
+    <main className="research-dashboard-launch">
+      <h1>Opening the dashboard...</h1>
+      <p>The research workspace opens as a full page.</p>
+      <a href={src}>Open dashboard</a>
+      <Link to="/">Back to website</Link>
+      <Link to="/#dashboard-guide">Dashboard guide</Link>
     </main>
   );
 }

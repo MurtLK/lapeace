@@ -2,6 +2,8 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { describe, expect, it, vi } from 'vitest';
 import { App } from './App';
+import { openDashboard } from './lib/navigation';
+vi.mock('./lib/navigation', () => ({ openDashboard: vi.fn() }));
 
 describe('website navigation', () => {
   it('opens the teammate workspace and returns home without homepage API requests', () => {
@@ -9,7 +11,7 @@ describe('website navigation', () => {
     vi.stubGlobal('fetch', fetch);
     render(<MemoryRouter initialEntries={['/']}><App /></MemoryRouter>);
     fireEvent.click(screen.getAllByRole('link', { name: 'Open dashboard' })[0]);
-    expect(screen.getByTitle('LAPEACE research dashboard')).toHaveAttribute('src', '/dashboard-app/index.html');
+    expect(openDashboard).toHaveBeenLastCalledWith('/dashboard-app/index.html');
     fireEvent.click(screen.getByRole('link', { name: 'Back to website' }));
     expect(screen.getByRole('heading', { name: 'How well does AI understand accented English?' })).toBeVisible();
     expect(fetch).not.toHaveBeenCalled();
@@ -17,17 +19,17 @@ describe('website navigation', () => {
 
   it('supports a direct community visit with a configured backend', () => {
     render(<MemoryRouter initialEntries={['/dashboard?tab=community&backend=https%3A%2F%2Fapi.example.com']}><App /></MemoryRouter>);
-    expect(screen.getByTitle('LAPEACE research dashboard')).toHaveAttribute('src', '/dashboard-app/index.html?backend=https%3A%2F%2Fapi.example.com#where');
+    expect(openDashboard).toHaveBeenLastCalledWith('/dashboard-app/index.html?backend=https%3A%2F%2Fapi.example.com#where');
   });
 
   it('does not forward unsafe backend protocols to the workspace', () => {
     render(<MemoryRouter initialEntries={['/dashboard?backend=javascript%3Aalert(1)']}><App /></MemoryRouter>);
-    expect(screen.getByTitle('LAPEACE research dashboard')).toHaveAttribute('src', '/dashboard-app/index.html');
+    expect(openDashboard).toHaveBeenLastCalledWith('/dashboard-app/index.html');
   });
 
   it.each(['overview', 'clips', 'review', 'settings', 'languages', 'callcheck'])('opens the %s section from a direct guide link', (tab) => {
     render(<MemoryRouter initialEntries={[`/dashboard?tab=${tab}`]}><App /></MemoryRouter>);
-    expect(screen.getByTitle('LAPEACE research dashboard')).toHaveAttribute('src', `/dashboard-app/index.html#${tab}`);
+    expect(openDashboard).toHaveBeenLastCalledWith(`/dashboard-app/index.html#${tab}`);
   });
 
   it('explains dashboard tasks and links Call Check to its implementation without requesting a check', () => {
@@ -47,7 +49,7 @@ describe('website navigation', () => {
     render(<MemoryRouter initialEntries={['/dashboard']}><App /></MemoryRouter>);
     fireEvent.click(screen.getByRole('link', { name: 'Dashboard guide' }));
     expect(screen.getByRole('heading', { name: 'What is the dashboard for?' })).toBeVisible();
-    expect(screen.queryByTitle('LAPEACE research dashboard')).not.toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: 'Opening the dashboard...' })).not.toBeInTheDocument();
   });
 
   it('provides a useful return destination for unknown routes', () => {

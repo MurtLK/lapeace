@@ -19,7 +19,7 @@ The request score is the sum of weights for matched flag categories. Score 0 ret
 
 `scripts/prepare-dashboard.mjs` copies the canonical browser interface into `web/public/dashboard-app/call-check.html` before Vite development and production builds. The generated copy is gitignored. `.vercelignore` includes the canonical public HTML while excluding backend data, executable server source and local secrets from the frontend upload.
 
-The dashboard opens that local page, rather than framing a backend-only page that disappears on a static host. The page accepts a validated HTTP(S) `backend` query value for API calls. Live transcription still requires the separately configured backend and ElevenLabs credentials; no key is shipped to the browser. The explanation and source links stay readable when those APIs are unavailable.
+The full-page dashboard embeds that local Call Check page and resizes it to its actual height, rather than framing a backend-only page that disappears on a static host. The page accepts a validated HTTP(S) `backend` query value for API calls. Live transcription still requires the separately configured backend and ElevenLabs credentials; no key is shipped to the browser. The explanation and source links stay readable when those APIs are unavailable.
 
 The interface tells users when audio is sent to ElevenLabs. The optional local voice process writes a temporary WAV and deletes it after processing. The app has no recording-history feature. We do not infer provider retention from the application code.
 
@@ -30,3 +30,7 @@ The homepage explains all seven dashboard sections at `/#dashboard-guide`. Each 
 ## Verification
 
 All 23 tests, typecheck and production build passed. Chrome verification covered all seven direct tab links, the guide return anchor, the bundled Call Check page, its four implementation links, static-host/API-unavailable behavior, 200% homepage text size and responsive captures. The production Call Check asset matched the canonical file byte for byte. Verification made only GET requests, with no microphone recording, live transcription or provider session.
+
+## Readiness and palette
+
+Call Check uses the same light paper, forest text, white surfaces and green controls as the dashboard. Its longer explanations and sample scripts are expandable. GET `/api/callcheck/status` exposes only configuration booleans and enables the microphone UI when configured. The local key is private; a hosted backend requires its own environment configuration. Configuration presence is not a successful paid transcription test.

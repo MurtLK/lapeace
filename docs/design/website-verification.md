@@ -1,5 +1,11 @@
 # Website integration and verification
 
+## Current layout, audio and key configuration
+
+The dashboard now runs as a full-page app, with no outer iframe. Its project introduction is compact, the clip list has 25-item pages and the variation chart is expandable. Call Check matches its colors and fits its embedded document height, including expanded help. All 468 recordings have attributed compressed static previews beside their transcripts. A manifest records source/preview hashes; all previews are present and match those hashes in the build.
+
+The local ElevenLabs key is held only in gitignored backend/.env. The frontend reads a boolean readiness endpoint and never receives the value. No paid transcription test was run. Browser verification covered native dashboard navigation, pagination, range and decoded audio, static-host audio, equal dashboard/Call Check backgrounds, responsive frame size, configured readiness and allowed-origin preflight. All 23 tests, typecheck and build passed. Earlier iframe/backend-only audio statements below are historical.
+
 ## Current explanation and Call Check integration
 
 Added a homepage guide to all seven dashboard sections and a source-linked Call Check explanation. The canonical browser interface is copied into the frontend before dev/build, so its explanation also loads on a static host with no backend. Live transcription remains on the existing backend. All 23 tests, typecheck and build passed. Browser verification covered direct tabs, return-to-guide scrolling, source links, unavailable APIs, 200% text and the generated production asset. No microphone or paid provider call was used. See `docs/dashboard/CALL_CHECK.md` for source locations and limits.

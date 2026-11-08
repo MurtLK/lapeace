@@ -12,3 +12,37 @@
   .brand img { width: 114px; }
 }
 @media (prefers-reduced-motion: reduce) { .brand:active { transform: none; } }
+
+/* Full-page workspace: one page scroll, a compact project introduction and paged clips. */
+body { padding-top: 54px; --muted: #53665d; }
+.site-nav { position: fixed; top: 0; left: 0; z-index: 40; width: 100%; min-height: 54px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.25rem 1.5rem; border-bottom: 1px solid var(--line); background: var(--bg); }
+.site-nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); text-underline-offset: 0.2em; }
+aside { top: 54px; padding-top: 22px; }
+.brand { min-height: 72px; }
+.brand img { width: 108px; }
+.project { margin: 12px 9px; }
+aside nav button { margin-block: 4px; padding-block: 10px; }
+.heading { padding-block: 22px; align-items: center; gap: 1rem; }
+.heading h1 { font-size: clamp(1.7rem, 3vw, 2.4rem); line-height: 1.15; margin-block: 8px; }
+.heading p { margin-block: 8px; }
+.seal { width: 92px; height: 92px; flex-shrink: 0; font-size: 30px; }
+.seal svg { display: none; }
+.clip-pagination { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+.clip-pagination button { width: auto; min-height: 44px; background: #fff; border: 1px solid var(--line); }
+.clip-pagination button:disabled { opacity: 0.45; cursor: default; }
+.recording-preview { margin: 16px 0; padding: 14px; background: #edf0e7; border-radius: 10px; }
+.recording-preview audio { margin: 0 0 8px; }
+.recording-preview figcaption { color: var(--muted); font-size: 12px; line-height: 1.6; }
+.recording-preview a { color: var(--ink); }
+@media(max-width:650px) {
+  .site-nav { padding-inline: 15px; }
+  aside { padding-block: 10px; }
+  .brand { min-height: 64px; }
+  .brand img { width: 96px; }
+  .heading { padding-block: 14px; }
+}
+.grid { align-items: start; }
+.rank { padding-block: 8px; }
+.rank small { display: inline; margin-top: 0; margin-left: 6px; white-space: nowrap; }
+.variation-details summary { cursor: pointer; min-height: 44px; padding-block: 10px; font-weight: 700; }
+summary:focus-visible { outline: 3px solid #426a53; outline-offset: 4px; }

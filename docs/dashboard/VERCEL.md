@@ -1,17 +1,17 @@
 # Deploy on Vercel
 
-Import https://github.com/MurtLK/lapeace into Vercel. Use the repository root as Root Directory, not `web`. The committed `vercel.json` sets the install command, build command, output directory and `/dashboard` refresh rewrites. Node 24 is required.
+Import https://github.com/MurtLK/lapeace into Vercel. Use the repository root as Root Directory, not `web`. The committed `vercel.json` sets install, build, output and `/dashboard` refresh rewrites. Node 24 is required.
 
-The homepage, dashboard and its 468-transcript analysis work as a static deployment. The census tab falls back to a bundled copy of the backend's actual 2021 Census snapshot if no backend is reachable; the UI labels that state. No live data or accuracy is invented.
+The homepage opens the research dashboard as a native full-page app. It has its own Back to website and Dashboard guide links. The 468-recording transcript analysis, compressed source audio previews, census snapshot and multilingual results work as static files without a backend. Audio is lazy-loaded from `/dashboard-app/audio/` only when requested. Previews total about 80 MB and include attribution, license and a hash manifest.
 
-## Optional backend connection
+The build copies the canonical Call Check browser interface from `backend/public/call-check.html` into the dashboard's static assets. It matches the dashboard palette and resizes to fit its contents. Its explanation and source links work offline; live transcription needs the backend.
 
-Deploy `backend/` on a Node host with the dataset audio available, then set `VITE_API_BASE_URL` to its public HTTPS origin in the Vercel project's environment variables. Redeploy after changing this value. This is a public backend address, not an API key. Keep ElevenLabs credentials only on the backend host.
+## Live Call Check
 
-Without the backend, users can search, score, annotate and export the CSV evidence, and view the census snapshot. They can attach local audio in Analysis settings. The Call Check interface and explanation are bundled at `/dashboard-app/call-check.html`. Its source is copied from the canonical `backend/public/call-check.html` before each dev/build command. Automatic archive audio playback and live Call Check transcription require the separately configured backend. The Vercel deployment does not run the repository's long-running Node server or its Python voice detector.
+Run `backend/` on a Node host. Set ELEVENLABS_API_KEY in that host's private environment. Set CORS_ORIGIN to include the Vercel website origin. Set VITE_API_BASE_URL in Vercel to the backend's public HTTPS origin and redeploy. That address is public; the API key must never be a VITE variable or committed to Git.
 
-For microphone-enabled Call Check, include the Vercel website origin in backend CORS_ORIGIN and allow framing by that origin if the backend host adds frame restrictions. Microphone access still requires an explicit user action and browser permission.
+GET `/api/callcheck/status` returns configuration booleans only. The Record button remains disabled if the live backend or its key is missing. This readiness check does not spend transcription credits or validate provider permissions. The optional Python voice detector needs its own backend configuration.
 
-Vercel documentation: https://vercel.com/docs/frameworks/frontend/vite and https://vercel.com/docs/project-configuration/vercel-json.
+Vercel does not run this repository's long-running backend or Python detector. Local backend environment values are not automatically installed on a hosted backend. No production deployment URL is claimed here.
 
-The code is prepared for deployment. No authenticated Vercel account or linked project was available during setup, so no production deployment URL is claimed.
+References: https://vercel.com/docs/frameworks/frontend/vite and https://vercel.com/docs/limits.
