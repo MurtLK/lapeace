@@ -1,0 +1,788 @@
+{
+  "source": "Speech Accent Archive x ElevenLabs Scribe v2 benchmark (468 clips), unchanged",
+  "wer_unit": "fraction (0.05 = 5%)",
+  "microphone_metadata": "Not available: metadata.csv has no microphone, device or recording-location field. Audio quality was measured from the files instead.",
+  "audio_measures": {
+    "clipping": "0 of 468 clips have any clipping (samples at full scale > 0.01%)",
+    "snr_proxy": "speech level (95th percentile of 50 ms frame loudness) minus noise floor (10th percentile), in dB; higher = cleaner",
+    "snr_proxy_range_db": [
+      5.1,
+      35.0,
+      81.2
+    ],
+    "spearman_snr_vs_wer_all": -0.022,
+    "spearman_snr_vs_wer_non_english": -0.029
+  },
+  "category_rules": {
+    "possible_recording_problem": "speech-to-noise proxy < 20 dB or noise floor > -35 dBFS",
+    "likely_script_departure": ">= 4 inserted words and (an immediate repeat, stutter fragments, or >= 2 fillers) in the Scribe transcript",
+    "likely_transcription_error": "WER > 0 and neither flag above",
+    "note": "Automatic heuristics to prioritise human listening; not verified labels."
+  },
+  "category_counts": {
+    "no_errors": 197,
+    "likely_transcription_error": 228,
+    "likely_script_departure": 35,
+    "possible_recording_problem": 8
+  },
+  "by_group_and_gender": [
+    {
+      "speaker_group": "Mandarin Chinese",
+      "all": {
+        "n": 40,
+        "median_wer": 0.0435,
+        "mean_wer": 0.0652
+      },
+      "female": {
+        "n": 31,
+        "median_wer": 0.0435,
+        "mean_wer": 0.072
+      },
+      "male": {
+        "n": 9,
+        "median_wer": 0.029,
+        "mean_wer": 0.0419
+      },
+      "median_snr_proxy_db": 35.6,
+      "small_sample": false,
+      "gender_unbalanced": true,
+      "gender_split_unreliable": false
+    },
+    {
+      "speaker_group": "Arabic",
+      "all": {
+        "n": 40,
+        "median_wer": 0.029,
+        "mean_wer": 0.0725
+      },
+      "female": {
+        "n": 20,
+        "median_wer": 0.0145,
+        "mean_wer": 0.0602
+      },
+      "male": {
+        "n": 20,
+        "median_wer": 0.0362,
+        "mean_wer": 0.0848
+      },
+      "median_snr_proxy_db": 35.8,
+      "small_sample": false,
+      "gender_unbalanced": false,
+      "gender_split_unreliable": false
+    },
+    {
+      "speaker_group": "Cantonese",
+      "all": {
+        "n": 35,
+        "median_wer": 0.029,
+        "mean_wer": 0.0472
+      },
+      "female": {
+        "n": 20,
+        "median_wer": 0.0362,
+        "mean_wer": 0.0457
+      },
+      "male": {
+        "n": 15,
+        "median_wer": 0.029,
+        "mean_wer": 0.0493
+      },
+      "median_snr_proxy_db": 35.7,
+      "small_sample": false,
+      "gender_unbalanced": false,
+      "gender_split_unreliable": false
+    },
+    {
+      "speaker_group": "Punjabi",
+      "all": {
+        "n": 11,
+        "median_wer": 0.029,
+        "mean_wer": 0.0685
+      },
+      "female": {
+        "n": 2,
+        "median_wer": 0.0145,
+        "mean_wer": 0.0145
+      },
+      "male": {
+        "n": 9,
+        "median_wer": 0.058,
+        "mean_wer": 0.0805
+      },
+      "median_snr_proxy_db": 34.1,
+      "small_sample": true,
+      "gender_unbalanced": true,
+      "gender_split_unreliable": true
+    },
+    {
+      "speaker_group": "Vietnamese",
+      "all": {
+        "n": 39,
+        "median_wer": 0.029,
+        "mean_wer": 0.0502
+      },
+      "female": {
+        "n": 17,
+        "median_wer": 0.0435,
+        "mean_wer": 0.0367
+      },
+      "male": {
+        "n": 22,
+        "median_wer": 0.029,
+        "mean_wer": 0.0606
+      },
+      "median_snr_proxy_db": 35.2,
+      "small_sample": false,
+      "gender_unbalanced": false,
+      "gender_split_unreliable": false
+    },
+    {
+      "speaker_group": "Bengali",
+      "all": {
+        "n": 21,
+        "median_wer": 0.0145,
+        "mean_wer": 0.0407
+      },
+      "female": {
+        "n": 13,
+        "median_wer": 0.0145,
+        "mean_wer": 0.0234
+      },
+      "male": {
+        "n": 8,
+        "median_wer": 0.0435,
+        "mean_wer": 0.0688
+      },
+      "median_snr_proxy_db": 34.9,
+      "small_sample": false,
+      "gender_unbalanced": false,
+      "gender_split_unreliable": false
+    },
+    {
+      "speaker_group": "Gujarati",
+      "all": {
+        "n": 17,
+        "median_wer": 0.0145,
+        "mean_wer": 0.0315
+      },
+      "female": {
+        "n": 10,
+        "median_wer": 0.0073,
+        "mean_wer": 0.0174
+      },
+      "male": {
+        "n": 7,
+        "median_wer": 0.0145,
+        "mean_wer": 0.0518
+      },
+      "median_snr_proxy_db": 36.7,
+      "small_sample": true,
+      "gender_unbalanced": false,
+      "gender_split_unreliable": false
+    },
+    {
+      "speaker_group": "Polish",
+      "all": {
+        "n": 38,
+        "median_wer": 0.0145,
+        "mean_wer": 0.0225
+      },
+      "female": {
+        "n": 17,
+        "median_wer": 0.0145,
+        "mean_wer": 0.0307
+      },
+      "male": {
+        "n": 21,
+        "median_wer": 0,
+        "mean_wer": 0.0159
+      },
+      "median_snr_proxy_db": 31.2,
+      "small_sample": false,
+      "gender_unbalanced": false,
+      "gender_split_unreliable": false
+    },
+    {
+      "speaker_group": "Spanish",
+      "all": {
+        "n": 40,
+        "median_wer": 0.0145,
+        "mean_wer": 0.0265
+      },
+      "female": {
+        "n": 23,
+        "median_wer": 0.0145,
+        "mean_wer": 0.0221
+      },
+      "male": {
+        "n": 17,
+        "median_wer": 0.0145,
+        "mean_wer": 0.0324
+      },
+      "median_snr_proxy_db": 35.0,
+      "small_sample": false,
+      "gender_unbalanced": false,
+      "gender_split_unreliable": false
+    },
+    {
+      "speaker_group": "Tagalog",
+      "all": {
+        "n": 29,
+        "median_wer": 0.0145,
+        "mean_wer": 0.02
+      },
+      "female": {
+        "n": 19,
+        "median_wer": 0.0145,
+        "mean_wer": 0.0259
+      },
+      "male": {
+        "n": 10,
+        "median_wer": 0.0,
+        "mean_wer": 0.0087
+      },
+      "median_snr_proxy_db": 35.8,
+      "small_sample": false,
+      "gender_unbalanced": false,
+      "gender_split_unreliable": false
+    },
+    {
+      "speaker_group": "Urdu",
+      "all": {
+        "n": 29,
+        "median_wer": 0.0145,
+        "mean_wer": 0.0185
+      },
+      "female": {
+        "n": 12,
+        "median_wer": 0.0145,
+        "mean_wer": 0.0242
+      },
+      "male": {
+        "n": 17,
+        "median_wer": 0.0145,
+        "mean_wer": 0.0145
+      },
+      "median_snr_proxy_db": 36.3,
+      "small_sample": false,
+      "gender_unbalanced": false,
+      "gender_split_unreliable": false
+    },
+    {
+      "speaker_group": "English",
+      "all": {
+        "n": 45,
+        "median_wer": 0,
+        "mean_wer": 0.0026
+      },
+      "female": {
+        "n": 18,
+        "median_wer": 0.0,
+        "mean_wer": 0.0032
+      },
+      "male": {
+        "n": 27,
+        "median_wer": 0,
+        "mean_wer": 0.0021
+      },
+      "median_snr_proxy_db": 31.0,
+      "small_sample": false,
+      "gender_unbalanced": false,
+      "gender_split_unreliable": false
+    },
+    {
+      "speaker_group": "Hindi",
+      "all": {
+        "n": 34,
+        "median_wer": 0.0,
+        "mean_wer": 0.0171
+      },
+      "female": {
+        "n": 15,
+        "median_wer": 0,
+        "mean_wer": 0.0039
+      },
+      "male": {
+        "n": 19,
+        "median_wer": 0.029,
+        "mean_wer": 0.0275
+      },
+      "median_snr_proxy_db": 36.8,
+      "small_sample": false,
+      "gender_unbalanced": false,
+      "gender_split_unreliable": false
+    },
+    {
+      "speaker_group": "Portuguese",
+      "all": {
+        "n": 40,
+        "median_wer": 0.0,
+        "mean_wer": 0.0246
+      },
+      "female": {
+        "n": 23,
+        "median_wer": 0,
+        "mean_wer": 0.0315
+      },
+      "male": {
+        "n": 17,
+        "median_wer": 0,
+        "mean_wer": 0.0154
+      },
+      "median_snr_proxy_db": 32.4,
+      "small_sample": false,
+      "gender_unbalanced": false,
+      "gender_split_unreliable": false
+    },
+    {
+      "speaker_group": "Tamil",
+      "all": {
+        "n": 10,
+        "median_wer": 0.0,
+        "mean_wer": 0.0073
+      },
+      "female": {
+        "n": 8,
+        "median_wer": 0.0073,
+        "mean_wer": 0.0091
+      },
+      "male": {
+        "n": 2,
+        "median_wer": 0.0,
+        "mean_wer": 0
+      },
+      "median_snr_proxy_db": 34.2,
+      "small_sample": true,
+      "gender_unbalanced": true,
+      "gender_split_unreliable": true
+    }
+  ],
+  "listening_review": {
+    "high_wer": [
+      {
+        "clip_id": "arabic137",
+        "speaker_group": "Arabic",
+        "gender": "male",
+        "wer": 0.5797,
+        "substitutions": 8,
+        "deletions": 0,
+        "insertions": 32,
+        "fillers": 17,
+        "stutter_fragments": 5,
+        "immediate_repeat": true,
+        "snr_proxy_db": 43.3,
+        "noise_floor_dbfs": -59.6,
+        "candidate_category": "likely_script_departure"
+      },
+      {
+        "clip_id": "arabic31",
+        "speaker_group": "Arabic",
+        "gender": "female",
+        "wer": 0.5072,
+        "substitutions": 7,
+        "deletions": 0,
+        "insertions": 28,
+        "fillers": 17,
+        "stutter_fragments": 3,
+        "immediate_repeat": true,
+        "snr_proxy_db": 43.5,
+        "noise_floor_dbfs": -60.1,
+        "candidate_category": "likely_script_departure"
+      },
+      {
+        "clip_id": "vietnamese2",
+        "speaker_group": "Vietnamese",
+        "gender": "male",
+        "wer": 0.4203,
+        "substitutions": 23,
+        "deletions": 3,
+        "insertions": 3,
+        "fillers": 1,
+        "stutter_fragments": 1,
+        "immediate_repeat": false,
+        "snr_proxy_db": 33.3,
+        "noise_floor_dbfs": -50.2,
+        "candidate_category": "likely_transcription_error"
+      },
+      {
+        "clip_id": "portuguese1",
+        "speaker_group": "Portuguese",
+        "gender": "female",
+        "wer": 0.3478,
+        "substitutions": 14,
+        "deletions": 1,
+        "insertions": 9,
+        "fillers": 1,
+        "stutter_fragments": 0,
+        "immediate_repeat": true,
+        "snr_proxy_db": 39.5,
+        "noise_floor_dbfs": -53.9,
+        "candidate_category": "likely_script_departure"
+      },
+      {
+        "clip_id": "mandarin45",
+        "speaker_group": "Mandarin Chinese",
+        "gender": "female",
+        "wer": 0.3333,
+        "substitutions": 5,
+        "deletions": 0,
+        "insertions": 18,
+        "fillers": 4,
+        "stutter_fragments": 4,
+        "immediate_repeat": true,
+        "snr_proxy_db": 38.3,
+        "noise_floor_dbfs": -60.8,
+        "candidate_category": "likely_script_departure"
+      },
+      {
+        "clip_id": "bengali24",
+        "speaker_group": "Bengali",
+        "gender": "male",
+        "wer": 0.3188,
+        "substitutions": 11,
+        "deletions": 0,
+        "insertions": 11,
+        "fillers": 5,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 42.7,
+        "noise_floor_dbfs": -59.4,
+        "candidate_category": "likely_script_departure"
+      },
+      {
+        "clip_id": "mandarin59",
+        "speaker_group": "Mandarin Chinese",
+        "gender": "female",
+        "wer": 0.3043,
+        "substitutions": 7,
+        "deletions": 0,
+        "insertions": 14,
+        "fillers": 3,
+        "stutter_fragments": 1,
+        "immediate_repeat": false,
+        "snr_proxy_db": 28.9,
+        "noise_floor_dbfs": -50.6,
+        "candidate_category": "likely_script_departure"
+      },
+      {
+        "clip_id": "arabic47",
+        "speaker_group": "Arabic",
+        "gender": "male",
+        "wer": 0.2899,
+        "substitutions": 5,
+        "deletions": 0,
+        "insertions": 15,
+        "fillers": 13,
+        "stutter_fragments": 1,
+        "immediate_repeat": false,
+        "snr_proxy_db": 35.0,
+        "noise_floor_dbfs": -47.8,
+        "candidate_category": "likely_script_departure"
+      }
+    ],
+    "low_wer": [
+      {
+        "clip_id": "mandarin7",
+        "speaker_group": "Mandarin Chinese",
+        "gender": "male",
+        "wer": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 72.6,
+        "noise_floor_dbfs": -90.9,
+        "candidate_category": "no_errors"
+      },
+      {
+        "clip_id": "cantonese6",
+        "speaker_group": "Cantonese",
+        "gender": "male",
+        "wer": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 62.8,
+        "noise_floor_dbfs": -82.9,
+        "candidate_category": "no_errors"
+      },
+      {
+        "clip_id": "punjabi5",
+        "speaker_group": "Punjabi",
+        "gender": "male",
+        "wer": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 57.0,
+        "noise_floor_dbfs": -70.8,
+        "candidate_category": "no_errors"
+      },
+      {
+        "clip_id": "arabic124",
+        "speaker_group": "Arabic",
+        "gender": "male",
+        "wer": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 50.6,
+        "noise_floor_dbfs": -65.2,
+        "candidate_category": "no_errors"
+      }
+    ],
+    "possible_recording_problem": [
+      {
+        "clip_id": "filipino1",
+        "speaker_group": "Tagalog",
+        "gender": "male",
+        "wer": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 5.1,
+        "noise_floor_dbfs": -26.3,
+        "candidate_category": "no_errors"
+      },
+      {
+        "clip_id": "cantonese8",
+        "speaker_group": "Cantonese",
+        "gender": "female",
+        "wer": 0.0145,
+        "substitutions": 0,
+        "deletions": 1,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 10.0,
+        "noise_floor_dbfs": -31.0,
+        "candidate_category": "possible_recording_problem"
+      },
+      {
+        "clip_id": "english439",
+        "speaker_group": "English",
+        "gender": "female",
+        "wer": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 13.8,
+        "noise_floor_dbfs": -34.6,
+        "candidate_category": "no_errors"
+      },
+      {
+        "clip_id": "vietnamese33",
+        "speaker_group": "Vietnamese",
+        "gender": "male",
+        "wer": 0.029,
+        "substitutions": 2,
+        "deletions": 0,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 14.4,
+        "noise_floor_dbfs": -30.2,
+        "candidate_category": "possible_recording_problem"
+      },
+      {
+        "clip_id": "english238",
+        "speaker_group": "English",
+        "gender": "female",
+        "wer": 0.029,
+        "substitutions": 0,
+        "deletions": 2,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 15.3,
+        "noise_floor_dbfs": -31.0,
+        "candidate_category": "possible_recording_problem"
+      },
+      {
+        "clip_id": "mandarin52",
+        "speaker_group": "Mandarin Chinese",
+        "gender": "female",
+        "wer": 0.1159,
+        "substitutions": 7,
+        "deletions": 0,
+        "insertions": 1,
+        "fillers": 0,
+        "stutter_fragments": 1,
+        "immediate_repeat": false,
+        "snr_proxy_db": 16.6,
+        "noise_floor_dbfs": -34.8,
+        "candidate_category": "possible_recording_problem"
+      },
+      {
+        "clip_id": "vietnamese9",
+        "speaker_group": "Vietnamese",
+        "gender": "male",
+        "wer": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 17.9,
+        "noise_floor_dbfs": -35.5,
+        "candidate_category": "no_errors"
+      },
+      {
+        "clip_id": "bengali6",
+        "speaker_group": "Bengali",
+        "gender": "male",
+        "wer": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 18.4,
+        "noise_floor_dbfs": -36.6,
+        "candidate_category": "no_errors"
+      },
+      {
+        "clip_id": "urdu5",
+        "speaker_group": "Urdu",
+        "gender": "male",
+        "wer": 0.0145,
+        "substitutions": 1,
+        "deletions": 0,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 18.8,
+        "noise_floor_dbfs": -35.8,
+        "candidate_category": "possible_recording_problem"
+      },
+      {
+        "clip_id": "english144",
+        "speaker_group": "English",
+        "gender": "male",
+        "wer": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 19.2,
+        "noise_floor_dbfs": -33.4,
+        "candidate_category": "no_errors"
+      },
+      {
+        "clip_id": "polish16",
+        "speaker_group": "Polish",
+        "gender": "male",
+        "wer": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 19.4,
+        "noise_floor_dbfs": -39.6,
+        "candidate_category": "no_errors"
+      },
+      {
+        "clip_id": "spanish49",
+        "speaker_group": "Spanish",
+        "gender": "male",
+        "wer": 0.0145,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 1,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 19.6,
+        "noise_floor_dbfs": -36.6,
+        "candidate_category": "possible_recording_problem"
+      },
+      {
+        "clip_id": "english407",
+        "speaker_group": "English",
+        "gender": "male",
+        "wer": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 19.6,
+        "noise_floor_dbfs": -36.0,
+        "candidate_category": "no_errors"
+      },
+      {
+        "clip_id": "portuguese19",
+        "speaker_group": "Portuguese",
+        "gender": "male",
+        "wer": 0.0145,
+        "substitutions": 1,
+        "deletions": 0,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 19.7,
+        "noise_floor_dbfs": -32.6,
+        "candidate_category": "possible_recording_problem"
+      },
+      {
+        "clip_id": "tamil13",
+        "speaker_group": "Tamil",
+        "gender": "female",
+        "wer": 0.0145,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 1,
+        "fillers": 1,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 19.9,
+        "noise_floor_dbfs": -32.8,
+        "candidate_category": "possible_recording_problem"
+      },
+      {
+        "clip_id": "english301",
+        "speaker_group": "English",
+        "gender": "male",
+        "wer": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "fillers": 0,
+        "stutter_fragments": 0,
+        "immediate_repeat": false,
+        "snr_proxy_db": 23.9,
+        "noise_floor_dbfs": -34.3,
+        "candidate_category": "no_errors"
+      }
+    ]
+  }
+}

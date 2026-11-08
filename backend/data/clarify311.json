@@ -1,0 +1,366 @@
+{
+  "kind": "tested_with_scripted_requests",
+  "description": "Scripted 311 requests with known intended outcomes. Spoken by macOS synthetic voices, transcribed by ElevenLabs Scribe v2 (real API), classified by fixed keyword rules. The line always confirms before acting; caller yes/no replies are scripted.",
+  "tested": [
+    "Scribe v2 transcription of each spoken request and correction",
+    "rule-based first interpretation from that transcript",
+    "final intent after one confirmation"
+  ],
+  "scripted": [
+    "request and correction wording",
+    "synthetic voices (not real callers)",
+    "the caller's yes/no"
+  ],
+  "limits": [
+    "Synthetic voices, not human callers or Mississauga residents.",
+    "Six cases: a demonstration, not a measured accuracy rate.",
+    "The intent rules are a simple stand-in for a real 311 router.",
+    "Not run through the ElevenLabs live agent."
+  ],
+  "intents": [
+    {
+      "id": "garbage_not_picked_up",
+      "label": "Garbage not picked up",
+      "toronto_type": "Res / Garbage / Not Picked Up",
+      "keywords": [
+        "garbage",
+        "trash",
+        "black bin"
+      ]
+    },
+    {
+      "id": "recycling_not_picked_up",
+      "label": "Recycling not picked up",
+      "toronto_type": "Res / Recycle / Not Picked Up",
+      "keywords": [
+        "recycling",
+        "blue bin",
+        "recycle"
+      ]
+    },
+    {
+      "id": "bin_damaged",
+      "label": "Bin damaged",
+      "toronto_type": "Residential Bin Lid Damaged",
+      "keywords": [
+        "lid",
+        "cracked",
+        "broken",
+        "damaged",
+        "handle",
+        "wheel"
+      ]
+    },
+    {
+      "id": "pothole",
+      "label": "Pothole / road damage",
+      "toronto_type": "Road Pothole / Road Damage",
+      "keywords": [
+        "pothole",
+        "hole in the road",
+        "road is damaged",
+        "hole"
+      ]
+    },
+    {
+      "id": "tree_emergency",
+      "label": "Fallen tree or branch",
+      "toronto_type": "Tree Emergency Clean-Up",
+      "keywords": [
+        "tree",
+        "branch",
+        "fell",
+        "fallen",
+        "storm"
+      ]
+    },
+    {
+      "id": "sidewalk_snow",
+      "label": "Sidewalk snow not cleared",
+      "toronto_type": "Sidewalk Snow Clearing Required",
+      "keywords": [
+        "snow",
+        "ice",
+        "icy",
+        "not cleared",
+        "hasn't been cleared",
+        "plow"
+      ]
+    },
+    {
+      "id": "injured_wildlife",
+      "label": "Injured wildlife",
+      "toronto_type": "Injured - Wildlife",
+      "keywords": [
+        "raccoon",
+        "animal",
+        "hurt",
+        "injured",
+        "limping",
+        "bird"
+      ]
+    },
+    {
+      "id": "dead_wildlife",
+      "label": "Dead wildlife pickup",
+      "toronto_type": "Pick up Dead Wildlife",
+      "keywords": [
+        "raccoon",
+        "animal",
+        "dead",
+        "carcass",
+        "bird"
+      ]
+    }
+  ],
+  "summary": {
+    "cases": 6,
+    "first_interpretation_correct": 4,
+    "corrected_after_clarification": 2,
+    "final_confirmed_correct": 6,
+    "exact_transcripts": 6
+  },
+  "generated_at": "2026-11-08T06:13:04.971Z",
+  "scribe_calls": {
+    "new": 0,
+    "cached": 8
+  },
+  "cases": [
+    {
+      "case_id": "c1",
+      "voice": "Daniel (macOS, en-GB)",
+      "intended": "garbage_not_picked_up",
+      "intended_label": "Garbage not picked up",
+      "request_script": "Hi, my garbage wasn't picked up this morning.",
+      "request_audio": "c1_50fdf2d880.wav",
+      "correction_audio": null,
+      "scribe_heard": "Hi. My garbage wasn't picked up this morning",
+      "transcript_exact": true,
+      "first_interpretation": "garbage_not_picked_up",
+      "first_interpretation_label": "Garbage not picked up",
+      "first_correct": true,
+      "correction_script": null,
+      "correction_heard": null,
+      "final_confirmed": "garbage_not_picked_up",
+      "final_confirmed_label": "Garbage not picked up",
+      "final_correct": true,
+      "clarification_rounds": 0,
+      "turns": [
+        {
+          "who": "caller",
+          "text": "Hi, my garbage wasn't picked up this morning.",
+          "scribe_heard": "Hi. My garbage wasn't picked up this morning"
+        },
+        {
+          "who": "line",
+          "text": "I understood: Garbage not picked up. Is that right?"
+        },
+        {
+          "who": "caller",
+          "text": "Yes.",
+          "scripted": true
+        }
+      ]
+    },
+    {
+      "case_id": "c2",
+      "voice": "Rishi (macOS, en-IN)",
+      "intended": "recycling_not_picked_up",
+      "intended_label": "Recycling not picked up",
+      "request_script": "My blue bin was skipped today, and the lid is cracked.",
+      "request_audio": "c2_30cd56316b.wav",
+      "correction_audio": "c2_fix_21e449f238.wav",
+      "scribe_heard": "My blue bin was skipped today, and the lid is cracked",
+      "transcript_exact": true,
+      "first_interpretation": "bin_damaged",
+      "first_interpretation_label": "Bin damaged",
+      "first_correct": false,
+      "correction_script": "No, I mean the recycling was not picked up.",
+      "correction_heard": "No, I mean the recycling was not picked up",
+      "final_confirmed": "recycling_not_picked_up",
+      "final_confirmed_label": "Recycling not picked up",
+      "final_correct": true,
+      "clarification_rounds": 1,
+      "turns": [
+        {
+          "who": "caller",
+          "text": "My blue bin was skipped today, and the lid is cracked.",
+          "scribe_heard": "My blue bin was skipped today, and the lid is cracked"
+        },
+        {
+          "who": "line",
+          "text": "I understood: Bin damaged. Is that right?"
+        },
+        {
+          "who": "caller",
+          "text": "No, I mean the recycling was not picked up.",
+          "scribe_heard": "No, I mean the recycling was not picked up",
+          "scripted_reply": true
+        },
+        {
+          "who": "line",
+          "text": "Thanks. I understood: Recycling not picked up. Is that right?"
+        },
+        {
+          "who": "caller",
+          "text": "Yes.",
+          "scripted": true
+        }
+      ]
+    },
+    {
+      "case_id": "c3",
+      "voice": "Rishi (macOS, en-IN)",
+      "intended": "pothole",
+      "intended_label": "Pothole / road damage",
+      "request_script": "There's a big hole in the road right outside my house.",
+      "request_audio": "c3_580f090bc8.wav",
+      "correction_audio": null,
+      "scribe_heard": "There's a big hole in the road right outside my house",
+      "transcript_exact": true,
+      "first_interpretation": "pothole",
+      "first_interpretation_label": "Pothole / road damage",
+      "first_correct": true,
+      "correction_script": null,
+      "correction_heard": null,
+      "final_confirmed": "pothole",
+      "final_confirmed_label": "Pothole / road damage",
+      "final_correct": true,
+      "clarification_rounds": 0,
+      "turns": [
+        {
+          "who": "caller",
+          "text": "There's a big hole in the road right outside my house.",
+          "scribe_heard": "There's a big hole in the road right outside my house"
+        },
+        {
+          "who": "line",
+          "text": "I understood: Pothole / road damage. Is that right?"
+        },
+        {
+          "who": "caller",
+          "text": "Yes.",
+          "scripted": true
+        }
+      ]
+    },
+    {
+      "case_id": "c4",
+      "voice": "Moira (macOS, en-IE)",
+      "intended": "tree_emergency",
+      "intended_label": "Fallen tree or branch",
+      "request_script": "A huge branch fell in the storm, and now the sidewalk is blocked.",
+      "request_audio": "c4_4e280aca75.wav",
+      "correction_audio": null,
+      "scribe_heard": "A huge branch fell in the storm, and now the sidewalk is blocked",
+      "transcript_exact": true,
+      "first_interpretation": "tree_emergency",
+      "first_interpretation_label": "Fallen tree or branch",
+      "first_correct": true,
+      "correction_script": null,
+      "correction_heard": null,
+      "final_confirmed": "tree_emergency",
+      "final_confirmed_label": "Fallen tree or branch",
+      "final_correct": true,
+      "clarification_rounds": 0,
+      "turns": [
+        {
+          "who": "caller",
+          "text": "A huge branch fell in the storm, and now the sidewalk is blocked.",
+          "scribe_heard": "A huge branch fell in the storm, and now the sidewalk is blocked"
+        },
+        {
+          "who": "line",
+          "text": "I understood: Fallen tree or branch. Is that right?"
+        },
+        {
+          "who": "caller",
+          "text": "Yes.",
+          "scripted": true
+        }
+      ]
+    },
+    {
+      "case_id": "c5",
+      "voice": "Rishi (macOS, en-IN)",
+      "intended": "dead_wildlife",
+      "intended_label": "Dead wildlife pickup",
+      "request_script": "There's a raccoon on my lawn and it isn't moving.",
+      "request_audio": "c5_845db5726f.wav",
+      "correction_audio": "c5_fix_df690aac3d.wav",
+      "scribe_heard": "There's a raccoon on my lawn and it isn't moving",
+      "transcript_exact": true,
+      "first_interpretation": "injured_wildlife",
+      "first_interpretation_label": "Injured wildlife",
+      "first_correct": false,
+      "correction_script": "No, I think the raccoon is dead. Please pick it up.",
+      "correction_heard": "No, I think the raccoon is dead. Please pick it up",
+      "final_confirmed": "dead_wildlife",
+      "final_confirmed_label": "Dead wildlife pickup",
+      "final_correct": true,
+      "clarification_rounds": 1,
+      "turns": [
+        {
+          "who": "caller",
+          "text": "There's a raccoon on my lawn and it isn't moving.",
+          "scribe_heard": "There's a raccoon on my lawn and it isn't moving"
+        },
+        {
+          "who": "line",
+          "text": "I understood: Injured wildlife. Is that right?"
+        },
+        {
+          "who": "caller",
+          "text": "No, I think the raccoon is dead. Please pick it up.",
+          "scribe_heard": "No, I think the raccoon is dead. Please pick it up",
+          "scripted_reply": true
+        },
+        {
+          "who": "line",
+          "text": "Thanks. I understood: Dead wildlife pickup. Is that right?"
+        },
+        {
+          "who": "caller",
+          "text": "Yes.",
+          "scripted": true
+        }
+      ]
+    },
+    {
+      "case_id": "c6",
+      "voice": "Daniel (macOS, en-GB)",
+      "intended": "sidewalk_snow",
+      "intended_label": "Sidewalk snow not cleared",
+      "request_script": "The snow on the sidewalk on my street still hasn't been cleared.",
+      "request_audio": "c6_8803628840.wav",
+      "correction_audio": null,
+      "scribe_heard": "The snow on the sidewalk on my street still hasn't been cleared",
+      "transcript_exact": true,
+      "first_interpretation": "sidewalk_snow",
+      "first_interpretation_label": "Sidewalk snow not cleared",
+      "first_correct": true,
+      "correction_script": null,
+      "correction_heard": null,
+      "final_confirmed": "sidewalk_snow",
+      "final_confirmed_label": "Sidewalk snow not cleared",
+      "final_correct": true,
+      "clarification_rounds": 0,
+      "turns": [
+        {
+          "who": "caller",
+          "text": "The snow on the sidewalk on my street still hasn't been cleared.",
+          "scribe_heard": "The snow on the sidewalk on my street still hasn't been cleared"
+        },
+        {
+          "who": "line",
+          "text": "I understood: Sidewalk snow not cleared. Is that right?"
+        },
+        {
+          "who": "caller",
+          "text": "Yes.",
+          "scripted": true
+        }
+      ]
+    }
+  ]
+}

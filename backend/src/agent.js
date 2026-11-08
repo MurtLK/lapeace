@@ -21,13 +21,22 @@ export function agentConfigStatus() {
 // Small per-IP limit so a public page can't burn the team's agent credits.
 const WINDOW_MS = 60_000;
 const MAX_PER_WINDOW = 10;
+const MAX_TRACKED_IPS = 1000;
 const hits = new Map();
+// Drop IPs whose newest hit is outside the window, so the table can't grow without bound.
+setInterval(() => {
+  const now = Date.now();
+  for (const [ip, times] of hits) if (now - times[times.length - 1] >= WINDOW_MS) hits.delete(ip);
+}, WINDOW_MS).unref();
+
 export function rateLimited(ip) {
   const now = Date.now();
   const recent = (hits.get(ip) || []).filter((t) => now - t < WINDOW_MS);
+  if (recent.length >= MAX_PER_WINDOW) return true; // throttled calls don't extend the window
+  if (!hits.has(ip) && hits.size >= MAX_TRACKED_IPS) return true; // fail closed when full
   recent.push(now);
   hits.set(ip, recent);
-  return recent.length > MAX_PER_WINDOW;
+  return false;
 }
 
 export async function createSession() {

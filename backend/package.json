@@ -11,6 +11,11 @@
     "dev": "node --env-file-if-exists=.env --watch src/server.js",
     "start:fixture": "node src/server.js",
     "import:saa": "node --env-file-if-exists=.env scripts/import-saa.js",
-    "agent:check": "node --env-file-if-exists=.env scripts/agent-check.js"
+    "agent:check": "node --env-file-if-exists=.env scripts/agent-check.js",
+    "import:comparison": "node --env-file-if-exists=.env scripts/import-comparison.js",
+    "build:census": "node --env-file-if-exists=.env scripts/build-census.js",
+    "build:audit": "python3 -I scripts/build_audit.py",
+    "make:311-audio": "node scripts/make-311-audio.js",
+    "test:311": "node --env-file-if-exists=.env scripts/test-311.js"
   }
 }

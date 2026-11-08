@@ -52,3 +52,34 @@ Privacy and safety:
 - [ ] The prompt above is saved (the check prints the first 400 characters)
 - [ ] The UI and the test page show the "simulated demo" notice
 - [ ] The backend sends no user data to the agent (it only requests a token)
+
+## Live 311 smoke test (one conversation)
+
+The test page (`/dev/agent-test`) connects to whatever agent `ELEVENLABS_AGENT_ID` points to. For this test, give that agent a 311 prompt in the dashboard. You can do this on a copy of the freeze-card agent.
+
+**First message:** "Hi, this is the LAPEACE city services demo. This is a simulation. What would you like to report?"
+
+**System prompt:**
+```
+You are a SIMULATED Mississauga 311 line for the LAPEACE hackathon demo. You cannot file real
+requests. Identify what the caller wants to report, choosing one of: garbage not picked up,
+recycling not picked up, bin damaged, pothole, fallen tree or branch, sidewalk snow not cleared,
+injured wildlife, dead wildlife pickup.
+1. Say what you understood in one short sentence and ask "Is that right?" before doing anything.
+2. If the caller says no or corrects you, restate the corrected request and ask again.
+3. After a yes, say: "In this demo, your request would now be filed. This is a simulation."
+Never ask for a name, phone number, address beyond a street name, or any account details.
+Keep replies short.
+```
+No tools.
+
+**Say:** "My blue bin was skipped today, and the lid is cracked."
+**If it asks whether it's a damaged bin, correct it:** "No, I mean the recycling was not picked up."
+**Then say:** "Yes."
+
+**Pass if all three hold:**
+1. Before saying yes, the agent restates a request and asks for confirmation. It doesn't "file" anything on the first turn.
+2. After your correction, its restated request is **recycling not picked up**, not a damaged bin.
+3. It only says the request would be filed after your "Yes", and it calls it a simulation.
+
+If its first restatement is already "recycling not picked up", that's also a pass for points 1 and 3: say "Yes" and record it as *correct on first interpretation*. Record the agent's exact first restatement either way. The live agent stays **unverified** until one conversation passes.

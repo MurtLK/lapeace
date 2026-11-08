@@ -183,7 +183,8 @@ Returns a **short-lived credential** for the private ElevenLabs freeze-card demo
 | `ELEVENLABS_API_KEY` | Secret. Server only. |
 | `ELEVENLABS_AGENT_ID` | The demo agent's ID (`agent_...`) |
 | `AGENT_CONNECTION` | `webrtc` (default) or `websocket`. **Agree this with the UI team**: it decides which field the response contains. |
-| `CORS_ORIGIN` | Optional. Lock to the UI's origin (e.g. `http://localhost:5173`) instead of `*`. |
+| `CORS_ORIGIN` | **Required for the UI.** Comma-separated origins allowed to create sessions, e.g. `http://localhost:5173`. The backend's own pages (`http://localhost:8787`) are always allowed. Any other origin, and requests with no `Origin` header (e.g. curl), get `403 origin_not_allowed`. Read-only routes stay open to all origins. |
+| `PUBLIC_BASE_URL` | Optional, default `http://localhost:<PORT>`. Base used for `audio_url`. It is never taken from the request's Host header. |
 
 **Responses:**
 
@@ -241,10 +242,79 @@ Plain JS uses the same pattern with `import { Conversation } from '@elevenlabs/c
 
 1. Add `ELEVENLABS_API_KEY` and `ELEVENLABS_AGENT_ID` to `backend/.env`, then `npm start`. The startup log should say `Agent: ready (webrtc)`.
 2. `npm run agent:check`. This is read-only: it prints the agent's name, language, first message, the start of its prompt and its tools. Confirm it's the freeze-card prompt in `docs/agent-demo.md` and that **Tools: none**.
-3. `curl -s -X POST localhost:8787/api/agent/session` should return a `conversation_token`. Don't share it; it expires in minutes anyway.
+3. `curl -s -X POST -H 'Origin: http://localhost:8787' localhost:8787/api/agent/session` should return a `conversation_token`. Without the `Origin` header you get 403, by design. Don't share it; it expires in minutes anyway.
 4. Open **http://localhost:8787/dev/agent-test** in Chrome, click **Start conversation**, allow the mic and say *"Someone stole my card, I need to freeze it."* The agent should ask a clarifying question, read the request back for confirmation, and say it's a simulated freeze. The transcript appears on the page.
 
 The test page loads `@elevenlabs/client@1.28.0` from jsDelivr and is served by the backend itself, so it works before the UI exists.
+
+### `GET /api/samples` options
+
+- `featured_clip_id` (top level): the default clip for "Hear a real example". It's `FEATURED_CLIP_ID` from `.env` if valid, otherwise the highest-WER Mandarin/Punjabi clip.
+- `?clip_id=urdu1` returns just that clip.
+- `?diff=1` adds `scribe_ops` to each sample: the word diff against the reference, in the same op format as below.
+
+### `GET /api/comparison`: A/B Transcript Replay
+
+This compares **ElevenLabs Scribe v2** (baseline, the existing results) with **Whisper large-v3-turbo**, run locally with whisper.cpp 1.9.5 (q5_0 model, language `en`, beam 5, no prompt).
+- **Clips:** 95 Speech Accent Archive clips. That's every Mandarin-background (40), Punjabi-background (11) and Canadian English (44) clip, with `english132` excluded as a possible duplicate speaker. The set was locked before any Whisper output existed.
+- **Same inputs:** both systems use the same audio and the same reference.
+- **Live agent:** the live agent does **not** use Whisper (ElevenLabs Agents has no option for an outside recognizer).
+- **No configured file:** if `COMPARISON_FILE` isn't set, the endpoint returns `404 {"error":"comparison_not_available"}`.
+
+**Query options:**
+- `?ops=0` drops the word diffs: about 190 KB instead of 1.6 MB, good for list and chart views.
+- `?clip_id=mandarin87` returns one clip with its diffs.
+
+**Two scorings, side by side:**
+- `raw` is the published benchmark rule.
+- `normalized` applies the same rule to both systems and the reference, and additionally removes fillers, expands "we'll", collapses stutters and converts digits 0–10 to words.
+
+**Top-level fields:**
+
+| Field | Meaning |
+|---|---|
+| `systems.baseline`, `systems.alternative` | `id`, `label`, where it runs, exact settings |
+| `featured.better`, `featured.worse` | Clip IDs for the default A/B views. Hand-picked, with the reason in `featured_notes`. |
+| `overall`, `groups[]` | `clips`, `clips_with_dropped_passage.{baseline,alternative}`, and for each of `raw` and `normalized`: baseline/alternative `mean_wer` and `median_wer`, `mean_diff_pp`, `median_diff_pp`, and `improved`/`worse`/`same` counts |
+| `clips[]` | One entry per clip; fields below. Sorted by `delta_wer.normalized`, Whisper's biggest wins first. |
+
+**Fields in each `clips[]` entry:**
+
+| Field | Meaning |
+|---|---|
+| `clip_id`, `speaker_group`, `audio_url`, `duration_sec`, `reference_transcript` | Clip details, in the same format as `/api/samples` |
+| `baseline.transcript`, `alternative.transcript` | Raw text from each system |
+| `baseline.raw`, `baseline.normalized` (and the same for `alternative`) | `{wer, errors}` under each scoring |
+| `baseline.longest_dropped_run`, `baseline.dropped_passage` (and the same for `alternative`) | Longest run of consecutive reference words that system skipped; `dropped_passage` is true at 5 or more |
+| `baseline.ops`, `alternative.ops` | `[{op, ref, hyp}]`, where `op` is `equal`, `sub` (substituted), `del` (reference word missed) or `ins` (extra word). Tokens are normalized, so show the raw transcript separately. |
+| `delta_wer.{raw,normalized}` | Alternative minus baseline WER, as a fraction |
+| `outcome.{raw,normalized}` | `improved`, `worse` or `same`, by comparing the integer error counts |
+| `alternative_transcript_is_simulated` | `false` for real results |
+
+**Units:** WER is a fraction, as everywhere in this API. `*_diff_pp` values are **percentage points**, alternative minus baseline, so **negative means Whisper was better**.
+
+**Measured result (normalized scoring):**
+
+| Group | Clips | Scribe mean | Whisper mean | Diff (pp) | Whisper better / worse / same | Clips with a dropped passage (Scribe / Whisper) |
+|---|---|---|---|---|---|---|
+| Mandarin-background | 40 | 5.04% | 9.09% | +4.06 | 7 / 26 / 7 | 0 / 9 |
+| Punjabi-background | 11 | 4.88% | 5.40% | +0.53 | 3 / 4 / 4 | 0 / 1 |
+| Canadian English | 44 | 0.20% | 0.72% | +0.53 | 1 / 3 / 40 | 0 / 1 |
+
+**Overall, Scribe did better on this set.** Most of Whisper's deficit comes from **11 clips where it silently skipped a whole phrase or sentence**; Scribe never did. Leave those clips out and the two are close (Mandarin +0.70 pp, Punjabi −0.58 pp, English +0.03 pp). The Punjabi group has 11 speakers, so its result is noisy. These are descriptive results, with no significance test.
+
+**Regenerating:** `npm run import:comparison -- --transcripts <whisper_transcripts.csv> --settings <whisper_settings.json>`. This keeps the hand-picked featured clips. The Whisper runner and cache are in `pipeline/whisper_saa/` and `results/ab_whisper/` on branch `hisham/scribe-saa`.
+
+### Evidence endpoints (precomputed JSON in `backend/data/`, read-only)
+
+| Endpoint | File | Built by | Contents |
+|---|---|---|---|
+| `GET /api/census` | `census.json` | `npm run build:census` | 2021 Census, **residents who speak the language most often at home**, for Mandarin and Punjabi: citywide total (cross-checked 5 ways), all 11 wards (corrected table), top 5 neighbourhoods. Not combined with WER. |
+| `GET /api/audit` | `audit.json` | `npm run build:audit` | Benchmark audit: median WER by background × recorded gender with small/unbalanced flags, audio measurements (no microphone metadata exists), heuristic categories, listening-review clip IDs |
+| `GET /api/clarify311` | `clarify311.json` | `npm run test:311` | 6 scripted 311 requests: synthetic voice, real Scribe v2 transcript, rule-based first interpretation, scripted correction, final confirmed intent, summary counts |
+| `GET /audio311/{file}` | `CLARIFY_AUDIO_DIR` | `npm run make:311-audio` | The 311 caller audio (generated locally, not in Git). 404 when not configured. |
+
+A missing file returns `404 {"error":"not_available"}`.
 
 ## Not built yet
 
