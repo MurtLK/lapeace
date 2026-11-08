@@ -58,3 +58,14 @@ The dataset files are the project team's supplied AI transcript analysis of Spee
 ## Hosting
 
 The app is static. Any web host can serve the contents of `dist/`. This GitHub copy excludes Sites-specific project configuration and deployment credentials.
+
+## LAPEACE backend connection
+
+`dist/connect.js` wires this site to the LAPEACE backend (branch `hisham/backend`, `backend/`):
+
+- **Call Check (live)** tab: embeds the backend's `/call-check` page (mic or AI caller → ElevenLabs Scribe → scam red flags + prototype voice score).
+- **Who & where** tab: 2021 Census home-language counts from `/api/census`.
+- **Home languages** tab: FLEURS 14-language Scribe results.
+- **Clip audio**: every Speech Accent Archive clip is attached automatically from `/audio/<file>`.
+
+Backend address: add `?backend=https://<address>` to the page URL, or edit `DEFAULT_BACKEND` in `dist/connect.js`. The backend also serves this site at `/lab/` (set `LAB_DIR` to this `dist/` folder), which keeps everything on one address.
