@@ -1,0 +1,1020 @@
+{
+  "clip_id": "arabic184",
+  "settings": {
+    "model_id": "scribe_v2",
+    "language_code": "en",
+    "tag_audio_events": false,
+    "keyterms": []
+  },
+  "audio_sha256_12": "db56b0f935d5",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1,
+    "text": "Please call Stella. Ask her to bring these things with her from the store. Six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bob. We also need a small plastic s- uh, snake and a big toy frog for the kids. She can scoop these things into three red bags, and we will go meet her, uh, Wednesday at the train station",
+    "words": [
+      {
+        "text": "Please",
+        "start": 1.1,
+        "end": 1.34,
+        "type": "word",
+        "logprob": -0.00003361645576660521
+      },
+      {
+        "text": " ",
+        "start": 1.34,
+        "end": 1.38,
+        "type": "spacing",
+        "logprob": -0.000004768360213347478
+      },
+      {
+        "text": "call",
+        "start": 1.38,
+        "end": 1.56,
+        "type": "word",
+        "logprob": -0.000004768360213347478
+      },
+      {
+        "text": " ",
+        "start": 1.56,
+        "end": 1.62,
+        "type": "spacing",
+        "logprob": -0.000015258672647178173
+      },
+      {
+        "text": "Stella.",
+        "start": 1.62,
+        "end": 1.92,
+        "type": "word",
+        "logprob": -0.0002970084814088685
+      },
+      {
+        "text": " ",
+        "start": 1.92,
+        "end": 1.94,
+        "type": "spacing",
+        "logprob": -0.000002145764938177308
+      },
+      {
+        "text": "Ask",
+        "start": 2.52,
+        "end": 2.7,
+        "type": "word",
+        "logprob": -0.000002145764938177308
+      },
+      {
+        "text": " ",
+        "start": 2.7,
+        "end": 2.74,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "her",
+        "start": 2.74,
+        "end": 2.88,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 2.88,
+        "end": 2.94,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "to",
+        "start": 2.94,
+        "end": 3.02,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 3.02,
+        "end": 3.06,
+        "type": "spacing",
+        "logprob": -0.00000250339189733495
+      },
+      {
+        "text": "bring",
+        "start": 3.06,
+        "end": 3.32,
+        "type": "word",
+        "logprob": -0.00000250339189733495
+      },
+      {
+        "text": " ",
+        "start": 3.32,
+        "end": 3.38,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "these",
+        "start": 3.38,
+        "end": 3.6,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": " ",
+        "start": 3.6,
+        "end": 3.64,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "things",
+        "start": 3.64,
+        "end": 3.98,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": " ",
+        "start": 3.98,
+        "end": 4.04,
+        "type": "spacing",
+        "logprob": -0.0000016689286894688848
+      },
+      {
+        "text": "with",
+        "start": 4.04,
+        "end": 4.2,
+        "type": "word",
+        "logprob": -0.0000016689286894688848
+      },
+      {
+        "text": " ",
+        "start": 4.2,
+        "end": 4.24,
+        "type": "spacing",
+        "logprob": -0.000003576272320060525
+      },
+      {
+        "text": "her",
+        "start": 4.24,
+        "end": 4.34,
+        "type": "word",
+        "logprob": -0.000003576272320060525
+      },
+      {
+        "text": " ",
+        "start": 4.34,
+        "end": 4.72,
+        "type": "spacing",
+        "logprob": -0.003184844274073839
+      },
+      {
+        "text": "from",
+        "start": 4.72,
+        "end": 4.88,
+        "type": "word",
+        "logprob": -0.003184844274073839
+      },
+      {
+        "text": " ",
+        "start": 4.88,
+        "end": 4.92,
+        "type": "spacing",
+        "logprob": -0.0000019073468138230965
+      },
+      {
+        "text": "the",
+        "start": 4.92,
+        "end": 5,
+        "type": "word",
+        "logprob": -0.0000019073468138230965
+      },
+      {
+        "text": " ",
+        "start": 5,
+        "end": 5.06,
+        "type": "spacing",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": "store.",
+        "start": 5.06,
+        "end": 5.38,
+        "type": "word",
+        "logprob": -0.003966158255082064
+      },
+      {
+        "text": " ",
+        "start": 5.38,
+        "end": 5.38,
+        "type": "spacing",
+        "logprob": -0.000007867782187531702
+      },
+      {
+        "text": "Six",
+        "start": 6.08,
+        "end": 6.38,
+        "type": "word",
+        "logprob": -0.000007867782187531702
+      },
+      {
+        "text": " ",
+        "start": 6.38,
+        "end": 6.4,
+        "type": "spacing",
+        "logprob": -0.0002401778765488416
+      },
+      {
+        "text": "spoons",
+        "start": 6.4,
+        "end": 6.72,
+        "type": "word",
+        "logprob": -0.0002401778765488416
+      },
+      {
+        "text": " ",
+        "start": 6.72,
+        "end": 6.76,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "of",
+        "start": 6.76,
+        "end": 6.84,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 6.84,
+        "end": 6.9,
+        "type": "spacing",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": "fresh",
+        "start": 6.9,
+        "end": 7.1,
+        "type": "word",
+        "logprob": -5.960462772236497e-7
+      },
+      {
+        "text": " ",
+        "start": 7.1,
+        "end": 7.22,
+        "type": "spacing",
+        "logprob": -0.000009536697689327411
+      },
+      {
+        "text": "snow",
+        "start": 7.22,
+        "end": 7.42,
+        "type": "word",
+        "logprob": -0.000009536697689327411
+      },
+      {
+        "text": " ",
+        "start": 7.42,
+        "end": 7.48,
+        "type": "spacing",
+        "logprob": -0.00003969590397900902
+      },
+      {
+        "text": "peas,",
+        "start": 7.48,
+        "end": 7.78,
+        "type": "word",
+        "logprob": -0.00003609589439292904
+      },
+      {
+        "text": " ",
+        "start": 7.78,
+        "end": 7.8,
+        "type": "spacing",
+        "logprob": -0.000003576272320060525
+      },
+      {
+        "text": "five",
+        "start": 8.52,
+        "end": 8.78,
+        "type": "word",
+        "logprob": -0.000003576272320060525
+      },
+      {
+        "text": " ",
+        "start": 8.78,
+        "end": 8.82,
+        "type": "spacing",
+        "logprob": -0.000010013530300057027
+      },
+      {
+        "text": "thick",
+        "start": 8.82,
+        "end": 9.02,
+        "type": "word",
+        "logprob": -0.000010013530300057027
+      },
+      {
+        "text": " ",
+        "start": 9.02,
+        "end": 9.08,
+        "type": "spacing",
+        "logprob": -0.00005745722592109814
+      },
+      {
+        "text": "slabs",
+        "start": 9.08,
+        "end": 9.48,
+        "type": "word",
+        "logprob": -0.00005745722592109814
+      },
+      {
+        "text": " ",
+        "start": 9.48,
+        "end": 9.54,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "of",
+        "start": 9.54,
+        "end": 9.66,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 9.66,
+        "end": 9.72,
+        "type": "spacing",
+        "logprob": -0.0002681849291548133
+      },
+      {
+        "text": "blue",
+        "start": 9.72,
+        "end": 9.9,
+        "type": "word",
+        "logprob": -0.0002681849291548133
+      },
+      {
+        "text": " ",
+        "start": 9.9,
+        "end": 9.96,
+        "type": "spacing",
+        "logprob": -0.0000046491513785440475
+      },
+      {
+        "text": "cheese,",
+        "start": 9.96,
+        "end": 10.28,
+        "type": "word",
+        "logprob": -0.000005432520993053913
+      },
+      {
+        "text": " ",
+        "start": 10.28,
+        "end": 10.68,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "and",
+        "start": 10.68,
+        "end": 10.76,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 10.76,
+        "end": 10.8,
+        "type": "spacing",
+        "logprob": -0.000002145764938177308
+      },
+      {
+        "text": "maybe",
+        "start": 10.8,
+        "end": 11.02,
+        "type": "word",
+        "logprob": -0.000002145764938177308
+      },
+      {
+        "text": " ",
+        "start": 11.02,
+        "end": 11.06,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "a",
+        "start": 11.06,
+        "end": 11.12,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 11.12,
+        "end": 11.2,
+        "type": "spacing",
+        "logprob": -0.0000027418097943154862
+      },
+      {
+        "text": "snack",
+        "start": 11.2,
+        "end": 11.48,
+        "type": "word",
+        "logprob": -0.0000027418097943154862
+      },
+      {
+        "text": " ",
+        "start": 11.48,
+        "end": 11.54,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "for",
+        "start": 11.54,
+        "end": 11.64,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 11.64,
+        "end": 11.68,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "her",
+        "start": 11.68,
+        "end": 11.84,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 11.84,
+        "end": 11.9,
+        "type": "spacing",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "brother",
+        "start": 11.9,
+        "end": 12.14,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": " ",
+        "start": 12.14,
+        "end": 12.28,
+        "type": "spacing",
+        "logprob": -0.25193163752555847
+      },
+      {
+        "text": "Bob.",
+        "start": 12.28,
+        "end": 12.54,
+        "type": "word",
+        "logprob": -0.18895176796263513
+      },
+      {
+        "text": " ",
+        "start": 12.54,
+        "end": 12.6,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "We",
+        "start": 13.72,
+        "end": 13.82,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 13.82,
+        "end": 13.88,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "also",
+        "start": 13.88,
+        "end": 14.12,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 14.12,
+        "end": 14.16,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "need",
+        "start": 14.16,
+        "end": 14.28,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 14.28,
+        "end": 14.34,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "a",
+        "start": 14.34,
+        "end": 14.38,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 14.38,
+        "end": 14.46,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "small",
+        "start": 14.46,
+        "end": 14.68,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 14.68,
+        "end": 14.74,
+        "type": "spacing",
+        "logprob": -0.0006325627909973264
+      },
+      {
+        "text": "plastic",
+        "start": 14.74,
+        "end": 15.14,
+        "type": "word",
+        "logprob": -0.0006325627909973264
+      },
+      {
+        "text": " ",
+        "start": 15.14,
+        "end": 15.2,
+        "type": "spacing",
+        "logprob": -0.4744732975959778
+      },
+      {
+        "text": "s-",
+        "start": 15.2,
+        "end": 15.24,
+        "type": "word",
+        "logprob": -0.24123848089948297
+      },
+      {
+        "text": " ",
+        "start": 15.24,
+        "end": 15.68,
+        "type": "spacing",
+        "logprob": -0.0002806984703056514
+      },
+      {
+        "text": "uh,",
+        "start": 15.68,
+        "end": 15.84,
+        "type": "word",
+        "logprob": -0.0007552761817350984
+      },
+      {
+        "text": " ",
+        "start": 15.84,
+        "end": 16.16,
+        "type": "spacing",
+        "logprob": -0.00001883488948806189
+      },
+      {
+        "text": "snake",
+        "start": 16.16,
+        "end": 16.64,
+        "type": "word",
+        "logprob": -0.00001883488948806189
+      },
+      {
+        "text": " ",
+        "start": 16.64,
+        "end": 16.7,
+        "type": "spacing",
+        "logprob": -0.004078642465174198
+      },
+      {
+        "text": "and",
+        "start": 16.7,
+        "end": 16.78,
+        "type": "word",
+        "logprob": -0.004078642465174198
+      },
+      {
+        "text": " ",
+        "start": 16.78,
+        "end": 16.86,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "a",
+        "start": 16.86,
+        "end": 17.02,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 17.02,
+        "end": 17.08,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "big",
+        "start": 17.08,
+        "end": 17.52,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": " ",
+        "start": 17.52,
+        "end": 17.6,
+        "type": "spacing",
+        "logprob": -0.00001680836794548668
+      },
+      {
+        "text": "toy",
+        "start": 17.6,
+        "end": 17.88,
+        "type": "word",
+        "logprob": -0.00001680836794548668
+      },
+      {
+        "text": " ",
+        "start": 17.88,
+        "end": 17.96,
+        "type": "spacing",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": "frog",
+        "start": 17.96,
+        "end": 18.32,
+        "type": "word",
+        "logprob": -9.536738616588991e-7
+      },
+      {
+        "text": " ",
+        "start": 18.32,
+        "end": 18.38,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "for",
+        "start": 18.38,
+        "end": 18.48,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 18.48,
+        "end": 18.52,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "the",
+        "start": 18.52,
+        "end": 18.6,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 18.6,
+        "end": 18.66,
+        "type": "spacing",
+        "logprob": -0.0000069141146923357155
+      },
+      {
+        "text": "kids.",
+        "start": 18.66,
+        "end": 18.98,
+        "type": "word",
+        "logprob": -0.000005674342855854775
+      },
+      {
+        "text": " ",
+        "start": 18.98,
+        "end": 18.98,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "She",
+        "start": 19.96,
+        "end": 20.08,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 20.08,
+        "end": 20.12,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "can",
+        "start": 20.12,
+        "end": 20.26,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 20.26,
+        "end": 20.32,
+        "type": "spacing",
+        "logprob": -0.0026002663653343916
+      },
+      {
+        "text": "scoop",
+        "start": 20.38,
+        "end": 20.62,
+        "type": "word",
+        "logprob": -0.0026002663653343916
+      },
+      {
+        "text": " ",
+        "start": 20.62,
+        "end": 20.66,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "these",
+        "start": 20.66,
+        "end": 20.84,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 20.84,
+        "end": 20.9,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "things",
+        "start": 20.9,
+        "end": 21.22,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 21.22,
+        "end": 21.3,
+        "type": "spacing",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": "into",
+        "start": 21.3,
+        "end": 21.58,
+        "type": "word",
+        "logprob": -1.1920928244535389e-7
+      },
+      {
+        "text": " ",
+        "start": 21.58,
+        "end": 21.62,
+        "type": "spacing",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": "three",
+        "start": 21.62,
+        "end": 21.8,
+        "type": "word",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": " ",
+        "start": 21.8,
+        "end": 22.06,
+        "type": "spacing",
+        "logprob": -0.00001680836794548668
+      },
+      {
+        "text": "red",
+        "start": 22.06,
+        "end": 22.24,
+        "type": "word",
+        "logprob": -0.00001680836794548668
+      },
+      {
+        "text": " ",
+        "start": 22.24,
+        "end": 22.3,
+        "type": "spacing",
+        "logprob": -0.000005364403477869928
+      },
+      {
+        "text": "bags,",
+        "start": 22.3,
+        "end": 22.66,
+        "type": "word",
+        "logprob": -0.000009918121941154823
+      },
+      {
+        "text": " ",
+        "start": 22.66,
+        "end": 22.66,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "and",
+        "start": 23.72,
+        "end": 23.86,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": " ",
+        "start": 23.86,
+        "end": 23.92,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "we",
+        "start": 23.92,
+        "end": 24.04,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 24.04,
+        "end": 24.08,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "will",
+        "start": 24.08,
+        "end": 24.3,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 24.3,
+        "end": 24.38,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "go",
+        "start": 24.38,
+        "end": 24.6,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 24.6,
+        "end": 24.7,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": "meet",
+        "start": 24.7,
+        "end": 24.9,
+        "type": "word",
+        "logprob": -2.3841855067985307e-7
+      },
+      {
+        "text": " ",
+        "start": 24.9,
+        "end": 24.94,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "her,",
+        "start": 24.94,
+        "end": 25.24,
+        "type": "word",
+        "logprob": -0.0000016391239370250332
+      },
+      {
+        "text": " ",
+        "start": 25.24,
+        "end": 25.92,
+        "type": "spacing",
+        "logprob": -0.0000014305104514278355
+      },
+      {
+        "text": "uh,",
+        "start": 25.92,
+        "end": 26,
+        "type": "word",
+        "logprob": -0.0000010331464845118414
+      },
+      {
+        "text": " ",
+        "start": 26,
+        "end": 26.14,
+        "type": "spacing",
+        "logprob": -0.0000027418097943154862
+      },
+      {
+        "text": "Wednesday",
+        "start": 26.14,
+        "end": 26.8,
+        "type": "word",
+        "logprob": -0.0000027418097943154862
+      },
+      {
+        "text": " ",
+        "start": 26.8,
+        "end": 26.88,
+        "type": "spacing",
+        "logprob": -0.00017951308109331876
+      },
+      {
+        "text": "at",
+        "start": 26.88,
+        "end": 26.96,
+        "type": "word",
+        "logprob": -0.00017951308109331876
+      },
+      {
+        "text": " ",
+        "start": 26.96,
+        "end": 27,
+        "type": "spacing",
+        "logprob": 0
+      },
+      {
+        "text": "the",
+        "start": 27,
+        "end": 27.1,
+        "type": "word",
+        "logprob": 0
+      },
+      {
+        "text": " ",
+        "start": 27.1,
+        "end": 27.14,
+        "type": "spacing",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": "train",
+        "start": 27.16,
+        "end": 27.32,
+        "type": "word",
+        "logprob": -7.152555099310121e-7
+      },
+      {
+        "text": " ",
+        "start": 27.32,
+        "end": 27.38,
+        "type": "spacing",
+        "logprob": -3.576278118089249e-7
+      },
+      {
+        "text": "station",
+        "start": 27.38,
+        "end": 27.72,
+        "type": "word",
+        "logprob": -3.576278118089249e-7
+      }
+    ],
+    "transcription_id": "ita0N3kZn3JeuotGUNCw",
+    "audio_duration_secs": 28.727125
+  }
+}
