@@ -3,7 +3,9 @@
 // Backend address: ?backend=https://… in the URL, else the default below, else same origin when served by the backend.
 (() => {
   const DEFAULT_BACKEND = 'https://moved-creation-pizza-customized.trycloudflare.com'; // changes when the tunnel restarts
-  const q = new URLSearchParams(location.search).get('backend');
+  // ?backend=… is remembered in this browser, so later visits without it keep working.
+  let q = new URLSearchParams(location.search).get('backend');
+  try { if (q) localStorage.setItem('lapeaceBackend', q); else q = localStorage.getItem('lapeaceBackend'); } catch {}
   const servedByBackend = location.pathname.startsWith('/lab');
   const BACKEND = (q || (servedByBackend ? location.origin : DEFAULT_BACKEND)).replace(/\/$/, '');
   const $ = (s) => document.querySelector(s);
