@@ -18,7 +18,9 @@ def load(path):
     with wave.open(path, 'rb') as w:
         assert w.getsampwidth() == 2, 'need 16-bit PCM'
         sr, ch = w.getframerate(), w.getnchannels()
-        x = np.frombuffer(w.readframes(w.getnframes()), dtype='<i2').astype(np.float32) / 32768.0
+        if not (4000 <= sr <= 48000) or not (1 <= ch <= 2): raise ValueError('unsupported wav format')
+        nf = min(w.getnframes(), sr * 60)  # cap BEFORE decoding: at most 60 s
+        x = np.frombuffer(w.readframes(nf), dtype='<i2').astype(np.float32) / 32768.0
     if ch > 1: x = x.reshape(-1, ch).mean(1)
     if sr != SR: x = np.interp(np.arange(0, len(x), sr / SR), np.arange(len(x)), x).astype(np.float32)
     return x

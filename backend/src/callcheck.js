@@ -8,7 +8,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { check } from './scamrules.js';
 
-export const MAX_BYTES = 1_600_000; // ~50 s of 16 kHz mono 16-bit WAV
+export const MAX_BYTES = 700_000; // ~21 s of 16 kHz mono 16-bit WAV
 const WINDOW_MS = 60_000, PER_IP = 12, GLOBAL = 40, MAX_TRACKED = 1000;
 const hits = new Map(); let globalHits = [];
 export function callcheckLimited(ip) {
@@ -32,7 +32,22 @@ export function readBody(req, limit = MAX_BYTES) {
   });
 }
 
-const isWav = (b) => b.length > 44 && b.toString('ascii', 0, 4) === 'RIFF' && b.toString('ascii', 8, 12) === 'WAVE';
+// Accept only 16-bit mono PCM WAV at 8-48 kHz; walk the chunks instead of assuming offsets.
+function wavOk(b) {
+  if (!(b.length > 44 && b.toString('ascii', 0, 4) === 'RIFF' && b.toString('ascii', 8, 12) === 'WAVE')) return false;
+  let o = 12;
+  while (o + 8 <= b.length) {
+    const id = b.toString('ascii', o, o + 4), sz = b.readUInt32LE(o + 4);
+    if (id === 'fmt ') {
+      if (sz < 16 || o + 24 > b.length) return false;
+      const format = b.readUInt16LE(o + 8), ch = b.readUInt16LE(o + 10), rate = b.readUInt32LE(o + 12), bits = b.readUInt16LE(o + 22);
+      return format === 1 && ch === 1 && bits === 16 && rate >= 8000 && rate <= 48000;
+    }
+    o += 8 + sz + (sz & 1);
+  }
+  return false;
+}
+let detectorsRunning = 0; const MAX_DETECTORS = 2;
 
 async function scribe(wav) {
   const key = process.env.ELEVENLABS_API_KEY?.trim();
@@ -51,28 +66,32 @@ async function scribe(wav) {
 async function voiceCheck(wav) {
   const py = process.env.VOICE_DETECTOR_PYTHON, script = process.env.VOICE_DETECTOR_SCRIPT, model = process.env.VOICE_DETECTOR_MODEL;
   if (!py || !script || !model) return null;
-  const dir = await mkdtemp(path.join(tmpdir(), 'callcheck-'));
-  const file = path.join(dir, 'call.wav');
+  if (detectorsRunning >= MAX_DETECTORS) return { error: 'voice_check_busy' };
+  detectorsRunning++;
+  let dir;
   try {
+    dir = await mkdtemp(path.join(tmpdir(), 'callcheck-'));
+    const file = path.join(dir, 'call.wav');
     await writeFile(file, wav);
-    const out = await new Promise((resolve, reject) => execFile(py, ['-I', script, 'predict', model, file], { timeout: 15000 }, (e, so) => (e ? reject(e) : resolve(so))));
+    const out = await new Promise((resolve, reject) => execFile(py, ['-I', script, 'predict', model, file], { timeout: 15000, killSignal: 'SIGKILL', maxBuffer: 64 * 1024 }, (e, so) => (e ? reject(e) : resolve(so))));
     return JSON.parse(out);
   } catch (e) {
     console.error(`voice check failed: ${e.message.slice(0, 120)}`);
     return { error: 'voice_check_failed' };
-  } finally { await rm(dir, { recursive: true, force: true }); }
+  } finally { detectorsRunning--; if (dir) await rm(dir, { recursive: true, force: true }); }
 }
 
 export async function handleCallcheck(req, res, sendJson) {
   let wav;
-  try { wav = await readBody(req); } catch (e) { return sendJson(res, e.status || 400, { error: e.message }); }
-  if (!isWav(wav)) return sendJson(res, 400, { error: 'send a WAV file (16 kHz mono recommended)' });
+  try { wav = await readBody(req); } catch (e) { return sendJson(res, e.status || 400, { error: e.status === 413 ? 'too_large' : 'bad_request' }); }
+  if (!wavOk(wav)) return sendJson(res, 400, { error: 'send 16-bit mono PCM WAV at 8-48 kHz' });
   try {
     const [heard, voice] = await Promise.all([scribe(wav), voiceCheck(wav)]);
     return sendJson(res, 200, { transcript: heard.text, language_code: heard.language_code, ...check(heard.text), voice_check: voice,
       notice: 'Live check: Scribe v2 transcription + fixed red-flag rules. The voice check is a prototype; see the page for its tested accuracy.' });
   } catch (e) {
     console.error(`call check failed: ${e.message}${e.upstream ? ` (upstream ${e.upstream})` : ''}`);
-    return sendJson(res, e.status || 500, { error: e.message });
+    const known = new Set(['not_configured', 'scribe_failed']);
+    return sendJson(res, e.status || 500, { error: known.has(e.message) ? e.message : 'call_check_failed' });
   }
 }

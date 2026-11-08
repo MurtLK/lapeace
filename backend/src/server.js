@@ -187,6 +187,7 @@ const server = http.createServer(async (req, res) => {
       // Same-site only: the live check spends API credits.
       const origin = req.headers.origin;
       if (!origin || !AGENT_ORIGINS.has(origin)) return sendJson(res, 403, { error: 'origin_not_allowed' });
+      res.setHeader('Access-Control-Allow-Origin', origin); res.setHeader('Vary', 'Origin');
       if (req.method !== 'POST') return sendJson(res, 405, { error: 'use POST' });
       const ip = (process.env.TRUST_CF_CONNECTING_IP === '1' && req.headers['cf-connecting-ip']) || req.socket.remoteAddress || 'unknown';
       if (callcheckLimited(ip)) return sendJson(res, 429, { error: 'too_many_checks', retry_after_sec: 60 });
