@@ -210,6 +210,19 @@ const server = http.createServer(async (req, res) => {
       res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
       return createReadStream(new URL('../public/index.html', import.meta.url)).pipe(res);
     }
+    // Partner front end (static files from LAB_DIR), served at /lab/ so it shares this origin.
+    if (pathname === '/lab') { res.writeHead(302, { Location: '/lab/' }); return res.end(); }
+    const lab = pathname.match(/^\/lab\/([\w.-]*)$/);
+    if (lab && process.env.LAB_DIR) {
+      const name = lab[1] || 'index.html';
+      const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.csv': 'text/csv; charset=utf-8', '.svg': 'image/svg+xml' };
+      const type = types[path.extname(name)];
+      if (!type || name.includes('..')) return sendJson(res, 404, { error: 'not found' });
+      const file = path.join(process.env.LAB_DIR, name);
+      try { await stat(file); } catch { return sendJson(res, 404, { error: 'not found' }); }
+      res.writeHead(200, { 'Content-Type': type });
+      return createReadStream(file).pipe(res);
+    }
     if (pathname === '/dev/agent-test') {
       res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
       return createReadStream(new URL('../public/agent-test.html', import.meta.url)).pipe(res);
