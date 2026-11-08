@@ -1,7 +1,3 @@
-# Dataset setup required
-
-The website source is included. The transcript CSVs are pending approval and are not included in this commit. Place cleaned.csv and original.csv in dist/ before running the app.
-
 # Mississauga, Unheard
 
 An interactive research workspace for reviewing accented-English AI transcripts from the Speech Accent Archive.

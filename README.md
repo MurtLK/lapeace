@@ -6,6 +6,12 @@ Created in [T3 Code](https://t3.codes).
 
 ## Mississauga, Unheard
 
-Website source is in `dist/`. The two transcript CSVs are pending upload approval and must be supplied before running it.
+The complete accented-English transcription review app and both transcript datasets are in `dist/`.
 
-See [UNHEARD.md](UNHEARD.md) for setup and feature documentation.
+See [UNHEARD.md](UNHEARD.md) for features, scoring details and local setup.
+
+```bash
+python -m http.server 8000 --directory dist
+```
+
+Open http://localhost:8000.
