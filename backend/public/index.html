@@ -93,26 +93,26 @@
 
   <section id="fleurs" aria-labelledby="fleurs-h">
     <h2 id="fleurs-h">3b. How well does Scribe transcribe Mississauga's home languages?</h2>
-    <p class="muted">A separate benchmark from the accented-English one above, so don't compare the two. 560 of 560 FLEURS clips were scored: the same 40 read sentences in each of 14 home languages. Each was transcribed by ElevenLabs Scribe v2 with its spoken language set and no hints. <strong>CER</strong> = characters changed, missed or added ÷ characters in the human reference.</p>
+    <p class="muted">A separate benchmark from the accented-English one above, so don't compare the two. 560 of 560 FLEURS clips were scored: the same 40 read sentences in each of 14 home languages. Each was transcribed by ElevenLabs Scribe v2 with its spoken language set and no hints. <strong>WER</strong> (word error rate) = words changed, missed or added ÷ words in the human reference.</p>
     <div class="card scroll"><table>
-      <thead><tr><th>Language</th><th class="num">Clips</th><th>Recorded gender</th><th class="num">Median CER</th><th class="num">Mean CER</th><th class="num">Clips &gt; 5%</th><th class="num">Median, adjusted*</th></tr></thead>
+      <thead><tr><th>Language</th><th class="num">Clips</th><th>Recorded gender</th><th class="num">Median WER</th><th class="num">Mean WER</th><th class="num">Clips &gt; 5% WER</th><th class="num">Median WER, adjusted*</th></tr></thead>
       <tbody>
-        <tr><td>Punjabi</td><td class="num">40</td><td>all F <span class="label">one gender</span></td><td class="num">3.2%</td><td class="num">7.7%</td><td class="num">11</td><td class="num">2.8%</td></tr>
-        <tr><td>Hindi</td><td class="num">40</td><td>25 M / 15 F</td><td class="num">2.5%</td><td class="num">5.5%</td><td class="num">15</td><td class="num">2.4%</td></tr>
-        <tr><td>Urdu</td><td class="num">40</td><td>all F <span class="label">one gender</span></td><td class="num">2.4%</td><td class="num">4.4%</td><td class="num">11</td><td class="num">2.2%</td></tr>
-        <tr><td>Tamil</td><td class="num">40</td><td>22 M / 18 F</td><td class="num">2.1%</td><td class="num">4.1%</td><td class="num">9</td><td class="num">1.8%</td></tr>
-        <tr><td>Gujarati</td><td class="num">40</td><td>27 M / 13 F</td><td class="num">1.4%</td><td class="num">2.3%</td><td class="num">4</td><td class="num">1.4%</td></tr>
-        <tr><td>Arabic (Egyptian)</td><td class="num">40</td><td>all F <span class="label">one gender</span></td><td class="num">1.3%</td><td class="num">2.5%</td><td class="num">7</td><td class="num">0.9%</td></tr>
-        <tr><td>Tagalog</td><td class="num">40</td><td>all M <span class="label">one gender</span></td><td class="num">0.7%</td><td class="num">1.5%</td><td class="num">2</td><td class="num">0.7%</td></tr>
-        <tr><td>Cantonese</td><td class="num">40</td><td>24 F / 16 M</td><td class="num">19.1% †</td><td class="num">19.3% †</td><td class="num">10</td><td class="num">0.0%</td></tr>
-        <tr><td>Mandarin</td><td class="num">40</td><td>25 M / 15 F</td><td class="num">0.0%</td><td class="num">2.7%</td><td class="num">9</td><td class="num">0.0%</td></tr>
-        <tr><td>Portuguese (BR)</td><td class="num">40</td><td>all M <span class="label">one gender</span></td><td class="num">0.0%</td><td class="num">1.6%</td><td class="num">5</td><td class="num">0.0%</td></tr>
-        <tr><td>Polish</td><td class="num">40</td><td>33 M / 7 F</td><td class="num">0.0%</td><td class="num">1.0%</td><td class="num">5</td><td class="num">0.0%</td></tr>
-        <tr><td>English (US)</td><td class="num">40</td><td>26 F / 14 M</td><td class="num">0.0%</td><td class="num">0.8%</td><td class="num">3</td><td class="num">0.0%</td></tr>
-        <tr><td>Spanish (LatAm)</td><td class="num">40</td><td>30 M / 10 F</td><td class="num">0.0%</td><td class="num">0.6%</td><td class="num">0</td><td class="num">0.0%</td></tr>
-        <tr><td>Vietnamese</td><td class="num">40</td><td>all M <span class="label">one gender</span></td><td class="num">0.0%</td><td class="num">0.6%</td><td class="num">3</td><td class="num">0.0%</td></tr>
+        <tr><td>Tamil</td><td class="num">40</td><td>22 M / 18 F</td><td class="num">13.4%</td><td class="num">17.1%</td><td class="num">33</td><td class="num">11.8%</td></tr>
+        <tr><td>Urdu</td><td class="num">40</td><td>all F <span class="label">one gender</span></td><td class="num">10.6%</td><td class="num">11.1%</td><td class="num">32</td><td class="num">10.0%</td></tr>
+        <tr><td>Gujarati</td><td class="num">40</td><td>27 M / 13 F</td><td class="num">8.2%</td><td class="num">9.6%</td><td class="num">27</td><td class="num">8.1%</td></tr>
+        <tr><td>Punjabi</td><td class="num">40</td><td>all F <span class="label">one gender</span></td><td class="num">8.0%</td><td class="num">12.6%</td><td class="num">25</td><td class="num">7.6%</td></tr>
+        <tr><td>Hindi</td><td class="num">40</td><td>25 M / 15 F</td><td class="num">4.8%</td><td class="num">7.2%</td><td class="num">20</td><td class="num">4.3%</td></tr>
+        <tr><td>Arabic (Egyptian)</td><td class="num">40</td><td>all F <span class="label">one gender</span></td><td class="num">4.6%</td><td class="num">7.6%</td><td class="num">18</td><td class="num">4.0%</td></tr>
+        <tr><td>Tagalog</td><td class="num">40</td><td>all M <span class="label">one gender</span></td><td class="num">3.2%</td><td class="num">4.6%</td><td class="num">15</td><td class="num">3.1%</td></tr>
+        <tr><td>Portuguese (BR)</td><td class="num">40</td><td>all M <span class="label">one gender</span></td><td class="num">0.0%</td><td class="num">2.7%</td><td class="num">10</td><td class="num">0.0%</td></tr>
+        <tr><td>Polish</td><td class="num">40</td><td>33 M / 7 F</td><td class="num">0.0%</td><td class="num">1.8%</td><td class="num">5</td><td class="num">0.0%</td></tr>
+        <tr><td>English (US)</td><td class="num">40</td><td>26 F / 14 M</td><td class="num">0.0%</td><td class="num">1.7%</td><td class="num">4</td><td class="num">0.0%</td></tr>
+        <tr><td>Spanish (LatAm)</td><td class="num">40</td><td>30 M / 10 F</td><td class="num">0.0%</td><td class="num">1.3%</td><td class="num">4</td><td class="num">0.0%</td></tr>
+        <tr><td>Vietnamese</td><td class="num">40</td><td>all M <span class="label">one gender</span></td><td class="num">0.0%</td><td class="num">0.8%</td><td class="num">4</td><td class="num">0.0%</td></tr>
+        <tr><td>Mandarin</td><td class="num">40</td><td>25 M / 15 F</td><td class="num" colspan="4">No spaces between words, so no word score. Character error rate: median 0.0%, mean 2.7% ‡</td></tr>
+        <tr><td>Cantonese</td><td class="num">40</td><td>24 F / 16 M</td><td class="num" colspan="4">No spaces between words, so no word score. Character error rate: median 0.0% once both sides use Simplified script ‡</td></tr>
       </tbody></table>
-      <p class="muted">* Adjusted: Chinese compared in Simplified script on both sides; clips where one side writes "80%" and the other "eighty percent" are excluded (1–3 per language). † Scribe writes Simplified characters, while the Cantonese reference uses Traditional. No speaker IDs are given, so each language may come from only a few speakers.</p>
+      <p class="muted">* Adjusted: clips where one side writes "80%" and the other "eighty percent" are excluded (1–3 per language). WER is harsher for languages with long words (Tamil, Gujarati, Urdu): one wrong letter makes the whole word wrong. Hindi and Urdu outputs often write English loanwords like "call" in Latin script, which also counts as a wrong word. ‡ Scribe writes Cantonese in Simplified characters, while the reference uses Traditional; compared as written, the median is 19.1%. No speaker IDs are given, so each language may come from only a few speakers. Character error rates for every language are in <code>backend/data/fleurs_summary_by_language.csv</code>.</p>
     </div>
     <div class="card">
       <h3 style="margin-top:0">Example to review with a fluent Punjabi speaker: <code>pa_in_1555</code></h3>
