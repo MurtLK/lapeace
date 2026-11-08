@@ -65,6 +65,8 @@
   <p>We tested English recordings from speakers with different language backgrounds. This comparison uses 95 of those recordings and runs ElevenLabs Scribe v2 and Whisper on the same audio.</p>
   <p class="muted">Measured on Speech Accent Archive recordings. The live agent does not use Whisper. Backup judging page served by the LAPEACE backend.</p>
 
+  <p class="card" style="border-left:4px solid var(--teal)"><strong>Live demo:</strong> <a href="/call-check">Call Check →</a> Speak into your mic like a caller, or take a call from an AI voice. LAPEACE transcribes it with ElevenLabs Scribe, flags risky requests, and scores the voice.</p>
+
   <section id="hear" aria-labelledby="hear-h">
     <h2 id="hear-h">1. Hear the difference</h2>
     <div class="tabs" id="tabs" role="group" aria-label="Featured example"></div>
@@ -140,6 +142,15 @@
     <p class="muted" id="scam-desc">Loading…</p>
     <div id="scam-cases" class="card scroll"><p class="muted">Loading…</p></div>
     <p class="muted"><strong>What this does not do:</strong> it does not tell whether a voice is AI-generated. It checks what the caller asks for. A cloned voice asking for your code is still flagged, because the request is the red flag.</p>
+      <div class="card">
+      <h3 style="margin-top:0">Can we tell an AI voice from a real one? <span class="label">Prototype, tested</span></h3>
+      <p class="muted">We trained a small detector on 404 real recordings (Speech Accent Archive + FLEURS) and 324 clips from 27 built-in computer voices. Noise, phone-line and room effects were added to <em>both</em> groups, so it can’t just learn “clean audio = computer”. It was always tested on voices it had never heard.</p>
+      <table><thead><tr><th>Test</th><th class="num">AUC</th><th class="num">Computer voices caught</th><th class="num">Real people wrongly flagged</th></tr></thead><tbody>
+        <tr><td>Unseen voices from familiar voice families</td><td class="num">0.92</td><td class="num">72%</td><td class="num">8%</td></tr>
+        <tr><td>Newest voices, from a family it never trained on</td><td class="num">0.74</td><td class="num">30%</td><td class="num">11%</td></tr>
+      </tbody></table>
+      <p><strong>What this means:</strong> a voice detector works on voices like the ones it has seen and misses most newer ones. It has never seen a modern AI voice clone. So in Call Check the voice score is only a hint; <strong>the verdict comes from what the caller asks for</strong>, which a better clone can’t hide.</p>
+    </div>
   </section>
 
   <section id="call" aria-labelledby="call-h">

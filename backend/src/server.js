@@ -7,6 +7,7 @@ import { summarizeGroups, HIGH_WER_THRESHOLD, FILLERS } from './groups.js';
 import { agentConfigStatus, createSession, rateLimited } from './agent.js';
 import { loadComparison, buildComparison, COMPARISON_FILE } from './comparison.js';
 import { alignWords } from './wer.js';
+import { handleCallcheck, callcheckLimited } from './callcheck.js';
 
 const PORT = Number(process.env.PORT) || 8787;
 const PUBLIC_BASE_URL = (process.env.PUBLIC_BASE_URL || `http://localhost:${PORT}`).replace(/\/$/, '');
@@ -181,6 +182,19 @@ const server = http.createServer(async (req, res) => {
       if (req.method === 'OPTIONS') { res.writeHead(204); return res.end(); }
       if (req.method !== 'POST') return sendJson(res, 405, { error: 'use POST' });
       return await handleAgentSession(req, res);
+    }
+    if (pathname === '/api/callcheck') {
+      // Same-site only: the live check spends API credits.
+      const origin = req.headers.origin;
+      if (!origin || !AGENT_ORIGINS.has(origin)) return sendJson(res, 403, { error: 'origin_not_allowed' });
+      if (req.method !== 'POST') return sendJson(res, 405, { error: 'use POST' });
+      const ip = (process.env.TRUST_CF_CONNECTING_IP === '1' && req.headers['cf-connecting-ip']) || req.socket.remoteAddress || 'unknown';
+      if (callcheckLimited(ip)) return sendJson(res, 429, { error: 'too_many_checks', retry_after_sec: 60 });
+      return await handleCallcheck(req, res, sendJson);
+    }
+    if (pathname === '/call-check') {
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      return createReadStream(new URL('../public/call-check.html', import.meta.url)).pipe(res);
     }
     if (req.method !== 'GET' && req.method !== 'HEAD') {
       return sendJson(res, 405, { error: 'method not allowed' });

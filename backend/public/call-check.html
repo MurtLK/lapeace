@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LAPEACE Call Check</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F766E'/%3E%3Cpath d='M10 9h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 8 11a2 2 0 0 1 2-2z' fill='%23FBFBF8'/%3E%3C/svg%3E">
+<style>
+  :root { --bg:#0E1729; --panel:#16223B; --panel2:#1F2E52; --text:#F2F4F1; --muted:#A9B8C9; --teal:#2BB3A3; --green:#2E9E5B; --red:#D9534F; --amber:#F2B45A; --line:#2A3A60; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.5 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
+  a { color: var(--teal); }
+  header { padding:20px 32px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; border-bottom:1px solid var(--line); }
+  header h1 { margin:0; font-size:22px; } header p { margin:0; color:var(--muted); font-size:14px; }
+  .label { display:inline-block; font-size:12px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding:3px 8px; border-radius:999px; background:var(--panel2); color:var(--amber); vertical-align:middle; }
+  main { display:grid; grid-template-columns: 420px 1fr; gap:28px; padding:28px 32px; max-width:1400px; margin:0 auto; }
+  @media (max-width: 900px) { main { grid-template-columns: 1fr; padding:16px; } header { padding:16px; } }
+  .phone { background:var(--panel); border:1px solid var(--line); border-radius:32px; padding:28px; display:flex; flex-direction:column; align-items:center; gap:18px; }
+  .status { font-size:15px; color:var(--muted); min-height:24px; text-align:center; }
+  .timer { font-size:44px; font-variant-numeric:tabular-nums; font-weight:600; }
+  .meter { width:100%; height:8px; background:var(--panel2); border-radius:4px; overflow:hidden; } .meter div { height:100%; width:0; background:var(--teal); transition:width .08s; }
+  .big { width:132px; height:132px; border-radius:50%; border:none; color:#fff; font-size:16px; font-weight:600; cursor:pointer; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; background:var(--green); box-shadow:0 0 0 0 rgba(46,158,91,.6); }
+  .big svg { width:40px; height:40px; }
+  .big.rec { background:var(--red); animation:pulse 1.4s infinite; }
+  .big:disabled { opacity:.5; cursor:wait; animation:none; }
+  @keyframes pulse { 0% { box-shadow:0 0 0 0 rgba(217,83,79,.6);} 70% { box-shadow:0 0 0 22px rgba(217,83,79,0);} 100% { box-shadow:0 0 0 0 rgba(217,83,79,0);} }
+  .try { width:100%; background:var(--panel2); border-radius:14px; padding:14px 16px; font-size:14px; color:var(--muted); }
+  .try b { color:var(--text); } .try ul { margin:6px 0 0; padding-left:18px; }
+  .callers { width:100%; display:flex; flex-direction:column; gap:8px; }
+  .callers h3 { margin:6px 0 2px; font-size:14px; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.06em; }
+  .caller { display:flex; justify-content:space-between; align-items:center; gap:10px; width:100%; padding:12px 14px; border-radius:12px; border:1px solid var(--line); background:transparent; color:var(--text); font:inherit; cursor:pointer; text-align:left; }
+  .caller:hover { background:var(--panel2); } .caller small { color:var(--muted); }
+  .results { display:flex; flex-direction:column; gap:18px; }
+  .verdict { border-radius:20px; padding:24px 28px; background:var(--panel); border:1px solid var(--line); }
+  .verdict h2 { margin:0 0 6px; font-size:34px; } .verdict p { margin:0; font-size:18px; }
+  .verdict.likely_scam { background:#3A1517; border-color:var(--red); } .verdict.likely_scam h2 { color:#FF8A84; }
+  .verdict.be_careful { background:#3A2A12; border-color:var(--amber); } .verdict.be_careful h2 { color:var(--amber); }
+  .verdict.no_red_flags { background:#123222; border-color:var(--green); } .verdict.no_red_flags h2 { color:#6FD69B; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:20px 24px; }
+  .card h3 { margin:0 0 10px; font-size:14px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }
+  .transcript { font-size:22px; line-height:1.5; }
+  mark { background:#5A1F22; color:#FFD0CC; border-radius:4px; padding:0 3px; }
+  .flags { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px; }
+  .flags li { padding:10px 14px; border-radius:10px; background:var(--panel2); display:flex; justify-content:space-between; gap:12px; }
+  .flags li span { color:var(--muted); font-size:14px; }
+  .bar { height:12px; background:var(--panel2); border-radius:6px; overflow:hidden; margin:8px 0; } .bar div { height:100%; background:var(--amber); }
+  .muted { color:var(--muted); } .small { font-size:14px; }
+  .err { color:#FF8A84; }
+</style>
+</head>
+<body>
+<header>
+  <div><h1>Call Check <span class="label">Live demo</span></h1><p>Answer a call, speak, and LAPEACE checks what the caller is asking for before you act.</p></div>
+  <p class="small"><a href="/">← Back to the findings</a></p>
+</header>
+<main>
+  <section class="phone" aria-label="Phone">
+    <div class="status" id="status" aria-live="polite">Ready. Press the button and speak like a caller.</div>
+    <div class="timer" id="timer">0:00</div>
+    <div class="meter" aria-hidden="true"><div id="level"></div></div>
+    <button class="big" id="mic" type="button" aria-label="Answer and speak">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+      <span id="mic-label">Answer &amp; speak</span>
+    </button>
+    <div class="try"><b>Try saying</b>
+      <ul>
+        <li>“Hi, this is your bank’s fraud department. Your card is frozen. Read me the code we just texted you.”</li>
+        <li>“Hi, it’s the pharmacy. Your prescription is ready for pickup.”</li>
+      </ul>
+    </div>
+    <div class="callers"><h3>Or take a call from an AI caller</h3><div id="callers" class="callers"><span class="muted small">Loading…</span></div></div>
+    <p class="muted small">Your voice is sent to ElevenLabs Scribe for transcription and is not saved. Up to 20 seconds per call.</p>
+  </section>
+
+  <section class="results" aria-live="polite">
+    <div class="verdict" id="verdict"><h2>Waiting for a call</h2><p class="muted">The verdict appears here after the caller finishes.</p></div>
+    <div class="card"><h3>What the caller said (Scribe v2, live)</h3><div class="transcript" id="transcript"><span class="muted">—</span></div></div>
+    <div class="card"><h3>Red flags in the request</h3><ul class="flags" id="flags"><li class="muted">—</li></ul></div>
+    <div class="card" id="voicecard"><h3>Voice check <span class="label">Prototype</span></h3><div id="voice"><span class="muted">—</span></div></div>
+  </section>
+</main>
+<script>
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const MAX_SEC = 20, RATE = 16000;
+  let ctx, stream, proc, src, chunks = [], inRate = 48000, t0 = 0, tick, busy = false;
+
+  function encodeWav(samples) {
+    const buf = new ArrayBuffer(44 + samples.length * 2), v = new DataView(buf);
+    const w = (o, s) => [...s].forEach((c, i) => v.setUint8(o + i, c.charCodeAt(0)));
+    w(0, 'RIFF'); v.setUint32(4, 36 + samples.length * 2, true); w(8, 'WAVE'); w(12, 'fmt ');
+    v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true); v.setUint32(24, RATE, true);
+    v.setUint32(28, RATE * 2, true); v.setUint16(32, 2, true); v.setUint16(34, 16, true); w(36, 'data'); v.setUint32(40, samples.length * 2, true);
+    for (let i = 0; i < samples.length; i++) { const s = Math.max(-1, Math.min(1, samples[i])); v.setInt16(44 + i * 2, s < 0 ? s * 0x8000 : s * 0x7fff, true); }
+    return buf;
+  }
+  function resample(data, from) {
+    if (from === RATE) return data;
+    const ratio = from / RATE, out = new Float32Array(Math.floor(data.length / ratio));
+    for (let i = 0; i < out.length; i++) {
+      const start = Math.floor(i * ratio), end = Math.min(data.length, Math.floor((i + 1) * ratio));
+      let sum = 0; for (let j = start; j < end; j++) sum += data[j]; out[i] = sum / Math.max(1, end - start);
+    }
+    return out;
+  }
+  function setBusy(b, text) { busy = b; $('mic').disabled = b; document.querySelectorAll('.caller').forEach((x) => (x.disabled = b)); if (text) $('status').textContent = text; }
+
+  async function start() {
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ audio: { channelCount: 1, echoCancellation: true, noiseSuppression: false, autoGainControl: true } });
+    } catch { $('status').textContent = 'Microphone blocked. Allow mic access in the browser, or try an AI caller below.'; return; }
+    ctx = new AudioContext(); inRate = ctx.sampleRate; chunks = [];
+    src = ctx.createMediaStreamSource(stream); proc = ctx.createScriptProcessor(4096, 1, 1);
+    proc.onaudioprocess = (e) => {
+      const d = e.inputBuffer.getChannelData(0); chunks.push(new Float32Array(d));
+      let peak = 0; for (let i = 0; i < d.length; i += 16) peak = Math.max(peak, Math.abs(d[i]));
+      $('level').style.width = `${Math.min(100, peak * 140)}%`;
+    };
+    src.connect(proc); proc.connect(ctx.destination);
+    t0 = Date.now(); $('mic').classList.add('rec'); $('mic-label').textContent = 'Hang up & check'; $('status').textContent = 'Listening… speak like the caller.';
+    tick = setInterval(() => { const s = (Date.now() - t0) / 1000; $('timer').textContent = `0:${String(Math.floor(s)).padStart(2, '0')}`; if (s >= MAX_SEC) stop(); }, 200);
+  }
+  async function stop() {
+    clearInterval(tick); $('mic').classList.remove('rec'); $('mic-label').textContent = 'Answer & speak'; $('level').style.width = '0';
+    proc?.disconnect(); src?.disconnect(); stream?.getTracks().forEach((t) => t.stop()); await ctx?.close(); ctx = null;
+    const total = chunks.reduce((a, c) => a + c.length, 0); const all = new Float32Array(total); let o = 0; for (const c of chunks) { all.set(c, o); o += c.length; }
+    if (total / inRate < 1) { $('status').textContent = 'That was too short. Hold the button a little longer.'; return; }
+    await analyse(encodeWav(resample(all, inRate)), 'your call');
+  }
+
+  async function analyse(wav, who) {
+    setBusy(true, `Checking ${who}…`);
+    $('verdict').className = 'verdict'; $('verdict').innerHTML = '<h2>Checking…</h2><p class="muted">Transcribing with ElevenLabs Scribe and checking the request.</p>';
+    try {
+      const r = await fetch('/api/callcheck', { method: 'POST', headers: { 'Content-Type': 'audio/wav' }, body: wav });
+      const d = await r.json();
+      if (!r.ok) throw new Error(d.error === 'not_configured' ? 'The live check needs the ElevenLabs key on the server.' : d.error === 'too_many_checks' ? 'Too many checks this minute. Wait a moment.' : (d.error || `HTTP ${r.status}`));
+      render(d); $('status').textContent = 'Done. Try another call.';
+    } catch (e) {
+      $('verdict').className = 'verdict'; $('verdict').innerHTML = `<h2>Couldn’t check that call</h2><p class="err">${esc(e.message)}</p>`;
+      $('status').textContent = 'Something went wrong. Try again.';
+    } finally { setBusy(false); }
+  }
+
+  function render(d) {
+    const titles = { likely_scam: 'Likely scam', be_careful: 'Be careful', no_red_flags: 'No red flags' };
+    $('verdict').className = `verdict ${d.verdict}`;
+    $('verdict').innerHTML = `<h2>${esc(titles[d.verdict])}</h2><p>${esc(d.verdict_text)}</p>`;
+    let html = esc(d.transcript || '(nothing heard)');
+    const phrases = [...new Set(d.flags.flatMap((f) => f.phrases))].sort((a, b) => b.length - a.length);
+    for (const p of phrases) {
+      const re = new RegExp(`(^|[^a-z0-9])(${esc(p).replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/'/g, '(?:\'|&#39;|’)').replace(/ /g, '[\\s,.-]+')})(?=[^a-z0-9]|$)`, 'gi');
+      html = html.replace(re, '$1<mark>$2</mark>');
+    }
+    $('transcript').innerHTML = html;
+    $('flags').innerHTML = d.flags.length ? d.flags.map((f) => `<li><b>${esc(f.label)}</b><span>“${f.phrases.map(esc).join('”, “')}”</span></li>`).join('') : '<li class="muted">None found in what was said.</li>';
+    const v = d.voice_check;
+    if (!v) $('voice').innerHTML = '<span class="muted">Voice detector not running on this server.</span>';
+    else if (v.error) $('voice').innerHTML = '<span class="muted">Voice check unavailable for this clip.</span>';
+    else {
+      const pct = Math.round(v.p_synthetic * 100);
+      $('voice').innerHTML = `<div><b>${pct}%</b> “sounds computer-generated” score</div><div class="bar" aria-hidden="true"><div style="width:${pct}%"></div></div>
+        <p class="muted small">${esc(v.caveat)}</p>`;
+    }
+  }
+
+  $('mic').addEventListener('click', () => { if (busy) return; ctx ? stop() : start(); });
+
+  fetch('/api/scamcheck').then((r) => r.json()).then((d) => {
+    $('callers').innerHTML = d.cases.map((c) => `<button type="button" class="caller" data-audio="${esc(c.audio)}" data-kind="${esc(c.kind)}"><span>☎ ${esc(c.kind)}</span><small>${esc(c.voice.split(' (')[0])} · computer voice</small></button>`).join('');
+    document.querySelectorAll('.caller').forEach((b) => b.addEventListener('click', async () => {
+      if (busy) return;
+      const url = `/audio311/${encodeURIComponent(b.dataset.audio)}`;
+      try {
+        setBusy(true, `Incoming call: ${b.dataset.kind}…`);
+        const buf = await (await fetch(url)).arrayBuffer();
+        const audio = new Audio(url); audio.play().catch(() => {});
+        await new Promise((res) => { audio.onended = res; audio.onerror = res; setTimeout(res, 15000); });
+        setBusy(false); await analyse(buf, `the ${b.dataset.kind.toLowerCase()} call`);
+      } catch { setBusy(false); $('status').textContent = 'That demo call’s audio isn’t available on this machine.'; }
+    }));
+  }).catch(() => { $('callers').innerHTML = '<span class="muted small">Demo calls unavailable.</span>'; });
+})();
+</script>
+</body>
+</html>

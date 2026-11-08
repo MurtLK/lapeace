@@ -16,28 +16,7 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const { values: args } = parseArgs({ options: { work: { type: 'string' }, out: { type: 'string', default: path.join(here, '..', 'data', 'scamcheck.json') } } });
 if (!args.work) { console.error('Usage: node scripts/test-scam.js --work <dir>'); process.exit(1); }
 
-// Red flags drawn from common Canadian phone-scam patterns. weight 3 = never legitimate on its own.
-export const FLAGS = [
-  { id: 'asks_for_code', label: 'Asks for a code, PIN or password', weight: 3, keys: ['code', 'pin', 'password', 'verification'] },
-  { id: 'unusual_payment', label: 'Wants gift cards, crypto or a wire transfer', weight: 3, keys: ['gift card', 'gift cards', 'bitcoin', 'crypto', 'wire', 'cryptocurrency'] },
-  { id: 'remote_access', label: 'Asks you to install an app or give remote access', weight: 3, keys: ['install', 'remote', 'anydesk', 'download'] },
-  { id: 'threat', label: 'Threatens arrest, fines or a frozen account', weight: 2, keys: ['arrest', 'warrant', 'police', 'frozen', 'suspended', 'lawsuit'] },
-  { id: 'urgency', label: 'Pressures you to act right now', weight: 1, keys: ['immediately', 'right now', 'today', 'within the hour', 'urgent'] },
-  { id: 'secrecy', label: 'Tells you to keep it secret or stay on the line', weight: 2, keys: ["don't tell", 'do not tell', "don't hang up", 'do not hang up', 'keep this between'] },
-  { id: 'authority', label: 'Claims to be a government agency or your bank’s fraud team', weight: 1, keys: ['revenue agency', 'government', 'fraud department', 'fraud team'] },
-];
-export function check(text) {
-  const t = ` ${text.toLowerCase().replace(/[’]/g, "'").replace(/[^a-z0-9' ]+/g, ' ').replace(/\s+/g, ' ')} `;
-  const found = FLAGS.filter((f) => f.keys.some((k) => t.includes(` ${k} `)));
-  const score = found.reduce((a, f) => a + f.weight, 0);
-  const verdict = score >= 3 ? 'likely_scam' : score >= 1 ? 'be_careful' : 'no_red_flags';
-  return { flags: found.map((f) => f.id), score, verdict };
-}
-const VERDICT = {
-  likely_scam: 'Likely scam: hang up, and call back using the number on your card or the official website.',
-  be_careful: 'Be careful: don’t share anything; verify by calling back on an official number.',
-  no_red_flags: 'No red flags found. Still, never share codes or passwords on a call you didn’t make.',
-};
+import { check } from '../src/scamrules.js';
 const CASES = [
   { id: 's1', voice: 'Daniel', voice_accent: 'en-GB', intended: 'scam', kind: 'Fake tax agency',
     script: 'This is the Canada Revenue Agency. You owe back taxes, and a warrant will be issued for your arrest today unless you pay immediately with gift cards. Do not hang up.' },
@@ -81,13 +60,13 @@ for (const c of CASES) {
   const correct = (r.verdict === 'likely_scam') === (c.intended === 'scam');
   cases.push({ case_id: c.id, kind: c.kind, voice: `${c.voice} (macOS, ${c.voice_accent})`, intended: c.intended, script: c.script, audio: file,
     scribe_heard: text, transcript_exact: text.toLowerCase().replace(/[^a-z0-9 ]/g, '') === c.script.toLowerCase().replace(/[^a-z0-9 ]/g, ''),
-    flags: r.flags.map((id) => FLAGS.find((f) => f.id === id).label), score: r.score, verdict: r.verdict, verdict_text: VERDICT[r.verdict], correct });
+    flags: r.flags.map((f) => f.label), score: r.score, verdict: r.verdict, verdict_text: r.verdict_text, correct });
 }
 const out = {
   kind: 'scripted_simulation',
   description: 'Five scripted phone calls (three scams, two normal), spoken by macOS synthetic voices, transcribed by ElevenLabs Scribe v2 (real API), and checked against fixed red-flag rules.',
   limits: ['Scripted calls and synthetic voices, not real scam recordings.', 'Five cases: a demonstration, not a measured accuracy rate.', 'Rules look at what is said; they do not detect whether a voice is AI-generated.', 'Not run through the live ElevenLabs agent.'],
-  flags: FLAGS.map(({ id, label, weight }) => ({ id, label, weight })),
+  
   summary: { cases: cases.length, correct: cases.filter((c) => c.correct).length, scams_flagged: cases.filter((c) => c.intended === 'scam' && c.verdict === 'likely_scam').length,
     scams: cases.filter((c) => c.intended === 'scam').length, exact_transcripts: cases.filter((c) => c.transcript_exact).length },
   generated_at: new Date().toISOString(), scribe_calls: { new: apiCalls, cached: cachedCalls }, cases,
