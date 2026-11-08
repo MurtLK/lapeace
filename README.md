@@ -3,3 +3,38 @@
 # LAPEACE
 
 Created in [T3 Code](https://t3.codes).
+
+LAPEACE is a Sheridan Datathon 2026 project for the ElevenLabs Mississauga Unheard track. It connects measured speech recognition gaps to language communities and a simulated multilingual service interaction.
+
+## Project documents
+
+- [Objective](Objective.md): project direction and scope.
+- [Product requirements](PRD.md): user journeys and release acceptance criteria.
+- [Technical specification](.spec.md): architecture, dataset handling, metrics, data contracts, and API behavior.
+- [Agent playbook](.agent.md): assignments and coordination across coding tools.
+- [Agent entry point](AGENTS.md): instructions to read before implementation.
+- [Task registry](coordination/tasks.json): dependency queue and actual implementation status.
+- [Source project plan](docs/references/LAPEACE%20ElevenLabs%20Project%20Plan.md): retained team plan.
+
+## Current state
+
+The offline Python pipeline is implemented. It validates source tables and audio paths, selects and decodes a reproducible 40-clip pilot, and exports pending transcript records, a review sheet, and corrected ward census context. No transcription provider has been called; predictions and recognition metrics remain null. Application and UI implementation remain separate work.
+
+## Run the offline pipeline
+
+Prerequisites: Python 3.12, [uv](https://docs.astral.sh/uv/), and `ffmpeg` / `ffprobe` on PATH. Install the locked Python dependencies once; subsequent pipeline stages use no network or credentials.
+
+```sh
+uv sync --locked
+uv run --offline python -m lapeace_data prepare --source '/Users/murtadalakhdar/Downloads/Datasets/ElevenLabs Track - Mississauga Unheard'
+uv run --offline python -m unittest discover -s tests -p 'test_*.py'
+```
+
+On another machine pass its dataset path or export `LAPEACE_DATASET_SOURCE`. `.env.example` documents this variable; `.env` is not loaded automatically. The source remains unchanged. ZIP extraction, full manifests, and results stay under ignored `data/raw/` and `data/derived/`.
+
+Open `data/derived/offline-pilot.json` to find this pilot's immutable manifest directory. `review_queue.csv` is the next human step. `transcripts.csv` is an explicitly pending handoff for Hisham, not measured recognition evidence. The pipeline creates no approved `active-run.json`.
+
+- [Murtada's short pipeline guide](docs/pipeline/offline.md)
+- [Skills matched to the pipeline specification](docs/pipeline/skills.md)
+
+Murtada owns the pipeline, Hisham owns the application, and Bahar/Jaya own UI work. The older planning documents retain some previous assignments; the current user allocation takes precedence. Only the offline data portion of the `1.0.0` contract is materialized in `contracts/v1/offline.schema.json`; API/UI/service contracts and the full T00 scaffold are unfinished.

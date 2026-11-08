@@ -1,0 +1,1230 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lapeace.local/contracts/v1/offline.schema.json",
+  "title": "LAPEACE offline pipeline artifacts, version 1.0.0",
+  "$comment": "Bounded offline data contract only. API/UI/service contracts and approved provider runs remain T00/T70 work. Null indices are deliberate.",
+  "$defs": {
+    "Config": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "selection_seed": {
+          "type": "integer"
+        },
+        "samples_per_cohort": {
+          "const": 10
+        },
+        "baseline": {
+          "type": "object",
+          "properties": {
+            "cohort_id": {
+              "type": "string",
+              "pattern": "^[a-z]+$"
+            },
+            "first_language": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "cohort_id",
+            "first_language"
+          ],
+          "additionalProperties": false
+        },
+        "comparisons": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "cohort_id": {
+                "type": "string",
+                "pattern": "^[a-z]+$"
+              },
+              "first_language": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "cohort_id",
+              "first_language"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "provider": {
+          "const": "elevenlabs"
+        },
+        "model_id": {
+          "type": "string"
+        },
+        "settings": {
+          "type": "object",
+          "properties": {
+            "language_code": {
+              "const": "en"
+            },
+            "diarize": {
+              "const": false
+            },
+            "tag_audio_events": {
+              "const": false
+            },
+            "no_verbatim": {
+              "const": false
+            }
+          },
+          "required": [
+            "language_code",
+            "diarize",
+            "tag_audio_events",
+            "no_verbatim"
+          ],
+          "additionalProperties": false
+        },
+        "normalization_version": {
+          "const": "en_v1"
+        },
+        "budget": {
+          "type": "object",
+          "properties": {
+            "max_attempts": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 45
+            },
+            "max_submitted_audio_seconds": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1800
+            }
+          },
+          "required": [
+            "max_attempts",
+            "max_submitted_audio_seconds"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schema_version",
+        "selection_seed",
+        "samples_per_cohort",
+        "baseline",
+        "comparisons",
+        "provider",
+        "model_id",
+        "settings",
+        "normalization_version",
+        "budget"
+      ],
+      "additionalProperties": false
+    },
+    "Sample": {
+      "type": "object",
+      "properties": {
+        "sample_id": {
+          "type": "string",
+          "pattern": "^saa:[a-zA-Z0-9_-]+$"
+        },
+        "dataset_id": {
+          "const": "speech_accent_archive"
+        },
+        "source_relative_path": {
+          "type": "string"
+        },
+        "audio_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "duration_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "channels": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sample_rate_hz": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "decode_status": {
+          "const": "passed"
+        },
+        "spoken_language": {
+          "const": "en"
+        },
+        "first_language": {
+          "type": "string"
+        },
+        "cohort_id": {
+          "type": "string"
+        },
+        "speaker_key": {
+          "type": "string"
+        },
+        "reference_raw": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reference_source": {
+          "type": "string"
+        },
+        "review_status": {
+          "enum": [
+            "pending",
+            "accepted",
+            "excluded"
+          ]
+        },
+        "source_url": {
+          "const": "https://accent.gmu.edu"
+        },
+        "license_id": {
+          "const": "CC-BY-NC-SA-4.0"
+        },
+        "source_metadata": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "sample_id",
+        "dataset_id",
+        "source_relative_path",
+        "audio_sha256",
+        "duration_seconds",
+        "channels",
+        "sample_rate_hz",
+        "decode_status",
+        "spoken_language",
+        "first_language",
+        "cohort_id",
+        "speaker_key",
+        "reference_raw",
+        "reference_source",
+        "review_status",
+        "source_url",
+        "license_id",
+        "source_metadata"
+      ],
+      "additionalProperties": false
+    },
+    "Manifest": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "artifact_type": {
+          "const": "manifest"
+        },
+        "selection_config": {
+          "$ref": "#/$defs/Config"
+        },
+        "selection_rationale": {
+          "type": "string"
+        },
+        "cohorts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "cohort_id": {
+                "type": "string"
+              },
+              "first_language": {
+                "type": "string"
+              },
+              "census_home_column": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "city_home_speakers": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "available_recordings": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "cohort_id",
+              "first_language",
+              "census_home_column",
+              "city_home_speakers",
+              "available_recordings"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "python_version": {
+          "type": "string"
+        },
+        "media_tools": {
+          "type": "object",
+          "properties": {
+            "ffmpeg": {
+              "type": "string"
+            },
+            "ffprobe": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ffmpeg",
+            "ffprobe"
+          ],
+          "additionalProperties": false
+        },
+        "source_hashes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "minProperties": 1
+        },
+        "candidate_audio_hashes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "minProperties": 1
+        },
+        "samples": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Sample"
+          },
+          "minItems": 40,
+          "maxItems": 40
+        },
+        "reserves": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "exclusions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sample_id": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "sample_id",
+              "reason"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "attribution": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "artifact_type",
+        "selection_config",
+        "selection_rationale",
+        "cohorts",
+        "python_version",
+        "media_tools",
+        "source_hashes",
+        "candidate_audio_hashes",
+        "samples",
+        "reserves",
+        "exclusions",
+        "limitations",
+        "attribution"
+      ],
+      "additionalProperties": false
+    },
+    "Provenance": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string"
+        },
+        "source_hashes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "minProperties": 1
+        },
+        "manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "settings_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "normalization_version": {
+          "const": "en_v1"
+        },
+        "generated_at": {
+          "type": "string"
+        },
+        "origin": {
+          "enum": [
+            "provider",
+            "fixture"
+          ]
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "attribution": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "artifact_id",
+        "source_hashes",
+        "manifest_sha256",
+        "settings_sha256",
+        "normalization_version",
+        "generated_at",
+        "origin",
+        "limitations",
+        "attribution"
+      ],
+      "additionalProperties": false
+    },
+    "Code": {
+      "type": "object",
+      "properties": {
+        "git_sha": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "git_dirty": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_hashes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "minProperties": 1
+        },
+        "source_tree_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "git_sha",
+        "git_dirty",
+        "source_hashes",
+        "source_tree_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "Run": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "run_id": {
+          "type": "string"
+        },
+        "manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "settings_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "provider": {
+          "const": "elevenlabs"
+        },
+        "model_id": {
+          "type": "string"
+        },
+        "settings": {
+          "type": "object",
+          "properties": {
+            "language_code": {
+              "const": "en"
+            },
+            "diarize": {
+              "const": false
+            },
+            "tag_audio_events": {
+              "const": false
+            },
+            "no_verbatim": {
+              "const": false
+            }
+          },
+          "required": [
+            "language_code",
+            "diarize",
+            "tag_audio_events",
+            "no_verbatim"
+          ],
+          "additionalProperties": false
+        },
+        "normalization_version": {
+          "const": "en_v1"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "origin": {
+          "enum": [
+            "provider",
+            "fixture"
+          ]
+        },
+        "request_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "submitted_audio_seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "status": {
+          "enum": [
+            "pending",
+            "running",
+            "partial",
+            "complete",
+            "failed"
+          ]
+        },
+        "evidence_status": {
+          "const": "unmeasured"
+        },
+        "code": {
+          "$ref": "#/$defs/Code"
+        }
+      },
+      "required": [
+        "schema_version",
+        "run_id",
+        "manifest_sha256",
+        "settings_sha256",
+        "provider",
+        "model_id",
+        "settings",
+        "normalization_version",
+        "created_at",
+        "origin",
+        "request_count",
+        "submitted_audio_seconds",
+        "status",
+        "evidence_status",
+        "code"
+      ],
+      "additionalProperties": false
+    },
+    "TranscriptResult": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "sample_id": {
+          "type": "string"
+        },
+        "run_id": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "pending",
+            "succeeded",
+            "failed"
+          ]
+        },
+        "prediction_raw": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "provider_request_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "completed_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "error_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "word_edits": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reference_words": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "character_edits": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reference_characters": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "wer": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cer": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "sample_id",
+        "run_id",
+        "status",
+        "prediction_raw",
+        "provider_request_id",
+        "completed_at",
+        "error_code",
+        "word_edits",
+        "reference_words",
+        "character_edits",
+        "reference_characters",
+        "wer",
+        "cer"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "pending"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "prediction_raw": {
+                "type": "null"
+              },
+              "provider_request_id": {
+                "type": "null"
+              },
+              "completed_at": {
+                "type": "null"
+              },
+              "error_code": {
+                "type": "null"
+              },
+              "word_edits": {
+                "type": "null"
+              },
+              "reference_words": {
+                "type": "null"
+              },
+              "character_edits": {
+                "type": "null"
+              },
+              "reference_characters": {
+                "type": "null"
+              },
+              "wer": {
+                "type": "null"
+              },
+              "cer": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "failed"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "prediction_raw": {
+                "type": "null"
+              },
+              "word_edits": {
+                "type": "null"
+              },
+              "reference_words": {
+                "type": "null"
+              },
+              "character_edits": {
+                "type": "null"
+              },
+              "reference_characters": {
+                "type": "null"
+              },
+              "wer": {
+                "type": "null"
+              },
+              "cer": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "CohortResult": {
+      "type": "object",
+      "properties": {
+        "cohort_id": {
+          "type": "string"
+        },
+        "first_language": {
+          "type": "string"
+        },
+        "spoken_language": {
+          "const": "en"
+        },
+        "n_selected": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "n_succeeded": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "n_failed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "n_pending": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "word_edits": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reference_words": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "character_edits": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reference_characters": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "wer": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cer": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "delta_wer_from_baseline": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "cohort_id",
+        "first_language",
+        "spoken_language",
+        "n_selected",
+        "n_succeeded",
+        "n_failed",
+        "n_pending",
+        "word_edits",
+        "reference_words",
+        "character_edits",
+        "reference_characters",
+        "wer",
+        "cer",
+        "delta_wer_from_baseline"
+      ],
+      "additionalProperties": false
+    },
+    "Summary": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "artifact_type": {
+          "const": "summary"
+        },
+        "run_id": {
+          "type": "string"
+        },
+        "cohorts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/CohortResult"
+          }
+        },
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        }
+      },
+      "required": [
+        "schema_version",
+        "artifact_type",
+        "run_id",
+        "cohorts",
+        "provenance"
+      ],
+      "additionalProperties": false
+    },
+    "Ward": {
+      "type": "object",
+      "properties": {
+        "ward": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 11
+        },
+        "population_language_base": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "ward10_corrected": {
+          "type": "boolean"
+        },
+        "knows_neither_english_nor_french": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "covered_home_speakers": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "top14_home_speakers": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "coverage_of_top14": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "index": {
+          "type": "null"
+        },
+        "index_status": {
+          "const": "incomplete"
+        },
+        "run_id": {
+          "type": "null"
+        },
+        "contributions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "cohort_id": {
+                "type": "string"
+              },
+              "home_speakers": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "weight": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "gap": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "cohort_id",
+              "home_speakers",
+              "weight",
+              "gap"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "ward",
+        "population_language_base",
+        "ward10_corrected",
+        "knows_neither_english_nor_french",
+        "covered_home_speakers",
+        "top14_home_speakers",
+        "coverage_of_top14",
+        "index",
+        "index_status",
+        "run_id",
+        "contributions"
+      ],
+      "additionalProperties": false
+    },
+    "Wards": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "artifact_type": {
+          "const": "wards"
+        },
+        "wards": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Ward"
+          },
+          "minItems": 11,
+          "maxItems": 11
+        },
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        }
+      },
+      "required": [
+        "schema_version",
+        "artifact_type",
+        "wards",
+        "provenance"
+      ],
+      "additionalProperties": false
+    },
+    "DryRun": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "artifact_type": {
+          "const": "dry_run"
+        },
+        "manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "mode": {
+          "const": "offline"
+        },
+        "network_requests": {
+          "const": 0
+        },
+        "estimated_requests": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "estimated_audio_seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "budget": {
+          "type": "object",
+          "properties": {
+            "max_attempts": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 45
+            },
+            "max_submitted_audio_seconds": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1800
+            }
+          },
+          "required": [
+            "max_attempts",
+            "max_submitted_audio_seconds"
+          ],
+          "additionalProperties": false
+        },
+        "within_budget": {
+          "type": "boolean"
+        },
+        "attempts_remaining_after_initial_pilot": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "audio_seconds_remaining_after_initial_pilot": {
+          "type": "number",
+          "minimum": 0
+        },
+        "n_review_pending": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "live_ready": {
+          "const": false
+        },
+        "next_gate": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "artifact_type",
+        "manifest_sha256",
+        "mode",
+        "network_requests",
+        "estimated_requests",
+        "estimated_audio_seconds",
+        "budget",
+        "within_budget",
+        "attempts_remaining_after_initial_pilot",
+        "audio_seconds_remaining_after_initial_pilot",
+        "n_review_pending",
+        "live_ready",
+        "next_gate"
+      ],
+      "additionalProperties": false
+    },
+    "Validation": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "artifact_type": {
+          "const": "validation"
+        },
+        "counts_by_first_language": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "audio_files_checked": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "wards_checked": {
+          "const": 11
+        },
+        "source_hashes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "minProperties": 1
+        },
+        "network_requests": {
+          "const": 0
+        }
+      },
+      "required": [
+        "schema_version",
+        "artifact_type",
+        "counts_by_first_language",
+        "audio_files_checked",
+        "wards_checked",
+        "source_hashes",
+        "network_requests"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

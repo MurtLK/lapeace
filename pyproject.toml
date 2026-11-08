@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools==75.8.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lapeace-data"
+version = "0.1.0"
+description = "Reproducible offline data preparation for LAPEACE"
+requires-python = ">=3.12,<3.13"
+dependencies = ["jsonschema==4.25.1"]
+
+[project.scripts]
+lapeace-data = "lapeace_data.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["pipeline"]

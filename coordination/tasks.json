@@ -1,0 +1,677 @@
+{
+  "schema_version": "1.0.0",
+  "project": "LAPEACE",
+  "phase": "foundation",
+  "coordinator": "Murtada",
+  "application_reviewer": "Hisham",
+  "updated_at": "2026-11-08T01:15:39.702732+00:00",
+  "registry_writer": "coordinator_only",
+  "implementation_started": true,
+  "status_values": [
+    "pending",
+    "ready",
+    "claimed",
+    "in_progress",
+    "review",
+    "done",
+    "blocked",
+    "cancelled"
+  ],
+  "tasks": [
+    {
+      "id": "T00",
+      "title": "Scaffold and freeze contracts",
+      "human_owner": "Murtada",
+      "reviewer": "Hisham",
+      "status": "ready",
+      "depends_on": [],
+      "assignment": null,
+      "allowed_writes": [
+        "contracts/v1/**",
+        "config/pilot.json",
+        "pyproject.toml",
+        "uv.lock",
+        ".env.example",
+        ".gitignore",
+        "README.md",
+        "web/package.json",
+        "web/package-lock.json",
+        "web/tsconfig*.json",
+        "web/vite.config.*",
+        "web/index.html",
+        "web/src/main.tsx",
+        "web/src/App.tsx",
+        "web/src/lib/**",
+        "server/lapeace_api/main.py",
+        "server/lapeace_api/models/**",
+        "server/lapeace_api/__init__.py",
+        "pipeline/lapeace_data/__init__.py",
+        "pipeline/lapeace_data/__main__.py",
+        "coordination/handoffs/T00.md"
+      ],
+      "inputs": [
+        "PRD.md",
+        ".spec.md",
+        "Objective.md"
+      ],
+      "deliverables": [
+        "One React/TypeScript frontend and Python backend scaffold",
+        "Pinned compatible dependencies and documented local setup",
+        "Versioned JSON Schemas, backend models, frontend types and labelled examples",
+        "Pilot config with fixed seed, cohorts and budget defaults"
+      ],
+      "acceptance": [
+        "Frontend build and backend health smoke test pass",
+        "Schemas validate labelled examples including unavailable and fixture states",
+        "Commands and environment names match the spec",
+        "No paid calls and no credentials required for setup checks"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false
+    },
+    {
+      "id": "T10",
+      "title": "Ingest and select the frozen pilot",
+      "human_owner": "Murtada",
+      "reviewer": "Murtada",
+      "status": "pending",
+      "depends_on": [
+        "T00"
+      ],
+      "assignment": null,
+      "allowed_writes": [
+        "pipeline/lapeace_data/**",
+        "tests/data_checks/test_ingestion*.py",
+        "tests/data_checks/test_selection*.py",
+        "data/derived/**",
+        "coordination/handoffs/T10.md"
+      ],
+      "inputs": [
+        "config/pilot.json",
+        "contracts/v1/**",
+        "Local source dataset ZIP and metadata"
+      ],
+      "deliverables": [
+        "Safe discovery/extraction and validation CLI",
+        "40 selected sample records and ordered reserves",
+        "Source hashes, selection rationale, manifest hash and pending results"
+      ],
+      "acceptance": [
+        "All selected files exist and decode",
+        "Selection is reproducible from saved config and IDs",
+        "Spoken language is en for every archive sample",
+        "No source file changed and no provider called"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false,
+      "runtime_outputs": [
+        "data/raw/**",
+        "data/derived/**"
+      ]
+    },
+    {
+      "id": "T20",
+      "title": "Implement evidence and ward read APIs",
+      "human_owner": "Hisham",
+      "reviewer": "Hisham",
+      "status": "pending",
+      "depends_on": [
+        "T00"
+      ],
+      "assignment": null,
+      "allowed_writes": [
+        "server/lapeace_api/routes/**",
+        "tests/api/**",
+        "coordination/handoffs/T20.md"
+      ],
+      "inputs": [
+        "contracts/v1/**",
+        ".spec.md API section",
+        "T00 handoff"
+      ],
+      "deliverables": [
+        "Read routers for capabilities, samples, cohorts and wards",
+        "Manifest-ID audio resolver with range support",
+        "Missing-artifact and invalid-ID errors"
+      ],
+      "acceptance": [
+        "API contract checks pass using labelled examples",
+        "Path traversal and arbitrary file access are rejected",
+        "Missing results remain null",
+        "No benchmark provider call can be triggered through read routes"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false
+    },
+    {
+      "id": "T30",
+      "title": "Build the three browser views",
+      "human_owner": "Hisham",
+      "reviewer": "Hisham",
+      "status": "pending",
+      "depends_on": [
+        "T00"
+      ],
+      "assignment": null,
+      "allowed_writes": [
+        "web/src/features/**",
+        "web/src/styles/**",
+        "web/src/components/**",
+        "web/src/**/*.test.tsx",
+        "coordination/handoffs/T30.md"
+      ],
+      "inputs": [
+        "Frozen API client/types",
+        "contracts/v1/**",
+        "PRD.md acceptance criteria"
+      ],
+      "deliverables": [
+        "Evidence playback and transcript view",
+        "Ward table and contribution details",
+        "Service view with visible mode, consent, clarification and confirmation",
+        "Loading, unavailable and provider-failure UI states"
+      ],
+      "acceptance": [
+        "Frontend build and interaction checks pass",
+        "Keyboard flow is usable and statuses have text",
+        "Fixture/cached/replay modes are labelled",
+        "No API key or absolute dataset path appears in the bundle"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false
+    },
+    {
+      "id": "T40",
+      "title": "Review pilot samples and write small validation helpers",
+      "human_owner": "Mahar",
+      "reviewer": "Murtada",
+      "status": "pending",
+      "depends_on": [
+        "T10"
+      ],
+      "assignment": null,
+      "allowed_writes": [
+        "scripts/review_checks/**",
+        "reviews/samples/**",
+        "tests/data_checks/test_review_helpers*.py",
+        "coordination/handoffs/T40.md"
+      ],
+      "inputs": [
+        "Frozen pilot manifest and source metadata",
+        "T10 handoff",
+        "Source README, dictionary and licences"
+      ],
+      "deliverables": [
+        "One small checker for missing fields, duplicate IDs and invalid paths",
+        "Review status for all 40 samples",
+        "Exclusions, meaning-review limits and attribution notes"
+      ],
+      "acceptance": [
+        "Murtada reviews the helper and any requested substitutions",
+        "Every selected sample has a reviewer status",
+        "Source reference text is preserved unless an explicit versioned correction is reviewed",
+        "No metrics or shared selection rules changed in this task"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false
+    },
+    {
+      "id": "T50",
+      "title": "Implement the simulated voice service",
+      "human_owner": "Hisham",
+      "reviewer": "Hisham",
+      "status": "pending",
+      "depends_on": [
+        "T20",
+        "T61"
+      ],
+      "assignment": null,
+      "allowed_writes": [
+        "server/lapeace_api/voice/**",
+        "tests/voice/**",
+        "coordination/handoffs/T50.md"
+      ],
+      "inputs": [
+        "Frozen service contracts",
+        "Reviewed scenario content",
+        "Official ElevenLabs API references in the spec"
+      ],
+      "deliverables": [
+        "Scribe/TTS adapters and prompt cache",
+        "Session router and constrained dialogue state machine",
+        "Idempotency, upload limits, local cleanup and failure handling",
+        "Scripted replay that refuses arbitrary new audio"
+      ],
+      "acceptance": [
+        "Mocked tests cover clarification, correction, confirmation, cancellation and provider failure",
+        "Repeated request IDs cannot duplicate paid work",
+        "No receipt before explicit confirmation",
+        "Replay and live processing remain distinct"
+      ],
+      "paid_provider_calls": "mocked_by_default; live smoke only under coordinator-assigned separate budget",
+      "allows_subagents": false,
+      "runtime_outputs": [
+        "data/cache/prompts/**",
+        "data/cache/budgets/**",
+        "data/tmp/**"
+      ]
+    },
+    {
+      "id": "T60",
+      "title": "Draft service scenarios and user acceptance expectations",
+      "human_owner": "Jayatsi",
+      "reviewer": "Hisham",
+      "status": "ready",
+      "depends_on": [],
+      "assignment": null,
+      "allowed_writes": [
+        "content/scenarios.draft.json",
+        "docs/uat/scenario-drafts.md",
+        "coordination/handoffs/T60.md"
+      ],
+      "inputs": [
+        "PRD.md service journey",
+        ".spec.md dialogue states",
+        "Supplied source attribution"
+      ],
+      "deliverables": [
+        "Success, ambiguous and provider-failure scenario drafts",
+        "English and proposed additional-language prompt drafts",
+        "Expected states, fictional locations and test steps",
+        "Outstanding reviewer and attribution questions"
+      ],
+      "acceptance": [
+        "Hisham reviews the proposed journey and expected states",
+        "Every script identifies simulation and explicit confirmation",
+        "Unreviewed translations remain labelled drafts",
+        "No production content is enabled by this drafting task"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false
+    },
+    {
+      "id": "T61",
+      "title": "Validate and finalize reviewed scenario content",
+      "human_owner": "Jayatsi",
+      "reviewer": "Hisham",
+      "status": "pending",
+      "depends_on": [
+        "T00",
+        "T60"
+      ],
+      "assignment": null,
+      "allowed_writes": [
+        "content/scenarios.json",
+        "content/attribution.md",
+        "docs/uat/scenarios.md",
+        "docs/uat/presentation.md",
+        "coordination/handoffs/T61.md"
+      ],
+      "inputs": [
+        "T60 scenario drafts",
+        "T00 frozen scenario schema",
+        "Fluent language review"
+      ],
+      "deliverables": [
+        "Schema-valid production scenario content",
+        "English and at least one reviewed additional language",
+        "Fluent reviewer names/status and attribution",
+        "Final UAT expectations and presentation outline"
+      ],
+      "acceptance": [
+        "Content validates against frozen schemas",
+        "Every enabled language has a recorded fluent reviewer",
+        "Hisham verifies matching lexicon and dialogue-state compatibility",
+        "Unreviewed languages stay disabled"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false
+    },
+    {
+      "id": "T70",
+      "title": "Generate measured results and ward artifacts",
+      "human_owner": "Murtada",
+      "reviewer": "Mahar with Murtada signoff",
+      "status": "pending",
+      "depends_on": [
+        "T10",
+        "T40"
+      ],
+      "assignment": null,
+      "allowed_writes": [
+        "pipeline/lapeace_data/**",
+        "tests/metrics/**",
+        "tests/data_checks/test_wards*.py",
+        "data/derived/**",
+        "data/cache/**",
+        "data/demo/**",
+        "coordination/handoffs/T70.md"
+      ],
+      "inputs": [
+        "Frozen reviewed manifest",
+        "Configured credentials and operator budget",
+        "Corrected census table",
+        "Frozen metric and ward contracts"
+      ],
+      "deliverables": [
+        "Dry-run estimate and two-clip live smoke report",
+        "40 accounted-for provider results and reproducible corpus metrics",
+        "11 ward records with proxy caveats and coverage",
+        "Reviewed compact demo artifacts and source attribution"
+      ],
+      "acceptance": [
+        "Metric edge-case and ward calculation tests pass",
+        "Paid work stays within 45 attempts and 1800 submitted seconds",
+        "No index appears before the full reviewed pilot succeeds",
+        "No fixture contributes to measured summaries",
+        "All displayed numbers trace to manifest, settings and source hashes"
+      ],
+      "paid_provider_calls": "explicit_live_mode_after_dry_run_and_smoke_review_within_operator_budget",
+      "allows_subagents": false
+    },
+    {
+      "id": "T80",
+      "title": "Integrate and rehearse the foundation release",
+      "human_owner": "Murtada",
+      "reviewer": "Hisham",
+      "status": "pending",
+      "depends_on": [
+        "T20",
+        "T30",
+        "T50",
+        "T61",
+        "T70"
+      ],
+      "assignment": null,
+      "allowed_writes": [
+        "server/lapeace_api/main.py",
+        "web/src/App.tsx",
+        "web/src/main.tsx",
+        "web/src/lib/**",
+        "web/package.json",
+        "web/package-lock.json",
+        "web/vite.config.*",
+        "pyproject.toml",
+        "uv.lock",
+        "README.md",
+        "content/attribution.md",
+        "tests/integration/**",
+        "docs/uat/release.md",
+        "coordination/handoffs/T80.md"
+      ],
+      "inputs": [
+        "All dependency handoffs and reviewed diffs",
+        "Real demo artifacts",
+        "Release checklist"
+      ],
+      "deliverables": [
+        "Integrated app and documented clean setup",
+        "One reviewed live service smoke and cached fallback",
+        "End-to-end checks and UAT evidence",
+        "Demo narration linked to measured findings"
+      ],
+      "acceptance": [
+        "Python checks, frontend build and integration walkthrough pass",
+        "No raw dataset, keys or personal recordings enter Git",
+        "English and one reviewed additional language complete the service flow",
+        "API failure and no-key replay are demonstrated honestly",
+        "No deployment or real municipal submission occurs"
+      ],
+      "paid_provider_calls": "service_smoke_only_under_separate_bounded_budget_and_recording_consent",
+      "allows_subagents": false,
+      "runtime_outputs": [
+        "data/cache/prompts/**",
+        "data/cache/budgets/**",
+        "data/tmp/**"
+      ]
+    },
+    {
+      "id": "T90",
+      "title": "Independently review release evidence",
+      "human_owner": "Hisham",
+      "reviewer": "Murtada",
+      "status": "pending",
+      "depends_on": [
+        "T80"
+      ],
+      "assignment": null,
+      "allowed_writes": [
+        "docs/uat/release-review.md",
+        "coordination/handoffs/T90.md"
+      ],
+      "inputs": [
+        "Integrated code and T80 handoff",
+        "PRD release checklist",
+        "Spec verification requirements"
+      ],
+      "deliverables": [
+        "Evidence-based acceptance report",
+        "Specific findings assigned back to their owners",
+        "Explicit distinction between tested, mocked and unverified behavior"
+      ],
+      "acceptance": [
+        "Review covers evidence, index, dialogue, fallback, attribution and accessibility",
+        "Fixes are retested and integrated before completion",
+        "The reviewer did not author the implementation being reviewed; assign a distinct agent or human",
+        "No claims exceed the measured pilot and scenario evidence"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false
+    },
+    {
+      "id": "T10-offline",
+      "title": "Build and verify the offline pipeline under the current user instruction",
+      "human_owner": "Murtada",
+      "reviewer": "Murtada",
+      "status": "done",
+      "depends_on": [],
+      "assignment": {
+        "agent_id": "/root",
+        "provider": "Codex",
+        "run_id": "a458690a-aec9-4fc2-9a58-9190171e08b3",
+        "base_sha": "8a9977adc76f849c2ffcc46677c6c65a897cddb8",
+        "claim_id": "a458690a-aec9-4fc2-9a58-9190171e08b3"
+      },
+      "allowed_writes": [
+        "pipeline/lapeace_data/**",
+        "config/pilot.json",
+        "contracts/v1/offline*.json",
+        "tests/data_checks/**",
+        "tests/metrics/**",
+        "pyproject.toml",
+        "uv.lock",
+        ".env.example",
+        "README.md",
+        "docs/pipeline/**",
+        "coordination/handoffs/T10-offline.md"
+      ],
+      "runtime_outputs": [
+        "data/raw/**",
+        "data/derived/**",
+        ".venv/**"
+      ],
+      "inputs": [
+        ".spec.md",
+        "Source dataset ZIP"
+      ],
+      "deliverables": [
+        "Safe discovery and validation",
+        "Deterministic frozen 40-clip manifest and reserves",
+        "Pending results, review sheet, dry-run budget and corrected census context",
+        "Offline metric functions with regression tests"
+      ],
+      "acceptance": [
+        "All selected media decode",
+        "Selection and hashes repeat exactly",
+        "No source modification or provider calls",
+        "Checks pass and outputs retain pending status"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": true,
+      "scope_note": "User explicitly requested offline pipeline before the full T00 app scaffold. This bounded task materializes pipeline-only config/contracts; T00 and live T70 remain incomplete.",
+      "completed_at": "2026-11-08T00:31:38.544038+00:00",
+      "review_evidence": "coordination/handoffs/T10-offline.md"
+    },
+    {
+      "id": "T10-offline-tests",
+      "title": "Offline pipeline regression tests",
+      "human_owner": "Murtada",
+      "reviewer": "Murtada",
+      "status": "done",
+      "depends_on": [],
+      "assignment": {
+        "agent_id": "/root/t10_offline_tests",
+        "provider": "Codex",
+        "run_id": "ad1e378a-18ce-4cd5-9979-3063b67fa5bb",
+        "base_sha": "8a9977adc76f849c2ffcc46677c6c65a897cddb8",
+        "claim_id": "5fe8bbe6-c537-4d1b-959e-4031553f9b71"
+      },
+      "allowed_writes": [
+        "tests/data_checks/test_offline.py",
+        "tests/metrics/test_metrics.py",
+        "coordination/handoffs/T10-offline-tests.md",
+        "tests/__init__.py",
+        "tests/data_checks/__init__.py",
+        "tests/metrics/__init__.py"
+      ],
+      "runtime_outputs": [
+        ".venv/**",
+        "**/__pycache__/**"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false,
+      "scope_note": "User explicitly authorized sub-agents; bounded child of T10-offline.",
+      "completed_at": "2026-11-08T00:31:38.544038+00:00",
+      "review_evidence": "coordination/handoffs/T10-offline-tests.md"
+    },
+    {
+      "id": "T10-offline-guide",
+      "title": "Short Murtada operating guide and skill fit",
+      "human_owner": "Murtada",
+      "reviewer": "Murtada",
+      "status": "done",
+      "depends_on": [],
+      "assignment": {
+        "agent_id": "/root/t10_offline_guide",
+        "provider": "Codex",
+        "run_id": "77deb77f-c7a7-496d-b827-ef128120d7c2",
+        "base_sha": "8a9977adc76f849c2ffcc46677c6c65a897cddb8",
+        "claim_id": "77deb77f-c7a7-496d-b827-ef128120d7c2"
+      },
+      "allowed_writes": [
+        "docs/pipeline/offline.md",
+        "docs/pipeline/skills.md",
+        "coordination/handoffs/T10-offline-guide.md"
+      ],
+      "runtime_outputs": [
+        ".venv/**",
+        "**/__pycache__/**"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false,
+      "scope_note": "User explicitly authorized sub-agents; bounded child of T10-offline.",
+      "completed_at": "2026-11-08T00:31:38.544038+00:00",
+      "review_evidence": "coordination/handoffs/T10-offline-guide.md"
+    },
+    {
+      "id": "T10-antigravity-review",
+      "title": "Independent Antigravity review of the offline pipeline",
+      "human_owner": "Murtada",
+      "reviewer": "Murtada",
+      "status": "done",
+      "depends_on": [
+        "T10-offline"
+      ],
+      "assignment": {
+        "agent_id": "antigravity-reviewer",
+        "provider": "antigravity",
+        "run_id": "db3a59c9-2d3e-471b-a545-08d4855956dd",
+        "base_sha": "8a9977adc76f849c2ffcc46677c6c65a897cddb8",
+        "claim_id": "db3a59c9-2d3e-471b-a545-08d4855956dd"
+      },
+      "allowed_writes": [
+        "coordination/handoffs/T10-antigravity-review.md"
+      ],
+      "runtime_outputs": [
+        "**/__pycache__/**"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false,
+      "acceptance": [
+        "Review current uncommitted implementation and tests",
+        "Run offline checks without editing source or generated data",
+        "Return severity-ranked reproducible errors or an evidence-based no-findings result"
+      ],
+      "scope_note": "User explicitly requested Antigravity to check for errors. Shared checkout is required because implementation is uncommitted.",
+      "completed_at": "2026-11-08T01:15:39.702732+00:00",
+      "review_evidence": "coordination/handoffs/T10-offline-fixes.md",
+      "findings_resolution": "All three confirmed findings fixed and regression-tested by the coordinator; original review preserved."
+    },
+    {
+      "id": "T10-offline-fixes",
+      "title": "Fix confirmed Antigravity offline review findings",
+      "human_owner": "Murtada",
+      "reviewer": "Murtada",
+      "status": "done",
+      "depends_on": [
+        "T10-offline"
+      ],
+      "assignment": {
+        "agent_id": "/root",
+        "provider": "Codex",
+        "run_id": "af83f7dd-9713-45de-94b6-94efe925576f",
+        "claim_id": "af83f7dd-9713-45de-94b6-94efe925576f",
+        "base_sha": "8a9977adc76f849c2ffcc46677c6c65a897cddb8"
+      },
+      "allowed_writes": [
+        "pipeline/lapeace_data/__main__.py",
+        "pipeline/lapeace_data/pilot.py",
+        "tests/data_checks/test_review_regressions.py",
+        "docs/pipeline/offline.md",
+        "coordination/handoffs/T10-offline-fixes.md"
+      ],
+      "runtime_outputs": [
+        "**/__pycache__/**"
+      ],
+      "paid_provider_calls": "forbidden",
+      "allows_subagents": false,
+      "scope_note": "Coordinator integrates small fixes from user-requested review under existing offline implementation scope.",
+      "completed_at": "2026-11-08T01:15:39.702732+00:00",
+      "review_evidence": "coordination/handoffs/T10-offline-fixes.md"
+    },
+    {
+    "id": "T40-offline-audit",
+    "title": "Audit all 40 pilot clips and source references",
+    "human_owner": "Murtada",
+    "reviewer": "Murtada",
+    "status": "review",
+    "depends_on": ["T10-offline"],
+    "assignment": {
+      "agent_id": "/root",
+      "provider": "Codex",
+      "claim_id": "t40-offline-audit-20261108T013013Z",
+      "run_id": "t40-offline-audit-20261108T013013Z",
+      "base_sha": "8a9977adc76f849c2ffcc46677c6c65a897cddb8"
+    },
+    "allowed_writes": [
+      "reviews/samples/offline-audit.md",
+      "coordination/handoffs/T40-offline-audit.md"
+    ],
+    "runtime_outputs": [],
+    "paid_provider_calls": "forbidden",
+    "allows_subagents": false,
+    "scope_note": "User requested clip/reference review, followed by adapter configuration and explicit approval before the full run. Automated checks cannot establish listening approval. Original T40 remains incomplete until listening review and approval are recorded.",
+    "review_evidence": "coordination/handoffs/T40-offline-audit.md"
+    }
+  ],
+  "shared_ignored_runtime_paths": [
+    ".venv/**",
+    "**/__pycache__/**",
+    ".pytest_cache/**",
+    "web/node_modules/**",
+    "web/dist/**",
+    "coverage/**",
+    "test-results/**",
+    "playwright-report/**"
+  ]
+}

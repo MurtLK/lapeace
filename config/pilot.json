@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "selection_seed": 20261107,
+  "samples_per_cohort": 10,
+  "baseline": {"cohort_id": "english", "first_language": "English"},
+  "comparisons": [
+    {"cohort_id": "urdu", "first_language": "Urdu"},
+    {"cohort_id": "arabic", "first_language": "Arabic"},
+    {"cohort_id": "mandarin", "first_language": "Mandarin Chinese"}
+  ],
+  "provider": "elevenlabs",
+  "model_id": "scribe_v2",
+  "settings": {
+    "language_code": "en",
+    "diarize": false,
+    "tag_audio_events": false,
+    "no_verbatim": false
+  },
+  "normalization_version": "en_v1",
+  "budget": {"max_attempts": 45, "max_submitted_audio_seconds": 1800}
+}

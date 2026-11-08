@@ -1,0 +1,24 @@
+# Local data and provider state
+.env
+.env.*
+!.env.example
+data/raw/
+data/derived/
+data/cache/
+data/tmp/
+coordination/claims/
+
+# Tool and build outputs
+.venv/
+__pycache__/
+*.egg-info/
+build/
+dist/
+*.py[cod]
+.pytest_cache/
+node_modules/
+web/dist/
+coverage/
+test-results/
+playwright-report/
+.DS_Store
