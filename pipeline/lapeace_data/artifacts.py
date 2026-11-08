@@ -45,6 +45,12 @@ def atomic_write(path, data):
 
 def check(value, definition):
     schema = json.loads((PROJECT_ROOT / "contracts/v1/offline.schema.json").read_text())
+    if definition in ("BenchmarkRun", "ReviewReceipt"):
+        extension = json.loads((PROJECT_ROOT / "contracts/v1/benchmark.schema.json").read_text())
+        schema["$defs"].update(extension["$defs"])
+    if definition in ("ImportedRun", "EvaluatedWards"):
+        extension = json.loads((PROJECT_ROOT / "contracts/v1/imported.schema.json").read_text())
+        schema["$defs"].update(extension["$defs"])
     Draft202012Validator({"$ref": f"#/$defs/{definition}", "$defs": schema["$defs"]}).validate(value)
 
 
@@ -70,6 +76,12 @@ def code_state():
     def git(*args):
         return subprocess.check_output(["git", *args], cwd=PROJECT_ROOT, text=True).strip()
     source_paths = [PROJECT_ROOT / "pyproject.toml", PROJECT_ROOT / "contracts/v1/offline.schema.json"]
+    extension = PROJECT_ROOT / "contracts/v1/benchmark.schema.json"
+    if extension.exists():
+        source_paths.append(extension)
+    extension = PROJECT_ROOT / "contracts/v1/imported.schema.json"
+    if extension.exists():
+        source_paths.append(extension)
     source_paths += sorted((PROJECT_ROOT / "pipeline/lapeace_data").glob("*.py"))
     hashes = {p.relative_to(PROJECT_ROOT).as_posix(): file_hash(p) for p in source_paths}
     try:

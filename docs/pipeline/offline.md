@@ -52,7 +52,7 @@ uv run --offline python -m lapeace_data transcribe --dry-run \
   --manifest "/absolute/path/to/frozen/manifest.json"
 ```
 
-The current `transcribe` command only estimates; no live adapter exists. Metric functions are implemented for later scoring, but scoring/import and approved demo export commands are still future work.
+For the original pending manifest, `transcribe` still only estimates and refuses `--live`. After [review import](benchmark.md), it can plan a two-clip smoke test or execute a separately approved live plan. `score` processes saved raw results without credentials or new provider calls. Approved demo/ward-index promotion remains future work.
 
 The estimate prints to the terminal and does not write beside the manifest. Omitting `--dry-run` still defaults to this same offline estimate. For `export-wards`, the manifest must be inside the chosen `--output-dir` (the default is `data/derived/`) and outside the source pack. All stages preserve valid review edits and reject malformed sheets, incomplete pending bundles, or altered existing ward data before updating the pilot pointer.
 
@@ -60,7 +60,7 @@ The estimate prints to the terminal and does not write beside the manifest. Omit
 
 Keep the source pack unchanged. Work from ignored `data/raw/` extracts and keep generated full artifacts in ignored `data/derived/`. Source and derived archive material retain their attribution and CC BY-NC-SA 4.0 terms.
 
-Do not edit the frozen manifest to approve or replace clips. The CSV records review work; it does not yet import changes into a new manifest. A corrupt recording or reference correction needs a documented reason, Murtada's sign-off, and a new version before paid work. Poor recognition is never a reason to replace a sample.
+Do not edit the frozen manifest to approve or replace clips. The CSV records review work; use `review-import` to validate it and create a new immutable manifest. Explicit coordinator attestations can also approve the unchanged references while recording who supplied the confirmation. A corrupt recording or reference correction needs a documented reason, Murtada's sign-off, and a new version before paid work. Poor recognition is never a reason to replace a sample.
 
 ## Current MLE experiment
 

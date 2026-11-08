@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Additive operator benchmark artifacts. Shared definitions are loaded from offline.schema.json.",
+  "$defs": {
+    "BenchmarkRun": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "run_id", "manifest_path", "manifest_sha256", "review_sha256", "selection_sha256", "settings_sha256", "provider", "model_id", "settings", "normalization_version", "phase", "origin", "created_at", "code", "attempts", "status", "evidence_status", "request_count", "submitted_audio_seconds"],
+      "properties": {
+        "schema_version": {"const": "1.0.0"},
+        "run_id": {"type": "string", "pattern": "^run-[a-f0-9]{24}$"},
+        "manifest_path": {"type": "string", "minLength": 1},
+        "manifest_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "review_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "selection_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "settings_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "provider": {"const": "elevenlabs"},
+        "model_id": {"type": "string", "minLength": 1},
+        "settings": {"$ref": "#/$defs/Config/properties/settings"},
+        "normalization_version": {"const": "en_v1"},
+        "phase": {"enum": ["smoke", "full"]},
+        "origin": {"enum": ["provider", "fixture"]},
+        "created_at": {"type": "string", "minLength": 1},
+        "code": {"$ref": "#/$defs/Code"},
+        "attempts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 1}},
+        "status": {"enum": ["pending", "running", "partial", "complete", "failed"]},
+        "evidence_status": {"enum": ["unmeasured", "partial", "measured", "fixture"]},
+        "request_count": {"type": "integer", "minimum": 0},
+        "submitted_audio_seconds": {"type": "number", "minimum": 0}
+      }
+    },
+    "ReviewReceipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "parent_manifest_sha256", "manifest_sha256", "dataset_root", "basis", "reviews", "source_references"],
+      "properties": {
+        "schema_version": {"const": "1.0.0"},
+        "parent_manifest_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "manifest_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "dataset_root": {"type": "string", "minLength": 1},
+        "basis": {"type": "object", "required": ["kind"], "properties": {"kind": {"enum": ["review_csv", "coordinator_attestation"]}}},
+        "reviews": {"type": "array", "minItems": 40, "maxItems": 40, "items": {
+          "type": "object", "additionalProperties": false,
+          "required": ["sample_id", "source_relative_path", "first_language", "spoken_language", "reviewer", "reviewed_at", "status", "reason", "meaning_review", "reference_override", "override_reason"],
+          "properties": {
+            "sample_id": {"type": "string"}, "source_relative_path": {"type": "string"},
+            "first_language": {"type": "string"}, "spoken_language": {"const": "en"},
+            "reviewer": {"type": "string", "minLength": 1}, "reviewed_at": {"type": "string", "minLength": 1},
+            "status": {"const": "accepted"}, "reason": {"type": "string"},
+            "meaning_review": {"const": "verified"}, "reference_override": {"type": "string"},
+            "override_reason": {"type": "string"}
+          }
+        }},
+        "source_references": {"type": "object", "minProperties": 40, "maxProperties": 40, "additionalProperties": {"type": "string", "minLength": 1}}
+      }
+    }
+  }
+}

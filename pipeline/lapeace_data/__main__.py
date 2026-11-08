@@ -1,4 +1,4 @@
-"""Operator CLI. All implemented stages are offline, including dry-run transcription."""
+"""Operator CLI. Defaults are offline; paid work needs --live and an approved plan."""
 
 import argparse
 import json
@@ -17,7 +17,7 @@ from .wards import census_context
 
 
 def parser():
-    result = argparse.ArgumentParser(description="LAPEACE offline pipeline; no credentials or provider calls")
+    result = argparse.ArgumentParser(description="LAPEACE pipeline; offline by default, live calls require explicit approval")
     stages = result.add_subparsers(dest="stage", required=True)
     for name in ["validate", "select", "prepare", "export-wards"]:
         command = stages.add_parser(name)
@@ -27,18 +27,80 @@ def parser():
         command.add_argument("--config", type=Path, default=PROJECT_ROOT / "config/pilot.json")
         if name == "export-wards":
             command.add_argument("--manifest", type=Path, required=True)
-    command = stages.add_parser("transcribe", help="Print an estimate without provider calls or file writes")
+    command = stages.add_parser("transcribe", help="Estimate by default; explicit live flag and plan approval required")
     command.add_argument("--manifest", type=Path, required=True)
-    command.add_argument("--dry-run", action="store_true")
+    modes = command.add_mutually_exclusive_group()
+    modes.add_argument("--dry-run", action="store_true")
+    modes.add_argument("--live", action="store_true")
+    command.add_argument("--output-dir", type=Path, default=PROJECT_ROOT / "data/derived")
+    command.add_argument("--phase", choices=["smoke", "full"], default="smoke")
+    command.add_argument("--approve-plan", default="")
+    command.add_argument("--retry", action="store_true", help="Explicitly authorize retrying failed/unknown attempts")
+    command = stages.add_parser("review-import", help="Import completed review CSV or explicit coordinator attestation")
+    command.add_argument("--manifest", type=Path, required=True)
+    command.add_argument("--dataset-root", type=Path, required=True)
+    command.add_argument("--output-dir", type=Path, default=PROJECT_ROOT / "data/derived")
+    command.add_argument("--review-csv", type=Path)
+    command.add_argument("--reviewer")
+    command.add_argument("--attested-by")
+    command.add_argument("--note")
+    command = stages.add_parser("import-buzz", help="Score existing Buzz outputs against confirmed human-corrected references, offline")
+    command.add_argument("--manifest", type=Path, required=True, help="Original pending pilot manifest")
+    command.add_argument("--dataset-root", type=Path, required=True)
+    command.add_argument("--references-csv", type=Path, required=True)
+    command.add_argument("--buzz-dir", type=Path, required=True)
+    command.add_argument("--reviewer", required=True)
+    command.add_argument("--attested-by", required=True)
+    command.add_argument("--uniform-settings", action="store_true", help="Record operator confirmation of one unchanged model/settings profile")
+    command.add_argument("--output-dir", type=Path, default=PROJECT_ROOT / "data/derived")
+    for stage in ("score", "approve-smoke"):
+        command = stages.add_parser(stage)
+        command.add_argument("--run-dir", type=Path, required=True)
+        command.add_argument("--output-dir", type=Path, default=PROJECT_ROOT / "data/derived")
+        if stage == "approve-smoke":
+            command.add_argument("--operator", required=True)
     return result
 
 
 def main(argv=None):
     args = parser().parse_args(argv)
     try:
+        if args.stage == "import-buzz":
+            from .imported import import_buzz
+            report = import_buzz(args.manifest, args.dataset_root, args.references_csv, args.buzz_dir,
+                                 args.output_dir, reviewer=args.reviewer, attested_by=args.attested_by,
+                                 uniform_settings=args.uniform_settings)
+            print(json.dumps({k: v for k, v in report.items() if k not in ("summary", "wards")}, indent=2))
+            return 0
+        if args.stage == "review-import":
+            from .review import import_review
+            report = import_review(args.manifest, args.dataset_root, args.output_dir,
+                                   reviewer=args.reviewer, attested_by=args.attested_by,
+                                   note=args.note, review_csv=args.review_csv)
+            print(json.dumps(report, indent=2))
+            return 0
+        if args.stage in ("score", "approve-smoke"):
+            from .benchmark import approve_smoke, score_run
+            if args.stage == "score" and read_json(args.run_dir / "run.json").get("artifact_type") == "imported_run":
+                from .imported import score_imported
+                report = score_imported(args.run_dir, args.output_dir)
+                report = {k: v for k, v in report.items() if k not in ("summary", "wards")}
+            else:
+                report = (score_run(args.run_dir, args.output_dir) if args.stage == "score"
+                          else approve_smoke(args.run_dir, args.output_dir, args.operator))
+            print(json.dumps(report, indent=2))
+            return 0
         if args.stage == "transcribe":
-            manifest, manifest_hash = read_frozen_manifest(args.manifest)
-            report = dry_run(manifest, manifest_hash)
+            from .benchmark import execute, plan
+            if (args.manifest.parent / "review-receipt.json").exists():
+                report = (execute(args.manifest, args.output_dir, approval=args.approve_plan,
+                                  phase=args.phase, retry=args.retry) if args.live
+                          else plan(args.manifest, args.output_dir, phase=args.phase, retry=args.retry))
+            else:
+                if args.live:
+                    raise ValueError("Live mode requires a versioned, accepted review import")
+                manifest, manifest_hash = read_frozen_manifest(args.manifest)
+                report = dry_run(manifest, manifest_hash)
             # Reporting a manifest never writes beside it, even when it lives in source data.
             print(json.dumps(report, indent=2))
             return 0

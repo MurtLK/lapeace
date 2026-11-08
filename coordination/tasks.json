@@ -662,6 +662,52 @@
     "allows_subagents": false,
     "scope_note": "User requested clip/reference review, followed by adapter configuration and explicit approval before the full run. Automated checks cannot establish listening approval. Original T40 remains incomplete until listening review and approval are recorded.",
     "review_evidence": "coordination/handoffs/T40-offline-audit.md"
+    },
+    {
+    "id": "T70-commands",
+    "human_owner": "Murtada",
+    "reviewer": "Murtada",
+    "status": "review",
+    "depends_on": ["T10-offline"],
+    "assignment": {"agent_id": "/root", "provider": "Codex", "run_id": "t70-commands-20261108T040128Z", "claim_id": "t70-commands-20261108T040128Z", "base_sha": "f95d146f39b0bff06c39a8b2e8803796dcc68c65"},
+    "allowed_writes": ["pipeline/lapeace_data/**", "contracts/v1/benchmark.schema.json", "tests/data_checks/test_benchmark.py", "docs/pipeline/**", "README.md", ".env.example", ".spec.md", "coordination/handoffs/T70-commands.md"],
+    "runtime_outputs": ["data/derived/**", "data/cache/**", "**/__pycache__/**"],
+    "paid_provider_calls": "forbidden_until_separate_user_approval",
+    "allows_subagents": false,
+    "review_evidence": "coordination/handoffs/T70-commands.md",
+    "scope_note": "User confirms friend's listening review is complete and asks for review import, ElevenLabs adapter and scoring before secure credential configuration and separate two-clip smoke approval. Record review as coordinator attestation, not agent listening or automatic Buzz ground truth. Original release tasks remain incomplete."
+    },
+    {
+    "id": "T70-buzz",
+    "title": "Import existing Buzz outputs and human-corrected references; score and export ward context",
+    "human_owner": "Murtada",
+    "reviewer": "Murtada",
+    "status": "review",
+    "depends_on": ["T10-offline"],
+    "assignment": {"agent_id": "/root", "provider": "Codex", "claim_id": "t70-buzz-existing-20261108", "run_id": "t70-buzz-existing-20261108", "base_sha": "f95d146f39b0bff06c39a8b2e8803796dcc68c65"},
+    "allowed_writes": ["pipeline/lapeace_data/imported.py", "pipeline/lapeace_data/wards.py", "pipeline/lapeace_data/artifacts.py", "pipeline/lapeace_data/__main__.py", "contracts/v1/imported.schema.json", "tests/data_checks/test_imported.py", "docs/pipeline/buzz.md", "docs/pipeline/benchmark.md", "README.md", ".spec.md", "coordination/handoffs/T70-buzz.md"],
+    "runtime_outputs": ["data/derived/**", "**/__pycache__/**"],
+    "paid_provider_calls": "forbidden",
+    "allows_subagents": false,
+    "review_evidence": "coordination/handoffs/T70-buzz.md",
+    "actual_requests": 0,
+    "actual_run_id": "buzz-23b598a3485a2ac4d864fd27",
+    "scope_note": "User confirms attached 468-row CSV transcript column is friend's corrected reference, original 40 Buzz outputs already exist, engine is Whisper with exact model/settings unspecified, and one unchanged model/settings profile was used throughout. Recompute scores from original outputs; never import CSV WER/SER as recognition scores. No further transcription requested."
+    },
+    {
+    "id": "T70-smoke",
+    "human_owner": "Murtada",
+    "reviewer": "Murtada",
+    "status": "review",
+    "assignment": {"agent_id": "/root", "provider": "Codex", "run_id": "t70-smoke-20261108T050756Z", "claim_id": "t70-smoke-20261108T050756Z", "base_sha": "f95d146f39b0bff06c39a8b2e8803796dcc68c65"},
+    "allowed_writes": ["coordination/handoffs/T70-smoke.md"],
+    "runtime_outputs": ["data/derived/benchmark/**"],
+    "paid_provider_calls": "user_approved_at_most_2_attempts_47.866508_seconds_no_retries",
+    "allows_subagents": false,
+    "scope_note": "Explicit user approval of english247 and urdu7 only. Private credential entry completed. Two provider requests succeeded and were scored offline; full-pilot authorization and human smoke inspection remain separate.",
+    "actual_requests": 2,
+    "actual_submitted_audio_seconds": 47.866508,
+    "review_evidence": "coordination/handoffs/T70-smoke.md"
     }
   ],
   "shared_ignored_runtime_paths": [

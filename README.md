@@ -18,7 +18,7 @@ LAPEACE is a Sheridan Datathon 2026 project for the ElevenLabs Mississauga Unhea
 
 ## Current state
 
-The offline Python pipeline is implemented. It validates source tables and audio paths, selects and decodes a reproducible 40-clip pilot, and exports pending transcript records, a review sheet, and corrected ward census context. No transcription provider has been called; predictions and recognition metrics remain null. Application and UI implementation remain separate work.
+The Python pipeline validates the source pack, freezes a reproducible 40-clip pilot, versions reviewed references, and scores saved predictions. The original 40 Buzz/Whisper outputs have now been evaluated against the friend's corrected reference CSV, with WER/CER, four cohort summaries and an exploratory 11-ward census index exported locally. Exact Whisper model/settings remain unknown; one unchanged profile was confirmed by Murtada. No further transcription is required. The separately authorized two-clip ElevenLabs adapter smoke succeeded; its evidence remains separate. Application/UI wiring and the ElevenLabs service demonstration remain separate work.
 
 ## Run the offline pipeline
 
@@ -32,9 +32,11 @@ uv run --offline python -m unittest discover -s tests -p 'test_*.py'
 
 On another machine pass its dataset path or export `LAPEACE_DATASET_SOURCE`. `.env.example` documents this variable; `.env` is not loaded automatically. The source remains unchanged. ZIP extraction, full manifests, and results stay under ignored `data/raw/` and `data/derived/`.
 
-Open `data/derived/offline-pilot.json` to find this pilot's immutable manifest directory. `review_queue.csv` is the next human step. `transcripts.csv` is an explicitly pending handoff for Hisham, not measured recognition evidence. The pipeline creates no approved `active-run.json`.
+Open `data/derived/offline-pilot.json` to find the original immutable selection and its historical pending bundle. The measured Buzz handoff uses an explicitly identified run under `data/derived/imported/`; see the Buzz guide below for its path and schema. Original pending artifacts remain unchanged. The pipeline creates no approved `active-run.json` automatically.
 
 - [Murtada's short pipeline guide](docs/pipeline/offline.md)
+- [Review import, ElevenLabs smoke test, and scoring](docs/pipeline/benchmark.md)
+- [Existing Buzz outputs, corrected references, measured results and Hisham's handoff](docs/pipeline/buzz.md)
 - [Skills matched to the pipeline specification](docs/pipeline/skills.md)
 
-Murtada owns the pipeline, Hisham owns the application, and Bahar/Jaya own UI work. The older planning documents retain some previous assignments; the current user allocation takes precedence. Only the offline data portion of the `1.0.0` contract is materialized in `contracts/v1/offline.schema.json`; API/UI/service contracts and the full T00 scaffold are unfinished.
+Murtada owns the pipeline, Hisham owns the application, and Bahar/Jaya own UI work. The older planning documents retain some previous assignments; the current user allocation takes precedence. The `1.0.0` data contracts include the offline schema plus benchmark/review and imported Buzz/ward extensions in `contracts/v1/`. API/UI/service contracts and the full T00 scaffold remain separate unfinished work.
