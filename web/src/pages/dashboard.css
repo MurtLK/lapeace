@@ -1,0 +1,69 @@
+/* Hallmark · app screen: voice evidence · theme: Voice in the open · genre: modern-minimal */
+/* Critique: task clarity and source transparency lead; the interface stays quiet. */
+.dashboard-page { min-height: 100dvh; }
+.dashboard-header { background: var(--color-translucent); backdrop-filter: blur(16px); }
+.dashboard-header-inner, .dashboard-main { width: min(calc(100% - 3rem), var(--container)); margin-inline: auto; }
+.dashboard-header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 88px; gap: 1rem; }
+.dashboard-wordmark { display: inline-flex; align-items: center; gap: 0.7rem; text-decoration: none; font-weight: 700; font-size: 1.05rem; }
+.dashboard-wordmark svg { color: var(--color-accent); }
+.dashboard-back { display: inline-flex; align-items: center; gap: 0.55rem; min-height: 44px; font-size: 0.9rem; text-decoration: none; color: var(--color-muted); }
+.dashboard-back:hover { color: var(--color-ink); }
+.dashboard-intro { margin-block: 4rem 2.5rem; }
+.dashboard-intro h1 { font-size: clamp(2rem, 4vw, 3.6rem); font-weight: 600; line-height: 1.12; letter-spacing: -0.035em; margin: 0 0 1rem; }
+.dashboard-intro p { color: var(--color-muted); margin: 0; max-width: 55ch; }
+.dashboard-views { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; padding-block: 0.5rem; border-bottom: 1px solid var(--color-border); }
+.dashboard-views a { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 46px; padding: 0.7rem 1.15rem; border-radius: var(--radius-sm); text-decoration: none; font-size: 0.92rem; color: var(--color-muted); transition: background-color 140ms ease-out, color 140ms ease-out; }
+.dashboard-views a:hover { background: var(--color-accent-soft); color: var(--color-accent); }
+.dashboard-views a[aria-current='page'] { background: var(--color-ink); color: var(--color-surface); }
+.dashboard-views a:active { transform: scale(0.98); }
+.dashboard-content { background: var(--color-surface); border-radius: var(--radius-md); margin-top: 2rem; padding: clamp(1.25rem, 4vw, 3rem); min-height: 360px; }
+.dashboard-section-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+.dashboard-section-heading h2 { font-size: clamp(1.45rem, 2.6vw, 2rem); line-height: 1.25; font-weight: 600; letter-spacing: -0.025em; margin: 0 0 0.6rem; }
+.dashboard-section-heading p { color: var(--color-muted); margin: 0; max-width: 55ch; }
+.dashboard-badge { display: inline-flex; align-items: center; min-height: 32px; padding: 0.35rem 0.8rem; color: var(--color-accent); background: var(--color-accent-soft); border-radius: var(--radius-sm); font-size: 0.78rem; font-weight: 600; }
+.dashboard-state { display: flex; align-items: flex-start; flex-direction: column; justify-content: center; gap: 0.8rem; min-height: 280px; max-width: 56ch; }
+.dashboard-state svg { color: var(--color-accent); }
+.dashboard-state h2 { margin: 0; font-size: 1.6rem; letter-spacing: -0.025em; }
+.dashboard-state p { margin: 0; color: var(--color-muted); }
+.dashboard-button { display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem; min-height: 44px; padding: 0.7rem 1.1rem; border: 1px solid var(--color-accent); border-radius: var(--radius-sm); background: var(--color-accent); color: var(--color-surface); font-weight: 600; font-size: 0.9rem; transition: background-color 140ms ease-out, transform 100ms ease-out; }
+.dashboard-button:hover { background: var(--color-accent-hover); }
+.dashboard-button:active { transform: scale(0.97); }
+.dashboard-button:disabled { opacity: 0.45; }
+.dashboard-button-secondary { background: var(--color-surface); color: var(--color-accent); }
+.dashboard-button-secondary:hover { background: var(--color-accent-soft); }
+.dashboard-recording-toolbar { display: flex; align-items: flex-end; gap: 2rem; flex-wrap: wrap; }
+.dashboard-recording-toolbar > div { display: grid; gap: 0.25rem; padding-bottom: 0.65rem; }
+.dashboard-field { display: grid; gap: 0.55rem; font-size: 0.85rem; color: var(--color-muted); min-width: 0; max-width: 100%; }
+.dashboard-field select { width: 100%; max-width: 100%; min-height: 46px; padding: 0.65rem 2rem 0.65rem 0.8rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-surface); color: var(--color-ink); font-size: 0.9rem; }
+.dashboard-recording-toolbar .dashboard-field { min-width: min(100%, 260px); }
+.dashboard-meta-label { color: var(--color-muted); font-size: 0.8rem; }
+.dashboard-note { color: var(--color-muted); font-size: 0.87rem; max-width: 75ch; }
+.dashboard-audio { display: block; width: 100%; margin-block: 1.8rem 2.5rem; accent-color: var(--color-accent); }
+.dashboard-media-notice { color: var(--color-muted); background: var(--color-bg); padding: 1rem 1.2rem; border-radius: var(--radius-sm); font-size: 0.9rem; margin-block: 1.5rem; }
+.dashboard-transcripts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3rem; }
+.dashboard-transcripts h3 { font-size: 0.92rem; font-weight: 600; margin: 0 0 0.8rem; }
+.dashboard-transcripts p { margin: 0; font-size: 0.95rem; line-height: 1.85; white-space: pre-wrap; overflow-wrap: anywhere; }
+.dashboard-details { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--color-border); color: var(--color-muted); font-size: 0.85rem; }
+.dashboard-details summary { cursor: pointer; min-height: 44px; padding-block: 0.6rem; color: var(--color-ink); }
+.dashboard-details p, .dashboard-details ul { max-width: 75ch; }
+.dashboard-details li + li { margin-top: 0.6rem; }
+.dashboard-census-intro { font-size: 1.1rem; max-width: 55ch; }
+.dashboard-census-intro strong { font-size: 1.8rem; font-weight: 600; letter-spacing: -0.025em; }
+.dashboard-table-scroll { width: 100%; overflow-x: auto; margin-top: 2rem; }
+.dashboard-table { width: 100%; min-width: 540px; border-collapse: collapse; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+.dashboard-table caption { text-align: left; font-weight: 600; margin-bottom: 1rem; }
+.dashboard-table th, .dashboard-table td { padding: 0.9rem 0.65rem; border-bottom: 1px solid var(--color-border); text-align: right; }
+.dashboard-table th:first-child { text-align: left; }
+.dashboard-table thead th { color: var(--color-muted); font-size: 0.8rem; font-weight: 500; }
+.dashboard-table tbody th { font-weight: 500; }
+.dashboard-case-field { margin-top: 1.7rem; width: min(100%, 440px); }
+.dashboard-turns { list-style: none; padding: 0; margin-block: 2rem; max-width: 70ch; }
+.dashboard-turns li { padding-block: 1.25rem; border-top: 1px solid var(--color-border); }
+.dashboard-turns h3 { font-size: 0.8rem; font-weight: 600; color: var(--color-muted); margin: 0 0 0.45rem; }
+.dashboard-turns p { margin: 0; }
+.dashboard-replay-actions { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+.dashboard-footer { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-block: 2rem 3rem; color: var(--color-muted); font-size: 0.8rem; }
+.dashboard-footer a { display: inline-flex; align-items: center; min-height: 44px; }
+@media (max-width: 650px) { .dashboard-header-inner, .dashboard-main { width: min(calc(100% - 2rem), var(--container)); } .dashboard-header-inner { min-height: 76px; } .dashboard-back { font-size: 0.78rem; } .dashboard-intro { margin-block: 2.6rem 1.6rem; } .dashboard-views { gap: 0.15rem; } .dashboard-views a { padding: 0.65rem 0.6rem; font-size: 0.8rem; gap: 0.35rem; } .dashboard-content { margin-top: 1.2rem; } .dashboard-transcripts { grid-template-columns: minmax(0, 1fr); gap: 2rem; } .dashboard-recording-toolbar { gap: 1rem 1.5rem; } .dashboard-recording-toolbar .dashboard-field { width: 100%; } .dashboard-footer { flex-direction: column; align-items: flex-start; gap: 0; } }
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) { .dashboard-header { background: var(--color-bg); backdrop-filter: none; } }
+@media (prefers-reduced-motion: reduce) { .dashboard-button, .dashboard-views a { transition: none; } .dashboard-button:active, .dashboard-views a:active { transform: none; } }

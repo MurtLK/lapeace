@@ -1,0 +1,21 @@
+/* Hallmark · shared foundation · theme: Voice in the open */
+/* Critique: a small reset protects authored page hierarchy and accessible control states. */
+* { box-sizing: border-box; }
+html { overflow-x: clip; scroll-behavior: smooth; }
+body { margin: 0; overflow-x: clip; background: var(--color-bg); color: var(--color-ink); font-family: var(--font-sans); font-size: 1rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+button, input, select, textarea { font: inherit; }
+button, select { touch-action: manipulation; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+button, a { color: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+img, svg { max-width: 100%; }
+img { display: block; }
+h1, h2, h3 { min-width: 0; overflow-wrap: break-word; }
+::selection { background: var(--color-selection); color: var(--color-ink); }
+:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 4px; }
+a { text-underline-offset: 0.22em; }
+.app-skip-link { position: fixed; z-index: 100; left: 1rem; top: 1rem; padding: 0.75rem 1rem; border-radius: var(--radius-sm); background: var(--color-ink); color: var(--color-surface); transform: translateY(-180%); }
+.app-skip-link:focus-visible { transform: translateY(0); }
+.app-not-found { max-width: 42rem; margin: 12vh auto; padding: 2rem; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }

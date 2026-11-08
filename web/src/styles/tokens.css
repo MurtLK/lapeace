@@ -1,0 +1,23 @@
+/* Hallmark · app foundation · theme: Voice in the open · genre: modern-minimal */
+/* Critique: the data and its status lead; color and elevation remain restrained. */
+:root {
+  --font-sans: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --color-bg: #f8faf7;
+  --color-surface: #ffffff;
+  --color-ink: #17251f;
+  --color-muted: #59675f;
+  --color-accent: #2c6b4e;
+  --color-accent-hover: #20533c;
+  --color-accent-soft: #e5f1e7;
+  --color-border: #dbe5dc;
+  --color-focus: #2c6b4e;
+  --color-error: #923c32;
+  --color-error-soft: #fbf0ed;
+  --color-selection: #cde6d2;
+  --color-translucent: rgb(248 250 247 / 88%);
+  --color-shadow: rgb(23 37 31 / 7%);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --container: 1200px;
+}

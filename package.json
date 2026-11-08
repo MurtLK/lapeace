@@ -1,0 +1,11 @@
+{
+  "name": "lapeace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "preview": "npm --prefix web run preview",
+    "typecheck": "npm --prefix web run typecheck",
+    "test": "npm --prefix web run test:run"
+  }
+}
