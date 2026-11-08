@@ -1,7 +1,8 @@
 // POST /api/callcheck: body = 16 kHz mono WAV from the browser mic (or a demo clip).
 // Scribe v2 transcribes it (real API call), the red-flag rules check what was asked, and the
 // optional voice detector (prototype) scores whether the audio sounds synthetic.
-// Audio is held in memory only; nothing is saved. The API key is never logged or returned.
+// Transcription uses in-memory audio. The optional detector uses a temporary file, deleted afterward.
+// The app keeps no recording history. The API key is never logged or returned.
 import { execFile } from 'node:child_process';
 import { writeFile, rm, mkdtemp } from 'node:fs/promises';
 import { tmpdir } from 'node:os';

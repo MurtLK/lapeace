@@ -46,21 +46,44 @@
   .bar { height:12px; background:var(--panel2); border-radius:6px; overflow:hidden; margin:8px 0; } .bar div { height:100%; background:var(--amber); }
   .muted { color:var(--muted); } .small { font-size:14px; }
   .err { color:#FF8A84; }
+  .explainer { max-width: 1400px; margin: 0 auto; padding: 24px 32px 0; }
+  .explainer h2 { margin: 0 0 8px; font-size: 22px; }
+  .explainer p { max-width: 90ch; color: var(--muted); }
+  .explainer summary { cursor: pointer; min-height: 44px; display: list-item; padding-block: 10px; color: var(--text); }
+  a, button, summary { touch-action: manipulation; }
+  :focus-visible { outline: 3px solid var(--teal); outline-offset: 4px; }
+  @media (max-width: 900px) { .explainer { padding: 20px 16px 0; } }
+  @media (prefers-reduced-motion: reduce) { .big.rec { animation: none; } .meter div { transition: none; } }
 </style>
 </head>
 <body>
 <header>
-  <div><h1>Call Check <span class="label">Live demo</span></h1><p>Answer a call, speak, and LAPEACE checks what the caller is asking for before you act.</p></div>
-  <p class="small"><a href="/">← Back to the findings</a></p>
+  <div><h1>Call Check <span class="label">Prototype demo</span></h1><p>Record a short sample and inspect the transcript, request flags and optional voice score.</p></div>
+  <p class="small"><a href="/dashboard?tab=callcheck" target="_top" id="back-dashboard">Back to dashboard</a></p>
 </header>
+<section class="explainer" aria-labelledby="how-heading">
+  <h2 id="how-heading">What this demo checks</h2>
+  <p>Press Record a sample, record up to 20 seconds, then stop. ElevenLabs Scribe v2 transcribes the sample. Fixed English keyword rules add points for phrases about codes, unusual payments, remote access and other red flags.</p>
+  <p>The request score produces <b>No red flags</b> at 0 points, <b>Be careful</b> at 1 or 2, and <b>Likely scam</b> at 3 or more. These are rule labels, not probabilities. A missed phrase, a harmless mention or a transcription error can change the result. The rules match English phrases, not all languages. No red flags does not verify the caller.</p>
+  <details><summary>Voice score, recording use and source code</summary>
+    <p>The optional voice model compares acoustic features with real recordings and built-in macOS voices used in its training. It was not trained on modern neural voice clones. Its score does not decide the request verdict or prove who is calling.</p>
+    <p>Live checking needs a connected backend with an ElevenLabs key. A sample goes to ElevenLabs for transcription. If enabled, the local voice check writes a temporary file and deletes it after processing. This app does not keep a recording history; this is not a statement about the transcription provider's retention.</p>
+    <ul>
+      <li><a href="https://github.com/MurtLK/lapeace/blob/main/backend/public/call-check.html" target="_blank" rel="noopener">Recording and results interface</a></li>
+      <li><a href="https://github.com/MurtLK/lapeace/blob/main/backend/src/callcheck.js" target="_blank" rel="noopener">Transcription request handler</a></li>
+      <li><a href="https://github.com/MurtLK/lapeace/blob/main/backend/src/scamrules.js" target="_blank" rel="noopener">Request rules</a></li>
+      <li><a href="https://github.com/MurtLK/lapeace/blob/main/backend/scripts/voice_detector.py" target="_blank" rel="noopener">Voice prototype</a></li>
+    </ul>
+  </details>
+</section>
 <main>
   <section class="phone" aria-label="Phone">
-    <div class="status" id="status" aria-live="polite">Ready. Press the button and speak like a caller.</div>
+    <div class="status" id="status" aria-live="polite">Live transcription requires a connected backend. Press the button to record a sample.</div>
     <div class="timer" id="timer">0:00</div>
     <div class="meter" aria-hidden="true"><div id="level"></div></div>
-    <button class="big" id="mic" type="button" aria-label="Answer and speak">
+    <button class="big" id="mic" type="button" aria-label="Record a sample">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
-      <span id="mic-label">Answer &amp; speak</span>
+      <span id="mic-label">Record a sample</span>
     </button>
     <div class="try"><b>Try saying</b>
       <ul>
@@ -68,8 +91,8 @@
         <li>“Hi, it’s the pharmacy. Your prescription is ready for pickup.”</li>
       </ul>
     </div>
-    <div class="callers"><h3>Or take a call from an AI caller</h3><div id="callers" class="callers"><span class="muted small">Loading…</span></div></div>
-    <p class="muted small">Your voice is sent to ElevenLabs Scribe for transcription and is not saved. Up to 20 seconds per call.</p>
+    <div class="callers"><h3>Or use a prerecorded demo call</h3><div id="callers" class="callers"><span class="muted small">Loading…</span></div></div>
+    <p class="muted small">Your sample goes to ElevenLabs Scribe for transcription when you stop. Up to 20 seconds per sample. See recording use above.</p>
   </section>
 
   <section class="results" aria-live="polite">
@@ -83,6 +106,19 @@
 (() => {
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  let backend = location.origin;
+  const configured = new URLSearchParams(location.search).get('backend');
+  if (configured) {
+    try {
+      const url = new URL(configured);
+      if (['http:', 'https:'].includes(url.protocol) && !url.username && !url.password) backend = url.href.replace(/\/$/, '');
+    } catch { /* Use same-origin endpoints for invalid configuration. */ }
+  }
+  const api = (route) => `${backend}${route}`;
+  if (!location.pathname.startsWith('/dashboard-app/')) {
+    $('back-dashboard').href = '/';
+    $('back-dashboard').textContent = 'Back to the findings';
+  } else if (configured && backend !== location.origin) $('back-dashboard').href += `&backend=${encodeURIComponent(backend)}`;
   const MAX_SEC = 20, RATE = 16000;
   let ctx, stream, proc, src, chunks = [], inRate = 48000, t0 = 0, tick, busy = false;
 
@@ -118,11 +154,11 @@
       $('level').style.width = `${Math.min(100, peak * 140)}%`;
     };
     src.connect(proc); proc.connect(ctx.destination);
-    t0 = Date.now(); $('mic').classList.add('rec'); $('mic-label').textContent = 'Hang up & check'; $('status').textContent = 'Listening… speak like the caller.';
+    t0 = Date.now(); $('mic').classList.add('rec'); $('mic-label').textContent = 'Stop & check'; $('status').textContent = 'Listening… speak like the caller.';
     tick = setInterval(() => { const s = (Date.now() - t0) / 1000; $('timer').textContent = `0:${String(Math.floor(s)).padStart(2, '0')}`; if (s >= MAX_SEC) stop(); }, 200);
   }
   async function stop() {
-    clearInterval(tick); $('mic').classList.remove('rec'); $('mic-label').textContent = 'Answer & speak'; $('level').style.width = '0';
+    clearInterval(tick); $('mic').classList.remove('rec'); $('mic-label').textContent = 'Record a sample'; $('level').style.width = '0';
     proc?.disconnect(); src?.disconnect(); stream?.getTracks().forEach((t) => t.stop()); await ctx?.close(); ctx = null;
     const total = chunks.reduce((a, c) => a + c.length, 0); const all = new Float32Array(total); let o = 0; for (const c of chunks) { all.set(c, o); o += c.length; }
     if (total / inRate < 1) { $('status').textContent = 'That was too short. Hold the button a little longer.'; return; }
@@ -133,7 +169,7 @@
     setBusy(true, `Checking ${who}…`);
     $('verdict').className = 'verdict'; $('verdict').innerHTML = '<h2>Checking…</h2><p class="muted">Transcribing with ElevenLabs Scribe and checking the request.</p>';
     try {
-      const r = await fetch('/api/callcheck', { method: 'POST', headers: { 'Content-Type': 'audio/wav' }, body: wav });
+      const r = await fetch(api('/api/callcheck'), { method: 'POST', headers: { 'Content-Type': 'audio/wav' }, body: wav });
       const d = await r.json();
       if (!r.ok) throw new Error(d.error === 'not_configured' ? 'The live check needs the ElevenLabs key on the server.' : d.error === 'too_many_checks' ? 'Too many checks this minute. Wait a moment.' : (d.error || `HTTP ${r.status}`));
       render(d); $('status').textContent = 'Done. Try another call.';
@@ -167,11 +203,11 @@
 
   $('mic').addEventListener('click', () => { if (busy) return; ctx ? stop() : start(); });
 
-  fetch('/api/scamcheck').then((r) => r.json()).then((d) => {
+  fetch(api('/api/scamcheck')).then((r) => { if (!r.ok) throw new Error('Backend unavailable'); return r.json(); }).then((d) => {
     $('callers').innerHTML = d.cases.map((c) => `<button type="button" class="caller" data-audio="${esc(c.audio)}" data-kind="${esc(c.kind)}"><span>☎ ${esc(c.kind)}</span><small>${esc(c.voice.split(' (')[0])} · computer voice</small></button>`).join('');
     document.querySelectorAll('.caller').forEach((b) => b.addEventListener('click', async () => {
       if (busy) return;
-      const url = `/audio311/${encodeURIComponent(b.dataset.audio)}`;
+      const url = api(`/audio311/${encodeURIComponent(b.dataset.audio)}`);
       try {
         setBusy(true, `Incoming call: ${b.dataset.kind}…`);
         const buf = await (await fetch(url)).arrayBuffer();
@@ -180,7 +216,7 @@
         setBusy(false); await analyse(buf, `the ${b.dataset.kind.toLowerCase()} call`);
       } catch { setBusy(false); $('status').textContent = 'That demo call’s audio isn’t available on this machine.'; }
     }));
-  }).catch(() => { $('callers').innerHTML = '<span class="muted small">Demo calls unavailable.</span>'; });
+  }).catch(() => { $('callers').innerHTML = '<span class="muted small">Demo audio is unavailable. Live checking needs the configured backend; the explanation and source links above still work.</span>'; });
 })();
 </script>
 </body>

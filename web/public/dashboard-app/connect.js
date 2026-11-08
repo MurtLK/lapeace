@@ -1,6 +1,6 @@
 // LAPEACE backend connector: adds Call Check (live), Who & where (census) and Home languages (FLEURS)
 // tabs, and attaches the Speech Accent Archive audio from the backend to every clip.
-// Backend address: ?backend=https://… in the URL, else the default below, else same origin when served by the backend.
+// Backend address: a validated ?backend= URL, otherwise this website origin.
 (() => {
   const configured = new URLSearchParams(location.search).get('backend');
   let BACKEND = location.origin;
@@ -33,7 +33,7 @@
   // --- New nav buttons + panels -------------------------------------------------------------
   const nav = $('aside nav');
   const tabs = [
-    ['callcheck', '☎ &nbsp; Call Check <small class="lp-tag">LIVE</small>'],
+    ['callcheck', 'Call Check <small class="lp-tag">Demo</small>'],
     ['where', '◎ &nbsp; Who &amp; where'],
     ['languages', '◍ &nbsp; Home languages'],
   ];
@@ -43,11 +43,22 @@
   const footer = $('main footer');
   const panel = (id, html) => { const s = document.createElement('section'); s.id = `lp-${id}`; s.className = 'panel lp-tab'; s.innerHTML = html; footer.before(s); return s; };
 
-  panel('callcheck', `<div class="lp-row"><div><h2>Call Check <span class="lp-tag">LIVE</span></h2>
-      <p>Answer a call and speak, or take a call from an AI caller. ElevenLabs Scribe transcribes it live, the request is checked for scam red flags, and a prototype scores whether the voice sounds computer-generated.</p></div>
-      <a class="lp-btn" href="${esc(BACKEND)}/call-check" target="_blank" rel="noopener">Open full screen ↗</a></div>
-    <iframe class="lp-frame" title="LAPEACE Call Check" allow="microphone; autoplay" data-src="${esc(BACKEND)}/call-check"></iframe>
-    <p class="lp-note">If the microphone doesn’t start inside this page, use “Open full screen”. The verdict comes from what the caller asks for (codes, gift cards, threats, secrecy); the voice score is only a hint.</p>`);
+  const callCheckPage = `call-check.html?backend=${encodeURIComponent(BACKEND)}`;
+  panel('callcheck', `<div class="lp-row"><div><h2>Call Check</h2>
+      <p>A separate demo for checking a caller's request. It does not use the accent benchmark to decide whether a call is a scam.</p></div>
+      <a class="lp-btn" href="${esc(callCheckPage)}" target="_blank" rel="noopener">Open Call Check in a new tab</a></div>
+    <p>Record up to 20 seconds. Scribe turns the sample into text; fixed English keyword rules flag requests for codes, unusual payments or remote access. An optional voice model supplies a separate prototype score.</p>
+    <p><b>No red flags does not mean a caller is legitimate.</b> The voice score is not a scam probability or proof of caller identity.</p>
+    <details><summary>How Call Check works and where its source lives</summary>
+      <p>The interface is part of this website. Live transcription needs the configured backend and an ElevenLabs key. The explanation is available even without that connection.</p>
+      <ul>
+        <li><a href="https://github.com/MurtLK/lapeace/blob/main/backend/public/call-check.html" target="_blank" rel="noopener">Browser recording and results interface</a></li>
+        <li><a href="https://github.com/MurtLK/lapeace/blob/main/backend/src/callcheck.js" target="_blank" rel="noopener">Scribe transcription and request handler</a></li>
+        <li><a href="https://github.com/MurtLK/lapeace/blob/main/backend/src/scamrules.js" target="_blank" rel="noopener">Keyword rules and verdict thresholds</a></li>
+        <li><a href="https://github.com/MurtLK/lapeace/blob/main/backend/scripts/voice_detector.py" target="_blank" rel="noopener">Optional synthetic-voice prototype</a></li>
+      </ul>
+    </details>
+    <iframe class="lp-frame" title="LAPEACE Call Check" allow="microphone" data-src="${esc(callCheckPage)}"></iframe>`);
 
   panel('where', `<h2>Who and where in Mississauga?</h2>
     <p>2021 Census: residents who speak each language most often at home. These are population counts, kept separate from transcription error rates; they are <b>not</b> an estimate of how many residents voice AI misunderstands.</p>
@@ -91,7 +102,15 @@
   }, true);
 
   // Direct links: …/#callcheck, …/#where, …/#languages
-  const fromHash = () => { const h = location.hash.slice(1); if (own.has(h)) show(h); };
+  const fromHash = () => {
+    const h = location.hash.slice(1);
+    if (own.has(h)) return show(h);
+    if (['overview', 'clips', 'review', 'settings'].includes(h)) {
+      document.querySelectorAll('.lp-tab').forEach(s => s.classList.remove('on'));
+      ['.toolbar', '.notice', 'section.heading'].forEach(sel => { const el = $(sel); if (el) el.hidden = false; });
+      switchTab(h);
+    }
+  };
   window.addEventListener('hashchange', fromHash); setTimeout(fromHash, 0);
 
   // --- Census -------------------------------------------------------------------------------

@@ -23,3 +23,7 @@ Follow the connected UI Skills `emilkowalski/apple-design` guidance. Keep Manrop
 ## Verification
 
 Run `npm run typecheck`, `npm test` and `npm run build`. Check the homepage at 1280px, 390px and 360px, including a long passage selection, mobile keyboard navigation, larger text and accessibility preferences. Confirm all internal fragment targets exist, no dashboard links remain, and `/dashboard` performs no API request. Existing disconnected dashboard/API unit tests may remain as preservation checks.
+
+## Call Check asset and guide links
+
+`npm --prefix web run dev` and `npm --prefix web run build` copy `backend/public/call-check.html` to the static dashboard assets via `scripts/prepare-dashboard.mjs`. Keep this canonical HTML available in Vercel uploads. The generated public copy is ignored by Git. Forward only validated public HTTP(S) backend addresses, never credentials. All seven supported tab names have direct-link behavior; `/#dashboard-guide` returns to the corresponding homepage explanation.

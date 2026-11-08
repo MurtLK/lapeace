@@ -1,5 +1,9 @@
 # Website integration and verification
 
+## Current explanation and Call Check integration
+
+Added a homepage guide to all seven dashboard sections and a source-linked Call Check explanation. The canonical browser interface is copied into the frontend before dev/build, so its explanation also loads on a static host with no backend. Live transcription remains on the existing backend. All 23 tests, typecheck and build passed. Browser verification covered direct tabs, return-to-guide scrolling, source links, unavailable APIs, 200% text and the generated production asset. No microphone or paid provider call was used. See `docs/dashboard/CALL_CHECK.md` for source locations and limits.
+
 ## Current component and branding update
 
 The public homepage imports the adapted 21st.dev/Magic UI Blur Fade and Shimmer Button, with full MIT notices and no new dependencies. The dashboard displays LAPEACE and the supplied logo on desktop and mobile. Export filenames use lapeace; existing saved review keys remain compatible. All 15 tests, typecheck and build passed. Actual browser checks confirmed no page errors or overflow at 1280px, 390px and 360px; reduced motion, hover/focus shimmer, 200% text and keyboard dashboard navigation passed. The 468-recording, audio range, census, direct-refresh and return paths still work.

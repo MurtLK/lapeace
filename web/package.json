@@ -9,7 +9,9 @@
     "preview": "vite preview --host 127.0.0.1",
     "typecheck": "tsc --noEmit",
     "test": "vitest",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "predev": "node ../scripts/prepare-dashboard.mjs",
+    "prebuild": "node ../scripts/prepare-dashboard.mjs"
   },
   "dependencies": {
     "@fontsource/manrope": "5.3.0",

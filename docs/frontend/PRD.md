@@ -24,3 +24,7 @@ Apple Design from the UI Skills MCP guides hierarchy, typography, press feedback
 - Typecheck, production build and navigation/interaction tests pass. Review real desktop and mobile renders.
 
 Existing dashboard, API and backend source remain available for the teammate's separate application. They are outside the public website's active routes and bundle. Publishing, merging branches and new evaluations are outside this task.
+
+## Dashboard explanation update
+
+The homepage explains every dashboard tab and provides direct links. Call Check has a plain-language method explanation and source links. Its canonical browser interface is bundled into the website, while live transcription and the optional voice model still need the configured backend. Explain request flags and voice scores separately; never describe either as caller verification.

@@ -21,3 +21,7 @@ The private local backend configuration on this machine uses the existing datase
 ## Verification
 
 Typecheck, build and all 15 tests pass. Real browser checks verified homepage-to-dashboard navigation, 468 recordings, search for mandarin87, native clip playback with a 206 range response, both census language panels, switching back to the original dashboard tabs, direct community refresh and return navigation. Desktop and 390px mobile renders had no page errors or horizontal page overflow. No request used the prior temporary Cloudflare host. The shared header adapts to mobile; the teammate's navigation scrolls horizontally inside its own page.
+
+## Call Check and dashboard explanations
+
+The homepage now explains all seven tabs, with working deep links and a return-to-guide link in the dashboard. Call Check includes the actual canonical browser interface in the static build, an explanation of its fixed request rules and optional voice prototype, and repository source links. See [Call Check source](CALL_CHECK.md) for the canonical files, build copy and verification. The newest verification passed all 23 tests; earlier counts above describe the initial integration.

@@ -17,13 +17,14 @@ export function ResearchDashboard() {
   }
   const tab = params.get('tab');
   if (tab === 'community' || tab === 'where') url.hash = 'where';
-  if (tab === 'languages' || tab === 'callcheck') url.hash = tab;
+  if (tab && ['overview', 'clips', 'review', 'settings', 'languages', 'callcheck'].includes(tab)) url.hash = tab;
   const src = `${url.pathname}${url.search}${url.hash}`;
 
   return (
     <main className="research-dashboard">
       <nav className="research-dashboard__nav" aria-label="Dashboard navigation">
         <Link to="/"><ArrowLeft aria-hidden="true" size={18} />Back to website</Link>
+        <Link to="/#dashboard-guide">Dashboard guide</Link>
         <a href={src} target="_blank" rel="noopener noreferrer">Open workspace in a new tab<ExternalLink aria-hidden="true" size={16} /></a>
       </nav>
       <iframe className="research-dashboard__frame" src={src} title="LAPEACE research dashboard" allow="microphone" />

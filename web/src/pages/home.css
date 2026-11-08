@@ -1137,3 +1137,20 @@
     -webkit-backdrop-filter: none;
   }
 }
+
+/* Task and source explanations use the existing editorial ledger. */
+#dashboard-guide, #call-check, #call-check-source { scroll-margin-top: 6rem; }
+.lp-guide-note { margin: var(--space-md) 0 0; color: var(--color-muted); font-size: var(--text-sm); line-height: 1.65; max-width: 65ch; }
+.lp-guide-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--color-accent); text-underline-offset: 0.2em; }
+.lp-guide-link:hover { color: var(--color-ink); }
+.lp-dashboard-guide .lp-ledger__row { padding-block: var(--space-md); }
+.lp-call-check-method { min-width: 0; }
+.lp-call-check-limit { margin: var(--space-lg) 0; color: var(--color-ink); font-size: var(--text-md); line-height: 1.65; }
+.lp-call-check-limit strong { font-weight: 700; }
+.lp-source-details { border-top: 1px solid var(--color-rule); padding-top: var(--space-xs); }
+.lp-source-details summary { cursor: pointer; min-height: 44px; padding-block: var(--space-sm); color: var(--color-ink); font-size: var(--text-md); font-weight: 600; }
+.lp-source-details ul { list-style: none; padding: 0; margin: var(--space-xs) 0; }
+.lp-source-details li + li { border-top: 1px solid var(--color-rule); }
+.lp-source-details a { display: block; padding-block: var(--space-sm); color: var(--color-accent); font-size: var(--text-sm); text-decoration: none; }
+.lp-source-details a:hover { text-decoration: underline; }
+.lp-source-path { display: block; margin-top: var(--space-2xs); color: var(--color-muted); overflow-wrap: anywhere; }

@@ -25,6 +25,31 @@ describe('website navigation', () => {
     expect(screen.getByTitle('LAPEACE research dashboard')).toHaveAttribute('src', '/dashboard-app/index.html');
   });
 
+  it.each(['overview', 'clips', 'review', 'settings', 'languages', 'callcheck'])('opens the %s section from a direct guide link', (tab) => {
+    render(<MemoryRouter initialEntries={[`/dashboard?tab=${tab}`]}><App /></MemoryRouter>);
+    expect(screen.getByTitle('LAPEACE research dashboard')).toHaveAttribute('src', `/dashboard-app/index.html#${tab}`);
+  });
+
+  it('explains dashboard tasks and links Call Check to its implementation without requesting a check', () => {
+    const fetch = vi.fn();
+    vi.stubGlobal('fetch', fetch);
+    render(<MemoryRouter><App /></MemoryRouter>);
+    expect(screen.getByRole('heading', { name: 'What is the dashboard for?' })).toBeVisible();
+    expect(screen.getByRole('link', { name: 'Clip explorer' })).toHaveAttribute('href', '/dashboard?tab=clips');
+    expect(screen.getByRole('link', { name: 'Open Call Check' })).toHaveAttribute('href', '/dashboard?tab=callcheck');
+    fireEvent.click(screen.getByText('View Call Check source code'));
+    expect(screen.getByRole('link', { name: /Keyword rules, weights and verdict thresholds/ })).toHaveAttribute('href', 'https://github.com/MurtLK/lapeace/blob/main/backend/src/scamrules.js');
+    expect(screen.getByText('No red flags does not mean a caller is legitimate.')).toBeVisible();
+    expect(fetch).not.toHaveBeenCalled();
+  });
+
+  it('returns from the dashboard to the homepage guide', () => {
+    render(<MemoryRouter initialEntries={['/dashboard']}><App /></MemoryRouter>);
+    fireEvent.click(screen.getByRole('link', { name: 'Dashboard guide' }));
+    expect(screen.getByRole('heading', { name: 'What is the dashboard for?' })).toBeVisible();
+    expect(screen.queryByTitle('LAPEACE research dashboard')).not.toBeInTheDocument();
+  });
+
   it('provides a useful return destination for unknown routes', () => {
     render(<MemoryRouter initialEntries={['/missing']}><App /></MemoryRouter>);
     expect(screen.getByRole('heading', { name: 'This page isn’t here.' })).toBeInTheDocument();

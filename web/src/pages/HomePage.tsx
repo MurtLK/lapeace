@@ -1,6 +1,8 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowDown, ArrowUpRight, AudioLines, MapPin, Menu, MessageSquareCheck, X } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, AudioLines, MapPin, Menu, PhoneCall, X } from 'lucide-react';
+import { DashboardGuide } from '../components/home/DashboardGuide';
+import { CallCheckGuide } from '../components/home/CallCheckGuide';
 import { BlurFade } from '../components/home/BlurFade';
 import { ShimmerButton } from '../components/home/ShimmerButton';
 import { BentoCard, BentoGrid } from '../components/home/BentoGrid';
@@ -128,8 +130,8 @@ export function HomePage() {
                 </a>
               </li>
               <li>
-                <a className="lp-nav__link" href="#why-it-matters">
-                  Why it matters
+                <a className="lp-nav__link" href="#dashboard-guide">
+                  Dashboard guide
                 </a>
               </li>
               <li>
@@ -179,10 +181,10 @@ export function HomePage() {
             </a>
             <a
               className="lp-mobile-nav__link"
-              href="#why-it-matters"
+              href="#dashboard-guide"
               onClick={closeMobileMenu}
             >
-              Why it matters
+              Dashboard guide
             </a>
             <a
               className="lp-mobile-nav__link"
@@ -210,7 +212,7 @@ export function HomePage() {
                 How well does AI understand accented English?
               </h1>
               <p className="lp-hero__lede">
-                We study English speech recognition alongside Mississauga language data and a 311 clarification demo.
+                Review speech recognition errors and Mississauga language data. Call Check is a separate demo for spotting red flags in a caller's request.
               </p>
               <div className="lp-hero__actions">
                 <ShimmerButton to="/dashboard">
@@ -247,7 +249,7 @@ export function HomePage() {
                 Explore the research.
               </h2>
               <p className="lp-section__lead">
-                How the study connects speech recognition to local services.
+                Inspect the speech evidence, explore the local context, or learn how Call Check works.
               </p>
             </div>
 
@@ -358,59 +360,25 @@ export function HomePage() {
               </BentoCard>
 
               <BentoCard
-                name="Confirm the request"
-                description="The scripted 311 demo asks a caller to confirm uncertain details."
-                Icon={MessageSquareCheck}
+                name="Check a caller's request"
+                description="Call Check transcribes a short sample and flags phrases in the request."
+                href="#call-check"
+                cta="How Call Check works"
+                Icon={PhoneCall}
                 className="lp-bento-card--supporting lp-bento-card--teal"
               >
-                <div className="lp-bento-steps" aria-label="Clarification sequence">
-                  <div className="lp-bento-steps__item">
-                    <span className="lp-bento-steps__label">Initial intake</span>
-                    <span className="lp-bento-steps__desc">Record the request and identify unclear details.</span>
-                  </div>
-                  <div className="lp-bento-steps__item">
-                    <span className="lp-bento-steps__label">Read-back check</span>
-                    <span className="lp-bento-steps__desc">Read the details back so the resident can correct them.</span>
-                  </div>
+                <div className="lp-bento-meta">
+                  <p className="lp-bento-meta__note">The demo uses fixed rules. Its optional voice score is separate from the request verdict and does not verify caller identity.</p>
                 </div>
               </BentoCard>
             </BentoGrid>
           </div>
         </section>
 
-        <section id="why-it-matters" className="lp-section" aria-labelledby="why-heading">
-          <div className="lp-container lp-editorial-split">
-            <div className="lp-editorial-split__head">
-              <h2 id="why-heading" className="lp-section__title">
-                A transcript needs context.
-              </h2>
-              <p className="lp-section__lead">
-                Listen to each recording before deciding whether the transcript is wrong.
-              </p>
-              <a href="#about-sources" className="lp-btn lp-btn--secondary">
-                <span>Read the sources</span>
-                <ArrowDown className="lp-icon" aria-hidden="true" />
-              </a>
-            </div>
+        <DashboardGuide />
+        <CallCheckGuide />
 
-            <dl className="lp-ledger">
-              <div className="lp-ledger__row">
-                <dt className="lp-ledger__term">Check the spoken words</dt>
-                <dd className="lp-ledger__desc">
-                  Speakers read a shared English passage, but may change a word. Check the recording against the reference before counting a transcription error.
-                </dd>
-              </div>
-              <div className="lp-ledger__row">
-                <dt className="lp-ledger__term">Keep the measures separate</dt>
-                <dd className="lp-ledger__desc">
-                  A speaker's first language and the language they speak in a recording are different facts. Census home-language counts add local context. They are not transcription scores.
-                </dd>
-              </div>
-            </dl>
-          </div>
-        </section>
-
-        <section id="about-sources" className="lp-section lp-section--tinted" aria-labelledby="sources-heading">
+        <section id="about-sources" className="lp-section" aria-labelledby="sources-heading">
           <div className="lp-container">
             <div className="lp-section__head-split">
               <h2 id="sources-heading" className="lp-section__title">
@@ -495,8 +463,8 @@ export function HomePage() {
             <a href="#how-it-works" className="lp-footer__link">
               How it works
             </a>
-            <a href="#why-it-matters" className="lp-footer__link">
-              Why it matters
+            <a href="#dashboard-guide" className="lp-footer__link">
+              Dashboard guide
             </a>
             <a href="#about-sources" className="lp-footer__link">
               Sources

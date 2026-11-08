@@ -7,8 +7,10 @@ export function App() {
   const location = useLocation();
   useEffect(() => {
     document.title = location.pathname === '/dashboard' ? 'Dashboard | LaPeace' : 'LaPeace | Speech recognition and accented English';
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
+    const target = location.hash && document.getElementById(location.hash.slice(1));
+    if (target) target.scrollIntoView?.({ block: 'start' });
+    else window.scrollTo(0, 0);
+  }, [location.pathname, location.hash]);
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
